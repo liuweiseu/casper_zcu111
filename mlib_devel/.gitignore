@@ -1,0 +1,35 @@
+*_sysgen.log
+*_sysgen_error.log
+*.asv
+*.jou
+*.pyc
+casper_library/Tests/*_output.mat
+casper_library/Tests/xldsp48e_isim.log
+*~
+.*.swp
+casper_library/casper_library_bus.*
+casper_library/casper_library_downconverter.*
+tags
+
+# Ignore Xilinx OPB pcores
+xps_base/*/pcores/bram_if_cntlr_v*/
+xps_base/*/pcores/bram_if_cntlr_v*/
+xps_base/*/pcores/ipif_common_v*/
+xps_base/*/pcores/opb_arbiter_v*/
+xps_base/*/pcores/opb_bram_if_cntlr_v*/
+xps_base/*/pcores/opb_ipif_v*/
+xps_base/*/pcores/opb_opb_lite_v*/
+xps_base/*/pcores/opb_v20_v*/
+xps_base/*/pcores/proc_common_v*/
+
+# Ignore all files that start with "startsg." (e.g. startsg.local)
+startsg.*
+
+# These came from ska-sa -- not sure what the story is here
+xps_base/XPS_ROACH2_base/system.xmp.sx475t.updated
+xps_base/XPS_ROACH2_base/system.xmp.updated
+*.local
+vivado_pid*.str
+
+# ignore docs build directory
+docs/_build/
