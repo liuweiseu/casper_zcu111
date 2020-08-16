@@ -1,0 +1,178 @@
+!!python/object:castro.Castro
+design_name: top
+ips: []
+mm_slaves:
+- !!python/object:castro.mm_slave {base_address: 2684387328, high_address: 2684387332,
+  mode: 3, name: led_cntrl, span: 4}
+- !!python/object:castro.mm_slave {base_address: 2684387332, high_address: 2684387336,
+  mode: 3, name: reg_cntrl, span: 4}
+- !!python/object:castro.mm_slave {base_address: 2684354560, high_address: 2684358656,
+  mode: 3, name: snapshot0_01_ss_bram, span: 4096}
+- !!python/object:castro.mm_slave {base_address: 2684387336, high_address: 2684387340,
+  mode: 3, name: snapshot0_01_ss_ctrl, span: 4}
+- !!python/object:castro.mm_slave {base_address: 2684387340, high_address: 2684387344,
+  mode: 1, name: snapshot0_01_ss_status, span: 4}
+- !!python/object:castro.mm_slave {base_address: 2684358656, high_address: 2684362752,
+  mode: 3, name: snapshot0_23_ss_bram, span: 4096}
+- !!python/object:castro.mm_slave {base_address: 2684387344, high_address: 2684387348,
+  mode: 3, name: snapshot0_23_ss_ctrl, span: 4}
+- !!python/object:castro.mm_slave {base_address: 2684387348, high_address: 2684387352,
+  mode: 1, name: snapshot0_23_ss_status, span: 4}
+- !!python/object:castro.mm_slave {base_address: 2684362752, high_address: 2684366848,
+  mode: 3, name: snapshot0_45_ss_bram, span: 4096}
+- !!python/object:castro.mm_slave {base_address: 2684387352, high_address: 2684387356,
+  mode: 3, name: snapshot0_45_ss_ctrl, span: 4}
+- !!python/object:castro.mm_slave {base_address: 2684387356, high_address: 2684387360,
+  mode: 1, name: snapshot0_45_ss_status, span: 4}
+- !!python/object:castro.mm_slave {base_address: 2684366848, high_address: 2684370944,
+  mode: 3, name: snapshot0_67_ss_bram, span: 4096}
+- !!python/object:castro.mm_slave {base_address: 2684387360, high_address: 2684387364,
+  mode: 3, name: snapshot0_67_ss_ctrl, span: 4}
+- !!python/object:castro.mm_slave {base_address: 2684387364, high_address: 2684387368,
+  mode: 1, name: snapshot0_67_ss_status, span: 4}
+- !!python/object:castro.mm_slave {base_address: 2684370944, high_address: 2684375040,
+  mode: 3, name: snapshot1_01_ss_bram, span: 4096}
+- !!python/object:castro.mm_slave {base_address: 2684387368, high_address: 2684387372,
+  mode: 3, name: snapshot1_01_ss_ctrl, span: 4}
+- !!python/object:castro.mm_slave {base_address: 2684387372, high_address: 2684387376,
+  mode: 1, name: snapshot1_01_ss_status, span: 4}
+- !!python/object:castro.mm_slave {base_address: 2684375040, high_address: 2684379136,
+  mode: 3, name: snapshot1_23_ss_bram, span: 4096}
+- !!python/object:castro.mm_slave {base_address: 2684387376, high_address: 2684387380,
+  mode: 3, name: snapshot1_23_ss_ctrl, span: 4}
+- !!python/object:castro.mm_slave {base_address: 2684387380, high_address: 2684387384,
+  mode: 1, name: snapshot1_23_ss_status, span: 4}
+- !!python/object:castro.mm_slave {base_address: 2684379136, high_address: 2684383232,
+  mode: 3, name: snapshot1_45_ss_bram, span: 4096}
+- !!python/object:castro.mm_slave {base_address: 2684387384, high_address: 2684387388,
+  mode: 3, name: snapshot1_45_ss_ctrl, span: 4}
+- !!python/object:castro.mm_slave {base_address: 2684387388, high_address: 2684387392,
+  mode: 1, name: snapshot1_45_ss_status, span: 4}
+- !!python/object:castro.mm_slave {base_address: 2684383232, high_address: 2684387328,
+  mode: 3, name: snapshot1_67_ss_bram, span: 4096}
+- !!python/object:castro.mm_slave {base_address: 2684387392, high_address: 2684387396,
+  mode: 3, name: snapshot1_67_ss_ctrl, span: 4}
+- !!python/object:castro.mm_slave {base_address: 2684387396, high_address: 2684387400,
+  mode: 1, name: snapshot1_67_ss_status, span: 4}
+- !!python/object:castro.mm_slave {base_address: 2684387400, high_address: 2684387404,
+  mode: 1, name: sync_state0, span: 4}
+- !!python/object:castro.mm_slave {base_address: 2684387404, high_address: 2684387408,
+  mode: 1, name: sync_state1, span: 4}
+- !!python/object:castro.mm_slave {base_address: 2684387456, high_address: 2684387488,
+  mode: 1, name: sys_block, span: 32}
+src_files: [/home/wei/casper/tutorials_devel/zcu111/rfdc_multi_cores/rfdc_multi_cores_mode2/top.v,
+  /home/wei/casper/tutorials_devel/zcu111/mlib_devel/jasper_library/hdl_sources/gpio_simulink2ext,
+  /home/wei/casper/tutorials_devel/zcu111/mlib_devel/jasper_library/hdl_sources/gpio_simulink2ext,
+  /home/wei/casper/tutorials_devel/zcu111/mlib_devel/jasper_library/hdl_sources/wb_register_ppc2simulink,
+  /home/wei/casper/tutorials_devel/zcu111/mlib_devel/jasper_library/hdl_sources/wb_register_ppc2simulink,
+  /home/wei/casper/tutorials_devel/zcu111/mlib_devel/jasper_library/hdl_sources/rfdc_V0_2/RFDC_MODE1.xci,
+  /home/wei/casper/tutorials_devel/zcu111/mlib_devel/jasper_library/hdl_sources/rfdc_V0_2/RFDC_MODE2.xci,
+  /home/wei/casper/tutorials_devel/zcu111/mlib_devel/jasper_library/hdl_sources/wb_register_ppc2simulink,
+  /home/wei/casper/tutorials_devel/zcu111/mlib_devel/jasper_library/hdl_sources/wb_register_simulink2ppc,
+  /home/wei/casper/tutorials_devel/zcu111/mlib_devel/jasper_library/hdl_sources/wb_register_ppc2simulink,
+  /home/wei/casper/tutorials_devel/zcu111/mlib_devel/jasper_library/hdl_sources/wb_register_simulink2ppc,
+  /home/wei/casper/tutorials_devel/zcu111/mlib_devel/jasper_library/hdl_sources/wb_register_ppc2simulink,
+  /home/wei/casper/tutorials_devel/zcu111/mlib_devel/jasper_library/hdl_sources/wb_register_simulink2ppc,
+  /home/wei/casper/tutorials_devel/zcu111/mlib_devel/jasper_library/hdl_sources/wb_register_ppc2simulink,
+  /home/wei/casper/tutorials_devel/zcu111/mlib_devel/jasper_library/hdl_sources/wb_register_simulink2ppc,
+  /home/wei/casper/tutorials_devel/zcu111/mlib_devel/jasper_library/hdl_sources/wb_register_ppc2simulink,
+  /home/wei/casper/tutorials_devel/zcu111/mlib_devel/jasper_library/hdl_sources/wb_register_simulink2ppc,
+  /home/wei/casper/tutorials_devel/zcu111/mlib_devel/jasper_library/hdl_sources/wb_register_ppc2simulink,
+  /home/wei/casper/tutorials_devel/zcu111/mlib_devel/jasper_library/hdl_sources/wb_register_simulink2ppc,
+  /home/wei/casper/tutorials_devel/zcu111/mlib_devel/jasper_library/hdl_sources/wb_register_ppc2simulink,
+  /home/wei/casper/tutorials_devel/zcu111/mlib_devel/jasper_library/hdl_sources/wb_register_simulink2ppc,
+  /home/wei/casper/tutorials_devel/zcu111/mlib_devel/jasper_library/hdl_sources/wb_register_ppc2simulink,
+  /home/wei/casper/tutorials_devel/zcu111/mlib_devel/jasper_library/hdl_sources/wb_register_simulink2ppc,
+  /home/wei/casper/tutorials_devel/zcu111/mlib_devel/jasper_library/hdl_sources/wb_register_simulink2ppc,
+  /home/wei/casper/tutorials_devel/zcu111/mlib_devel/jasper_library/hdl_sources/wb_register_simulink2ppc,
+  /home/wei/casper/tutorials_devel/zcu111/mlib_devel/jasper_library/hdl_sources/infrastructure/zcu111_infrastructure.v,
+  /home/wei/casper/tutorials_devel/zcu111/mlib_devel/jasper_library/hdl_sources/utils/cdc_synchroniser.vhd,
+  /home/wei/casper/tutorials_devel/zcu111/mlib_devel/jasper_library/hdl_sources/sys_block,
+  /home/wei/casper/tutorials_devel/zcu111/rfdc_multi_cores/rfdc_multi_cores_mode2/sysgen/hdl_netlist/rfdc_multi_cores_mode2.srcs/sources_1/imports/sysgen,
+  /home/wei/casper/tutorials_devel/zcu111/rfdc_multi_cores/rfdc_multi_cores_mode2/sysgen/hdl_netlist/rfdc_multi_cores_mode2.srcs/sources_1/ip/rfdc_multi_cores_mode2_c_counter_binary_v12_0_i2/rfdc_multi_cores_mode2_c_counter_binary_v12_0_i2.xci,
+  /home/wei/casper/tutorials_devel/zcu111/rfdc_multi_cores/rfdc_multi_cores_mode2/sysgen/hdl_netlist/rfdc_multi_cores_mode2.srcs/sources_1/ip/rfdc_multi_cores_mode2_c_counter_binary_v12_0_i1/rfdc_multi_cores_mode2_c_counter_binary_v12_0_i1.xci,
+  /home/wei/casper/tutorials_devel/zcu111/rfdc_multi_cores/rfdc_multi_cores_mode2/sysgen/hdl_netlist/rfdc_multi_cores_mode2.srcs/sources_1/ip/rfdc_multi_cores_mode2_c_counter_binary_v12_0_i0/rfdc_multi_cores_mode2_c_counter_binary_v12_0_i0.xci]
+synthesis: !!python/object:castro.Synthesis
+  clk_constraints:
+  - !!python/object:castro.ClkConstraint {clkname: clk_100_p, freq_mhz: 100.0, period_ns: 10.0,
+    port_en: true, portname: clk_100_p, virtual_en: false, waveform_max_ns: 5.0, waveform_min_ns: 0.0}
+  clk_grp_constraints:
+  - !!python/object:castro.ClkGrpConstraint {clkdomaintype: asynchronous, clknamegrp1: '-of_objects
+      [get_pins zcu111_infr_inst/user_clk_mmcm_inst/CLKOUT0]', clknamegrp2: '-of_objects
+      [get_pins zcu111_inst/zynq_ultra_ps_e_0/U0/PS8_i/PLCLK[0]]'}
+  - !!python/object:castro.ClkGrpConstraint {clkdomaintype: asynchronous, clknamegrp1: '-of_objects
+      [get_pins zcu111_inst/zynq_ultra_ps_e_0/U0/PS8_i/PLCLK[0]]', clknamegrp2: '-of_objects
+      [get_pins zcu111_infr_inst/user_clk_mmcm_inst/CLKOUT0]'}
+  false_path_constraints:
+  - !!python/object:castro.FalsePthConstraint {destpath: '[get_ports {rfdc_multi_cores_mode2_gpio_led_ext[*]}]',
+    sourcepath: null}
+  - !!python/object:castro.FalsePthConstraint {destpath: '[get_ports {rfdc_multi_cores_mode2_gpio_led1_ext[*]}]',
+    sourcepath: null}
+  fpga_manufacturer: Xilinx
+  fpga_model: xczu28dr-ffvg1517-2-e
+  gen_clk_constraints: []
+  input_delay_constraints: []
+  max_delay_constraints:
+  - !!python/object:castro.MaxDelayConstraint {constdelay_ns: 1.0, destpath: '[get_ports
+      {rfdc_multi_cores_mode2_gpio_led_ext[*]}]', sourcepath: null}
+  - !!python/object:castro.MaxDelayConstraint {constdelay_ns: 1.0, destpath: '[get_ports
+      {rfdc_multi_cores_mode2_gpio_led1_ext[*]}]', sourcepath: null}
+  min_delay_constraints:
+  - !!python/object:castro.MinDelayConstraint {constdelay_ns: 1.0, destpath: '[get_ports
+      {rfdc_multi_cores_mode2_gpio_led_ext[*]}]', sourcepath: null}
+  - !!python/object:castro.MinDelayConstraint {constdelay_ns: 1.0, destpath: '[get_ports
+      {rfdc_multi_cores_mode2_gpio_led1_ext[*]}]', sourcepath: null}
+  multi_cycle_constraints: []
+  output_delay_constraints: []
+  pin_constraints:
+  - !!python/object:castro.PinConstraint
+    drive_strength: 0
+    io_standard: [LVCMOS18]
+    location: [AR13]
+    portname: rfdc_multi_cores_mode2_gpio_led_ext
+    portname_indices: [0]
+    slew_rate: 0
+    symbolic_indices: [0]
+    symbolic_name: led
+    termination: ''
+  - !!python/object:castro.PinConstraint
+    drive_strength: 0
+    io_standard: [LVCMOS18]
+    location: [AV15]
+    portname: rfdc_multi_cores_mode2_gpio_led1_ext
+    portname_indices: [0]
+    slew_rate: 0
+    symbolic_indices: [7]
+    symbolic_name: led
+    termination: ''
+  - !!python/object:castro.PinConstraint
+    drive_strength: 0
+    io_standard: [LVDS]
+    location: [AL16]
+    portname: clk_100_p
+    portname_indices: []
+    slew_rate: 0
+    symbolic_indices: [0]
+    symbolic_name: clk_100_p
+    termination: ''
+  pin_map:
+    clk_100_n:
+    - !!python/object:casper_platform.Pin {iostd: LVDS, loc: AN15}
+    clk_100_p:
+    - !!python/object:casper_platform.Pin {iostd: LVDS, loc: AL16}
+    led:
+    - !!python/object:casper_platform.Pin {iostd: LVCMOS18, loc: AR13}
+    - !!python/object:casper_platform.Pin {iostd: LVCMOS18, loc: AP13}
+    - !!python/object:casper_platform.Pin {iostd: LVCMOS18, loc: AR16}
+    - !!python/object:casper_platform.Pin {iostd: LVCMOS18, loc: AP16}
+    - !!python/object:casper_platform.Pin {iostd: LVCMOS18, loc: AP15}
+    - !!python/object:casper_platform.Pin {iostd: LVCMOS18, loc: AN16}
+    - !!python/object:casper_platform.Pin {iostd: LVCMOS18, loc: AN17}
+    - !!python/object:casper_platform.Pin {iostd: LVCMOS18, loc: AV15}
+  platform_name: zcu111
+  raw_constraints: []
+  synth_tool: ''
+  temp_fpga_model: ''
+  temp_quartus_qsf_files: []
+  vendor_constraints_files: ''
+version: 0.0.0

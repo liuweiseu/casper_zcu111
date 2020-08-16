@@ -1,0 +1,1040 @@
+INFO - 2020-08-15 12:15:49,247 - jasper.toolflow - Trying to generate AXI HDL from XML
+INFO - 2020-08-15 12:15:49,719 - jasper.toolflow -   Input directory: ['/home/wei/casper/tutorials_devel/zcu111/rfdc_multi_cores/rfdc_multi_cores_mode2/xml2vhdl_source']
+INFO - 2020-08-15 12:15:49,719 - jasper.toolflow -   Output XML directory: /home/wei/casper/tutorials_devel/zcu111/rfdc_multi_cores/rfdc_multi_cores_mode2/xml2vhdl_xml_output
+INFO - 2020-08-15 12:15:49,719 - jasper.toolflow -   Output directory: /home/wei/casper/tutorials_devel/zcu111/rfdc_multi_cores/rfdc_multi_cores_mode2/xml2vhdl_hdl_output
+INFO - 2020-08-15 12:15:49,719 - jasper.toolflow -   Slave library: xil_defaultlib
+INFO - 2020-08-15 12:15:49,719 - jasper.toolflow -   Bus library: xil_defaultlib
+INFO - 2020-08-15 12:15:49,846 - jasper.toolflow - instantiating user_ip
+DEBUG - 2020-08-15 12:15:49,846 - jasper.verilog - Initializing second-layer dictionairies for: default
+DEBUG - 2020-08-15 12:15:49,846 - jasper.verilog - Initializing second-layer dictionairies for: usermodule: rfdc_multi_cores_mode2
+DEBUG - 2020-08-15 12:15:49,846 - jasper.verilog - Attempting to add port "clk" (parent sig: False, parent port: False)
+DEBUG - 2020-08-15 12:15:49,846 - jasper.verilog -   Port "clk" is new
+DEBUG - 2020-08-15 12:15:49,846 - jasper.verilog - Attempting to add port "rfdc_multi_cores_mode2_led_cntrl_user_data_out" (parent sig: False, parent port: False)
+DEBUG - 2020-08-15 12:15:49,846 - jasper.verilog -   Port "rfdc_multi_cores_mode2_led_cntrl_user_data_out" is new
+DEBUG - 2020-08-15 12:15:49,846 - jasper.verilog - Attempting to add port "rfdc_multi_cores_mode2_reg_cntrl_user_data_out" (parent sig: False, parent port: False)
+DEBUG - 2020-08-15 12:15:49,847 - jasper.verilog -   Port "rfdc_multi_cores_mode2_reg_cntrl_user_data_out" is new
+DEBUG - 2020-08-15 12:15:49,847 - jasper.verilog - Attempting to add port "rfdc_multi_cores_mode2_rfdc_V0_2_adc0_dout" (parent sig: False, parent port: False)
+DEBUG - 2020-08-15 12:15:49,847 - jasper.verilog -   Port "rfdc_multi_cores_mode2_rfdc_V0_2_adc0_dout" is new
+DEBUG - 2020-08-15 12:15:49,847 - jasper.verilog - Attempting to add port "rfdc_multi_cores_mode2_rfdc_V0_2_adc0_sync" (parent sig: False, parent port: False)
+DEBUG - 2020-08-15 12:15:49,847 - jasper.verilog -   Port "rfdc_multi_cores_mode2_rfdc_V0_2_adc0_sync" is new
+DEBUG - 2020-08-15 12:15:49,847 - jasper.verilog - Attempting to add port "rfdc_multi_cores_mode2_rfdc_V0_2_adc1_dout" (parent sig: False, parent port: False)
+DEBUG - 2020-08-15 12:15:49,847 - jasper.verilog -   Port "rfdc_multi_cores_mode2_rfdc_V0_2_adc1_dout" is new
+DEBUG - 2020-08-15 12:15:49,847 - jasper.verilog - Attempting to add port "rfdc_multi_cores_mode2_rfdc_V0_2_adc1_sync" (parent sig: False, parent port: False)
+DEBUG - 2020-08-15 12:15:49,847 - jasper.verilog -   Port "rfdc_multi_cores_mode2_rfdc_V0_2_adc1_sync" is new
+DEBUG - 2020-08-15 12:15:49,847 - jasper.verilog - Attempting to add port "rfdc_multi_cores_mode2_snapshot0_01_ss_bram_data_out" (parent sig: False, parent port: False)
+DEBUG - 2020-08-15 12:15:49,847 - jasper.verilog -   Port "rfdc_multi_cores_mode2_snapshot0_01_ss_bram_data_out" is new
+DEBUG - 2020-08-15 12:15:49,847 - jasper.verilog - Attempting to add port "rfdc_multi_cores_mode2_snapshot0_01_ss_ctrl_user_data_out" (parent sig: False, parent port: False)
+DEBUG - 2020-08-15 12:15:49,847 - jasper.verilog -   Port "rfdc_multi_cores_mode2_snapshot0_01_ss_ctrl_user_data_out" is new
+DEBUG - 2020-08-15 12:15:49,847 - jasper.verilog - Attempting to add port "rfdc_multi_cores_mode2_snapshot0_23_ss_bram_data_out" (parent sig: False, parent port: False)
+DEBUG - 2020-08-15 12:15:49,847 - jasper.verilog -   Port "rfdc_multi_cores_mode2_snapshot0_23_ss_bram_data_out" is new
+DEBUG - 2020-08-15 12:15:49,847 - jasper.verilog - Attempting to add port "rfdc_multi_cores_mode2_snapshot0_23_ss_ctrl_user_data_out" (parent sig: False, parent port: False)
+DEBUG - 2020-08-15 12:15:49,847 - jasper.verilog -   Port "rfdc_multi_cores_mode2_snapshot0_23_ss_ctrl_user_data_out" is new
+DEBUG - 2020-08-15 12:15:49,847 - jasper.verilog - Attempting to add port "rfdc_multi_cores_mode2_snapshot0_45_ss_bram_data_out" (parent sig: False, parent port: False)
+DEBUG - 2020-08-15 12:15:49,847 - jasper.verilog -   Port "rfdc_multi_cores_mode2_snapshot0_45_ss_bram_data_out" is new
+DEBUG - 2020-08-15 12:15:49,847 - jasper.verilog - Attempting to add port "rfdc_multi_cores_mode2_snapshot0_45_ss_ctrl_user_data_out" (parent sig: False, parent port: False)
+DEBUG - 2020-08-15 12:15:49,848 - jasper.verilog -   Port "rfdc_multi_cores_mode2_snapshot0_45_ss_ctrl_user_data_out" is new
+DEBUG - 2020-08-15 12:15:49,848 - jasper.verilog - Attempting to add port "rfdc_multi_cores_mode2_snapshot0_67_ss_bram_data_out" (parent sig: False, parent port: False)
+DEBUG - 2020-08-15 12:15:49,848 - jasper.verilog -   Port "rfdc_multi_cores_mode2_snapshot0_67_ss_bram_data_out" is new
+DEBUG - 2020-08-15 12:15:49,848 - jasper.verilog - Attempting to add port "rfdc_multi_cores_mode2_snapshot0_67_ss_ctrl_user_data_out" (parent sig: False, parent port: False)
+DEBUG - 2020-08-15 12:15:49,848 - jasper.verilog -   Port "rfdc_multi_cores_mode2_snapshot0_67_ss_ctrl_user_data_out" is new
+DEBUG - 2020-08-15 12:15:49,848 - jasper.verilog - Attempting to add port "rfdc_multi_cores_mode2_snapshot1_01_ss_bram_data_out" (parent sig: False, parent port: False)
+DEBUG - 2020-08-15 12:15:49,848 - jasper.verilog -   Port "rfdc_multi_cores_mode2_snapshot1_01_ss_bram_data_out" is new
+DEBUG - 2020-08-15 12:15:49,848 - jasper.verilog - Attempting to add port "rfdc_multi_cores_mode2_snapshot1_01_ss_ctrl_user_data_out" (parent sig: False, parent port: False)
+DEBUG - 2020-08-15 12:15:49,848 - jasper.verilog -   Port "rfdc_multi_cores_mode2_snapshot1_01_ss_ctrl_user_data_out" is new
+DEBUG - 2020-08-15 12:15:49,848 - jasper.verilog - Attempting to add port "rfdc_multi_cores_mode2_snapshot1_23_ss_bram_data_out" (parent sig: False, parent port: False)
+DEBUG - 2020-08-15 12:15:49,848 - jasper.verilog -   Port "rfdc_multi_cores_mode2_snapshot1_23_ss_bram_data_out" is new
+DEBUG - 2020-08-15 12:15:49,848 - jasper.verilog - Attempting to add port "rfdc_multi_cores_mode2_snapshot1_23_ss_ctrl_user_data_out" (parent sig: False, parent port: False)
+DEBUG - 2020-08-15 12:15:49,848 - jasper.verilog -   Port "rfdc_multi_cores_mode2_snapshot1_23_ss_ctrl_user_data_out" is new
+DEBUG - 2020-08-15 12:15:49,848 - jasper.verilog - Attempting to add port "rfdc_multi_cores_mode2_snapshot1_45_ss_bram_data_out" (parent sig: False, parent port: False)
+DEBUG - 2020-08-15 12:15:49,848 - jasper.verilog -   Port "rfdc_multi_cores_mode2_snapshot1_45_ss_bram_data_out" is new
+DEBUG - 2020-08-15 12:15:49,848 - jasper.verilog - Attempting to add port "rfdc_multi_cores_mode2_snapshot1_45_ss_ctrl_user_data_out" (parent sig: False, parent port: False)
+DEBUG - 2020-08-15 12:15:49,848 - jasper.verilog -   Port "rfdc_multi_cores_mode2_snapshot1_45_ss_ctrl_user_data_out" is new
+DEBUG - 2020-08-15 12:15:49,848 - jasper.verilog - Attempting to add port "rfdc_multi_cores_mode2_snapshot1_67_ss_bram_data_out" (parent sig: False, parent port: False)
+DEBUG - 2020-08-15 12:15:49,848 - jasper.verilog -   Port "rfdc_multi_cores_mode2_snapshot1_67_ss_bram_data_out" is new
+DEBUG - 2020-08-15 12:15:49,848 - jasper.verilog - Attempting to add port "rfdc_multi_cores_mode2_snapshot1_67_ss_ctrl_user_data_out" (parent sig: False, parent port: False)
+DEBUG - 2020-08-15 12:15:49,848 - jasper.verilog -   Port "rfdc_multi_cores_mode2_snapshot1_67_ss_ctrl_user_data_out" is new
+DEBUG - 2020-08-15 12:15:49,849 - jasper.verilog - Attempting to add port "rfdc_multi_cores_mode2_gpio_led_gateway" (parent sig: False, parent port: False)
+DEBUG - 2020-08-15 12:15:49,849 - jasper.verilog -   Port "rfdc_multi_cores_mode2_gpio_led_gateway" is new
+DEBUG - 2020-08-15 12:15:49,849 - jasper.verilog - Attempting to add port "rfdc_multi_cores_mode2_gpio_led1_gateway" (parent sig: False, parent port: False)
+DEBUG - 2020-08-15 12:15:49,849 - jasper.verilog -   Port "rfdc_multi_cores_mode2_gpio_led1_gateway" is new
+DEBUG - 2020-08-15 12:15:49,849 - jasper.verilog - Attempting to add port "rfdc_multi_cores_mode2_rfdc_V0_2_dac0_din" (parent sig: False, parent port: False)
+DEBUG - 2020-08-15 12:15:49,849 - jasper.verilog -   Port "rfdc_multi_cores_mode2_rfdc_V0_2_dac0_din" is new
+DEBUG - 2020-08-15 12:15:49,849 - jasper.verilog - Attempting to add port "rfdc_multi_cores_mode2_rfdc_V0_2_dac0_valid" (parent sig: False, parent port: False)
+DEBUG - 2020-08-15 12:15:49,849 - jasper.verilog -   Port "rfdc_multi_cores_mode2_rfdc_V0_2_dac0_valid" is new
+DEBUG - 2020-08-15 12:15:49,849 - jasper.verilog - Attempting to add port "rfdc_multi_cores_mode2_rfdc_V0_2_dac1_din" (parent sig: False, parent port: False)
+DEBUG - 2020-08-15 12:15:49,849 - jasper.verilog -   Port "rfdc_multi_cores_mode2_rfdc_V0_2_dac1_din" is new
+DEBUG - 2020-08-15 12:15:49,849 - jasper.verilog - Attempting to add port "rfdc_multi_cores_mode2_rfdc_V0_2_dac1_valid" (parent sig: False, parent port: False)
+DEBUG - 2020-08-15 12:15:49,849 - jasper.verilog -   Port "rfdc_multi_cores_mode2_rfdc_V0_2_dac1_valid" is new
+DEBUG - 2020-08-15 12:15:49,849 - jasper.verilog - Attempting to add port "rfdc_multi_cores_mode2_snapshot0_01_ss_bram_addr" (parent sig: False, parent port: False)
+DEBUG - 2020-08-15 12:15:49,849 - jasper.verilog -   Port "rfdc_multi_cores_mode2_snapshot0_01_ss_bram_addr" is new
+DEBUG - 2020-08-15 12:15:49,849 - jasper.verilog - Attempting to add port "rfdc_multi_cores_mode2_snapshot0_01_ss_bram_data_in" (parent sig: False, parent port: False)
+DEBUG - 2020-08-15 12:15:49,849 - jasper.verilog -   Port "rfdc_multi_cores_mode2_snapshot0_01_ss_bram_data_in" is new
+DEBUG - 2020-08-15 12:15:49,849 - jasper.verilog - Attempting to add port "rfdc_multi_cores_mode2_snapshot0_01_ss_bram_we" (parent sig: False, parent port: False)
+DEBUG - 2020-08-15 12:15:49,849 - jasper.verilog -   Port "rfdc_multi_cores_mode2_snapshot0_01_ss_bram_we" is new
+DEBUG - 2020-08-15 12:15:49,849 - jasper.verilog - Attempting to add port "rfdc_multi_cores_mode2_snapshot0_01_ss_status_user_data_in" (parent sig: False, parent port: False)
+DEBUG - 2020-08-15 12:15:49,850 - jasper.verilog -   Port "rfdc_multi_cores_mode2_snapshot0_01_ss_status_user_data_in" is new
+DEBUG - 2020-08-15 12:15:49,850 - jasper.verilog - Attempting to add port "rfdc_multi_cores_mode2_snapshot0_23_ss_bram_addr" (parent sig: False, parent port: False)
+DEBUG - 2020-08-15 12:15:49,850 - jasper.verilog -   Port "rfdc_multi_cores_mode2_snapshot0_23_ss_bram_addr" is new
+DEBUG - 2020-08-15 12:15:49,850 - jasper.verilog - Attempting to add port "rfdc_multi_cores_mode2_snapshot0_23_ss_bram_data_in" (parent sig: False, parent port: False)
+DEBUG - 2020-08-15 12:15:49,850 - jasper.verilog -   Port "rfdc_multi_cores_mode2_snapshot0_23_ss_bram_data_in" is new
+DEBUG - 2020-08-15 12:15:49,850 - jasper.verilog - Attempting to add port "rfdc_multi_cores_mode2_snapshot0_23_ss_bram_we" (parent sig: False, parent port: False)
+DEBUG - 2020-08-15 12:15:49,850 - jasper.verilog -   Port "rfdc_multi_cores_mode2_snapshot0_23_ss_bram_we" is new
+DEBUG - 2020-08-15 12:15:49,850 - jasper.verilog - Attempting to add port "rfdc_multi_cores_mode2_snapshot0_23_ss_status_user_data_in" (parent sig: False, parent port: False)
+DEBUG - 2020-08-15 12:15:49,850 - jasper.verilog -   Port "rfdc_multi_cores_mode2_snapshot0_23_ss_status_user_data_in" is new
+DEBUG - 2020-08-15 12:15:49,850 - jasper.verilog - Attempting to add port "rfdc_multi_cores_mode2_snapshot0_45_ss_bram_addr" (parent sig: False, parent port: False)
+DEBUG - 2020-08-15 12:15:49,850 - jasper.verilog -   Port "rfdc_multi_cores_mode2_snapshot0_45_ss_bram_addr" is new
+DEBUG - 2020-08-15 12:15:49,850 - jasper.verilog - Attempting to add port "rfdc_multi_cores_mode2_snapshot0_45_ss_bram_data_in" (parent sig: False, parent port: False)
+DEBUG - 2020-08-15 12:15:49,850 - jasper.verilog -   Port "rfdc_multi_cores_mode2_snapshot0_45_ss_bram_data_in" is new
+DEBUG - 2020-08-15 12:15:49,850 - jasper.verilog - Attempting to add port "rfdc_multi_cores_mode2_snapshot0_45_ss_bram_we" (parent sig: False, parent port: False)
+DEBUG - 2020-08-15 12:15:49,850 - jasper.verilog -   Port "rfdc_multi_cores_mode2_snapshot0_45_ss_bram_we" is new
+DEBUG - 2020-08-15 12:15:49,850 - jasper.verilog - Attempting to add port "rfdc_multi_cores_mode2_snapshot0_45_ss_status_user_data_in" (parent sig: False, parent port: False)
+DEBUG - 2020-08-15 12:15:49,850 - jasper.verilog -   Port "rfdc_multi_cores_mode2_snapshot0_45_ss_status_user_data_in" is new
+DEBUG - 2020-08-15 12:15:49,850 - jasper.verilog - Attempting to add port "rfdc_multi_cores_mode2_snapshot0_67_ss_bram_addr" (parent sig: False, parent port: False)
+DEBUG - 2020-08-15 12:15:49,850 - jasper.verilog -   Port "rfdc_multi_cores_mode2_snapshot0_67_ss_bram_addr" is new
+DEBUG - 2020-08-15 12:15:49,850 - jasper.verilog - Attempting to add port "rfdc_multi_cores_mode2_snapshot0_67_ss_bram_data_in" (parent sig: False, parent port: False)
+DEBUG - 2020-08-15 12:15:49,851 - jasper.verilog -   Port "rfdc_multi_cores_mode2_snapshot0_67_ss_bram_data_in" is new
+DEBUG - 2020-08-15 12:15:49,851 - jasper.verilog - Attempting to add port "rfdc_multi_cores_mode2_snapshot0_67_ss_bram_we" (parent sig: False, parent port: False)
+DEBUG - 2020-08-15 12:15:49,851 - jasper.verilog -   Port "rfdc_multi_cores_mode2_snapshot0_67_ss_bram_we" is new
+DEBUG - 2020-08-15 12:15:49,851 - jasper.verilog - Attempting to add port "rfdc_multi_cores_mode2_snapshot0_67_ss_status_user_data_in" (parent sig: False, parent port: False)
+DEBUG - 2020-08-15 12:15:49,851 - jasper.verilog -   Port "rfdc_multi_cores_mode2_snapshot0_67_ss_status_user_data_in" is new
+DEBUG - 2020-08-15 12:15:49,851 - jasper.verilog - Attempting to add port "rfdc_multi_cores_mode2_snapshot1_01_ss_bram_addr" (parent sig: False, parent port: False)
+DEBUG - 2020-08-15 12:15:49,851 - jasper.verilog -   Port "rfdc_multi_cores_mode2_snapshot1_01_ss_bram_addr" is new
+DEBUG - 2020-08-15 12:15:49,851 - jasper.verilog - Attempting to add port "rfdc_multi_cores_mode2_snapshot1_01_ss_bram_data_in" (parent sig: False, parent port: False)
+DEBUG - 2020-08-15 12:15:49,851 - jasper.verilog -   Port "rfdc_multi_cores_mode2_snapshot1_01_ss_bram_data_in" is new
+DEBUG - 2020-08-15 12:15:49,851 - jasper.verilog - Attempting to add port "rfdc_multi_cores_mode2_snapshot1_01_ss_bram_we" (parent sig: False, parent port: False)
+DEBUG - 2020-08-15 12:15:49,851 - jasper.verilog -   Port "rfdc_multi_cores_mode2_snapshot1_01_ss_bram_we" is new
+DEBUG - 2020-08-15 12:15:49,851 - jasper.verilog - Attempting to add port "rfdc_multi_cores_mode2_snapshot1_01_ss_status_user_data_in" (parent sig: False, parent port: False)
+DEBUG - 2020-08-15 12:15:49,851 - jasper.verilog -   Port "rfdc_multi_cores_mode2_snapshot1_01_ss_status_user_data_in" is new
+DEBUG - 2020-08-15 12:15:49,851 - jasper.verilog - Attempting to add port "rfdc_multi_cores_mode2_snapshot1_23_ss_bram_addr" (parent sig: False, parent port: False)
+DEBUG - 2020-08-15 12:15:49,851 - jasper.verilog -   Port "rfdc_multi_cores_mode2_snapshot1_23_ss_bram_addr" is new
+DEBUG - 2020-08-15 12:15:49,851 - jasper.verilog - Attempting to add port "rfdc_multi_cores_mode2_snapshot1_23_ss_bram_data_in" (parent sig: False, parent port: False)
+DEBUG - 2020-08-15 12:15:49,851 - jasper.verilog -   Port "rfdc_multi_cores_mode2_snapshot1_23_ss_bram_data_in" is new
+DEBUG - 2020-08-15 12:15:49,851 - jasper.verilog - Attempting to add port "rfdc_multi_cores_mode2_snapshot1_23_ss_bram_we" (parent sig: False, parent port: False)
+DEBUG - 2020-08-15 12:15:49,851 - jasper.verilog -   Port "rfdc_multi_cores_mode2_snapshot1_23_ss_bram_we" is new
+DEBUG - 2020-08-15 12:15:49,851 - jasper.verilog - Attempting to add port "rfdc_multi_cores_mode2_snapshot1_23_ss_status_user_data_in" (parent sig: False, parent port: False)
+DEBUG - 2020-08-15 12:15:49,851 - jasper.verilog -   Port "rfdc_multi_cores_mode2_snapshot1_23_ss_status_user_data_in" is new
+DEBUG - 2020-08-15 12:15:49,852 - jasper.verilog - Attempting to add port "rfdc_multi_cores_mode2_snapshot1_45_ss_bram_addr" (parent sig: False, parent port: False)
+DEBUG - 2020-08-15 12:15:49,852 - jasper.verilog -   Port "rfdc_multi_cores_mode2_snapshot1_45_ss_bram_addr" is new
+DEBUG - 2020-08-15 12:15:49,852 - jasper.verilog - Attempting to add port "rfdc_multi_cores_mode2_snapshot1_45_ss_bram_data_in" (parent sig: False, parent port: False)
+DEBUG - 2020-08-15 12:15:49,852 - jasper.verilog -   Port "rfdc_multi_cores_mode2_snapshot1_45_ss_bram_data_in" is new
+DEBUG - 2020-08-15 12:15:49,852 - jasper.verilog - Attempting to add port "rfdc_multi_cores_mode2_snapshot1_45_ss_bram_we" (parent sig: False, parent port: False)
+DEBUG - 2020-08-15 12:15:49,852 - jasper.verilog -   Port "rfdc_multi_cores_mode2_snapshot1_45_ss_bram_we" is new
+DEBUG - 2020-08-15 12:15:49,852 - jasper.verilog - Attempting to add port "rfdc_multi_cores_mode2_snapshot1_45_ss_status_user_data_in" (parent sig: False, parent port: False)
+DEBUG - 2020-08-15 12:15:49,852 - jasper.verilog -   Port "rfdc_multi_cores_mode2_snapshot1_45_ss_status_user_data_in" is new
+DEBUG - 2020-08-15 12:15:49,852 - jasper.verilog - Attempting to add port "rfdc_multi_cores_mode2_snapshot1_67_ss_bram_addr" (parent sig: False, parent port: False)
+DEBUG - 2020-08-15 12:15:49,852 - jasper.verilog -   Port "rfdc_multi_cores_mode2_snapshot1_67_ss_bram_addr" is new
+DEBUG - 2020-08-15 12:15:49,852 - jasper.verilog - Attempting to add port "rfdc_multi_cores_mode2_snapshot1_67_ss_bram_data_in" (parent sig: False, parent port: False)
+DEBUG - 2020-08-15 12:15:49,852 - jasper.verilog -   Port "rfdc_multi_cores_mode2_snapshot1_67_ss_bram_data_in" is new
+DEBUG - 2020-08-15 12:15:49,852 - jasper.verilog - Attempting to add port "rfdc_multi_cores_mode2_snapshot1_67_ss_bram_we" (parent sig: False, parent port: False)
+DEBUG - 2020-08-15 12:15:49,852 - jasper.verilog -   Port "rfdc_multi_cores_mode2_snapshot1_67_ss_bram_we" is new
+DEBUG - 2020-08-15 12:15:49,852 - jasper.verilog - Attempting to add port "rfdc_multi_cores_mode2_snapshot1_67_ss_status_user_data_in" (parent sig: False, parent port: False)
+DEBUG - 2020-08-15 12:15:49,852 - jasper.verilog -   Port "rfdc_multi_cores_mode2_snapshot1_67_ss_status_user_data_in" is new
+DEBUG - 2020-08-15 12:15:49,852 - jasper.verilog - Attempting to add port "rfdc_multi_cores_mode2_sync_state0_user_data_in" (parent sig: False, parent port: False)
+DEBUG - 2020-08-15 12:15:49,852 - jasper.verilog -   Port "rfdc_multi_cores_mode2_sync_state0_user_data_in" is new
+DEBUG - 2020-08-15 12:15:49,852 - jasper.verilog - Attempting to add port "rfdc_multi_cores_mode2_sync_state1_user_data_in" (parent sig: False, parent port: False)
+DEBUG - 2020-08-15 12:15:49,853 - jasper.verilog -   Port "rfdc_multi_cores_mode2_sync_state1_user_data_in" is new
+INFO - 2020-08-15 12:15:49,853 - jasper.toolflow - regenerating top
+DEBUG - 2020-08-15 12:15:49,853 - jasper.toolflow - Looking for a max_devices_per_arbiter spec
+DEBUG - 2020-08-15 12:15:49,853 - jasper.verilog - Instantiating child ports for rfdc_multi_cores_mode2_gpio_led
+DEBUG - 2020-08-15 12:15:49,853 - jasper.verilog -   Adding instance port gateway as signal rfdc_multi_cores_mode2_gpio_led_gateway to top
+DEBUG - 2020-08-15 12:15:49,853 - jasper.verilog -   Signal "rfdc_multi_cores_mode2_gpio_led_gateway" is new
+DEBUG - 2020-08-15 12:15:49,853 - jasper.verilog -   Adding instance port io_pad to top
+DEBUG - 2020-08-15 12:15:49,853 - jasper.verilog - Attempting to add port "rfdc_multi_cores_mode2_gpio_led_ext" (parent sig: False, parent port: False)
+DEBUG - 2020-08-15 12:15:49,853 - jasper.verilog -   Port "rfdc_multi_cores_mode2_gpio_led_ext" is new
+DEBUG - 2020-08-15 12:15:49,854 - jasper.verilog - Instantiating child ports for rfdc_multi_cores_mode2_gpio_led1
+DEBUG - 2020-08-15 12:15:49,854 - jasper.verilog -   Adding instance port gateway as signal rfdc_multi_cores_mode2_gpio_led1_gateway to top
+DEBUG - 2020-08-15 12:15:49,854 - jasper.verilog -   Signal "rfdc_multi_cores_mode2_gpio_led1_gateway" is new
+DEBUG - 2020-08-15 12:15:49,854 - jasper.verilog -   Adding instance port io_pad to top
+DEBUG - 2020-08-15 12:15:49,854 - jasper.verilog - Attempting to add port "rfdc_multi_cores_mode2_gpio_led1_ext" (parent sig: False, parent port: False)
+DEBUG - 2020-08-15 12:15:49,854 - jasper.verilog -   Port "rfdc_multi_cores_mode2_gpio_led1_ext" is new
+DEBUG - 2020-08-15 12:15:49,854 - jasper.verilog - Instantiating child ports for rfdc_multi_cores_mode2_led_cntrl
+DEBUG - 2020-08-15 12:15:49,854 - jasper.verilog -   Adding instance port IP_BUS as signal rfdc_multi_cores_mode2_led_cntrl_out to top
+DEBUG - 2020-08-15 12:15:49,854 - jasper.verilog -   Signal "rfdc_multi_cores_mode2_led_cntrl_out" is new
+DEBUG - 2020-08-15 12:15:49,854 - jasper.verilog -   Adding instance port OP_BUS as signal rfdc_multi_cores_mode2_led_cntrl_user_data_out to top
+DEBUG - 2020-08-15 12:15:49,854 - jasper.verilog -   Signal "rfdc_multi_cores_mode2_led_cntrl_user_data_out" is new
+DEBUG - 2020-08-15 12:15:49,854 - jasper.verilog - Instantiating child ports for rfdc_multi_cores_mode2_reg_cntrl
+DEBUG - 2020-08-15 12:15:49,854 - jasper.verilog -   Adding instance port IP_BUS as signal rfdc_multi_cores_mode2_reg_cntrl_out to top
+DEBUG - 2020-08-15 12:15:49,854 - jasper.verilog -   Signal "rfdc_multi_cores_mode2_reg_cntrl_out" is new
+DEBUG - 2020-08-15 12:15:49,854 - jasper.verilog -   Adding instance port OP_BUS as signal rfdc_multi_cores_mode2_reg_cntrl_user_data_out to top
+DEBUG - 2020-08-15 12:15:49,854 - jasper.verilog -   Signal "rfdc_multi_cores_mode2_reg_cntrl_user_data_out" is new
+DEBUG - 2020-08-15 12:15:49,854 - jasper.verilog - Instantiating child ports for rfdc_multi_cores_mode2_rfdc_V0_2
+DEBUG - 2020-08-15 12:15:49,854 - jasper.verilog -   Adding instance port adc0_clk_n as signal adc0_clk_clk_n to top
+DEBUG - 2020-08-15 12:15:49,855 - jasper.verilog -   Signal "adc0_clk_clk_n" is new
+DEBUG - 2020-08-15 12:15:49,855 - jasper.verilog -   Adding instance port adc0_clk_p as signal adc0_clk_clk_p to top
+DEBUG - 2020-08-15 12:15:49,855 - jasper.verilog -   Signal "adc0_clk_clk_p" is new
+DEBUG - 2020-08-15 12:15:49,855 - jasper.verilog -   Adding instance port clk_adc0 as signal rfdc_multi_cores_mode2_rfdc_V0_2_adc0_clk to top
+DEBUG - 2020-08-15 12:15:49,855 - jasper.verilog -   Signal "rfdc_multi_cores_mode2_rfdc_V0_2_adc0_clk" is new
+DEBUG - 2020-08-15 12:15:49,855 - jasper.verilog -   Adding instance port clk_dac1 as signal rfdc_multi_cores_mode2_rfdc_V0_2_dac1_clk to top
+DEBUG - 2020-08-15 12:15:49,855 - jasper.verilog -   Signal "rfdc_multi_cores_mode2_rfdc_V0_2_dac1_clk" is new
+DEBUG - 2020-08-15 12:15:49,855 - jasper.verilog -   Adding instance port dac1_clk_n as signal dac0_clk_clk_n to top
+DEBUG - 2020-08-15 12:15:49,855 - jasper.verilog -   Signal "dac0_clk_clk_n" is new
+DEBUG - 2020-08-15 12:15:49,855 - jasper.verilog -   Adding instance port dac1_clk_p as signal dac0_clk_clk_p to top
+DEBUG - 2020-08-15 12:15:49,855 - jasper.verilog -   Signal "dac0_clk_clk_p" is new
+DEBUG - 2020-08-15 12:15:49,855 - jasper.verilog -   Adding instance port irq as signal irq to top
+DEBUG - 2020-08-15 12:15:49,855 - jasper.verilog -   Signal "irq" is new
+DEBUG - 2020-08-15 12:15:49,855 - jasper.verilog -   Adding instance port m00_axis_tdata as signal rfdc_multi_cores_mode2_rfdc_V0_2_adc0_dout to top
+DEBUG - 2020-08-15 12:15:49,855 - jasper.verilog -   Signal "rfdc_multi_cores_mode2_rfdc_V0_2_adc0_dout" already exists
+DEBUG - 2020-08-15 12:15:49,855 - jasper.verilog -   Adding instance port m00_axis_tvalid as signal rfdc_multi_cores_mode2_rfdc_V0_2_adc0_sync to top
+DEBUG - 2020-08-15 12:15:49,855 - jasper.verilog -   Signal "rfdc_multi_cores_mode2_rfdc_V0_2_adc0_sync" is new
+DEBUG - 2020-08-15 12:15:49,855 - jasper.verilog -   Adding instance port m02_axis_tdata as signal rfdc_multi_cores_mode2_rfdc_V0_2_adc1_dout to top
+DEBUG - 2020-08-15 12:15:49,855 - jasper.verilog -   Signal "rfdc_multi_cores_mode2_rfdc_V0_2_adc1_dout" is new
+DEBUG - 2020-08-15 12:15:49,856 - jasper.verilog -   Adding instance port m02_axis_tvalid as signal rfdc_multi_cores_mode2_rfdc_V0_2_adc1_sync to top
+DEBUG - 2020-08-15 12:15:49,856 - jasper.verilog -   Signal "rfdc_multi_cores_mode2_rfdc_V0_2_adc1_sync" is new
+DEBUG - 2020-08-15 12:15:49,856 - jasper.verilog -   Adding instance port m0_axis_aclk as signal user_clk to top
+DEBUG - 2020-08-15 12:15:49,856 - jasper.verilog -   Signal "user_clk" already exists
+DEBUG - 2020-08-15 12:15:49,856 - jasper.verilog -   Adding instance port s12_axis_tdata as signal rfdc_multi_cores_mode2_rfdc_V0_2_dac0_din to top
+DEBUG - 2020-08-15 12:15:49,856 - jasper.verilog -   Signal "rfdc_multi_cores_mode2_rfdc_V0_2_dac0_din" is new
+DEBUG - 2020-08-15 12:15:49,856 - jasper.verilog -   Adding instance port s12_axis_tready as signal rfdc_multi_cores_mode2_rfdc_V0_2_dac0_valid to top
+DEBUG - 2020-08-15 12:15:49,856 - jasper.verilog -   Signal "rfdc_multi_cores_mode2_rfdc_V0_2_dac0_valid" is new
+DEBUG - 2020-08-15 12:15:49,856 - jasper.verilog -   Adding instance port s13_axis_tdata as signal rfdc_multi_cores_mode2_rfdc_V0_2_dac1_din to top
+DEBUG - 2020-08-15 12:15:49,856 - jasper.verilog -   Signal "rfdc_multi_cores_mode2_rfdc_V0_2_dac1_din" is new
+DEBUG - 2020-08-15 12:15:49,856 - jasper.verilog -   Adding instance port s13_axis_tready as signal rfdc_multi_cores_mode2_rfdc_V0_2_dac1_valid to top
+DEBUG - 2020-08-15 12:15:49,856 - jasper.verilog -   Signal "rfdc_multi_cores_mode2_rfdc_V0_2_dac1_valid" is new
+DEBUG - 2020-08-15 12:15:49,856 - jasper.verilog -   Adding instance port s1_axis_aclk as signal user_clk to top
+DEBUG - 2020-08-15 12:15:49,856 - jasper.verilog -   Signal "user_clk" already exists
+DEBUG - 2020-08-15 12:15:49,856 - jasper.verilog -   Adding instance port sysref_in_n as signal sysref_in_n to top
+DEBUG - 2020-08-15 12:15:49,856 - jasper.verilog -   Signal "sysref_in_n" is new
+DEBUG - 2020-08-15 12:15:49,856 - jasper.verilog -   Adding instance port sysref_in_p as signal sysref_in_p to top
+DEBUG - 2020-08-15 12:15:49,856 - jasper.verilog -   Signal "sysref_in_p" is new
+DEBUG - 2020-08-15 12:15:49,856 - jasper.verilog -   Adding instance port vin0_01_n as signal vin0_01_n to top
+DEBUG - 2020-08-15 12:15:49,857 - jasper.verilog -   Signal "vin0_01_n" is new
+DEBUG - 2020-08-15 12:15:49,857 - jasper.verilog -   Adding instance port vin0_01_p as signal vin0_01_p to top
+DEBUG - 2020-08-15 12:15:49,857 - jasper.verilog -   Signal "vin0_01_p" is new
+DEBUG - 2020-08-15 12:15:49,857 - jasper.verilog -   Adding instance port vin0_23_n as signal vin0_23_n to top
+DEBUG - 2020-08-15 12:15:49,857 - jasper.verilog -   Signal "vin0_23_n" is new
+DEBUG - 2020-08-15 12:15:49,857 - jasper.verilog -   Adding instance port vin0_23_p as signal vin0_23_p to top
+DEBUG - 2020-08-15 12:15:49,857 - jasper.verilog -   Signal "vin0_23_p" is new
+DEBUG - 2020-08-15 12:15:49,857 - jasper.verilog -   Adding instance port vout12_n as signal vout12_n to top
+DEBUG - 2020-08-15 12:15:49,857 - jasper.verilog -   Signal "vout12_n" is new
+DEBUG - 2020-08-15 12:15:49,857 - jasper.verilog -   Adding instance port vout12_p as signal vout12_p to top
+DEBUG - 2020-08-15 12:15:49,857 - jasper.verilog -   Signal "vout12_p" is new
+DEBUG - 2020-08-15 12:15:49,857 - jasper.verilog -   Adding instance port vout13_n as signal vout13_n to top
+DEBUG - 2020-08-15 12:15:49,857 - jasper.verilog -   Signal "vout13_n" is new
+DEBUG - 2020-08-15 12:15:49,857 - jasper.verilog -   Adding instance port vout13_p as signal vout13_p to top
+DEBUG - 2020-08-15 12:15:49,857 - jasper.verilog -   Signal "vout13_p" is new
+DEBUG - 2020-08-15 12:15:49,857 - jasper.verilog - Instantiating child ports for rfdc_multi_cores_mode2_snapshot0_01_ss_ctrl
+DEBUG - 2020-08-15 12:15:49,857 - jasper.verilog -   Adding instance port IP_BUS as signal rfdc_multi_cores_mode2_snapshot0_01_ss_ctrl_out to top
+DEBUG - 2020-08-15 12:15:49,858 - jasper.verilog -   Signal "rfdc_multi_cores_mode2_snapshot0_01_ss_ctrl_out" is new
+DEBUG - 2020-08-15 12:15:49,858 - jasper.verilog -   Adding instance port OP_BUS as signal rfdc_multi_cores_mode2_snapshot0_01_ss_ctrl_user_data_out to top
+DEBUG - 2020-08-15 12:15:49,858 - jasper.verilog -   Signal "rfdc_multi_cores_mode2_snapshot0_01_ss_ctrl_user_data_out" is new
+DEBUG - 2020-08-15 12:15:49,858 - jasper.verilog - Instantiating child ports for rfdc_multi_cores_mode2_snapshot0_01_ss_status
+DEBUG - 2020-08-15 12:15:49,858 - jasper.verilog -   Adding instance port IP_BUS as signal rfdc_multi_cores_mode2_snapshot0_01_ss_status_user_data_in to top
+DEBUG - 2020-08-15 12:15:49,858 - jasper.verilog -   Signal "rfdc_multi_cores_mode2_snapshot0_01_ss_status_user_data_in" is new
+DEBUG - 2020-08-15 12:15:49,858 - jasper.verilog -   Adding instance port OP_BUS as signal rfdc_multi_cores_mode2_snapshot0_01_ss_status_in to top
+DEBUG - 2020-08-15 12:15:49,858 - jasper.verilog -   Signal "rfdc_multi_cores_mode2_snapshot0_01_ss_status_in" is new
+DEBUG - 2020-08-15 12:15:49,858 - jasper.verilog - Instantiating child ports for rfdc_multi_cores_mode2_snapshot0_23_ss_ctrl
+DEBUG - 2020-08-15 12:15:49,858 - jasper.verilog -   Adding instance port IP_BUS as signal rfdc_multi_cores_mode2_snapshot0_23_ss_ctrl_out to top
+DEBUG - 2020-08-15 12:15:49,858 - jasper.verilog -   Signal "rfdc_multi_cores_mode2_snapshot0_23_ss_ctrl_out" is new
+DEBUG - 2020-08-15 12:15:49,858 - jasper.verilog -   Adding instance port OP_BUS as signal rfdc_multi_cores_mode2_snapshot0_23_ss_ctrl_user_data_out to top
+DEBUG - 2020-08-15 12:15:49,858 - jasper.verilog -   Signal "rfdc_multi_cores_mode2_snapshot0_23_ss_ctrl_user_data_out" is new
+DEBUG - 2020-08-15 12:15:49,858 - jasper.verilog - Instantiating child ports for rfdc_multi_cores_mode2_snapshot0_23_ss_status
+DEBUG - 2020-08-15 12:15:49,858 - jasper.verilog -   Adding instance port IP_BUS as signal rfdc_multi_cores_mode2_snapshot0_23_ss_status_user_data_in to top
+DEBUG - 2020-08-15 12:15:49,858 - jasper.verilog -   Signal "rfdc_multi_cores_mode2_snapshot0_23_ss_status_user_data_in" is new
+DEBUG - 2020-08-15 12:15:49,858 - jasper.verilog -   Adding instance port OP_BUS as signal rfdc_multi_cores_mode2_snapshot0_23_ss_status_in to top
+DEBUG - 2020-08-15 12:15:49,858 - jasper.verilog -   Signal "rfdc_multi_cores_mode2_snapshot0_23_ss_status_in" is new
+DEBUG - 2020-08-15 12:15:49,858 - jasper.verilog - Instantiating child ports for rfdc_multi_cores_mode2_snapshot0_45_ss_ctrl
+DEBUG - 2020-08-15 12:15:49,859 - jasper.verilog -   Adding instance port IP_BUS as signal rfdc_multi_cores_mode2_snapshot0_45_ss_ctrl_out to top
+DEBUG - 2020-08-15 12:15:49,859 - jasper.verilog -   Signal "rfdc_multi_cores_mode2_snapshot0_45_ss_ctrl_out" is new
+DEBUG - 2020-08-15 12:15:49,859 - jasper.verilog -   Adding instance port OP_BUS as signal rfdc_multi_cores_mode2_snapshot0_45_ss_ctrl_user_data_out to top
+DEBUG - 2020-08-15 12:15:49,859 - jasper.verilog -   Signal "rfdc_multi_cores_mode2_snapshot0_45_ss_ctrl_user_data_out" is new
+DEBUG - 2020-08-15 12:15:49,859 - jasper.verilog - Instantiating child ports for rfdc_multi_cores_mode2_snapshot0_45_ss_status
+DEBUG - 2020-08-15 12:15:49,859 - jasper.verilog -   Adding instance port IP_BUS as signal rfdc_multi_cores_mode2_snapshot0_45_ss_status_user_data_in to top
+DEBUG - 2020-08-15 12:15:49,859 - jasper.verilog -   Signal "rfdc_multi_cores_mode2_snapshot0_45_ss_status_user_data_in" is new
+DEBUG - 2020-08-15 12:15:49,859 - jasper.verilog -   Adding instance port OP_BUS as signal rfdc_multi_cores_mode2_snapshot0_45_ss_status_in to top
+DEBUG - 2020-08-15 12:15:49,859 - jasper.verilog -   Signal "rfdc_multi_cores_mode2_snapshot0_45_ss_status_in" is new
+DEBUG - 2020-08-15 12:15:49,859 - jasper.verilog - Instantiating child ports for rfdc_multi_cores_mode2_snapshot0_67_ss_ctrl
+DEBUG - 2020-08-15 12:15:49,859 - jasper.verilog -   Adding instance port IP_BUS as signal rfdc_multi_cores_mode2_snapshot0_67_ss_ctrl_out to top
+DEBUG - 2020-08-15 12:15:49,859 - jasper.verilog -   Signal "rfdc_multi_cores_mode2_snapshot0_67_ss_ctrl_out" is new
+DEBUG - 2020-08-15 12:15:49,859 - jasper.verilog -   Adding instance port OP_BUS as signal rfdc_multi_cores_mode2_snapshot0_67_ss_ctrl_user_data_out to top
+DEBUG - 2020-08-15 12:15:49,859 - jasper.verilog -   Signal "rfdc_multi_cores_mode2_snapshot0_67_ss_ctrl_user_data_out" is new
+DEBUG - 2020-08-15 12:15:49,859 - jasper.verilog - Instantiating child ports for rfdc_multi_cores_mode2_snapshot0_67_ss_status
+DEBUG - 2020-08-15 12:15:49,859 - jasper.verilog -   Adding instance port IP_BUS as signal rfdc_multi_cores_mode2_snapshot0_67_ss_status_user_data_in to top
+DEBUG - 2020-08-15 12:15:49,859 - jasper.verilog -   Signal "rfdc_multi_cores_mode2_snapshot0_67_ss_status_user_data_in" is new
+DEBUG - 2020-08-15 12:15:49,859 - jasper.verilog -   Adding instance port OP_BUS as signal rfdc_multi_cores_mode2_snapshot0_67_ss_status_in to top
+DEBUG - 2020-08-15 12:15:49,859 - jasper.verilog -   Signal "rfdc_multi_cores_mode2_snapshot0_67_ss_status_in" is new
+DEBUG - 2020-08-15 12:15:49,860 - jasper.verilog - Instantiating child ports for rfdc_multi_cores_mode2_snapshot1_01_ss_ctrl
+DEBUG - 2020-08-15 12:15:49,860 - jasper.verilog -   Adding instance port IP_BUS as signal rfdc_multi_cores_mode2_snapshot1_01_ss_ctrl_out to top
+DEBUG - 2020-08-15 12:15:49,860 - jasper.verilog -   Signal "rfdc_multi_cores_mode2_snapshot1_01_ss_ctrl_out" is new
+DEBUG - 2020-08-15 12:15:49,860 - jasper.verilog -   Adding instance port OP_BUS as signal rfdc_multi_cores_mode2_snapshot1_01_ss_ctrl_user_data_out to top
+DEBUG - 2020-08-15 12:15:49,860 - jasper.verilog -   Signal "rfdc_multi_cores_mode2_snapshot1_01_ss_ctrl_user_data_out" is new
+DEBUG - 2020-08-15 12:15:49,860 - jasper.verilog - Instantiating child ports for rfdc_multi_cores_mode2_snapshot1_01_ss_status
+DEBUG - 2020-08-15 12:15:49,860 - jasper.verilog -   Adding instance port IP_BUS as signal rfdc_multi_cores_mode2_snapshot1_01_ss_status_user_data_in to top
+DEBUG - 2020-08-15 12:15:49,860 - jasper.verilog -   Signal "rfdc_multi_cores_mode2_snapshot1_01_ss_status_user_data_in" is new
+DEBUG - 2020-08-15 12:15:49,860 - jasper.verilog -   Adding instance port OP_BUS as signal rfdc_multi_cores_mode2_snapshot1_01_ss_status_in to top
+DEBUG - 2020-08-15 12:15:49,860 - jasper.verilog -   Signal "rfdc_multi_cores_mode2_snapshot1_01_ss_status_in" is new
+DEBUG - 2020-08-15 12:15:49,860 - jasper.verilog - Instantiating child ports for rfdc_multi_cores_mode2_snapshot1_23_ss_ctrl
+DEBUG - 2020-08-15 12:15:49,860 - jasper.verilog -   Adding instance port IP_BUS as signal rfdc_multi_cores_mode2_snapshot1_23_ss_ctrl_out to top
+DEBUG - 2020-08-15 12:15:49,860 - jasper.verilog -   Signal "rfdc_multi_cores_mode2_snapshot1_23_ss_ctrl_out" is new
+DEBUG - 2020-08-15 12:15:49,860 - jasper.verilog -   Adding instance port OP_BUS as signal rfdc_multi_cores_mode2_snapshot1_23_ss_ctrl_user_data_out to top
+DEBUG - 2020-08-15 12:15:49,860 - jasper.verilog -   Signal "rfdc_multi_cores_mode2_snapshot1_23_ss_ctrl_user_data_out" is new
+DEBUG - 2020-08-15 12:15:49,860 - jasper.verilog - Instantiating child ports for rfdc_multi_cores_mode2_snapshot1_23_ss_status
+DEBUG - 2020-08-15 12:15:49,860 - jasper.verilog -   Adding instance port IP_BUS as signal rfdc_multi_cores_mode2_snapshot1_23_ss_status_user_data_in to top
+DEBUG - 2020-08-15 12:15:49,860 - jasper.verilog -   Signal "rfdc_multi_cores_mode2_snapshot1_23_ss_status_user_data_in" is new
+DEBUG - 2020-08-15 12:15:49,860 - jasper.verilog -   Adding instance port OP_BUS as signal rfdc_multi_cores_mode2_snapshot1_23_ss_status_in to top
+DEBUG - 2020-08-15 12:15:49,861 - jasper.verilog -   Signal "rfdc_multi_cores_mode2_snapshot1_23_ss_status_in" is new
+DEBUG - 2020-08-15 12:15:49,861 - jasper.verilog - Instantiating child ports for rfdc_multi_cores_mode2_snapshot1_45_ss_ctrl
+DEBUG - 2020-08-15 12:15:49,861 - jasper.verilog -   Adding instance port IP_BUS as signal rfdc_multi_cores_mode2_snapshot1_45_ss_ctrl_out to top
+DEBUG - 2020-08-15 12:15:49,861 - jasper.verilog -   Signal "rfdc_multi_cores_mode2_snapshot1_45_ss_ctrl_out" is new
+DEBUG - 2020-08-15 12:15:49,861 - jasper.verilog -   Adding instance port OP_BUS as signal rfdc_multi_cores_mode2_snapshot1_45_ss_ctrl_user_data_out to top
+DEBUG - 2020-08-15 12:15:49,861 - jasper.verilog -   Signal "rfdc_multi_cores_mode2_snapshot1_45_ss_ctrl_user_data_out" is new
+DEBUG - 2020-08-15 12:15:49,861 - jasper.verilog - Instantiating child ports for rfdc_multi_cores_mode2_snapshot1_45_ss_status
+DEBUG - 2020-08-15 12:15:49,861 - jasper.verilog -   Adding instance port IP_BUS as signal rfdc_multi_cores_mode2_snapshot1_45_ss_status_user_data_in to top
+DEBUG - 2020-08-15 12:15:49,861 - jasper.verilog -   Signal "rfdc_multi_cores_mode2_snapshot1_45_ss_status_user_data_in" is new
+DEBUG - 2020-08-15 12:15:49,861 - jasper.verilog -   Adding instance port OP_BUS as signal rfdc_multi_cores_mode2_snapshot1_45_ss_status_in to top
+DEBUG - 2020-08-15 12:15:49,861 - jasper.verilog -   Signal "rfdc_multi_cores_mode2_snapshot1_45_ss_status_in" is new
+DEBUG - 2020-08-15 12:15:49,861 - jasper.verilog - Instantiating child ports for rfdc_multi_cores_mode2_snapshot1_67_ss_ctrl
+DEBUG - 2020-08-15 12:15:49,861 - jasper.verilog -   Adding instance port IP_BUS as signal rfdc_multi_cores_mode2_snapshot1_67_ss_ctrl_out to top
+DEBUG - 2020-08-15 12:15:49,861 - jasper.verilog -   Signal "rfdc_multi_cores_mode2_snapshot1_67_ss_ctrl_out" is new
+DEBUG - 2020-08-15 12:15:49,861 - jasper.verilog -   Adding instance port OP_BUS as signal rfdc_multi_cores_mode2_snapshot1_67_ss_ctrl_user_data_out to top
+DEBUG - 2020-08-15 12:15:49,861 - jasper.verilog -   Signal "rfdc_multi_cores_mode2_snapshot1_67_ss_ctrl_user_data_out" is new
+DEBUG - 2020-08-15 12:15:49,861 - jasper.verilog - Instantiating child ports for rfdc_multi_cores_mode2_snapshot1_67_ss_status
+DEBUG - 2020-08-15 12:15:49,861 - jasper.verilog -   Adding instance port IP_BUS as signal rfdc_multi_cores_mode2_snapshot1_67_ss_status_user_data_in to top
+DEBUG - 2020-08-15 12:15:49,861 - jasper.verilog -   Signal "rfdc_multi_cores_mode2_snapshot1_67_ss_status_user_data_in" is new
+DEBUG - 2020-08-15 12:15:49,862 - jasper.verilog -   Adding instance port OP_BUS as signal rfdc_multi_cores_mode2_snapshot1_67_ss_status_in to top
+DEBUG - 2020-08-15 12:15:49,862 - jasper.verilog -   Signal "rfdc_multi_cores_mode2_snapshot1_67_ss_status_in" is new
+DEBUG - 2020-08-15 12:15:49,862 - jasper.verilog - Instantiating child ports for rfdc_multi_cores_mode2_sync_state0
+DEBUG - 2020-08-15 12:15:49,862 - jasper.verilog -   Adding instance port IP_BUS as signal rfdc_multi_cores_mode2_sync_state0_user_data_in to top
+DEBUG - 2020-08-15 12:15:49,862 - jasper.verilog -   Signal "rfdc_multi_cores_mode2_sync_state0_user_data_in" is new
+DEBUG - 2020-08-15 12:15:49,862 - jasper.verilog -   Adding instance port OP_BUS as signal rfdc_multi_cores_mode2_sync_state0_in to top
+DEBUG - 2020-08-15 12:15:49,862 - jasper.verilog -   Signal "rfdc_multi_cores_mode2_sync_state0_in" is new
+DEBUG - 2020-08-15 12:15:49,862 - jasper.verilog - Instantiating child ports for rfdc_multi_cores_mode2_sync_state1
+DEBUG - 2020-08-15 12:15:49,862 - jasper.verilog -   Adding instance port IP_BUS as signal rfdc_multi_cores_mode2_sync_state1_user_data_in to top
+DEBUG - 2020-08-15 12:15:49,862 - jasper.verilog -   Signal "rfdc_multi_cores_mode2_sync_state1_user_data_in" is new
+DEBUG - 2020-08-15 12:15:49,862 - jasper.verilog -   Adding instance port OP_BUS as signal rfdc_multi_cores_mode2_sync_state1_in to top
+DEBUG - 2020-08-15 12:15:49,862 - jasper.verilog -   Signal "rfdc_multi_cores_mode2_sync_state1_in" is new
+DEBUG - 2020-08-15 12:15:49,862 - jasper.verilog - Instantiating child ports for zcu111_inst
+DEBUG - 2020-08-15 12:15:49,862 - jasper.verilog -   Adding instance port axil_clk as signal axil_clk to top
+DEBUG - 2020-08-15 12:15:49,862 - jasper.verilog -   Signal "axil_clk" is new
+DEBUG - 2020-08-15 12:15:49,862 - jasper.verilog -   Adding instance port axil_rst as signal axil_rst to top
+DEBUG - 2020-08-15 12:15:49,862 - jasper.verilog -   Signal "axil_rst" is new
+DEBUG - 2020-08-15 12:15:49,862 - jasper.verilog -   Adding instance port axil_rst_n as signal axil_rst_n to top
+DEBUG - 2020-08-15 12:15:49,862 - jasper.verilog -   Signal "axil_rst_n" is new
+DEBUG - 2020-08-15 12:15:49,863 - jasper.verilog -   Adding instance port M_AXI_araddr as signal M_AXI_araddr to top
+DEBUG - 2020-08-15 12:15:49,863 - jasper.verilog -   Signal "M_AXI_araddr" is new
+DEBUG - 2020-08-15 12:15:49,863 - jasper.verilog -   Adding instance port M_AXI_arprot as signal M_AXI_arprot to top
+DEBUG - 2020-08-15 12:15:49,863 - jasper.verilog -   Signal "M_AXI_arprot" is new
+DEBUG - 2020-08-15 12:15:49,863 - jasper.verilog -   Adding instance port M_AXI_arready as signal M_AXI_arready to top
+DEBUG - 2020-08-15 12:15:49,863 - jasper.verilog -   Signal "M_AXI_arready" is new
+DEBUG - 2020-08-15 12:15:49,863 - jasper.verilog -   Adding instance port M_AXI_arvalid as signal M_AXI_arvalid to top
+DEBUG - 2020-08-15 12:15:49,863 - jasper.verilog -   Signal "M_AXI_arvalid" is new
+DEBUG - 2020-08-15 12:15:49,863 - jasper.verilog -   Adding instance port M_AXI_awaddr as signal M_AXI_awaddr to top
+DEBUG - 2020-08-15 12:15:49,863 - jasper.verilog -   Signal "M_AXI_awaddr" is new
+DEBUG - 2020-08-15 12:15:49,863 - jasper.verilog -   Adding instance port M_AXI_awprot as signal M_AXI_awprot to top
+DEBUG - 2020-08-15 12:15:49,863 - jasper.verilog -   Signal "M_AXI_awprot" is new
+DEBUG - 2020-08-15 12:15:49,863 - jasper.verilog -   Adding instance port M_AXI_awready as signal M_AXI_awready to top
+DEBUG - 2020-08-15 12:15:49,863 - jasper.verilog -   Signal "M_AXI_awready" is new
+DEBUG - 2020-08-15 12:15:49,863 - jasper.verilog -   Adding instance port M_AXI_awvalid as signal M_AXI_awvalid to top
+DEBUG - 2020-08-15 12:15:49,863 - jasper.verilog -   Signal "M_AXI_awvalid" is new
+DEBUG - 2020-08-15 12:15:49,863 - jasper.verilog -   Adding instance port M_AXI_bready as signal M_AXI_bready to top
+DEBUG - 2020-08-15 12:15:49,863 - jasper.verilog -   Signal "M_AXI_bready" is new
+DEBUG - 2020-08-15 12:15:49,863 - jasper.verilog -   Adding instance port M_AXI_bresp as signal M_AXI_bresp to top
+DEBUG - 2020-08-15 12:15:49,864 - jasper.verilog -   Signal "M_AXI_bresp" is new
+DEBUG - 2020-08-15 12:15:49,864 - jasper.verilog -   Adding instance port M_AXI_bvalid as signal M_AXI_bvalid to top
+DEBUG - 2020-08-15 12:15:49,864 - jasper.verilog -   Signal "M_AXI_bvalid" is new
+DEBUG - 2020-08-15 12:15:49,864 - jasper.verilog -   Adding instance port M_AXI_rdata as signal M_AXI_rdata to top
+DEBUG - 2020-08-15 12:15:49,864 - jasper.verilog -   Signal "M_AXI_rdata" is new
+DEBUG - 2020-08-15 12:15:49,864 - jasper.verilog -   Adding instance port M_AXI_rready as signal M_AXI_rready to top
+DEBUG - 2020-08-15 12:15:49,864 - jasper.verilog -   Signal "M_AXI_rready" is new
+DEBUG - 2020-08-15 12:15:49,864 - jasper.verilog -   Adding instance port M_AXI_rresp as signal M_AXI_rresp to top
+DEBUG - 2020-08-15 12:15:49,864 - jasper.verilog -   Signal "M_AXI_rresp" is new
+DEBUG - 2020-08-15 12:15:49,864 - jasper.verilog -   Adding instance port M_AXI_rvalid as signal M_AXI_rvalid to top
+DEBUG - 2020-08-15 12:15:49,864 - jasper.verilog -   Signal "M_AXI_rvalid" is new
+DEBUG - 2020-08-15 12:15:49,864 - jasper.verilog -   Adding instance port M_AXI_wdata as signal M_AXI_wdata to top
+DEBUG - 2020-08-15 12:15:49,864 - jasper.verilog -   Signal "M_AXI_wdata" is new
+DEBUG - 2020-08-15 12:15:49,864 - jasper.verilog -   Adding instance port M_AXI_wready as signal M_AXI_wready to top
+DEBUG - 2020-08-15 12:15:49,864 - jasper.verilog -   Signal "M_AXI_wready" is new
+DEBUG - 2020-08-15 12:15:49,864 - jasper.verilog -   Adding instance port M_AXI_wstrb as signal M_AXI_wstrb to top
+DEBUG - 2020-08-15 12:15:49,864 - jasper.verilog -   Signal "M_AXI_wstrb" is new
+DEBUG - 2020-08-15 12:15:49,864 - jasper.verilog -   Adding instance port M_AXI_wvalid as signal M_AXI_wvalid to top
+DEBUG - 2020-08-15 12:15:49,865 - jasper.verilog -   Signal "M_AXI_wvalid" is new
+DEBUG - 2020-08-15 12:15:49,865 - jasper.verilog -   Adding instance port M_AXI_RFDC_araddr as signal M_AXI_RFDC_araddr to top
+DEBUG - 2020-08-15 12:15:49,865 - jasper.verilog -   Signal "M_AXI_RFDC_araddr" is new
+DEBUG - 2020-08-15 12:15:49,865 - jasper.verilog -   Adding instance port M_AXI_RFDC_arprot as signal M_AXI_RFDC_arprot to top
+DEBUG - 2020-08-15 12:15:49,865 - jasper.verilog -   Signal "M_AXI_RFDC_arprot" is new
+DEBUG - 2020-08-15 12:15:49,865 - jasper.verilog -   Adding instance port M_AXI_RFDC_arready as signal M_AXI_RFDC_arready to top
+DEBUG - 2020-08-15 12:15:49,865 - jasper.verilog -   Signal "M_AXI_RFDC_arready" is new
+DEBUG - 2020-08-15 12:15:49,865 - jasper.verilog -   Adding instance port M_AXI_RFDC_arvalid as signal M_AXI_RFDC_arvalid to top
+DEBUG - 2020-08-15 12:15:49,865 - jasper.verilog -   Signal "M_AXI_RFDC_arvalid" is new
+DEBUG - 2020-08-15 12:15:49,865 - jasper.verilog -   Adding instance port M_AXI_RFDC_awaddr as signal M_AXI_RFDC_awaddr to top
+DEBUG - 2020-08-15 12:15:49,865 - jasper.verilog -   Signal "M_AXI_RFDC_awaddr" is new
+DEBUG - 2020-08-15 12:15:49,865 - jasper.verilog -   Adding instance port M_AXI_RFDC_awprot as signal M_AXI_RFDC_awprot to top
+DEBUG - 2020-08-15 12:15:49,865 - jasper.verilog -   Signal "M_AXI_RFDC_awprot" is new
+DEBUG - 2020-08-15 12:15:49,865 - jasper.verilog -   Adding instance port M_AXI_RFDC_awready as signal M_AXI_RFDC_awready to top
+DEBUG - 2020-08-15 12:15:49,865 - jasper.verilog -   Signal "M_AXI_RFDC_awready" is new
+DEBUG - 2020-08-15 12:15:49,865 - jasper.verilog -   Adding instance port M_AXI_RFDC_awvalid as signal M_AXI_RFDC_awvalid to top
+DEBUG - 2020-08-15 12:15:49,865 - jasper.verilog -   Signal "M_AXI_RFDC_awvalid" is new
+DEBUG - 2020-08-15 12:15:49,865 - jasper.verilog -   Adding instance port M_AXI_RFDC_bready as signal M_AXI_RFDC_bready to top
+DEBUG - 2020-08-15 12:15:49,865 - jasper.verilog -   Signal "M_AXI_RFDC_bready" is new
+DEBUG - 2020-08-15 12:15:49,866 - jasper.verilog -   Adding instance port M_AXI_RFDC_bresp as signal M_AXI_RFDC_bresp to top
+DEBUG - 2020-08-15 12:15:49,866 - jasper.verilog -   Signal "M_AXI_RFDC_bresp" is new
+DEBUG - 2020-08-15 12:15:49,866 - jasper.verilog -   Adding instance port M_AXI_RFDC_bvalid as signal M_AXI_RFDC_bvalid to top
+DEBUG - 2020-08-15 12:15:49,866 - jasper.verilog -   Signal "M_AXI_RFDC_bvalid" is new
+DEBUG - 2020-08-15 12:15:49,866 - jasper.verilog -   Adding instance port M_AXI_RFDC_rdata as signal M_AXI_RFDC_rdata to top
+DEBUG - 2020-08-15 12:15:49,866 - jasper.verilog -   Signal "M_AXI_RFDC_rdata" is new
+DEBUG - 2020-08-15 12:15:49,866 - jasper.verilog -   Adding instance port M_AXI_RFDC_rready as signal M_AXI_RFDC_rready to top
+DEBUG - 2020-08-15 12:15:49,866 - jasper.verilog -   Signal "M_AXI_RFDC_rready" is new
+DEBUG - 2020-08-15 12:15:49,866 - jasper.verilog -   Adding instance port M_AXI_RFDC_rresp as signal M_AXI_RFDC_rresp to top
+DEBUG - 2020-08-15 12:15:49,866 - jasper.verilog -   Signal "M_AXI_RFDC_rresp" is new
+DEBUG - 2020-08-15 12:15:49,866 - jasper.verilog -   Adding instance port M_AXI_RFDC_rvalid as signal M_AXI_RFDC_rvalid to top
+DEBUG - 2020-08-15 12:15:49,866 - jasper.verilog -   Signal "M_AXI_RFDC_rvalid" is new
+DEBUG - 2020-08-15 12:15:49,866 - jasper.verilog -   Adding instance port M_AXI_RFDC_wdata as signal M_AXI_RFDC_wdata to top
+DEBUG - 2020-08-15 12:15:49,866 - jasper.verilog -   Signal "M_AXI_RFDC_wdata" is new
+DEBUG - 2020-08-15 12:15:49,866 - jasper.verilog -   Adding instance port M_AXI_RFDC_wready as signal M_AXI_RFDC_wready to top
+DEBUG - 2020-08-15 12:15:49,866 - jasper.verilog -   Signal "M_AXI_RFDC_wready" is new
+DEBUG - 2020-08-15 12:15:49,866 - jasper.verilog -   Adding instance port M_AXI_RFDC_wstrb as signal M_AXI_RFDC_wstrb to top
+DEBUG - 2020-08-15 12:15:49,866 - jasper.verilog -   Signal "M_AXI_RFDC_wstrb" is new
+DEBUG - 2020-08-15 12:15:49,867 - jasper.verilog -   Adding instance port M_AXI_RFDC_wvalid as signal M_AXI_RFDC_wvalid to top
+DEBUG - 2020-08-15 12:15:49,867 - jasper.verilog -   Signal "M_AXI_RFDC_wvalid" is new
+DEBUG - 2020-08-15 12:15:49,867 - jasper.verilog - Instantiating child ports for zcu111_infr_inst
+DEBUG - 2020-08-15 12:15:49,867 - jasper.verilog -   Adding instance port clk_100_p to top
+DEBUG - 2020-08-15 12:15:49,867 - jasper.verilog - Attempting to add port "clk_100_p" (parent sig: False, parent port: False)
+DEBUG - 2020-08-15 12:15:49,867 - jasper.verilog -   Port "clk_100_p" is new
+DEBUG - 2020-08-15 12:15:49,867 - jasper.verilog -   Adding instance port clk_100_n to top
+DEBUG - 2020-08-15 12:15:49,867 - jasper.verilog - Attempting to add port "clk_100_n" (parent sig: False, parent port: False)
+DEBUG - 2020-08-15 12:15:49,867 - jasper.verilog -   Port "clk_100_n" is new
+DEBUG - 2020-08-15 12:15:49,867 - jasper.verilog -   Adding instance port sys_clk as signal sys_clk    to top
+DEBUG - 2020-08-15 12:15:49,867 - jasper.verilog -   Signal "sys_clk" is new
+DEBUG - 2020-08-15 12:15:49,867 - jasper.verilog -   Adding instance port sys_clk90 as signal sys_clk90  to top
+DEBUG - 2020-08-15 12:15:49,867 - jasper.verilog -   Signal "sys_clk90" is new
+DEBUG - 2020-08-15 12:15:49,867 - jasper.verilog -   Adding instance port sys_clk180 as signal sys_clk180 to top
+DEBUG - 2020-08-15 12:15:49,867 - jasper.verilog -   Signal "sys_clk180" is new
+DEBUG - 2020-08-15 12:15:49,867 - jasper.verilog -   Adding instance port sys_clk270 as signal sys_clk270 to top
+DEBUG - 2020-08-15 12:15:49,867 - jasper.verilog -   Signal "sys_clk270" is new
+DEBUG - 2020-08-15 12:15:49,867 - jasper.verilog -   Adding instance port sys_clk_rst as signal sys_clk_rst to top
+DEBUG - 2020-08-15 12:15:49,867 - jasper.verilog -   Signal "sys_clk_rst" is new
+DEBUG - 2020-08-15 12:15:49,868 - jasper.verilog - Instantiating child ports for axi4lite_interconnect
+DEBUG - 2020-08-15 12:15:49,868 - jasper.verilog -   Adding instance port axi4lite_aclk as signal axil_clk to top
+DEBUG - 2020-08-15 12:15:49,868 - jasper.verilog -   Signal "axil_clk" already exists
+DEBUG - 2020-08-15 12:15:49,868 - jasper.verilog -   Adding instance port axi4lite_aresetn as signal axil_rst_n to top
+DEBUG - 2020-08-15 12:15:49,868 - jasper.verilog -   Signal "axil_rst_n" already exists
+DEBUG - 2020-08-15 12:15:49,868 - jasper.verilog -   Adding instance port axi4lite_snapshot0_01_ss_bram_snapshot0_01_ss_bram_add as signal rfdc_multi_cores_mode2_snapshot0_01_ss_bram_addr to top
+DEBUG - 2020-08-15 12:15:49,868 - jasper.verilog -   Signal "rfdc_multi_cores_mode2_snapshot0_01_ss_bram_addr" is new
+DEBUG - 2020-08-15 12:15:49,868 - jasper.verilog -   Adding instance port axi4lite_snapshot0_01_ss_bram_snapshot0_01_ss_bram_data_in as signal rfdc_multi_cores_mode2_snapshot0_01_ss_bram_data_in to top
+DEBUG - 2020-08-15 12:15:49,868 - jasper.verilog -   Signal "rfdc_multi_cores_mode2_snapshot0_01_ss_bram_data_in" is new
+DEBUG - 2020-08-15 12:15:49,868 - jasper.verilog -   Adding instance port axi4lite_snapshot0_01_ss_bram_snapshot0_01_ss_bram_data_out as signal rfdc_multi_cores_mode2_snapshot0_01_ss_bram_data_out to top
+DEBUG - 2020-08-15 12:15:49,868 - jasper.verilog -   Signal "rfdc_multi_cores_mode2_snapshot0_01_ss_bram_data_out" is new
+DEBUG - 2020-08-15 12:15:49,868 - jasper.verilog -   Adding instance port axi4lite_snapshot0_01_ss_bram_snapshot0_01_ss_bram_we as signal rfdc_multi_cores_mode2_snapshot0_01_ss_bram_we to top
+DEBUG - 2020-08-15 12:15:49,868 - jasper.verilog -   Signal "rfdc_multi_cores_mode2_snapshot0_01_ss_bram_we" is new
+DEBUG - 2020-08-15 12:15:49,868 - jasper.verilog -   Adding instance port axi4lite_snapshot0_23_ss_bram_snapshot0_23_ss_bram_add as signal rfdc_multi_cores_mode2_snapshot0_23_ss_bram_addr to top
+DEBUG - 2020-08-15 12:15:49,868 - jasper.verilog -   Signal "rfdc_multi_cores_mode2_snapshot0_23_ss_bram_addr" is new
+DEBUG - 2020-08-15 12:15:49,868 - jasper.verilog -   Adding instance port axi4lite_snapshot0_23_ss_bram_snapshot0_23_ss_bram_data_in as signal rfdc_multi_cores_mode2_snapshot0_23_ss_bram_data_in to top
+DEBUG - 2020-08-15 12:15:49,868 - jasper.verilog -   Signal "rfdc_multi_cores_mode2_snapshot0_23_ss_bram_data_in" is new
+DEBUG - 2020-08-15 12:15:49,868 - jasper.verilog -   Adding instance port axi4lite_snapshot0_23_ss_bram_snapshot0_23_ss_bram_data_out as signal rfdc_multi_cores_mode2_snapshot0_23_ss_bram_data_out to top
+DEBUG - 2020-08-15 12:15:49,869 - jasper.verilog -   Signal "rfdc_multi_cores_mode2_snapshot0_23_ss_bram_data_out" is new
+DEBUG - 2020-08-15 12:15:49,869 - jasper.verilog -   Adding instance port axi4lite_snapshot0_23_ss_bram_snapshot0_23_ss_bram_we as signal rfdc_multi_cores_mode2_snapshot0_23_ss_bram_we to top
+DEBUG - 2020-08-15 12:15:49,869 - jasper.verilog -   Signal "rfdc_multi_cores_mode2_snapshot0_23_ss_bram_we" is new
+DEBUG - 2020-08-15 12:15:49,869 - jasper.verilog -   Adding instance port axi4lite_snapshot0_45_ss_bram_snapshot0_45_ss_bram_add as signal rfdc_multi_cores_mode2_snapshot0_45_ss_bram_addr to top
+DEBUG - 2020-08-15 12:15:49,869 - jasper.verilog -   Signal "rfdc_multi_cores_mode2_snapshot0_45_ss_bram_addr" is new
+DEBUG - 2020-08-15 12:15:49,869 - jasper.verilog -   Adding instance port axi4lite_snapshot0_45_ss_bram_snapshot0_45_ss_bram_data_in as signal rfdc_multi_cores_mode2_snapshot0_45_ss_bram_data_in to top
+DEBUG - 2020-08-15 12:15:49,869 - jasper.verilog -   Signal "rfdc_multi_cores_mode2_snapshot0_45_ss_bram_data_in" is new
+DEBUG - 2020-08-15 12:15:49,869 - jasper.verilog -   Adding instance port axi4lite_snapshot0_45_ss_bram_snapshot0_45_ss_bram_data_out as signal rfdc_multi_cores_mode2_snapshot0_45_ss_bram_data_out to top
+DEBUG - 2020-08-15 12:15:49,869 - jasper.verilog -   Signal "rfdc_multi_cores_mode2_snapshot0_45_ss_bram_data_out" is new
+DEBUG - 2020-08-15 12:15:49,869 - jasper.verilog -   Adding instance port axi4lite_snapshot0_45_ss_bram_snapshot0_45_ss_bram_we as signal rfdc_multi_cores_mode2_snapshot0_45_ss_bram_we to top
+DEBUG - 2020-08-15 12:15:49,869 - jasper.verilog -   Signal "rfdc_multi_cores_mode2_snapshot0_45_ss_bram_we" is new
+DEBUG - 2020-08-15 12:15:49,869 - jasper.verilog -   Adding instance port axi4lite_snapshot0_67_ss_bram_snapshot0_67_ss_bram_add as signal rfdc_multi_cores_mode2_snapshot0_67_ss_bram_addr to top
+DEBUG - 2020-08-15 12:15:49,869 - jasper.verilog -   Signal "rfdc_multi_cores_mode2_snapshot0_67_ss_bram_addr" is new
+DEBUG - 2020-08-15 12:15:49,869 - jasper.verilog -   Adding instance port axi4lite_snapshot0_67_ss_bram_snapshot0_67_ss_bram_data_in as signal rfdc_multi_cores_mode2_snapshot0_67_ss_bram_data_in to top
+DEBUG - 2020-08-15 12:15:49,869 - jasper.verilog -   Signal "rfdc_multi_cores_mode2_snapshot0_67_ss_bram_data_in" is new
+DEBUG - 2020-08-15 12:15:49,869 - jasper.verilog -   Adding instance port axi4lite_snapshot0_67_ss_bram_snapshot0_67_ss_bram_data_out as signal rfdc_multi_cores_mode2_snapshot0_67_ss_bram_data_out to top
+DEBUG - 2020-08-15 12:15:49,869 - jasper.verilog -   Signal "rfdc_multi_cores_mode2_snapshot0_67_ss_bram_data_out" is new
+DEBUG - 2020-08-15 12:15:49,869 - jasper.verilog -   Adding instance port axi4lite_snapshot0_67_ss_bram_snapshot0_67_ss_bram_we as signal rfdc_multi_cores_mode2_snapshot0_67_ss_bram_we to top
+DEBUG - 2020-08-15 12:15:49,869 - jasper.verilog -   Signal "rfdc_multi_cores_mode2_snapshot0_67_ss_bram_we" is new
+DEBUG - 2020-08-15 12:15:49,870 - jasper.verilog -   Adding instance port axi4lite_snapshot1_01_ss_bram_snapshot1_01_ss_bram_add as signal rfdc_multi_cores_mode2_snapshot1_01_ss_bram_addr to top
+DEBUG - 2020-08-15 12:15:49,870 - jasper.verilog -   Signal "rfdc_multi_cores_mode2_snapshot1_01_ss_bram_addr" is new
+DEBUG - 2020-08-15 12:15:49,870 - jasper.verilog -   Adding instance port axi4lite_snapshot1_01_ss_bram_snapshot1_01_ss_bram_data_in as signal rfdc_multi_cores_mode2_snapshot1_01_ss_bram_data_in to top
+DEBUG - 2020-08-15 12:15:49,870 - jasper.verilog -   Signal "rfdc_multi_cores_mode2_snapshot1_01_ss_bram_data_in" is new
+DEBUG - 2020-08-15 12:15:49,870 - jasper.verilog -   Adding instance port axi4lite_snapshot1_01_ss_bram_snapshot1_01_ss_bram_data_out as signal rfdc_multi_cores_mode2_snapshot1_01_ss_bram_data_out to top
+DEBUG - 2020-08-15 12:15:49,870 - jasper.verilog -   Signal "rfdc_multi_cores_mode2_snapshot1_01_ss_bram_data_out" is new
+DEBUG - 2020-08-15 12:15:49,870 - jasper.verilog -   Adding instance port axi4lite_snapshot1_01_ss_bram_snapshot1_01_ss_bram_we as signal rfdc_multi_cores_mode2_snapshot1_01_ss_bram_we to top
+DEBUG - 2020-08-15 12:15:49,870 - jasper.verilog -   Signal "rfdc_multi_cores_mode2_snapshot1_01_ss_bram_we" is new
+DEBUG - 2020-08-15 12:15:49,870 - jasper.verilog -   Adding instance port axi4lite_snapshot1_23_ss_bram_snapshot1_23_ss_bram_add as signal rfdc_multi_cores_mode2_snapshot1_23_ss_bram_addr to top
+DEBUG - 2020-08-15 12:15:49,870 - jasper.verilog -   Signal "rfdc_multi_cores_mode2_snapshot1_23_ss_bram_addr" is new
+DEBUG - 2020-08-15 12:15:49,870 - jasper.verilog -   Adding instance port axi4lite_snapshot1_23_ss_bram_snapshot1_23_ss_bram_data_in as signal rfdc_multi_cores_mode2_snapshot1_23_ss_bram_data_in to top
+DEBUG - 2020-08-15 12:15:49,870 - jasper.verilog -   Signal "rfdc_multi_cores_mode2_snapshot1_23_ss_bram_data_in" is new
+DEBUG - 2020-08-15 12:15:49,870 - jasper.verilog -   Adding instance port axi4lite_snapshot1_23_ss_bram_snapshot1_23_ss_bram_data_out as signal rfdc_multi_cores_mode2_snapshot1_23_ss_bram_data_out to top
+DEBUG - 2020-08-15 12:15:49,870 - jasper.verilog -   Signal "rfdc_multi_cores_mode2_snapshot1_23_ss_bram_data_out" is new
+DEBUG - 2020-08-15 12:15:49,870 - jasper.verilog -   Adding instance port axi4lite_snapshot1_23_ss_bram_snapshot1_23_ss_bram_we as signal rfdc_multi_cores_mode2_snapshot1_23_ss_bram_we to top
+DEBUG - 2020-08-15 12:15:49,870 - jasper.verilog -   Signal "rfdc_multi_cores_mode2_snapshot1_23_ss_bram_we" is new
+DEBUG - 2020-08-15 12:15:49,870 - jasper.verilog -   Adding instance port axi4lite_snapshot1_45_ss_bram_snapshot1_45_ss_bram_add as signal rfdc_multi_cores_mode2_snapshot1_45_ss_bram_addr to top
+DEBUG - 2020-08-15 12:15:49,870 - jasper.verilog -   Signal "rfdc_multi_cores_mode2_snapshot1_45_ss_bram_addr" is new
+DEBUG - 2020-08-15 12:15:49,871 - jasper.verilog -   Adding instance port axi4lite_snapshot1_45_ss_bram_snapshot1_45_ss_bram_data_in as signal rfdc_multi_cores_mode2_snapshot1_45_ss_bram_data_in to top
+DEBUG - 2020-08-15 12:15:49,871 - jasper.verilog -   Signal "rfdc_multi_cores_mode2_snapshot1_45_ss_bram_data_in" is new
+DEBUG - 2020-08-15 12:15:49,871 - jasper.verilog -   Adding instance port axi4lite_snapshot1_45_ss_bram_snapshot1_45_ss_bram_data_out as signal rfdc_multi_cores_mode2_snapshot1_45_ss_bram_data_out to top
+DEBUG - 2020-08-15 12:15:49,871 - jasper.verilog -   Signal "rfdc_multi_cores_mode2_snapshot1_45_ss_bram_data_out" is new
+DEBUG - 2020-08-15 12:15:49,871 - jasper.verilog -   Adding instance port axi4lite_snapshot1_45_ss_bram_snapshot1_45_ss_bram_we as signal rfdc_multi_cores_mode2_snapshot1_45_ss_bram_we to top
+DEBUG - 2020-08-15 12:15:49,871 - jasper.verilog -   Signal "rfdc_multi_cores_mode2_snapshot1_45_ss_bram_we" is new
+DEBUG - 2020-08-15 12:15:49,871 - jasper.verilog -   Adding instance port axi4lite_snapshot1_67_ss_bram_snapshot1_67_ss_bram_add as signal rfdc_multi_cores_mode2_snapshot1_67_ss_bram_addr to top
+DEBUG - 2020-08-15 12:15:49,871 - jasper.verilog -   Signal "rfdc_multi_cores_mode2_snapshot1_67_ss_bram_addr" is new
+DEBUG - 2020-08-15 12:15:49,871 - jasper.verilog -   Adding instance port axi4lite_snapshot1_67_ss_bram_snapshot1_67_ss_bram_data_in as signal rfdc_multi_cores_mode2_snapshot1_67_ss_bram_data_in to top
+DEBUG - 2020-08-15 12:15:49,871 - jasper.verilog -   Signal "rfdc_multi_cores_mode2_snapshot1_67_ss_bram_data_in" is new
+DEBUG - 2020-08-15 12:15:49,871 - jasper.verilog -   Adding instance port axi4lite_snapshot1_67_ss_bram_snapshot1_67_ss_bram_data_out as signal rfdc_multi_cores_mode2_snapshot1_67_ss_bram_data_out to top
+DEBUG - 2020-08-15 12:15:49,871 - jasper.verilog -   Signal "rfdc_multi_cores_mode2_snapshot1_67_ss_bram_data_out" is new
+DEBUG - 2020-08-15 12:15:49,871 - jasper.verilog -   Adding instance port axi4lite_snapshot1_67_ss_bram_snapshot1_67_ss_bram_we as signal rfdc_multi_cores_mode2_snapshot1_67_ss_bram_we to top
+DEBUG - 2020-08-15 12:15:49,871 - jasper.verilog -   Signal "rfdc_multi_cores_mode2_snapshot1_67_ss_bram_we" is new
+DEBUG - 2020-08-15 12:15:49,871 - jasper.verilog -   Adding instance port axi4lite_sw_reg_led_cntrl_out as signal rfdc_multi_cores_mode2_led_cntrl_out to top
+DEBUG - 2020-08-15 12:15:49,871 - jasper.verilog -   Signal "rfdc_multi_cores_mode2_led_cntrl_out" already exists
+DEBUG - 2020-08-15 12:15:49,871 - jasper.verilog -   Adding instance port axi4lite_sw_reg_led_cntrl_out_we as signal rfdc_multi_cores_mode2_led_cntrl_out_we to top
+DEBUG - 2020-08-15 12:15:49,871 - jasper.verilog -   Signal "rfdc_multi_cores_mode2_led_cntrl_out_we" is new
+DEBUG - 2020-08-15 12:15:49,871 - jasper.verilog -   Adding instance port axi4lite_sw_reg_reg_cntrl_out as signal rfdc_multi_cores_mode2_reg_cntrl_out to top
+DEBUG - 2020-08-15 12:15:49,872 - jasper.verilog -   Signal "rfdc_multi_cores_mode2_reg_cntrl_out" already exists
+DEBUG - 2020-08-15 12:15:49,872 - jasper.verilog -   Adding instance port axi4lite_sw_reg_reg_cntrl_out_we as signal rfdc_multi_cores_mode2_reg_cntrl_out_we to top
+DEBUG - 2020-08-15 12:15:49,872 - jasper.verilog -   Signal "rfdc_multi_cores_mode2_reg_cntrl_out_we" is new
+DEBUG - 2020-08-15 12:15:49,872 - jasper.verilog -   Adding instance port axi4lite_sw_reg_snapshot0_01_ss_ctrl_out as signal rfdc_multi_cores_mode2_snapshot0_01_ss_ctrl_out to top
+DEBUG - 2020-08-15 12:15:49,872 - jasper.verilog -   Signal "rfdc_multi_cores_mode2_snapshot0_01_ss_ctrl_out" already exists
+DEBUG - 2020-08-15 12:15:49,872 - jasper.verilog -   Adding instance port axi4lite_sw_reg_snapshot0_01_ss_ctrl_out_we as signal rfdc_multi_cores_mode2_snapshot0_01_ss_ctrl_out_we to top
+DEBUG - 2020-08-15 12:15:49,872 - jasper.verilog -   Signal "rfdc_multi_cores_mode2_snapshot0_01_ss_ctrl_out_we" is new
+DEBUG - 2020-08-15 12:15:49,872 - jasper.verilog -   Adding instance port axi4lite_sw_reg_snapshot0_01_ss_status_in as signal rfdc_multi_cores_mode2_snapshot0_01_ss_status_in to top
+DEBUG - 2020-08-15 12:15:49,872 - jasper.verilog -   Signal "rfdc_multi_cores_mode2_snapshot0_01_ss_status_in" already exists
+DEBUG - 2020-08-15 12:15:49,872 - jasper.verilog -   Adding instance port axi4lite_sw_reg_snapshot0_01_ss_status_in_we as signal rfdc_multi_cores_mode2_snapshot0_01_ss_status_in_we to top
+DEBUG - 2020-08-15 12:15:49,872 - jasper.verilog -   Signal "rfdc_multi_cores_mode2_snapshot0_01_ss_status_in_we" is new
+DEBUG - 2020-08-15 12:15:49,872 - jasper.verilog -   Adding instance port axi4lite_sw_reg_snapshot0_23_ss_ctrl_out as signal rfdc_multi_cores_mode2_snapshot0_23_ss_ctrl_out to top
+DEBUG - 2020-08-15 12:15:49,872 - jasper.verilog -   Signal "rfdc_multi_cores_mode2_snapshot0_23_ss_ctrl_out" already exists
+DEBUG - 2020-08-15 12:15:49,872 - jasper.verilog -   Adding instance port axi4lite_sw_reg_snapshot0_23_ss_ctrl_out_we as signal rfdc_multi_cores_mode2_snapshot0_23_ss_ctrl_out_we to top
+DEBUG - 2020-08-15 12:15:49,872 - jasper.verilog -   Signal "rfdc_multi_cores_mode2_snapshot0_23_ss_ctrl_out_we" is new
+DEBUG - 2020-08-15 12:15:49,872 - jasper.verilog -   Adding instance port axi4lite_sw_reg_snapshot0_23_ss_status_in as signal rfdc_multi_cores_mode2_snapshot0_23_ss_status_in to top
+DEBUG - 2020-08-15 12:15:49,872 - jasper.verilog -   Signal "rfdc_multi_cores_mode2_snapshot0_23_ss_status_in" already exists
+DEBUG - 2020-08-15 12:15:49,872 - jasper.verilog -   Adding instance port axi4lite_sw_reg_snapshot0_23_ss_status_in_we as signal rfdc_multi_cores_mode2_snapshot0_23_ss_status_in_we to top
+DEBUG - 2020-08-15 12:15:49,872 - jasper.verilog -   Signal "rfdc_multi_cores_mode2_snapshot0_23_ss_status_in_we" is new
+DEBUG - 2020-08-15 12:15:49,872 - jasper.verilog -   Adding instance port axi4lite_sw_reg_snapshot0_45_ss_ctrl_out as signal rfdc_multi_cores_mode2_snapshot0_45_ss_ctrl_out to top
+DEBUG - 2020-08-15 12:15:49,873 - jasper.verilog -   Signal "rfdc_multi_cores_mode2_snapshot0_45_ss_ctrl_out" already exists
+DEBUG - 2020-08-15 12:15:49,873 - jasper.verilog -   Adding instance port axi4lite_sw_reg_snapshot0_45_ss_ctrl_out_we as signal rfdc_multi_cores_mode2_snapshot0_45_ss_ctrl_out_we to top
+DEBUG - 2020-08-15 12:15:49,873 - jasper.verilog -   Signal "rfdc_multi_cores_mode2_snapshot0_45_ss_ctrl_out_we" is new
+DEBUG - 2020-08-15 12:15:49,873 - jasper.verilog -   Adding instance port axi4lite_sw_reg_snapshot0_45_ss_status_in as signal rfdc_multi_cores_mode2_snapshot0_45_ss_status_in to top
+DEBUG - 2020-08-15 12:15:49,873 - jasper.verilog -   Signal "rfdc_multi_cores_mode2_snapshot0_45_ss_status_in" already exists
+DEBUG - 2020-08-15 12:15:49,873 - jasper.verilog -   Adding instance port axi4lite_sw_reg_snapshot0_45_ss_status_in_we as signal rfdc_multi_cores_mode2_snapshot0_45_ss_status_in_we to top
+DEBUG - 2020-08-15 12:15:49,873 - jasper.verilog -   Signal "rfdc_multi_cores_mode2_snapshot0_45_ss_status_in_we" is new
+DEBUG - 2020-08-15 12:15:49,873 - jasper.verilog -   Adding instance port axi4lite_sw_reg_snapshot0_67_ss_ctrl_out as signal rfdc_multi_cores_mode2_snapshot0_67_ss_ctrl_out to top
+DEBUG - 2020-08-15 12:15:49,873 - jasper.verilog -   Signal "rfdc_multi_cores_mode2_snapshot0_67_ss_ctrl_out" already exists
+DEBUG - 2020-08-15 12:15:49,873 - jasper.verilog -   Adding instance port axi4lite_sw_reg_snapshot0_67_ss_ctrl_out_we as signal rfdc_multi_cores_mode2_snapshot0_67_ss_ctrl_out_we to top
+DEBUG - 2020-08-15 12:15:49,873 - jasper.verilog -   Signal "rfdc_multi_cores_mode2_snapshot0_67_ss_ctrl_out_we" is new
+DEBUG - 2020-08-15 12:15:49,873 - jasper.verilog -   Adding instance port axi4lite_sw_reg_snapshot0_67_ss_status_in as signal rfdc_multi_cores_mode2_snapshot0_67_ss_status_in to top
+DEBUG - 2020-08-15 12:15:49,873 - jasper.verilog -   Signal "rfdc_multi_cores_mode2_snapshot0_67_ss_status_in" already exists
+DEBUG - 2020-08-15 12:15:49,873 - jasper.verilog -   Adding instance port axi4lite_sw_reg_snapshot0_67_ss_status_in_we as signal rfdc_multi_cores_mode2_snapshot0_67_ss_status_in_we to top
+DEBUG - 2020-08-15 12:15:49,873 - jasper.verilog -   Signal "rfdc_multi_cores_mode2_snapshot0_67_ss_status_in_we" is new
+DEBUG - 2020-08-15 12:15:49,873 - jasper.verilog -   Adding instance port axi4lite_sw_reg_snapshot1_01_ss_ctrl_out as signal rfdc_multi_cores_mode2_snapshot1_01_ss_ctrl_out to top
+DEBUG - 2020-08-15 12:15:49,873 - jasper.verilog -   Signal "rfdc_multi_cores_mode2_snapshot1_01_ss_ctrl_out" already exists
+DEBUG - 2020-08-15 12:15:49,873 - jasper.verilog -   Adding instance port axi4lite_sw_reg_snapshot1_01_ss_ctrl_out_we as signal rfdc_multi_cores_mode2_snapshot1_01_ss_ctrl_out_we to top
+DEBUG - 2020-08-15 12:15:49,873 - jasper.verilog -   Signal "rfdc_multi_cores_mode2_snapshot1_01_ss_ctrl_out_we" is new
+DEBUG - 2020-08-15 12:15:49,874 - jasper.verilog -   Adding instance port axi4lite_sw_reg_snapshot1_01_ss_status_in as signal rfdc_multi_cores_mode2_snapshot1_01_ss_status_in to top
+DEBUG - 2020-08-15 12:15:49,874 - jasper.verilog -   Signal "rfdc_multi_cores_mode2_snapshot1_01_ss_status_in" already exists
+DEBUG - 2020-08-15 12:15:49,874 - jasper.verilog -   Adding instance port axi4lite_sw_reg_snapshot1_01_ss_status_in_we as signal rfdc_multi_cores_mode2_snapshot1_01_ss_status_in_we to top
+DEBUG - 2020-08-15 12:15:49,874 - jasper.verilog -   Signal "rfdc_multi_cores_mode2_snapshot1_01_ss_status_in_we" is new
+DEBUG - 2020-08-15 12:15:49,874 - jasper.verilog -   Adding instance port axi4lite_sw_reg_snapshot1_23_ss_ctrl_out as signal rfdc_multi_cores_mode2_snapshot1_23_ss_ctrl_out to top
+DEBUG - 2020-08-15 12:15:49,874 - jasper.verilog -   Signal "rfdc_multi_cores_mode2_snapshot1_23_ss_ctrl_out" already exists
+DEBUG - 2020-08-15 12:15:49,874 - jasper.verilog -   Adding instance port axi4lite_sw_reg_snapshot1_23_ss_ctrl_out_we as signal rfdc_multi_cores_mode2_snapshot1_23_ss_ctrl_out_we to top
+DEBUG - 2020-08-15 12:15:49,874 - jasper.verilog -   Signal "rfdc_multi_cores_mode2_snapshot1_23_ss_ctrl_out_we" is new
+DEBUG - 2020-08-15 12:15:49,874 - jasper.verilog -   Adding instance port axi4lite_sw_reg_snapshot1_23_ss_status_in as signal rfdc_multi_cores_mode2_snapshot1_23_ss_status_in to top
+DEBUG - 2020-08-15 12:15:49,874 - jasper.verilog -   Signal "rfdc_multi_cores_mode2_snapshot1_23_ss_status_in" already exists
+DEBUG - 2020-08-15 12:15:49,874 - jasper.verilog -   Adding instance port axi4lite_sw_reg_snapshot1_23_ss_status_in_we as signal rfdc_multi_cores_mode2_snapshot1_23_ss_status_in_we to top
+DEBUG - 2020-08-15 12:15:49,874 - jasper.verilog -   Signal "rfdc_multi_cores_mode2_snapshot1_23_ss_status_in_we" is new
+DEBUG - 2020-08-15 12:15:49,874 - jasper.verilog -   Adding instance port axi4lite_sw_reg_snapshot1_45_ss_ctrl_out as signal rfdc_multi_cores_mode2_snapshot1_45_ss_ctrl_out to top
+DEBUG - 2020-08-15 12:15:49,874 - jasper.verilog -   Signal "rfdc_multi_cores_mode2_snapshot1_45_ss_ctrl_out" already exists
+DEBUG - 2020-08-15 12:15:49,874 - jasper.verilog -   Adding instance port axi4lite_sw_reg_snapshot1_45_ss_ctrl_out_we as signal rfdc_multi_cores_mode2_snapshot1_45_ss_ctrl_out_we to top
+DEBUG - 2020-08-15 12:15:49,874 - jasper.verilog -   Signal "rfdc_multi_cores_mode2_snapshot1_45_ss_ctrl_out_we" is new
+DEBUG - 2020-08-15 12:15:49,874 - jasper.verilog -   Adding instance port axi4lite_sw_reg_snapshot1_45_ss_status_in as signal rfdc_multi_cores_mode2_snapshot1_45_ss_status_in to top
+DEBUG - 2020-08-15 12:15:49,874 - jasper.verilog -   Signal "rfdc_multi_cores_mode2_snapshot1_45_ss_status_in" already exists
+DEBUG - 2020-08-15 12:15:49,874 - jasper.verilog -   Adding instance port axi4lite_sw_reg_snapshot1_45_ss_status_in_we as signal rfdc_multi_cores_mode2_snapshot1_45_ss_status_in_we to top
+DEBUG - 2020-08-15 12:15:49,875 - jasper.verilog -   Signal "rfdc_multi_cores_mode2_snapshot1_45_ss_status_in_we" is new
+DEBUG - 2020-08-15 12:15:49,875 - jasper.verilog -   Adding instance port axi4lite_sw_reg_snapshot1_67_ss_ctrl_out as signal rfdc_multi_cores_mode2_snapshot1_67_ss_ctrl_out to top
+DEBUG - 2020-08-15 12:15:49,875 - jasper.verilog -   Signal "rfdc_multi_cores_mode2_snapshot1_67_ss_ctrl_out" already exists
+DEBUG - 2020-08-15 12:15:49,875 - jasper.verilog -   Adding instance port axi4lite_sw_reg_snapshot1_67_ss_ctrl_out_we as signal rfdc_multi_cores_mode2_snapshot1_67_ss_ctrl_out_we to top
+DEBUG - 2020-08-15 12:15:49,875 - jasper.verilog -   Signal "rfdc_multi_cores_mode2_snapshot1_67_ss_ctrl_out_we" is new
+DEBUG - 2020-08-15 12:15:49,875 - jasper.verilog -   Adding instance port axi4lite_sw_reg_snapshot1_67_ss_status_in as signal rfdc_multi_cores_mode2_snapshot1_67_ss_status_in to top
+DEBUG - 2020-08-15 12:15:49,875 - jasper.verilog -   Signal "rfdc_multi_cores_mode2_snapshot1_67_ss_status_in" already exists
+DEBUG - 2020-08-15 12:15:49,875 - jasper.verilog -   Adding instance port axi4lite_sw_reg_snapshot1_67_ss_status_in_we as signal rfdc_multi_cores_mode2_snapshot1_67_ss_status_in_we to top
+DEBUG - 2020-08-15 12:15:49,875 - jasper.verilog -   Signal "rfdc_multi_cores_mode2_snapshot1_67_ss_status_in_we" is new
+DEBUG - 2020-08-15 12:15:49,875 - jasper.verilog -   Adding instance port axi4lite_sw_reg_sync_state0_in as signal rfdc_multi_cores_mode2_sync_state0_in to top
+DEBUG - 2020-08-15 12:15:49,875 - jasper.verilog -   Signal "rfdc_multi_cores_mode2_sync_state0_in" already exists
+DEBUG - 2020-08-15 12:15:49,875 - jasper.verilog -   Adding instance port axi4lite_sw_reg_sync_state0_in_we as signal rfdc_multi_cores_mode2_sync_state0_in_we to top
+DEBUG - 2020-08-15 12:15:49,875 - jasper.verilog -   Signal "rfdc_multi_cores_mode2_sync_state0_in_we" is new
+DEBUG - 2020-08-15 12:15:49,875 - jasper.verilog -   Adding instance port axi4lite_sw_reg_sync_state1_in as signal rfdc_multi_cores_mode2_sync_state1_in to top
+DEBUG - 2020-08-15 12:15:49,875 - jasper.verilog -   Signal "rfdc_multi_cores_mode2_sync_state1_in" already exists
+DEBUG - 2020-08-15 12:15:49,875 - jasper.verilog -   Adding instance port axi4lite_sw_reg_sync_state1_in_we as signal rfdc_multi_cores_mode2_sync_state1_in_we to top
+DEBUG - 2020-08-15 12:15:49,875 - jasper.verilog -   Signal "rfdc_multi_cores_mode2_sync_state1_in_we" is new
+DEBUG - 2020-08-15 12:15:49,875 - jasper.verilog -   Adding instance port axi4lite_sys_block_sys_board_id_in as signal rfdc_multi_cores_mode2_sys_board_id_in to top
+DEBUG - 2020-08-15 12:15:49,875 - jasper.verilog -   Signal "rfdc_multi_cores_mode2_sys_board_id_in" is new
+DEBUG - 2020-08-15 12:15:49,876 - jasper.verilog -   Adding instance port axi4lite_sys_block_sys_board_id_in_we as signal rfdc_multi_cores_mode2_sys_board_id_in_we to top
+DEBUG - 2020-08-15 12:15:49,876 - jasper.verilog -   Signal "rfdc_multi_cores_mode2_sys_board_id_in_we" is new
+DEBUG - 2020-08-15 12:15:49,876 - jasper.verilog -   Adding instance port axi4lite_sys_block_sys_rev_in as signal rfdc_multi_cores_mode2_sys_rev_in to top
+DEBUG - 2020-08-15 12:15:49,876 - jasper.verilog -   Signal "rfdc_multi_cores_mode2_sys_rev_in" is new
+DEBUG - 2020-08-15 12:15:49,876 - jasper.verilog -   Adding instance port axi4lite_sys_block_sys_rev_in_we as signal rfdc_multi_cores_mode2_sys_rev_in_we to top
+DEBUG - 2020-08-15 12:15:49,876 - jasper.verilog -   Signal "rfdc_multi_cores_mode2_sys_rev_in_we" is new
+DEBUG - 2020-08-15 12:15:49,876 - jasper.verilog -   Adding instance port axi4lite_sys_block_sys_rev_rcs_in as signal rfdc_multi_cores_mode2_sys_rev_rcs_in to top
+DEBUG - 2020-08-15 12:15:49,876 - jasper.verilog -   Signal "rfdc_multi_cores_mode2_sys_rev_rcs_in" is new
+DEBUG - 2020-08-15 12:15:49,876 - jasper.verilog -   Adding instance port axi4lite_sys_block_sys_rev_rcs_in_we as signal rfdc_multi_cores_mode2_sys_rev_rcs_in_we to top
+DEBUG - 2020-08-15 12:15:49,876 - jasper.verilog -   Signal "rfdc_multi_cores_mode2_sys_rev_rcs_in_we" is new
+DEBUG - 2020-08-15 12:15:49,876 - jasper.verilog -   Adding instance port axi4lite_sys_block_sys_scratchpad_out as signal rfdc_multi_cores_mode2_sys_scratchpad_out to top
+DEBUG - 2020-08-15 12:15:49,876 - jasper.verilog -   Signal "rfdc_multi_cores_mode2_sys_scratchpad_out" is new
+DEBUG - 2020-08-15 12:15:49,876 - jasper.verilog -   Adding instance port axi4lite_sys_block_sys_scratchpad_out_we as signal rfdc_multi_cores_mode2_sys_scratchpad_out_we to top
+DEBUG - 2020-08-15 12:15:49,876 - jasper.verilog -   Signal "rfdc_multi_cores_mode2_sys_scratchpad_out_we" is new
+DEBUG - 2020-08-15 12:15:49,876 - jasper.verilog -   Adding instance port axi4lite_sys_block_sys_clkcounter_in as signal rfdc_multi_cores_mode2_sys_clkcounter_in to top
+DEBUG - 2020-08-15 12:15:49,876 - jasper.verilog -   Signal "rfdc_multi_cores_mode2_sys_clkcounter_in" is new
+DEBUG - 2020-08-15 12:15:49,876 - jasper.verilog -   Adding instance port axi4lite_sys_block_sys_clkcounter_in_we as signal rfdc_multi_cores_mode2_sys_clkcounter_in_we to top
+DEBUG - 2020-08-15 12:15:49,876 - jasper.verilog -   Signal "rfdc_multi_cores_mode2_sys_clkcounter_in_we" is new
+DEBUG - 2020-08-15 12:15:49,877 - jasper.verilog - Instantiating child ports for rfdc_multi_cores_mode2_inst
+DEBUG - 2020-08-15 12:15:49,877 - jasper.verilog - Generating port rfdc_multi_cores_mode2_gpio_led_ext
+DEBUG - 2020-08-15 12:15:49,877 - jasper.verilog - Generating port rfdc_multi_cores_mode2_gpio_led1_ext
+DEBUG - 2020-08-15 12:15:49,877 - jasper.verilog - Generating port clk_100_n
+DEBUG - 2020-08-15 12:15:49,877 - jasper.verilog - Generating port clk_100_p
+DEBUG - 2020-08-15 12:15:49,877 - jasper.verilog - i: 5 n_ports: 4
+DEBUG - 2020-08-15 12:15:49,877 - jasper.verilog - Writing verilog for signal user_clk
+DEBUG - 2020-08-15 12:15:49,877 - jasper.verilog - Writing verilog for signal user_clk180
+DEBUG - 2020-08-15 12:15:49,877 - jasper.verilog - Writing verilog for signal user_clk270
+DEBUG - 2020-08-15 12:15:49,877 - jasper.verilog - Writing verilog for signal user_clk90
+DEBUG - 2020-08-15 12:15:49,877 - jasper.verilog - Writing verilog for signal rfdc_multi_cores_mode2_gpio_led_gateway
+DEBUG - 2020-08-15 12:15:49,877 - jasper.verilog - Writing verilog for signal rfdc_multi_cores_mode2_gpio_led1_gateway
+DEBUG - 2020-08-15 12:15:49,877 - jasper.verilog - Writing verilog for signal rfdc_multi_cores_mode2_led_cntrl_out
+DEBUG - 2020-08-15 12:15:49,877 - jasper.verilog - Writing verilog for signal rfdc_multi_cores_mode2_led_cntrl_user_data_out
+DEBUG - 2020-08-15 12:15:49,877 - jasper.verilog - Writing verilog for signal rfdc_multi_cores_mode2_reg_cntrl_out
+DEBUG - 2020-08-15 12:15:49,877 - jasper.verilog - Writing verilog for signal rfdc_multi_cores_mode2_reg_cntrl_user_data_out
+DEBUG - 2020-08-15 12:15:49,877 - jasper.verilog - Writing verilog for signal adc0_clk_clk_n
+DEBUG - 2020-08-15 12:15:49,877 - jasper.verilog - Writing verilog for signal adc0_clk_clk_p
+DEBUG - 2020-08-15 12:15:49,878 - jasper.verilog - Writing verilog for signal dac0_clk_clk_n
+DEBUG - 2020-08-15 12:15:49,878 - jasper.verilog - Writing verilog for signal dac0_clk_clk_p
+DEBUG - 2020-08-15 12:15:49,878 - jasper.verilog - Writing verilog for signal irq
+DEBUG - 2020-08-15 12:15:49,878 - jasper.verilog - Writing verilog for signal rfdc_multi_cores_mode2_rfdc_V0_2_adc0_clk
+DEBUG - 2020-08-15 12:15:49,878 - jasper.verilog - Writing verilog for signal rfdc_multi_cores_mode2_rfdc_V0_2_adc0_dout
+DEBUG - 2020-08-15 12:15:49,878 - jasper.verilog - Writing verilog for signal rfdc_multi_cores_mode2_rfdc_V0_2_adc0_sync
+DEBUG - 2020-08-15 12:15:49,878 - jasper.verilog - Writing verilog for signal rfdc_multi_cores_mode2_rfdc_V0_2_adc1_dout
+DEBUG - 2020-08-15 12:15:49,878 - jasper.verilog - Writing verilog for signal rfdc_multi_cores_mode2_rfdc_V0_2_adc1_sync
+DEBUG - 2020-08-15 12:15:49,878 - jasper.verilog - Writing verilog for signal rfdc_multi_cores_mode2_rfdc_V0_2_dac0_din
+DEBUG - 2020-08-15 12:15:49,878 - jasper.verilog - Writing verilog for signal rfdc_multi_cores_mode2_rfdc_V0_2_dac0_valid
+DEBUG - 2020-08-15 12:15:49,878 - jasper.verilog - Writing verilog for signal rfdc_multi_cores_mode2_rfdc_V0_2_dac1_clk
+DEBUG - 2020-08-15 12:15:49,878 - jasper.verilog - Writing verilog for signal rfdc_multi_cores_mode2_rfdc_V0_2_dac1_din
+DEBUG - 2020-08-15 12:15:49,878 - jasper.verilog - Writing verilog for signal rfdc_multi_cores_mode2_rfdc_V0_2_dac1_valid
+DEBUG - 2020-08-15 12:15:49,878 - jasper.verilog - Writing verilog for signal sysref_in_n
+DEBUG - 2020-08-15 12:15:49,878 - jasper.verilog - Writing verilog for signal sysref_in_p
+DEBUG - 2020-08-15 12:15:49,878 - jasper.verilog - Writing verilog for signal user_rst
+DEBUG - 2020-08-15 12:15:49,878 - jasper.verilog - Writing verilog for signal vin0_01_n
+DEBUG - 2020-08-15 12:15:49,878 - jasper.verilog - Writing verilog for signal vin0_01_p
+DEBUG - 2020-08-15 12:15:49,878 - jasper.verilog - Writing verilog for signal vin0_23_n
+DEBUG - 2020-08-15 12:15:49,878 - jasper.verilog - Writing verilog for signal vin0_23_p
+DEBUG - 2020-08-15 12:15:49,878 - jasper.verilog - Writing verilog for signal vout12_n
+DEBUG - 2020-08-15 12:15:49,878 - jasper.verilog - Writing verilog for signal vout12_p
+DEBUG - 2020-08-15 12:15:49,878 - jasper.verilog - Writing verilog for signal vout13_n
+DEBUG - 2020-08-15 12:15:49,879 - jasper.verilog - Writing verilog for signal vout13_p
+DEBUG - 2020-08-15 12:15:49,879 - jasper.verilog - Writing verilog for signal rfdc_multi_cores_mode2_snapshot0_01_ss_ctrl_out
+DEBUG - 2020-08-15 12:15:49,879 - jasper.verilog - Writing verilog for signal rfdc_multi_cores_mode2_snapshot0_01_ss_ctrl_user_data_out
+DEBUG - 2020-08-15 12:15:49,879 - jasper.verilog - Writing verilog for signal rfdc_multi_cores_mode2_snapshot0_01_ss_status_in
+DEBUG - 2020-08-15 12:15:49,879 - jasper.verilog - Writing verilog for signal rfdc_multi_cores_mode2_snapshot0_01_ss_status_user_data_in
+DEBUG - 2020-08-15 12:15:49,879 - jasper.verilog - Writing verilog for signal rfdc_multi_cores_mode2_snapshot0_23_ss_ctrl_out
+DEBUG - 2020-08-15 12:15:49,879 - jasper.verilog - Writing verilog for signal rfdc_multi_cores_mode2_snapshot0_23_ss_ctrl_user_data_out
+DEBUG - 2020-08-15 12:15:49,879 - jasper.verilog - Writing verilog for signal rfdc_multi_cores_mode2_snapshot0_23_ss_status_in
+DEBUG - 2020-08-15 12:15:49,879 - jasper.verilog - Writing verilog for signal rfdc_multi_cores_mode2_snapshot0_23_ss_status_user_data_in
+DEBUG - 2020-08-15 12:15:49,879 - jasper.verilog - Writing verilog for signal rfdc_multi_cores_mode2_snapshot0_45_ss_ctrl_out
+DEBUG - 2020-08-15 12:15:49,879 - jasper.verilog - Writing verilog for signal rfdc_multi_cores_mode2_snapshot0_45_ss_ctrl_user_data_out
+DEBUG - 2020-08-15 12:15:49,879 - jasper.verilog - Writing verilog for signal rfdc_multi_cores_mode2_snapshot0_45_ss_status_in
+DEBUG - 2020-08-15 12:15:49,879 - jasper.verilog - Writing verilog for signal rfdc_multi_cores_mode2_snapshot0_45_ss_status_user_data_in
+DEBUG - 2020-08-15 12:15:49,879 - jasper.verilog - Writing verilog for signal rfdc_multi_cores_mode2_snapshot0_67_ss_ctrl_out
+DEBUG - 2020-08-15 12:15:49,879 - jasper.verilog - Writing verilog for signal rfdc_multi_cores_mode2_snapshot0_67_ss_ctrl_user_data_out
+DEBUG - 2020-08-15 12:15:49,879 - jasper.verilog - Writing verilog for signal rfdc_multi_cores_mode2_snapshot0_67_ss_status_in
+DEBUG - 2020-08-15 12:15:49,879 - jasper.verilog - Writing verilog for signal rfdc_multi_cores_mode2_snapshot0_67_ss_status_user_data_in
+DEBUG - 2020-08-15 12:15:49,879 - jasper.verilog - Writing verilog for signal rfdc_multi_cores_mode2_snapshot1_01_ss_ctrl_out
+DEBUG - 2020-08-15 12:15:49,879 - jasper.verilog - Writing verilog for signal rfdc_multi_cores_mode2_snapshot1_01_ss_ctrl_user_data_out
+DEBUG - 2020-08-15 12:15:49,879 - jasper.verilog - Writing verilog for signal rfdc_multi_cores_mode2_snapshot1_01_ss_status_in
+DEBUG - 2020-08-15 12:15:49,879 - jasper.verilog - Writing verilog for signal rfdc_multi_cores_mode2_snapshot1_01_ss_status_user_data_in
+DEBUG - 2020-08-15 12:15:49,879 - jasper.verilog - Writing verilog for signal rfdc_multi_cores_mode2_snapshot1_23_ss_ctrl_out
+DEBUG - 2020-08-15 12:15:49,880 - jasper.verilog - Writing verilog for signal rfdc_multi_cores_mode2_snapshot1_23_ss_ctrl_user_data_out
+DEBUG - 2020-08-15 12:15:49,880 - jasper.verilog - Writing verilog for signal rfdc_multi_cores_mode2_snapshot1_23_ss_status_in
+DEBUG - 2020-08-15 12:15:49,880 - jasper.verilog - Writing verilog for signal rfdc_multi_cores_mode2_snapshot1_23_ss_status_user_data_in
+DEBUG - 2020-08-15 12:15:49,880 - jasper.verilog - Writing verilog for signal rfdc_multi_cores_mode2_snapshot1_45_ss_ctrl_out
+DEBUG - 2020-08-15 12:15:49,880 - jasper.verilog - Writing verilog for signal rfdc_multi_cores_mode2_snapshot1_45_ss_ctrl_user_data_out
+DEBUG - 2020-08-15 12:15:49,880 - jasper.verilog - Writing verilog for signal rfdc_multi_cores_mode2_snapshot1_45_ss_status_in
+DEBUG - 2020-08-15 12:15:49,880 - jasper.verilog - Writing verilog for signal rfdc_multi_cores_mode2_snapshot1_45_ss_status_user_data_in
+DEBUG - 2020-08-15 12:15:49,880 - jasper.verilog - Writing verilog for signal rfdc_multi_cores_mode2_snapshot1_67_ss_ctrl_out
+DEBUG - 2020-08-15 12:15:49,880 - jasper.verilog - Writing verilog for signal rfdc_multi_cores_mode2_snapshot1_67_ss_ctrl_user_data_out
+DEBUG - 2020-08-15 12:15:49,880 - jasper.verilog - Writing verilog for signal rfdc_multi_cores_mode2_snapshot1_67_ss_status_in
+DEBUG - 2020-08-15 12:15:49,880 - jasper.verilog - Writing verilog for signal rfdc_multi_cores_mode2_snapshot1_67_ss_status_user_data_in
+DEBUG - 2020-08-15 12:15:49,880 - jasper.verilog - Writing verilog for signal rfdc_multi_cores_mode2_sync_state0_in
+DEBUG - 2020-08-15 12:15:49,880 - jasper.verilog - Writing verilog for signal rfdc_multi_cores_mode2_sync_state0_user_data_in
+DEBUG - 2020-08-15 12:15:49,880 - jasper.verilog - Writing verilog for signal rfdc_multi_cores_mode2_sync_state1_in
+DEBUG - 2020-08-15 12:15:49,880 - jasper.verilog - Writing verilog for signal rfdc_multi_cores_mode2_sync_state1_user_data_in
+DEBUG - 2020-08-15 12:15:49,880 - jasper.verilog - Writing verilog for signal M_AXI_RFDC_araddr
+DEBUG - 2020-08-15 12:15:49,880 - jasper.verilog - Writing verilog for signal M_AXI_RFDC_arprot
+DEBUG - 2020-08-15 12:15:49,880 - jasper.verilog - Writing verilog for signal M_AXI_RFDC_arready
+DEBUG - 2020-08-15 12:15:49,880 - jasper.verilog - Writing verilog for signal M_AXI_RFDC_arvalid
+DEBUG - 2020-08-15 12:15:49,880 - jasper.verilog - Writing verilog for signal M_AXI_RFDC_awaddr
+DEBUG - 2020-08-15 12:15:49,880 - jasper.verilog - Writing verilog for signal M_AXI_RFDC_awprot
+DEBUG - 2020-08-15 12:15:49,881 - jasper.verilog - Writing verilog for signal M_AXI_RFDC_awready
+DEBUG - 2020-08-15 12:15:49,881 - jasper.verilog - Writing verilog for signal M_AXI_RFDC_awvalid
+DEBUG - 2020-08-15 12:15:49,881 - jasper.verilog - Writing verilog for signal M_AXI_RFDC_bready
+DEBUG - 2020-08-15 12:15:49,881 - jasper.verilog - Writing verilog for signal M_AXI_RFDC_bresp
+DEBUG - 2020-08-15 12:15:49,881 - jasper.verilog - Writing verilog for signal M_AXI_RFDC_bvalid
+DEBUG - 2020-08-15 12:15:49,881 - jasper.verilog - Writing verilog for signal M_AXI_RFDC_rdata
+DEBUG - 2020-08-15 12:15:49,881 - jasper.verilog - Writing verilog for signal M_AXI_RFDC_rready
+DEBUG - 2020-08-15 12:15:49,881 - jasper.verilog - Writing verilog for signal M_AXI_RFDC_rresp
+DEBUG - 2020-08-15 12:15:49,881 - jasper.verilog - Writing verilog for signal M_AXI_RFDC_rvalid
+DEBUG - 2020-08-15 12:15:49,881 - jasper.verilog - Writing verilog for signal M_AXI_RFDC_wdata
+DEBUG - 2020-08-15 12:15:49,881 - jasper.verilog - Writing verilog for signal M_AXI_RFDC_wready
+DEBUG - 2020-08-15 12:15:49,881 - jasper.verilog - Writing verilog for signal M_AXI_RFDC_wstrb
+DEBUG - 2020-08-15 12:15:49,881 - jasper.verilog - Writing verilog for signal M_AXI_RFDC_wvalid
+DEBUG - 2020-08-15 12:15:49,881 - jasper.verilog - Writing verilog for signal M_AXI_araddr
+DEBUG - 2020-08-15 12:15:49,881 - jasper.verilog - Writing verilog for signal M_AXI_arprot
+DEBUG - 2020-08-15 12:15:49,881 - jasper.verilog - Writing verilog for signal M_AXI_arready
+DEBUG - 2020-08-15 12:15:49,881 - jasper.verilog - Writing verilog for signal M_AXI_arvalid
+DEBUG - 2020-08-15 12:15:49,881 - jasper.verilog - Writing verilog for signal M_AXI_awaddr
+DEBUG - 2020-08-15 12:15:49,881 - jasper.verilog - Writing verilog for signal M_AXI_awprot
+DEBUG - 2020-08-15 12:15:49,881 - jasper.verilog - Writing verilog for signal M_AXI_awready
+DEBUG - 2020-08-15 12:15:49,881 - jasper.verilog - Writing verilog for signal M_AXI_awvalid
+DEBUG - 2020-08-15 12:15:49,881 - jasper.verilog - Writing verilog for signal M_AXI_bready
+DEBUG - 2020-08-15 12:15:49,881 - jasper.verilog - Writing verilog for signal M_AXI_bresp
+DEBUG - 2020-08-15 12:15:49,882 - jasper.verilog - Writing verilog for signal M_AXI_bvalid
+DEBUG - 2020-08-15 12:15:49,882 - jasper.verilog - Writing verilog for signal M_AXI_rdata
+DEBUG - 2020-08-15 12:15:49,882 - jasper.verilog - Writing verilog for signal M_AXI_rready
+DEBUG - 2020-08-15 12:15:49,882 - jasper.verilog - Writing verilog for signal M_AXI_rresp
+DEBUG - 2020-08-15 12:15:49,882 - jasper.verilog - Writing verilog for signal M_AXI_rvalid
+DEBUG - 2020-08-15 12:15:49,882 - jasper.verilog - Writing verilog for signal M_AXI_wdata
+DEBUG - 2020-08-15 12:15:49,882 - jasper.verilog - Writing verilog for signal M_AXI_wready
+DEBUG - 2020-08-15 12:15:49,882 - jasper.verilog - Writing verilog for signal M_AXI_wstrb
+DEBUG - 2020-08-15 12:15:49,882 - jasper.verilog - Writing verilog for signal M_AXI_wvalid
+DEBUG - 2020-08-15 12:15:49,882 - jasper.verilog - Writing verilog for signal axil_clk
+DEBUG - 2020-08-15 12:15:49,882 - jasper.verilog - Writing verilog for signal axil_rst
+DEBUG - 2020-08-15 12:15:49,882 - jasper.verilog - Writing verilog for signal axil_rst_n
+DEBUG - 2020-08-15 12:15:49,882 - jasper.verilog - Writing verilog for signal sys_clk
+DEBUG - 2020-08-15 12:15:49,882 - jasper.verilog - Writing verilog for signal sys_clk180
+DEBUG - 2020-08-15 12:15:49,882 - jasper.verilog - Writing verilog for signal sys_clk270
+DEBUG - 2020-08-15 12:15:49,882 - jasper.verilog - Writing verilog for signal sys_clk90
+DEBUG - 2020-08-15 12:15:49,882 - jasper.verilog - Writing verilog for signal sys_clk_rst
+DEBUG - 2020-08-15 12:15:49,882 - jasper.verilog - Writing verilog for signal rfdc_multi_cores_mode2_led_cntrl_out_we
+DEBUG - 2020-08-15 12:15:49,882 - jasper.verilog - Writing verilog for signal rfdc_multi_cores_mode2_reg_cntrl_out_we
+DEBUG - 2020-08-15 12:15:49,882 - jasper.verilog - Writing verilog for signal rfdc_multi_cores_mode2_snapshot0_01_ss_bram_addr
+DEBUG - 2020-08-15 12:15:49,882 - jasper.verilog - Writing verilog for signal rfdc_multi_cores_mode2_snapshot0_01_ss_bram_data_in
+DEBUG - 2020-08-15 12:15:49,882 - jasper.verilog - Writing verilog for signal rfdc_multi_cores_mode2_snapshot0_01_ss_bram_data_out
+DEBUG - 2020-08-15 12:15:49,883 - jasper.verilog - Writing verilog for signal rfdc_multi_cores_mode2_snapshot0_01_ss_bram_we
+DEBUG - 2020-08-15 12:15:49,883 - jasper.verilog - Writing verilog for signal rfdc_multi_cores_mode2_snapshot0_01_ss_ctrl_out_we
+DEBUG - 2020-08-15 12:15:49,883 - jasper.verilog - Writing verilog for signal rfdc_multi_cores_mode2_snapshot0_01_ss_status_in_we
+DEBUG - 2020-08-15 12:15:49,883 - jasper.verilog - Writing verilog for signal rfdc_multi_cores_mode2_snapshot0_23_ss_bram_addr
+DEBUG - 2020-08-15 12:15:49,883 - jasper.verilog - Writing verilog for signal rfdc_multi_cores_mode2_snapshot0_23_ss_bram_data_in
+DEBUG - 2020-08-15 12:15:49,883 - jasper.verilog - Writing verilog for signal rfdc_multi_cores_mode2_snapshot0_23_ss_bram_data_out
+DEBUG - 2020-08-15 12:15:49,883 - jasper.verilog - Writing verilog for signal rfdc_multi_cores_mode2_snapshot0_23_ss_bram_we
+DEBUG - 2020-08-15 12:15:49,883 - jasper.verilog - Writing verilog for signal rfdc_multi_cores_mode2_snapshot0_23_ss_ctrl_out_we
+DEBUG - 2020-08-15 12:15:49,883 - jasper.verilog - Writing verilog for signal rfdc_multi_cores_mode2_snapshot0_23_ss_status_in_we
+DEBUG - 2020-08-15 12:15:49,883 - jasper.verilog - Writing verilog for signal rfdc_multi_cores_mode2_snapshot0_45_ss_bram_addr
+DEBUG - 2020-08-15 12:15:49,883 - jasper.verilog - Writing verilog for signal rfdc_multi_cores_mode2_snapshot0_45_ss_bram_data_in
+DEBUG - 2020-08-15 12:15:49,883 - jasper.verilog - Writing verilog for signal rfdc_multi_cores_mode2_snapshot0_45_ss_bram_data_out
+DEBUG - 2020-08-15 12:15:49,883 - jasper.verilog - Writing verilog for signal rfdc_multi_cores_mode2_snapshot0_45_ss_bram_we
+DEBUG - 2020-08-15 12:15:49,883 - jasper.verilog - Writing verilog for signal rfdc_multi_cores_mode2_snapshot0_45_ss_ctrl_out_we
+DEBUG - 2020-08-15 12:15:49,883 - jasper.verilog - Writing verilog for signal rfdc_multi_cores_mode2_snapshot0_45_ss_status_in_we
+DEBUG - 2020-08-15 12:15:49,883 - jasper.verilog - Writing verilog for signal rfdc_multi_cores_mode2_snapshot0_67_ss_bram_addr
+DEBUG - 2020-08-15 12:15:49,883 - jasper.verilog - Writing verilog for signal rfdc_multi_cores_mode2_snapshot0_67_ss_bram_data_in
+DEBUG - 2020-08-15 12:15:49,883 - jasper.verilog - Writing verilog for signal rfdc_multi_cores_mode2_snapshot0_67_ss_bram_data_out
+DEBUG - 2020-08-15 12:15:49,883 - jasper.verilog - Writing verilog for signal rfdc_multi_cores_mode2_snapshot0_67_ss_bram_we
+DEBUG - 2020-08-15 12:15:49,883 - jasper.verilog - Writing verilog for signal rfdc_multi_cores_mode2_snapshot0_67_ss_ctrl_out_we
+DEBUG - 2020-08-15 12:15:49,883 - jasper.verilog - Writing verilog for signal rfdc_multi_cores_mode2_snapshot0_67_ss_status_in_we
+DEBUG - 2020-08-15 12:15:49,883 - jasper.verilog - Writing verilog for signal rfdc_multi_cores_mode2_snapshot1_01_ss_bram_addr
+DEBUG - 2020-08-15 12:15:49,884 - jasper.verilog - Writing verilog for signal rfdc_multi_cores_mode2_snapshot1_01_ss_bram_data_in
+DEBUG - 2020-08-15 12:15:49,884 - jasper.verilog - Writing verilog for signal rfdc_multi_cores_mode2_snapshot1_01_ss_bram_data_out
+DEBUG - 2020-08-15 12:15:49,884 - jasper.verilog - Writing verilog for signal rfdc_multi_cores_mode2_snapshot1_01_ss_bram_we
+DEBUG - 2020-08-15 12:15:49,884 - jasper.verilog - Writing verilog for signal rfdc_multi_cores_mode2_snapshot1_01_ss_ctrl_out_we
+DEBUG - 2020-08-15 12:15:49,884 - jasper.verilog - Writing verilog for signal rfdc_multi_cores_mode2_snapshot1_01_ss_status_in_we
+DEBUG - 2020-08-15 12:15:49,884 - jasper.verilog - Writing verilog for signal rfdc_multi_cores_mode2_snapshot1_23_ss_bram_addr
+DEBUG - 2020-08-15 12:15:49,884 - jasper.verilog - Writing verilog for signal rfdc_multi_cores_mode2_snapshot1_23_ss_bram_data_in
+DEBUG - 2020-08-15 12:15:49,884 - jasper.verilog - Writing verilog for signal rfdc_multi_cores_mode2_snapshot1_23_ss_bram_data_out
+DEBUG - 2020-08-15 12:15:49,884 - jasper.verilog - Writing verilog for signal rfdc_multi_cores_mode2_snapshot1_23_ss_bram_we
+DEBUG - 2020-08-15 12:15:49,884 - jasper.verilog - Writing verilog for signal rfdc_multi_cores_mode2_snapshot1_23_ss_ctrl_out_we
+DEBUG - 2020-08-15 12:15:49,884 - jasper.verilog - Writing verilog for signal rfdc_multi_cores_mode2_snapshot1_23_ss_status_in_we
+DEBUG - 2020-08-15 12:15:49,884 - jasper.verilog - Writing verilog for signal rfdc_multi_cores_mode2_snapshot1_45_ss_bram_addr
+DEBUG - 2020-08-15 12:15:49,884 - jasper.verilog - Writing verilog for signal rfdc_multi_cores_mode2_snapshot1_45_ss_bram_data_in
+DEBUG - 2020-08-15 12:15:49,884 - jasper.verilog - Writing verilog for signal rfdc_multi_cores_mode2_snapshot1_45_ss_bram_data_out
+DEBUG - 2020-08-15 12:15:49,884 - jasper.verilog - Writing verilog for signal rfdc_multi_cores_mode2_snapshot1_45_ss_bram_we
+DEBUG - 2020-08-15 12:15:49,884 - jasper.verilog - Writing verilog for signal rfdc_multi_cores_mode2_snapshot1_45_ss_ctrl_out_we
+DEBUG - 2020-08-15 12:15:49,884 - jasper.verilog - Writing verilog for signal rfdc_multi_cores_mode2_snapshot1_45_ss_status_in_we
+DEBUG - 2020-08-15 12:15:49,884 - jasper.verilog - Writing verilog for signal rfdc_multi_cores_mode2_snapshot1_67_ss_bram_addr
+DEBUG - 2020-08-15 12:15:49,884 - jasper.verilog - Writing verilog for signal rfdc_multi_cores_mode2_snapshot1_67_ss_bram_data_in
+DEBUG - 2020-08-15 12:15:49,884 - jasper.verilog - Writing verilog for signal rfdc_multi_cores_mode2_snapshot1_67_ss_bram_data_out
+DEBUG - 2020-08-15 12:15:49,884 - jasper.verilog - Writing verilog for signal rfdc_multi_cores_mode2_snapshot1_67_ss_bram_we
+DEBUG - 2020-08-15 12:15:49,884 - jasper.verilog - Writing verilog for signal rfdc_multi_cores_mode2_snapshot1_67_ss_ctrl_out_we
+DEBUG - 2020-08-15 12:15:49,884 - jasper.verilog - Writing verilog for signal rfdc_multi_cores_mode2_snapshot1_67_ss_status_in_we
+DEBUG - 2020-08-15 12:15:49,885 - jasper.verilog - Writing verilog for signal rfdc_multi_cores_mode2_sync_state0_in_we
+DEBUG - 2020-08-15 12:15:49,885 - jasper.verilog - Writing verilog for signal rfdc_multi_cores_mode2_sync_state1_in_we
+DEBUG - 2020-08-15 12:15:49,885 - jasper.verilog - Writing verilog for signal rfdc_multi_cores_mode2_sys_board_id_in
+DEBUG - 2020-08-15 12:15:49,885 - jasper.verilog - Writing verilog for signal rfdc_multi_cores_mode2_sys_board_id_in_we
+DEBUG - 2020-08-15 12:15:49,885 - jasper.verilog - Writing verilog for signal rfdc_multi_cores_mode2_sys_clkcounter_in
+DEBUG - 2020-08-15 12:15:49,885 - jasper.verilog - Writing verilog for signal rfdc_multi_cores_mode2_sys_clkcounter_in_we
+DEBUG - 2020-08-15 12:15:49,885 - jasper.verilog - Writing verilog for signal rfdc_multi_cores_mode2_sys_rev_in
+DEBUG - 2020-08-15 12:15:49,885 - jasper.verilog - Writing verilog for signal rfdc_multi_cores_mode2_sys_rev_in_we
+DEBUG - 2020-08-15 12:15:49,885 - jasper.verilog - Writing verilog for signal rfdc_multi_cores_mode2_sys_rev_rcs_in
+DEBUG - 2020-08-15 12:15:49,885 - jasper.verilog - Writing verilog for signal rfdc_multi_cores_mode2_sys_rev_rcs_in_we
+DEBUG - 2020-08-15 12:15:49,885 - jasper.verilog - Writing verilog for signal rfdc_multi_cores_mode2_sys_scratchpad_out
+DEBUG - 2020-08-15 12:15:49,885 - jasper.verilog - Writing verilog for signal rfdc_multi_cores_mode2_sys_scratchpad_out_we
+INFO - 2020-08-15 12:15:49,886 - jasper.toolflow - Dumping pickle of top-level Verilog module
+INFO - 2020-08-15 12:15:49,887 - jasper.toolflow - Extracting constraints from peripherals
+DEBUG - 2020-08-15 12:15:49,887 - jasper.toolflow.constraints - new PortConstraint:
+DEBUG - 2020-08-15 12:15:49,887 - jasper.toolflow.constraints -   portname: rfdc_multi_cores_mode2_gpio_led_ext
+DEBUG - 2020-08-15 12:15:49,887 - jasper.toolflow.constraints -   iogroup: led
+DEBUG - 2020-08-15 12:15:49,887 - jasper.toolflow.constraints -   port_index: [0]
+DEBUG - 2020-08-15 12:15:49,887 - jasper.toolflow.constraints -   iogroup_index: [0]
+DEBUG - 2020-08-15 12:15:49,887 - jasper.toolflow.constraints -   loc: None
+DEBUG - 2020-08-15 12:15:49,887 - jasper.toolflow.constraints -   iostd: None
+DEBUG - 2020-08-15 12:15:49,887 - jasper.toolflow.constraints - New set max delay constraint
+DEBUG - 2020-08-15 12:15:49,887 - jasper.toolflow.constraints - source path: None
+DEBUG - 2020-08-15 12:15:49,887 - jasper.toolflow.constraints - destination path: [get_ports {rfdc_multi_cores_mode2_gpio_led_ext[*]}]
+DEBUG - 2020-08-15 12:15:49,887 - jasper.toolflow.constraints - constraint delay: 1.0
+DEBUG - 2020-08-15 12:15:49,887 - jasper.toolflow.constraints - New set max delay constraint
+DEBUG - 2020-08-15 12:15:49,887 - jasper.toolflow.constraints - source path: None
+DEBUG - 2020-08-15 12:15:49,887 - jasper.toolflow.constraints - destination path: [get_ports {rfdc_multi_cores_mode2_gpio_led_ext[*]}]
+DEBUG - 2020-08-15 12:15:49,887 - jasper.toolflow.constraints - constraint delay: 1.0
+DEBUG - 2020-08-15 12:15:49,887 - jasper.toolflow.constraints - New false path constraint
+DEBUG - 2020-08-15 12:15:49,888 - jasper.toolflow.constraints - source path: None
+DEBUG - 2020-08-15 12:15:49,888 - jasper.toolflow.constraints - destination path: [get_ports {rfdc_multi_cores_mode2_gpio_led_ext[*]}]
+DEBUG - 2020-08-15 12:15:49,888 - jasper.toolflow.constraints - new PortConstraint:
+DEBUG - 2020-08-15 12:15:49,888 - jasper.toolflow.constraints -   portname: rfdc_multi_cores_mode2_gpio_led1_ext
+DEBUG - 2020-08-15 12:15:49,888 - jasper.toolflow.constraints -   iogroup: led
+DEBUG - 2020-08-15 12:15:49,888 - jasper.toolflow.constraints -   port_index: [0]
+DEBUG - 2020-08-15 12:15:49,888 - jasper.toolflow.constraints -   iogroup_index: [7]
+DEBUG - 2020-08-15 12:15:49,888 - jasper.toolflow.constraints -   loc: None
+DEBUG - 2020-08-15 12:15:49,888 - jasper.toolflow.constraints -   iostd: None
+DEBUG - 2020-08-15 12:15:49,888 - jasper.toolflow.constraints - New set max delay constraint
+DEBUG - 2020-08-15 12:15:49,888 - jasper.toolflow.constraints - source path: None
+DEBUG - 2020-08-15 12:15:49,888 - jasper.toolflow.constraints - destination path: [get_ports {rfdc_multi_cores_mode2_gpio_led1_ext[*]}]
+DEBUG - 2020-08-15 12:15:49,888 - jasper.toolflow.constraints - constraint delay: 1.0
+DEBUG - 2020-08-15 12:15:49,888 - jasper.toolflow.constraints - New set max delay constraint
+DEBUG - 2020-08-15 12:15:49,888 - jasper.toolflow.constraints - source path: None
+DEBUG - 2020-08-15 12:15:49,888 - jasper.toolflow.constraints - destination path: [get_ports {rfdc_multi_cores_mode2_gpio_led1_ext[*]}]
+DEBUG - 2020-08-15 12:15:49,888 - jasper.toolflow.constraints - constraint delay: 1.0
+DEBUG - 2020-08-15 12:15:49,888 - jasper.toolflow.constraints - New false path constraint
+DEBUG - 2020-08-15 12:15:49,888 - jasper.toolflow.constraints - source path: None
+DEBUG - 2020-08-15 12:15:49,888 - jasper.toolflow.constraints - destination path: [get_ports {rfdc_multi_cores_mode2_gpio_led1_ext[*]}]
+DEBUG - 2020-08-15 12:15:49,888 - jasper.toolflow.constraints - new PortConstraint:
+DEBUG - 2020-08-15 12:15:49,888 - jasper.toolflow.constraints -   portname: clk_100_p
+DEBUG - 2020-08-15 12:15:49,889 - jasper.toolflow.constraints -   iogroup: clk_100_p
+DEBUG - 2020-08-15 12:15:49,889 - jasper.toolflow.constraints -   port_index: []
+DEBUG - 2020-08-15 12:15:49,889 - jasper.toolflow.constraints -   iogroup_index: [0]
+DEBUG - 2020-08-15 12:15:49,889 - jasper.toolflow.constraints -   loc: None
+DEBUG - 2020-08-15 12:15:49,889 - jasper.toolflow.constraints -   iostd: None
+DEBUG - 2020-08-15 12:15:49,889 - jasper.toolflow.constraints - New clock constraint
+DEBUG - 2020-08-15 12:15:49,889 - jasper.toolflow.constraints - clock signal: clk_100_p
+DEBUG - 2020-08-15 12:15:49,889 - jasper.toolflow.constraints - name: clk_100_p
+DEBUG - 2020-08-15 12:15:49,889 - jasper.toolflow.constraints - freq: None
+DEBUG - 2020-08-15 12:15:49,889 - jasper.toolflow.constraints - period: 10.0
+DEBUG - 2020-08-15 12:15:49,889 - jasper.toolflow.constraints - port_en: True
+DEBUG - 2020-08-15 12:15:49,889 - jasper.toolflow.constraints - waveform_min: 0.0
+DEBUG - 2020-08-15 12:15:49,889 - jasper.toolflow.constraints - waveform_max: 5.0
+DEBUG - 2020-08-15 12:15:49,889 - jasper.toolflow.constraints - virtual_en: False
+DEBUG - 2020-08-15 12:15:49,889 - jasper.toolflow.constraints - New clock group constraint
+DEBUG - 2020-08-15 12:15:49,889 - jasper.toolflow.constraints - clock name group 1: -of_objects [get_pins zcu111_infr_inst/user_clk_mmcm_inst/CLKOUT0]
+DEBUG - 2020-08-15 12:15:49,889 - jasper.toolflow.constraints - clock name group 2: -of_objects [get_pins zcu111_inst/zynq_ultra_ps_e_0/U0/PS8_i/PLCLK[0]]
+DEBUG - 2020-08-15 12:15:49,889 - jasper.toolflow.constraints - clock domain relationship: asynchronous
+DEBUG - 2020-08-15 12:15:49,889 - jasper.toolflow.constraints - New clock group constraint
+DEBUG - 2020-08-15 12:15:49,889 - jasper.toolflow.constraints - clock name group 1: -of_objects [get_pins zcu111_inst/zynq_ultra_ps_e_0/U0/PS8_i/PLCLK[0]]
+DEBUG - 2020-08-15 12:15:49,889 - jasper.toolflow.constraints - clock name group 2: -of_objects [get_pins zcu111_infr_inst/user_clk_mmcm_inst/CLKOUT0]
+DEBUG - 2020-08-15 12:15:49,889 - jasper.toolflow.constraints - clock domain relationship: asynchronous
+INFO - 2020-08-15 12:15:49,890 - jasper.toolflow - Generating physical constraints
+DEBUG - 2020-08-15 12:15:49,890 - jasper.toolflow.constraints - Attempting to get physical constraints for port rfdc_multi_cores_mode2_gpio_led_ext on led 
+DEBUG - 2020-08-15 12:15:49,890 - jasper.toolflow.constraints - Setting pin loc: rfdc_multi_cores_mode2_gpio_led_ext AR13
+DEBUG - 2020-08-15 12:15:49,890 - jasper.toolflow.constraints - Setting pin iostd: rfdc_multi_cores_mode2_gpio_led_ext LVCMOS18
+DEBUG - 2020-08-15 12:15:49,890 - jasper.toolflow.constraints - Attempting to get physical constraints for port rfdc_multi_cores_mode2_gpio_led1_ext on led 
+DEBUG - 2020-08-15 12:15:49,890 - jasper.toolflow.constraints - Setting pin loc: rfdc_multi_cores_mode2_gpio_led1_ext AV15
+DEBUG - 2020-08-15 12:15:49,890 - jasper.toolflow.constraints - Setting pin iostd: rfdc_multi_cores_mode2_gpio_led1_ext LVCMOS18
+DEBUG - 2020-08-15 12:15:49,890 - jasper.toolflow.constraints - Attempting to get physical constraints for port clk_100_p on clk_100_p 
+DEBUG - 2020-08-15 12:15:49,890 - jasper.toolflow.constraints - Setting pin loc: clk_100_p AL16
+DEBUG - 2020-08-15 12:15:49,890 - jasper.toolflow.constraints - Setting pin iostd: clk_100_p LVDS
+DEBUG - 2020-08-15 12:15:49,890 - jasper.toolflow - Opening /home/wei/casper/tutorials_devel/zcu111/mlib_devel/jasper_library/hdl_sources/zcu111/core_info.tab
+DEBUG - 2020-08-15 12:15:49,890 - jasper.toolflow - Adding core_info.tab entry for snapshot0_01_ss_bram
+DEBUG - 2020-08-15 12:15:49,890 - jasper.toolflow - Adding core_info.tab entry for snapshot0_23_ss_bram
+DEBUG - 2020-08-15 12:15:49,890 - jasper.toolflow - Adding core_info.tab entry for snapshot0_45_ss_bram
+DEBUG - 2020-08-15 12:15:49,890 - jasper.toolflow - Adding core_info.tab entry for snapshot0_67_ss_bram
+DEBUG - 2020-08-15 12:15:49,890 - jasper.toolflow - Adding core_info.tab entry for snapshot1_01_ss_bram
+DEBUG - 2020-08-15 12:15:49,890 - jasper.toolflow - Adding core_info.tab entry for snapshot1_23_ss_bram
+DEBUG - 2020-08-15 12:15:49,890 - jasper.toolflow - Adding core_info.tab entry for snapshot1_45_ss_bram
+DEBUG - 2020-08-15 12:15:49,890 - jasper.toolflow - Adding core_info.tab entry for snapshot1_67_ss_bram
+DEBUG - 2020-08-15 12:15:49,891 - jasper.toolflow - Adding core_info.tab entry for led_cntrl
+DEBUG - 2020-08-15 12:15:49,891 - jasper.toolflow - Adding core_info.tab entry for reg_cntrl
+DEBUG - 2020-08-15 12:15:49,891 - jasper.toolflow - Adding core_info.tab entry for snapshot0_01_ss_ctrl
+DEBUG - 2020-08-15 12:15:49,891 - jasper.toolflow - Adding core_info.tab entry for snapshot0_01_ss_status
+DEBUG - 2020-08-15 12:15:49,891 - jasper.toolflow - Adding core_info.tab entry for snapshot0_23_ss_ctrl
+DEBUG - 2020-08-15 12:15:49,891 - jasper.toolflow - Adding core_info.tab entry for snapshot0_23_ss_status
+DEBUG - 2020-08-15 12:15:49,891 - jasper.toolflow - Adding core_info.tab entry for snapshot0_45_ss_ctrl
+DEBUG - 2020-08-15 12:15:49,891 - jasper.toolflow - Adding core_info.tab entry for snapshot0_45_ss_status
+DEBUG - 2020-08-15 12:15:49,891 - jasper.toolflow - Adding core_info.tab entry for snapshot0_67_ss_ctrl
+DEBUG - 2020-08-15 12:15:49,891 - jasper.toolflow - Adding core_info.tab entry for snapshot0_67_ss_status
+DEBUG - 2020-08-15 12:15:49,891 - jasper.toolflow - Adding core_info.tab entry for snapshot1_01_ss_ctrl
+DEBUG - 2020-08-15 12:15:49,891 - jasper.toolflow - Adding core_info.tab entry for snapshot1_01_ss_status
+DEBUG - 2020-08-15 12:15:49,891 - jasper.toolflow - Adding core_info.tab entry for snapshot1_23_ss_ctrl
+DEBUG - 2020-08-15 12:15:49,891 - jasper.toolflow - Adding core_info.tab entry for snapshot1_23_ss_status
+DEBUG - 2020-08-15 12:15:49,891 - jasper.toolflow - Adding core_info.tab entry for snapshot1_45_ss_ctrl
+DEBUG - 2020-08-15 12:15:49,891 - jasper.toolflow - Adding core_info.tab entry for snapshot1_45_ss_status
+DEBUG - 2020-08-15 12:15:49,891 - jasper.toolflow - Adding core_info.tab entry for snapshot1_67_ss_ctrl
+DEBUG - 2020-08-15 12:15:49,891 - jasper.toolflow - Adding core_info.tab entry for snapshot1_67_ss_status
+DEBUG - 2020-08-15 12:15:49,891 - jasper.toolflow - Adding core_info.tab entry for sync_state0
+DEBUG - 2020-08-15 12:15:49,891 - jasper.toolflow - Adding core_info.tab entry for sync_state1
+DEBUG - 2020-08-15 12:15:49,891 - jasper.toolflow - Adding core_info.tab entry for sys_block
+DEBUG - 2020-08-15 12:15:49,891 - jasper.toolflow - Adding core_info.tab entry for rfdc_V0_2
+DEBUG - 2020-08-15 12:15:49,892 - jasper.toolflow - Opening /home/wei/casper/tutorials_devel/zcu111/mlib_devel/jasper_library/hdl_sources/zcu111/core_info.tab
+DEBUG - 2020-08-15 12:15:49,892 - jasper.toolflow - Opening /home/wei/casper/tutorials_devel/zcu111/mlib_devel/jasper_library/hdl_sources/zcu111/core_info.jam.tab
+DEBUG - 2020-08-15 12:15:49,892 - jasper.toolflow - Adding core_info.jam.tab entry for snapshot0_01_ss_bram
+DEBUG - 2020-08-15 12:15:49,892 - jasper.toolflow - Adding core_info.jam.tab entry for snapshot0_23_ss_bram
+DEBUG - 2020-08-15 12:15:49,892 - jasper.toolflow - Adding core_info.jam.tab entry for snapshot0_45_ss_bram
+DEBUG - 2020-08-15 12:15:49,892 - jasper.toolflow - Adding core_info.jam.tab entry for snapshot0_67_ss_bram
+DEBUG - 2020-08-15 12:15:49,892 - jasper.toolflow - Adding core_info.jam.tab entry for snapshot1_01_ss_bram
+DEBUG - 2020-08-15 12:15:49,892 - jasper.toolflow - Adding core_info.jam.tab entry for snapshot1_23_ss_bram
+DEBUG - 2020-08-15 12:15:49,892 - jasper.toolflow - Adding core_info.jam.tab entry for snapshot1_45_ss_bram
+DEBUG - 2020-08-15 12:15:49,892 - jasper.toolflow - Adding core_info.jam.tab entry for snapshot1_67_ss_bram
+DEBUG - 2020-08-15 12:15:49,892 - jasper.toolflow - Adding core_info.jam.tab entry for led_cntrl
+DEBUG - 2020-08-15 12:15:49,892 - jasper.toolflow - Adding core_info.jam.tab entry for reg_cntrl
+DEBUG - 2020-08-15 12:15:49,892 - jasper.toolflow - Adding core_info.jam.tab entry for snapshot0_01_ss_ctrl
+DEBUG - 2020-08-15 12:15:49,892 - jasper.toolflow - Adding core_info.jam.tab entry for snapshot0_01_ss_status
+DEBUG - 2020-08-15 12:15:49,892 - jasper.toolflow - Adding core_info.jam.tab entry for snapshot0_23_ss_ctrl
+DEBUG - 2020-08-15 12:15:49,892 - jasper.toolflow - Adding core_info.jam.tab entry for snapshot0_23_ss_status
+DEBUG - 2020-08-15 12:15:49,892 - jasper.toolflow - Adding core_info.jam.tab entry for snapshot0_45_ss_ctrl
+DEBUG - 2020-08-15 12:15:49,892 - jasper.toolflow - Adding core_info.jam.tab entry for snapshot0_45_ss_status
+DEBUG - 2020-08-15 12:15:49,893 - jasper.toolflow - Adding core_info.jam.tab entry for snapshot0_67_ss_ctrl
+DEBUG - 2020-08-15 12:15:49,893 - jasper.toolflow - Adding core_info.jam.tab entry for snapshot0_67_ss_status
+DEBUG - 2020-08-15 12:15:49,893 - jasper.toolflow - Adding core_info.jam.tab entry for snapshot1_01_ss_ctrl
+DEBUG - 2020-08-15 12:15:49,893 - jasper.toolflow - Adding core_info.jam.tab entry for snapshot1_01_ss_status
+DEBUG - 2020-08-15 12:15:49,893 - jasper.toolflow - Adding core_info.jam.tab entry for snapshot1_23_ss_ctrl
+DEBUG - 2020-08-15 12:15:49,893 - jasper.toolflow - Adding core_info.jam.tab entry for snapshot1_23_ss_status
+DEBUG - 2020-08-15 12:15:49,893 - jasper.toolflow - Adding core_info.jam.tab entry for snapshot1_45_ss_ctrl
+DEBUG - 2020-08-15 12:15:49,893 - jasper.toolflow - Adding core_info.jam.tab entry for snapshot1_45_ss_status
+DEBUG - 2020-08-15 12:15:49,893 - jasper.toolflow - Adding core_info.jam.tab entry for snapshot1_67_ss_ctrl
+DEBUG - 2020-08-15 12:15:49,893 - jasper.toolflow - Adding core_info.jam.tab entry for snapshot1_67_ss_status
+DEBUG - 2020-08-15 12:15:49,893 - jasper.toolflow - Adding core_info.jam.tab entry for sync_state0
+DEBUG - 2020-08-15 12:15:49,893 - jasper.toolflow - Adding core_info.jam.tab entry for sync_state1
+DEBUG - 2020-08-15 12:15:49,893 - jasper.toolflow - Adding core_info.jam.tab entry for sys_block
+DEBUG - 2020-08-15 12:15:49,893 - jasper.toolflow - Adding core_info.jam.tab entry for rfdc_V0_2
+DEBUG - 2020-08-15 12:15:49,893 - jasper.toolflow - Opening /home/wei/casper/tutorials_devel/zcu111/mlib_devel/jasper_library/hdl_sources/zcu111/core_info.jam.tab
+INFO - 2020-08-15 12:15:49,948 - jasper.toolflow - Carrying out constraints rule check
+WARNING - 2020-08-15 12:15:49,948 - jasper.toolflow - Port clk_100_n (instantiated by zcu111: ZCU111) has no constraints!
+INFO - 2020-08-15 12:15:49,949 - jasper.toolflow - Constraint rule check complete
+DEBUG - 2020-08-15 12:15:49,965 - jasper.toolflow.backend - Adding tcl command: puts "Starting tcl script"
+DEBUG - 2020-08-15 12:15:49,965 - jasper.toolflow.backend - Adding tcl command: create_project -f myproj /home/wei/casper/tutorials_devel/zcu111/rfdc_multi_cores/rfdc_multi_cores_mode2/myproj -part xczu28dr-ffvg1517-2-e
+DEBUG - 2020-08-15 12:15:49,965 - jasper.toolflow.backend - Adding tcl command: set_property target_language VHDL [current_project]
+DEBUG - 2020-08-15 12:15:49,993 - jasper.toolflow.backend - Adding source file: /home/wei/casper/tutorials_devel/zcu111/rfdc_multi_cores/rfdc_multi_cores_mode2/top.v
+DEBUG - 2020-08-15 12:15:49,993 - jasper.toolflow.backend - Adding tcl command: import_files -force /home/wei/casper/tutorials_devel/zcu111/rfdc_multi_cores/rfdc_multi_cores_mode2/top.v
+DEBUG - 2020-08-15 12:15:49,993 - jasper.toolflow.backend - Adding source file: /home/wei/casper/tutorials_devel/zcu111/mlib_devel/jasper_library/hdl_sources/gpio_simulink2ext
+DEBUG - 2020-08-15 12:15:49,993 - jasper.toolflow.backend - Adding tcl command: import_files -force /home/wei/casper/tutorials_devel/zcu111/mlib_devel/jasper_library/hdl_sources/gpio_simulink2ext
+DEBUG - 2020-08-15 12:15:49,993 - jasper.toolflow.backend - Adding source file: /home/wei/casper/tutorials_devel/zcu111/mlib_devel/jasper_library/hdl_sources/wb_register_ppc2simulink
+DEBUG - 2020-08-15 12:15:49,993 - jasper.toolflow.backend - Adding tcl command: import_files -force /home/wei/casper/tutorials_devel/zcu111/mlib_devel/jasper_library/hdl_sources/wb_register_ppc2simulink
+DEBUG - 2020-08-15 12:15:49,994 - jasper.toolflow.backend - Adding source file: /home/wei/casper/tutorials_devel/zcu111/mlib_devel/jasper_library/hdl_sources/rfdc_V0_2/RFDC_MODE1.xci
+DEBUG - 2020-08-15 12:15:49,994 - jasper.toolflow.backend - Adding tcl command: import_files -force /home/wei/casper/tutorials_devel/zcu111/mlib_devel/jasper_library/hdl_sources/rfdc_V0_2/RFDC_MODE1.xci
+DEBUG - 2020-08-15 12:15:49,994 - jasper.toolflow.backend - Adding source file: /home/wei/casper/tutorials_devel/zcu111/mlib_devel/jasper_library/hdl_sources/rfdc_V0_2/RFDC_MODE2.xci
+DEBUG - 2020-08-15 12:15:49,994 - jasper.toolflow.backend - Adding tcl command: import_files -force /home/wei/casper/tutorials_devel/zcu111/mlib_devel/jasper_library/hdl_sources/rfdc_V0_2/RFDC_MODE2.xci
+DEBUG - 2020-08-15 12:15:49,994 - jasper.toolflow.backend - Adding source file: /home/wei/casper/tutorials_devel/zcu111/mlib_devel/jasper_library/hdl_sources/wb_register_simulink2ppc
+DEBUG - 2020-08-15 12:15:49,994 - jasper.toolflow.backend - Adding tcl command: import_files -force /home/wei/casper/tutorials_devel/zcu111/mlib_devel/jasper_library/hdl_sources/wb_register_simulink2ppc
+DEBUG - 2020-08-15 12:15:49,994 - jasper.toolflow.backend - Adding source file: /home/wei/casper/tutorials_devel/zcu111/mlib_devel/jasper_library/hdl_sources/infrastructure/zcu111_infrastructure.v
+DEBUG - 2020-08-15 12:15:49,994 - jasper.toolflow.backend - Adding tcl command: import_files -force /home/wei/casper/tutorials_devel/zcu111/mlib_devel/jasper_library/hdl_sources/infrastructure/zcu111_infrastructure.v
+DEBUG - 2020-08-15 12:15:49,994 - jasper.toolflow.backend - Adding source file: /home/wei/casper/tutorials_devel/zcu111/mlib_devel/jasper_library/hdl_sources/utils/cdc_synchroniser.vhd
+DEBUG - 2020-08-15 12:15:49,994 - jasper.toolflow.backend - Adding tcl command: import_files -force /home/wei/casper/tutorials_devel/zcu111/mlib_devel/jasper_library/hdl_sources/utils/cdc_synchroniser.vhd
+DEBUG - 2020-08-15 12:15:49,994 - jasper.toolflow.backend - Adding source file: /home/wei/casper/tutorials_devel/zcu111/mlib_devel/jasper_library/hdl_sources/sys_block
+DEBUG - 2020-08-15 12:15:49,994 - jasper.toolflow.backend - Adding tcl command: import_files -force /home/wei/casper/tutorials_devel/zcu111/mlib_devel/jasper_library/hdl_sources/sys_block
+DEBUG - 2020-08-15 12:15:49,994 - jasper.toolflow.backend - Adding source file: /home/wei/casper/tutorials_devel/zcu111/rfdc_multi_cores/rfdc_multi_cores_mode2/sysgen/hdl_netlist/rfdc_multi_cores_mode2.srcs/sources_1/imports/sysgen
+DEBUG - 2020-08-15 12:15:49,994 - jasper.toolflow.backend - Adding tcl command: import_files -force /home/wei/casper/tutorials_devel/zcu111/rfdc_multi_cores/rfdc_multi_cores_mode2/sysgen/hdl_netlist/rfdc_multi_cores_mode2.srcs/sources_1/imports/sysgen
+DEBUG - 2020-08-15 12:15:49,994 - jasper.toolflow.backend - Adding source file: /home/wei/casper/tutorials_devel/zcu111/rfdc_multi_cores/rfdc_multi_cores_mode2/sysgen/hdl_netlist/rfdc_multi_cores_mode2.srcs/sources_1/ip/rfdc_multi_cores_mode2_c_counter_binary_v12_0_i2/rfdc_multi_cores_mode2_c_counter_binary_v12_0_i2.xci
+DEBUG - 2020-08-15 12:15:49,994 - jasper.toolflow.backend - Adding tcl command: import_files -force /home/wei/casper/tutorials_devel/zcu111/rfdc_multi_cores/rfdc_multi_cores_mode2/sysgen/hdl_netlist/rfdc_multi_cores_mode2.srcs/sources_1/ip/rfdc_multi_cores_mode2_c_counter_binary_v12_0_i2/rfdc_multi_cores_mode2_c_counter_binary_v12_0_i2.xci
+DEBUG - 2020-08-15 12:15:49,994 - jasper.toolflow.backend - Adding source file: /home/wei/casper/tutorials_devel/zcu111/rfdc_multi_cores/rfdc_multi_cores_mode2/sysgen/hdl_netlist/rfdc_multi_cores_mode2.srcs/sources_1/ip/rfdc_multi_cores_mode2_c_counter_binary_v12_0_i1/rfdc_multi_cores_mode2_c_counter_binary_v12_0_i1.xci
+DEBUG - 2020-08-15 12:15:49,994 - jasper.toolflow.backend - Adding tcl command: import_files -force /home/wei/casper/tutorials_devel/zcu111/rfdc_multi_cores/rfdc_multi_cores_mode2/sysgen/hdl_netlist/rfdc_multi_cores_mode2.srcs/sources_1/ip/rfdc_multi_cores_mode2_c_counter_binary_v12_0_i1/rfdc_multi_cores_mode2_c_counter_binary_v12_0_i1.xci
+DEBUG - 2020-08-15 12:15:49,994 - jasper.toolflow.backend - Adding source file: /home/wei/casper/tutorials_devel/zcu111/rfdc_multi_cores/rfdc_multi_cores_mode2/sysgen/hdl_netlist/rfdc_multi_cores_mode2.srcs/sources_1/ip/rfdc_multi_cores_mode2_c_counter_binary_v12_0_i0/rfdc_multi_cores_mode2_c_counter_binary_v12_0_i0.xci
+DEBUG - 2020-08-15 12:15:49,994 - jasper.toolflow.backend - Adding tcl command: import_files -force /home/wei/casper/tutorials_devel/zcu111/rfdc_multi_cores/rfdc_multi_cores_mode2/sysgen/hdl_netlist/rfdc_multi_cores_mode2.srcs/sources_1/ip/rfdc_multi_cores_mode2_c_counter_binary_v12_0_i0/rfdc_multi_cores_mode2_c_counter_binary_v12_0_i0.xci
+INFO - 2020-08-15 12:15:49,995 - jasper.toolflow.backend - parsing constraint <castro.PinConstraint object at 0x7f0469df1a90>
+DEBUG - 2020-08-15 12:15:49,995 - jasper.toolflow.backend - New PortConstraint instance found: rfdc_multi_cores_mode2_gpio_led_ext -> led
+DEBUG - 2020-08-15 12:15:49,995 - jasper.toolflow.backend - Getting loc for port index 0
+DEBUG - 2020-08-15 12:15:49,995 - jasper.toolflow.backend - LOC constraint found at AR13
+DEBUG - 2020-08-15 12:15:49,995 - jasper.toolflow.backend - Getting iostd for port index 0
+DEBUG - 2020-08-15 12:15:49,995 - jasper.toolflow.backend - IOSTD constraint found: LVCMOS18
+INFO - 2020-08-15 12:15:49,995 - jasper.toolflow.backend - parsing constraint <castro.PinConstraint object at 0x7f0469df1ac8>
+DEBUG - 2020-08-15 12:15:49,995 - jasper.toolflow.backend - New PortConstraint instance found: rfdc_multi_cores_mode2_gpio_led1_ext -> led
+DEBUG - 2020-08-15 12:15:49,995 - jasper.toolflow.backend - Getting loc for port index 0
+DEBUG - 2020-08-15 12:15:49,995 - jasper.toolflow.backend - LOC constraint found at AV15
+DEBUG - 2020-08-15 12:15:49,995 - jasper.toolflow.backend - Getting iostd for port index 0
+DEBUG - 2020-08-15 12:15:49,995 - jasper.toolflow.backend - IOSTD constraint found: LVCMOS18
+INFO - 2020-08-15 12:15:49,995 - jasper.toolflow.backend - parsing constraint <castro.PinConstraint object at 0x7f0469df1b00>
+DEBUG - 2020-08-15 12:15:49,995 - jasper.toolflow.backend - New PortConstraint instance found: clk_100_p -> clk_100_p
+DEBUG - 2020-08-15 12:15:49,995 - jasper.toolflow.backend - Getting loc for port index 0
+DEBUG - 2020-08-15 12:15:49,995 - jasper.toolflow.backend - LOC constraint found at AL16
+DEBUG - 2020-08-15 12:15:49,995 - jasper.toolflow.backend - Getting iostd for port index 0
+DEBUG - 2020-08-15 12:15:49,995 - jasper.toolflow.backend - IOSTD constraint found: LVDS
+INFO - 2020-08-15 12:15:49,996 - jasper.toolflow.backend - parsing constraint <castro.ClkConstraint object at 0x7f0469df1898>
+DEBUG - 2020-08-15 12:15:49,996 - jasper.toolflow.backend - New Clock constraint found
+INFO - 2020-08-15 12:15:49,996 - jasper.toolflow.backend - parsing constraint <castro.ClkGrpConstraint object at 0x7f0469df18d0>
+DEBUG - 2020-08-15 12:15:49,996 - jasper.toolflow.backend - New Clock group constraint found
+INFO - 2020-08-15 12:15:49,996 - jasper.toolflow.backend - parsing constraint <castro.ClkGrpConstraint object at 0x7f0469df1908>
+DEBUG - 2020-08-15 12:15:49,996 - jasper.toolflow.backend - New Clock group constraint found
+INFO - 2020-08-15 12:15:49,996 - jasper.toolflow.backend - parsing constraint <castro.MaxDelayConstraint object at 0x7f0469df19b0>
+DEBUG - 2020-08-15 12:15:49,996 - jasper.toolflow.backend - New Max delay constraint found
+INFO - 2020-08-15 12:15:49,996 - jasper.toolflow.backend - parsing constraint <castro.MaxDelayConstraint object at 0x7f0469df19e8>
+DEBUG - 2020-08-15 12:15:49,996 - jasper.toolflow.backend - New Max delay constraint found
+INFO - 2020-08-15 12:15:49,996 - jasper.toolflow.backend - parsing constraint <castro.MinDelayConstraint object at 0x7f0469df1a20>
+DEBUG - 2020-08-15 12:15:49,996 - jasper.toolflow.backend - New Min delay constraint found
+INFO - 2020-08-15 12:15:49,996 - jasper.toolflow.backend - parsing constraint <castro.MinDelayConstraint object at 0x7f0469df1a58>
+DEBUG - 2020-08-15 12:15:49,996 - jasper.toolflow.backend - New Min delay constraint found
+INFO - 2020-08-15 12:15:49,996 - jasper.toolflow.backend - parsing constraint <castro.FalsePthConstraint object at 0x7f0469df1940>
+DEBUG - 2020-08-15 12:15:49,996 - jasper.toolflow.backend - New False Path constraint found
+INFO - 2020-08-15 12:15:49,996 - jasper.toolflow.backend - parsing constraint <castro.FalsePthConstraint object at 0x7f0469df1978>
+DEBUG - 2020-08-15 12:15:49,997 - jasper.toolflow.backend - New False Path constraint found
+INFO - 2020-08-15 12:15:49,997 - jasper.toolflow.backend - Constraints: set_property PACKAGE_PIN AR13 [get_ports rfdc_multi_cores_mode2_gpio_led_ext[0]]
+set_property IOSTANDARD LVCMOS18 [get_ports rfdc_multi_cores_mode2_gpio_led_ext[0]]
+set_property PACKAGE_PIN AV15 [get_ports rfdc_multi_cores_mode2_gpio_led1_ext[0]]
+set_property IOSTANDARD LVCMOS18 [get_ports rfdc_multi_cores_mode2_gpio_led1_ext[0]]
+set_property PACKAGE_PIN AL16 [get_ports clk_100_p]
+set_property IOSTANDARD LVDS [get_ports clk_100_p]
+create_clock -period 10.000 -name clk_100_p -waveform {0.000 5.000} [get_ports {clk_100_p}]
+set_clock_groups -asynchronous -group [get_clocks -of_objects [get_pins zcu111_infr_inst/user_clk_mmcm_inst/CLKOUT0]] -group [get_clocks -of_objects [get_pins zcu111_inst/zynq_ultra_ps_e_0/U0/PS8_i/PLCLK[0]]]
+set_clock_groups -asynchronous -group [get_clocks -of_objects [get_pins zcu111_inst/zynq_ultra_ps_e_0/U0/PS8_i/PLCLK[0]]] -group [get_clocks -of_objects [get_pins zcu111_infr_inst/user_clk_mmcm_inst/CLKOUT0]]
+set_max_delay 1.0 -to [get_ports {rfdc_multi_cores_mode2_gpio_led_ext[*]}]
+set_max_delay 1.0 -to [get_ports {rfdc_multi_cores_mode2_gpio_led1_ext[*]}]
+set_min_delay 1.0 -to [get_ports {rfdc_multi_cores_mode2_gpio_led_ext[*]}]
+set_min_delay 1.0 -to [get_ports {rfdc_multi_cores_mode2_gpio_led1_ext[*]}]
+set_false_path -to [get_ports {rfdc_multi_cores_mode2_gpio_led_ext[*]}]
+set_false_path -to [get_ports {rfdc_multi_cores_mode2_gpio_led1_ext[*]}]
+
+INFO - 2020-08-15 12:15:49,997 - jasper.toolflow.backend - Finished writing constraints file: /home/wei/casper/tutorials_devel/zcu111/rfdc_multi_cores/rfdc_multi_cores_mode2/user_const.xdc
+DEBUG - 2020-08-15 12:15:49,997 - jasper.toolflow.backend - Adding constraint file: /home/wei/casper/tutorials_devel/zcu111/rfdc_multi_cores/rfdc_multi_cores_mode2/user_const.xdc
+DEBUG - 2020-08-15 12:15:49,997 - jasper.toolflow.backend - Adding tcl command: import_files -force -fileset constrs_1 /home/wei/casper/tutorials_devel/zcu111/rfdc_multi_cores/rfdc_multi_cores_mode2/user_const.xdc
+DEBUG - 2020-08-15 12:15:49,997 - jasper.toolflow.backend - Adding tcl command: set_property top top [current_fileset]
+DEBUG - 2020-08-15 12:15:49,997 - jasper.toolflow.backend - Adding tcl command: update_compile_order -fileset sources_1
+DEBUG - 2020-08-15 12:15:49,997 - jasper.toolflow.backend - Adding tcl command: if {[llength [glob -nocomplain [get_property directory [current_project]]/myproj.srcs/sources_1/imports/*.coe]] > 0} {
+DEBUG - 2020-08-15 12:15:49,997 - jasper.toolflow.backend - Adding tcl command: file copy -force {*}[glob [get_property directory [current_project]]/myproj.srcs/sources_1/imports/*.coe] [get_property directory [current_project]]/myproj.srcs/sources_1/ip/
+DEBUG - 2020-08-15 12:15:49,997 - jasper.toolflow.backend - Adding tcl command: }
+DEBUG - 2020-08-15 12:15:49,997 - jasper.toolflow.backend - Adding tcl command: upgrade_ip -quiet [get_ips *]
+DEBUG - 2020-08-15 12:15:49,997 - jasper.toolflow.backend - adding the upgrade_ip command to the tcl script
+DEBUG - 2020-08-15 12:15:49,997 - jasper.toolflow.backend - Adding tcl command: set_property STEPS.SYNTH_DESIGN.ARGS.FLATTEN_HIERARCHY none [get_runs synth_1]
+DEBUG - 2020-08-15 12:15:49,997 - jasper.toolflow.backend - Adding tcl command: reset_run synth_1
+DEBUG - 2020-08-15 12:15:49,997 - jasper.toolflow.backend - Adding tcl command: launch_runs synth_1 -jobs 4
+DEBUG - 2020-08-15 12:15:49,997 - jasper.toolflow.backend - Adding tcl command: wait_on_run synth_1
+DEBUG - 2020-08-15 12:15:49,998 - jasper.toolflow.backend - Adding tcl command: open_run synth_1
+DEBUG - 2020-08-15 12:15:49,998 - jasper.toolflow.backend - Adding tcl command: set_property STEPS.WRITE_BITSTREAM.ARGS.BIN_FILE true [get_runs impl_1]
+DEBUG - 2020-08-15 12:15:49,998 - jasper.toolflow.backend - Adding tcl command: set_property STEPS.PHYS_OPT_DESIGN.IS_ENABLED true [get_runs impl_1]
+DEBUG - 2020-08-15 12:15:49,998 - jasper.toolflow.backend - Adding tcl command: set_property STEPS.POST_ROUTE_PHYS_OPT_DESIGN.IS_ENABLED true [get_runs impl_1]
+DEBUG - 2020-08-15 12:15:49,998 - jasper.toolflow.backend - Adding tcl command: launch_runs impl_1 -jobs 4
+DEBUG - 2020-08-15 12:15:49,998 - jasper.toolflow.backend - Adding tcl command: wait_on_run impl_1
+DEBUG - 2020-08-15 12:15:49,998 - jasper.toolflow.backend - Adding tcl command: open_run impl_1
+DEBUG - 2020-08-15 12:15:49,998 - jasper.toolflow.backend - Adding tcl command: launch_runs impl_1 -to_step write_bitstream
+DEBUG - 2020-08-15 12:15:49,998 - jasper.toolflow.backend - Adding tcl command: wait_on_run impl_1
+DEBUG - 2020-08-15 12:15:49,998 - jasper.toolflow.backend - Adding tcl command: cd [get_property DIRECTORY [current_project]]
+DEBUG - 2020-08-15 12:15:49,998 - jasper.toolflow.backend - Adding tcl command: if { [get_property STATS.WNS [get_runs impl_1] ] < 0 } {
+DEBUG - 2020-08-15 12:15:49,998 - jasper.toolflow.backend - Adding tcl command: puts "Found timing violations => Worst Negative Slack: [get_property STATS.WNS [get_runs impl_1]] ns" 
+DEBUG - 2020-08-15 12:15:49,998 - jasper.toolflow.backend - Adding tcl command: } else {
+DEBUG - 2020-08-15 12:15:49,998 - jasper.toolflow.backend - Adding tcl command: puts "No timing violations => Worst Negative Slack: [get_property STATS.WNS [get_runs impl_1]] ns" 
+DEBUG - 2020-08-15 12:15:49,998 - jasper.toolflow.backend - Adding tcl command: }
+DEBUG - 2020-08-15 12:15:49,998 - jasper.toolflow.backend - Adding tcl command: if { [get_property STATS.TNS [get_runs impl_1] ] < 0 } {
+DEBUG - 2020-08-15 12:15:49,998 - jasper.toolflow.backend - Adding tcl command: puts "Found timing violations => Total Negative Slack: [get_property STATS.TNS [get_runs impl_1]] ns" 
+DEBUG - 2020-08-15 12:15:49,998 - jasper.toolflow.backend - Adding tcl command: } else {
+DEBUG - 2020-08-15 12:15:49,998 - jasper.toolflow.backend - Adding tcl command: puts "No timing violations => Total Negative Slack: [get_property STATS.TNS [get_runs impl_1]] ns" 
+DEBUG - 2020-08-15 12:15:49,998 - jasper.toolflow.backend - Adding tcl command: }
+DEBUG - 2020-08-15 12:15:49,998 - jasper.toolflow.backend - Adding tcl command: if { [get_property STATS.WHS [get_runs impl_1] ] < 0 } {
+DEBUG - 2020-08-15 12:15:49,999 - jasper.toolflow.backend - Adding tcl command: puts "Found timing violations => Worst Hold Slack: [get_property STATS.WHS [get_runs impl_1]] ns" 
+DEBUG - 2020-08-15 12:15:49,999 - jasper.toolflow.backend - Adding tcl command: } else {
+DEBUG - 2020-08-15 12:15:49,999 - jasper.toolflow.backend - Adding tcl command: puts "No timing violations => Worst Hold Slack: [get_property STATS.WHS [get_runs impl_1]] ns" 
+DEBUG - 2020-08-15 12:15:49,999 - jasper.toolflow.backend - Adding tcl command: }
+DEBUG - 2020-08-15 12:15:49,999 - jasper.toolflow.backend - Adding tcl command: if { [get_property STATS.THS [get_runs impl_1] ] < 0 } {
+DEBUG - 2020-08-15 12:15:49,999 - jasper.toolflow.backend - Adding tcl command: puts "Found timing violations => Total Hold Slack: [get_property STATS.THS [get_runs impl_1]] ns" 
+DEBUG - 2020-08-15 12:15:49,999 - jasper.toolflow.backend - Adding tcl command: } else {
+DEBUG - 2020-08-15 12:15:49,999 - jasper.toolflow.backend - Adding tcl command: puts "No timing violations => Total Hold Slack: [get_property STATS.THS [get_runs impl_1]] ns" 
+DEBUG - 2020-08-15 12:15:49,999 - jasper.toolflow.backend - Adding tcl command: }
+INFO - 2020-08-15 12:15:49,999 - jasper.toolflow.backend - Extracting yellow block tcl commands from peripherals
+DEBUG - 2020-08-15 12:15:49,999 - jasper.toolflow.backend - Adding tcl command: source /home/wei/casper/tutorials_devel/zcu111/mlib_devel/jasper_library/hdl_sources/infrastructure/zcu111.tcl
+DEBUG - 2020-08-15 12:15:49,999 - jasper.toolflow.backend - Adding tcl command: generate_target all [get_files [get_property directory [current_project]]/myproj.srcs/sources_1/bd/zcu111/zcu111.bd]
+DEBUG - 2020-08-15 12:15:49,999 - jasper.toolflow.backend - Adding tcl command: make_wrapper -files [get_files [get_property directory [current_project]]/myproj.srcs/sources_1/bd/zcu111/zcu111.bd] -top
+DEBUG - 2020-08-15 12:15:49,999 - jasper.toolflow.backend - Adding tcl command: add_files -norecurse [get_property directory [current_project]]/myproj.srcs/sources_1/bd/zcu111/hdl/zcu111_wrapper.vhd
+DEBUG - 2020-08-15 12:15:49,999 - jasper.toolflow.backend - Adding tcl command: update_compile_order -fileset sources_1
+DEBUG - 2020-08-15 12:15:49,999 - jasper.toolflow.backend - Adding tcl command: add_files {/home/wei/casper/tutorials_devel/zcu111/mlib_devel/jasper_library/hdl_sources/axi4_lite/axi4lite_slave_logic.vhd /home/wei/casper/tutorials_devel/zcu111/mlib_devel/jasper_library/hdl_sources/axi4_lite/axi4lite_pkg.vhd}
+DEBUG - 2020-08-15 12:15:49,999 - jasper.toolflow.backend - Adding tcl command: update_compile_order -fileset sources_1
+INFO - 2020-08-15 12:15:49,999 - jasper.toolflow.backend - Generating yellow block custom hdl files
+DEBUG - 2020-08-15 12:15:50,000 - jasper.toolflow.backend - Adding source file: /home/wei/casper/tutorials_devel/zcu111/rfdc_multi_cores/rfdc_multi_cores_mode2/axi4lite_ic_wrapper.vhdl
+DEBUG - 2020-08-15 12:15:50,001 - jasper.toolflow.backend - Adding tcl command: import_files -force /home/wei/casper/tutorials_devel/zcu111/rfdc_multi_cores/rfdc_multi_cores_mode2/axi4lite_ic_wrapper.vhdl
+INFO - 2020-08-15 12:15:50,001 - jasper.toolflow.backend - Generating yellow block custom hdl files
+DEBUG - 2020-08-15 12:15:50,001 - jasper.toolflow.backend - Adding tcl command: add_files /home/wei/casper/tutorials_devel/zcu111/rfdc_multi_cores/rfdc_multi_cores_mode2/xml2vhdl_hdl_output/
+DEBUG - 2020-08-15 12:15:50,001 - jasper.toolflow.backend - Adding tcl command: update_compile_order -fileset sources_1
+DEBUG - 2020-08-15 12:30:21,753 - jasper.toolflow.backend - Opening core_info.tab file /home/wei/casper/tutorials_devel/zcu111/rfdc_multi_cores/rfdc_multi_cores_mode2/core_info.tab
+DEBUG - 2020-08-15 12:30:21,753 - jasper.toolflow.backend - Opening design_info.tab file /home/wei/casper/tutorials_devel/zcu111/rfdc_multi_cores/rfdc_multi_cores_mode2/design_info.tab
+DEBUG - 2020-08-15 12:30:21,753 - jasper.toolflow.backend - Opening git_info.tab file /home/wei/casper/tutorials_devel/zcu111/rfdc_multi_cores/rfdc_multi_cores_mode2/git_info.tab

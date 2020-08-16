@@ -12,8 +12,8 @@ entity rfdc_test_edge_detect_x5 is
   );
 end rfdc_test_edge_detect_x5;
 architecture structural of rfdc_test_edge_detect_x5 is 
-  signal edge_op_y_net : std_logic_vector( 1-1 downto 0 );
   signal slice_rst_cntrl_y_net : std_logic_vector( 1-1 downto 0 );
+  signal edge_op_y_net : std_logic_vector( 1-1 downto 0 );
   signal clk_net : std_logic;
   signal ce_net : std_logic;
   signal delay_q_net : std_logic_vector( 1-1 downto 0 );

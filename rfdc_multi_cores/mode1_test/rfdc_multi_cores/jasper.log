@@ -1,0 +1,123 @@
+INFO - 2020-08-15 10:40:19,301 - jasper - Starting compile
+DEBUG - 2020-08-15 10:40:19,301 - jasper - Vivado compile will be executed.
+INFO - 2020-08-15 10:40:19,302 - jasper.toolflow - Starting Toolflow!
+INFO - 2020-08-15 10:40:19,302 - jasper.toolflow - Frontend is simulink
+INFO - 2020-08-15 10:40:19,302 - jasper.toolflow - Setting compile directory: /home/wei/casper/tutorials_devel/zcu111/rfdc_multi_cores/rfdc_multi_cores
+DEBUG - 2020-08-15 10:40:20,709 - jasper.toolflow - Generating Yellow Block: rfdc_multi_cores/ZCU111
+DEBUG - 2020-08-15 10:40:20,710 - jasper.toolflow - Generating Yellow Block: rfdc_multi_cores/gpio_led
+DEBUG - 2020-08-15 10:40:20,710 - jasper.toolflow - Generating Yellow Block: rfdc_multi_cores/gpio_led1
+DEBUG - 2020-08-15 10:40:20,710 - jasper.toolflow - Generating Yellow Block: rfdc_multi_cores/led_cntrl
+DEBUG - 2020-08-15 10:40:20,711 - jasper.toolflow - Generating Yellow Block: rfdc_multi_cores/reg_cntrl
+DEBUG - 2020-08-15 10:40:20,711 - jasper.toolflow - Generating Yellow Block: rfdc_multi_cores/rfdc_V0_2
+DEBUG - 2020-08-15 10:40:20,712 - jasper.toolflow - Generating Yellow Block: rfdc_multi_cores/snapshot01/ss/bram
+DEBUG - 2020-08-15 10:40:20,713 - jasper.toolflow - Generating Yellow Block: rfdc_multi_cores/snapshot01/ss/ctrl
+DEBUG - 2020-08-15 10:40:20,713 - jasper.toolflow - Generating Yellow Block: rfdc_multi_cores/snapshot01/ss/status
+DEBUG - 2020-08-15 10:40:20,713 - jasper.toolflow - Generating Yellow Block: rfdc_multi_cores/snapshot23/ss/bram
+DEBUG - 2020-08-15 10:40:20,713 - jasper.toolflow - Generating Yellow Block: rfdc_multi_cores/snapshot23/ss/ctrl
+DEBUG - 2020-08-15 10:40:20,713 - jasper.toolflow - Generating Yellow Block: rfdc_multi_cores/snapshot23/ss/status
+DEBUG - 2020-08-15 10:40:20,713 - jasper.toolflow - Generating Yellow Block: rfdc_multi_cores/snapshot45/ss/bram
+DEBUG - 2020-08-15 10:40:20,714 - jasper.toolflow - Generating Yellow Block: rfdc_multi_cores/snapshot45/ss/ctrl
+DEBUG - 2020-08-15 10:40:20,714 - jasper.toolflow - Generating Yellow Block: rfdc_multi_cores/snapshot45/ss/status
+DEBUG - 2020-08-15 10:40:20,714 - jasper.toolflow - Generating Yellow Block: rfdc_multi_cores/snapshot67/ss/bram
+DEBUG - 2020-08-15 10:40:20,714 - jasper.toolflow - Generating Yellow Block: rfdc_multi_cores/snapshot67/ss/ctrl
+DEBUG - 2020-08-15 10:40:20,714 - jasper.toolflow - Generating Yellow Block: rfdc_multi_cores/snapshot67/ss/status
+DEBUG - 2020-08-15 10:40:20,714 - jasper.toolflow - Generating Yellow Block: rfdc_multi_cores/sync_state
+DEBUG - 2020-08-15 10:40:20,714 - jasper.toolflow - Inviting block <yellow_blocks.xsg.xsg object at 0x7f0eb5862240> to procreate
+DEBUG - 2020-08-15 10:40:20,715 - jasper.toolflow - Inviting block <yellow_blocks.gpio.gpio object at 0x7f0eaf89d3c8> to procreate
+DEBUG - 2020-08-15 10:40:20,715 - jasper.toolflow - Inviting block <yellow_blocks.gpio.gpio object at 0x7f0eaf89def0> to procreate
+DEBUG - 2020-08-15 10:40:20,715 - jasper.toolflow - Inviting block <yellow_blocks.sw_reg.sw_reg object at 0x7f0eaf888ef0> to procreate
+DEBUG - 2020-08-15 10:40:20,715 - jasper.toolflow - Inviting block <yellow_blocks.sw_reg.sw_reg object at 0x7f0eac953470> to procreate
+DEBUG - 2020-08-15 10:40:20,715 - jasper.toolflow - Inviting block <yellow_blocks.rfdc_V0_2.rfdc_V0_2 object at 0x7f0eac9536a0> to procreate
+DEBUG - 2020-08-15 10:40:20,716 - jasper.toolflow - Inviting block <yellow_blocks.bram.bram object at 0x7f0eac953898> to procreate
+DEBUG - 2020-08-15 10:40:20,716 - jasper.toolflow - Inviting block <yellow_blocks.sw_reg.sw_reg object at 0x7f0eac953f28> to procreate
+DEBUG - 2020-08-15 10:40:20,716 - jasper.toolflow - Inviting block <yellow_blocks.sw_reg.sw_reg object at 0x7f0eac953748> to procreate
+DEBUG - 2020-08-15 10:40:20,716 - jasper.toolflow - Inviting block <yellow_blocks.bram.bram object at 0x7f0eac953c88> to procreate
+DEBUG - 2020-08-15 10:40:20,716 - jasper.toolflow - Inviting block <yellow_blocks.sw_reg.sw_reg object at 0x7f0eac953eb8> to procreate
+DEBUG - 2020-08-15 10:40:20,716 - jasper.toolflow - Inviting block <yellow_blocks.sw_reg.sw_reg object at 0x7f0eac953630> to procreate
+DEBUG - 2020-08-15 10:40:20,716 - jasper.toolflow - Inviting block <yellow_blocks.bram.bram object at 0x7f0eac953e48> to procreate
+DEBUG - 2020-08-15 10:40:20,716 - jasper.toolflow - Inviting block <yellow_blocks.sw_reg.sw_reg object at 0x7f0eac95a358> to procreate
+DEBUG - 2020-08-15 10:40:20,716 - jasper.toolflow - Inviting block <yellow_blocks.sw_reg.sw_reg object at 0x7f0eac95a240> to procreate
+DEBUG - 2020-08-15 10:40:20,716 - jasper.toolflow - Inviting block <yellow_blocks.bram.bram object at 0x7f0eac95a1d0> to procreate
+DEBUG - 2020-08-15 10:40:20,716 - jasper.toolflow - Inviting block <yellow_blocks.sw_reg.sw_reg object at 0x7f0eac95a390> to procreate
+DEBUG - 2020-08-15 10:40:20,716 - jasper.toolflow - Inviting block <yellow_blocks.sw_reg.sw_reg object at 0x7f0eac95a710> to procreate
+DEBUG - 2020-08-15 10:40:20,716 - jasper.toolflow - Inviting block <yellow_blocks.sw_reg.sw_reg object at 0x7f0eac95a320> to procreate
+DEBUG - 2020-08-15 10:40:20,716 - jasper.toolflow - Inviting block <yellow_blocks.zcu111.zcu111 object at 0x7f0eac95a438> to procreate
+WARNING - 2020-08-15 10:40:20,717 - jasper.yellowblock - <yellow_blocks.sys_block.sys_block object at 0x7f0eac95acc0> doesn't have an attribute 'fullpath'
+DEBUG - 2020-08-15 10:40:20,717 - jasper.toolflow - Inviting block <yellow_blocks.sys_block.sys_block object at 0x7f0eac95acc0> to procreate
+DEBUG - 2020-08-15 10:40:20,717 - jasper.toolflow - ZCU111 requires sys_clk
+DEBUG - 2020-08-15 10:40:20,717 - jasper.toolflow - ZCU111 requires sys_clk90
+DEBUG - 2020-08-15 10:40:20,717 - jasper.toolflow - ZCU111 requires sys_clk180
+DEBUG - 2020-08-15 10:40:20,717 - jasper.toolflow - ZCU111 requires sys_clk270
+DEBUG - 2020-08-15 10:40:21,197 - jasper.toolflow - Opening Original hdl file /home/wei/casper/tutorials_devel/zcu111/rfdc_multi_cores/rfdc_multi_cores/sysgen/hdl_netlist/rfdc_multi_cores.srcs/sources_1/imports/sysgen/rfdc_multi_cores_entity_declarations.vhd
+DEBUG - 2020-08-15 10:40:21,197 - jasper.toolflow - File not written. Vivado version is 2018.2: False. Dual Port RAM exists: False
+DEBUG - 2020-08-15 10:40:21,198 - jasper.verilog - Initializing second-layer dictionairies for: default
+INFO - 2020-08-15 10:40:21,631 - jasper.toolflow - instantiating user peripherals
+INFO - 2020-08-15 10:40:22,292 - jasper.toolflow - top: /home/wei/casper/tutorials_devel/zcu111/rfdc_multi_cores/rfdc_multi_cores/top.v
+DEBUG - 2020-08-15 10:40:22,292 - jasper.toolflow - modifying top for obj ZCU111
+DEBUG - 2020-08-15 10:40:22,292 - jasper.verilog - Initializing second-layer dictionairies for: xsg: ZCU111
+DEBUG - 2020-08-15 10:40:22,293 - jasper.verilog -   Signal "user_clk" is new
+DEBUG - 2020-08-15 10:40:22,293 - jasper.verilog -   Signal "user_clk90" is new
+DEBUG - 2020-08-15 10:40:22,293 - jasper.verilog -   Signal "user_clk180" is new
+DEBUG - 2020-08-15 10:40:22,293 - jasper.verilog -   Signal "user_clk270" is new
+DEBUG - 2020-08-15 10:40:22,293 - jasper.toolflow - modifying top for obj gpio_led
+DEBUG - 2020-08-15 10:40:22,293 - jasper.verilog - Initializing second-layer dictionairies for: gpio: gpio_led
+DEBUG - 2020-08-15 10:40:22,293 - jasper.verilog - Initializing second-layer dictionairies for: default
+DEBUG - 2020-08-15 10:40:22,294 - jasper.verilog -   Parameter "CLK_PHASE" is new
+DEBUG - 2020-08-15 10:40:22,294 - jasper.verilog - Attempting to add port "clk" (parent sig: False, parent port: False)
+DEBUG - 2020-08-15 10:40:22,294 - jasper.verilog -   Port "clk" is new
+DEBUG - 2020-08-15 10:40:22,294 - jasper.verilog - Attempting to add port "clk90" (parent sig: False, parent port: False)
+DEBUG - 2020-08-15 10:40:22,294 - jasper.verilog -   Port "clk90" is new
+DEBUG - 2020-08-15 10:40:22,294 - jasper.verilog - Attempting to add port "gateway" (parent sig: True, parent port: False)
+DEBUG - 2020-08-15 10:40:22,294 - jasper.verilog -   Port "gateway" is new
+DEBUG - 2020-08-15 10:40:22,294 - jasper.verilog -   Parameter "WIDTH" is new
+DEBUG - 2020-08-15 10:40:22,294 - jasper.verilog -   Parameter "DDR" is new
+DEBUG - 2020-08-15 10:40:22,294 - jasper.verilog -   Parameter "REG_IOB" is new
+DEBUG - 2020-08-15 10:40:22,294 - jasper.verilog - Attempting to add port "io_pad" (parent sig: True, parent port: True)
+DEBUG - 2020-08-15 10:40:22,295 - jasper.verilog -   Port "io_pad" is new
+DEBUG - 2020-08-15 10:40:22,295 - jasper.toolflow - modifying top for obj gpio_led1
+DEBUG - 2020-08-15 10:40:22,295 - jasper.verilog - Initializing second-layer dictionairies for: gpio: gpio_led1
+DEBUG - 2020-08-15 10:40:22,295 - jasper.verilog - Initializing second-layer dictionairies for: default
+DEBUG - 2020-08-15 10:40:22,295 - jasper.verilog -   Parameter "CLK_PHASE" is new
+DEBUG - 2020-08-15 10:40:22,295 - jasper.verilog - Attempting to add port "clk" (parent sig: False, parent port: False)
+DEBUG - 2020-08-15 10:40:22,295 - jasper.verilog -   Port "clk" is new
+DEBUG - 2020-08-15 10:40:22,295 - jasper.verilog - Attempting to add port "clk90" (parent sig: False, parent port: False)
+DEBUG - 2020-08-15 10:40:22,295 - jasper.verilog -   Port "clk90" is new
+DEBUG - 2020-08-15 10:40:22,295 - jasper.verilog - Attempting to add port "gateway" (parent sig: True, parent port: False)
+DEBUG - 2020-08-15 10:40:22,295 - jasper.verilog -   Port "gateway" is new
+DEBUG - 2020-08-15 10:40:22,295 - jasper.verilog -   Parameter "WIDTH" is new
+DEBUG - 2020-08-15 10:40:22,295 - jasper.verilog -   Parameter "DDR" is new
+DEBUG - 2020-08-15 10:40:22,295 - jasper.verilog -   Parameter "REG_IOB" is new
+DEBUG - 2020-08-15 10:40:22,295 - jasper.verilog - Attempting to add port "io_pad" (parent sig: True, parent port: True)
+DEBUG - 2020-08-15 10:40:22,296 - jasper.verilog -   Port "io_pad" is new
+DEBUG - 2020-08-15 10:40:22,296 - jasper.toolflow - modifying top for obj led_cntrl
+DEBUG - 2020-08-15 10:40:22,296 - jasper.verilog - Initializing second-layer dictionairies for: sw_reg: led_cntrl
+DEBUG - 2020-08-15 10:40:22,296 - jasper.verilog - Initializing second-layer dictionairies for: default
+DEBUG - 2020-08-15 10:40:22,296 - jasper.verilog -   Parameter "G_BUS_WIDTH" is new
+DEBUG - 2020-08-15 10:40:22,296 - jasper.verilog - Attempting to add port "IP_CLK" (parent sig: False, parent port: False)
+DEBUG - 2020-08-15 10:40:22,296 - jasper.verilog -   Port "IP_CLK" is new
+DEBUG - 2020-08-15 10:40:22,296 - jasper.verilog - Attempting to add port "IP_RESET" (parent sig: False, parent port: False)
+DEBUG - 2020-08-15 10:40:22,296 - jasper.verilog -   Port "IP_RESET" is new
+DEBUG - 2020-08-15 10:40:22,296 - jasper.verilog - Attempting to add port "IP_BUS_VALID" (parent sig: False, parent port: False)
+DEBUG - 2020-08-15 10:40:22,296 - jasper.verilog -   Port "IP_BUS_VALID" is new
+DEBUG - 2020-08-15 10:40:22,296 - jasper.verilog - Attempting to add port "IP_BUS" (parent sig: True, parent port: False)
+DEBUG - 2020-08-15 10:40:22,296 - jasper.verilog -   Port "IP_BUS" is new
+DEBUG - 2020-08-15 10:40:22,296 - jasper.verilog - Attempting to add port "OP_BUS" (parent sig: True, parent port: False)
+DEBUG - 2020-08-15 10:40:22,296 - jasper.verilog -   Port "OP_BUS" is new
+DEBUG - 2020-08-15 10:40:22,296 - jasper.toolflow - modifying top for obj reg_cntrl
+DEBUG - 2020-08-15 10:40:22,297 - jasper.verilog - Initializing second-layer dictionairies for: sw_reg: reg_cntrl
+DEBUG - 2020-08-15 10:40:22,297 - jasper.verilog - Initializing second-layer dictionairies for: default
+DEBUG - 2020-08-15 10:40:22,297 - jasper.verilog -   Parameter "G_BUS_WIDTH" is new
+DEBUG - 2020-08-15 10:40:22,297 - jasper.verilog - Attempting to add port "IP_CLK" (parent sig: False, parent port: False)
+DEBUG - 2020-08-15 10:40:22,297 - jasper.verilog -   Port "IP_CLK" is new
+DEBUG - 2020-08-15 10:40:22,297 - jasper.verilog - Attempting to add port "IP_RESET" (parent sig: False, parent port: False)
+DEBUG - 2020-08-15 10:40:22,297 - jasper.verilog -   Port "IP_RESET" is new
+DEBUG - 2020-08-15 10:40:22,297 - jasper.verilog - Attempting to add port "IP_BUS_VALID" (parent sig: False, parent port: False)
+DEBUG - 2020-08-15 10:40:22,297 - jasper.verilog -   Port "IP_BUS_VALID" is new
+DEBUG - 2020-08-15 10:40:22,297 - jasper.verilog - Attempting to add port "IP_BUS" (parent sig: True, parent port: False)
+DEBUG - 2020-08-15 10:40:22,297 - jasper.verilog -   Port "IP_BUS" is new
+DEBUG - 2020-08-15 10:40:22,297 - jasper.verilog - Attempting to add port "OP_BUS" (parent sig: True, parent port: False)
+DEBUG - 2020-08-15 10:40:22,297 - jasper.verilog -   Port "OP_BUS" is new
+DEBUG - 2020-08-15 10:40:22,298 - jasper.toolflow - modifying top for obj rfdc_V0_2
+DEBUG - 2020-08-15 10:40:22,298 - jasper.verilog - Initializing second-layer dictionairies for: rfdc_V0_2: rfdc_V0_2
+DEBUG - 2020-08-15 10:40:22,910 - jasper.verilog -   Signal "rfdc_multi_cores_rfdc_V0_2_adc0_dout" is new
+DEBUG - 2020-08-15 10:40:22,910 - jasper.verilog -   Signal "user_rst" is new

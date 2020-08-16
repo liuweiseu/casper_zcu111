@@ -1,0 +1,183 @@
+<?xml version="1.0" ?>
+<node address="0xa0000000" byte_size="262144" hw_type="ic" id="axi4lite_top">
+   <node absolute_id="axi4lite_top.snapshot0_01_ss_bram" absolute_offset="a0000000" address="0x00000000" byte_size="4096" id="snapshot0_01_ss_bram" link_done="snapshot0_01_ss_bram_memory_map_output.xml">
+      <node absolute_id="axi4lite_top.snapshot0_01_ss_bram.snapshot0_01_ss_bram" absolute_offset="a0000000" address="0x00000000" description="snapshot0_01_ss_bram_snapshot0_01_ss_bram" hw_rst="0" id="snapshot0_01_ss_bram" mask="0xffffffff" permission="rw" size="1024"/>
+   </node>
+   <node absolute_id="axi4lite_top.snapshot0_23_ss_bram" absolute_offset="a0001000" address="0x00001000" byte_size="4096" id="snapshot0_23_ss_bram" link_done="snapshot0_23_ss_bram_memory_map_output.xml">
+      <node absolute_id="axi4lite_top.snapshot0_23_ss_bram.snapshot0_23_ss_bram" absolute_offset="a0001000" address="0x00000000" description="snapshot0_23_ss_bram_snapshot0_23_ss_bram" hw_rst="0" id="snapshot0_23_ss_bram" mask="0xffffffff" permission="rw" size="1024"/>
+   </node>
+   <node absolute_id="axi4lite_top.snapshot0_45_ss_bram" absolute_offset="a0002000" address="0x00002000" byte_size="4096" id="snapshot0_45_ss_bram" link_done="snapshot0_45_ss_bram_memory_map_output.xml">
+      <node absolute_id="axi4lite_top.snapshot0_45_ss_bram.snapshot0_45_ss_bram" absolute_offset="a0002000" address="0x00000000" description="snapshot0_45_ss_bram_snapshot0_45_ss_bram" hw_rst="0" id="snapshot0_45_ss_bram" mask="0xffffffff" permission="rw" size="1024"/>
+   </node>
+   <node absolute_id="axi4lite_top.snapshot0_67_ss_bram" absolute_offset="a0003000" address="0x00003000" byte_size="4096" id="snapshot0_67_ss_bram" link_done="snapshot0_67_ss_bram_memory_map_output.xml">
+      <node absolute_id="axi4lite_top.snapshot0_67_ss_bram.snapshot0_67_ss_bram" absolute_offset="a0003000" address="0x00000000" description="snapshot0_67_ss_bram_snapshot0_67_ss_bram" hw_rst="0" id="snapshot0_67_ss_bram" mask="0xffffffff" permission="rw" size="1024"/>
+   </node>
+   <node absolute_id="axi4lite_top.snapshot1_01_ss_bram" absolute_offset="a0004000" address="0x00004000" byte_size="4096" id="snapshot1_01_ss_bram" link_done="snapshot1_01_ss_bram_memory_map_output.xml">
+      <node absolute_id="axi4lite_top.snapshot1_01_ss_bram.snapshot1_01_ss_bram" absolute_offset="a0004000" address="0x00000000" description="snapshot1_01_ss_bram_snapshot1_01_ss_bram" hw_rst="0" id="snapshot1_01_ss_bram" mask="0xffffffff" permission="rw" size="1024"/>
+   </node>
+   <node absolute_id="axi4lite_top.snapshot1_23_ss_bram" absolute_offset="a0005000" address="0x00005000" byte_size="4096" id="snapshot1_23_ss_bram" link_done="snapshot1_23_ss_bram_memory_map_output.xml">
+      <node absolute_id="axi4lite_top.snapshot1_23_ss_bram.snapshot1_23_ss_bram" absolute_offset="a0005000" address="0x00000000" description="snapshot1_23_ss_bram_snapshot1_23_ss_bram" hw_rst="0" id="snapshot1_23_ss_bram" mask="0xffffffff" permission="rw" size="1024"/>
+   </node>
+   <node absolute_id="axi4lite_top.snapshot1_45_ss_bram" absolute_offset="a0006000" address="0x00006000" byte_size="4096" id="snapshot1_45_ss_bram" link_done="snapshot1_45_ss_bram_memory_map_output.xml">
+      <node absolute_id="axi4lite_top.snapshot1_45_ss_bram.snapshot1_45_ss_bram" absolute_offset="a0006000" address="0x00000000" description="snapshot1_45_ss_bram_snapshot1_45_ss_bram" hw_rst="0" id="snapshot1_45_ss_bram" mask="0xffffffff" permission="rw" size="1024"/>
+   </node>
+   <node absolute_id="axi4lite_top.snapshot1_67_ss_bram" absolute_offset="a0007000" address="0x00007000" byte_size="4096" id="snapshot1_67_ss_bram" link_done="snapshot1_67_ss_bram_memory_map_output.xml">
+      <node absolute_id="axi4lite_top.snapshot1_67_ss_bram.snapshot1_67_ss_bram" absolute_offset="a0007000" address="0x00000000" description="snapshot1_67_ss_bram_snapshot1_67_ss_bram" hw_rst="0" id="snapshot1_67_ss_bram" mask="0xffffffff" permission="rw" size="1024"/>
+   </node>
+   <node absolute_id="axi4lite_top.snapshot2_01_ss_bram" absolute_offset="a0008000" address="0x00008000" byte_size="4096" id="snapshot2_01_ss_bram" link_done="snapshot2_01_ss_bram_memory_map_output.xml">
+      <node absolute_id="axi4lite_top.snapshot2_01_ss_bram.snapshot2_01_ss_bram" absolute_offset="a0008000" address="0x00000000" description="snapshot2_01_ss_bram_snapshot2_01_ss_bram" hw_rst="0" id="snapshot2_01_ss_bram" mask="0xffffffff" permission="rw" size="1024"/>
+   </node>
+   <node absolute_id="axi4lite_top.snapshot2_23_ss_bram" absolute_offset="a0009000" address="0x00009000" byte_size="4096" id="snapshot2_23_ss_bram" link_done="snapshot2_23_ss_bram_memory_map_output.xml">
+      <node absolute_id="axi4lite_top.snapshot2_23_ss_bram.snapshot2_23_ss_bram" absolute_offset="a0009000" address="0x00000000" description="snapshot2_23_ss_bram_snapshot2_23_ss_bram" hw_rst="0" id="snapshot2_23_ss_bram" mask="0xffffffff" permission="rw" size="1024"/>
+   </node>
+   <node absolute_id="axi4lite_top.snapshot2_45_ss_bram" absolute_offset="a000a000" address="0x0000a000" byte_size="4096" id="snapshot2_45_ss_bram" link_done="snapshot2_45_ss_bram_memory_map_output.xml">
+      <node absolute_id="axi4lite_top.snapshot2_45_ss_bram.snapshot2_45_ss_bram" absolute_offset="a000a000" address="0x00000000" description="snapshot2_45_ss_bram_snapshot2_45_ss_bram" hw_rst="0" id="snapshot2_45_ss_bram" mask="0xffffffff" permission="rw" size="1024"/>
+   </node>
+   <node absolute_id="axi4lite_top.snapshot2_67_ss_bram" absolute_offset="a000b000" address="0x0000b000" byte_size="4096" id="snapshot2_67_ss_bram" link_done="snapshot2_67_ss_bram_memory_map_output.xml">
+      <node absolute_id="axi4lite_top.snapshot2_67_ss_bram.snapshot2_67_ss_bram" absolute_offset="a000b000" address="0x00000000" description="snapshot2_67_ss_bram_snapshot2_67_ss_bram" hw_rst="0" id="snapshot2_67_ss_bram" mask="0xffffffff" permission="rw" size="1024"/>
+   </node>
+   <node absolute_id="axi4lite_top.snapshot2_6_67_ss_bram" absolute_offset="a000c000" address="0x0000c000" byte_size="4096" id="snapshot2_6_67_ss_bram" link_done="snapshot2_6_67_ss_bram_memory_map_output.xml">
+      <node absolute_id="axi4lite_top.snapshot2_6_67_ss_bram.snapshot2_6_67_ss_bram" absolute_offset="a000c000" address="0x00000000" description="snapshot2_6_67_ss_bram_snapshot2_6_67_ss_bram" hw_rst="0" id="snapshot2_6_67_ss_bram" mask="0xffffffff" permission="rw" size="1024"/>
+   </node>
+   <node absolute_id="axi4lite_top.snapshot3_01_ss_bram" absolute_offset="a000d000" address="0x0000d000" byte_size="4096" id="snapshot3_01_ss_bram" link_done="snapshot3_01_ss_bram_memory_map_output.xml">
+      <node absolute_id="axi4lite_top.snapshot3_01_ss_bram.snapshot3_01_ss_bram" absolute_offset="a000d000" address="0x00000000" description="snapshot3_01_ss_bram_snapshot3_01_ss_bram" hw_rst="0" id="snapshot3_01_ss_bram" mask="0xffffffff" permission="rw" size="1024"/>
+   </node>
+   <node absolute_id="axi4lite_top.snapshot3_23_ss_bram" absolute_offset="a000e000" address="0x0000e000" byte_size="4096" id="snapshot3_23_ss_bram" link_done="snapshot3_23_ss_bram_memory_map_output.xml">
+      <node absolute_id="axi4lite_top.snapshot3_23_ss_bram.snapshot3_23_ss_bram" absolute_offset="a000e000" address="0x00000000" description="snapshot3_23_ss_bram_snapshot3_23_ss_bram" hw_rst="0" id="snapshot3_23_ss_bram" mask="0xffffffff" permission="rw" size="1024"/>
+   </node>
+   <node absolute_id="axi4lite_top.snapshot3_45_ss_bram" absolute_offset="a000f000" address="0x0000f000" byte_size="4096" id="snapshot3_45_ss_bram" link_done="snapshot3_45_ss_bram_memory_map_output.xml">
+      <node absolute_id="axi4lite_top.snapshot3_45_ss_bram.snapshot3_45_ss_bram" absolute_offset="a000f000" address="0x00000000" description="snapshot3_45_ss_bram_snapshot3_45_ss_bram" hw_rst="0" id="snapshot3_45_ss_bram" mask="0xffffffff" permission="rw" size="1024"/>
+   </node>
+   <node absolute_id="axi4lite_top.snapshot3_67_ss_bram" absolute_offset="a0010000" address="0x00010000" byte_size="4096" id="snapshot3_67_ss_bram" link_done="snapshot3_67_ss_bram_memory_map_output.xml">
+      <node absolute_id="axi4lite_top.snapshot3_67_ss_bram.snapshot3_67_ss_bram" absolute_offset="a0010000" address="0x00000000" description="snapshot3_67_ss_bram_snapshot3_67_ss_bram" hw_rst="0" id="snapshot3_67_ss_bram" mask="0xffffffff" permission="rw" size="1024"/>
+   </node>
+   <node absolute_id="axi4lite_top.snapshot4_01_ss_bram" absolute_offset="a0011000" address="0x00011000" byte_size="4096" id="snapshot4_01_ss_bram" link_done="snapshot4_01_ss_bram_memory_map_output.xml">
+      <node absolute_id="axi4lite_top.snapshot4_01_ss_bram.snapshot4_01_ss_bram" absolute_offset="a0011000" address="0x00000000" description="snapshot4_01_ss_bram_snapshot4_01_ss_bram" hw_rst="0" id="snapshot4_01_ss_bram" mask="0xffffffff" permission="rw" size="1024"/>
+   </node>
+   <node absolute_id="axi4lite_top.snapshot4_23_ss_bram" absolute_offset="a0012000" address="0x00012000" byte_size="4096" id="snapshot4_23_ss_bram" link_done="snapshot4_23_ss_bram_memory_map_output.xml">
+      <node absolute_id="axi4lite_top.snapshot4_23_ss_bram.snapshot4_23_ss_bram" absolute_offset="a0012000" address="0x00000000" description="snapshot4_23_ss_bram_snapshot4_23_ss_bram" hw_rst="0" id="snapshot4_23_ss_bram" mask="0xffffffff" permission="rw" size="1024"/>
+   </node>
+   <node absolute_id="axi4lite_top.snapshot4_56_ss_bram" absolute_offset="a0013000" address="0x00013000" byte_size="4096" id="snapshot4_56_ss_bram" link_done="snapshot4_56_ss_bram_memory_map_output.xml">
+      <node absolute_id="axi4lite_top.snapshot4_56_ss_bram.snapshot4_56_ss_bram" absolute_offset="a0013000" address="0x00000000" description="snapshot4_56_ss_bram_snapshot4_56_ss_bram" hw_rst="0" id="snapshot4_56_ss_bram" mask="0xffffffff" permission="rw" size="1024"/>
+   </node>
+   <node absolute_id="axi4lite_top.snapshot4_78_ss_bram" absolute_offset="a0014000" address="0x00014000" byte_size="4096" id="snapshot4_78_ss_bram" link_done="snapshot4_78_ss_bram_memory_map_output.xml">
+      <node absolute_id="axi4lite_top.snapshot4_78_ss_bram.snapshot4_78_ss_bram" absolute_offset="a0014000" address="0x00000000" description="snapshot4_78_ss_bram_snapshot4_78_ss_bram" hw_rst="0" id="snapshot4_78_ss_bram" mask="0xffffffff" permission="rw" size="1024"/>
+   </node>
+   <node absolute_id="axi4lite_top.snapshot5_01_ss_bram" absolute_offset="a0015000" address="0x00015000" byte_size="4096" id="snapshot5_01_ss_bram" link_done="snapshot5_01_ss_bram_memory_map_output.xml">
+      <node absolute_id="axi4lite_top.snapshot5_01_ss_bram.snapshot5_01_ss_bram" absolute_offset="a0015000" address="0x00000000" description="snapshot5_01_ss_bram_snapshot5_01_ss_bram" hw_rst="0" id="snapshot5_01_ss_bram" mask="0xffffffff" permission="rw" size="1024"/>
+   </node>
+   <node absolute_id="axi4lite_top.snapshot5_23_ss_bram" absolute_offset="a0016000" address="0x00016000" byte_size="4096" id="snapshot5_23_ss_bram" link_done="snapshot5_23_ss_bram_memory_map_output.xml">
+      <node absolute_id="axi4lite_top.snapshot5_23_ss_bram.snapshot5_23_ss_bram" absolute_offset="a0016000" address="0x00000000" description="snapshot5_23_ss_bram_snapshot5_23_ss_bram" hw_rst="0" id="snapshot5_23_ss_bram" mask="0xffffffff" permission="rw" size="1024"/>
+   </node>
+   <node absolute_id="axi4lite_top.snapshot5_45_ss_bram" absolute_offset="a0017000" address="0x00017000" byte_size="4096" id="snapshot5_45_ss_bram" link_done="snapshot5_45_ss_bram_memory_map_output.xml">
+      <node absolute_id="axi4lite_top.snapshot5_45_ss_bram.snapshot5_45_ss_bram" absolute_offset="a0017000" address="0x00000000" description="snapshot5_45_ss_bram_snapshot5_45_ss_bram" hw_rst="0" id="snapshot5_45_ss_bram" mask="0xffffffff" permission="rw" size="1024"/>
+   </node>
+   <node absolute_id="axi4lite_top.snapshot5_67_ss_bram" absolute_offset="a0018000" address="0x00018000" byte_size="4096" id="snapshot5_67_ss_bram" link_done="snapshot5_67_ss_bram_memory_map_output.xml">
+      <node absolute_id="axi4lite_top.snapshot5_67_ss_bram.snapshot5_67_ss_bram" absolute_offset="a0018000" address="0x00000000" description="snapshot5_67_ss_bram_snapshot5_67_ss_bram" hw_rst="0" id="snapshot5_67_ss_bram" mask="0xffffffff" permission="rw" size="1024"/>
+   </node>
+   <node absolute_id="axi4lite_top.snapshot6_01_ss_bram" absolute_offset="a0019000" address="0x00019000" byte_size="4096" id="snapshot6_01_ss_bram" link_done="snapshot6_01_ss_bram_memory_map_output.xml">
+      <node absolute_id="axi4lite_top.snapshot6_01_ss_bram.snapshot6_01_ss_bram" absolute_offset="a0019000" address="0x00000000" description="snapshot6_01_ss_bram_snapshot6_01_ss_bram" hw_rst="0" id="snapshot6_01_ss_bram" mask="0xffffffff" permission="rw" size="1024"/>
+   </node>
+   <node absolute_id="axi4lite_top.snapshot6_23_ss_bram" absolute_offset="a001a000" address="0x0001a000" byte_size="4096" id="snapshot6_23_ss_bram" link_done="snapshot6_23_ss_bram_memory_map_output.xml">
+      <node absolute_id="axi4lite_top.snapshot6_23_ss_bram.snapshot6_23_ss_bram" absolute_offset="a001a000" address="0x00000000" description="snapshot6_23_ss_bram_snapshot6_23_ss_bram" hw_rst="0" id="snapshot6_23_ss_bram" mask="0xffffffff" permission="rw" size="1024"/>
+   </node>
+   <node absolute_id="axi4lite_top.snapshot6_45_ss_bram" absolute_offset="a001b000" address="0x0001b000" byte_size="4096" id="snapshot6_45_ss_bram" link_done="snapshot6_45_ss_bram_memory_map_output.xml">
+      <node absolute_id="axi4lite_top.snapshot6_45_ss_bram.snapshot6_45_ss_bram" absolute_offset="a001b000" address="0x00000000" description="snapshot6_45_ss_bram_snapshot6_45_ss_bram" hw_rst="0" id="snapshot6_45_ss_bram" mask="0xffffffff" permission="rw" size="1024"/>
+   </node>
+   <node absolute_id="axi4lite_top.snapshot7_01_ss_bram" absolute_offset="a001c000" address="0x0001c000" byte_size="4096" id="snapshot7_01_ss_bram" link_done="snapshot7_01_ss_bram_memory_map_output.xml">
+      <node absolute_id="axi4lite_top.snapshot7_01_ss_bram.snapshot7_01_ss_bram" absolute_offset="a001c000" address="0x00000000" description="snapshot7_01_ss_bram_snapshot7_01_ss_bram" hw_rst="0" id="snapshot7_01_ss_bram" mask="0xffffffff" permission="rw" size="1024"/>
+   </node>
+   <node absolute_id="axi4lite_top.snapshot7_23_ss_bram" absolute_offset="a001d000" address="0x0001d000" byte_size="4096" id="snapshot7_23_ss_bram" link_done="snapshot7_23_ss_bram_memory_map_output.xml">
+      <node absolute_id="axi4lite_top.snapshot7_23_ss_bram.snapshot7_23_ss_bram" absolute_offset="a001d000" address="0x00000000" description="snapshot7_23_ss_bram_snapshot7_23_ss_bram" hw_rst="0" id="snapshot7_23_ss_bram" mask="0xffffffff" permission="rw" size="1024"/>
+   </node>
+   <node absolute_id="axi4lite_top.snapshot7_45_ss_bram" absolute_offset="a001e000" address="0x0001e000" byte_size="4096" id="snapshot7_45_ss_bram" link_done="snapshot7_45_ss_bram_memory_map_output.xml">
+      <node absolute_id="axi4lite_top.snapshot7_45_ss_bram.snapshot7_45_ss_bram" absolute_offset="a001e000" address="0x00000000" description="snapshot7_45_ss_bram_snapshot7_45_ss_bram" hw_rst="0" id="snapshot7_45_ss_bram" mask="0xffffffff" permission="rw" size="1024"/>
+   </node>
+   <node absolute_id="axi4lite_top.snapshot7_67_ss_bram" absolute_offset="a001f000" address="0x0001f000" byte_size="4096" id="snapshot7_67_ss_bram" link_done="snapshot7_67_ss_bram_memory_map_output.xml">
+      <node absolute_id="axi4lite_top.snapshot7_67_ss_bram.snapshot7_67_ss_bram" absolute_offset="a001f000" address="0x00000000" description="snapshot7_67_ss_bram_snapshot7_67_ss_bram" hw_rst="0" id="snapshot7_67_ss_bram" mask="0xffffffff" permission="rw" size="1024"/>
+   </node>
+   <node absolute_id="axi4lite_top.sw_reg" absolute_offset="a0020000" address="0x00020000" byte_size="512" id="sw_reg" link_done="sw_reg_memory_map_output.xml">
+      <node absolute_id="axi4lite_top.sw_reg.led_cntrl" absolute_offset="a0020000" address="0x00000000" description="sw_reg_led_cntrl" hw_rst="1" id="led_cntrl" mask="0xffffffff" permission="rw" size="1"/>
+      <node absolute_id="axi4lite_top.sw_reg.reg_cntrl" absolute_offset="a0020004" address="0x00000004" description="sw_reg_reg_cntrl" hw_rst="0" id="reg_cntrl" mask="0xffffffff" permission="rw" size="1"/>
+      <node absolute_id="axi4lite_top.sw_reg.snapshot0_01_ss_ctrl" absolute_offset="a0020008" address="0x00000008" description="sw_reg_snapshot0_01_ss_ctrl" hw_rst="0" id="snapshot0_01_ss_ctrl" mask="0xffffffff" permission="rw" size="1"/>
+      <node absolute_id="axi4lite_top.sw_reg.snapshot0_01_ss_status" absolute_offset="a002000c" address="0x0000000c" description="sw_reg_snapshot0_01_ss_status" hw_rst="0x0" id="snapshot0_01_ss_status" mask="0xffffffff" permission="r" size="1"/>
+      <node absolute_id="axi4lite_top.sw_reg.snapshot0_23_ss_ctrl" absolute_offset="a0020010" address="0x00000010" description="sw_reg_snapshot0_23_ss_ctrl" hw_rst="0" id="snapshot0_23_ss_ctrl" mask="0xffffffff" permission="rw" size="1"/>
+      <node absolute_id="axi4lite_top.sw_reg.snapshot0_23_ss_status" absolute_offset="a0020014" address="0x00000014" description="sw_reg_snapshot0_23_ss_status" hw_rst="0x0" id="snapshot0_23_ss_status" mask="0xffffffff" permission="r" size="1"/>
+      <node absolute_id="axi4lite_top.sw_reg.snapshot0_45_ss_ctrl" absolute_offset="a0020018" address="0x00000018" description="sw_reg_snapshot0_45_ss_ctrl" hw_rst="0" id="snapshot0_45_ss_ctrl" mask="0xffffffff" permission="rw" size="1"/>
+      <node absolute_id="axi4lite_top.sw_reg.snapshot0_45_ss_status" absolute_offset="a002001c" address="0x0000001c" description="sw_reg_snapshot0_45_ss_status" hw_rst="0x0" id="snapshot0_45_ss_status" mask="0xffffffff" permission="r" size="1"/>
+      <node absolute_id="axi4lite_top.sw_reg.snapshot0_67_ss_ctrl" absolute_offset="a0020020" address="0x00000020" description="sw_reg_snapshot0_67_ss_ctrl" hw_rst="0" id="snapshot0_67_ss_ctrl" mask="0xffffffff" permission="rw" size="1"/>
+      <node absolute_id="axi4lite_top.sw_reg.snapshot0_67_ss_status" absolute_offset="a0020024" address="0x00000024" description="sw_reg_snapshot0_67_ss_status" hw_rst="0x0" id="snapshot0_67_ss_status" mask="0xffffffff" permission="r" size="1"/>
+      <node absolute_id="axi4lite_top.sw_reg.snapshot1_01_ss_ctrl" absolute_offset="a0020028" address="0x00000028" description="sw_reg_snapshot1_01_ss_ctrl" hw_rst="0" id="snapshot1_01_ss_ctrl" mask="0xffffffff" permission="rw" size="1"/>
+      <node absolute_id="axi4lite_top.sw_reg.snapshot1_01_ss_status" absolute_offset="a002002c" address="0x0000002c" description="sw_reg_snapshot1_01_ss_status" hw_rst="0x0" id="snapshot1_01_ss_status" mask="0xffffffff" permission="r" size="1"/>
+      <node absolute_id="axi4lite_top.sw_reg.snapshot1_23_ss_ctrl" absolute_offset="a0020030" address="0x00000030" description="sw_reg_snapshot1_23_ss_ctrl" hw_rst="0" id="snapshot1_23_ss_ctrl" mask="0xffffffff" permission="rw" size="1"/>
+      <node absolute_id="axi4lite_top.sw_reg.snapshot1_23_ss_status" absolute_offset="a0020034" address="0x00000034" description="sw_reg_snapshot1_23_ss_status" hw_rst="0x0" id="snapshot1_23_ss_status" mask="0xffffffff" permission="r" size="1"/>
+      <node absolute_id="axi4lite_top.sw_reg.snapshot1_45_ss_ctrl" absolute_offset="a0020038" address="0x00000038" description="sw_reg_snapshot1_45_ss_ctrl" hw_rst="0" id="snapshot1_45_ss_ctrl" mask="0xffffffff" permission="rw" size="1"/>
+      <node absolute_id="axi4lite_top.sw_reg.snapshot1_45_ss_status" absolute_offset="a002003c" address="0x0000003c" description="sw_reg_snapshot1_45_ss_status" hw_rst="0x0" id="snapshot1_45_ss_status" mask="0xffffffff" permission="r" size="1"/>
+      <node absolute_id="axi4lite_top.sw_reg.snapshot1_67_ss_ctrl" absolute_offset="a0020040" address="0x00000040" description="sw_reg_snapshot1_67_ss_ctrl" hw_rst="0" id="snapshot1_67_ss_ctrl" mask="0xffffffff" permission="rw" size="1"/>
+      <node absolute_id="axi4lite_top.sw_reg.snapshot1_67_ss_status" absolute_offset="a0020044" address="0x00000044" description="sw_reg_snapshot1_67_ss_status" hw_rst="0x0" id="snapshot1_67_ss_status" mask="0xffffffff" permission="r" size="1"/>
+      <node absolute_id="axi4lite_top.sw_reg.snapshot2_01_ss_ctrl" absolute_offset="a0020048" address="0x00000048" description="sw_reg_snapshot2_01_ss_ctrl" hw_rst="0" id="snapshot2_01_ss_ctrl" mask="0xffffffff" permission="rw" size="1"/>
+      <node absolute_id="axi4lite_top.sw_reg.snapshot2_01_ss_status" absolute_offset="a002004c" address="0x0000004c" description="sw_reg_snapshot2_01_ss_status" hw_rst="0x0" id="snapshot2_01_ss_status" mask="0xffffffff" permission="r" size="1"/>
+      <node absolute_id="axi4lite_top.sw_reg.snapshot2_23_ss_ctrl" absolute_offset="a0020050" address="0x00000050" description="sw_reg_snapshot2_23_ss_ctrl" hw_rst="0" id="snapshot2_23_ss_ctrl" mask="0xffffffff" permission="rw" size="1"/>
+      <node absolute_id="axi4lite_top.sw_reg.snapshot2_23_ss_status" absolute_offset="a0020054" address="0x00000054" description="sw_reg_snapshot2_23_ss_status" hw_rst="0x0" id="snapshot2_23_ss_status" mask="0xffffffff" permission="r" size="1"/>
+      <node absolute_id="axi4lite_top.sw_reg.snapshot2_45_ss_ctrl" absolute_offset="a0020058" address="0x00000058" description="sw_reg_snapshot2_45_ss_ctrl" hw_rst="0" id="snapshot2_45_ss_ctrl" mask="0xffffffff" permission="rw" size="1"/>
+      <node absolute_id="axi4lite_top.sw_reg.snapshot2_45_ss_status" absolute_offset="a002005c" address="0x0000005c" description="sw_reg_snapshot2_45_ss_status" hw_rst="0x0" id="snapshot2_45_ss_status" mask="0xffffffff" permission="r" size="1"/>
+      <node absolute_id="axi4lite_top.sw_reg.snapshot2_67_ss_ctrl" absolute_offset="a0020060" address="0x00000060" description="sw_reg_snapshot2_67_ss_ctrl" hw_rst="0" id="snapshot2_67_ss_ctrl" mask="0xffffffff" permission="rw" size="1"/>
+      <node absolute_id="axi4lite_top.sw_reg.snapshot2_67_ss_status" absolute_offset="a0020064" address="0x00000064" description="sw_reg_snapshot2_67_ss_status" hw_rst="0x0" id="snapshot2_67_ss_status" mask="0xffffffff" permission="r" size="1"/>
+      <node absolute_id="axi4lite_top.sw_reg.snapshot2_6_67_ss_ctrl" absolute_offset="a0020068" address="0x00000068" description="sw_reg_snapshot2_6_67_ss_ctrl" hw_rst="0" id="snapshot2_6_67_ss_ctrl" mask="0xffffffff" permission="rw" size="1"/>
+      <node absolute_id="axi4lite_top.sw_reg.snapshot2_6_67_ss_status" absolute_offset="a002006c" address="0x0000006c" description="sw_reg_snapshot2_6_67_ss_status" hw_rst="0x0" id="snapshot2_6_67_ss_status" mask="0xffffffff" permission="r" size="1"/>
+      <node absolute_id="axi4lite_top.sw_reg.snapshot3_01_ss_ctrl" absolute_offset="a0020070" address="0x00000070" description="sw_reg_snapshot3_01_ss_ctrl" hw_rst="0" id="snapshot3_01_ss_ctrl" mask="0xffffffff" permission="rw" size="1"/>
+      <node absolute_id="axi4lite_top.sw_reg.snapshot3_01_ss_status" absolute_offset="a0020074" address="0x00000074" description="sw_reg_snapshot3_01_ss_status" hw_rst="0x0" id="snapshot3_01_ss_status" mask="0xffffffff" permission="r" size="1"/>
+      <node absolute_id="axi4lite_top.sw_reg.snapshot3_23_ss_ctrl" absolute_offset="a0020078" address="0x00000078" description="sw_reg_snapshot3_23_ss_ctrl" hw_rst="0" id="snapshot3_23_ss_ctrl" mask="0xffffffff" permission="rw" size="1"/>
+      <node absolute_id="axi4lite_top.sw_reg.snapshot3_23_ss_status" absolute_offset="a002007c" address="0x0000007c" description="sw_reg_snapshot3_23_ss_status" hw_rst="0x0" id="snapshot3_23_ss_status" mask="0xffffffff" permission="r" size="1"/>
+      <node absolute_id="axi4lite_top.sw_reg.snapshot3_45_ss_ctrl" absolute_offset="a0020080" address="0x00000080" description="sw_reg_snapshot3_45_ss_ctrl" hw_rst="0" id="snapshot3_45_ss_ctrl" mask="0xffffffff" permission="rw" size="1"/>
+      <node absolute_id="axi4lite_top.sw_reg.snapshot3_45_ss_status" absolute_offset="a0020084" address="0x00000084" description="sw_reg_snapshot3_45_ss_status" hw_rst="0x0" id="snapshot3_45_ss_status" mask="0xffffffff" permission="r" size="1"/>
+      <node absolute_id="axi4lite_top.sw_reg.snapshot3_67_ss_ctrl" absolute_offset="a0020088" address="0x00000088" description="sw_reg_snapshot3_67_ss_ctrl" hw_rst="0" id="snapshot3_67_ss_ctrl" mask="0xffffffff" permission="rw" size="1"/>
+      <node absolute_id="axi4lite_top.sw_reg.snapshot3_67_ss_status" absolute_offset="a002008c" address="0x0000008c" description="sw_reg_snapshot3_67_ss_status" hw_rst="0x0" id="snapshot3_67_ss_status" mask="0xffffffff" permission="r" size="1"/>
+      <node absolute_id="axi4lite_top.sw_reg.snapshot4_01_ss_ctrl" absolute_offset="a0020090" address="0x00000090" description="sw_reg_snapshot4_01_ss_ctrl" hw_rst="0" id="snapshot4_01_ss_ctrl" mask="0xffffffff" permission="rw" size="1"/>
+      <node absolute_id="axi4lite_top.sw_reg.snapshot4_01_ss_status" absolute_offset="a0020094" address="0x00000094" description="sw_reg_snapshot4_01_ss_status" hw_rst="0x0" id="snapshot4_01_ss_status" mask="0xffffffff" permission="r" size="1"/>
+      <node absolute_id="axi4lite_top.sw_reg.snapshot4_23_ss_ctrl" absolute_offset="a0020098" address="0x00000098" description="sw_reg_snapshot4_23_ss_ctrl" hw_rst="0" id="snapshot4_23_ss_ctrl" mask="0xffffffff" permission="rw" size="1"/>
+      <node absolute_id="axi4lite_top.sw_reg.snapshot4_23_ss_status" absolute_offset="a002009c" address="0x0000009c" description="sw_reg_snapshot4_23_ss_status" hw_rst="0x0" id="snapshot4_23_ss_status" mask="0xffffffff" permission="r" size="1"/>
+      <node absolute_id="axi4lite_top.sw_reg.snapshot4_56_ss_ctrl" absolute_offset="a00200a0" address="0x000000a0" description="sw_reg_snapshot4_56_ss_ctrl" hw_rst="0" id="snapshot4_56_ss_ctrl" mask="0xffffffff" permission="rw" size="1"/>
+      <node absolute_id="axi4lite_top.sw_reg.snapshot4_56_ss_status" absolute_offset="a00200a4" address="0x000000a4" description="sw_reg_snapshot4_56_ss_status" hw_rst="0x0" id="snapshot4_56_ss_status" mask="0xffffffff" permission="r" size="1"/>
+      <node absolute_id="axi4lite_top.sw_reg.snapshot4_78_ss_ctrl" absolute_offset="a00200a8" address="0x000000a8" description="sw_reg_snapshot4_78_ss_ctrl" hw_rst="0" id="snapshot4_78_ss_ctrl" mask="0xffffffff" permission="rw" size="1"/>
+      <node absolute_id="axi4lite_top.sw_reg.snapshot4_78_ss_status" absolute_offset="a00200ac" address="0x000000ac" description="sw_reg_snapshot4_78_ss_status" hw_rst="0x0" id="snapshot4_78_ss_status" mask="0xffffffff" permission="r" size="1"/>
+      <node absolute_id="axi4lite_top.sw_reg.snapshot5_01_ss_ctrl" absolute_offset="a00200b0" address="0x000000b0" description="sw_reg_snapshot5_01_ss_ctrl" hw_rst="0" id="snapshot5_01_ss_ctrl" mask="0xffffffff" permission="rw" size="1"/>
+      <node absolute_id="axi4lite_top.sw_reg.snapshot5_01_ss_status" absolute_offset="a00200b4" address="0x000000b4" description="sw_reg_snapshot5_01_ss_status" hw_rst="0x0" id="snapshot5_01_ss_status" mask="0xffffffff" permission="r" size="1"/>
+      <node absolute_id="axi4lite_top.sw_reg.snapshot5_23_ss_ctrl" absolute_offset="a00200b8" address="0x000000b8" description="sw_reg_snapshot5_23_ss_ctrl" hw_rst="0" id="snapshot5_23_ss_ctrl" mask="0xffffffff" permission="rw" size="1"/>
+      <node absolute_id="axi4lite_top.sw_reg.snapshot5_23_ss_status" absolute_offset="a00200bc" address="0x000000bc" description="sw_reg_snapshot5_23_ss_status" hw_rst="0x0" id="snapshot5_23_ss_status" mask="0xffffffff" permission="r" size="1"/>
+      <node absolute_id="axi4lite_top.sw_reg.snapshot5_45_ss_ctrl" absolute_offset="a00200c0" address="0x000000c0" description="sw_reg_snapshot5_45_ss_ctrl" hw_rst="0" id="snapshot5_45_ss_ctrl" mask="0xffffffff" permission="rw" size="1"/>
+      <node absolute_id="axi4lite_top.sw_reg.snapshot5_45_ss_status" absolute_offset="a00200c4" address="0x000000c4" description="sw_reg_snapshot5_45_ss_status" hw_rst="0x0" id="snapshot5_45_ss_status" mask="0xffffffff" permission="r" size="1"/>
+      <node absolute_id="axi4lite_top.sw_reg.snapshot5_67_ss_ctrl" absolute_offset="a00200c8" address="0x000000c8" description="sw_reg_snapshot5_67_ss_ctrl" hw_rst="0" id="snapshot5_67_ss_ctrl" mask="0xffffffff" permission="rw" size="1"/>
+      <node absolute_id="axi4lite_top.sw_reg.snapshot5_67_ss_status" absolute_offset="a00200cc" address="0x000000cc" description="sw_reg_snapshot5_67_ss_status" hw_rst="0x0" id="snapshot5_67_ss_status" mask="0xffffffff" permission="r" size="1"/>
+      <node absolute_id="axi4lite_top.sw_reg.snapshot6_01_ss_ctrl" absolute_offset="a00200d0" address="0x000000d0" description="sw_reg_snapshot6_01_ss_ctrl" hw_rst="0" id="snapshot6_01_ss_ctrl" mask="0xffffffff" permission="rw" size="1"/>
+      <node absolute_id="axi4lite_top.sw_reg.snapshot6_01_ss_status" absolute_offset="a00200d4" address="0x000000d4" description="sw_reg_snapshot6_01_ss_status" hw_rst="0x0" id="snapshot6_01_ss_status" mask="0xffffffff" permission="r" size="1"/>
+      <node absolute_id="axi4lite_top.sw_reg.snapshot6_23_ss_ctrl" absolute_offset="a00200d8" address="0x000000d8" description="sw_reg_snapshot6_23_ss_ctrl" hw_rst="0" id="snapshot6_23_ss_ctrl" mask="0xffffffff" permission="rw" size="1"/>
+      <node absolute_id="axi4lite_top.sw_reg.snapshot6_23_ss_status" absolute_offset="a00200dc" address="0x000000dc" description="sw_reg_snapshot6_23_ss_status" hw_rst="0x0" id="snapshot6_23_ss_status" mask="0xffffffff" permission="r" size="1"/>
+      <node absolute_id="axi4lite_top.sw_reg.snapshot6_45_ss_ctrl" absolute_offset="a00200e0" address="0x000000e0" description="sw_reg_snapshot6_45_ss_ctrl" hw_rst="0" id="snapshot6_45_ss_ctrl" mask="0xffffffff" permission="rw" size="1"/>
+      <node absolute_id="axi4lite_top.sw_reg.snapshot6_45_ss_status" absolute_offset="a00200e4" address="0x000000e4" description="sw_reg_snapshot6_45_ss_status" hw_rst="0x0" id="snapshot6_45_ss_status" mask="0xffffffff" permission="r" size="1"/>
+      <node absolute_id="axi4lite_top.sw_reg.snapshot7_01_ss_ctrl" absolute_offset="a00200e8" address="0x000000e8" description="sw_reg_snapshot7_01_ss_ctrl" hw_rst="0" id="snapshot7_01_ss_ctrl" mask="0xffffffff" permission="rw" size="1"/>
+      <node absolute_id="axi4lite_top.sw_reg.snapshot7_01_ss_status" absolute_offset="a00200ec" address="0x000000ec" description="sw_reg_snapshot7_01_ss_status" hw_rst="0x0" id="snapshot7_01_ss_status" mask="0xffffffff" permission="r" size="1"/>
+      <node absolute_id="axi4lite_top.sw_reg.snapshot7_23_ss_ctrl" absolute_offset="a00200f0" address="0x000000f0" description="sw_reg_snapshot7_23_ss_ctrl" hw_rst="0" id="snapshot7_23_ss_ctrl" mask="0xffffffff" permission="rw" size="1"/>
+      <node absolute_id="axi4lite_top.sw_reg.snapshot7_23_ss_status" absolute_offset="a00200f4" address="0x000000f4" description="sw_reg_snapshot7_23_ss_status" hw_rst="0x0" id="snapshot7_23_ss_status" mask="0xffffffff" permission="r" size="1"/>
+      <node absolute_id="axi4lite_top.sw_reg.snapshot7_45_ss_ctrl" absolute_offset="a00200f8" address="0x000000f8" description="sw_reg_snapshot7_45_ss_ctrl" hw_rst="0" id="snapshot7_45_ss_ctrl" mask="0xffffffff" permission="rw" size="1"/>
+      <node absolute_id="axi4lite_top.sw_reg.snapshot7_45_ss_status" absolute_offset="a00200fc" address="0x000000fc" description="sw_reg_snapshot7_45_ss_status" hw_rst="0x0" id="snapshot7_45_ss_status" mask="0xffffffff" permission="r" size="1"/>
+      <node absolute_id="axi4lite_top.sw_reg.snapshot7_67_ss_ctrl" absolute_offset="a0020100" address="0x00000100" description="sw_reg_snapshot7_67_ss_ctrl" hw_rst="0" id="snapshot7_67_ss_ctrl" mask="0xffffffff" permission="rw" size="1"/>
+      <node absolute_id="axi4lite_top.sw_reg.snapshot7_67_ss_status" absolute_offset="a0020104" address="0x00000104" description="sw_reg_snapshot7_67_ss_status" hw_rst="0x0" id="snapshot7_67_ss_status" mask="0xffffffff" permission="r" size="1"/>
+      <node absolute_id="axi4lite_top.sw_reg.sync_state0" absolute_offset="a0020108" address="0x00000108" description="sw_reg_sync_state0" hw_rst="0x0" id="sync_state0" mask="0xffffffff" permission="r" size="1"/>
+      <node absolute_id="axi4lite_top.sw_reg.sync_state1" absolute_offset="a002010c" address="0x0000010c" description="sw_reg_sync_state1" hw_rst="0x0" id="sync_state1" mask="0xffffffff" permission="r" size="1"/>
+      <node absolute_id="axi4lite_top.sw_reg.sync_state2" absolute_offset="a0020110" address="0x00000110" description="sw_reg_sync_state2" hw_rst="0x0" id="sync_state2" mask="0xffffffff" permission="r" size="1"/>
+      <node absolute_id="axi4lite_top.sw_reg.sync_state3" absolute_offset="a0020114" address="0x00000114" description="sw_reg_sync_state3" hw_rst="0x0" id="sync_state3" mask="0xffffffff" permission="r" size="1"/>
+      <node absolute_id="axi4lite_top.sw_reg.sync_state4" absolute_offset="a0020118" address="0x00000118" description="sw_reg_sync_state4" hw_rst="0x0" id="sync_state4" mask="0xffffffff" permission="r" size="1"/>
+      <node absolute_id="axi4lite_top.sw_reg.sync_state5" absolute_offset="a002011c" address="0x0000011c" description="sw_reg_sync_state5" hw_rst="0x0" id="sync_state5" mask="0xffffffff" permission="r" size="1"/>
+      <node absolute_id="axi4lite_top.sw_reg.sync_state6" absolute_offset="a0020120" address="0x00000120" description="sw_reg_sync_state6" hw_rst="0x0" id="sync_state6" mask="0xffffffff" permission="r" size="1"/>
+      <node absolute_id="axi4lite_top.sw_reg.sync_state7" absolute_offset="a0020124" address="0x00000124" description="sw_reg_sync_state7" hw_rst="0x0" id="sync_state7" mask="0xffffffff" permission="r" size="1"/>
+   </node>
+   <node absolute_id="axi4lite_top.sys_block" absolute_offset="a0020200" address="0x00020200" byte_size="32" id="sys_block" link_done="sys_block_memory_map_output.xml">
+      <node absolute_id="axi4lite_top.sys_block.sys_board_id" absolute_offset="a0020200" address="0x00000000" description="sys_block_sys_board_id" hw_rst="3" id="sys_board_id" mask="0xffffffff" permission="r" size="1"/>
+      <node absolute_id="axi4lite_top.sys_block.sys_rev" absolute_offset="a0020204" address="0x00000004" description="sys_block_sys_rev" hw_rst="131072" id="sys_rev" mask="0xffffffff" permission="r" size="1"/>
+      <node absolute_id="axi4lite_top.sys_block.sys_rev_rcs" absolute_offset="a002020c" address="0x0000000c" description="sys_block_sys_rev_rcs" hw_rst="1" id="sys_rev_rcs" mask="0xffffffff" permission="r" size="1"/>
+      <node absolute_id="axi4lite_top.sys_block.sys_scratchpad" absolute_offset="a0020210" address="0x00000010" description="sys_block_sys_scratchpad" hw_rst="0" id="sys_scratchpad" mask="0xffffffff" permission="rw" size="1"/>
+      <node absolute_id="axi4lite_top.sys_block.sys_clkcounter" absolute_offset="a0020214" address="0x00000014" description="sys_block_sys_clkcounter" hw_rst="0x0" id="sys_clkcounter" mask="0xffffffff" permission="r" size="1"/>
+   </node>
+</node>
+<!-- This file has been automatically generated using xml_map_gen.py version 1.8 /!-->

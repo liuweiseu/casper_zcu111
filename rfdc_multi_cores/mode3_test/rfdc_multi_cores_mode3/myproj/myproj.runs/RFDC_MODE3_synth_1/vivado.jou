@@ -1,0 +1,12 @@
+#-----------------------------------------------------------
+# Vivado v2018.3.1_AR71948 (64-bit)
+# SW Build 2489853 on Tue Mar 26 04:18:30 MDT 2019
+# IP Build 2486929 on Tue Mar 26 06:44:21 MDT 2019
+# Start of session at: Sat Aug 15 16:53:45 2020
+# Process ID: 2562
+# Current directory: /home/wei/casper/tutorials_devel/zcu111/rfdc_multi_cores/mode3_test/rfdc_multi_cores_mode3/myproj/myproj.runs/RFDC_MODE3_synth_1
+# Command line: vivado -log RFDC_MODE3.vds -product Vivado -mode batch -messageDb vivado.pb -notrace -source RFDC_MODE3.tcl
+# Log file: /home/wei/casper/tutorials_devel/zcu111/rfdc_multi_cores/mode3_test/rfdc_multi_cores_mode3/myproj/myproj.runs/RFDC_MODE3_synth_1/RFDC_MODE3.vds
+# Journal file: /home/wei/casper/tutorials_devel/zcu111/rfdc_multi_cores/mode3_test/rfdc_multi_cores_mode3/myproj/myproj.runs/RFDC_MODE3_synth_1/vivado.jou
+#-----------------------------------------------------------
+source RFDC_MODE3.tcl -notrace
