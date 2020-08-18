@@ -1,3 +1,8 @@
+V0.2.1:
+Some preparation files are added for casper toolflow on zcu111
+They are in ./preparations_for_zcu111
+
+----------------------------------------------------------------------------------------
 V0.2:
 (1) A yellow block with four modes is added to casper toolflow;
     The adc sample rate is 2.048GSps, and the dac sample rate is 4.096GSps;
