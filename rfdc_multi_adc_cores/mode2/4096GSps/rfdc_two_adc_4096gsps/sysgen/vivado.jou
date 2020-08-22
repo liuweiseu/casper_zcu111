@@ -1,0 +1,12 @@
+#-----------------------------------------------------------
+# Vivado v2018.3.1_AR71948 (64-bit)
+# SW Build 2489853 on Tue Mar 26 04:18:30 MDT 2019
+# IP Build 2486929 on Tue Mar 26 06:44:21 MDT 2019
+# Start of session at: Wed Aug 19 17:12:24 2020
+# Process ID: 13713
+# Current directory: /home/wei/casper/casper_mlib/tutorials_devel/zcu111/rfdc_multi_adc_cores/mode2/4096GSps/rfdc_two_adc_4096gsps/sysgen
+# Command line: vivado -mode batch -source ProjectGeneration.tcl -notrace
+# Log file: /home/wei/casper/casper_mlib/tutorials_devel/zcu111/rfdc_multi_adc_cores/mode2/4096GSps/rfdc_two_adc_4096gsps/sysgen/vivado.log
+# Journal file: /home/wei/casper/casper_mlib/tutorials_devel/zcu111/rfdc_multi_adc_cores/mode2/4096GSps/rfdc_two_adc_4096gsps/sysgen/vivado.jou
+#-----------------------------------------------------------
+source ProjectGeneration.tcl -notrace

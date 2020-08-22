@@ -1,3 +1,9 @@
+V0.3:
+rfdc_V0_3 is added to toolflow:
+(1) we can choose one/two/four/eight adc cores(no dac cores);
+(2) we can choose 2.048GSps or 4.096GSps
+
+----------------------------------------------------------------------------------------
 V0.2.1:
 Some preparation files are added for casper toolflow on zcu111
 They are in ./preparations_for_zcu111

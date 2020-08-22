@@ -1,0 +1,5 @@
+<?xml version="1.0" ?>
+<node byte_size="4096" id="snapshot4_45_ss_bram">
+	<node address="0x00000000" description="snapshot4_45_ss_bram_snapshot4_45_ss_bram" hw_rst="0" id="snapshot4_45_ss_bram" mask="0xffffffff" permission="rw" size="1024"/>
+</node>
+<!-- This file has been automatically generated using xml2vhdl.py version 1.16 /!-->

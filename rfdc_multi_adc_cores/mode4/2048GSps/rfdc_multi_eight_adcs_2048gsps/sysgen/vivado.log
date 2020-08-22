@@ -1,0 +1,23 @@
+#-----------------------------------------------------------
+# Vivado v2018.3.1_AR71948 (64-bit)
+# SW Build 2489853 on Tue Mar 26 04:18:30 MDT 2019
+# IP Build 2486929 on Tue Mar 26 06:44:21 MDT 2019
+# Start of session at: Fri Aug 21 19:36:02 2020
+# Process ID: 3741
+# Current directory: /home/wei/casper/casper_mlib/tutorials_devel/zcu111/rfdc_multi_adc_cores/mode4/2048GSps/rfdc_multi_eight_adcs_2048gsps/sysgen
+# Command line: vivado -mode batch -source ProjectGeneration.tcl -notrace
+# Log file: /home/wei/casper/casper_mlib/tutorials_devel/zcu111/rfdc_multi_adc_cores/mode4/2048GSps/rfdc_multi_eight_adcs_2048gsps/sysgen/vivado.log
+# Journal file: /home/wei/casper/casper_mlib/tutorials_devel/zcu111/rfdc_multi_adc_cores/mode4/2048GSps/rfdc_multi_eight_adcs_2048gsps/sysgen/vivado.jou
+#-----------------------------------------------------------
+source ProjectGeneration.tcl -notrace
+WARNING: [Coretcl 2-176] No IPs found
+INFO: [IP_Flow 19-234] Refreshing IP repositories
+INFO: [IP_Flow 19-1704] No user IP repositories specified
+INFO: [IP_Flow 19-2313] Loaded Vivado IP repository '/home/wei/Software/Vivado/install/Vivado/2018.3/data/ip'.
+WARNING: [IP_Flow 19-4832] The IP name 'rfdc_multi_eight_adcs_2048gsps_c_counter_binary_v12_0_i0' you have specified is long. The Windows operating system has path length limitations. It is recommended you use shorter names to reduce the likelihood of issues.
+WARNING: [Vivado 12-3523] Attempt to change 'Component_Name' from 'rfdc_multi_eight_adcs_2048gsps_c_counter_binary_v12_0_i0' to 'rfdc_multi_eight_adcs_2048gsps_c_counter_binary_v12_0_i0' is not allowed and is ignored.
+WARNING: [IP_Flow 19-4832] The IP name 'rfdc_multi_eight_adcs_2048gsps_c_counter_binary_v12_0_i1' you have specified is long. The Windows operating system has path length limitations. It is recommended you use shorter names to reduce the likelihood of issues.
+WARNING: [Vivado 12-3523] Attempt to change 'Component_Name' from 'rfdc_multi_eight_adcs_2048gsps_c_counter_binary_v12_0_i1' to 'rfdc_multi_eight_adcs_2048gsps_c_counter_binary_v12_0_i1' is not allowed and is ignored.
+WARNING: [IP_Flow 19-4832] The IP name 'rfdc_multi_eight_adcs_2048gsps_c_counter_binary_v12_0_i2' you have specified is long. The Windows operating system has path length limitations. It is recommended you use shorter names to reduce the likelihood of issues.
+WARNING: [Vivado 12-3523] Attempt to change 'Component_Name' from 'rfdc_multi_eight_adcs_2048gsps_c_counter_binary_v12_0_i2' to 'rfdc_multi_eight_adcs_2048gsps_c_counter_binary_v12_0_i2' is not allowed and is ignored.
+INFO: [Common 17-206] Exiting Vivado at Fri Aug 21 19:36:12 2020...
