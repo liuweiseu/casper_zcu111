@@ -6,7 +6,7 @@
 <Project Version="7" Minor="39" Path="/home/wei/casper/casper_mlib/tutorials_devel/zcu111/rfdc_multi_adc_cores/mode1/4096GSps/rfdc_one_adc_4096gsps/myproj/myproj.xpr">
   <DefaultLaunch Dir="$PRUNDIR"/>
   <Configuration>
-    <Option Name="Id" Val="f529f425df594cb2b735fbf5a5290312"/>
+    <Option Name="Id" Val="89424d1606f74812aa0e1ea6403c2474"/>
     <Option Name="Part" Val="xczu28dr-ffvg1517-2-e"/>
     <Option Name="CompiledLibDir" Val="$PCACHEDIR/compile_simlib"/>
     <Option Name="CompiledLibDirXSim" Val=""/>
@@ -66,32 +66,32 @@
           <Attr Name="UsedIn" Val="implementation"/>
           <Attr Name="UsedIn" Val="simulation"/>
         </FileInfo>
-        <CompFileExtendedInfo CompFileName="zcu111.bd" FileRelPathName="ip/zcu111_xbar_0/zcu111_xbar_0.xci">
-          <Proxy FileSetName="zcu111_xbar_0"/>
-        </CompFileExtendedInfo>
-        <CompFileExtendedInfo CompFileName="zcu111.bd" FileRelPathName="ip/zcu111_zynq_ultra_ps_e_0_0/zcu111_zynq_ultra_ps_e_0_0.xci">
-          <Proxy FileSetName="zcu111_zynq_ultra_ps_e_0_0"/>
-        </CompFileExtendedInfo>
         <CompFileExtendedInfo CompFileName="zcu111.bd" FileRelPathName="ip/zcu111_auto_ds_1/zcu111_auto_ds_1.xci">
           <Proxy FileSetName="zcu111_auto_ds_1"/>
         </CompFileExtendedInfo>
         <CompFileExtendedInfo CompFileName="zcu111.bd" FileRelPathName="ip/zcu111_auto_ds_0/zcu111_auto_ds_0.xci">
           <Proxy FileSetName="zcu111_auto_ds_0"/>
         </CompFileExtendedInfo>
-        <CompFileExtendedInfo CompFileName="zcu111.bd" FileRelPathName="ip/zcu111_axi_protocol_convert_1_0/zcu111_axi_protocol_convert_1_0.xci">
-          <Proxy FileSetName="zcu111_axi_protocol_convert_1_0"/>
+        <CompFileExtendedInfo CompFileName="zcu111.bd" FileRelPathName="ip/zcu111_zynq_ultra_ps_e_0_0/zcu111_zynq_ultra_ps_e_0_0.xci">
+          <Proxy FileSetName="zcu111_zynq_ultra_ps_e_0_0"/>
+        </CompFileExtendedInfo>
+        <CompFileExtendedInfo CompFileName="zcu111.bd" FileRelPathName="ip/zcu111_proc_sys_reset_0_0/zcu111_proc_sys_reset_0_0.xci">
+          <Proxy FileSetName="zcu111_proc_sys_reset_0_0"/>
         </CompFileExtendedInfo>
         <CompFileExtendedInfo CompFileName="zcu111.bd" FileRelPathName="ip/zcu111_axi_protocol_convert_2_0/zcu111_axi_protocol_convert_2_0.xci">
           <Proxy FileSetName="zcu111_axi_protocol_convert_2_0"/>
         </CompFileExtendedInfo>
-        <CompFileExtendedInfo CompFileName="zcu111.bd" FileRelPathName="ip/zcu111_proc_sys_reset_0_0/zcu111_proc_sys_reset_0_0.xci">
-          <Proxy FileSetName="zcu111_proc_sys_reset_0_0"/>
+        <CompFileExtendedInfo CompFileName="zcu111.bd" FileRelPathName="ip/zcu111_axi_protocol_convert_1_0/zcu111_axi_protocol_convert_1_0.xci">
+          <Proxy FileSetName="zcu111_axi_protocol_convert_1_0"/>
+        </CompFileExtendedInfo>
+        <CompFileExtendedInfo CompFileName="zcu111.bd" FileRelPathName="ip/zcu111_xbar_0/zcu111_xbar_0.xci">
+          <Proxy FileSetName="zcu111_xbar_0"/>
         </CompFileExtendedInfo>
       </File>
       <File Path="$PSRCDIR/sources_1/imports/infrastructure/zcu111_infrastructure.v">
         <FileInfo>
           <Attr Name="ImportPath" Val="$PPRDIR/../../../../../mlib_devel/jasper_library/hdl_sources/infrastructure/zcu111_infrastructure.v"/>
-          <Attr Name="ImportTime" Val="1597703001"/>
+          <Attr Name="ImportTime" Val="1598155164"/>
           <Attr Name="UsedIn" Val="synthesis"/>
           <Attr Name="UsedIn" Val="implementation"/>
           <Attr Name="UsedIn" Val="simulation"/>
@@ -268,7 +268,7 @@
       <File Path="$PSRCDIR/sources_1/imports/rfdc_one_adc_4096gsps/axi4lite_ic_wrapper.vhdl">
         <FileInfo>
           <Attr Name="ImportPath" Val="$PPRDIR/../axi4lite_ic_wrapper.vhdl"/>
-          <Attr Name="ImportTime" Val="1597880039"/>
+          <Attr Name="ImportTime" Val="1598161841"/>
           <Attr Name="UsedIn" Val="synthesis"/>
           <Attr Name="UsedIn" Val="simulation"/>
         </FileInfo>
@@ -284,7 +284,7 @@
       <File Path="$PSRCDIR/sources_1/imports/sysgen/conv_pkg.vhd">
         <FileInfo>
           <Attr Name="ImportPath" Val="$PPRDIR/../sysgen/hdl_netlist/rfdc_one_adc_4096gsps.srcs/sources_1/imports/sysgen/conv_pkg.vhd"/>
-          <Attr Name="ImportTime" Val="1597880027"/>
+          <Attr Name="ImportTime" Val="1598161829"/>
           <Attr Name="UsedIn" Val="synthesis"/>
           <Attr Name="UsedIn" Val="simulation"/>
         </FileInfo>
@@ -300,7 +300,7 @@
       <File Path="$PSRCDIR/sources_1/imports/sysgen/synth_reg_w_init.vhd">
         <FileInfo>
           <Attr Name="ImportPath" Val="$PPRDIR/../sysgen/hdl_netlist/rfdc_one_adc_4096gsps.srcs/sources_1/imports/sysgen/synth_reg_w_init.vhd"/>
-          <Attr Name="ImportTime" Val="1597880027"/>
+          <Attr Name="ImportTime" Val="1598161829"/>
           <Attr Name="UsedIn" Val="synthesis"/>
           <Attr Name="UsedIn" Val="simulation"/>
         </FileInfo>
@@ -308,7 +308,7 @@
       <File Path="$PSRCDIR/sources_1/imports/sysgen/rfdc_one_adc_4096gsps_entity_declarations.vhd">
         <FileInfo>
           <Attr Name="ImportPath" Val="$PPRDIR/../sysgen/hdl_netlist/rfdc_one_adc_4096gsps.srcs/sources_1/imports/sysgen/rfdc_one_adc_4096gsps_entity_declarations.vhd"/>
-          <Attr Name="ImportTime" Val="1597880027"/>
+          <Attr Name="ImportTime" Val="1598161829"/>
           <Attr Name="UsedIn" Val="synthesis"/>
           <Attr Name="UsedIn" Val="simulation"/>
         </FileInfo>
@@ -316,7 +316,7 @@
       <File Path="$PSRCDIR/sources_1/imports/sysgen/xlclockdriver_rd.vhd">
         <FileInfo>
           <Attr Name="ImportPath" Val="$PPRDIR/../sysgen/hdl_netlist/rfdc_one_adc_4096gsps.srcs/sources_1/imports/sysgen/xlclockdriver_rd.vhd"/>
-          <Attr Name="ImportTime" Val="1597880027"/>
+          <Attr Name="ImportTime" Val="1598161829"/>
           <Attr Name="UsedIn" Val="synthesis"/>
           <Attr Name="UsedIn" Val="simulation"/>
         </FileInfo>
@@ -324,7 +324,7 @@
       <File Path="$PSRCDIR/sources_1/imports/sysgen/rfdc_one_adc_4096gsps.vhd">
         <FileInfo>
           <Attr Name="ImportPath" Val="$PPRDIR/../sysgen/hdl_netlist/rfdc_one_adc_4096gsps.srcs/sources_1/imports/sysgen/rfdc_one_adc_4096gsps.vhd"/>
-          <Attr Name="ImportTime" Val="1597880027"/>
+          <Attr Name="ImportTime" Val="1598161829"/>
           <Attr Name="UsedIn" Val="synthesis"/>
           <Attr Name="UsedIn" Val="simulation"/>
         </FileInfo>
@@ -332,7 +332,7 @@
       <File Path="$PSRCDIR/sources_1/imports/sysgen/single_reg_w_init.vhd">
         <FileInfo>
           <Attr Name="ImportPath" Val="$PPRDIR/../sysgen/hdl_netlist/rfdc_one_adc_4096gsps.srcs/sources_1/imports/sysgen/single_reg_w_init.vhd"/>
-          <Attr Name="ImportTime" Val="1597880027"/>
+          <Attr Name="ImportTime" Val="1598161829"/>
           <Attr Name="UsedIn" Val="synthesis"/>
           <Attr Name="UsedIn" Val="simulation"/>
         </FileInfo>
@@ -340,7 +340,7 @@
       <File Path="$PSRCDIR/sources_1/imports/sysgen/srl33e.vhd">
         <FileInfo>
           <Attr Name="ImportPath" Val="$PPRDIR/../sysgen/hdl_netlist/rfdc_one_adc_4096gsps.srcs/sources_1/imports/sysgen/srl33e.vhd"/>
-          <Attr Name="ImportTime" Val="1597880027"/>
+          <Attr Name="ImportTime" Val="1598161829"/>
           <Attr Name="UsedIn" Val="synthesis"/>
           <Attr Name="UsedIn" Val="simulation"/>
         </FileInfo>
@@ -348,7 +348,7 @@
       <File Path="$PSRCDIR/sources_1/imports/sysgen/synth_reg.vhd">
         <FileInfo>
           <Attr Name="ImportPath" Val="$PPRDIR/../sysgen/hdl_netlist/rfdc_one_adc_4096gsps.srcs/sources_1/imports/sysgen/synth_reg.vhd"/>
-          <Attr Name="ImportTime" Val="1597880027"/>
+          <Attr Name="ImportTime" Val="1598161829"/>
           <Attr Name="UsedIn" Val="synthesis"/>
           <Attr Name="UsedIn" Val="simulation"/>
         </FileInfo>
@@ -356,7 +356,7 @@
       <File Path="$PSRCDIR/sources_1/imports/sysgen/synth_reg_reg.vhd">
         <FileInfo>
           <Attr Name="ImportPath" Val="$PPRDIR/../sysgen/hdl_netlist/rfdc_one_adc_4096gsps.srcs/sources_1/imports/sysgen/synth_reg_reg.vhd"/>
-          <Attr Name="ImportTime" Val="1597880027"/>
+          <Attr Name="ImportTime" Val="1598161829"/>
           <Attr Name="UsedIn" Val="synthesis"/>
           <Attr Name="UsedIn" Val="simulation"/>
         </FileInfo>
@@ -364,7 +364,7 @@
       <File Path="$PSRCDIR/sources_1/imports/rfdc_one_adc_4096gsps/top.v">
         <FileInfo>
           <Attr Name="ImportPath" Val="$PPRDIR/../top.v"/>
-          <Attr Name="ImportTime" Val="1597880039"/>
+          <Attr Name="ImportTime" Val="1598161841"/>
           <Attr Name="UsedIn" Val="synthesis"/>
           <Attr Name="UsedIn" Val="implementation"/>
           <Attr Name="UsedIn" Val="simulation"/>
@@ -415,16 +415,6 @@
           <Attr Name="AutoDisabled" Val="1"/>
           <Attr Name="ImportPath" Val="$PPRDIR/../../../../../mlib_devel/jasper_library/hdl_sources/rfdc_V0_3/ADC8_R2R_2048.xci"/>
           <Attr Name="ImportTime" Val="1597813709"/>
-          <Attr Name="UsedIn" Val="synthesis"/>
-          <Attr Name="UsedIn" Val="implementation"/>
-          <Attr Name="UsedIn" Val="simulation"/>
-        </FileInfo>
-      </File>
-      <File Path="$PSRCDIR/sources_1/ip/ADC1_R2R_4096/ADC1_R2R_4096.xci">
-        <FileInfo>
-          <Attr Name="AutoDisabled" Val="1"/>
-          <Attr Name="ImportPath" Val="$PPRDIR/../../../../../mlib_devel/jasper_library/hdl_sources/rfdc_V0_3/ADC1_R2R_4096.xci"/>
-          <Attr Name="ImportTime" Val="1597802186"/>
           <Attr Name="UsedIn" Val="synthesis"/>
           <Attr Name="UsedIn" Val="implementation"/>
           <Attr Name="UsedIn" Val="simulation"/>
@@ -484,7 +474,7 @@
         <FileInfo>
           <Attr Name="AutoDisabled" Val="1"/>
           <Attr Name="ImportPath" Val="$PPRDIR/../sysgen/hdl_netlist/rfdc_one_adc_4096gsps.srcs/sources_1/imports/sysgen/srl17e.vhd"/>
-          <Attr Name="ImportTime" Val="1597880027"/>
+          <Attr Name="ImportTime" Val="1598161829"/>
           <Attr Name="UsedIn" Val="synthesis"/>
           <Attr Name="UsedIn" Val="simulation"/>
         </FileInfo>
@@ -506,7 +496,7 @@
       <File Path="$PSRCDIR/constrs_1/imports/rfdc_one_adc_4096gsps/user_const.xdc">
         <FileInfo>
           <Attr Name="ImportPath" Val="$PPRDIR/../user_const.xdc"/>
-          <Attr Name="ImportTime" Val="1597880039"/>
+          <Attr Name="ImportTime" Val="1598161841"/>
           <Attr Name="UsedIn" Val="synthesis"/>
           <Attr Name="UsedIn" Val="implementation"/>
         </FileInfo>
@@ -516,8 +506,11 @@
       </Config>
     </FileSet>
     <FileSet Name="sim_1" Type="SimulationSrcs" RelSrcDir="$PSRCDIR/sim_1">
+      <Filter Type="Srcs"/>
       <Config>
         <Option Name="DesignMode" Val="RTL"/>
+        <Option Name="TopModule" Val="top"/>
+        <Option Name="TopLib" Val="xil_defaultlib"/>
         <Option Name="TopAutoSet" Val="TRUE"/>
         <Option Name="TransportPathDelay" Val="0"/>
         <Option Name="TransportIntDelay" Val="0"/>
@@ -530,11 +523,26 @@
         <Option Name="TopAutoSet" Val="TRUE"/>
       </Config>
     </FileSet>
+    <FileSet Name="ADC1_R2R_4096" Type="BlockSrcs" RelSrcDir="$PSRCDIR/ADC1_R2R_4096">
+      <File Path="$PSRCDIR/sources_1/ip/ADC1_R2R_4096/ADC1_R2R_4096.xci">
+        <FileInfo>
+          <Attr Name="ImportPath" Val="$PPRDIR/../../../../../mlib_devel/jasper_library/hdl_sources/rfdc_V0_3/ADC1_R2R_4096.xci"/>
+          <Attr Name="ImportTime" Val="1597802186"/>
+          <Attr Name="UsedIn" Val="synthesis"/>
+          <Attr Name="UsedIn" Val="implementation"/>
+          <Attr Name="UsedIn" Val="simulation"/>
+        </FileInfo>
+      </File>
+      <Config>
+        <Option Name="TopModule" Val="ADC1_R2R_4096"/>
+        <Option Name="UseBlackboxStub" Val="1"/>
+      </Config>
+    </FileSet>
     <FileSet Name="rfdc_one_adc_4096gsps_c_counter_binary_v12_0_i2" Type="BlockSrcs" RelSrcDir="$PSRCDIR/rfdc_one_adc_4096gsps_c_counter_binary_v12_0_i2">
       <File Path="$PSRCDIR/sources_1/ip/rfdc_one_adc_4096gsps_c_counter_binary_v12_0_i2/rfdc_one_adc_4096gsps_c_counter_binary_v12_0_i2.xci">
         <FileInfo>
           <Attr Name="ImportPath" Val="$PPRDIR/../sysgen/hdl_netlist/rfdc_one_adc_4096gsps.srcs/sources_1/ip/rfdc_one_adc_4096gsps_c_counter_binary_v12_0_i2/rfdc_one_adc_4096gsps_c_counter_binary_v12_0_i2.xci"/>
-          <Attr Name="ImportTime" Val="1597880038"/>
+          <Attr Name="ImportTime" Val="1598161840"/>
           <Attr Name="UsedIn" Val="synthesis"/>
           <Attr Name="UsedIn" Val="implementation"/>
           <Attr Name="UsedIn" Val="simulation"/>
@@ -549,7 +557,7 @@
       <File Path="$PSRCDIR/sources_1/ip/rfdc_one_adc_4096gsps_c_counter_binary_v12_0_i1/rfdc_one_adc_4096gsps_c_counter_binary_v12_0_i1.xci">
         <FileInfo>
           <Attr Name="ImportPath" Val="$PPRDIR/../sysgen/hdl_netlist/rfdc_one_adc_4096gsps.srcs/sources_1/ip/rfdc_one_adc_4096gsps_c_counter_binary_v12_0_i1/rfdc_one_adc_4096gsps_c_counter_binary_v12_0_i1.xci"/>
-          <Attr Name="ImportTime" Val="1597880038"/>
+          <Attr Name="ImportTime" Val="1598161840"/>
           <Attr Name="UsedIn" Val="synthesis"/>
           <Attr Name="UsedIn" Val="implementation"/>
           <Attr Name="UsedIn" Val="simulation"/>
@@ -564,7 +572,7 @@
       <File Path="$PSRCDIR/sources_1/ip/rfdc_one_adc_4096gsps_c_counter_binary_v12_0_i0/rfdc_one_adc_4096gsps_c_counter_binary_v12_0_i0.xci">
         <FileInfo>
           <Attr Name="ImportPath" Val="$PPRDIR/../sysgen/hdl_netlist/rfdc_one_adc_4096gsps.srcs/sources_1/ip/rfdc_one_adc_4096gsps_c_counter_binary_v12_0_i0/rfdc_one_adc_4096gsps_c_counter_binary_v12_0_i0.xci"/>
-          <Attr Name="ImportTime" Val="1597880038"/>
+          <Attr Name="ImportTime" Val="1598161840"/>
           <Attr Name="UsedIn" Val="synthesis"/>
           <Attr Name="UsedIn" Val="implementation"/>
           <Attr Name="UsedIn" Val="simulation"/>
@@ -645,9 +653,7 @@
   <Runs Version="1" Minor="10">
     <Run Id="synth_1" Type="Ft3:Synth" SrcSet="sources_1" Part="xczu28dr-ffvg1517-2-e" ConstrsSet="constrs_1" Description="Vivado Synthesis Defaults" AutoIncrementalCheckpoint="false" WriteIncrSynthDcp="false" State="current" Dir="$PRUNDIR/synth_1" IncludeInArchive="true">
       <Strategy Version="1" Minor="2">
-        <StratHandle Name="Vivado Synthesis Defaults" Flow="Vivado Synthesis 2018">
-          <Desc>Vivado Synthesis Defaults</Desc>
-        </StratHandle>
+        <StratHandle Name="Vivado Synthesis Defaults" Flow="Vivado Synthesis 2018"/>
         <Step Id="synth_design">
           <Option Id="FlattenHierarchy">1</Option>
         </Step>
@@ -656,11 +662,18 @@
       <ReportStrategy Name="Vivado Synthesis Default Reports" Flow="Vivado Synthesis 2018"/>
       <Report Name="ROUTE_DESIGN.REPORT_METHODOLOGY" Enabled="1"/>
     </Run>
+    <Run Id="ADC1_R2R_4096_synth_1" Type="Ft3:Synth" SrcSet="ADC1_R2R_4096" Part="xczu28dr-ffvg1517-2-e" ConstrsSet="ADC1_R2R_4096" Description="Vivado Synthesis Defaults" AutoIncrementalCheckpoint="false" WriteIncrSynthDcp="false" Dir="$PRUNDIR/ADC1_R2R_4096_synth_1" IncludeInArchive="true">
+      <Strategy Version="1" Minor="2">
+        <StratHandle Name="Vivado Synthesis Defaults" Flow="Vivado Synthesis 2018"/>
+        <Step Id="synth_design"/>
+      </Strategy>
+      <GeneratedRun Dir="$PRUNDIR" File="gen_run.xml"/>
+      <ReportStrategy Name="Vivado Synthesis Default Reports" Flow="Vivado Synthesis 2018"/>
+      <Report Name="ROUTE_DESIGN.REPORT_METHODOLOGY" Enabled="1"/>
+    </Run>
     <Run Id="rfdc_one_adc_4096gsps_c_counter_binary_v12_0_i2_synth_1" Type="Ft3:Synth" SrcSet="rfdc_one_adc_4096gsps_c_counter_binary_v12_0_i2" Part="xczu28dr-ffvg1517-2-e" ConstrsSet="rfdc_one_adc_4096gsps_c_counter_binary_v12_0_i2" Description="Vivado Synthesis Defaults" AutoIncrementalCheckpoint="false" WriteIncrSynthDcp="false" Dir="$PRUNDIR/rfdc_one_adc_4096gsps_c_counter_binary_v12_0_i2_synth_1" IncludeInArchive="true">
       <Strategy Version="1" Minor="2">
-        <StratHandle Name="Vivado Synthesis Defaults" Flow="Vivado Synthesis 2018">
-          <Desc>Vivado Synthesis Defaults</Desc>
-        </StratHandle>
+        <StratHandle Name="Vivado Synthesis Defaults" Flow="Vivado Synthesis 2018"/>
         <Step Id="synth_design"/>
       </Strategy>
       <GeneratedRun Dir="$PRUNDIR" File="gen_run.xml"/>
@@ -669,9 +682,7 @@
     </Run>
     <Run Id="rfdc_one_adc_4096gsps_c_counter_binary_v12_0_i1_synth_1" Type="Ft3:Synth" SrcSet="rfdc_one_adc_4096gsps_c_counter_binary_v12_0_i1" Part="xczu28dr-ffvg1517-2-e" ConstrsSet="rfdc_one_adc_4096gsps_c_counter_binary_v12_0_i1" Description="Vivado Synthesis Defaults" AutoIncrementalCheckpoint="false" WriteIncrSynthDcp="false" Dir="$PRUNDIR/rfdc_one_adc_4096gsps_c_counter_binary_v12_0_i1_synth_1" IncludeInArchive="true">
       <Strategy Version="1" Minor="2">
-        <StratHandle Name="Vivado Synthesis Defaults" Flow="Vivado Synthesis 2018">
-          <Desc>Vivado Synthesis Defaults</Desc>
-        </StratHandle>
+        <StratHandle Name="Vivado Synthesis Defaults" Flow="Vivado Synthesis 2018"/>
         <Step Id="synth_design"/>
       </Strategy>
       <GeneratedRun Dir="$PRUNDIR" File="gen_run.xml"/>
@@ -680,9 +691,7 @@
     </Run>
     <Run Id="rfdc_one_adc_4096gsps_c_counter_binary_v12_0_i0_synth_1" Type="Ft3:Synth" SrcSet="rfdc_one_adc_4096gsps_c_counter_binary_v12_0_i0" Part="xczu28dr-ffvg1517-2-e" ConstrsSet="rfdc_one_adc_4096gsps_c_counter_binary_v12_0_i0" Description="Vivado Synthesis Defaults" AutoIncrementalCheckpoint="false" WriteIncrSynthDcp="false" Dir="$PRUNDIR/rfdc_one_adc_4096gsps_c_counter_binary_v12_0_i0_synth_1" IncludeInArchive="true">
       <Strategy Version="1" Minor="2">
-        <StratHandle Name="Vivado Synthesis Defaults" Flow="Vivado Synthesis 2018">
-          <Desc>Vivado Synthesis Defaults</Desc>
-        </StratHandle>
+        <StratHandle Name="Vivado Synthesis Defaults" Flow="Vivado Synthesis 2018"/>
         <Step Id="synth_design"/>
       </Strategy>
       <GeneratedRun Dir="$PRUNDIR" File="gen_run.xml"/>
@@ -691,9 +700,7 @@
     </Run>
     <Run Id="zcu111_xbar_0_synth_1" Type="Ft3:Synth" SrcSet="zcu111_xbar_0" Part="xczu28dr-ffvg1517-2-e" ConstrsSet="zcu111_xbar_0" Description="Vivado Synthesis Defaults" AutoIncrementalCheckpoint="false" WriteIncrSynthDcp="false" Dir="$PRUNDIR/zcu111_xbar_0_synth_1" IncludeInArchive="true">
       <Strategy Version="1" Minor="2">
-        <StratHandle Name="Vivado Synthesis Defaults" Flow="Vivado Synthesis 2018">
-          <Desc>Vivado Synthesis Defaults</Desc>
-        </StratHandle>
+        <StratHandle Name="Vivado Synthesis Defaults" Flow="Vivado Synthesis 2018"/>
         <Step Id="synth_design"/>
       </Strategy>
       <GeneratedRun Dir="$PRUNDIR" File="gen_run.xml"/>
@@ -702,9 +709,7 @@
     </Run>
     <Run Id="zcu111_zynq_ultra_ps_e_0_0_synth_1" Type="Ft3:Synth" SrcSet="zcu111_zynq_ultra_ps_e_0_0" Part="xczu28dr-ffvg1517-2-e" ConstrsSet="zcu111_zynq_ultra_ps_e_0_0" Description="Vivado Synthesis Defaults" AutoIncrementalCheckpoint="false" WriteIncrSynthDcp="false" Dir="$PRUNDIR/zcu111_zynq_ultra_ps_e_0_0_synth_1" IncludeInArchive="true">
       <Strategy Version="1" Minor="2">
-        <StratHandle Name="Vivado Synthesis Defaults" Flow="Vivado Synthesis 2018">
-          <Desc>Vivado Synthesis Defaults</Desc>
-        </StratHandle>
+        <StratHandle Name="Vivado Synthesis Defaults" Flow="Vivado Synthesis 2018"/>
         <Step Id="synth_design"/>
       </Strategy>
       <GeneratedRun Dir="$PRUNDIR" File="gen_run.xml"/>
@@ -713,9 +718,7 @@
     </Run>
     <Run Id="zcu111_auto_ds_1_synth_1" Type="Ft3:Synth" SrcSet="zcu111_auto_ds_1" Part="xczu28dr-ffvg1517-2-e" ConstrsSet="zcu111_auto_ds_1" Description="Vivado Synthesis Defaults" AutoIncrementalCheckpoint="false" WriteIncrSynthDcp="false" Dir="$PRUNDIR/zcu111_auto_ds_1_synth_1" IncludeInArchive="true">
       <Strategy Version="1" Minor="2">
-        <StratHandle Name="Vivado Synthesis Defaults" Flow="Vivado Synthesis 2018">
-          <Desc>Vivado Synthesis Defaults</Desc>
-        </StratHandle>
+        <StratHandle Name="Vivado Synthesis Defaults" Flow="Vivado Synthesis 2018"/>
         <Step Id="synth_design"/>
       </Strategy>
       <GeneratedRun Dir="$PRUNDIR" File="gen_run.xml"/>
@@ -724,9 +727,7 @@
     </Run>
     <Run Id="zcu111_auto_ds_0_synth_1" Type="Ft3:Synth" SrcSet="zcu111_auto_ds_0" Part="xczu28dr-ffvg1517-2-e" ConstrsSet="zcu111_auto_ds_0" Description="Vivado Synthesis Defaults" AutoIncrementalCheckpoint="false" WriteIncrSynthDcp="false" Dir="$PRUNDIR/zcu111_auto_ds_0_synth_1" IncludeInArchive="true">
       <Strategy Version="1" Minor="2">
-        <StratHandle Name="Vivado Synthesis Defaults" Flow="Vivado Synthesis 2018">
-          <Desc>Vivado Synthesis Defaults</Desc>
-        </StratHandle>
+        <StratHandle Name="Vivado Synthesis Defaults" Flow="Vivado Synthesis 2018"/>
         <Step Id="synth_design"/>
       </Strategy>
       <GeneratedRun Dir="$PRUNDIR" File="gen_run.xml"/>
@@ -735,9 +736,7 @@
     </Run>
     <Run Id="zcu111_axi_protocol_convert_1_0_synth_1" Type="Ft3:Synth" SrcSet="zcu111_axi_protocol_convert_1_0" Part="xczu28dr-ffvg1517-2-e" ConstrsSet="zcu111_axi_protocol_convert_1_0" Description="Vivado Synthesis Defaults" AutoIncrementalCheckpoint="false" WriteIncrSynthDcp="false" Dir="$PRUNDIR/zcu111_axi_protocol_convert_1_0_synth_1" IncludeInArchive="true">
       <Strategy Version="1" Minor="2">
-        <StratHandle Name="Vivado Synthesis Defaults" Flow="Vivado Synthesis 2018">
-          <Desc>Vivado Synthesis Defaults</Desc>
-        </StratHandle>
+        <StratHandle Name="Vivado Synthesis Defaults" Flow="Vivado Synthesis 2018"/>
         <Step Id="synth_design"/>
       </Strategy>
       <GeneratedRun Dir="$PRUNDIR" File="gen_run.xml"/>
@@ -746,9 +745,7 @@
     </Run>
     <Run Id="zcu111_axi_protocol_convert_2_0_synth_1" Type="Ft3:Synth" SrcSet="zcu111_axi_protocol_convert_2_0" Part="xczu28dr-ffvg1517-2-e" ConstrsSet="zcu111_axi_protocol_convert_2_0" Description="Vivado Synthesis Defaults" AutoIncrementalCheckpoint="false" WriteIncrSynthDcp="false" Dir="$PRUNDIR/zcu111_axi_protocol_convert_2_0_synth_1" IncludeInArchive="true">
       <Strategy Version="1" Minor="2">
-        <StratHandle Name="Vivado Synthesis Defaults" Flow="Vivado Synthesis 2018">
-          <Desc>Vivado Synthesis Defaults</Desc>
-        </StratHandle>
+        <StratHandle Name="Vivado Synthesis Defaults" Flow="Vivado Synthesis 2018"/>
         <Step Id="synth_design"/>
       </Strategy>
       <GeneratedRun Dir="$PRUNDIR" File="gen_run.xml"/>
@@ -757,9 +754,7 @@
     </Run>
     <Run Id="zcu111_proc_sys_reset_0_0_synth_1" Type="Ft3:Synth" SrcSet="zcu111_proc_sys_reset_0_0" Part="xczu28dr-ffvg1517-2-e" ConstrsSet="zcu111_proc_sys_reset_0_0" Description="Vivado Synthesis Defaults" AutoIncrementalCheckpoint="false" WriteIncrSynthDcp="false" Dir="$PRUNDIR/zcu111_proc_sys_reset_0_0_synth_1" IncludeInArchive="true">
       <Strategy Version="1" Minor="2">
-        <StratHandle Name="Vivado Synthesis Defaults" Flow="Vivado Synthesis 2018">
-          <Desc>Vivado Synthesis Defaults</Desc>
-        </StratHandle>
+        <StratHandle Name="Vivado Synthesis Defaults" Flow="Vivado Synthesis 2018"/>
         <Step Id="synth_design"/>
       </Strategy>
       <GeneratedRun Dir="$PRUNDIR" File="gen_run.xml"/>
@@ -768,9 +763,7 @@
     </Run>
     <Run Id="impl_1" Type="Ft2:EntireDesign" Part="xczu28dr-ffvg1517-2-e" ConstrsSet="constrs_1" Description="Default settings for Implementation." AutoIncrementalCheckpoint="false" WriteIncrSynthDcp="false" State="current" Dir="$PRUNDIR/impl_1" SynthRun="synth_1" IncludeInArchive="true" GenFullBitstream="true">
       <Strategy Version="1" Minor="2">
-        <StratHandle Name="Vivado Implementation Defaults" Flow="Vivado Implementation 2018">
-          <Desc>Default settings for Implementation.</Desc>
-        </StratHandle>
+        <StratHandle Name="Vivado Implementation Defaults" Flow="Vivado Implementation 2018"/>
         <Step Id="init_design"/>
         <Step Id="opt_design"/>
         <Step Id="power_opt_design"/>
@@ -787,11 +780,25 @@
       <ReportStrategy Name="Vivado Implementation Default Reports" Flow="Vivado Implementation 2018"/>
       <Report Name="ROUTE_DESIGN.REPORT_METHODOLOGY" Enabled="1"/>
     </Run>
+    <Run Id="ADC1_R2R_4096_impl_1" Type="Ft2:EntireDesign" Part="xczu28dr-ffvg1517-2-e" ConstrsSet="ADC1_R2R_4096" Description="Default settings for Implementation." AutoIncrementalCheckpoint="false" WriteIncrSynthDcp="false" SynthRun="ADC1_R2R_4096_synth_1" IncludeInArchive="false" GenFullBitstream="true">
+      <Strategy Version="1" Minor="2">
+        <StratHandle Name="Vivado Implementation Defaults" Flow="Vivado Implementation 2018"/>
+        <Step Id="init_design"/>
+        <Step Id="opt_design"/>
+        <Step Id="power_opt_design"/>
+        <Step Id="place_design"/>
+        <Step Id="post_place_power_opt_design"/>
+        <Step Id="phys_opt_design"/>
+        <Step Id="route_design"/>
+        <Step Id="post_route_phys_opt_design"/>
+        <Step Id="write_bitstream"/>
+      </Strategy>
+      <ReportStrategy Name="Vivado Implementation Default Reports" Flow="Vivado Implementation 2018"/>
+      <Report Name="ROUTE_DESIGN.REPORT_METHODOLOGY" Enabled="1"/>
+    </Run>
     <Run Id="rfdc_one_adc_4096gsps_c_counter_binary_v12_0_i2_impl_1" Type="Ft2:EntireDesign" Part="xczu28dr-ffvg1517-2-e" ConstrsSet="rfdc_one_adc_4096gsps_c_counter_binary_v12_0_i2" Description="Default settings for Implementation." AutoIncrementalCheckpoint="false" WriteIncrSynthDcp="false" SynthRun="rfdc_one_adc_4096gsps_c_counter_binary_v12_0_i2_synth_1" IncludeInArchive="false" GenFullBitstream="true">
       <Strategy Version="1" Minor="2">
-        <StratHandle Name="Vivado Implementation Defaults" Flow="Vivado Implementation 2018">
-          <Desc>Default settings for Implementation.</Desc>
-        </StratHandle>
+        <StratHandle Name="Vivado Implementation Defaults" Flow="Vivado Implementation 2018"/>
         <Step Id="init_design"/>
         <Step Id="opt_design"/>
         <Step Id="power_opt_design"/>
@@ -807,9 +814,7 @@
     </Run>
     <Run Id="rfdc_one_adc_4096gsps_c_counter_binary_v12_0_i1_impl_1" Type="Ft2:EntireDesign" Part="xczu28dr-ffvg1517-2-e" ConstrsSet="rfdc_one_adc_4096gsps_c_counter_binary_v12_0_i1" Description="Default settings for Implementation." AutoIncrementalCheckpoint="false" WriteIncrSynthDcp="false" SynthRun="rfdc_one_adc_4096gsps_c_counter_binary_v12_0_i1_synth_1" IncludeInArchive="false" GenFullBitstream="true">
       <Strategy Version="1" Minor="2">
-        <StratHandle Name="Vivado Implementation Defaults" Flow="Vivado Implementation 2018">
-          <Desc>Default settings for Implementation.</Desc>
-        </StratHandle>
+        <StratHandle Name="Vivado Implementation Defaults" Flow="Vivado Implementation 2018"/>
         <Step Id="init_design"/>
         <Step Id="opt_design"/>
         <Step Id="power_opt_design"/>
@@ -825,9 +830,7 @@
     </Run>
     <Run Id="rfdc_one_adc_4096gsps_c_counter_binary_v12_0_i0_impl_1" Type="Ft2:EntireDesign" Part="xczu28dr-ffvg1517-2-e" ConstrsSet="rfdc_one_adc_4096gsps_c_counter_binary_v12_0_i0" Description="Default settings for Implementation." AutoIncrementalCheckpoint="false" WriteIncrSynthDcp="false" SynthRun="rfdc_one_adc_4096gsps_c_counter_binary_v12_0_i0_synth_1" IncludeInArchive="false" GenFullBitstream="true">
       <Strategy Version="1" Minor="2">
-        <StratHandle Name="Vivado Implementation Defaults" Flow="Vivado Implementation 2018">
-          <Desc>Default settings for Implementation.</Desc>
-        </StratHandle>
+        <StratHandle Name="Vivado Implementation Defaults" Flow="Vivado Implementation 2018"/>
         <Step Id="init_design"/>
         <Step Id="opt_design"/>
         <Step Id="power_opt_design"/>
@@ -843,9 +846,7 @@
     </Run>
     <Run Id="zcu111_xbar_0_impl_1" Type="Ft2:EntireDesign" Part="xczu28dr-ffvg1517-2-e" ConstrsSet="zcu111_xbar_0" Description="Default settings for Implementation." AutoIncrementalCheckpoint="false" WriteIncrSynthDcp="false" SynthRun="zcu111_xbar_0_synth_1" IncludeInArchive="false" GenFullBitstream="true">
       <Strategy Version="1" Minor="2">
-        <StratHandle Name="Vivado Implementation Defaults" Flow="Vivado Implementation 2018">
-          <Desc>Default settings for Implementation.</Desc>
-        </StratHandle>
+        <StratHandle Name="Vivado Implementation Defaults" Flow="Vivado Implementation 2018"/>
         <Step Id="init_design"/>
         <Step Id="opt_design"/>
         <Step Id="power_opt_design"/>
@@ -861,9 +862,7 @@
     </Run>
     <Run Id="zcu111_zynq_ultra_ps_e_0_0_impl_1" Type="Ft2:EntireDesign" Part="xczu28dr-ffvg1517-2-e" ConstrsSet="zcu111_zynq_ultra_ps_e_0_0" Description="Default settings for Implementation." AutoIncrementalCheckpoint="false" WriteIncrSynthDcp="false" SynthRun="zcu111_zynq_ultra_ps_e_0_0_synth_1" IncludeInArchive="false" GenFullBitstream="true">
       <Strategy Version="1" Minor="2">
-        <StratHandle Name="Vivado Implementation Defaults" Flow="Vivado Implementation 2018">
-          <Desc>Default settings for Implementation.</Desc>
-        </StratHandle>
+        <StratHandle Name="Vivado Implementation Defaults" Flow="Vivado Implementation 2018"/>
         <Step Id="init_design"/>
         <Step Id="opt_design"/>
         <Step Id="power_opt_design"/>
@@ -879,9 +878,7 @@
     </Run>
     <Run Id="zcu111_auto_ds_1_impl_1" Type="Ft2:EntireDesign" Part="xczu28dr-ffvg1517-2-e" ConstrsSet="zcu111_auto_ds_1" Description="Default settings for Implementation." AutoIncrementalCheckpoint="false" WriteIncrSynthDcp="false" SynthRun="zcu111_auto_ds_1_synth_1" IncludeInArchive="false" GenFullBitstream="true">
       <Strategy Version="1" Minor="2">
-        <StratHandle Name="Vivado Implementation Defaults" Flow="Vivado Implementation 2018">
-          <Desc>Default settings for Implementation.</Desc>
-        </StratHandle>
+        <StratHandle Name="Vivado Implementation Defaults" Flow="Vivado Implementation 2018"/>
         <Step Id="init_design"/>
         <Step Id="opt_design"/>
         <Step Id="power_opt_design"/>
@@ -897,9 +894,7 @@
     </Run>
     <Run Id="zcu111_auto_ds_0_impl_1" Type="Ft2:EntireDesign" Part="xczu28dr-ffvg1517-2-e" ConstrsSet="zcu111_auto_ds_0" Description="Default settings for Implementation." AutoIncrementalCheckpoint="false" WriteIncrSynthDcp="false" SynthRun="zcu111_auto_ds_0_synth_1" IncludeInArchive="false" GenFullBitstream="true">
       <Strategy Version="1" Minor="2">
-        <StratHandle Name="Vivado Implementation Defaults" Flow="Vivado Implementation 2018">
-          <Desc>Default settings for Implementation.</Desc>
-        </StratHandle>
+        <StratHandle Name="Vivado Implementation Defaults" Flow="Vivado Implementation 2018"/>
         <Step Id="init_design"/>
         <Step Id="opt_design"/>
         <Step Id="power_opt_design"/>
@@ -915,9 +910,7 @@
     </Run>
     <Run Id="zcu111_axi_protocol_convert_1_0_impl_1" Type="Ft2:EntireDesign" Part="xczu28dr-ffvg1517-2-e" ConstrsSet="zcu111_axi_protocol_convert_1_0" Description="Default settings for Implementation." AutoIncrementalCheckpoint="false" WriteIncrSynthDcp="false" SynthRun="zcu111_axi_protocol_convert_1_0_synth_1" IncludeInArchive="false" GenFullBitstream="true">
       <Strategy Version="1" Minor="2">
-        <StratHandle Name="Vivado Implementation Defaults" Flow="Vivado Implementation 2018">
-          <Desc>Default settings for Implementation.</Desc>
-        </StratHandle>
+        <StratHandle Name="Vivado Implementation Defaults" Flow="Vivado Implementation 2018"/>
         <Step Id="init_design"/>
         <Step Id="opt_design"/>
         <Step Id="power_opt_design"/>
@@ -933,9 +926,7 @@
     </Run>
     <Run Id="zcu111_axi_protocol_convert_2_0_impl_1" Type="Ft2:EntireDesign" Part="xczu28dr-ffvg1517-2-e" ConstrsSet="zcu111_axi_protocol_convert_2_0" Description="Default settings for Implementation." AutoIncrementalCheckpoint="false" WriteIncrSynthDcp="false" SynthRun="zcu111_axi_protocol_convert_2_0_synth_1" IncludeInArchive="false" GenFullBitstream="true">
       <Strategy Version="1" Minor="2">
-        <StratHandle Name="Vivado Implementation Defaults" Flow="Vivado Implementation 2018">
-          <Desc>Default settings for Implementation.</Desc>
-        </StratHandle>
+        <StratHandle Name="Vivado Implementation Defaults" Flow="Vivado Implementation 2018"/>
         <Step Id="init_design"/>
         <Step Id="opt_design"/>
         <Step Id="power_opt_design"/>
@@ -951,9 +942,7 @@
     </Run>
     <Run Id="zcu111_proc_sys_reset_0_0_impl_1" Type="Ft2:EntireDesign" Part="xczu28dr-ffvg1517-2-e" ConstrsSet="zcu111_proc_sys_reset_0_0" Description="Default settings for Implementation." AutoIncrementalCheckpoint="false" WriteIncrSynthDcp="false" SynthRun="zcu111_proc_sys_reset_0_0_synth_1" IncludeInArchive="false" GenFullBitstream="true">
       <Strategy Version="1" Minor="2">
-        <StratHandle Name="Vivado Implementation Defaults" Flow="Vivado Implementation 2018">
-          <Desc>Default settings for Implementation.</Desc>
-        </StratHandle>
+        <StratHandle Name="Vivado Implementation Defaults" Flow="Vivado Implementation 2018"/>
         <Step Id="init_design"/>
         <Step Id="opt_design"/>
         <Step Id="power_opt_design"/>

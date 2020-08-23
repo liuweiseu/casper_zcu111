@@ -1,3 +1,4 @@
+#include <stdio.h>
 #include "xparameters.h"
 #include "xrfdc.h"
 #include "xrfdc_mts.h"
@@ -8,6 +9,11 @@
 #define XRFDC_DEV_SIZE		0x0003FFFF
 #define RFDC_DEVICE_ID 		XPAR_XRFDC_0_DEVICE_ID
 
+#define NUM_ADC 8 //number of active ADCs
+#define NUM_ADC_TILES 4
+#define NUM_ADC_BLOCKS 2
+
+#define TILE_HEX 0xf //hex value for which tiles are active bit x corresponds with index x
 static XRFdc RFdcInst; //struct with rfdc data
 
 int main()
@@ -38,11 +44,12 @@ int main()
 	}
 	ret = XRFdc_GetIPVer();
 	printf("RFDC IP version:%x\n",ret);
-	XRF_Dev_Close();
+	//XRFdc_Dev_Close();
 /////start of rfdc example design from xilinx /////
 //special metal log handling that will output more information.
-/*
+
 // Initialize the RFDC
+
 	RFdcConfigPtr = XRFdc_LookupConfig(RFDC_DEVICE_ID); ///look up config information
 	if (RFdcConfigPtr == NULL) {
 		return XRFDC_FAILURE;
@@ -56,10 +63,6 @@ int main()
 
 	XRFdc_GetIPStatus(RFdcInstPtr, IPStatusPtr);
 	
-//	check_enabled(RFdcInstPtr);
-//
-//	return 0;
-#ifndef NO_MIXING_REQUIRED
 	// These loops go through all of the ADC blocks and tiles to mix the data
 	for(int tile = 0; tile < NUM_ADC_TILES; ++tile)
 	{
@@ -97,74 +100,27 @@ int main()
 			printf("FineMixerFreq: %d\r\n", GetMixerSettings.FineMixerScale);
 			printf("MixerType: %d\r\n", GetMixerSettings.MixerType);
 			printf("MixerMode: %d\r\n", GetMixerSettings.MixerMode);
-
-			SetMixerSettings.CoarseMixFreq = XRFDC_COARSE_MIX_BYPASS;
-			SetMixerSettings.EventSource = XRFDC_EVNT_SRC_TILE;
-			SetMixerSettings.FineMixerScale = XRFDC_MIXER_SCALE_1P0;
-			SetMixerSettings.MixerMode = XRFDC_MIXER_MODE_R2C;
-			SetMixerSettings.MixerType = XRFDC_MIXER_TYPE_FINE;
-			SetMixerSettings.Freq = -512;
-			SetMixerSettings.PhaseOffset = 0;
-
-			Status = XRFdc_SetMixerSettings(RFdcInstPtr, XRFDC_ADC_TILE, tile, block, &SetMixerSettings);
-			if (Status != XRFDC_SUCCESS) {
-				printf("Failed to configure mixer settings\r\n");
-				return XRFDC_FAILURE;
-			}
-
-			Status = XRFdc_UpdateEvent(RFdcInstPtr, XRFDC_ADC_TILE, tile, block, XRFDC_EVENT_MIXER);
-			if (Status != XRFDC_SUCCESS) {
-				printf("Failed to issue event update\r\n");
-				return XRFDC_FAILURE;
-			}
-
-			Status = XRFdc_GetMixerSettings(RFdcInstPtr, XRFDC_ADC_TILE, tile, block, &GetMixerSettings);
-			if (Status != XRFDC_SUCCESS) {
-				printf("Failed to get mixer settings\r\n");
-				return XRFDC_FAILURE;
-			}
-
-			whole = GetMixerSettings.Freq;
-			thousands = GetMixerSettings.Freq - whole;
-			printf("\nNew Mixer Settings:\r\n");
-			printf("Mixer freq: %d.%3d\r\n", whole, thousands);
-			printf("CoarseMixerFreq: %d\r\n", GetMixerSettings.CoarseMixFreq);
-			printf("FineMixerFreq: %d\r\n", GetMixerSettings.FineMixerScale);
-			printf("EventSource: %d\r\n", GetMixerSettings.EventSource);
-			printf("MixerType: %d\r\n", GetMixerSettings.MixerType);
-			printf("MixerMode: %d\r\n", GetMixerSettings.MixerMode);
-
-			printf("freq set right: %d\r\n", (GetMixerSettings.Freq-(-512) < 0.1));
-		}
-		printf("Still in loop\r\n");
-	}
-	printf("Out of loop\r\n");
-
-#endif
-
-
-#ifdef USE_MTS
+		} //for test
+	} //for test
 
 	///////// MTS Stuff Here ///////////
 
 
 	 /* ADC MTS Settings */
-	 /*
+	 
 	XRFdc_MultiConverter_Sync_Config ADC_Sync_Config;
 
 	printf("\n=== Run ADC Sync ===\n");
 
-//	sleep(10);
 	/* Initialize ADC MTS Settings */
-	/*
+	
 	XRFdc_MultiConverter_Init (&ADC_Sync_Config, 0, 0);
 
 	ADC_Sync_Config.Tiles = TILE_HEX;
 
 	int status_adc = 0;
 
-	status_adc = XRFdc_MultiConverter_Sync(RFdcInstPtr, XRFDC_ADC_TILE,
-					&ADC_Sync_Config);
+	status_adc = XRFdc_MultiConverter_Sync(RFdcInstPtr, XRFDC_ADC_TILE,&ADC_Sync_Config);
 	if(status_adc == XRFDC_MTS_OK){
 		printf("INFO : ADC Multi-Tile-Sync completed successfully\n");
 	}else{
@@ -182,5 +138,6 @@ int main()
 						 factor, ADC_Sync_Config.Offset[i]);
 		 }
 	 }
-	 */
+	 
+	 XRFdc_Dev_Close();
 }

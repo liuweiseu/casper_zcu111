@@ -1,13 +1,13 @@
 <?xml version="1.0" encoding="UTF-8" ?>
-<webTalkData  fileName='usage_statistics_webtalk.xml'  majorVersion='1' minorVersion='0' timeStamp='Wed Aug 19 16:46:57 2020'>
+<webTalkData  fileName='usage_statistics_webtalk.xml'  majorVersion='1' minorVersion='0' timeStamp='Sat Aug 22 23:04:45 2020'>
 <section name="__ROOT__" level="0" order="1" description="">
  <section name="software_version_and_target_device" level="1" order="1" description="">
   <keyValuePair key="beta" value="FALSE" description="" />
   <keyValuePair key="build_version" value="2489853" description="" />
-  <keyValuePair key="date_generated" value="Wed Aug 19 16:46:57 2020" description="" />
+  <keyValuePair key="date_generated" value="Sat Aug 22 23:04:45 2020" description="" />
   <keyValuePair key="os_platform" value="LIN64" description="" />
   <keyValuePair key="product_version" value="Vivado v2018.3.1_AR71948 (64-bit)" description="" />
-  <keyValuePair key="project_id" value="f529f425df594cb2b735fbf5a5290312" description="" />
+  <keyValuePair key="project_id" value="89424d1606f74812aa0e1ea6403c2474" description="" />
   <keyValuePair key="project_iteration" value="1" description="" />
   <keyValuePair key="random_id" value="5f2720c3591052958a650176c8af1e6f" description="" />
   <keyValuePair key="registration_id" value="211886108_0_0_966" description="" />
@@ -20,7 +20,7 @@
  </section>
  <section name="user_environment" level="1" order="2" description="">
   <keyValuePair key="cpu_name" value="Intel(R) Core(TM) i7-8750H CPU @ 2.20GHz" description="" />
-  <keyValuePair key="cpu_speed" value="3857.830 MHz" description="" />
+  <keyValuePair key="cpu_speed" value="3844.963 MHz" description="" />
   <keyValuePair key="os_name" value="Ubuntu" description="" />
   <keyValuePair key="os_release" value="Ubuntu 18.04.5 LTS" description="" />
   <keyValuePair key="system_ram" value="25.000 GB" description="" />
@@ -328,7 +328,651 @@
    <keyValuePair key="testbench" value="0" description="" />
    <keyValuePair key="waveform_viewer" value="0" description="" />
   </section>
-  <section name="xpm_cdc_async_rst/1" level="2" order="11" description="">
+  <section name="usp_rf_data_converter_v2_1_1/1" level="2" order="11" description="">
+   <keyValuePair key="c_adc00_dig_port" value="1" description="" />
+   <keyValuePair key="c_adc01_dig_port" value="0" description="" />
+   <keyValuePair key="c_adc02_dig_port" value="0" description="" />
+   <keyValuePair key="c_adc03_dig_port" value="0" description="" />
+   <keyValuePair key="c_adc0_band" value="0" description="" />
+   <keyValuePair key="c_adc0_decimation" value="1" description="" />
+   <keyValuePair key="c_adc0_enable" value="1" description="" />
+   <keyValuePair key="c_adc0_fabric_freq" value="512.000" description="" />
+   <keyValuePair key="c_adc0_fbdiv" value="30" description="" />
+   <keyValuePair key="c_adc0_fs_max" value="4.096" description="" />
+   <keyValuePair key="c_adc0_link_coupling" value="0" description="" />
+   <keyValuePair key="c_adc0_multi_tile_sync" value="false" description="" />
+   <keyValuePair key="c_adc0_outclk_freq" value="32.000" description="" />
+   <keyValuePair key="c_adc0_outdiv" value="3" description="" />
+   <keyValuePair key="c_adc0_pll_enable" value="true" description="" />
+   <keyValuePair key="c_adc0_refclk_div" value="1" description="" />
+   <keyValuePair key="c_adc0_refclk_freq" value="409.600" description="" />
+   <keyValuePair key="c_adc0_sampling_rate" value="4.096" description="" />
+   <keyValuePair key="c_adc0_slices" value="2" description="" />
+   <keyValuePair key="c_adc0_vco" value="12288.0" description="" />
+   <keyValuePair key="c_adc10_dig_port" value="0" description="" />
+   <keyValuePair key="c_adc11_dig_port" value="0" description="" />
+   <keyValuePair key="c_adc12_dig_port" value="0" description="" />
+   <keyValuePair key="c_adc13_dig_port" value="0" description="" />
+   <keyValuePair key="c_adc1_band" value="0" description="" />
+   <keyValuePair key="c_adc1_decimation" value="0" description="" />
+   <keyValuePair key="c_adc1_enable" value="0" description="" />
+   <keyValuePair key="c_adc1_fabric_freq" value="0.0" description="" />
+   <keyValuePair key="c_adc1_fbdiv" value="10" description="" />
+   <keyValuePair key="c_adc1_fs_max" value="4.096" description="" />
+   <keyValuePair key="c_adc1_link_coupling" value="0" description="" />
+   <keyValuePair key="c_adc1_multi_tile_sync" value="false" description="" />
+   <keyValuePair key="c_adc1_outclk_freq" value="15.625" description="" />
+   <keyValuePair key="c_adc1_outdiv" value="2" description="" />
+   <keyValuePair key="c_adc1_pll_enable" value="false" description="" />
+   <keyValuePair key="c_adc1_refclk_div" value="1" description="" />
+   <keyValuePair key="c_adc1_refclk_freq" value="2000.000" description="" />
+   <keyValuePair key="c_adc1_sampling_rate" value="2.0" description="" />
+   <keyValuePair key="c_adc1_slices" value="2" description="" />
+   <keyValuePair key="c_adc1_vco" value="8500.0" description="" />
+   <keyValuePair key="c_adc20_dig_port" value="0" description="" />
+   <keyValuePair key="c_adc21_dig_port" value="0" description="" />
+   <keyValuePair key="c_adc22_dig_port" value="0" description="" />
+   <keyValuePair key="c_adc23_dig_port" value="0" description="" />
+   <keyValuePair key="c_adc2_band" value="0" description="" />
+   <keyValuePair key="c_adc2_decimation" value="0" description="" />
+   <keyValuePair key="c_adc2_enable" value="0" description="" />
+   <keyValuePair key="c_adc2_fabric_freq" value="0.0" description="" />
+   <keyValuePair key="c_adc2_fbdiv" value="10" description="" />
+   <keyValuePair key="c_adc2_fs_max" value="4.096" description="" />
+   <keyValuePair key="c_adc2_link_coupling" value="0" description="" />
+   <keyValuePair key="c_adc2_multi_tile_sync" value="false" description="" />
+   <keyValuePair key="c_adc2_outclk_freq" value="15.625" description="" />
+   <keyValuePair key="c_adc2_outdiv" value="2" description="" />
+   <keyValuePair key="c_adc2_pll_enable" value="false" description="" />
+   <keyValuePair key="c_adc2_refclk_div" value="1" description="" />
+   <keyValuePair key="c_adc2_refclk_freq" value="2000.000" description="" />
+   <keyValuePair key="c_adc2_sampling_rate" value="2.0" description="" />
+   <keyValuePair key="c_adc2_slices" value="2" description="" />
+   <keyValuePair key="c_adc2_vco" value="8500.0" description="" />
+   <keyValuePair key="c_adc30_dig_port" value="0" description="" />
+   <keyValuePair key="c_adc31_dig_port" value="0" description="" />
+   <keyValuePair key="c_adc32_dig_port" value="0" description="" />
+   <keyValuePair key="c_adc33_dig_port" value="0" description="" />
+   <keyValuePair key="c_adc3_band" value="0" description="" />
+   <keyValuePair key="c_adc3_decimation" value="0" description="" />
+   <keyValuePair key="c_adc3_enable" value="0" description="" />
+   <keyValuePair key="c_adc3_fabric_freq" value="0.0" description="" />
+   <keyValuePair key="c_adc3_fbdiv" value="10" description="" />
+   <keyValuePair key="c_adc3_fs_max" value="4.096" description="" />
+   <keyValuePair key="c_adc3_link_coupling" value="0" description="" />
+   <keyValuePair key="c_adc3_multi_tile_sync" value="false" description="" />
+   <keyValuePair key="c_adc3_outclk_freq" value="15.625" description="" />
+   <keyValuePair key="c_adc3_outdiv" value="2" description="" />
+   <keyValuePair key="c_adc3_pll_enable" value="false" description="" />
+   <keyValuePair key="c_adc3_refclk_div" value="1" description="" />
+   <keyValuePair key="c_adc3_refclk_freq" value="2000.000" description="" />
+   <keyValuePair key="c_adc3_sampling_rate" value="2.0" description="" />
+   <keyValuePair key="c_adc3_slices" value="2" description="" />
+   <keyValuePair key="c_adc3_vco" value="8500.0" description="" />
+   <keyValuePair key="c_adc_calopt_mode00" value="1" description="" />
+   <keyValuePair key="c_adc_calopt_mode01" value="1" description="" />
+   <keyValuePair key="c_adc_calopt_mode02" value="1" description="" />
+   <keyValuePair key="c_adc_calopt_mode03" value="1" description="" />
+   <keyValuePair key="c_adc_calopt_mode10" value="1" description="" />
+   <keyValuePair key="c_adc_calopt_mode11" value="1" description="" />
+   <keyValuePair key="c_adc_calopt_mode12" value="1" description="" />
+   <keyValuePair key="c_adc_calopt_mode13" value="1" description="" />
+   <keyValuePair key="c_adc_calopt_mode20" value="1" description="" />
+   <keyValuePair key="c_adc_calopt_mode21" value="1" description="" />
+   <keyValuePair key="c_adc_calopt_mode22" value="1" description="" />
+   <keyValuePair key="c_adc_calopt_mode23" value="1" description="" />
+   <keyValuePair key="c_adc_calopt_mode30" value="1" description="" />
+   <keyValuePair key="c_adc_calopt_mode31" value="1" description="" />
+   <keyValuePair key="c_adc_calopt_mode32" value="1" description="" />
+   <keyValuePair key="c_adc_calopt_mode33" value="1" description="" />
+   <keyValuePair key="c_adc_coarse_mixer_freq00" value="0" description="" />
+   <keyValuePair key="c_adc_coarse_mixer_freq01" value="0" description="" />
+   <keyValuePair key="c_adc_coarse_mixer_freq02" value="0" description="" />
+   <keyValuePair key="c_adc_coarse_mixer_freq03" value="0" description="" />
+   <keyValuePair key="c_adc_coarse_mixer_freq10" value="0" description="" />
+   <keyValuePair key="c_adc_coarse_mixer_freq11" value="0" description="" />
+   <keyValuePair key="c_adc_coarse_mixer_freq12" value="0" description="" />
+   <keyValuePair key="c_adc_coarse_mixer_freq13" value="0" description="" />
+   <keyValuePair key="c_adc_coarse_mixer_freq20" value="0" description="" />
+   <keyValuePair key="c_adc_coarse_mixer_freq21" value="0" description="" />
+   <keyValuePair key="c_adc_coarse_mixer_freq22" value="0" description="" />
+   <keyValuePair key="c_adc_coarse_mixer_freq23" value="0" description="" />
+   <keyValuePair key="c_adc_coarse_mixer_freq30" value="0" description="" />
+   <keyValuePair key="c_adc_coarse_mixer_freq31" value="0" description="" />
+   <keyValuePair key="c_adc_coarse_mixer_freq32" value="0" description="" />
+   <keyValuePair key="c_adc_coarse_mixer_freq33" value="0" description="" />
+   <keyValuePair key="c_adc_data_type00" value="0" description="" />
+   <keyValuePair key="c_adc_data_type01" value="0" description="" />
+   <keyValuePair key="c_adc_data_type02" value="0" description="" />
+   <keyValuePair key="c_adc_data_type03" value="0" description="" />
+   <keyValuePair key="c_adc_data_type10" value="0" description="" />
+   <keyValuePair key="c_adc_data_type11" value="0" description="" />
+   <keyValuePair key="c_adc_data_type12" value="0" description="" />
+   <keyValuePair key="c_adc_data_type13" value="0" description="" />
+   <keyValuePair key="c_adc_data_type20" value="0" description="" />
+   <keyValuePair key="c_adc_data_type21" value="0" description="" />
+   <keyValuePair key="c_adc_data_type22" value="0" description="" />
+   <keyValuePair key="c_adc_data_type23" value="0" description="" />
+   <keyValuePair key="c_adc_data_type30" value="0" description="" />
+   <keyValuePair key="c_adc_data_type31" value="0" description="" />
+   <keyValuePair key="c_adc_data_type32" value="0" description="" />
+   <keyValuePair key="c_adc_data_type33" value="0" description="" />
+   <keyValuePair key="c_adc_data_width00" value="8" description="" />
+   <keyValuePair key="c_adc_data_width01" value="8" description="" />
+   <keyValuePair key="c_adc_data_width02" value="8" description="" />
+   <keyValuePair key="c_adc_data_width03" value="8" description="" />
+   <keyValuePair key="c_adc_data_width10" value="8" description="" />
+   <keyValuePair key="c_adc_data_width11" value="8" description="" />
+   <keyValuePair key="c_adc_data_width12" value="8" description="" />
+   <keyValuePair key="c_adc_data_width13" value="8" description="" />
+   <keyValuePair key="c_adc_data_width20" value="8" description="" />
+   <keyValuePair key="c_adc_data_width21" value="8" description="" />
+   <keyValuePair key="c_adc_data_width22" value="8" description="" />
+   <keyValuePair key="c_adc_data_width23" value="8" description="" />
+   <keyValuePair key="c_adc_data_width30" value="8" description="" />
+   <keyValuePair key="c_adc_data_width31" value="8" description="" />
+   <keyValuePair key="c_adc_data_width32" value="8" description="" />
+   <keyValuePair key="c_adc_data_width33" value="8" description="" />
+   <keyValuePair key="c_adc_debug" value="false" description="" />
+   <keyValuePair key="c_adc_decimation_mode00" value="1" description="" />
+   <keyValuePair key="c_adc_decimation_mode01" value="1" description="" />
+   <keyValuePair key="c_adc_decimation_mode02" value="0" description="" />
+   <keyValuePair key="c_adc_decimation_mode03" value="0" description="" />
+   <keyValuePair key="c_adc_decimation_mode10" value="0" description="" />
+   <keyValuePair key="c_adc_decimation_mode11" value="0" description="" />
+   <keyValuePair key="c_adc_decimation_mode12" value="0" description="" />
+   <keyValuePair key="c_adc_decimation_mode13" value="0" description="" />
+   <keyValuePair key="c_adc_decimation_mode20" value="0" description="" />
+   <keyValuePair key="c_adc_decimation_mode21" value="0" description="" />
+   <keyValuePair key="c_adc_decimation_mode22" value="0" description="" />
+   <keyValuePair key="c_adc_decimation_mode23" value="0" description="" />
+   <keyValuePair key="c_adc_decimation_mode30" value="0" description="" />
+   <keyValuePair key="c_adc_decimation_mode31" value="0" description="" />
+   <keyValuePair key="c_adc_decimation_mode32" value="0" description="" />
+   <keyValuePair key="c_adc_decimation_mode33" value="0" description="" />
+   <keyValuePair key="c_adc_dither00" value="true" description="" />
+   <keyValuePair key="c_adc_dither01" value="true" description="" />
+   <keyValuePair key="c_adc_dither02" value="true" description="" />
+   <keyValuePair key="c_adc_dither03" value="true" description="" />
+   <keyValuePair key="c_adc_dither10" value="true" description="" />
+   <keyValuePair key="c_adc_dither11" value="true" description="" />
+   <keyValuePair key="c_adc_dither12" value="true" description="" />
+   <keyValuePair key="c_adc_dither13" value="true" description="" />
+   <keyValuePair key="c_adc_dither20" value="true" description="" />
+   <keyValuePair key="c_adc_dither21" value="true" description="" />
+   <keyValuePair key="c_adc_dither22" value="true" description="" />
+   <keyValuePair key="c_adc_dither23" value="true" description="" />
+   <keyValuePair key="c_adc_dither30" value="true" description="" />
+   <keyValuePair key="c_adc_dither31" value="true" description="" />
+   <keyValuePair key="c_adc_dither32" value="true" description="" />
+   <keyValuePair key="c_adc_dither33" value="true" description="" />
+   <keyValuePair key="c_adc_fifo00_enable" value="false" description="" />
+   <keyValuePair key="c_adc_fifo01_enable" value="false" description="" />
+   <keyValuePair key="c_adc_fifo02_enable" value="false" description="" />
+   <keyValuePair key="c_adc_fifo03_enable" value="false" description="" />
+   <keyValuePair key="c_adc_fifo10_enable" value="false" description="" />
+   <keyValuePair key="c_adc_fifo11_enable" value="false" description="" />
+   <keyValuePair key="c_adc_fifo12_enable" value="false" description="" />
+   <keyValuePair key="c_adc_fifo13_enable" value="false" description="" />
+   <keyValuePair key="c_adc_fifo20_enable" value="false" description="" />
+   <keyValuePair key="c_adc_fifo21_enable" value="false" description="" />
+   <keyValuePair key="c_adc_fifo22_enable" value="false" description="" />
+   <keyValuePair key="c_adc_fifo23_enable" value="false" description="" />
+   <keyValuePair key="c_adc_fifo30_enable" value="false" description="" />
+   <keyValuePair key="c_adc_fifo31_enable" value="false" description="" />
+   <keyValuePair key="c_adc_fifo32_enable" value="false" description="" />
+   <keyValuePair key="c_adc_fifo33_enable" value="false" description="" />
+   <keyValuePair key="c_adc_mixer_mode00" value="2" description="" />
+   <keyValuePair key="c_adc_mixer_mode01" value="2" description="" />
+   <keyValuePair key="c_adc_mixer_mode02" value="2" description="" />
+   <keyValuePair key="c_adc_mixer_mode03" value="2" description="" />
+   <keyValuePair key="c_adc_mixer_mode10" value="2" description="" />
+   <keyValuePair key="c_adc_mixer_mode11" value="2" description="" />
+   <keyValuePair key="c_adc_mixer_mode12" value="2" description="" />
+   <keyValuePair key="c_adc_mixer_mode13" value="2" description="" />
+   <keyValuePair key="c_adc_mixer_mode20" value="2" description="" />
+   <keyValuePair key="c_adc_mixer_mode21" value="2" description="" />
+   <keyValuePair key="c_adc_mixer_mode22" value="2" description="" />
+   <keyValuePair key="c_adc_mixer_mode23" value="2" description="" />
+   <keyValuePair key="c_adc_mixer_mode30" value="2" description="" />
+   <keyValuePair key="c_adc_mixer_mode31" value="2" description="" />
+   <keyValuePair key="c_adc_mixer_mode32" value="2" description="" />
+   <keyValuePair key="c_adc_mixer_mode33" value="2" description="" />
+   <keyValuePair key="c_adc_mixer_type00" value="0" description="" />
+   <keyValuePair key="c_adc_mixer_type01" value="0" description="" />
+   <keyValuePair key="c_adc_mixer_type02" value="3" description="" />
+   <keyValuePair key="c_adc_mixer_type03" value="3" description="" />
+   <keyValuePair key="c_adc_mixer_type10" value="3" description="" />
+   <keyValuePair key="c_adc_mixer_type11" value="3" description="" />
+   <keyValuePair key="c_adc_mixer_type12" value="3" description="" />
+   <keyValuePair key="c_adc_mixer_type13" value="3" description="" />
+   <keyValuePair key="c_adc_mixer_type20" value="3" description="" />
+   <keyValuePair key="c_adc_mixer_type21" value="3" description="" />
+   <keyValuePair key="c_adc_mixer_type22" value="3" description="" />
+   <keyValuePair key="c_adc_mixer_type23" value="3" description="" />
+   <keyValuePair key="c_adc_mixer_type30" value="3" description="" />
+   <keyValuePair key="c_adc_mixer_type31" value="3" description="" />
+   <keyValuePair key="c_adc_mixer_type32" value="3" description="" />
+   <keyValuePair key="c_adc_mixer_type33" value="3" description="" />
+   <keyValuePair key="c_adc_nco_freq00" value="0.0" description="" />
+   <keyValuePair key="c_adc_nco_freq01" value="0.0" description="" />
+   <keyValuePair key="c_adc_nco_freq02" value="0.0" description="" />
+   <keyValuePair key="c_adc_nco_freq03" value="0.0" description="" />
+   <keyValuePair key="c_adc_nco_freq10" value="0.0" description="" />
+   <keyValuePair key="c_adc_nco_freq11" value="0.0" description="" />
+   <keyValuePair key="c_adc_nco_freq12" value="0.0" description="" />
+   <keyValuePair key="c_adc_nco_freq13" value="0.0" description="" />
+   <keyValuePair key="c_adc_nco_freq20" value="0.0" description="" />
+   <keyValuePair key="c_adc_nco_freq21" value="0.0" description="" />
+   <keyValuePair key="c_adc_nco_freq22" value="0.0" description="" />
+   <keyValuePair key="c_adc_nco_freq23" value="0.0" description="" />
+   <keyValuePair key="c_adc_nco_freq30" value="0.0" description="" />
+   <keyValuePair key="c_adc_nco_freq31" value="0.0" description="" />
+   <keyValuePair key="c_adc_nco_freq32" value="0.0" description="" />
+   <keyValuePair key="c_adc_nco_freq33" value="0.0" description="" />
+   <keyValuePair key="c_adc_nco_phase00" value="0" description="" />
+   <keyValuePair key="c_adc_nco_phase01" value="0" description="" />
+   <keyValuePair key="c_adc_nco_phase02" value="0" description="" />
+   <keyValuePair key="c_adc_nco_phase03" value="0" description="" />
+   <keyValuePair key="c_adc_nco_phase10" value="0" description="" />
+   <keyValuePair key="c_adc_nco_phase11" value="0" description="" />
+   <keyValuePair key="c_adc_nco_phase12" value="0" description="" />
+   <keyValuePair key="c_adc_nco_phase13" value="0" description="" />
+   <keyValuePair key="c_adc_nco_phase20" value="0" description="" />
+   <keyValuePair key="c_adc_nco_phase21" value="0" description="" />
+   <keyValuePair key="c_adc_nco_phase22" value="0" description="" />
+   <keyValuePair key="c_adc_nco_phase23" value="0" description="" />
+   <keyValuePair key="c_adc_nco_phase30" value="0" description="" />
+   <keyValuePair key="c_adc_nco_phase31" value="0" description="" />
+   <keyValuePair key="c_adc_nco_phase32" value="0" description="" />
+   <keyValuePair key="c_adc_nco_phase33" value="0" description="" />
+   <keyValuePair key="c_adc_nco_rts" value="false" description="" />
+   <keyValuePair key="c_adc_neg_quadrature00" value="false" description="" />
+   <keyValuePair key="c_adc_neg_quadrature01" value="false" description="" />
+   <keyValuePair key="c_adc_neg_quadrature02" value="false" description="" />
+   <keyValuePair key="c_adc_neg_quadrature03" value="false" description="" />
+   <keyValuePair key="c_adc_neg_quadrature10" value="false" description="" />
+   <keyValuePair key="c_adc_neg_quadrature11" value="false" description="" />
+   <keyValuePair key="c_adc_neg_quadrature12" value="false" description="" />
+   <keyValuePair key="c_adc_neg_quadrature13" value="false" description="" />
+   <keyValuePair key="c_adc_neg_quadrature20" value="false" description="" />
+   <keyValuePair key="c_adc_neg_quadrature21" value="false" description="" />
+   <keyValuePair key="c_adc_neg_quadrature22" value="false" description="" />
+   <keyValuePair key="c_adc_neg_quadrature23" value="false" description="" />
+   <keyValuePair key="c_adc_neg_quadrature30" value="false" description="" />
+   <keyValuePair key="c_adc_neg_quadrature31" value="false" description="" />
+   <keyValuePair key="c_adc_neg_quadrature32" value="false" description="" />
+   <keyValuePair key="c_adc_neg_quadrature33" value="false" description="" />
+   <keyValuePair key="c_adc_nyquist00" value="0" description="" />
+   <keyValuePair key="c_adc_nyquist01" value="0" description="" />
+   <keyValuePair key="c_adc_nyquist02" value="0" description="" />
+   <keyValuePair key="c_adc_nyquist03" value="0" description="" />
+   <keyValuePair key="c_adc_nyquist10" value="0" description="" />
+   <keyValuePair key="c_adc_nyquist11" value="0" description="" />
+   <keyValuePair key="c_adc_nyquist12" value="0" description="" />
+   <keyValuePair key="c_adc_nyquist13" value="0" description="" />
+   <keyValuePair key="c_adc_nyquist20" value="0" description="" />
+   <keyValuePair key="c_adc_nyquist21" value="0" description="" />
+   <keyValuePair key="c_adc_nyquist22" value="0" description="" />
+   <keyValuePair key="c_adc_nyquist23" value="0" description="" />
+   <keyValuePair key="c_adc_nyquist30" value="0" description="" />
+   <keyValuePair key="c_adc_nyquist31" value="0" description="" />
+   <keyValuePair key="c_adc_nyquist32" value="0" description="" />
+   <keyValuePair key="c_adc_nyquist33" value="0" description="" />
+   <keyValuePair key="c_adc_rts" value="false" description="" />
+   <keyValuePair key="c_adc_slice00_enable" value="true" description="" />
+   <keyValuePair key="c_adc_slice01_enable" value="true" description="" />
+   <keyValuePair key="c_adc_slice02_enable" value="false" description="" />
+   <keyValuePair key="c_adc_slice03_enable" value="false" description="" />
+   <keyValuePair key="c_adc_slice10_enable" value="false" description="" />
+   <keyValuePair key="c_adc_slice11_enable" value="false" description="" />
+   <keyValuePair key="c_adc_slice12_enable" value="false" description="" />
+   <keyValuePair key="c_adc_slice13_enable" value="false" description="" />
+   <keyValuePair key="c_adc_slice20_enable" value="false" description="" />
+   <keyValuePair key="c_adc_slice21_enable" value="false" description="" />
+   <keyValuePair key="c_adc_slice22_enable" value="false" description="" />
+   <keyValuePair key="c_adc_slice23_enable" value="false" description="" />
+   <keyValuePair key="c_adc_slice30_enable" value="false" description="" />
+   <keyValuePair key="c_adc_slice31_enable" value="false" description="" />
+   <keyValuePair key="c_adc_slice32_enable" value="false" description="" />
+   <keyValuePair key="c_adc_slice33_enable" value="false" description="" />
+   <keyValuePair key="c_ams_factory_var" value="0" description="" />
+   <keyValuePair key="c_analog_detection" value="1" description="" />
+   <keyValuePair key="c_auto_calibration_freeze" value="false" description="" />
+   <keyValuePair key="c_axiclk_freq" value="100.0" description="" />
+   <keyValuePair key="c_calibration_freeze" value="false" description="" />
+   <keyValuePair key="c_calibration_time" value="10" description="" />
+   <keyValuePair key="c_clock_forwarding" value="false" description="" />
+   <keyValuePair key="c_component_name" value="ADC1_R2R_4096_usp_rf_data_converter_0_0" description="" />
+   <keyValuePair key="c_converter_setup" value="1" description="" />
+   <keyValuePair key="c_dac0_band" value="0" description="" />
+   <keyValuePair key="c_dac0_enable" value="0" description="" />
+   <keyValuePair key="c_dac0_fabric_freq" value="0.0" description="" />
+   <keyValuePair key="c_dac0_fbdiv" value="10" description="" />
+   <keyValuePair key="c_dac0_fs_max" value="6.554" description="" />
+   <keyValuePair key="c_dac0_interpolation" value="0" description="" />
+   <keyValuePair key="c_dac0_multi_tile_sync" value="false" description="" />
+   <keyValuePair key="c_dac0_outclk_freq" value="50.000" description="" />
+   <keyValuePair key="c_dac0_outdiv" value="2" description="" />
+   <keyValuePair key="c_dac0_pll_enable" value="false" description="" />
+   <keyValuePair key="c_dac0_refclk_div" value="1" description="" />
+   <keyValuePair key="c_dac0_refclk_freq" value="6400.000" description="" />
+   <keyValuePair key="c_dac0_sampling_rate" value="6.4" description="" />
+   <keyValuePair key="c_dac0_slices" value="4" description="" />
+   <keyValuePair key="c_dac0_vco" value="8500.0" description="" />
+   <keyValuePair key="c_dac1_band" value="0" description="" />
+   <keyValuePair key="c_dac1_enable" value="0" description="" />
+   <keyValuePair key="c_dac1_fabric_freq" value="0.0" description="" />
+   <keyValuePair key="c_dac1_fbdiv" value="10" description="" />
+   <keyValuePair key="c_dac1_fs_max" value="6.554" description="" />
+   <keyValuePair key="c_dac1_interpolation" value="0" description="" />
+   <keyValuePair key="c_dac1_multi_tile_sync" value="false" description="" />
+   <keyValuePair key="c_dac1_outclk_freq" value="50.000" description="" />
+   <keyValuePair key="c_dac1_outdiv" value="2" description="" />
+   <keyValuePair key="c_dac1_pll_enable" value="false" description="" />
+   <keyValuePair key="c_dac1_refclk_div" value="1" description="" />
+   <keyValuePair key="c_dac1_refclk_freq" value="6400.000" description="" />
+   <keyValuePair key="c_dac1_sampling_rate" value="6.4" description="" />
+   <keyValuePair key="c_dac1_slices" value="4" description="" />
+   <keyValuePair key="c_dac1_vco" value="8500.0" description="" />
+   <keyValuePair key="c_dac2_band" value="0" description="" />
+   <keyValuePair key="c_dac2_enable" value="0" description="" />
+   <keyValuePair key="c_dac2_fabric_freq" value="0.0" description="" />
+   <keyValuePair key="c_dac2_fbdiv" value="10" description="" />
+   <keyValuePair key="c_dac2_fs_max" value="6.554" description="" />
+   <keyValuePair key="c_dac2_interpolation" value="0" description="" />
+   <keyValuePair key="c_dac2_multi_tile_sync" value="false" description="" />
+   <keyValuePair key="c_dac2_outclk_freq" value="50.000" description="" />
+   <keyValuePair key="c_dac2_outdiv" value="2" description="" />
+   <keyValuePair key="c_dac2_pll_enable" value="false" description="" />
+   <keyValuePair key="c_dac2_refclk_div" value="1" description="" />
+   <keyValuePair key="c_dac2_refclk_freq" value="6400.000" description="" />
+   <keyValuePair key="c_dac2_sampling_rate" value="6.4" description="" />
+   <keyValuePair key="c_dac2_slices" value="0" description="" />
+   <keyValuePair key="c_dac2_vco" value="8500.0" description="" />
+   <keyValuePair key="c_dac3_band" value="0" description="" />
+   <keyValuePair key="c_dac3_enable" value="0" description="" />
+   <keyValuePair key="c_dac3_fabric_freq" value="0.0" description="" />
+   <keyValuePair key="c_dac3_fbdiv" value="10" description="" />
+   <keyValuePair key="c_dac3_fs_max" value="6.554" description="" />
+   <keyValuePair key="c_dac3_interpolation" value="0" description="" />
+   <keyValuePair key="c_dac3_multi_tile_sync" value="false" description="" />
+   <keyValuePair key="c_dac3_outclk_freq" value="50.000" description="" />
+   <keyValuePair key="c_dac3_outdiv" value="2" description="" />
+   <keyValuePair key="c_dac3_pll_enable" value="false" description="" />
+   <keyValuePair key="c_dac3_refclk_div" value="1" description="" />
+   <keyValuePair key="c_dac3_refclk_freq" value="6400.000" description="" />
+   <keyValuePair key="c_dac3_sampling_rate" value="6.4" description="" />
+   <keyValuePair key="c_dac3_slices" value="0" description="" />
+   <keyValuePair key="c_dac3_vco" value="8500.0" description="" />
+   <keyValuePair key="c_dac_adder00_enable" value="false" description="" />
+   <keyValuePair key="c_dac_adder01_enable" value="false" description="" />
+   <keyValuePair key="c_dac_adder02_enable" value="false" description="" />
+   <keyValuePair key="c_dac_adder03_enable" value="false" description="" />
+   <keyValuePair key="c_dac_adder10_enable" value="false" description="" />
+   <keyValuePair key="c_dac_adder11_enable" value="false" description="" />
+   <keyValuePair key="c_dac_adder12_enable" value="false" description="" />
+   <keyValuePair key="c_dac_adder13_enable" value="false" description="" />
+   <keyValuePair key="c_dac_adder20_enable" value="false" description="" />
+   <keyValuePair key="c_dac_adder21_enable" value="false" description="" />
+   <keyValuePair key="c_dac_adder22_enable" value="false" description="" />
+   <keyValuePair key="c_dac_adder23_enable" value="false" description="" />
+   <keyValuePair key="c_dac_adder30_enable" value="false" description="" />
+   <keyValuePair key="c_dac_adder31_enable" value="false" description="" />
+   <keyValuePair key="c_dac_adder32_enable" value="false" description="" />
+   <keyValuePair key="c_dac_adder33_enable" value="false" description="" />
+   <keyValuePair key="c_dac_coarse_mixer_freq00" value="0" description="" />
+   <keyValuePair key="c_dac_coarse_mixer_freq01" value="0" description="" />
+   <keyValuePair key="c_dac_coarse_mixer_freq02" value="0" description="" />
+   <keyValuePair key="c_dac_coarse_mixer_freq03" value="0" description="" />
+   <keyValuePair key="c_dac_coarse_mixer_freq10" value="0" description="" />
+   <keyValuePair key="c_dac_coarse_mixer_freq11" value="0" description="" />
+   <keyValuePair key="c_dac_coarse_mixer_freq12" value="0" description="" />
+   <keyValuePair key="c_dac_coarse_mixer_freq13" value="0" description="" />
+   <keyValuePair key="c_dac_coarse_mixer_freq20" value="0" description="" />
+   <keyValuePair key="c_dac_coarse_mixer_freq21" value="0" description="" />
+   <keyValuePair key="c_dac_coarse_mixer_freq22" value="0" description="" />
+   <keyValuePair key="c_dac_coarse_mixer_freq23" value="0" description="" />
+   <keyValuePair key="c_dac_coarse_mixer_freq30" value="0" description="" />
+   <keyValuePair key="c_dac_coarse_mixer_freq31" value="0" description="" />
+   <keyValuePair key="c_dac_coarse_mixer_freq32" value="0" description="" />
+   <keyValuePair key="c_dac_coarse_mixer_freq33" value="0" description="" />
+   <keyValuePair key="c_dac_data_type00" value="0" description="" />
+   <keyValuePair key="c_dac_data_type01" value="0" description="" />
+   <keyValuePair key="c_dac_data_type02" value="0" description="" />
+   <keyValuePair key="c_dac_data_type03" value="0" description="" />
+   <keyValuePair key="c_dac_data_type10" value="0" description="" />
+   <keyValuePair key="c_dac_data_type11" value="0" description="" />
+   <keyValuePair key="c_dac_data_type12" value="0" description="" />
+   <keyValuePair key="c_dac_data_type13" value="0" description="" />
+   <keyValuePair key="c_dac_data_type20" value="0" description="" />
+   <keyValuePair key="c_dac_data_type21" value="0" description="" />
+   <keyValuePair key="c_dac_data_type22" value="0" description="" />
+   <keyValuePair key="c_dac_data_type23" value="0" description="" />
+   <keyValuePair key="c_dac_data_type30" value="0" description="" />
+   <keyValuePair key="c_dac_data_type31" value="0" description="" />
+   <keyValuePair key="c_dac_data_type32" value="0" description="" />
+   <keyValuePair key="c_dac_data_type33" value="0" description="" />
+   <keyValuePair key="c_dac_data_width00" value="16" description="" />
+   <keyValuePair key="c_dac_data_width01" value="16" description="" />
+   <keyValuePair key="c_dac_data_width02" value="16" description="" />
+   <keyValuePair key="c_dac_data_width03" value="16" description="" />
+   <keyValuePair key="c_dac_data_width10" value="16" description="" />
+   <keyValuePair key="c_dac_data_width11" value="16" description="" />
+   <keyValuePair key="c_dac_data_width12" value="16" description="" />
+   <keyValuePair key="c_dac_data_width13" value="16" description="" />
+   <keyValuePair key="c_dac_data_width20" value="16" description="" />
+   <keyValuePair key="c_dac_data_width21" value="16" description="" />
+   <keyValuePair key="c_dac_data_width22" value="16" description="" />
+   <keyValuePair key="c_dac_data_width23" value="16" description="" />
+   <keyValuePair key="c_dac_data_width30" value="16" description="" />
+   <keyValuePair key="c_dac_data_width31" value="16" description="" />
+   <keyValuePair key="c_dac_data_width32" value="16" description="" />
+   <keyValuePair key="c_dac_data_width33" value="16" description="" />
+   <keyValuePair key="c_dac_debug" value="false" description="" />
+   <keyValuePair key="c_dac_decoder_mode00" value="0" description="" />
+   <keyValuePair key="c_dac_decoder_mode01" value="0" description="" />
+   <keyValuePair key="c_dac_decoder_mode02" value="0" description="" />
+   <keyValuePair key="c_dac_decoder_mode03" value="0" description="" />
+   <keyValuePair key="c_dac_decoder_mode10" value="0" description="" />
+   <keyValuePair key="c_dac_decoder_mode11" value="0" description="" />
+   <keyValuePair key="c_dac_decoder_mode12" value="0" description="" />
+   <keyValuePair key="c_dac_decoder_mode13" value="0" description="" />
+   <keyValuePair key="c_dac_decoder_mode20" value="0" description="" />
+   <keyValuePair key="c_dac_decoder_mode21" value="0" description="" />
+   <keyValuePair key="c_dac_decoder_mode22" value="0" description="" />
+   <keyValuePair key="c_dac_decoder_mode23" value="0" description="" />
+   <keyValuePair key="c_dac_decoder_mode30" value="0" description="" />
+   <keyValuePair key="c_dac_decoder_mode31" value="0" description="" />
+   <keyValuePair key="c_dac_decoder_mode32" value="0" description="" />
+   <keyValuePair key="c_dac_decoder_mode33" value="0" description="" />
+   <keyValuePair key="c_dac_fifo00_enable" value="false" description="" />
+   <keyValuePair key="c_dac_fifo01_enable" value="false" description="" />
+   <keyValuePair key="c_dac_fifo02_enable" value="false" description="" />
+   <keyValuePair key="c_dac_fifo03_enable" value="false" description="" />
+   <keyValuePair key="c_dac_fifo10_enable" value="false" description="" />
+   <keyValuePair key="c_dac_fifo11_enable" value="false" description="" />
+   <keyValuePair key="c_dac_fifo12_enable" value="false" description="" />
+   <keyValuePair key="c_dac_fifo13_enable" value="false" description="" />
+   <keyValuePair key="c_dac_fifo20_enable" value="false" description="" />
+   <keyValuePair key="c_dac_fifo21_enable" value="false" description="" />
+   <keyValuePair key="c_dac_fifo22_enable" value="false" description="" />
+   <keyValuePair key="c_dac_fifo23_enable" value="false" description="" />
+   <keyValuePair key="c_dac_fifo30_enable" value="false" description="" />
+   <keyValuePair key="c_dac_fifo31_enable" value="false" description="" />
+   <keyValuePair key="c_dac_fifo32_enable" value="false" description="" />
+   <keyValuePair key="c_dac_fifo33_enable" value="false" description="" />
+   <keyValuePair key="c_dac_interpolation_mode00" value="0" description="" />
+   <keyValuePair key="c_dac_interpolation_mode01" value="0" description="" />
+   <keyValuePair key="c_dac_interpolation_mode02" value="0" description="" />
+   <keyValuePair key="c_dac_interpolation_mode03" value="0" description="" />
+   <keyValuePair key="c_dac_interpolation_mode10" value="0" description="" />
+   <keyValuePair key="c_dac_interpolation_mode11" value="0" description="" />
+   <keyValuePair key="c_dac_interpolation_mode12" value="0" description="" />
+   <keyValuePair key="c_dac_interpolation_mode13" value="0" description="" />
+   <keyValuePair key="c_dac_interpolation_mode20" value="0" description="" />
+   <keyValuePair key="c_dac_interpolation_mode21" value="0" description="" />
+   <keyValuePair key="c_dac_interpolation_mode22" value="0" description="" />
+   <keyValuePair key="c_dac_interpolation_mode23" value="0" description="" />
+   <keyValuePair key="c_dac_interpolation_mode30" value="0" description="" />
+   <keyValuePair key="c_dac_interpolation_mode31" value="0" description="" />
+   <keyValuePair key="c_dac_interpolation_mode32" value="0" description="" />
+   <keyValuePair key="c_dac_interpolation_mode33" value="0" description="" />
+   <keyValuePair key="c_dac_invsinc_ctrl00" value="false" description="" />
+   <keyValuePair key="c_dac_invsinc_ctrl01" value="false" description="" />
+   <keyValuePair key="c_dac_invsinc_ctrl02" value="false" description="" />
+   <keyValuePair key="c_dac_invsinc_ctrl03" value="false" description="" />
+   <keyValuePair key="c_dac_invsinc_ctrl10" value="false" description="" />
+   <keyValuePair key="c_dac_invsinc_ctrl11" value="false" description="" />
+   <keyValuePair key="c_dac_invsinc_ctrl12" value="false" description="" />
+   <keyValuePair key="c_dac_invsinc_ctrl13" value="false" description="" />
+   <keyValuePair key="c_dac_invsinc_ctrl20" value="false" description="" />
+   <keyValuePair key="c_dac_invsinc_ctrl21" value="false" description="" />
+   <keyValuePair key="c_dac_invsinc_ctrl22" value="false" description="" />
+   <keyValuePair key="c_dac_invsinc_ctrl23" value="false" description="" />
+   <keyValuePair key="c_dac_invsinc_ctrl30" value="false" description="" />
+   <keyValuePair key="c_dac_invsinc_ctrl31" value="false" description="" />
+   <keyValuePair key="c_dac_invsinc_ctrl32" value="false" description="" />
+   <keyValuePair key="c_dac_invsinc_ctrl33" value="false" description="" />
+   <keyValuePair key="c_dac_mixer_mode00" value="2" description="" />
+   <keyValuePair key="c_dac_mixer_mode01" value="2" description="" />
+   <keyValuePair key="c_dac_mixer_mode02" value="2" description="" />
+   <keyValuePair key="c_dac_mixer_mode03" value="2" description="" />
+   <keyValuePair key="c_dac_mixer_mode10" value="2" description="" />
+   <keyValuePair key="c_dac_mixer_mode11" value="2" description="" />
+   <keyValuePair key="c_dac_mixer_mode12" value="2" description="" />
+   <keyValuePair key="c_dac_mixer_mode13" value="2" description="" />
+   <keyValuePair key="c_dac_mixer_mode20" value="2" description="" />
+   <keyValuePair key="c_dac_mixer_mode21" value="2" description="" />
+   <keyValuePair key="c_dac_mixer_mode22" value="2" description="" />
+   <keyValuePair key="c_dac_mixer_mode23" value="2" description="" />
+   <keyValuePair key="c_dac_mixer_mode30" value="2" description="" />
+   <keyValuePair key="c_dac_mixer_mode31" value="2" description="" />
+   <keyValuePair key="c_dac_mixer_mode32" value="2" description="" />
+   <keyValuePair key="c_dac_mixer_mode33" value="2" description="" />
+   <keyValuePair key="c_dac_mixer_type00" value="3" description="" />
+   <keyValuePair key="c_dac_mixer_type01" value="3" description="" />
+   <keyValuePair key="c_dac_mixer_type02" value="3" description="" />
+   <keyValuePair key="c_dac_mixer_type03" value="3" description="" />
+   <keyValuePair key="c_dac_mixer_type10" value="3" description="" />
+   <keyValuePair key="c_dac_mixer_type11" value="3" description="" />
+   <keyValuePair key="c_dac_mixer_type12" value="3" description="" />
+   <keyValuePair key="c_dac_mixer_type13" value="3" description="" />
+   <keyValuePair key="c_dac_mixer_type20" value="3" description="" />
+   <keyValuePair key="c_dac_mixer_type21" value="3" description="" />
+   <keyValuePair key="c_dac_mixer_type22" value="3" description="" />
+   <keyValuePair key="c_dac_mixer_type23" value="3" description="" />
+   <keyValuePair key="c_dac_mixer_type30" value="3" description="" />
+   <keyValuePair key="c_dac_mixer_type31" value="3" description="" />
+   <keyValuePair key="c_dac_mixer_type32" value="3" description="" />
+   <keyValuePair key="c_dac_mixer_type33" value="3" description="" />
+   <keyValuePair key="c_dac_nco_freq00" value="0.0" description="" />
+   <keyValuePair key="c_dac_nco_freq01" value="0.0" description="" />
+   <keyValuePair key="c_dac_nco_freq02" value="0.0" description="" />
+   <keyValuePair key="c_dac_nco_freq03" value="0.0" description="" />
+   <keyValuePair key="c_dac_nco_freq10" value="0.0" description="" />
+   <keyValuePair key="c_dac_nco_freq11" value="0.0" description="" />
+   <keyValuePair key="c_dac_nco_freq12" value="0.0" description="" />
+   <keyValuePair key="c_dac_nco_freq13" value="0.0" description="" />
+   <keyValuePair key="c_dac_nco_freq20" value="0.0" description="" />
+   <keyValuePair key="c_dac_nco_freq21" value="0.0" description="" />
+   <keyValuePair key="c_dac_nco_freq22" value="0.0" description="" />
+   <keyValuePair key="c_dac_nco_freq23" value="0.0" description="" />
+   <keyValuePair key="c_dac_nco_freq30" value="0.0" description="" />
+   <keyValuePair key="c_dac_nco_freq31" value="0.0" description="" />
+   <keyValuePair key="c_dac_nco_freq32" value="0.0" description="" />
+   <keyValuePair key="c_dac_nco_freq33" value="0.0" description="" />
+   <keyValuePair key="c_dac_nco_phase00" value="0" description="" />
+   <keyValuePair key="c_dac_nco_phase01" value="0" description="" />
+   <keyValuePair key="c_dac_nco_phase02" value="0" description="" />
+   <keyValuePair key="c_dac_nco_phase03" value="0" description="" />
+   <keyValuePair key="c_dac_nco_phase10" value="0" description="" />
+   <keyValuePair key="c_dac_nco_phase11" value="0" description="" />
+   <keyValuePair key="c_dac_nco_phase12" value="0" description="" />
+   <keyValuePair key="c_dac_nco_phase13" value="0" description="" />
+   <keyValuePair key="c_dac_nco_phase20" value="0" description="" />
+   <keyValuePair key="c_dac_nco_phase21" value="0" description="" />
+   <keyValuePair key="c_dac_nco_phase22" value="0" description="" />
+   <keyValuePair key="c_dac_nco_phase23" value="0" description="" />
+   <keyValuePair key="c_dac_nco_phase30" value="0" description="" />
+   <keyValuePair key="c_dac_nco_phase31" value="0" description="" />
+   <keyValuePair key="c_dac_nco_phase32" value="0" description="" />
+   <keyValuePair key="c_dac_nco_phase33" value="0" description="" />
+   <keyValuePair key="c_dac_nco_rts" value="false" description="" />
+   <keyValuePair key="c_dac_neg_quadrature00" value="false" description="" />
+   <keyValuePair key="c_dac_neg_quadrature01" value="false" description="" />
+   <keyValuePair key="c_dac_neg_quadrature02" value="false" description="" />
+   <keyValuePair key="c_dac_neg_quadrature03" value="false" description="" />
+   <keyValuePair key="c_dac_neg_quadrature10" value="false" description="" />
+   <keyValuePair key="c_dac_neg_quadrature11" value="false" description="" />
+   <keyValuePair key="c_dac_neg_quadrature12" value="false" description="" />
+   <keyValuePair key="c_dac_neg_quadrature13" value="false" description="" />
+   <keyValuePair key="c_dac_neg_quadrature20" value="false" description="" />
+   <keyValuePair key="c_dac_neg_quadrature21" value="false" description="" />
+   <keyValuePair key="c_dac_neg_quadrature22" value="false" description="" />
+   <keyValuePair key="c_dac_neg_quadrature23" value="false" description="" />
+   <keyValuePair key="c_dac_neg_quadrature30" value="false" description="" />
+   <keyValuePair key="c_dac_neg_quadrature31" value="false" description="" />
+   <keyValuePair key="c_dac_neg_quadrature32" value="false" description="" />
+   <keyValuePair key="c_dac_neg_quadrature33" value="false" description="" />
+   <keyValuePair key="c_dac_nyquist00" value="0" description="" />
+   <keyValuePair key="c_dac_nyquist01" value="0" description="" />
+   <keyValuePair key="c_dac_nyquist02" value="0" description="" />
+   <keyValuePair key="c_dac_nyquist03" value="0" description="" />
+   <keyValuePair key="c_dac_nyquist10" value="0" description="" />
+   <keyValuePair key="c_dac_nyquist11" value="0" description="" />
+   <keyValuePair key="c_dac_nyquist12" value="0" description="" />
+   <keyValuePair key="c_dac_nyquist13" value="0" description="" />
+   <keyValuePair key="c_dac_nyquist20" value="0" description="" />
+   <keyValuePair key="c_dac_nyquist21" value="0" description="" />
+   <keyValuePair key="c_dac_nyquist22" value="0" description="" />
+   <keyValuePair key="c_dac_nyquist23" value="0" description="" />
+   <keyValuePair key="c_dac_nyquist30" value="0" description="" />
+   <keyValuePair key="c_dac_nyquist31" value="0" description="" />
+   <keyValuePair key="c_dac_nyquist32" value="0" description="" />
+   <keyValuePair key="c_dac_nyquist33" value="0" description="" />
+   <keyValuePair key="c_dac_output_current" value="0" description="" />
+   <keyValuePair key="c_dac_rts" value="false" description="" />
+   <keyValuePair key="c_dac_slice00_enable" value="false" description="" />
+   <keyValuePair key="c_dac_slice01_enable" value="false" description="" />
+   <keyValuePair key="c_dac_slice02_enable" value="false" description="" />
+   <keyValuePair key="c_dac_slice03_enable" value="false" description="" />
+   <keyValuePair key="c_dac_slice10_enable" value="false" description="" />
+   <keyValuePair key="c_dac_slice11_enable" value="false" description="" />
+   <keyValuePair key="c_dac_slice12_enable" value="false" description="" />
+   <keyValuePair key="c_dac_slice13_enable" value="false" description="" />
+   <keyValuePair key="c_dac_slice20_enable" value="false" description="" />
+   <keyValuePair key="c_dac_slice21_enable" value="false" description="" />
+   <keyValuePair key="c_dac_slice22_enable" value="false" description="" />
+   <keyValuePair key="c_dac_slice23_enable" value="false" description="" />
+   <keyValuePair key="c_dac_slice30_enable" value="false" description="" />
+   <keyValuePair key="c_dac_slice31_enable" value="false" description="" />
+   <keyValuePair key="c_dac_slice32_enable" value="false" description="" />
+   <keyValuePair key="c_dac_slice33_enable" value="false" description="" />
+   <keyValuePair key="c_high_speed_adc" value="1" description="" />
+   <keyValuePair key="c_ip_type" value="0" description="" />
+   <keyValuePair key="c_rf_analyzer" value="0" description="" />
+   <keyValuePair key="c_silicon_revision" value="1" description="" />
+   <keyValuePair key="c_sysref_master" value="228" description="" />
+   <keyValuePair key="c_sysref_source" value="1" description="" />
+   <keyValuePair key="c_vnc_testing" value="false" description="" />
+   <keyValuePair key="core_container" value="false" description="" />
+   <keyValuePair key="disable_bg_cal_en" value="0" description="" />
+   <keyValuePair key="iptotal" value="1" description="" />
+   <keyValuePair key="production_simulation" value="0" description="" />
+   <keyValuePair key="tb_adc_fft" value="true" description="" />
+   <keyValuePair key="tb_dac_fft" value="true" description="" />
+   <keyValuePair key="use_bram" value="1" description="" />
+   <keyValuePair key="x_ipcorerevision" value="1" description="" />
+   <keyValuePair key="x_iplanguage" value="VHDL" description="" />
+   <keyValuePair key="x_iplibrary" value="ip" description="" />
+   <keyValuePair key="x_ipname" value="usp_rf_data_converter" description="" />
+   <keyValuePair key="x_ipproduct" value="Vivado 2018.3.1_AR71948" description="" />
+   <keyValuePair key="x_ipsimlanguage" value="MIXED" description="" />
+   <keyValuePair key="x_ipvendor" value="xilinx.com" description="" />
+   <keyValuePair key="x_ipversion" value="2.1" description="" />
+  </section>
+  <section name="xpm_cdc_async_rst/1" level="2" order="12" description="">
    <keyValuePair key="core_container" value="NA" description="" />
    <keyValuePair key="def_val" value="1&apos;b0" description="" />
    <keyValuePair key="dest_sync_ff" value="2" description="" />
@@ -338,7 +982,16 @@
    <keyValuePair key="rst_active_high" value="1" description="" />
    <keyValuePair key="version" value="0" description="" />
   </section>
-  <section name="zynq_ultra_ps_e_v3_2_2_zynq_ultra_ps_e/1" level="2" order="12" description="">
+  <section name="xpm_cdc_single/1" level="2" order="13" description="">
+   <keyValuePair key="core_container" value="NA" description="" />
+   <keyValuePair key="dest_sync_ff" value="4" description="" />
+   <keyValuePair key="init_sync_ff" value="0" description="" />
+   <keyValuePair key="iptotal" value="95" description="" />
+   <keyValuePair key="sim_assert_chk" value="0" description="" />
+   <keyValuePair key="src_input_reg" value="0" description="" />
+   <keyValuePair key="version" value="0" description="" />
+  </section>
+  <section name="zynq_ultra_ps_e_v3_2_2_zynq_ultra_ps_e/1" level="2" order="14" description="">
    <keyValuePair key="c_dp_use_audio" value="0" description="" />
    <keyValuePair key="c_dp_use_video" value="0" description="" />
    <keyValuePair key="c_emio_gpio_width" value="1" description="" />
@@ -387,7 +1040,7 @@
    <keyValuePair key="x_ipvendor" value="xilinx.com" description="" />
    <keyValuePair key="x_ipversion" value="3.2" description="" />
   </section>
-  <section name="zynq_ultra_ps_e_v3_2_user_configuration/1" level="2" order="13" description="">
+  <section name="zynq_ultra_ps_e_v3_2_user_configuration/1" level="2" order="15" description="">
    <keyValuePair key="core_container" value="NA" description="" />
    <keyValuePair key="iptotal" value="1" description="" />
    <keyValuePair key="psu__acpu0__power__on" value="1" description="" />
@@ -958,15 +1611,15 @@
   </section>
   <section name="usage" level="2" order="2" description="">
    <keyValuePair key="bram_ports_augmented" value="0" description="" />
-   <keyValuePair key="bram_ports_newly_gated" value="7" description="" />
+   <keyValuePair key="bram_ports_newly_gated" value="3" description="" />
    <keyValuePair key="bram_ports_total" value="8" description="" />
    <keyValuePair key="flow_state" value="default" description="" />
    <keyValuePair key="slice_registers_augmented" value="0" description="" />
    <keyValuePair key="slice_registers_newly_gated" value="0" description="" />
-   <keyValuePair key="slice_registers_total" value="3582" description="" />
+   <keyValuePair key="slice_registers_total" value="6603" description="" />
    <keyValuePair key="srls_augmented" value="0" description="" />
    <keyValuePair key="srls_newly_gated" value="0" description="" />
-   <keyValuePair key="srls_total" value="45" description="" />
+   <keyValuePair key="srls_total" value="73" description="" />
   </section>
  </section>
  <section name="report_drc" level="1" order="7" description="">
@@ -1030,13 +1683,13 @@
    <keyValuePair key="-xpe" value="default::[not_specified]" description="" />
   </section>
   <section name="usage" level="2" order="2" description="">
-   <keyValuePair key="adcavcc_dynamic_current" value="0.000000" description="" />
-   <keyValuePair key="adcavcc_static_current" value="0.011337" description="" />
-   <keyValuePair key="adcavcc_total_current" value="0.011337" description="" />
+   <keyValuePair key="adcavcc_dynamic_current" value="0.204868" description="" />
+   <keyValuePair key="adcavcc_static_current" value="0.011587" description="" />
+   <keyValuePair key="adcavcc_total_current" value="0.216455" description="" />
    <keyValuePair key="adcavcc_voltage" value="0.925000" description="" />
-   <keyValuePair key="adcavccaux_dynamic_current" value="0.000000" description="" />
-   <keyValuePair key="adcavccaux_static_current" value="0.049160" description="" />
-   <keyValuePair key="adcavccaux_total_current" value="0.049160" description="" />
+   <keyValuePair key="adcavccaux_dynamic_current" value="0.187471" description="" />
+   <keyValuePair key="adcavccaux_static_current" value="0.049032" description="" />
+   <keyValuePair key="adcavccaux_total_current" value="0.236503" description="" />
    <keyValuePair key="adcavccaux_voltage" value="1.800000" description="" />
    <keyValuePair key="airflow" value="250 (LFM)" description="" />
    <keyValuePair key="ambient_temp" value="25.0 (C)" description="" />
@@ -1044,8 +1697,8 @@
    <keyValuePair key="bidir_output_enable" value="1.000000" description="" />
    <keyValuePair key="board_layers" value="12to15 (12 to 15 Layers)" description="" />
    <keyValuePair key="board_selection" value="medium (10&quot;x10&quot;)" description="" />
-   <keyValuePair key="bram" value="0.006138" description="" />
-   <keyValuePair key="clocks" value="0.022554" description="" />
+   <keyValuePair key="bram" value="0.026182" description="" />
+   <keyValuePair key="clocks" value="0.044605" description="" />
    <keyValuePair key="confidence_level_clock_activity" value="High" description="" />
    <keyValuePair key="confidence_level_design_state" value="High" description="" />
    <keyValuePair key="confidence_level_device_models" value="High" description="" />
@@ -1055,8 +1708,8 @@
    <keyValuePair key="customer" value="TBD" description="" />
    <keyValuePair key="customer_class" value="TBD" description="" />
    <keyValuePair key="dacavcc_dynamic_current" value="0.000000" description="" />
-   <keyValuePair key="dacavcc_static_current" value="0.007885" description="" />
-   <keyValuePair key="dacavcc_total_current" value="0.007885" description="" />
+   <keyValuePair key="dacavcc_static_current" value="0.007955" description="" />
+   <keyValuePair key="dacavcc_total_current" value="0.007955" description="" />
    <keyValuePair key="dacavcc_voltage" value="0.925000" description="" />
    <keyValuePair key="dacavccaux_dynamic_current" value="0.000000" description="" />
    <keyValuePair key="dacavccaux_static_current" value="0.000299" description="" />
@@ -1066,21 +1719,21 @@
    <keyValuePair key="dacavtt_static_current" value="0.005498" description="" />
    <keyValuePair key="dacavtt_total_current" value="0.005498" description="" />
    <keyValuePair key="dacavtt_voltage" value="2.500000" description="" />
-   <keyValuePair key="devstatic" value="1.195986" description="" />
+   <keyValuePair key="devstatic" value="1.202517" description="" />
    <keyValuePair key="die" value="xczu28dr-ffvg1517-2-e" description="" />
-   <keyValuePair key="dsp" value="0.001609" description="" />
+   <keyValuePair key="dsp" value="0.002060" description="" />
    <keyValuePair key="dsp_output_toggle" value="12.500000" description="" />
-   <keyValuePair key="dynamic" value="2.822332" description="" />
+   <keyValuePair key="dynamic" value="3.434617" description="" />
    <keyValuePair key="effective_thetaja" value="0.8" description="" />
    <keyValuePair key="enable_probability" value="0.990000" description="" />
    <keyValuePair key="family" value="zynquplusRFSOC" description="" />
    <keyValuePair key="ff_toggle" value="12.500000" description="" />
    <keyValuePair key="flow_state" value="routed" description="" />
    <keyValuePair key="heatsink" value="medium (Medium Profile)" description="" />
-   <keyValuePair key="i/o" value="0.007307" description="" />
+   <keyValuePair key="i/o" value="0.008628" description="" />
    <keyValuePair key="input_toggle" value="12.500000" description="" />
-   <keyValuePair key="junction_temp" value="28.4 (C)" description="" />
-   <keyValuePair key="logic" value="0.007044" description="" />
+   <keyValuePair key="junction_temp" value="28.9 (C)" description="" />
+   <keyValuePair key="logic" value="0.013643" description="" />
    <keyValuePair key="mgtyavcc_dynamic_current" value="0.000000" description="" />
    <keyValuePair key="mgtyavcc_static_current" value="0.000000" description="" />
    <keyValuePair key="mgtyavcc_total_current" value="0.000000" description="" />
@@ -1093,15 +1746,15 @@
    <keyValuePair key="mgtyvccaux_static_current" value="0.000000" description="" />
    <keyValuePair key="mgtyvccaux_total_current" value="0.000000" description="" />
    <keyValuePair key="mgtyvccaux_voltage" value="1.800000" description="" />
-   <keyValuePair key="mmcm" value="0.078286" description="" />
+   <keyValuePair key="mmcm" value="0.089390" description="" />
    <keyValuePair key="netlist_net_matched" value="NA" description="" />
    <keyValuePair key="off-chip_power" value="0.000000" description="" />
-   <keyValuePair key="on-chip_power" value="4.018318" description="" />
+   <keyValuePair key="on-chip_power" value="4.637134" description="" />
    <keyValuePair key="output_enable" value="1.000000" description="" />
    <keyValuePair key="output_load" value="0.000000" description="" />
    <keyValuePair key="output_toggle" value="12.500000" description="" />
    <keyValuePair key="package" value="ffvg1517" description="" />
-   <keyValuePair key="pct_clock_constrained" value="8.420000" description="" />
+   <keyValuePair key="pct_clock_constrained" value="11.320000" description="" />
    <keyValuePair key="pct_inputs_defined" value="100" description="" />
    <keyValuePair key="platform" value="lin64" description="" />
    <keyValuePair key="process" value="typical" description="" />
@@ -1109,9 +1762,10 @@
    <keyValuePair key="ram_enable" value="50.000000" description="" />
    <keyValuePair key="ram_write" value="50.000000" description="" />
    <keyValuePair key="read_saif" value="False" description="" />
+   <keyValuePair key="rfams" value="0.526951" description="" />
    <keyValuePair key="set/reset_probability" value="0.000000" description="" />
    <keyValuePair key="signal_rate" value="False" description="" />
-   <keyValuePair key="signals" value="0.008039" description="" />
+   <keyValuePair key="signals" value="0.031802" description="" />
    <keyValuePair key="simulation_file" value="None" description="" />
    <keyValuePair key="speedgrade" value="-2" description="" />
    <keyValuePair key="static_prob" value="False" description="" />
@@ -1121,7 +1775,7 @@
    <keyValuePair key="toggle_rate" value="False" description="" />
    <keyValuePair key="user_board_temp" value="25.0 (C)" description="" />
    <keyValuePair key="user_effective_thetaja" value="0.8" description="" />
-   <keyValuePair key="user_junc_temp" value="28.4 (C)" description="" />
+   <keyValuePair key="user_junc_temp" value="28.9 (C)" description="" />
    <keyValuePair key="user_thetajb" value="1.9 (C/W)" description="" />
    <keyValuePair key="user_thetasa" value="1.2 (C/W)" description="" />
    <keyValuePair key="vcc_psadc_dynamic_current" value="0.000000" description="" />
@@ -1141,16 +1795,16 @@
    <keyValuePair key="vcc_psddr_pll_total_current" value="0.012270" description="" />
    <keyValuePair key="vcc_psddr_pll_voltage" value="1.800000" description="" />
    <keyValuePair key="vcc_psintfp_ddr_dynamic_current" value="0.696363" description="" />
-   <keyValuePair key="vcc_psintfp_ddr_static_current" value="0.004311" description="" />
-   <keyValuePair key="vcc_psintfp_ddr_total_current" value="0.700674" description="" />
+   <keyValuePair key="vcc_psintfp_ddr_static_current" value="0.004378" description="" />
+   <keyValuePair key="vcc_psintfp_ddr_total_current" value="0.700741" description="" />
    <keyValuePair key="vcc_psintfp_ddr_voltage" value="0.850000" description="" />
    <keyValuePair key="vcc_psintfp_dynamic_current" value="1.031780" description="" />
-   <keyValuePair key="vcc_psintfp_static_current" value="0.034500" description="" />
-   <keyValuePair key="vcc_psintfp_total_current" value="1.066280" description="" />
+   <keyValuePair key="vcc_psintfp_static_current" value="0.035039" description="" />
+   <keyValuePair key="vcc_psintfp_total_current" value="1.066819" description="" />
    <keyValuePair key="vcc_psintfp_voltage" value="0.850000" description="" />
    <keyValuePair key="vcc_psintlp_dynamic_current" value="0.268235" description="" />
-   <keyValuePair key="vcc_psintlp_static_current" value="0.006984" description="" />
-   <keyValuePair key="vcc_psintlp_total_current" value="0.275219" description="" />
+   <keyValuePair key="vcc_psintlp_static_current" value="0.007093" description="" />
+   <keyValuePair key="vcc_psintlp_total_current" value="0.275328" description="" />
    <keyValuePair key="vcc_psintlp_voltage" value="0.850000" description="" />
    <keyValuePair key="vcc_pspll_dynamic_current" value="0.071080" description="" />
    <keyValuePair key="vcc_pspll_static_current" value="0.002000" description="" />
@@ -1160,29 +1814,29 @@
    <keyValuePair key="vccadc_static_current" value="0.008000" description="" />
    <keyValuePair key="vccadc_total_current" value="0.008000" description="" />
    <keyValuePair key="vccadc_voltage" value="1.800000" description="" />
-   <keyValuePair key="vccaux_dynamic_current" value="0.043259" description="" />
-   <keyValuePair key="vccaux_io_dynamic_current" value="0.001774" description="" />
-   <keyValuePair key="vccaux_io_static_current" value="0.057663" description="" />
-   <keyValuePair key="vccaux_io_total_current" value="0.059437" description="" />
+   <keyValuePair key="vccaux_dynamic_current" value="0.049363" description="" />
+   <keyValuePair key="vccaux_io_dynamic_current" value="0.001899" description="" />
+   <keyValuePair key="vccaux_io_static_current" value="0.057665" description="" />
+   <keyValuePair key="vccaux_io_total_current" value="0.059564" description="" />
    <keyValuePair key="vccaux_io_voltage" value="1.800000" description="" />
-   <keyValuePair key="vccaux_static_current" value="0.279450" description="" />
-   <keyValuePair key="vccaux_total_current" value="0.322709" description="" />
+   <keyValuePair key="vccaux_static_current" value="0.279025" description="" />
+   <keyValuePair key="vccaux_total_current" value="0.328388" description="" />
    <keyValuePair key="vccaux_voltage" value="1.800000" description="" />
-   <keyValuePair key="vccbram_dynamic_current" value="0.000309" description="" />
-   <keyValuePair key="vccbram_static_current" value="0.004324" description="" />
-   <keyValuePair key="vccbram_total_current" value="0.004633" description="" />
+   <keyValuePair key="vccbram_dynamic_current" value="0.001727" description="" />
+   <keyValuePair key="vccbram_static_current" value="0.004421" description="" />
+   <keyValuePair key="vccbram_total_current" value="0.006148" description="" />
    <keyValuePair key="vccbram_voltage" value="0.850000" description="" />
    <keyValuePair key="vccint_ams_dynamic_current" value="0.000000" description="" />
-   <keyValuePair key="vccint_ams_static_current" value="0.010299" description="" />
-   <keyValuePair key="vccint_ams_total_current" value="0.010299" description="" />
+   <keyValuePair key="vccint_ams_static_current" value="0.010367" description="" />
+   <keyValuePair key="vccint_ams_total_current" value="0.010367" description="" />
    <keyValuePair key="vccint_ams_voltage" value="0.850000" description="" />
-   <keyValuePair key="vccint_dynamic_current" value="0.053578" description="" />
-   <keyValuePair key="vccint_io_dynamic_current" value="0.001505" description="" />
-   <keyValuePair key="vccint_io_static_current" value="0.070821" description="" />
-   <keyValuePair key="vccint_io_total_current" value="0.072326" description="" />
+   <keyValuePair key="vccint_dynamic_current" value="0.138072" description="" />
+   <keyValuePair key="vccint_io_dynamic_current" value="0.001862" description="" />
+   <keyValuePair key="vccint_io_static_current" value="0.071002" description="" />
+   <keyValuePair key="vccint_io_total_current" value="0.072864" description="" />
    <keyValuePair key="vccint_io_voltage" value="0.850000" description="" />
-   <keyValuePair key="vccint_static_current" value="0.303727" description="" />
-   <keyValuePair key="vccint_total_current" value="0.357305" description="" />
+   <keyValuePair key="vccint_static_current" value="0.310487" description="" />
+   <keyValuePair key="vccint_total_current" value="0.448559" description="" />
    <keyValuePair key="vccint_voltage" value="0.850000" description="" />
    <keyValuePair key="vcco10_dynamic_current" value="0.000000" description="" />
    <keyValuePair key="vcco10_static_current" value="0.000000" description="" />
@@ -1200,9 +1854,9 @@
    <keyValuePair key="vcco15_static_current" value="0.000000" description="" />
    <keyValuePair key="vcco15_total_current" value="0.000000" description="" />
    <keyValuePair key="vcco15_voltage" value="1.500000" description="" />
-   <keyValuePair key="vcco18_dynamic_current" value="0.001575" description="" />
+   <keyValuePair key="vcco18_dynamic_current" value="0.002015" description="" />
    <keyValuePair key="vcco18_static_current" value="0.000016" description="" />
-   <keyValuePair key="vcco18_total_current" value="0.001590" description="" />
+   <keyValuePair key="vcco18_total_current" value="0.002031" description="" />
    <keyValuePair key="vcco18_voltage" value="1.800000" description="" />
    <keyValuePair key="vcco25_dynamic_current" value="0.000000" description="" />
    <keyValuePair key="vcco25_static_current" value="0.000000" description="" />
@@ -1233,8 +1887,8 @@
    <keyValuePair key="vcco_psio3_503_total_current" value="0.000600" description="" />
    <keyValuePair key="vcco_psio3_503_voltage" value="3.300000" description="" />
    <keyValuePair key="vccsdfec_dynamic_current" value="0.000000" description="" />
-   <keyValuePair key="vccsdfec_static_current" value="0.029355" description="" />
-   <keyValuePair key="vccsdfec_total_current" value="0.029355" description="" />
+   <keyValuePair key="vccsdfec_static_current" value="0.030034" description="" />
+   <keyValuePair key="vccsdfec_total_current" value="0.030034" description="" />
    <keyValuePair key="vccsdfec_voltage" value="0.850000" description="" />
    <keyValuePair key="version" value="2018.3.1_AR71948" description="" />
    <keyValuePair key="vps_mgtravcc_dynamic_current" value="0.137630" description="" />
@@ -1321,35 +1975,41 @@
    <keyValuePair key="bufgce_functional_category" value="Clock" description="" />
    <keyValuePair key="bufgce_used" value="1" description="" />
    <keyValuePair key="carry8_functional_category" value="CLB" description="" />
-   <keyValuePair key="carry8_used" value="6" description="" />
+   <keyValuePair key="carry8_used" value="34" description="" />
    <keyValuePair key="diffinbuf_functional_category" value="I/O" description="" />
    <keyValuePair key="diffinbuf_used" value="1" description="" />
    <keyValuePair key="dsp48e2_functional_category" value="Arithmetic" description="" />
    <keyValuePair key="dsp48e2_used" value="4" description="" />
    <keyValuePair key="fdce_functional_category" value="Register" description="" />
-   <keyValuePair key="fdce_used" value="685" description="" />
+   <keyValuePair key="fdce_used" value="688" description="" />
    <keyValuePair key="fdpe_functional_category" value="Register" description="" />
    <keyValuePair key="fdpe_used" value="74" description="" />
    <keyValuePair key="fdre_functional_category" value="Register" description="" />
-   <keyValuePair key="fdre_used" value="2769" description="" />
+   <keyValuePair key="fdre_used" value="5679" description="" />
    <keyValuePair key="fdse_functional_category" value="Register" description="" />
-   <keyValuePair key="fdse_used" value="54" description="" />
+   <keyValuePair key="fdse_used" value="162" description="" />
+   <keyValuePair key="hsadc_functional_category" value="Advanced" description="" />
+   <keyValuePair key="hsadc_used" value="4" description="" />
+   <keyValuePair key="hsdac_functional_category" value="Advanced" description="" />
+   <keyValuePair key="hsdac_used" value="2" description="" />
    <keyValuePair key="ibufctrl_functional_category" value="Others" description="" />
    <keyValuePair key="ibufctrl_used" value="1" description="" />
    <keyValuePair key="lut1_functional_category" value="CLB" description="" />
-   <keyValuePair key="lut1_used" value="92" description="" />
+   <keyValuePair key="lut1_used" value="112" description="" />
    <keyValuePair key="lut2_functional_category" value="CLB" description="" />
-   <keyValuePair key="lut2_used" value="557" description="" />
+   <keyValuePair key="lut2_used" value="1017" description="" />
    <keyValuePair key="lut3_functional_category" value="CLB" description="" />
-   <keyValuePair key="lut3_used" value="659" description="" />
+   <keyValuePair key="lut3_used" value="1140" description="" />
    <keyValuePair key="lut4_functional_category" value="CLB" description="" />
-   <keyValuePair key="lut4_used" value="432" description="" />
+   <keyValuePair key="lut4_used" value="1018" description="" />
    <keyValuePair key="lut5_functional_category" value="CLB" description="" />
-   <keyValuePair key="lut5_used" value="658" description="" />
+   <keyValuePair key="lut5_used" value="1254" description="" />
    <keyValuePair key="lut6_functional_category" value="CLB" description="" />
-   <keyValuePair key="lut6_used" value="1300" description="" />
+   <keyValuePair key="lut6_used" value="2718" description="" />
    <keyValuePair key="mmcme4_adv_functional_category" value="Clock" description="" />
    <keyValuePair key="mmcme4_adv_used" value="1" description="" />
+   <keyValuePair key="muxf7_functional_category" value="CLB" description="" />
+   <keyValuePair key="muxf7_used" value="5" description="" />
    <keyValuePair key="obuf_functional_category" value="I/O" description="" />
    <keyValuePair key="obuf_used" value="2" description="" />
    <keyValuePair key="ps8_functional_category" value="Advanced" description="" />
@@ -1357,13 +2017,13 @@
    <keyValuePair key="ramb36e2_functional_category" value="Block Ram" description="" />
    <keyValuePair key="ramb36e2_used" value="4" description="" />
    <keyValuePair key="ramd32_functional_category" value="CLB" description="" />
-   <keyValuePair key="ramd32_used" value="154" description="" />
+   <keyValuePair key="ramd32_used" value="196" description="" />
    <keyValuePair key="rams32_functional_category" value="CLB" description="" />
-   <keyValuePair key="rams32_used" value="22" description="" />
+   <keyValuePair key="rams32_used" value="28" description="" />
    <keyValuePair key="srl16e_functional_category" value="CLB" description="" />
-   <keyValuePair key="srl16e_used" value="11" description="" />
+   <keyValuePair key="srl16e_used" value="19" description="" />
    <keyValuePair key="srlc32e_functional_category" value="CLB" description="" />
-   <keyValuePair key="srlc32e_used" value="34" description="" />
+   <keyValuePair key="srlc32e_used" value="54" description="" />
   </section>
  </section>
  <section name="synthesis" level="1" order="11" description="">
@@ -1406,15 +2066,17 @@
   <section name="usage" level="2" order="2" description="">
    <keyValuePair key="elapsed" value="00:00:40s" description="" />
    <keyValuePair key="hls_ip" value="0" description="" />
-   <keyValuePair key="memory_gain" value="1419.098MB" description="" />
-   <keyValuePair key="memory_peak" value="2832.109MB" description="" />
+   <keyValuePair key="memory_gain" value="1423.090MB" description="" />
+   <keyValuePair key="memory_peak" value="2840.105MB" description="" />
   </section>
  </section>
  <section name="unisim_transformation" level="1" order="12" description="">
   <section name="post_unisim_transformation" level="2" order="1" description="">
+   <keyValuePair key="bufg_gt" value="1" description="" />
+   <keyValuePair key="bufg_gt_sync" value="1" description="" />
    <keyValuePair key="bufg_ps" value="1" description="" />
    <keyValuePair key="bufgce" value="4" description="" />
-   <keyValuePair key="carry8" value="22" description="" />
+   <keyValuePair key="carry8" value="46" description="" />
    <keyValuePair key="diffinbuf" value="1" description="" />
    <keyValuePair key="dsp_a_b_data" value="4" description="" />
    <keyValuePair key="dsp_alu" value="4" description="" />
@@ -1424,19 +2086,22 @@
    <keyValuePair key="dsp_output" value="4" description="" />
    <keyValuePair key="dsp_preadd" value="4" description="" />
    <keyValuePair key="dsp_preadd_data" value="4" description="" />
-   <keyValuePair key="fdce" value="685" description="" />
+   <keyValuePair key="fdce" value="688" description="" />
    <keyValuePair key="fdpe" value="74" description="" />
-   <keyValuePair key="fdre" value="4247" description="" />
-   <keyValuePair key="fdse" value="55" description="" />
-   <keyValuePair key="gnd" value="352" description="" />
+   <keyValuePair key="fdre" value="6408" description="" />
+   <keyValuePair key="fdse" value="162" description="" />
+   <keyValuePair key="gnd" value="493" description="" />
+   <keyValuePair key="hsadc" value="4" description="" />
+   <keyValuePair key="hsdac" value="2" description="" />
    <keyValuePair key="ibufctrl" value="1" description="" />
-   <keyValuePair key="lut1" value="466" description="" />
-   <keyValuePair key="lut2" value="536" description="" />
-   <keyValuePair key="lut3" value="942" description="" />
-   <keyValuePair key="lut4" value="531" description="" />
-   <keyValuePair key="lut5" value="921" description="" />
-   <keyValuePair key="lut6" value="1758" description="" />
+   <keyValuePair key="lut1" value="486" description="" />
+   <keyValuePair key="lut2" value="991" description="" />
+   <keyValuePair key="lut3" value="1286" description="" />
+   <keyValuePair key="lut4" value="1047" description="" />
+   <keyValuePair key="lut5" value="1328" description="" />
+   <keyValuePair key="lut6" value="2892" description="" />
    <keyValuePair key="mmcme4_adv" value="1" description="" />
+   <keyValuePair key="muxf7" value="5" description="" />
    <keyValuePair key="obuf" value="2" description="" />
    <keyValuePair key="ps8" value="1" description="" />
    <keyValuePair key="ramb36e2" value="4" description="" />
@@ -1444,33 +2109,38 @@
    <keyValuePair key="rams32" value="28" description="" />
    <keyValuePair key="srl16e" value="23" description="" />
    <keyValuePair key="srlc32e" value="74" description="" />
-   <keyValuePair key="vcc" value="331" description="" />
+   <keyValuePair key="vcc" value="486" description="" />
   </section>
   <section name="pre_unisim_transformation" level="2" order="2" description="">
+   <keyValuePair key="bufg_gt" value="1" description="" />
+   <keyValuePair key="bufg_gt_sync" value="1" description="" />
    <keyValuePair key="bufg_ps" value="1" description="" />
    <keyValuePair key="bufgce" value="4" description="" />
-   <keyValuePair key="carry8" value="22" description="" />
+   <keyValuePair key="carry8" value="46" description="" />
    <keyValuePair key="dsp48e2" value="4" description="" />
-   <keyValuePair key="fdce" value="685" description="" />
+   <keyValuePair key="fdce" value="688" description="" />
    <keyValuePair key="fdpe" value="74" description="" />
-   <keyValuePair key="fdre" value="4247" description="" />
-   <keyValuePair key="fdse" value="55" description="" />
-   <keyValuePair key="gnd" value="352" description="" />
+   <keyValuePair key="fdre" value="6408" description="" />
+   <keyValuePair key="fdse" value="162" description="" />
+   <keyValuePair key="gnd" value="493" description="" />
+   <keyValuePair key="hsadc" value="4" description="" />
+   <keyValuePair key="hsdac" value="2" description="" />
    <keyValuePair key="ibufds" value="1" description="" />
-   <keyValuePair key="lut1" value="466" description="" />
-   <keyValuePair key="lut2" value="536" description="" />
-   <keyValuePair key="lut3" value="942" description="" />
-   <keyValuePair key="lut4" value="531" description="" />
-   <keyValuePair key="lut5" value="921" description="" />
-   <keyValuePair key="lut6" value="1758" description="" />
+   <keyValuePair key="lut1" value="486" description="" />
+   <keyValuePair key="lut2" value="991" description="" />
+   <keyValuePair key="lut3" value="1286" description="" />
+   <keyValuePair key="lut4" value="1047" description="" />
+   <keyValuePair key="lut5" value="1328" description="" />
+   <keyValuePair key="lut6" value="2892" description="" />
    <keyValuePair key="mmcme4_adv" value="1" description="" />
+   <keyValuePair key="muxf7" value="5" description="" />
    <keyValuePair key="obuf" value="2" description="" />
    <keyValuePair key="ps8" value="1" description="" />
    <keyValuePair key="ram32m16" value="14" description="" />
    <keyValuePair key="ramb36e2" value="4" description="" />
    <keyValuePair key="srl16e" value="23" description="" />
    <keyValuePair key="srlc32e" value="74" description="" />
-   <keyValuePair key="vcc" value="331" description="" />
+   <keyValuePair key="vcc" value="486" description="" />
   </section>
  </section>
  <section name="vivado_usage" level="1" order="13" description="">
@@ -1500,12 +2170,12 @@
    <keyValuePair key="launch_simulation_vcs" value="0" description="" />
    <keyValuePair key="launch_simulation_xsim" value="0" description="" />
    <keyValuePair key="simulator_language" value="Mixed" description="" />
-   <keyValuePair key="srcsetcount" value="56" description="" />
+   <keyValuePair key="srcsetcount" value="55" description="" />
    <keyValuePair key="synthesisstrategy" value="Vivado Synthesis Defaults" description="" />
    <keyValuePair key="target_language" value="VHDL" description="" />
    <keyValuePair key="target_simulator" value="XSim" description="" />
-   <keyValuePair key="totalimplruns" value="11" description="" />
-   <keyValuePair key="totalsynthesisruns" value="11" description="" />
+   <keyValuePair key="totalimplruns" value="12" description="" />
+   <keyValuePair key="totalsynthesisruns" value="12" description="" />
   </section>
  </section>
 </section>

@@ -2118,7 +2118,7 @@ extern "C" {
 *
 ******************************************************************************/
 #define XRFdc_ReadReg(InstancePtr, BaseAddress, RegOffset) \
-	XRFdc_In32((InstancePtr->io), ((u32)BaseAddress)+(u32)BaseAddress)
+	XRFdc_In32((InstancePtr->io), ((u32)BaseAddress)+(u32)RegOffset)
 
 /***************************************************************************/
 /**

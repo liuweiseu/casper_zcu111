@@ -730,7 +730,7 @@ static u32 XRFdc_WaitForRestartClr(XRFdc *InstancePtr, u32 Type, u32 Tile_Id,
 #ifdef __BAREMETAL__
 				usleep(1000);
 #else
-				metal_sleep_usec(1000);
+				usleep(1000);
 #endif
 				DelayCount++;
 				(void)XRFdc_GetPLLLockStatus(InstancePtr, Type, Tile_Id,
@@ -752,7 +752,7 @@ static u32 XRFdc_WaitForRestartClr(XRFdc *InstancePtr, u32 Type, u32 Tile_Id,
 #ifdef __BAREMETAL__
 			usleep(1000);
 #else
-			metal_sleep_usec(1000);
+			usleep(1000);
 #endif
 			DelayCount++;
 		}
@@ -5486,8 +5486,9 @@ RETURN_PATH:
 u32 XRFdc_GetIPVer()
 {
 	XRFdc Instance;
+	XRFdc *Instanceptr = &Instance;
 	u32 ReadReg;
-	ReadReg = XRFdc_RDReg(&Instance, 0,0,0xffff);
+	ReadReg = XRFdc_ReadReg(Instanceptr, 0,0);
 	return ReadReg;
 }
 /** @} */

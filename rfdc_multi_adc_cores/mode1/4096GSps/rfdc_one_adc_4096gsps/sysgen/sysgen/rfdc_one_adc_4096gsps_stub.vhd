@@ -6,8 +6,8 @@ entity rfdc_one_adc_4096gsps_stub is
   port (
     rfdc_one_adc_4096gsps_led_cntrl_user_data_out : in std_logic_vector( 32-1 downto 0 );
     rfdc_one_adc_4096gsps_reg_cntrl_user_data_out : in std_logic_vector( 32-1 downto 0 );
-    rfdc_v0_3_rfdc_v0_3_adc0_dout : in std_logic_vector( 128-1 downto 0 );
-    rfdc_v0_3_rfdc_v0_3_adc0_sync : in std_logic_vector( 1-1 downto 0 );
+    rfdc_one_adc_4096gsps_rfdc_v0_3_adc0_dout : in std_logic_vector( 128-1 downto 0 );
+    rfdc_one_adc_4096gsps_rfdc_v0_3_adc0_sync : in std_logic_vector( 1-1 downto 0 );
     rfdc_one_adc_4096gsps_snapshot0_01_ss_bram_data_out : in std_logic_vector( 32-1 downto 0 );
     rfdc_one_adc_4096gsps_snapshot0_01_ss_ctrl_user_data_out : in std_logic_vector( 32-1 downto 0 );
     rfdc_one_adc_4096gsps_snapshot0_23_ss_bram_data_out : in std_logic_vector( 32-1 downto 0 );
@@ -44,8 +44,8 @@ begin
   port map (
     rfdc_one_adc_4096gsps_led_cntrl_user_data_out => rfdc_one_adc_4096gsps_led_cntrl_user_data_out,
     rfdc_one_adc_4096gsps_reg_cntrl_user_data_out => rfdc_one_adc_4096gsps_reg_cntrl_user_data_out,
-    rfdc_v0_3_rfdc_v0_3_adc0_dout => rfdc_v0_3_rfdc_v0_3_adc0_dout,
-    rfdc_v0_3_rfdc_v0_3_adc0_sync => rfdc_v0_3_rfdc_v0_3_adc0_sync,
+    rfdc_one_adc_4096gsps_rfdc_v0_3_adc0_dout => rfdc_one_adc_4096gsps_rfdc_v0_3_adc0_dout,
+    rfdc_one_adc_4096gsps_rfdc_v0_3_adc0_sync => rfdc_one_adc_4096gsps_rfdc_v0_3_adc0_sync,
     rfdc_one_adc_4096gsps_snapshot0_01_ss_bram_data_out => rfdc_one_adc_4096gsps_snapshot0_01_ss_bram_data_out,
     rfdc_one_adc_4096gsps_snapshot0_01_ss_ctrl_user_data_out => rfdc_one_adc_4096gsps_snapshot0_01_ss_ctrl_user_data_out,
     rfdc_one_adc_4096gsps_snapshot0_23_ss_bram_data_out => rfdc_one_adc_4096gsps_snapshot0_23_ss_bram_data_out,

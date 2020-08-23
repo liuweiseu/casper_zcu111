@@ -1,3 +1,12 @@
+V0.4_debugging:
+We have MTS option in rfdc_V0_4, but haven't been fully tested.
+We need Mitch's balun board for the full MTS test.
+
+Here are two issues:
+(1) When the RFDC core works at 4.096GSps, the system clock is 512MHz, which causes some timing errors in LED module;
+(2) MTS function needs to be actived manually
+     ---user needs to log into zcu111 and run a mts related software, which is not convenient to users.
+----------------------------------------------------------------------------------------
 V0.3:
 rfdc_V0_3 is added to toolflow:
 (1) we can choose one/two/four/eight adc cores(no dac cores);

@@ -93,6 +93,11 @@ set_property used_in_implementation false [get_files -all /home/wei/casper/caspe
 set_property used_in_implementation false [get_files -all /home/wei/casper/casper_mlib/tutorials_devel/zcu111/rfdc_multi_adc_cores/mode1/4096GSps/rfdc_one_adc_4096gsps/myproj/myproj.srcs/sources_1/bd/zcu111/ip/zcu111_auto_ds_1/zcu111_auto_ds_1_ooc.xdc]
 set_property used_in_implementation false [get_files -all /home/wei/casper/casper_mlib/tutorials_devel/zcu111/rfdc_multi_adc_cores/mode1/4096GSps/rfdc_one_adc_4096gsps/myproj/myproj.srcs/sources_1/bd/zcu111/zcu111_ooc.xdc]
 
+read_ip -quiet /home/wei/casper/casper_mlib/tutorials_devel/zcu111/rfdc_multi_adc_cores/mode1/4096GSps/rfdc_one_adc_4096gsps/myproj/myproj.srcs/sources_1/ip/ADC1_R2R_4096/ADC1_R2R_4096.xci
+set_property used_in_implementation false [get_files -all /home/wei/casper/casper_mlib/tutorials_devel/zcu111/rfdc_multi_adc_cores/mode1/4096GSps/rfdc_one_adc_4096gsps/myproj/myproj.srcs/sources_1/ip/ADC1_R2R_4096/synth/ADC1_R2R_4096.xdc]
+set_property used_in_implementation false [get_files -all /home/wei/casper/casper_mlib/tutorials_devel/zcu111/rfdc_multi_adc_cores/mode1/4096GSps/rfdc_one_adc_4096gsps/myproj/myproj.srcs/sources_1/ip/ADC1_R2R_4096/synth/ADC1_R2R_4096_clocks.xdc]
+set_property used_in_implementation false [get_files -all /home/wei/casper/casper_mlib/tutorials_devel/zcu111/rfdc_multi_adc_cores/mode1/4096GSps/rfdc_one_adc_4096gsps/myproj/myproj.srcs/sources_1/ip/ADC1_R2R_4096/synth/ADC1_R2R_4096_ooc.xdc]
+
 read_ip -quiet /home/wei/casper/casper_mlib/tutorials_devel/zcu111/rfdc_multi_adc_cores/mode1/4096GSps/rfdc_one_adc_4096gsps/myproj/myproj.srcs/sources_1/ip/rfdc_one_adc_4096gsps_c_counter_binary_v12_0_i2/rfdc_one_adc_4096gsps_c_counter_binary_v12_0_i2.xci
 set_property used_in_implementation false [get_files -all /home/wei/casper/casper_mlib/tutorials_devel/zcu111/rfdc_multi_adc_cores/mode1/4096GSps/rfdc_one_adc_4096gsps/myproj/myproj.srcs/sources_1/ip/rfdc_one_adc_4096gsps_c_counter_binary_v12_0_i2/rfdc_one_adc_4096gsps_c_counter_binary_v12_0_i2_ooc.xdc]
 

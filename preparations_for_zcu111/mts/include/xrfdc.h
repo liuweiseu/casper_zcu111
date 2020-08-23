@@ -228,6 +228,7 @@ extern "C" {
 //#include <metal/io.h>
 //#include <metal/sleep.h>
 //#include "metal/alloc.h"
+#include <unistd.h>
 #include "xrfdc_hw_casper.h"
 
 /**************************** Type Definitions *******************************/

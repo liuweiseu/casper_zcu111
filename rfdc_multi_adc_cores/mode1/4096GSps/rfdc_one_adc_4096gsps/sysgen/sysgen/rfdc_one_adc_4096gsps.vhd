@@ -229,16 +229,16 @@ library xil_defaultlib;
 use xil_defaultlib.conv_pkg.all;
 entity rfdc_one_adc_4096gsps_rfdc_v0_3 is
   port (
-    rfdc_v0_3_rfdc_v0_3_adc0_dout : in std_logic_vector( 128-1 downto 0 );
-    rfdc_v0_3_rfdc_v0_3_adc0_sync : in std_logic_vector( 1-1 downto 0 )
+    rfdc_one_adc_4096gsps_rfdc_v0_3_adc0_dout : in std_logic_vector( 128-1 downto 0 );
+    rfdc_one_adc_4096gsps_rfdc_v0_3_adc0_sync : in std_logic_vector( 1-1 downto 0 )
   );
 end rfdc_one_adc_4096gsps_rfdc_v0_3;
 architecture structural of rfdc_one_adc_4096gsps_rfdc_v0_3 is 
-  signal rfdc_v0_3_rfdc_v0_3_adc0_dout_net : std_logic_vector( 128-1 downto 0 );
-  signal rfdc_v0_3_rfdc_v0_3_adc0_sync_net : std_logic_vector( 1-1 downto 0 );
+  signal rfdc_one_adc_4096gsps_rfdc_v0_3_adc0_dout_net : std_logic_vector( 128-1 downto 0 );
+  signal rfdc_one_adc_4096gsps_rfdc_v0_3_adc0_sync_net : std_logic_vector( 1-1 downto 0 );
 begin
-  rfdc_v0_3_rfdc_v0_3_adc0_dout_net <= rfdc_v0_3_rfdc_v0_3_adc0_dout;
-  rfdc_v0_3_rfdc_v0_3_adc0_sync_net <= rfdc_v0_3_rfdc_v0_3_adc0_sync;
+  rfdc_one_adc_4096gsps_rfdc_v0_3_adc0_dout_net <= rfdc_one_adc_4096gsps_rfdc_v0_3_adc0_dout;
+  rfdc_one_adc_4096gsps_rfdc_v0_3_adc0_sync_net <= rfdc_one_adc_4096gsps_rfdc_v0_3_adc0_sync;
 end structural;
 -- Generated from Simulink block rfdc_one_adc_4096gsps/snapshot0_01/buscreate
 library IEEE;
@@ -302,12 +302,12 @@ entity rfdc_one_adc_4096gsps_edge_detect_x4 is
   );
 end rfdc_one_adc_4096gsps_edge_detect_x4;
 architecture structural of rfdc_one_adc_4096gsps_edge_detect_x4 is 
-  signal ce_net : std_logic;
-  signal delay_q_net : std_logic_vector( 1-1 downto 0 );
+  signal inverter_op_net : std_logic_vector( 1-1 downto 0 );
   signal edge_op_y_net : std_logic_vector( 1-1 downto 0 );
   signal slice3_y_net : std_logic_vector( 1-1 downto 0 );
   signal clk_net : std_logic;
-  signal inverter_op_net : std_logic_vector( 1-1 downto 0 );
+  signal ce_net : std_logic;
+  signal delay_q_net : std_logic_vector( 1-1 downto 0 );
 begin
   out_x0 <= edge_op_y_net;
   slice3_y_net <= in_x0;
@@ -367,6 +367,19 @@ entity rfdc_one_adc_4096gsps_add_gen_x1 is
   );
 end rfdc_one_adc_4096gsps_add_gen_x1;
 architecture structural of rfdc_one_adc_4096gsps_add_gen_x1 is 
+  signal logical6_y_net : std_logic_vector( 1-1 downto 0 );
+  signal concat_y_net : std_logic_vector( 32-1 downto 0 );
+  signal data_choice_y_net : std_logic_vector( 32-1 downto 0 );
+  signal we_choice_y_net : std_logic_vector( 1-1 downto 0 );
+  signal slice2_y_net : std_logic_vector( 10-1 downto 0 );
+  signal delay6_q_net : std_logic_vector( 32-1 downto 0 );
+  signal register6_q_net : std_logic_vector( 1-1 downto 0 );
+  signal never_op_net : std_logic_vector( 1-1 downto 0 );
+  signal edge_op_y_net : std_logic_vector( 1-1 downto 0 );
+  signal clk_net : std_logic;
+  signal ce_net : std_logic;
+  signal edge_op_y_net_x0 : std_logic_vector( 1-1 downto 0 );
+  signal slice3_y_net : std_logic_vector( 1-1 downto 0 );
   signal shift_op_net : std_logic_vector( 19-1 downto 0 );
   signal inverter_op_net : std_logic_vector( 1-1 downto 0 );
   signal delay1_q_net : std_logic_vector( 12-1 downto 0 );
@@ -380,19 +393,6 @@ architecture structural of rfdc_one_adc_4096gsps_add_gen_x1 is
   signal logical1_y_net : std_logic_vector( 1-1 downto 0 );
   signal logical4_y_net : std_logic_vector( 1-1 downto 0 );
   signal add_gen_op_net : std_logic_vector( 13-1 downto 0 );
-  signal slice2_y_net : std_logic_vector( 10-1 downto 0 );
-  signal delay6_q_net : std_logic_vector( 32-1 downto 0 );
-  signal register6_q_net : std_logic_vector( 1-1 downto 0 );
-  signal never_op_net : std_logic_vector( 1-1 downto 0 );
-  signal edge_op_y_net : std_logic_vector( 1-1 downto 0 );
-  signal clk_net : std_logic;
-  signal ce_net : std_logic;
-  signal edge_op_y_net_x0 : std_logic_vector( 1-1 downto 0 );
-  signal slice3_y_net : std_logic_vector( 1-1 downto 0 );
-  signal logical6_y_net : std_logic_vector( 1-1 downto 0 );
-  signal concat_y_net : std_logic_vector( 32-1 downto 0 );
-  signal data_choice_y_net : std_logic_vector( 32-1 downto 0 );
-  signal we_choice_y_net : std_logic_vector( 1-1 downto 0 );
 begin
   add <= slice2_y_net;
   dout <= delay6_q_net;
@@ -620,6 +620,8 @@ entity rfdc_one_adc_4096gsps_dram_munge_x1 is
   );
 end rfdc_one_adc_4096gsps_dram_munge_x1;
 architecture structural of rfdc_one_adc_4096gsps_dram_munge_x1 is 
+  signal register2_q_net : std_logic_vector( 32-1 downto 0 );
+  signal register3_q_net : std_logic_vector( 32-1 downto 0 );
   signal data_choice_y_net : std_logic_vector( 32-1 downto 0 );
   signal we_choice_y_net : std_logic_vector( 1-1 downto 0 );
   signal cast_dout_net : std_logic_vector( 32-1 downto 0 );
@@ -636,6 +638,10 @@ architecture structural of rfdc_one_adc_4096gsps_dram_munge_x1 is
   signal logical_y_net : std_logic_vector( 1-1 downto 0 );
   signal delay1_q_net : std_logic_vector( 1-1 downto 0 );
   signal logical1_y_net : std_logic_vector( 1-1 downto 0 );
+  signal relational3_op_net : std_logic_vector( 1-1 downto 0 );
+  signal mux1_y_net : std_logic_vector( 80-1 downto 0 );
+  signal dout_count_op_net : std_logic_vector( 1-1 downto 0 );
+  signal relational_op_net : std_logic_vector( 1-1 downto 0 );
   signal relational1_op_net : std_logic_vector( 1-1 downto 0 );
   signal relational2_op_net : std_logic_vector( 1-1 downto 0 );
   signal input_count_op_net : std_logic_vector( 2-1 downto 0 );
@@ -643,13 +649,7 @@ architecture structural of rfdc_one_adc_4096gsps_dram_munge_x1 is
   signal con1_op_net : std_logic_vector( 2-1 downto 0 );
   signal con2_op_net : std_logic_vector( 2-1 downto 0 );
   signal con3_op_net : std_logic_vector( 2-1 downto 0 );
-  signal register2_q_net : std_logic_vector( 32-1 downto 0 );
-  signal register3_q_net : std_logic_vector( 32-1 downto 0 );
   signal dram_op_net : std_logic_vector( 1-1 downto 0 );
-  signal relational3_op_net : std_logic_vector( 1-1 downto 0 );
-  signal mux1_y_net : std_logic_vector( 80-1 downto 0 );
-  signal dout_count_op_net : std_logic_vector( 1-1 downto 0 );
-  signal relational_op_net : std_logic_vector( 1-1 downto 0 );
 begin
   dout <= data_choice_y_net;
   we_o <= we_choice_y_net;
@@ -926,12 +926,12 @@ entity rfdc_one_adc_4096gsps_edge_detect_x3 is
   );
 end rfdc_one_adc_4096gsps_edge_detect_x3;
 architecture structural of rfdc_one_adc_4096gsps_edge_detect_x3 is 
-  signal delay_q_net : std_logic_vector( 1-1 downto 0 );
-  signal inverter_op_net : std_logic_vector( 1-1 downto 0 );
   signal edge_op_y_net : std_logic_vector( 1-1 downto 0 );
   signal delay1_q_net : std_logic_vector( 1-1 downto 0 );
   signal clk_net : std_logic;
   signal ce_net : std_logic;
+  signal delay_q_net : std_logic_vector( 1-1 downto 0 );
+  signal inverter_op_net : std_logic_vector( 1-1 downto 0 );
 begin
   out_x0 <= edge_op_y_net;
   delay1_q_net <= in_x0;
@@ -991,12 +991,15 @@ entity rfdc_one_adc_4096gsps_basic_ctrl_x1 is
   );
 end rfdc_one_adc_4096gsps_basic_ctrl_x1;
 architecture structural of rfdc_one_adc_4096gsps_basic_ctrl_x1 is 
+  signal delay3_q_net : std_logic_vector( 1-1 downto 0 );
+  signal valid_src_y_net : std_logic_vector( 1-1 downto 0 );
+  signal inverter_op_net : std_logic_vector( 1-1 downto 0 );
   signal data_choice_y_net : std_logic_vector( 32-1 downto 0 );
   signal we_choice_y_net : std_logic_vector( 1-1 downto 0 );
   signal register6_q_net : std_logic_vector( 1-1 downto 0 );
   signal edge_op_y_net_x0 : std_logic_vector( 1-1 downto 0 );
   signal cast_dout_net : std_logic_vector( 32-1 downto 0 );
-  signal rfdc_v0_3_rfdc_v0_3_adc0_sync_net : std_logic_vector( 1-1 downto 0 );
+  signal rfdc_one_adc_4096gsps_rfdc_v0_3_adc0_sync_net : std_logic_vector( 1-1 downto 0 );
   signal edge_op_y_net : std_logic_vector( 1-1 downto 0 );
   signal concatenate_y_net : std_logic_vector( 32-1 downto 0 );
   signal never_op_net : std_logic_vector( 1-1 downto 0 );
@@ -1012,9 +1015,6 @@ architecture structural of rfdc_one_adc_4096gsps_basic_ctrl_x1 is
   signal trig_src_y_net : std_logic_vector( 1-1 downto 0 );
   signal logical_y_net : std_logic_vector( 1-1 downto 0 );
   signal mux2_y_net : std_logic_vector( 1-1 downto 0 );
-  signal delay3_q_net : std_logic_vector( 1-1 downto 0 );
-  signal valid_src_y_net : std_logic_vector( 1-1 downto 0 );
-  signal inverter_op_net : std_logic_vector( 1-1 downto 0 );
   signal register1_q_net : std_logic_vector( 1-1 downto 0 );
 begin
   dout <= data_choice_y_net;
@@ -1022,7 +1022,7 @@ begin
   go <= register6_q_net;
   init <= edge_op_y_net_x0;
   cast_dout_net <= din;
-  rfdc_v0_3_rfdc_v0_3_adc0_sync_net <= we;
+  rfdc_one_adc_4096gsps_rfdc_v0_3_adc0_sync_net <= we;
   edge_op_y_net <= trig;
   concatenate_y_net <= ctrl;
   never_op_net <= stopi;
@@ -1134,7 +1134,7 @@ begin
     ce => '0',
     clr => '0',
     sel => delay3_q_net,
-    d0 => rfdc_v0_3_rfdc_v0_3_adc0_sync_net,
+    d0 => rfdc_one_adc_4096gsps_rfdc_v0_3_adc0_sync_net,
     d1 => constant2_op_net,
     y => mux1_y_net
   );
@@ -1213,15 +1213,16 @@ library IEEE;
 use IEEE.std_logic_1164.all;
 library xil_defaultlib;
 use xil_defaultlib.conv_pkg.all;
-entity rfdc_one_adc_4096gsps_calc_add_x2 is
+entity rfdc_one_adc_4096gsps_calc_add_x1 is
   port (
     in_x0 : in std_logic_vector( 10-1 downto 0 );
     clk_1 : in std_logic;
     ce_1 : in std_logic;
     out_x0 : out std_logic_vector( 10-1 downto 0 )
   );
-end rfdc_one_adc_4096gsps_calc_add_x2;
-architecture structural of rfdc_one_adc_4096gsps_calc_add_x2 is 
+end rfdc_one_adc_4096gsps_calc_add_x1;
+architecture structural of rfdc_one_adc_4096gsps_calc_add_x1 is 
+  signal convert_addr_dout_net : std_logic_vector( 10-1 downto 0 );
   signal mux_y_net : std_logic_vector( 10-1 downto 0 );
   signal add_del_q_net : std_logic_vector( 10-1 downto 0 );
   signal clk_net : std_logic;
@@ -1231,7 +1232,6 @@ architecture structural of rfdc_one_adc_4096gsps_calc_add_x2 is
   signal lsw_y_net : std_logic_vector( 1-1 downto 0 );
   signal concat_y_net : std_logic_vector( 10-1 downto 0 );
   signal msw_y_net : std_logic_vector( 9-1 downto 0 );
-  signal convert_addr_dout_net : std_logic_vector( 10-1 downto 0 );
   signal manipulate_op_net : std_logic_vector( 1-1 downto 0 );
 begin
   out_x0 <= mux_y_net;
@@ -1336,8 +1336,8 @@ entity rfdc_one_adc_4096gsps_munge_in_x2 is
   );
 end rfdc_one_adc_4096gsps_munge_in_x2;
 architecture structural of rfdc_one_adc_4096gsps_munge_in_x2 is 
-  signal dat_del_q_net : std_logic_vector( 32-1 downto 0 );
   signal reinterpret_out_output_port_net : std_logic_vector( 32-1 downto 0 );
+  signal dat_del_q_net : std_logic_vector( 32-1 downto 0 );
 begin
   dout <= reinterpret_out_output_port_net;
   dat_del_q_net <= din;
@@ -1387,7 +1387,7 @@ begin
   rfdc_one_adc_4096gsps_snapshot0_01_ss_bram_we <= convert_we_dout_net;
   clk_net <= clk_1;
   ce_net <= ce_1;
-  calc_add : entity xil_defaultlib.rfdc_one_adc_4096gsps_calc_add_x2 
+  calc_add : entity xil_defaultlib.rfdc_one_adc_4096gsps_calc_add_x1 
   port map (
     in_x0 => add_del_q_net,
     clk_1 => clk_net,
@@ -1687,13 +1687,13 @@ entity rfdc_one_adc_4096gsps_status_x2 is
   );
 end rfdc_one_adc_4096gsps_status_x2;
 architecture structural of rfdc_one_adc_4096gsps_status_x2 is 
-  signal assert_reg_dout_net : std_logic_vector( 32-1 downto 0 );
   signal concat_y_net : std_logic_vector( 32-1 downto 0 );
   signal cast_gw_dout_net : std_logic_vector( 32-1 downto 0 );
   signal clk_net : std_logic;
   signal ce_net : std_logic;
   signal io_delay_q_net : std_logic_vector( 32-1 downto 0 );
   signal reint1_output_port_net : std_logic_vector( 32-1 downto 0 );
+  signal assert_reg_dout_net : std_logic_vector( 32-1 downto 0 );
 begin
   concat_y_net <= out_reg;
   rfdc_one_adc_4096gsps_snapshot0_01_ss_status_user_data_in <= cast_gw_dout_net;
@@ -1771,7 +1771,7 @@ end rfdc_one_adc_4096gsps_ss_x1;
 architecture structural of rfdc_one_adc_4096gsps_ss_x1 is 
   signal arm_or_y_net : std_logic_vector( 1-1 downto 0 );
   signal concatenate_y_net : std_logic_vector( 32-1 downto 0 );
-  signal rfdc_v0_3_rfdc_v0_3_adc0_sync_net : std_logic_vector( 1-1 downto 0 );
+  signal rfdc_one_adc_4096gsps_rfdc_v0_3_adc0_sync_net : std_logic_vector( 1-1 downto 0 );
   signal edge_op_y_net_x0 : std_logic_vector( 1-1 downto 0 );
   signal we_choice_y_net : std_logic_vector( 1-1 downto 0 );
   signal logical6_y_net : std_logic_vector( 1-1 downto 0 );
@@ -1806,7 +1806,7 @@ architecture structural of rfdc_one_adc_4096gsps_ss_x1 is
 begin
   arm_out <= arm_or_y_net;
   concatenate_y_net <= din;
-  rfdc_v0_3_rfdc_v0_3_adc0_sync_net <= we;
+  rfdc_one_adc_4096gsps_rfdc_v0_3_adc0_sync_net <= we;
   edge_op_y_net_x0 <= trig;
   goto_74507654_we1 <= we_choice_y_net;
   goto_74507654_we4 <= logical6_y_net;
@@ -1834,7 +1834,7 @@ begin
   basic_ctrl : entity xil_defaultlib.rfdc_one_adc_4096gsps_basic_ctrl_x1 
   port map (
     din => cast_dout_net,
-    we => rfdc_v0_3_rfdc_v0_3_adc0_sync_net,
+    we => rfdc_one_adc_4096gsps_rfdc_v0_3_adc0_sync_net,
     trig => edge_op_y_net_x0,
     ctrl => concatenate_y_net_x0,
     stopi => never_op_net,
@@ -2001,7 +2001,10 @@ entity rfdc_one_adc_4096gsps_snapshot0_01 is
   );
 end rfdc_one_adc_4096gsps_snapshot0_01;
 architecture structural of rfdc_one_adc_4096gsps_snapshot0_01 is 
-  signal rfdc_v0_3_rfdc_v0_3_adc0_sync_net : std_logic_vector( 1-1 downto 0 );
+  signal arm_or_y_net : std_logic_vector( 1-1 downto 0 );
+  signal slice_y_net : std_logic_vector( 16-1 downto 0 );
+  signal slice7_y_net : std_logic_vector( 16-1 downto 0 );
+  signal rfdc_one_adc_4096gsps_rfdc_v0_3_adc0_sync_net : std_logic_vector( 1-1 downto 0 );
   signal edge_op_y_net : std_logic_vector( 1-1 downto 0 );
   signal convert_addr_dout_net : std_logic_vector( 10-1 downto 0 );
   signal convert_din1_dout_net : std_logic_vector( 32-1 downto 0 );
@@ -2015,14 +2018,11 @@ architecture structural of rfdc_one_adc_4096gsps_snapshot0_01 is
   signal concatenate_y_net : std_logic_vector( 32-1 downto 0 );
   signal assert_d0_dout_net : std_logic_vector( 16-1 downto 0 );
   signal assert_d1_dout_net : std_logic_vector( 16-1 downto 0 );
-  signal arm_or_y_net : std_logic_vector( 1-1 downto 0 );
-  signal slice_y_net : std_logic_vector( 16-1 downto 0 );
-  signal slice7_y_net : std_logic_vector( 16-1 downto 0 );
 begin
   arm_out <= arm_or_y_net;
   slice_y_net <= in_d0;
   slice7_y_net <= in_d1;
-  rfdc_v0_3_rfdc_v0_3_adc0_sync_net <= we;
+  rfdc_one_adc_4096gsps_rfdc_v0_3_adc0_sync_net <= we;
   edge_op_y_net <= trig;
   rfdc_one_adc_4096gsps_snapshot0_01_ss_bram_addr <= convert_addr_dout_net;
   rfdc_one_adc_4096gsps_snapshot0_01_ss_bram_data_in <= convert_din1_dout_net;
@@ -2042,7 +2042,7 @@ begin
   ss : entity xil_defaultlib.rfdc_one_adc_4096gsps_ss_x1 
   port map (
     din => concatenate_y_net,
-    we => rfdc_v0_3_rfdc_v0_3_adc0_sync_net,
+    we => rfdc_one_adc_4096gsps_rfdc_v0_3_adc0_sync_net,
     trig => edge_op_y_net,
     rfdc_one_adc_4096gsps_snapshot0_01_ss_ctrl_user_data_out => rfdc_one_adc_4096gsps_snapshot0_01_ss_ctrl_user_data_out_net,
     clk_1 => clk_net,
@@ -2136,12 +2136,12 @@ entity rfdc_one_adc_4096gsps_edge_detect_x7 is
   );
 end rfdc_one_adc_4096gsps_edge_detect_x7;
 architecture structural of rfdc_one_adc_4096gsps_edge_detect_x7 is 
-  signal delay_q_net : std_logic_vector( 1-1 downto 0 );
-  signal inverter_op_net : std_logic_vector( 1-1 downto 0 );
   signal edge_op_y_net : std_logic_vector( 1-1 downto 0 );
   signal slice3_y_net : std_logic_vector( 1-1 downto 0 );
   signal clk_net : std_logic;
   signal ce_net : std_logic;
+  signal delay_q_net : std_logic_vector( 1-1 downto 0 );
+  signal inverter_op_net : std_logic_vector( 1-1 downto 0 );
 begin
   out_x0 <= edge_op_y_net;
   slice3_y_net <= in_x0;
@@ -2201,6 +2201,8 @@ entity rfdc_one_adc_4096gsps_add_gen_x2 is
   );
 end rfdc_one_adc_4096gsps_add_gen_x2;
 architecture structural of rfdc_one_adc_4096gsps_add_gen_x2 is 
+  signal inverter1_op_net : std_logic_vector( 1-1 downto 0 );
+  signal logical1_y_net : std_logic_vector( 1-1 downto 0 );
   signal slice2_y_net : std_logic_vector( 10-1 downto 0 );
   signal delay6_q_net : std_logic_vector( 32-1 downto 0 );
   signal logical6_y_net : std_logic_vector( 1-1 downto 0 );
@@ -2219,13 +2221,11 @@ architecture structural of rfdc_one_adc_4096gsps_add_gen_x2 is
   signal delay1_q_net : std_logic_vector( 12-1 downto 0 );
   signal convert_dout_net : std_logic_vector( 19-1 downto 0 );
   signal register5_q_net : std_logic_vector( 1-1 downto 0 );
-  signal logical1_y_net : std_logic_vector( 1-1 downto 0 );
-  signal logical4_y_net : std_logic_vector( 1-1 downto 0 );
-  signal inverter1_op_net : std_logic_vector( 1-1 downto 0 );
   signal delay_q_net : std_logic_vector( 1-1 downto 0 );
   signal delay4_q_net : std_logic_vector( 1-1 downto 0 );
   signal slice1_y_net : std_logic_vector( 12-1 downto 0 );
   signal delay3_q_net : std_logic_vector( 1-1 downto 0 );
+  signal logical4_y_net : std_logic_vector( 1-1 downto 0 );
   signal add_gen_op_net : std_logic_vector( 13-1 downto 0 );
 begin
   add <= slice2_y_net;
@@ -2454,10 +2454,19 @@ entity rfdc_one_adc_4096gsps_dram_munge_x2 is
   );
 end rfdc_one_adc_4096gsps_dram_munge_x2;
 architecture structural of rfdc_one_adc_4096gsps_dram_munge_x2 is 
-  signal mux1_y_net : std_logic_vector( 80-1 downto 0 );
-  signal con2_op_net : std_logic_vector( 2-1 downto 0 );
-  signal con3_op_net : std_logic_vector( 2-1 downto 0 );
-  signal dram_op_net : std_logic_vector( 1-1 downto 0 );
+  signal dout_count_op_net : std_logic_vector( 1-1 downto 0 );
+  signal relational_op_net : std_logic_vector( 1-1 downto 0 );
+  signal relational1_op_net : std_logic_vector( 1-1 downto 0 );
+  signal relational2_op_net : std_logic_vector( 1-1 downto 0 );
+  signal input_count_op_net : std_logic_vector( 2-1 downto 0 );
+  signal con0_op_net : std_logic_vector( 2-1 downto 0 );
+  signal con1_op_net : std_logic_vector( 2-1 downto 0 );
+  signal data_choice_y_net : std_logic_vector( 32-1 downto 0 );
+  signal we_choice_y_net : std_logic_vector( 1-1 downto 0 );
+  signal cast_dout_net : std_logic_vector( 32-1 downto 0 );
+  signal mux1_y_net_x0 : std_logic_vector( 1-1 downto 0 );
+  signal edge_op_y_net : std_logic_vector( 1-1 downto 0 );
+  signal clk_net : std_logic;
   signal ce_net : std_logic;
   signal concat_y_net : std_logic_vector( 80-1 downto 0 );
   signal constant_op_net : std_logic_vector( 8-1 downto 0 );
@@ -2471,19 +2480,10 @@ architecture structural of rfdc_one_adc_4096gsps_dram_munge_x2 is
   signal delay1_q_net : std_logic_vector( 1-1 downto 0 );
   signal logical1_y_net : std_logic_vector( 1-1 downto 0 );
   signal relational3_op_net : std_logic_vector( 1-1 downto 0 );
-  signal relational_op_net : std_logic_vector( 1-1 downto 0 );
-  signal relational1_op_net : std_logic_vector( 1-1 downto 0 );
-  signal relational2_op_net : std_logic_vector( 1-1 downto 0 );
-  signal input_count_op_net : std_logic_vector( 2-1 downto 0 );
-  signal con0_op_net : std_logic_vector( 2-1 downto 0 );
-  signal con1_op_net : std_logic_vector( 2-1 downto 0 );
-  signal dout_count_op_net : std_logic_vector( 1-1 downto 0 );
-  signal data_choice_y_net : std_logic_vector( 32-1 downto 0 );
-  signal we_choice_y_net : std_logic_vector( 1-1 downto 0 );
-  signal cast_dout_net : std_logic_vector( 32-1 downto 0 );
-  signal mux1_y_net_x0 : std_logic_vector( 1-1 downto 0 );
-  signal edge_op_y_net : std_logic_vector( 1-1 downto 0 );
-  signal clk_net : std_logic;
+  signal mux1_y_net : std_logic_vector( 80-1 downto 0 );
+  signal con2_op_net : std_logic_vector( 2-1 downto 0 );
+  signal con3_op_net : std_logic_vector( 2-1 downto 0 );
+  signal dram_op_net : std_logic_vector( 1-1 downto 0 );
 begin
   dout <= data_choice_y_net;
   we_o <= we_choice_y_net;
@@ -2830,7 +2830,7 @@ architecture structural of rfdc_one_adc_4096gsps_basic_ctrl_x2 is
   signal register6_q_net : std_logic_vector( 1-1 downto 0 );
   signal edge_op_y_net_x0 : std_logic_vector( 1-1 downto 0 );
   signal cast_dout_net : std_logic_vector( 32-1 downto 0 );
-  signal rfdc_v0_3_rfdc_v0_3_adc0_sync_net : std_logic_vector( 1-1 downto 0 );
+  signal rfdc_one_adc_4096gsps_rfdc_v0_3_adc0_sync_net : std_logic_vector( 1-1 downto 0 );
   signal edge_op_y_net : std_logic_vector( 1-1 downto 0 );
   signal concatenate_y_net : std_logic_vector( 32-1 downto 0 );
   signal never_op_net : std_logic_vector( 1-1 downto 0 );
@@ -2856,7 +2856,7 @@ begin
   go <= register6_q_net;
   init <= edge_op_y_net_x0;
   cast_dout_net <= din;
-  rfdc_v0_3_rfdc_v0_3_adc0_sync_net <= we;
+  rfdc_one_adc_4096gsps_rfdc_v0_3_adc0_sync_net <= we;
   edge_op_y_net <= trig;
   concatenate_y_net <= ctrl;
   never_op_net <= stopi;
@@ -2968,7 +2968,7 @@ begin
     ce => '0',
     clr => '0',
     sel => delay3_q_net,
-    d0 => rfdc_v0_3_rfdc_v0_3_adc0_sync_net,
+    d0 => rfdc_one_adc_4096gsps_rfdc_v0_3_adc0_sync_net,
     d1 => constant2_op_net,
     y => mux1_y_net
   );
@@ -3047,15 +3047,15 @@ library IEEE;
 use IEEE.std_logic_1164.all;
 library xil_defaultlib;
 use xil_defaultlib.conv_pkg.all;
-entity rfdc_one_adc_4096gsps_calc_add_x1 is
+entity rfdc_one_adc_4096gsps_calc_add_x2 is
   port (
     in_x0 : in std_logic_vector( 10-1 downto 0 );
     clk_1 : in std_logic;
     ce_1 : in std_logic;
     out_x0 : out std_logic_vector( 10-1 downto 0 )
   );
-end rfdc_one_adc_4096gsps_calc_add_x1;
-architecture structural of rfdc_one_adc_4096gsps_calc_add_x1 is 
+end rfdc_one_adc_4096gsps_calc_add_x2;
+architecture structural of rfdc_one_adc_4096gsps_calc_add_x2 is 
   signal mux_y_net : std_logic_vector( 10-1 downto 0 );
   signal add_del_q_net : std_logic_vector( 10-1 downto 0 );
   signal clk_net : std_logic;
@@ -3221,7 +3221,7 @@ begin
   rfdc_one_adc_4096gsps_snapshot0_23_ss_bram_we <= convert_we_dout_net;
   clk_net <= clk_1;
   ce_net <= ce_1;
-  calc_add : entity xil_defaultlib.rfdc_one_adc_4096gsps_calc_add_x1 
+  calc_add : entity xil_defaultlib.rfdc_one_adc_4096gsps_calc_add_x2 
   port map (
     in_x0 => add_del_q_net,
     clk_1 => clk_net,
@@ -3302,13 +3302,13 @@ library IEEE;
 use IEEE.std_logic_1164.all;
 library xil_defaultlib;
 use xil_defaultlib.conv_pkg.all;
-entity rfdc_one_adc_4096gsps_ctrl_x0 is
+entity rfdc_one_adc_4096gsps_ctrl is
   port (
     rfdc_one_adc_4096gsps_snapshot0_23_ss_ctrl_user_data_out : in std_logic_vector( 32-1 downto 0 );
     in_reg : out std_logic_vector( 32-1 downto 0 )
   );
-end rfdc_one_adc_4096gsps_ctrl_x0;
-architecture structural of rfdc_one_adc_4096gsps_ctrl_x0 is 
+end rfdc_one_adc_4096gsps_ctrl;
+architecture structural of rfdc_one_adc_4096gsps_ctrl is 
   signal reint1_output_port_net : std_logic_vector( 32-1 downto 0 );
   signal rfdc_one_adc_4096gsps_snapshot0_23_ss_ctrl_user_data_out_net : std_logic_vector( 32-1 downto 0 );
   signal io_delay_q_net : std_logic_vector( 32-1 downto 0 );
@@ -3349,7 +3349,7 @@ library IEEE;
 use IEEE.std_logic_1164.all;
 library xil_defaultlib;
 use xil_defaultlib.conv_pkg.all;
-entity rfdc_one_adc_4096gsps_ctrl_combine is
+entity rfdc_one_adc_4096gsps_ctrl_combine_x0 is
   port (
     in1 : in std_logic_vector( 28-1 downto 0 );
     in2 : in std_logic_vector( 1-1 downto 0 );
@@ -3357,8 +3357,8 @@ entity rfdc_one_adc_4096gsps_ctrl_combine is
     in4 : in std_logic_vector( 1-1 downto 0 );
     bus_out : out std_logic_vector( 32-1 downto 0 )
   );
-end rfdc_one_adc_4096gsps_ctrl_combine;
-architecture structural of rfdc_one_adc_4096gsps_ctrl_combine is 
+end rfdc_one_adc_4096gsps_ctrl_combine_x0;
+architecture structural of rfdc_one_adc_4096gsps_ctrl_combine_x0 is 
   signal concatenate_y_net : std_logic_vector( 32-1 downto 0 );
   signal reinterpret4_output_port_net_x0 : std_logic_vector( 28-1 downto 0 );
   signal circ_or_y_net : std_logic_vector( 1-1 downto 0 );
@@ -3605,7 +3605,7 @@ end rfdc_one_adc_4096gsps_ss_x2;
 architecture structural of rfdc_one_adc_4096gsps_ss_x2 is 
   signal arm_or_y_net : std_logic_vector( 1-1 downto 0 );
   signal concatenate_y_net : std_logic_vector( 32-1 downto 0 );
-  signal rfdc_v0_3_rfdc_v0_3_adc0_sync_net : std_logic_vector( 1-1 downto 0 );
+  signal rfdc_one_adc_4096gsps_rfdc_v0_3_adc0_sync_net : std_logic_vector( 1-1 downto 0 );
   signal edge_op_y_net_x0 : std_logic_vector( 1-1 downto 0 );
   signal we_choice_y_net : std_logic_vector( 1-1 downto 0 );
   signal logical6_y_net : std_logic_vector( 1-1 downto 0 );
@@ -3640,7 +3640,7 @@ architecture structural of rfdc_one_adc_4096gsps_ss_x2 is
 begin
   arm_out <= arm_or_y_net;
   concatenate_y_net <= din;
-  rfdc_v0_3_rfdc_v0_3_adc0_sync_net <= we;
+  rfdc_one_adc_4096gsps_rfdc_v0_3_adc0_sync_net <= we;
   edge_op_y_net_x0 <= trig;
   goto_76414278_we1 <= we_choice_y_net;
   goto_76414278_we4 <= logical6_y_net;
@@ -3668,7 +3668,7 @@ begin
   basic_ctrl : entity xil_defaultlib.rfdc_one_adc_4096gsps_basic_ctrl_x2 
   port map (
     din => cast_dout_net,
-    we => rfdc_v0_3_rfdc_v0_3_adc0_sync_net,
+    we => rfdc_one_adc_4096gsps_rfdc_v0_3_adc0_sync_net,
     trig => edge_op_y_net_x0,
     ctrl => concatenate_y_net_x0,
     stopi => never_op_net,
@@ -3690,12 +3690,12 @@ begin
     rfdc_one_adc_4096gsps_snapshot0_23_ss_bram_data_in => convert_din1_dout_net,
     rfdc_one_adc_4096gsps_snapshot0_23_ss_bram_we => convert_we_dout_net
   );
-  ctrl : entity xil_defaultlib.rfdc_one_adc_4096gsps_ctrl_x0 
+  ctrl : entity xil_defaultlib.rfdc_one_adc_4096gsps_ctrl 
   port map (
     rfdc_one_adc_4096gsps_snapshot0_23_ss_ctrl_user_data_out => rfdc_one_adc_4096gsps_snapshot0_23_ss_ctrl_user_data_out_net,
     in_reg => reint1_output_port_net
   );
-  ctrl_combine : entity xil_defaultlib.rfdc_one_adc_4096gsps_ctrl_combine 
+  ctrl_combine : entity xil_defaultlib.rfdc_one_adc_4096gsps_ctrl_combine_x0 
   port map (
     in1 => reinterpret4_output_port_net,
     in2 => circ_or_y_net,
@@ -3838,7 +3838,7 @@ architecture structural of rfdc_one_adc_4096gsps_snapshot0_23 is
   signal arm_or_y_net : std_logic_vector( 1-1 downto 0 );
   signal slice1_y_net : std_logic_vector( 16-1 downto 0 );
   signal slice6_y_net : std_logic_vector( 16-1 downto 0 );
-  signal rfdc_v0_3_rfdc_v0_3_adc0_sync_net : std_logic_vector( 1-1 downto 0 );
+  signal rfdc_one_adc_4096gsps_rfdc_v0_3_adc0_sync_net : std_logic_vector( 1-1 downto 0 );
   signal edge_op_y_net : std_logic_vector( 1-1 downto 0 );
   signal convert_addr_dout_net : std_logic_vector( 10-1 downto 0 );
   signal convert_din1_dout_net : std_logic_vector( 32-1 downto 0 );
@@ -3856,7 +3856,7 @@ begin
   arm_out <= arm_or_y_net;
   slice1_y_net <= in_d0;
   slice6_y_net <= in_d1;
-  rfdc_v0_3_rfdc_v0_3_adc0_sync_net <= we;
+  rfdc_one_adc_4096gsps_rfdc_v0_3_adc0_sync_net <= we;
   edge_op_y_net <= trig;
   rfdc_one_adc_4096gsps_snapshot0_23_ss_bram_addr <= convert_addr_dout_net;
   rfdc_one_adc_4096gsps_snapshot0_23_ss_bram_data_in <= convert_din1_dout_net;
@@ -3876,7 +3876,7 @@ begin
   ss : entity xil_defaultlib.rfdc_one_adc_4096gsps_ss_x2 
   port map (
     din => concatenate_y_net,
-    we => rfdc_v0_3_rfdc_v0_3_adc0_sync_net,
+    we => rfdc_one_adc_4096gsps_rfdc_v0_3_adc0_sync_net,
     trig => edge_op_y_net,
     rfdc_one_adc_4096gsps_snapshot0_23_ss_ctrl_user_data_out => rfdc_one_adc_4096gsps_snapshot0_23_ss_ctrl_user_data_out_net,
     clk_1 => clk_net,
@@ -4035,15 +4035,6 @@ entity rfdc_one_adc_4096gsps_add_gen is
   );
 end rfdc_one_adc_4096gsps_add_gen;
 architecture structural of rfdc_one_adc_4096gsps_add_gen is 
-  signal convert_dout_net : std_logic_vector( 19-1 downto 0 );
-  signal register5_q_net : std_logic_vector( 1-1 downto 0 );
-  signal delay_q_net : std_logic_vector( 1-1 downto 0 );
-  signal delay4_q_net : std_logic_vector( 1-1 downto 0 );
-  signal slice1_y_net : std_logic_vector( 12-1 downto 0 );
-  signal delay3_q_net : std_logic_vector( 1-1 downto 0 );
-  signal inverter1_op_net : std_logic_vector( 1-1 downto 0 );
-  signal logical1_y_net : std_logic_vector( 1-1 downto 0 );
-  signal logical4_y_net : std_logic_vector( 1-1 downto 0 );
   signal slice2_y_net : std_logic_vector( 10-1 downto 0 );
   signal delay6_q_net : std_logic_vector( 32-1 downto 0 );
   signal logical6_y_net : std_logic_vector( 1-1 downto 0 );
@@ -4060,6 +4051,15 @@ architecture structural of rfdc_one_adc_4096gsps_add_gen is
   signal shift_op_net : std_logic_vector( 19-1 downto 0 );
   signal inverter_op_net : std_logic_vector( 1-1 downto 0 );
   signal delay1_q_net : std_logic_vector( 12-1 downto 0 );
+  signal convert_dout_net : std_logic_vector( 19-1 downto 0 );
+  signal register5_q_net : std_logic_vector( 1-1 downto 0 );
+  signal delay_q_net : std_logic_vector( 1-1 downto 0 );
+  signal delay4_q_net : std_logic_vector( 1-1 downto 0 );
+  signal slice1_y_net : std_logic_vector( 12-1 downto 0 );
+  signal delay3_q_net : std_logic_vector( 1-1 downto 0 );
+  signal inverter1_op_net : std_logic_vector( 1-1 downto 0 );
+  signal logical1_y_net : std_logic_vector( 1-1 downto 0 );
+  signal logical4_y_net : std_logic_vector( 1-1 downto 0 );
   signal add_gen_op_net : std_logic_vector( 13-1 downto 0 );
 begin
   add <= slice2_y_net;
@@ -4289,17 +4289,6 @@ entity rfdc_one_adc_4096gsps_dram_munge is
 end rfdc_one_adc_4096gsps_dram_munge;
 architecture structural of rfdc_one_adc_4096gsps_dram_munge is 
   signal dram_op_net : std_logic_vector( 1-1 downto 0 );
-  signal relational3_op_net : std_logic_vector( 1-1 downto 0 );
-  signal mux1_y_net : std_logic_vector( 80-1 downto 0 );
-  signal dout_count_op_net : std_logic_vector( 1-1 downto 0 );
-  signal relational_op_net : std_logic_vector( 1-1 downto 0 );
-  signal relational1_op_net : std_logic_vector( 1-1 downto 0 );
-  signal relational2_op_net : std_logic_vector( 1-1 downto 0 );
-  signal input_count_op_net : std_logic_vector( 2-1 downto 0 );
-  signal con0_op_net : std_logic_vector( 2-1 downto 0 );
-  signal con1_op_net : std_logic_vector( 2-1 downto 0 );
-  signal con2_op_net : std_logic_vector( 2-1 downto 0 );
-  signal con3_op_net : std_logic_vector( 2-1 downto 0 );
   signal data_choice_y_net : std_logic_vector( 32-1 downto 0 );
   signal we_choice_y_net : std_logic_vector( 1-1 downto 0 );
   signal cast_dout_net : std_logic_vector( 32-1 downto 0 );
@@ -4318,6 +4307,17 @@ architecture structural of rfdc_one_adc_4096gsps_dram_munge is
   signal logical_y_net : std_logic_vector( 1-1 downto 0 );
   signal delay1_q_net : std_logic_vector( 1-1 downto 0 );
   signal logical1_y_net : std_logic_vector( 1-1 downto 0 );
+  signal relational3_op_net : std_logic_vector( 1-1 downto 0 );
+  signal mux1_y_net : std_logic_vector( 80-1 downto 0 );
+  signal dout_count_op_net : std_logic_vector( 1-1 downto 0 );
+  signal relational_op_net : std_logic_vector( 1-1 downto 0 );
+  signal relational1_op_net : std_logic_vector( 1-1 downto 0 );
+  signal relational2_op_net : std_logic_vector( 1-1 downto 0 );
+  signal input_count_op_net : std_logic_vector( 2-1 downto 0 );
+  signal con0_op_net : std_logic_vector( 2-1 downto 0 );
+  signal con1_op_net : std_logic_vector( 2-1 downto 0 );
+  signal con2_op_net : std_logic_vector( 2-1 downto 0 );
+  signal con3_op_net : std_logic_vector( 2-1 downto 0 );
 begin
   dout <= data_choice_y_net;
   we_o <= we_choice_y_net;
@@ -4659,20 +4659,12 @@ entity rfdc_one_adc_4096gsps_basic_ctrl is
   );
 end rfdc_one_adc_4096gsps_basic_ctrl;
 architecture structural of rfdc_one_adc_4096gsps_basic_ctrl is 
-  signal delay2_q_net : std_logic_vector( 1-1 downto 0 );
-  signal trig_src_y_net : std_logic_vector( 1-1 downto 0 );
-  signal delay3_q_net : std_logic_vector( 1-1 downto 0 );
-  signal valid_src_y_net : std_logic_vector( 1-1 downto 0 );
-  signal inverter_op_net : std_logic_vector( 1-1 downto 0 );
-  signal logical_y_net : std_logic_vector( 1-1 downto 0 );
-  signal mux2_y_net : std_logic_vector( 1-1 downto 0 );
-  signal register1_q_net : std_logic_vector( 1-1 downto 0 );
   signal data_choice_y_net : std_logic_vector( 32-1 downto 0 );
   signal we_choice_y_net : std_logic_vector( 1-1 downto 0 );
   signal register6_q_net : std_logic_vector( 1-1 downto 0 );
   signal edge_op_y_net_x0 : std_logic_vector( 1-1 downto 0 );
   signal cast_dout_net : std_logic_vector( 32-1 downto 0 );
-  signal rfdc_v0_3_rfdc_v0_3_adc0_sync_net : std_logic_vector( 1-1 downto 0 );
+  signal rfdc_one_adc_4096gsps_rfdc_v0_3_adc0_sync_net : std_logic_vector( 1-1 downto 0 );
   signal edge_op_y_net : std_logic_vector( 1-1 downto 0 );
   signal concatenate_y_net : std_logic_vector( 32-1 downto 0 );
   signal never_op_net : std_logic_vector( 1-1 downto 0 );
@@ -4684,13 +4676,21 @@ architecture structural of rfdc_one_adc_4096gsps_basic_ctrl is
   signal constant1_op_net : std_logic_vector( 1-1 downto 0 );
   signal constant2_op_net : std_logic_vector( 1-1 downto 0 );
   signal enable_y_net : std_logic_vector( 1-1 downto 0 );
+  signal delay2_q_net : std_logic_vector( 1-1 downto 0 );
+  signal trig_src_y_net : std_logic_vector( 1-1 downto 0 );
+  signal delay3_q_net : std_logic_vector( 1-1 downto 0 );
+  signal valid_src_y_net : std_logic_vector( 1-1 downto 0 );
+  signal inverter_op_net : std_logic_vector( 1-1 downto 0 );
+  signal logical_y_net : std_logic_vector( 1-1 downto 0 );
+  signal mux2_y_net : std_logic_vector( 1-1 downto 0 );
+  signal register1_q_net : std_logic_vector( 1-1 downto 0 );
 begin
   dout <= data_choice_y_net;
   we_o <= we_choice_y_net;
   go <= register6_q_net;
   init <= edge_op_y_net_x0;
   cast_dout_net <= din;
-  rfdc_v0_3_rfdc_v0_3_adc0_sync_net <= we;
+  rfdc_one_adc_4096gsps_rfdc_v0_3_adc0_sync_net <= we;
   edge_op_y_net <= trig;
   concatenate_y_net <= ctrl;
   never_op_net <= stopi;
@@ -4802,7 +4802,7 @@ begin
     ce => '0',
     clr => '0',
     sel => delay3_q_net,
-    d0 => rfdc_v0_3_rfdc_v0_3_adc0_sync_net,
+    d0 => rfdc_one_adc_4096gsps_rfdc_v0_3_adc0_sync_net,
     d1 => constant2_op_net,
     y => mux1_y_net
   );
@@ -5136,13 +5136,13 @@ library IEEE;
 use IEEE.std_logic_1164.all;
 library xil_defaultlib;
 use xil_defaultlib.conv_pkg.all;
-entity rfdc_one_adc_4096gsps_ctrl is
+entity rfdc_one_adc_4096gsps_ctrl_x0 is
   port (
     rfdc_one_adc_4096gsps_snapshot0_45_ss_ctrl_user_data_out : in std_logic_vector( 32-1 downto 0 );
     in_reg : out std_logic_vector( 32-1 downto 0 )
   );
-end rfdc_one_adc_4096gsps_ctrl;
-architecture structural of rfdc_one_adc_4096gsps_ctrl is 
+end rfdc_one_adc_4096gsps_ctrl_x0;
+architecture structural of rfdc_one_adc_4096gsps_ctrl_x0 is 
   signal reint1_output_port_net : std_logic_vector( 32-1 downto 0 );
   signal rfdc_one_adc_4096gsps_snapshot0_45_ss_ctrl_user_data_out_net : std_logic_vector( 32-1 downto 0 );
   signal io_delay_q_net : std_logic_vector( 32-1 downto 0 );
@@ -5183,7 +5183,7 @@ library IEEE;
 use IEEE.std_logic_1164.all;
 library xil_defaultlib;
 use xil_defaultlib.conv_pkg.all;
-entity rfdc_one_adc_4096gsps_ctrl_combine_x1 is
+entity rfdc_one_adc_4096gsps_ctrl_combine is
   port (
     in1 : in std_logic_vector( 28-1 downto 0 );
     in2 : in std_logic_vector( 1-1 downto 0 );
@@ -5191,8 +5191,8 @@ entity rfdc_one_adc_4096gsps_ctrl_combine_x1 is
     in4 : in std_logic_vector( 1-1 downto 0 );
     bus_out : out std_logic_vector( 32-1 downto 0 )
   );
-end rfdc_one_adc_4096gsps_ctrl_combine_x1;
-architecture structural of rfdc_one_adc_4096gsps_ctrl_combine_x1 is 
+end rfdc_one_adc_4096gsps_ctrl_combine;
+architecture structural of rfdc_one_adc_4096gsps_ctrl_combine is 
   signal concatenate_y_net : std_logic_vector( 32-1 downto 0 );
   signal reinterpret4_output_port_net_x0 : std_logic_vector( 28-1 downto 0 );
   signal circ_or_y_net : std_logic_vector( 1-1 downto 0 );
@@ -5437,6 +5437,10 @@ entity rfdc_one_adc_4096gsps_ss is
   );
 end rfdc_one_adc_4096gsps_ss;
 architecture structural of rfdc_one_adc_4096gsps_ss is 
+  signal arm_or_y_net : std_logic_vector( 1-1 downto 0 );
+  signal concatenate_y_net : std_logic_vector( 32-1 downto 0 );
+  signal rfdc_one_adc_4096gsps_rfdc_v0_3_adc0_sync_net : std_logic_vector( 1-1 downto 0 );
+  signal edge_op_y_net_x0 : std_logic_vector( 1-1 downto 0 );
   signal we_choice_y_net : std_logic_vector( 1-1 downto 0 );
   signal logical6_y_net : std_logic_vector( 1-1 downto 0 );
   signal convert_addr_dout_net : std_logic_vector( 10-1 downto 0 );
@@ -5467,14 +5471,10 @@ architecture structural of rfdc_one_adc_4096gsps_ss is
   signal arm_op_net : std_logic_vector( 1-1 downto 0 );
   signal ri_output_port_net : std_logic_vector( 32-1 downto 0 );
   signal circ_op_net : std_logic_vector( 1-1 downto 0 );
-  signal arm_or_y_net : std_logic_vector( 1-1 downto 0 );
-  signal concatenate_y_net : std_logic_vector( 32-1 downto 0 );
-  signal rfdc_v0_3_rfdc_v0_3_adc0_sync_net : std_logic_vector( 1-1 downto 0 );
-  signal edge_op_y_net_x0 : std_logic_vector( 1-1 downto 0 );
 begin
   arm_out <= arm_or_y_net;
   concatenate_y_net <= din;
-  rfdc_v0_3_rfdc_v0_3_adc0_sync_net <= we;
+  rfdc_one_adc_4096gsps_rfdc_v0_3_adc0_sync_net <= we;
   edge_op_y_net_x0 <= trig;
   goto_78320902_we1 <= we_choice_y_net;
   goto_78320902_we4 <= logical6_y_net;
@@ -5502,7 +5502,7 @@ begin
   basic_ctrl : entity xil_defaultlib.rfdc_one_adc_4096gsps_basic_ctrl 
   port map (
     din => cast_dout_net,
-    we => rfdc_v0_3_rfdc_v0_3_adc0_sync_net,
+    we => rfdc_one_adc_4096gsps_rfdc_v0_3_adc0_sync_net,
     trig => edge_op_y_net_x0,
     ctrl => concatenate_y_net_x0,
     stopi => never_op_net,
@@ -5524,12 +5524,12 @@ begin
     rfdc_one_adc_4096gsps_snapshot0_45_ss_bram_data_in => convert_din1_dout_net,
     rfdc_one_adc_4096gsps_snapshot0_45_ss_bram_we => convert_we_dout_net
   );
-  ctrl : entity xil_defaultlib.rfdc_one_adc_4096gsps_ctrl 
+  ctrl : entity xil_defaultlib.rfdc_one_adc_4096gsps_ctrl_x0 
   port map (
     rfdc_one_adc_4096gsps_snapshot0_45_ss_ctrl_user_data_out => rfdc_one_adc_4096gsps_snapshot0_45_ss_ctrl_user_data_out_net,
     in_reg => reint1_output_port_net
   );
-  ctrl_combine : entity xil_defaultlib.rfdc_one_adc_4096gsps_ctrl_combine_x1 
+  ctrl_combine : entity xil_defaultlib.rfdc_one_adc_4096gsps_ctrl_combine 
   port map (
     in1 => reinterpret4_output_port_net,
     in2 => circ_or_y_net,
@@ -5672,7 +5672,7 @@ architecture structural of rfdc_one_adc_4096gsps_snapshot0_45 is
   signal arm_or_y_net : std_logic_vector( 1-1 downto 0 );
   signal slice2_y_net : std_logic_vector( 16-1 downto 0 );
   signal slice5_y_net : std_logic_vector( 16-1 downto 0 );
-  signal rfdc_v0_3_rfdc_v0_3_adc0_sync_net : std_logic_vector( 1-1 downto 0 );
+  signal rfdc_one_adc_4096gsps_rfdc_v0_3_adc0_sync_net : std_logic_vector( 1-1 downto 0 );
   signal edge_op_y_net : std_logic_vector( 1-1 downto 0 );
   signal convert_addr_dout_net : std_logic_vector( 10-1 downto 0 );
   signal convert_din1_dout_net : std_logic_vector( 32-1 downto 0 );
@@ -5690,7 +5690,7 @@ begin
   arm_out <= arm_or_y_net;
   slice2_y_net <= in_d0;
   slice5_y_net <= in_d1;
-  rfdc_v0_3_rfdc_v0_3_adc0_sync_net <= we;
+  rfdc_one_adc_4096gsps_rfdc_v0_3_adc0_sync_net <= we;
   edge_op_y_net <= trig;
   rfdc_one_adc_4096gsps_snapshot0_45_ss_bram_addr <= convert_addr_dout_net;
   rfdc_one_adc_4096gsps_snapshot0_45_ss_bram_data_in <= convert_din1_dout_net;
@@ -5710,7 +5710,7 @@ begin
   ss : entity xil_defaultlib.rfdc_one_adc_4096gsps_ss 
   port map (
     din => concatenate_y_net,
-    we => rfdc_v0_3_rfdc_v0_3_adc0_sync_net,
+    we => rfdc_one_adc_4096gsps_rfdc_v0_3_adc0_sync_net,
     trig => edge_op_y_net,
     rfdc_one_adc_4096gsps_snapshot0_45_ss_ctrl_user_data_out => rfdc_one_adc_4096gsps_snapshot0_45_ss_ctrl_user_data_out_net,
     clk_1 => clk_net,
@@ -5804,12 +5804,12 @@ entity rfdc_one_adc_4096gsps_edge_detect_x2 is
   );
 end rfdc_one_adc_4096gsps_edge_detect_x2;
 architecture structural of rfdc_one_adc_4096gsps_edge_detect_x2 is 
-  signal delay_q_net : std_logic_vector( 1-1 downto 0 );
-  signal inverter_op_net : std_logic_vector( 1-1 downto 0 );
   signal edge_op_y_net : std_logic_vector( 1-1 downto 0 );
   signal slice3_y_net : std_logic_vector( 1-1 downto 0 );
   signal clk_net : std_logic;
   signal ce_net : std_logic;
+  signal delay_q_net : std_logic_vector( 1-1 downto 0 );
+  signal inverter_op_net : std_logic_vector( 1-1 downto 0 );
 begin
   out_x0 <= edge_op_y_net;
   slice3_y_net <= in_x0;
@@ -6428,12 +6428,12 @@ entity rfdc_one_adc_4096gsps_edge_detect_x1 is
   );
 end rfdc_one_adc_4096gsps_edge_detect_x1;
 architecture structural of rfdc_one_adc_4096gsps_edge_detect_x1 is 
-  signal delay_q_net : std_logic_vector( 1-1 downto 0 );
-  signal inverter_op_net : std_logic_vector( 1-1 downto 0 );
   signal edge_op_y_net : std_logic_vector( 1-1 downto 0 );
   signal delay1_q_net : std_logic_vector( 1-1 downto 0 );
   signal clk_net : std_logic;
   signal ce_net : std_logic;
+  signal delay_q_net : std_logic_vector( 1-1 downto 0 );
+  signal inverter_op_net : std_logic_vector( 1-1 downto 0 );
 begin
   out_x0 <= edge_op_y_net;
   delay1_q_net <= in_x0;
@@ -6498,7 +6498,7 @@ architecture structural of rfdc_one_adc_4096gsps_basic_ctrl_x0 is
   signal register6_q_net : std_logic_vector( 1-1 downto 0 );
   signal edge_op_y_net_x0 : std_logic_vector( 1-1 downto 0 );
   signal cast_dout_net : std_logic_vector( 32-1 downto 0 );
-  signal rfdc_v0_3_rfdc_v0_3_adc0_sync_net : std_logic_vector( 1-1 downto 0 );
+  signal rfdc_one_adc_4096gsps_rfdc_v0_3_adc0_sync_net : std_logic_vector( 1-1 downto 0 );
   signal edge_op_y_net : std_logic_vector( 1-1 downto 0 );
   signal concatenate_y_net : std_logic_vector( 32-1 downto 0 );
   signal never_op_net : std_logic_vector( 1-1 downto 0 );
@@ -6524,7 +6524,7 @@ begin
   go <= register6_q_net;
   init <= edge_op_y_net_x0;
   cast_dout_net <= din;
-  rfdc_v0_3_rfdc_v0_3_adc0_sync_net <= we;
+  rfdc_one_adc_4096gsps_rfdc_v0_3_adc0_sync_net <= we;
   edge_op_y_net <= trig;
   concatenate_y_net <= ctrl;
   never_op_net <= stopi;
@@ -6636,7 +6636,7 @@ begin
     ce => '0',
     clr => '0',
     sel => delay3_q_net,
-    d0 => rfdc_v0_3_rfdc_v0_3_adc0_sync_net,
+    d0 => rfdc_one_adc_4096gsps_rfdc_v0_3_adc0_sync_net,
     d1 => constant2_op_net,
     y => mux1_y_net
   );
@@ -7017,7 +7017,7 @@ library IEEE;
 use IEEE.std_logic_1164.all;
 library xil_defaultlib;
 use xil_defaultlib.conv_pkg.all;
-entity rfdc_one_adc_4096gsps_ctrl_combine_x0 is
+entity rfdc_one_adc_4096gsps_ctrl_combine_x1 is
   port (
     in1 : in std_logic_vector( 28-1 downto 0 );
     in2 : in std_logic_vector( 1-1 downto 0 );
@@ -7025,8 +7025,8 @@ entity rfdc_one_adc_4096gsps_ctrl_combine_x0 is
     in4 : in std_logic_vector( 1-1 downto 0 );
     bus_out : out std_logic_vector( 32-1 downto 0 )
   );
-end rfdc_one_adc_4096gsps_ctrl_combine_x0;
-architecture structural of rfdc_one_adc_4096gsps_ctrl_combine_x0 is 
+end rfdc_one_adc_4096gsps_ctrl_combine_x1;
+architecture structural of rfdc_one_adc_4096gsps_ctrl_combine_x1 is 
   signal concatenate_y_net : std_logic_vector( 32-1 downto 0 );
   signal reinterpret4_output_port_net_x0 : std_logic_vector( 28-1 downto 0 );
   signal circ_or_y_net : std_logic_vector( 1-1 downto 0 );
@@ -7273,7 +7273,7 @@ end rfdc_one_adc_4096gsps_ss_x0;
 architecture structural of rfdc_one_adc_4096gsps_ss_x0 is 
   signal arm_or_y_net : std_logic_vector( 1-1 downto 0 );
   signal concatenate_y_net : std_logic_vector( 32-1 downto 0 );
-  signal rfdc_v0_3_rfdc_v0_3_adc0_sync_net : std_logic_vector( 1-1 downto 0 );
+  signal rfdc_one_adc_4096gsps_rfdc_v0_3_adc0_sync_net : std_logic_vector( 1-1 downto 0 );
   signal edge_op_y_net_x0 : std_logic_vector( 1-1 downto 0 );
   signal we_choice_y_net : std_logic_vector( 1-1 downto 0 );
   signal logical6_y_net : std_logic_vector( 1-1 downto 0 );
@@ -7308,7 +7308,7 @@ architecture structural of rfdc_one_adc_4096gsps_ss_x0 is
 begin
   arm_out <= arm_or_y_net;
   concatenate_y_net <= din;
-  rfdc_v0_3_rfdc_v0_3_adc0_sync_net <= we;
+  rfdc_one_adc_4096gsps_rfdc_v0_3_adc0_sync_net <= we;
   edge_op_y_net_x0 <= trig;
   goto_80227526_we1 <= we_choice_y_net;
   goto_80227526_we4 <= logical6_y_net;
@@ -7336,7 +7336,7 @@ begin
   basic_ctrl : entity xil_defaultlib.rfdc_one_adc_4096gsps_basic_ctrl_x0 
   port map (
     din => cast_dout_net,
-    we => rfdc_v0_3_rfdc_v0_3_adc0_sync_net,
+    we => rfdc_one_adc_4096gsps_rfdc_v0_3_adc0_sync_net,
     trig => edge_op_y_net_x0,
     ctrl => concatenate_y_net_x0,
     stopi => never_op_net,
@@ -7363,7 +7363,7 @@ begin
     rfdc_one_adc_4096gsps_snapshot0_67_ss_ctrl_user_data_out => rfdc_one_adc_4096gsps_snapshot0_67_ss_ctrl_user_data_out_net,
     in_reg => reint1_output_port_net
   );
-  ctrl_combine : entity xil_defaultlib.rfdc_one_adc_4096gsps_ctrl_combine_x0 
+  ctrl_combine : entity xil_defaultlib.rfdc_one_adc_4096gsps_ctrl_combine_x1 
   port map (
     in1 => reinterpret4_output_port_net,
     in2 => circ_or_y_net,
@@ -7503,6 +7503,14 @@ entity rfdc_one_adc_4096gsps_snapshot0_67 is
   );
 end rfdc_one_adc_4096gsps_snapshot0_67;
 architecture structural of rfdc_one_adc_4096gsps_snapshot0_67 is 
+  signal arm_or_y_net : std_logic_vector( 1-1 downto 0 );
+  signal slice3_y_net : std_logic_vector( 16-1 downto 0 );
+  signal slice4_y_net : std_logic_vector( 16-1 downto 0 );
+  signal rfdc_one_adc_4096gsps_rfdc_v0_3_adc0_sync_net : std_logic_vector( 1-1 downto 0 );
+  signal edge_op_y_net : std_logic_vector( 1-1 downto 0 );
+  signal convert_addr_dout_net : std_logic_vector( 10-1 downto 0 );
+  signal convert_din1_dout_net : std_logic_vector( 32-1 downto 0 );
+  signal convert_we_dout_net : std_logic_vector( 1-1 downto 0 );
   signal rfdc_one_adc_4096gsps_snapshot0_67_ss_ctrl_user_data_out_net : std_logic_vector( 32-1 downto 0 );
   signal cast_gw_dout_net : std_logic_vector( 32-1 downto 0 );
   signal we_choice_y_net : std_logic_vector( 1-1 downto 0 );
@@ -7512,19 +7520,11 @@ architecture structural of rfdc_one_adc_4096gsps_snapshot0_67 is
   signal concatenate_y_net : std_logic_vector( 32-1 downto 0 );
   signal assert_d0_dout_net : std_logic_vector( 16-1 downto 0 );
   signal assert_d1_dout_net : std_logic_vector( 16-1 downto 0 );
-  signal arm_or_y_net : std_logic_vector( 1-1 downto 0 );
-  signal slice3_y_net : std_logic_vector( 16-1 downto 0 );
-  signal slice4_y_net : std_logic_vector( 16-1 downto 0 );
-  signal rfdc_v0_3_rfdc_v0_3_adc0_sync_net : std_logic_vector( 1-1 downto 0 );
-  signal edge_op_y_net : std_logic_vector( 1-1 downto 0 );
-  signal convert_addr_dout_net : std_logic_vector( 10-1 downto 0 );
-  signal convert_din1_dout_net : std_logic_vector( 32-1 downto 0 );
-  signal convert_we_dout_net : std_logic_vector( 1-1 downto 0 );
 begin
   arm_out <= arm_or_y_net;
   slice3_y_net <= in_d0;
   slice4_y_net <= in_d1;
-  rfdc_v0_3_rfdc_v0_3_adc0_sync_net <= we;
+  rfdc_one_adc_4096gsps_rfdc_v0_3_adc0_sync_net <= we;
   edge_op_y_net <= trig;
   rfdc_one_adc_4096gsps_snapshot0_67_ss_bram_addr <= convert_addr_dout_net;
   rfdc_one_adc_4096gsps_snapshot0_67_ss_bram_data_in <= convert_din1_dout_net;
@@ -7544,7 +7544,7 @@ begin
   ss : entity xil_defaultlib.rfdc_one_adc_4096gsps_ss_x0 
   port map (
     din => concatenate_y_net,
-    we => rfdc_v0_3_rfdc_v0_3_adc0_sync_net,
+    we => rfdc_one_adc_4096gsps_rfdc_v0_3_adc0_sync_net,
     trig => edge_op_y_net,
     rfdc_one_adc_4096gsps_snapshot0_67_ss_ctrl_user_data_out => rfdc_one_adc_4096gsps_snapshot0_67_ss_ctrl_user_data_out_net,
     clk_1 => clk_net,
@@ -7590,7 +7590,7 @@ entity rfdc_one_adc_4096gsps_sync_state is
   );
 end rfdc_one_adc_4096gsps_sync_state;
 architecture structural of rfdc_one_adc_4096gsps_sync_state is 
-  signal rfdc_v0_3_rfdc_v0_3_adc0_sync_net : std_logic_vector( 1-1 downto 0 );
+  signal rfdc_one_adc_4096gsps_rfdc_v0_3_adc0_sync_net : std_logic_vector( 1-1 downto 0 );
   signal cast_gw_dout_net : std_logic_vector( 32-1 downto 0 );
   signal clk_net : std_logic;
   signal ce_net : std_logic;
@@ -7598,7 +7598,7 @@ architecture structural of rfdc_one_adc_4096gsps_sync_state is
   signal reint1_output_port_net : std_logic_vector( 1-1 downto 0 );
   signal assert_sync_state_dout_net : std_logic_vector( 1-1 downto 0 );
 begin
-  rfdc_v0_3_rfdc_v0_3_adc0_sync_net <= out_sync_state;
+  rfdc_one_adc_4096gsps_rfdc_v0_3_adc0_sync_net <= out_sync_state;
   rfdc_one_adc_4096gsps_sync_state_user_data_in <= cast_gw_dout_net;
   clk_net <= clk_1;
   ce_net <= ce_1;
@@ -7637,7 +7637,7 @@ begin
     dout_width => 1
   )
   port map (
-    din => rfdc_v0_3_rfdc_v0_3_adc0_sync_net,
+    din => rfdc_one_adc_4096gsps_rfdc_v0_3_adc0_sync_net,
     dout => assert_sync_state_dout_net
   );
   reint1 : entity xil_defaultlib.sysgen_reinterpret_0d4f722ecd 
@@ -7658,8 +7658,8 @@ entity rfdc_one_adc_4096gsps_struct is
   port (
     rfdc_one_adc_4096gsps_led_cntrl_user_data_out : in std_logic_vector( 32-1 downto 0 );
     rfdc_one_adc_4096gsps_reg_cntrl_user_data_out : in std_logic_vector( 32-1 downto 0 );
-    rfdc_v0_3_rfdc_v0_3_adc0_dout : in std_logic_vector( 128-1 downto 0 );
-    rfdc_v0_3_rfdc_v0_3_adc0_sync : in std_logic_vector( 1-1 downto 0 );
+    rfdc_one_adc_4096gsps_rfdc_v0_3_adc0_dout : in std_logic_vector( 128-1 downto 0 );
+    rfdc_one_adc_4096gsps_rfdc_v0_3_adc0_sync : in std_logic_vector( 1-1 downto 0 );
     rfdc_one_adc_4096gsps_snapshot0_01_ss_bram_data_out : in std_logic_vector( 32-1 downto 0 );
     rfdc_one_adc_4096gsps_snapshot0_01_ss_ctrl_user_data_out : in std_logic_vector( 32-1 downto 0 );
     rfdc_one_adc_4096gsps_snapshot0_23_ss_bram_data_out : in std_logic_vector( 32-1 downto 0 );
@@ -7696,8 +7696,8 @@ architecture structural of rfdc_one_adc_4096gsps_struct is
   signal convert_dout_net : std_logic_vector( 1-1 downto 0 );
   signal rfdc_one_adc_4096gsps_led_cntrl_user_data_out_net : std_logic_vector( 32-1 downto 0 );
   signal rfdc_one_adc_4096gsps_reg_cntrl_user_data_out_net : std_logic_vector( 32-1 downto 0 );
-  signal rfdc_v0_3_rfdc_v0_3_adc0_dout_net : std_logic_vector( 128-1 downto 0 );
-  signal rfdc_v0_3_rfdc_v0_3_adc0_sync_net : std_logic_vector( 1-1 downto 0 );
+  signal rfdc_one_adc_4096gsps_rfdc_v0_3_adc0_dout_net : std_logic_vector( 128-1 downto 0 );
+  signal rfdc_one_adc_4096gsps_rfdc_v0_3_adc0_sync_net : std_logic_vector( 1-1 downto 0 );
   signal convert_addr_dout_net_x2 : std_logic_vector( 10-1 downto 0 );
   signal convert_din1_dout_net_x2 : std_logic_vector( 32-1 downto 0 );
   signal rfdc_one_adc_4096gsps_snapshot0_01_ss_bram_data_out_net : std_logic_vector( 32-1 downto 0 );
@@ -7755,8 +7755,8 @@ begin
   rfdc_one_adc_4096gsps_gpio_led1_gateway <= convert_dout_net;
   rfdc_one_adc_4096gsps_led_cntrl_user_data_out_net <= rfdc_one_adc_4096gsps_led_cntrl_user_data_out;
   rfdc_one_adc_4096gsps_reg_cntrl_user_data_out_net <= rfdc_one_adc_4096gsps_reg_cntrl_user_data_out;
-  rfdc_v0_3_rfdc_v0_3_adc0_dout_net <= rfdc_v0_3_rfdc_v0_3_adc0_dout;
-  rfdc_v0_3_rfdc_v0_3_adc0_sync_net <= rfdc_v0_3_rfdc_v0_3_adc0_sync;
+  rfdc_one_adc_4096gsps_rfdc_v0_3_adc0_dout_net <= rfdc_one_adc_4096gsps_rfdc_v0_3_adc0_dout;
+  rfdc_one_adc_4096gsps_rfdc_v0_3_adc0_sync_net <= rfdc_one_adc_4096gsps_rfdc_v0_3_adc0_sync;
   rfdc_one_adc_4096gsps_snapshot0_01_ss_bram_addr <= convert_addr_dout_net_x2;
   rfdc_one_adc_4096gsps_snapshot0_01_ss_bram_data_in <= convert_din1_dout_net_x2;
   rfdc_one_adc_4096gsps_snapshot0_01_ss_bram_data_out_net <= rfdc_one_adc_4096gsps_snapshot0_01_ss_bram_data_out;
@@ -7817,14 +7817,14 @@ begin
   );
   rfdc_v0_3 : entity xil_defaultlib.rfdc_one_adc_4096gsps_rfdc_v0_3 
   port map (
-    rfdc_v0_3_rfdc_v0_3_adc0_dout => rfdc_v0_3_rfdc_v0_3_adc0_dout_net,
-    rfdc_v0_3_rfdc_v0_3_adc0_sync => rfdc_v0_3_rfdc_v0_3_adc0_sync_net
+    rfdc_one_adc_4096gsps_rfdc_v0_3_adc0_dout => rfdc_one_adc_4096gsps_rfdc_v0_3_adc0_dout_net,
+    rfdc_one_adc_4096gsps_rfdc_v0_3_adc0_sync => rfdc_one_adc_4096gsps_rfdc_v0_3_adc0_sync_net
   );
   snapshot0_01 : entity xil_defaultlib.rfdc_one_adc_4096gsps_snapshot0_01 
   port map (
     in_d0 => slice_y_net,
     in_d1 => slice7_y_net,
-    we => rfdc_v0_3_rfdc_v0_3_adc0_sync_net,
+    we => rfdc_one_adc_4096gsps_rfdc_v0_3_adc0_sync_net,
     trig => edge_op_y_net,
     rfdc_one_adc_4096gsps_snapshot0_01_ss_ctrl_user_data_out => rfdc_one_adc_4096gsps_snapshot0_01_ss_ctrl_user_data_out_net,
     clk_1 => clk_net,
@@ -7841,7 +7841,7 @@ begin
   port map (
     in_d0 => slice1_y_net,
     in_d1 => slice6_y_net,
-    we => rfdc_v0_3_rfdc_v0_3_adc0_sync_net,
+    we => rfdc_one_adc_4096gsps_rfdc_v0_3_adc0_sync_net,
     trig => edge_op_y_net,
     rfdc_one_adc_4096gsps_snapshot0_23_ss_ctrl_user_data_out => rfdc_one_adc_4096gsps_snapshot0_23_ss_ctrl_user_data_out_net,
     clk_1 => clk_net,
@@ -7858,7 +7858,7 @@ begin
   port map (
     in_d0 => slice2_y_net,
     in_d1 => slice5_y_net,
-    we => rfdc_v0_3_rfdc_v0_3_adc0_sync_net,
+    we => rfdc_one_adc_4096gsps_rfdc_v0_3_adc0_sync_net,
     trig => edge_op_y_net,
     rfdc_one_adc_4096gsps_snapshot0_45_ss_ctrl_user_data_out => rfdc_one_adc_4096gsps_snapshot0_45_ss_ctrl_user_data_out_net,
     clk_1 => clk_net,
@@ -7875,7 +7875,7 @@ begin
   port map (
     in_d0 => slice3_y_net,
     in_d1 => slice4_y_net,
-    we => rfdc_v0_3_rfdc_v0_3_adc0_sync_net,
+    we => rfdc_one_adc_4096gsps_rfdc_v0_3_adc0_sync_net,
     trig => edge_op_y_net,
     rfdc_one_adc_4096gsps_snapshot0_67_ss_ctrl_user_data_out => rfdc_one_adc_4096gsps_snapshot0_67_ss_ctrl_user_data_out_net,
     clk_1 => clk_net,
@@ -7890,10 +7890,98 @@ begin
   );
   sync_state : entity xil_defaultlib.rfdc_one_adc_4096gsps_sync_state 
   port map (
-    out_sync_state => rfdc_v0_3_rfdc_v0_3_adc0_sync_net,
+    out_sync_state => rfdc_one_adc_4096gsps_rfdc_v0_3_adc0_sync_net,
     clk_1 => clk_net,
     ce_1 => ce_net,
     rfdc_one_adc_4096gsps_sync_state_user_data_in => cast_gw_dout_net_x1
+  );
+  slice : entity xil_defaultlib.rfdc_one_adc_4096gsps_xlslice 
+  generic map (
+    new_lsb => 0,
+    new_msb => 15,
+    x_width => 128,
+    y_width => 16
+  )
+  port map (
+    x => rfdc_one_adc_4096gsps_rfdc_v0_3_adc0_dout_net,
+    y => slice_y_net
+  );
+  slice1 : entity xil_defaultlib.rfdc_one_adc_4096gsps_xlslice 
+  generic map (
+    new_lsb => 32,
+    new_msb => 47,
+    x_width => 128,
+    y_width => 16
+  )
+  port map (
+    x => rfdc_one_adc_4096gsps_rfdc_v0_3_adc0_dout_net,
+    y => slice1_y_net
+  );
+  slice2 : entity xil_defaultlib.rfdc_one_adc_4096gsps_xlslice 
+  generic map (
+    new_lsb => 64,
+    new_msb => 79,
+    x_width => 128,
+    y_width => 16
+  )
+  port map (
+    x => rfdc_one_adc_4096gsps_rfdc_v0_3_adc0_dout_net,
+    y => slice2_y_net
+  );
+  slice3 : entity xil_defaultlib.rfdc_one_adc_4096gsps_xlslice 
+  generic map (
+    new_lsb => 96,
+    new_msb => 111,
+    x_width => 128,
+    y_width => 16
+  )
+  port map (
+    x => rfdc_one_adc_4096gsps_rfdc_v0_3_adc0_dout_net,
+    y => slice3_y_net
+  );
+  slice4 : entity xil_defaultlib.rfdc_one_adc_4096gsps_xlslice 
+  generic map (
+    new_lsb => 112,
+    new_msb => 127,
+    x_width => 128,
+    y_width => 16
+  )
+  port map (
+    x => rfdc_one_adc_4096gsps_rfdc_v0_3_adc0_dout_net,
+    y => slice4_y_net
+  );
+  slice5 : entity xil_defaultlib.rfdc_one_adc_4096gsps_xlslice 
+  generic map (
+    new_lsb => 80,
+    new_msb => 95,
+    x_width => 128,
+    y_width => 16
+  )
+  port map (
+    x => rfdc_one_adc_4096gsps_rfdc_v0_3_adc0_dout_net,
+    y => slice5_y_net
+  );
+  slice6 : entity xil_defaultlib.rfdc_one_adc_4096gsps_xlslice 
+  generic map (
+    new_lsb => 48,
+    new_msb => 63,
+    x_width => 128,
+    y_width => 16
+  )
+  port map (
+    x => rfdc_one_adc_4096gsps_rfdc_v0_3_adc0_dout_net,
+    y => slice6_y_net
+  );
+  slice7 : entity xil_defaultlib.rfdc_one_adc_4096gsps_xlslice 
+  generic map (
+    new_lsb => 16,
+    new_msb => 31,
+    x_width => 128,
+    y_width => 16
+  )
+  port map (
+    x => rfdc_one_adc_4096gsps_rfdc_v0_3_adc0_dout_net,
+    y => slice7_y_net
   );
   counter_led : entity xil_defaultlib.rfdc_one_adc_4096gsps_xlcounter_free 
   generic map (
@@ -7919,94 +8007,6 @@ begin
   port map (
     x => counter_led_op_net,
     y => slice_msb_y_net
-  );
-  slice : entity xil_defaultlib.rfdc_one_adc_4096gsps_xlslice 
-  generic map (
-    new_lsb => 0,
-    new_msb => 15,
-    x_width => 128,
-    y_width => 16
-  )
-  port map (
-    x => rfdc_v0_3_rfdc_v0_3_adc0_dout_net,
-    y => slice_y_net
-  );
-  slice1 : entity xil_defaultlib.rfdc_one_adc_4096gsps_xlslice 
-  generic map (
-    new_lsb => 32,
-    new_msb => 47,
-    x_width => 128,
-    y_width => 16
-  )
-  port map (
-    x => rfdc_v0_3_rfdc_v0_3_adc0_dout_net,
-    y => slice1_y_net
-  );
-  slice2 : entity xil_defaultlib.rfdc_one_adc_4096gsps_xlslice 
-  generic map (
-    new_lsb => 64,
-    new_msb => 79,
-    x_width => 128,
-    y_width => 16
-  )
-  port map (
-    x => rfdc_v0_3_rfdc_v0_3_adc0_dout_net,
-    y => slice2_y_net
-  );
-  slice3 : entity xil_defaultlib.rfdc_one_adc_4096gsps_xlslice 
-  generic map (
-    new_lsb => 96,
-    new_msb => 111,
-    x_width => 128,
-    y_width => 16
-  )
-  port map (
-    x => rfdc_v0_3_rfdc_v0_3_adc0_dout_net,
-    y => slice3_y_net
-  );
-  slice4 : entity xil_defaultlib.rfdc_one_adc_4096gsps_xlslice 
-  generic map (
-    new_lsb => 112,
-    new_msb => 127,
-    x_width => 128,
-    y_width => 16
-  )
-  port map (
-    x => rfdc_v0_3_rfdc_v0_3_adc0_dout_net,
-    y => slice4_y_net
-  );
-  slice5 : entity xil_defaultlib.rfdc_one_adc_4096gsps_xlslice 
-  generic map (
-    new_lsb => 80,
-    new_msb => 95,
-    x_width => 128,
-    y_width => 16
-  )
-  port map (
-    x => rfdc_v0_3_rfdc_v0_3_adc0_dout_net,
-    y => slice5_y_net
-  );
-  slice6 : entity xil_defaultlib.rfdc_one_adc_4096gsps_xlslice 
-  generic map (
-    new_lsb => 48,
-    new_msb => 63,
-    x_width => 128,
-    y_width => 16
-  )
-  port map (
-    x => rfdc_v0_3_rfdc_v0_3_adc0_dout_net,
-    y => slice6_y_net
-  );
-  slice7 : entity xil_defaultlib.rfdc_one_adc_4096gsps_xlslice 
-  generic map (
-    new_lsb => 16,
-    new_msb => 31,
-    x_width => 128,
-    y_width => 16
-  )
-  port map (
-    x => rfdc_v0_3_rfdc_v0_3_adc0_dout_net,
-    y => slice7_y_net
   );
 end structural;
 -- Generated from Simulink block 
@@ -8047,8 +8047,8 @@ entity rfdc_one_adc_4096gsps is
   port (
     rfdc_one_adc_4096gsps_led_cntrl_user_data_out : in std_logic_vector( 32-1 downto 0 );
     rfdc_one_adc_4096gsps_reg_cntrl_user_data_out : in std_logic_vector( 32-1 downto 0 );
-    rfdc_v0_3_rfdc_v0_3_adc0_dout : in std_logic_vector( 128-1 downto 0 );
-    rfdc_v0_3_rfdc_v0_3_adc0_sync : in std_logic_vector( 1-1 downto 0 );
+    rfdc_one_adc_4096gsps_rfdc_v0_3_adc0_dout : in std_logic_vector( 128-1 downto 0 );
+    rfdc_one_adc_4096gsps_rfdc_v0_3_adc0_sync : in std_logic_vector( 1-1 downto 0 );
     rfdc_one_adc_4096gsps_snapshot0_01_ss_bram_data_out : in std_logic_vector( 32-1 downto 0 );
     rfdc_one_adc_4096gsps_snapshot0_01_ss_ctrl_user_data_out : in std_logic_vector( 32-1 downto 0 );
     rfdc_one_adc_4096gsps_snapshot0_23_ss_bram_data_out : in std_logic_vector( 32-1 downto 0 );
@@ -8097,8 +8097,8 @@ begin
   port map (
     rfdc_one_adc_4096gsps_led_cntrl_user_data_out => rfdc_one_adc_4096gsps_led_cntrl_user_data_out,
     rfdc_one_adc_4096gsps_reg_cntrl_user_data_out => rfdc_one_adc_4096gsps_reg_cntrl_user_data_out,
-    rfdc_v0_3_rfdc_v0_3_adc0_dout => rfdc_v0_3_rfdc_v0_3_adc0_dout,
-    rfdc_v0_3_rfdc_v0_3_adc0_sync => rfdc_v0_3_rfdc_v0_3_adc0_sync,
+    rfdc_one_adc_4096gsps_rfdc_v0_3_adc0_dout => rfdc_one_adc_4096gsps_rfdc_v0_3_adc0_dout,
+    rfdc_one_adc_4096gsps_rfdc_v0_3_adc0_sync => rfdc_one_adc_4096gsps_rfdc_v0_3_adc0_sync,
     rfdc_one_adc_4096gsps_snapshot0_01_ss_bram_data_out => rfdc_one_adc_4096gsps_snapshot0_01_ss_bram_data_out,
     rfdc_one_adc_4096gsps_snapshot0_01_ss_ctrl_user_data_out => rfdc_one_adc_4096gsps_snapshot0_01_ss_ctrl_user_data_out,
     rfdc_one_adc_4096gsps_snapshot0_23_ss_bram_data_out => rfdc_one_adc_4096gsps_snapshot0_23_ss_bram_data_out,

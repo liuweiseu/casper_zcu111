@@ -1,0 +1,14 @@
+<?xml version="1.0" ?>
+<node byte_size="64" id="sw_reg">
+	<node address="0x00000000" description="sw_reg_reg_cntrl" hw_rst="0" id="reg_cntrl" mask="0xffffffff" permission="rw" size="1"/>
+	<node address="0x00000004" description="sw_reg_snapshot0_01_ss_ctrl" hw_rst="0" id="snapshot0_01_ss_ctrl" mask="0xffffffff" permission="rw" size="1"/>
+	<node address="0x00000008" description="sw_reg_snapshot0_01_ss_status" hw_rst="0x0" id="snapshot0_01_ss_status" mask="0xffffffff" permission="r" size="1"/>
+	<node address="0x0000000c" description="sw_reg_snapshot0_23_ss_ctrl" hw_rst="0" id="snapshot0_23_ss_ctrl" mask="0xffffffff" permission="rw" size="1"/>
+	<node address="0x00000010" description="sw_reg_snapshot0_23_ss_status" hw_rst="0x0" id="snapshot0_23_ss_status" mask="0xffffffff" permission="r" size="1"/>
+	<node address="0x00000014" description="sw_reg_snapshot0_45_ss_ctrl" hw_rst="0" id="snapshot0_45_ss_ctrl" mask="0xffffffff" permission="rw" size="1"/>
+	<node address="0x00000018" description="sw_reg_snapshot0_45_ss_status" hw_rst="0x0" id="snapshot0_45_ss_status" mask="0xffffffff" permission="r" size="1"/>
+	<node address="0x0000001c" description="sw_reg_snapshot0_67_ss_ctrl" hw_rst="0" id="snapshot0_67_ss_ctrl" mask="0xffffffff" permission="rw" size="1"/>
+	<node address="0x00000020" description="sw_reg_snapshot0_67_ss_status" hw_rst="0x0" id="snapshot0_67_ss_status" mask="0xffffffff" permission="r" size="1"/>
+	<node address="0x00000024" description="sw_reg_sync_state" hw_rst="0x0" id="sync_state" mask="0xffffffff" permission="r" size="1"/>
+</node>
+<!-- This file has been automatically generated using xml2vhdl.py version 1.16 /!-->

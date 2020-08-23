@@ -36,7 +36,7 @@ class rfdc_V0_3(YellowBlock):
 			top.add_signal(name=self.fullname + '_adc0_dout',width=128)
 			top.add_signal(name='user_rst', width=1)
 			top.assign_signal('user_rst','sys_clk_rst')
-			if(self.adc_sample_rate=='2048'):
+			if(self.adc_sample_rate==2048):
 				if(self.sys_config=='1 ADC CORE'):
 					module = 'ADC1_R2R_2048'
 					inst = top.get_instance(entity=module, name=self.fullname)
@@ -286,7 +286,7 @@ class rfdc_V0_3(YellowBlock):
 					inst.add_port('vin3_23_p', 		signal='vin3_23_p')
 				else:
 					pass
-			elif(self.adc_sample_rate=='4096'):
+			elif(self.adc_sample_rate==4096):
 				if(self.sys_config=='1 ADC CORE'):
 					module = 'ADC1_R2R_4096'
 					inst = top.get_instance(entity=module, name=self.fullname)

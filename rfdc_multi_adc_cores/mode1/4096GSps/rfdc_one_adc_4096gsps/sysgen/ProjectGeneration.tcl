@@ -38,7 +38,7 @@ namespace eval ::xilinx::dsp::planaheaddriver {
 	set SynthesisTool {Vivado}
 	set TargetDir {/home/wei/casper/casper_mlib/tutorials_devel/zcu111/rfdc_multi_adc_cores/mode1/4096GSps/rfdc_one_adc_4096gsps/sysgen}
 	set TopLevelModule {rfdc_one_adc_4096gsps}
-	set TopLevelSimulinkHandle 76591
+	set TopLevelSimulinkHandle 76602
 	set VHDLLib {xil_defaultlib}
 	set TopLevelPortInterface {}
 	dict set TopLevelPortInterface rfdc_one_adc_4096gsps_snapshot0_67_ss_ctrl_user_data_out Name {rfdc_one_adc_4096gsps_snapshot0_67_ss_ctrl_user_data_out}
@@ -161,36 +161,36 @@ namespace eval ::xilinx::dsp::planaheaddriver {
 	dict set TopLevelPortInterface rfdc_one_adc_4096gsps_snapshot0_01_ss_bram_data_out ClockDomain {rfdc_one_adc_4096gsps}
 	dict set TopLevelPortInterface rfdc_one_adc_4096gsps_snapshot0_01_ss_bram_data_out Locs {}
 	dict set TopLevelPortInterface rfdc_one_adc_4096gsps_snapshot0_01_ss_bram_data_out IOStandard {}
-	dict set TopLevelPortInterface rfdc_v0_3_rfdc_v0_3_adc0_sync Name {rfdc_v0_3_rfdc_v0_3_adc0_sync}
-	dict set TopLevelPortInterface rfdc_v0_3_rfdc_v0_3_adc0_sync Type Bool
-	dict set TopLevelPortInterface rfdc_v0_3_rfdc_v0_3_adc0_sync ArithmeticType xlUnsigned
-	dict set TopLevelPortInterface rfdc_v0_3_rfdc_v0_3_adc0_sync BinaryPoint 0
-	dict set TopLevelPortInterface rfdc_v0_3_rfdc_v0_3_adc0_sync Width 1
-	dict set TopLevelPortInterface rfdc_v0_3_rfdc_v0_3_adc0_sync DatFile {rfdc_one_adc_4096gsps_rfdc_v0_3_rfdc_v0_3_rfdc_v0_3_adc0_sync.dat}
-	dict set TopLevelPortInterface rfdc_v0_3_rfdc_v0_3_adc0_sync IconText {rfdc_V0_3_rfdc_V0_3_adc0_sync}
-	dict set TopLevelPortInterface rfdc_v0_3_rfdc_v0_3_adc0_sync Direction in
-	dict set TopLevelPortInterface rfdc_v0_3_rfdc_v0_3_adc0_sync Period 1
-	dict set TopLevelPortInterface rfdc_v0_3_rfdc_v0_3_adc0_sync Interface 0
-	dict set TopLevelPortInterface rfdc_v0_3_rfdc_v0_3_adc0_sync InterfaceName {}
-	dict set TopLevelPortInterface rfdc_v0_3_rfdc_v0_3_adc0_sync InterfaceString {DATA}
-	dict set TopLevelPortInterface rfdc_v0_3_rfdc_v0_3_adc0_sync ClockDomain {rfdc_one_adc_4096gsps}
-	dict set TopLevelPortInterface rfdc_v0_3_rfdc_v0_3_adc0_sync Locs {}
-	dict set TopLevelPortInterface rfdc_v0_3_rfdc_v0_3_adc0_sync IOStandard {}
-	dict set TopLevelPortInterface rfdc_v0_3_rfdc_v0_3_adc0_dout Name {rfdc_v0_3_rfdc_v0_3_adc0_dout}
-	dict set TopLevelPortInterface rfdc_v0_3_rfdc_v0_3_adc0_dout Type UFix_128_0
-	dict set TopLevelPortInterface rfdc_v0_3_rfdc_v0_3_adc0_dout ArithmeticType xlUnsigned
-	dict set TopLevelPortInterface rfdc_v0_3_rfdc_v0_3_adc0_dout BinaryPoint 0
-	dict set TopLevelPortInterface rfdc_v0_3_rfdc_v0_3_adc0_dout Width 128
-	dict set TopLevelPortInterface rfdc_v0_3_rfdc_v0_3_adc0_dout DatFile {rfdc_one_adc_4096gsps_rfdc_v0_3_rfdc_v0_3_rfdc_v0_3_adc0_dout.dat}
-	dict set TopLevelPortInterface rfdc_v0_3_rfdc_v0_3_adc0_dout IconText {rfdc_V0_3_rfdc_V0_3_adc0_dout}
-	dict set TopLevelPortInterface rfdc_v0_3_rfdc_v0_3_adc0_dout Direction in
-	dict set TopLevelPortInterface rfdc_v0_3_rfdc_v0_3_adc0_dout Period 1
-	dict set TopLevelPortInterface rfdc_v0_3_rfdc_v0_3_adc0_dout Interface 0
-	dict set TopLevelPortInterface rfdc_v0_3_rfdc_v0_3_adc0_dout InterfaceName {}
-	dict set TopLevelPortInterface rfdc_v0_3_rfdc_v0_3_adc0_dout InterfaceString {DATA}
-	dict set TopLevelPortInterface rfdc_v0_3_rfdc_v0_3_adc0_dout ClockDomain {rfdc_one_adc_4096gsps}
-	dict set TopLevelPortInterface rfdc_v0_3_rfdc_v0_3_adc0_dout Locs {}
-	dict set TopLevelPortInterface rfdc_v0_3_rfdc_v0_3_adc0_dout IOStandard {}
+	dict set TopLevelPortInterface rfdc_one_adc_4096gsps_rfdc_v0_3_adc0_sync Name {rfdc_one_adc_4096gsps_rfdc_v0_3_adc0_sync}
+	dict set TopLevelPortInterface rfdc_one_adc_4096gsps_rfdc_v0_3_adc0_sync Type Bool
+	dict set TopLevelPortInterface rfdc_one_adc_4096gsps_rfdc_v0_3_adc0_sync ArithmeticType xlUnsigned
+	dict set TopLevelPortInterface rfdc_one_adc_4096gsps_rfdc_v0_3_adc0_sync BinaryPoint 0
+	dict set TopLevelPortInterface rfdc_one_adc_4096gsps_rfdc_v0_3_adc0_sync Width 1
+	dict set TopLevelPortInterface rfdc_one_adc_4096gsps_rfdc_v0_3_adc0_sync DatFile {rfdc_one_adc_4096gsps_rfdc_v0_3_rfdc_one_adc_4096gsps_rfdc_v0_3_adc0_sync.dat}
+	dict set TopLevelPortInterface rfdc_one_adc_4096gsps_rfdc_v0_3_adc0_sync IconText {rfdc_one_adc_4096gsps_rfdc_V0_3_adc0_sync}
+	dict set TopLevelPortInterface rfdc_one_adc_4096gsps_rfdc_v0_3_adc0_sync Direction in
+	dict set TopLevelPortInterface rfdc_one_adc_4096gsps_rfdc_v0_3_adc0_sync Period 1
+	dict set TopLevelPortInterface rfdc_one_adc_4096gsps_rfdc_v0_3_adc0_sync Interface 0
+	dict set TopLevelPortInterface rfdc_one_adc_4096gsps_rfdc_v0_3_adc0_sync InterfaceName {}
+	dict set TopLevelPortInterface rfdc_one_adc_4096gsps_rfdc_v0_3_adc0_sync InterfaceString {DATA}
+	dict set TopLevelPortInterface rfdc_one_adc_4096gsps_rfdc_v0_3_adc0_sync ClockDomain {rfdc_one_adc_4096gsps}
+	dict set TopLevelPortInterface rfdc_one_adc_4096gsps_rfdc_v0_3_adc0_sync Locs {}
+	dict set TopLevelPortInterface rfdc_one_adc_4096gsps_rfdc_v0_3_adc0_sync IOStandard {}
+	dict set TopLevelPortInterface rfdc_one_adc_4096gsps_rfdc_v0_3_adc0_dout Name {rfdc_one_adc_4096gsps_rfdc_v0_3_adc0_dout}
+	dict set TopLevelPortInterface rfdc_one_adc_4096gsps_rfdc_v0_3_adc0_dout Type UFix_128_0
+	dict set TopLevelPortInterface rfdc_one_adc_4096gsps_rfdc_v0_3_adc0_dout ArithmeticType xlUnsigned
+	dict set TopLevelPortInterface rfdc_one_adc_4096gsps_rfdc_v0_3_adc0_dout BinaryPoint 0
+	dict set TopLevelPortInterface rfdc_one_adc_4096gsps_rfdc_v0_3_adc0_dout Width 128
+	dict set TopLevelPortInterface rfdc_one_adc_4096gsps_rfdc_v0_3_adc0_dout DatFile {rfdc_one_adc_4096gsps_rfdc_v0_3_rfdc_one_adc_4096gsps_rfdc_v0_3_adc0_dout.dat}
+	dict set TopLevelPortInterface rfdc_one_adc_4096gsps_rfdc_v0_3_adc0_dout IconText {rfdc_one_adc_4096gsps_rfdc_V0_3_adc0_dout}
+	dict set TopLevelPortInterface rfdc_one_adc_4096gsps_rfdc_v0_3_adc0_dout Direction in
+	dict set TopLevelPortInterface rfdc_one_adc_4096gsps_rfdc_v0_3_adc0_dout Period 1
+	dict set TopLevelPortInterface rfdc_one_adc_4096gsps_rfdc_v0_3_adc0_dout Interface 0
+	dict set TopLevelPortInterface rfdc_one_adc_4096gsps_rfdc_v0_3_adc0_dout InterfaceName {}
+	dict set TopLevelPortInterface rfdc_one_adc_4096gsps_rfdc_v0_3_adc0_dout InterfaceString {DATA}
+	dict set TopLevelPortInterface rfdc_one_adc_4096gsps_rfdc_v0_3_adc0_dout ClockDomain {rfdc_one_adc_4096gsps}
+	dict set TopLevelPortInterface rfdc_one_adc_4096gsps_rfdc_v0_3_adc0_dout Locs {}
+	dict set TopLevelPortInterface rfdc_one_adc_4096gsps_rfdc_v0_3_adc0_dout IOStandard {}
 	dict set TopLevelPortInterface rfdc_one_adc_4096gsps_reg_cntrl_user_data_out Name {rfdc_one_adc_4096gsps_reg_cntrl_user_data_out}
 	dict set TopLevelPortInterface rfdc_one_adc_4096gsps_reg_cntrl_user_data_out Type UFix_32_0
 	dict set TopLevelPortInterface rfdc_one_adc_4096gsps_reg_cntrl_user_data_out ArithmeticType xlUnsigned

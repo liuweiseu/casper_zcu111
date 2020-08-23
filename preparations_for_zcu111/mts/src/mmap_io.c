@@ -44,7 +44,7 @@ void mmap_close()
  **/
 unsigned long long mmap_io_read64(void*io,unsigned int Addr)
 {
-	
+	return *(unsigned long long *)(buffer+Addr);
 }
 /**
  * @brief	Write a 64bit data to memory.
@@ -52,9 +52,9 @@ unsigned long long mmap_io_read64(void*io,unsigned int Addr)
  * @param[in]	Value	this data is wirtten to the memory
  * Note: No need at present, so I don't implement it
  **/
-void mmap_io_write64(void*io,unsigned intAddr,unsigned long long Value)
+void mmap_io_write64(void*io,unsigned int Addr,unsigned long long Value)
 {
-	
+	*(unsigned long long*)(buffer+Addr) = Value;
 }
 /**
  * @brief	Read a 32bit data from memory.
@@ -64,7 +64,7 @@ void mmap_io_write64(void*io,unsigned intAddr,unsigned long long Value)
  **/
 unsigned int mmap_io_read32(void*io,unsigned int Addr)
 {
-	
+	return *(unsigned int *)(buffer+Addr);
 }
 /**
  * @brief	Write a 32bit data to memory.
@@ -74,7 +74,7 @@ unsigned int mmap_io_read32(void*io,unsigned int Addr)
  **/
 void mmap_io_write32(void*io, unsigned int Addr, unsigned int Value)
 {
-	
+	*(unsigned int*)(buffer+Addr) = Value;
 }
 /**
  * @brief	Read a 16bit data from memory.
@@ -90,9 +90,9 @@ unsigned short mmap_io_read16(void*io, unsigned int Addr)
  * @param[in]	Addr	data is write to this address.
  * @param[in]	Value	this data is wirtten to the memory
  **/
-void mmap_io_write16(void*io, unsigned int Addr, unsigned int Value)
+void mmap_io_write16(void*io, unsigned int Addr, unsigned short Value)
 {
-	*(unsigned int*)(buffer+Addr) = Value;
+	*(unsigned short*)(buffer+Addr) = Value;
 }
 /**
  * @brief	Read a 8bit data from memory.
@@ -102,7 +102,7 @@ void mmap_io_write16(void*io, unsigned int Addr, unsigned int Value)
  **/
 unsigned char mmap_io_read8(void*io, unsigned int Addr)
 {
-	
+	return *(unsigned char *)(buffer+Addr);
 }
 /**
  * @brief	Write a 8bit data to memory.
@@ -110,7 +110,7 @@ unsigned char mmap_io_read8(void*io, unsigned int Addr)
  * @param[in]	Value	this data is wirtten to the memory
  * Note: No need at present, so I don't implement it
  **/
-void mmap_io_write8(void*io, unsigned int Addr, unsigned int Value)
+void mmap_io_write8(void*io, unsigned int Addr, unsigned char Value)
 {
-	
+	*(unsigned char*)(buffer+Addr) = Value;
 }

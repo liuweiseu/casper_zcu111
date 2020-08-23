@@ -43,8 +43,17 @@ module top (
   wire [31:0] rfdc_one_adc_4096gsps_reg_cntrl_out;
   wire [31:0] rfdc_one_adc_4096gsps_reg_cntrl_user_data_out;
   // rfdc_V0_3: rfdc_V0_3
+  wire adc0_clk_clk_n;
+  wire adc0_clk_clk_p;
+  wire irq;
+  wire [0:0] rfdc_one_adc_4096gsps_rfdc_V0_3_adc0_clk;
   wire [127:0] rfdc_one_adc_4096gsps_rfdc_V0_3_adc0_dout;
+  wire [0:0] rfdc_one_adc_4096gsps_rfdc_V0_3_adc0_sync;
+  wire sysref_in_n;
+  wire sysref_in_p;
   wire [0:0] user_rst;
+  wire vin0_01_n;
+  wire vin0_01_p;
   // sw_reg: snapshot0_01/ss/ctrl
   wire [31:0] rfdc_one_adc_4096gsps_snapshot0_01_ss_ctrl_out;
   wire [31:0] rfdc_one_adc_4096gsps_snapshot0_01_ss_ctrl_user_data_out;
@@ -212,6 +221,42 @@ module top (
     .IP_CLK(user_clk),
     .IP_RESET(user_rst),
     .OP_BUS(rfdc_one_adc_4096gsps_reg_cntrl_user_data_out)
+  );
+
+  // rfdc_V0_3: rfdc_V0_3
+  ADC1_R2R_4096  rfdc_one_adc_4096gsps_rfdc_V0_3 (
+    .adc0_clk_n(adc0_clk_clk_n),
+    .adc0_clk_p(adc0_clk_clk_p),
+    .clk_adc0(rfdc_one_adc_4096gsps_rfdc_V0_3_adc0_clk),
+    .irq(irq),
+    .m00_axis_tdata(rfdc_one_adc_4096gsps_rfdc_V0_3_adc0_dout),
+    .m00_axis_tready(1),
+    .m00_axis_tvalid(rfdc_one_adc_4096gsps_rfdc_V0_3_adc0_sync),
+    .m0_axis_aclk(user_clk),
+    .m0_axis_aresetn(~sys_clk_rst),
+    .s_axi_aclk(axil_clk),
+    .s_axi_araddr(M_AXI_RFDC_araddr[17:0]),
+    .s_axi_aresetn(axil_rst_n),
+    .s_axi_arready(M_AXI_RFDC_arready),
+    .s_axi_arvalid(M_AXI_RFDC_arvalid),
+    .s_axi_awaddr(M_AXI_RFDC_awaddr[17:0]),
+    .s_axi_awready(M_AXI_RFDC_awready),
+    .s_axi_awvalid(M_AXI_RFDC_awvalid),
+    .s_axi_bready(M_AXI_RFDC_bready),
+    .s_axi_bresp(M_AXI_RFDC_bresp),
+    .s_axi_bvalid(M_AXI_RFDC_bvalid),
+    .s_axi_rdata(M_AXI_RFDC_rdata),
+    .s_axi_rready(M_AXI_RFDC_rready),
+    .s_axi_rresp(M_AXI_RFDC_rresp),
+    .s_axi_rvalid(M_AXI_RFDC_rvalid),
+    .s_axi_wdata(M_AXI_RFDC_wdata),
+    .s_axi_wready(M_AXI_RFDC_wready),
+    .s_axi_wstrb(M_AXI_RFDC_wstrb),
+    .s_axi_wvalid(M_AXI_RFDC_wvalid),
+    .sysref_in_n(sysref_in_n),
+    .sysref_in_p(sysref_in_p),
+    .vin0_01_n(vin0_01_n),
+    .vin0_01_p(vin0_01_p)
   );
 
   // sw_reg: snapshot0_01/ss/ctrl
@@ -455,12 +500,12 @@ module top (
 
   rfdc_one_adc_4096gsps  rfdc_one_adc_4096gsps_inst (
     .clk(user_clk),
-    .rfdc_V0_3_rfdc_V0_3_adc0_dout(rfdc_V0_3_rfdc_V0_3_adc0_dout),
-    .rfdc_V0_3_rfdc_V0_3_adc0_sync(rfdc_V0_3_rfdc_V0_3_adc0_sync),
     .rfdc_one_adc_4096gsps_gpio_led1_gateway(rfdc_one_adc_4096gsps_gpio_led1_gateway),
     .rfdc_one_adc_4096gsps_gpio_led_gateway(rfdc_one_adc_4096gsps_gpio_led_gateway),
     .rfdc_one_adc_4096gsps_led_cntrl_user_data_out(rfdc_one_adc_4096gsps_led_cntrl_user_data_out),
     .rfdc_one_adc_4096gsps_reg_cntrl_user_data_out(rfdc_one_adc_4096gsps_reg_cntrl_user_data_out),
+    .rfdc_one_adc_4096gsps_rfdc_V0_3_adc0_dout(rfdc_one_adc_4096gsps_rfdc_V0_3_adc0_dout),
+    .rfdc_one_adc_4096gsps_rfdc_V0_3_adc0_sync(rfdc_one_adc_4096gsps_rfdc_V0_3_adc0_sync),
     .rfdc_one_adc_4096gsps_snapshot0_01_ss_bram_addr(rfdc_one_adc_4096gsps_snapshot0_01_ss_bram_addr),
     .rfdc_one_adc_4096gsps_snapshot0_01_ss_bram_data_in(rfdc_one_adc_4096gsps_snapshot0_01_ss_bram_data_in),
     .rfdc_one_adc_4096gsps_snapshot0_01_ss_bram_data_out(rfdc_one_adc_4096gsps_snapshot0_01_ss_bram_data_out),

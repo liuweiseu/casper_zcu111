@@ -20,6 +20,12 @@ pins:
   clk_100_n:
     iostd: LVDS
     loc: AN15
+  pl_sysref_p:
+    iostd: LVDS
+    loc: AK17
+  pl_sysref_n:
+    iostd: LVDS
+    loc: AK16
   led:
     iostd: LVCMOS18
     loc:

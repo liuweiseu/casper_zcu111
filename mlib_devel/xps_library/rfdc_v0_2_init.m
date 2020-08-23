@@ -1,5 +1,5 @@
 function rfdc_v0_2_init(blk, varargin)
-% Initialize and configure the E2V 5 GSps ADC
+% Initialize and configure the RFDC
 
 defaults = {...
             'sys_config', '1*1-ADC: R2R  DAC: R2R',...
