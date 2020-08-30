@@ -1,14 +1,14 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<GenRun Id="synth_1" LaunchPart="xczu28dr-ffvg1517-2-e" LaunchTime="1598076637">
+<GenRun Id="synth_1" LaunchPart="xczu28dr-ffvg1517-2-e" LaunchTime="1598373752">
   <File Type="VDS-TIMING-PB" Name="top_timing_summary_synth.pb"/>
   <File Type="VDS-TIMINGSUMMARY" Name="top_timing_summary_synth.rpt"/>
   <File Type="RDS-DCP" Name="top.dcp"/>
+  <File Type="RDS-UTIL-PB" Name="top_utilization_synth.pb"/>
+  <File Type="RDS-UTIL" Name="top_utilization_synth.rpt"/>
+  <File Type="RDS-PROPCONSTRS" Name="top_drc_synth.rpt"/>
+  <File Type="RDS-RDS" Name="top.vds"/>
   <File Type="REPORTS-TCL" Name="top_reports.tcl"/>
   <File Type="PA-TCL" Name="top.tcl"/>
-  <File Type="RDS-RDS" Name="top.vds"/>
-  <File Type="RDS-PROPCONSTRS" Name="top_drc_synth.rpt"/>
-  <File Type="RDS-UTIL" Name="top_utilization_synth.rpt"/>
-  <File Type="RDS-UTIL-PB" Name="top_utilization_synth.pb"/>
   <FileSet Name="sources" Type="DesignSrcs" RelSrcDir="$PSRCDIR/sources_1">
     <Filter Type="Srcs"/>
     <File Path="$PSRCDIR/sources_1/bd/zcu111/zcu111.bd">
@@ -1133,9 +1133,7 @@
     </Config>
   </FileSet>
   <Strategy Version="1" Minor="2">
-    <StratHandle Name="Vivado Synthesis Defaults" Flow="Vivado Synthesis 2018">
-      <Desc>Vivado Synthesis Defaults</Desc>
-    </StratHandle>
+    <StratHandle Name="Vivado Synthesis Defaults" Flow="Vivado Synthesis 2018"/>
     <Step Id="synth_design">
       <Option Id="FlattenHierarchy">1</Option>
     </Step>
@@ -1144,11 +1142,11 @@
   <BlockFileSet Type="BlockSrcs" Name="zcu111_axi_protocol_convert_2_0"/>
   <BlockFileSet Type="BlockSrcs" Name="zcu111_xbar_0"/>
   <BlockFileSet Type="BlockSrcs" Name="zcu111_auto_ds_1"/>
-  <BlockFileSet Type="BlockSrcs" Name="rfdc_multi_eight_adcs_2048gsps_mts_c_counter_binary_v12_0_i0"/>
-  <BlockFileSet Type="BlockSrcs" Name="ADC8_R2R_MTS_2048"/>
-  <BlockFileSet Type="BlockSrcs" Name="rfdc_multi_eight_adcs_2048gsps_mts_c_counter_binary_v12_0_i1"/>
+  <BlockFileSet Type="BlockSrcs" Name="zcu111_auto_ds_0"/>
   <BlockFileSet Type="BlockSrcs" Name="zcu111_proc_sys_reset_0_0"/>
   <BlockFileSet Type="BlockSrcs" Name="zcu111_zynq_ultra_ps_e_0_0"/>
   <BlockFileSet Type="BlockSrcs" Name="rfdc_multi_eight_adcs_2048gsps_mts_c_counter_binary_v12_0_i2"/>
-  <BlockFileSet Type="BlockSrcs" Name="zcu111_auto_ds_0"/>
+  <BlockFileSet Type="BlockSrcs" Name="rfdc_multi_eight_adcs_2048gsps_mts_c_counter_binary_v12_0_i1"/>
+  <BlockFileSet Type="BlockSrcs" Name="rfdc_multi_eight_adcs_2048gsps_mts_c_counter_binary_v12_0_i0"/>
+  <BlockFileSet Type="BlockSrcs" Name="ADC8_R2R_MTS_2048"/>
 </GenRun>

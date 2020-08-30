@@ -1,7 +1,7 @@
 Copyright 1986-2019 Xilinx, Inc. All Rights Reserved.
 ----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
 | Tool Version      : Vivado v.2018.3.1_AR71948 (lin64) Build 2489853 Tue Mar 26 04:18:30 MDT 2019
-| Date              : Fri Aug 21 23:24:49 2020
+| Date              : Tue Aug 25 09:52:15 2020
 | Host              : wei-Berkeley running 64-bit Ubuntu 18.04.5 LTS
 | Command           : report_timing_summary -max_paths 10 -warn_on_violation -file top_timing_summary_postroute_physopted.rpt -pb top_timing_summary_postroute_physopted.pb -rpx top_timing_summary_postroute_physopted.rpx
 | Design            : top
@@ -84,7 +84,7 @@ Table of Contents
 ---------------------------
  There are 0 ports with no output delay specified.
 
- There are 0 ports with no output delay but user has a false path constraint
+ There are 2 ports with no output delay but user has a false path constraint (MEDIUM)
 
  There are 0 ports with no output delay but with a timing clock defined on it or propagating through it
 

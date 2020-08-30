@@ -1,3 +1,8 @@
+V0.5:
+(1) Because we are waiting for Mitch's balun board, MTS still hasn't been tested.
+(2) add si5382 Linux driver code to ./preparations_for_zcu111
+
+----------------------------------------------------------------------------------------
 V0.4_debugging:
 We have MTS option in rfdc_V0_4, but haven't been fully tested.
 We need Mitch's balun board for the full MTS test.
