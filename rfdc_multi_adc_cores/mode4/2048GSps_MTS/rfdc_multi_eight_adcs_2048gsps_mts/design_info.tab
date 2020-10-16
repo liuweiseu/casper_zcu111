@@ -1031,6 +1031,9 @@ sync_state7	xps:sw_reg	bin_pts	0
 sync_state7	xps:sw_reg	arith_types	2
 sync_state7	xps:sw_reg	sim_port	on
 sync_state7	xps:sw_reg	show_format	on
+rfdc_V0_4	xps:rfdc_V0_4	sys_config	8\_ADC\_CORES
+rfdc_V0_4	xps:rfdc_V0_4	adc_sample_rate	2048
+rfdc_V0_4	xps:rfdc_V0_4	mts_mode	MTS
 snapshot0_01	casper:bitsnap	io_names	[d0\_d1]
 snapshot0_01	casper:bitsnap	io_widths	[16\_16]
 snapshot0_01	casper:bitsnap	io_bps	[0\_0]
@@ -2119,8 +2122,8 @@ snapshot7_67/ss	casper:snapshot	ext_arm	off
 snapshot7_67/ss	casper:snapshot	ext_circ	off
 snapshot7_67/ss	casper:snapshot	provide_outputs	off
 snapshot7_67/ss	casper:snapshot	use_dsp48	on
-77777	77777	tags	casper:bitsnap,casper:snapshot,xps:bram,xps:sw_reg,xps:xsg
+77777	77777	tags	casper:bitsnap,casper:snapshot,xps:bram,xps:rfdc_V0_4,xps:sw_reg,xps:xsg
 77777	77777	system	rfdc_multi_eight_adcs_2048gsps_mts
-77777	77777	builddate	21-Aug-2020\_23:05:28
+77777	77777	builddate	25-Sep-2020\_12:17:58
 77777	77777	latency	NaN
 77777	77777	xlSgRoot	/home/wei/Software/Vivado/install/Vivado/2018.3/lib/lnx64.o/matlab/sysgen.mexa64

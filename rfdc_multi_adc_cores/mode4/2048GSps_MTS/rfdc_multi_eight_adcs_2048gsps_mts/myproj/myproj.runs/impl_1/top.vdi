@@ -2,381 +2,47 @@
 # Vivado v2018.3.1_AR71948 (64-bit)
 # SW Build 2489853 on Tue Mar 26 04:18:30 MDT 2019
 # IP Build 2486929 on Tue Mar 26 06:44:21 MDT 2019
-# Start of session at: Tue Aug 25 09:45:15 2020
-# Process ID: 14994
+# Start of session at: Fri Sep 25 12:29:02 2020
+# Process ID: 14382
 # Current directory: /home/wei/casper/casper_mlib/tutorials_devel/zcu111/rfdc_multi_adc_cores/mode4/2048GSps_MTS/rfdc_multi_eight_adcs_2048gsps_mts/myproj/myproj.runs/impl_1
 # Command line: vivado -log top.vdi -applog -product Vivado -messageDb vivado.pb -mode batch -source top.tcl -notrace
 # Log file: /home/wei/casper/casper_mlib/tutorials_devel/zcu111/rfdc_multi_adc_cores/mode4/2048GSps_MTS/rfdc_multi_eight_adcs_2048gsps_mts/myproj/myproj.runs/impl_1/top.vdi
 # Journal file: /home/wei/casper/casper_mlib/tutorials_devel/zcu111/rfdc_multi_adc_cores/mode4/2048GSps_MTS/rfdc_multi_eight_adcs_2048gsps_mts/myproj/myproj.runs/impl_1/vivado.jou
 #-----------------------------------------------------------
 source top.tcl -notrace
-INFO: [IP_Flow 19-234] Refreshing IP repositories
-INFO: [IP_Flow 19-1704] No user IP repositories specified
-INFO: [IP_Flow 19-2313] Loaded Vivado IP repository '/home/wei/Software/Vivado/install/Vivado/2018.3/data/ip'.
-Command: link_design -top top -part xczu28dr-ffvg1517-2-e
-Design is defaulting to srcset: sources_1
-Design is defaulting to constrset: constrs_1
-INFO: [Project 1-454] Reading design checkpoint '/home/wei/casper/casper_mlib/tutorials_devel/zcu111/rfdc_multi_adc_cores/mode4/2048GSps_MTS/rfdc_multi_eight_adcs_2048gsps_mts/myproj/myproj.srcs/sources_1/ip/ADC8_R2R_MTS_2048/ADC8_R2R_MTS_2048.dcp' for cell 'rfdc_multi_eight_adcs_2048gsps_mts_rfdc_V0_4'
-INFO: [Project 1-454] Reading design checkpoint '/home/wei/casper/casper_mlib/tutorials_devel/zcu111/rfdc_multi_adc_cores/mode4/2048GSps_MTS/rfdc_multi_eight_adcs_2048gsps_mts/myproj/myproj.srcs/sources_1/ip/rfdc_multi_eight_adcs_2048gsps_mts_c_counter_binary_v12_0_i0/rfdc_multi_eight_adcs_2048gsps_mts_c_counter_binary_v12_0_i0.dcp' for cell 'rfdc_multi_eight_adcs_2048gsps_mts_inst/rfdc_multi_eight_adcs_2048gsps_mts_struct/counter_led/comp0.core_instance0'
-INFO: [Project 1-454] Reading design checkpoint '/home/wei/casper/casper_mlib/tutorials_devel/zcu111/rfdc_multi_adc_cores/mode4/2048GSps_MTS/rfdc_multi_eight_adcs_2048gsps_mts/myproj/myproj.srcs/sources_1/ip/rfdc_multi_eight_adcs_2048gsps_mts_c_counter_binary_v12_0_i1/rfdc_multi_eight_adcs_2048gsps_mts_c_counter_binary_v12_0_i1.dcp' for cell 'rfdc_multi_eight_adcs_2048gsps_mts_inst/rfdc_multi_eight_adcs_2048gsps_mts_struct/snapshot0_01/ss/add_gen/add_gen/comp1.core_instance1'
-INFO: [Project 1-454] Reading design checkpoint '/home/wei/casper/casper_mlib/tutorials_devel/zcu111/rfdc_multi_adc_cores/mode4/2048GSps_MTS/rfdc_multi_eight_adcs_2048gsps_mts/myproj/myproj.srcs/sources_1/ip/rfdc_multi_eight_adcs_2048gsps_mts_c_counter_binary_v12_0_i2/rfdc_multi_eight_adcs_2048gsps_mts_c_counter_binary_v12_0_i2.dcp' for cell 'rfdc_multi_eight_adcs_2048gsps_mts_inst/rfdc_multi_eight_adcs_2048gsps_mts_struct/snapshot0_01/ss/basic_ctrl/dram_munge/input_count/comp2.core_instance2'
-INFO: [Project 1-454] Reading design checkpoint '/home/wei/casper/casper_mlib/tutorials_devel/zcu111/rfdc_multi_adc_cores/mode4/2048GSps_MTS/rfdc_multi_eight_adcs_2048gsps_mts/myproj/myproj.srcs/sources_1/bd/zcu111/ip/zcu111_axi_protocol_convert_1_0/zcu111_axi_protocol_convert_1_0.dcp' for cell 'zcu111_inst/axi_protocol_convert_1'
-INFO: [Project 1-454] Reading design checkpoint '/home/wei/casper/casper_mlib/tutorials_devel/zcu111/rfdc_multi_adc_cores/mode4/2048GSps_MTS/rfdc_multi_eight_adcs_2048gsps_mts/myproj/myproj.srcs/sources_1/bd/zcu111/ip/zcu111_axi_protocol_convert_2_0/zcu111_axi_protocol_convert_2_0.dcp' for cell 'zcu111_inst/axi_protocol_convert_2'
-INFO: [Project 1-454] Reading design checkpoint '/home/wei/casper/casper_mlib/tutorials_devel/zcu111/rfdc_multi_adc_cores/mode4/2048GSps_MTS/rfdc_multi_eight_adcs_2048gsps_mts/myproj/myproj.srcs/sources_1/bd/zcu111/ip/zcu111_proc_sys_reset_0_0/zcu111_proc_sys_reset_0_0.dcp' for cell 'zcu111_inst/proc_sys_reset_0'
-INFO: [Project 1-454] Reading design checkpoint '/home/wei/casper/casper_mlib/tutorials_devel/zcu111/rfdc_multi_adc_cores/mode4/2048GSps_MTS/rfdc_multi_eight_adcs_2048gsps_mts/myproj/myproj.srcs/sources_1/bd/zcu111/ip/zcu111_zynq_ultra_ps_e_0_0/zcu111_zynq_ultra_ps_e_0_0.dcp' for cell 'zcu111_inst/zynq_ultra_ps_e_0'
-INFO: [Project 1-454] Reading design checkpoint '/home/wei/casper/casper_mlib/tutorials_devel/zcu111/rfdc_multi_adc_cores/mode4/2048GSps_MTS/rfdc_multi_eight_adcs_2048gsps_mts/myproj/myproj.srcs/sources_1/bd/zcu111/ip/zcu111_xbar_0/zcu111_xbar_0.dcp' for cell 'zcu111_inst/axi_interconnect_0/xbar'
-INFO: [Project 1-454] Reading design checkpoint '/home/wei/casper/casper_mlib/tutorials_devel/zcu111/rfdc_multi_adc_cores/mode4/2048GSps_MTS/rfdc_multi_eight_adcs_2048gsps_mts/myproj/myproj.srcs/sources_1/bd/zcu111/ip/zcu111_auto_ds_0/zcu111_auto_ds_0.dcp' for cell 'zcu111_inst/axi_interconnect_0/m00_couplers/auto_ds'
-INFO: [Project 1-454] Reading design checkpoint '/home/wei/casper/casper_mlib/tutorials_devel/zcu111/rfdc_multi_adc_cores/mode4/2048GSps_MTS/rfdc_multi_eight_adcs_2048gsps_mts/myproj/myproj.srcs/sources_1/bd/zcu111/ip/zcu111_auto_ds_1/zcu111_auto_ds_1.dcp' for cell 'zcu111_inst/axi_interconnect_0/m01_couplers/auto_ds'
-INFO: [Netlist 29-17] Analyzing 264 Unisim elements for replacement
+Command: open_checkpoint /home/wei/casper/casper_mlib/tutorials_devel/zcu111/rfdc_multi_adc_cores/mode4/2048GSps_MTS/rfdc_multi_eight_adcs_2048gsps_mts/myproj/myproj.runs/impl_1/top.dcp
+
+Starting open_checkpoint Task
+
+Time (s): cpu = 00:00:00.03 ; elapsed = 00:00:00.05 . Memory (MB): peak = 1394.918 ; gain = 0.000 ; free physical = 10672 ; free virtual = 31996
+INFO: [Netlist 29-17] Analyzing 263 Unisim elements for replacement
 INFO: [Netlist 29-28] Unisim Transformation completed in 0 CPU seconds
 INFO: [Project 1-479] Netlist was created with Vivado 2018.3.1_AR71948
 INFO: [Device 21-403] Loading part xczu28dr-ffvg1517-2-e
 INFO: [Project 1-570] Preparing netlist for logic optimization
-Parsing XDC File [/home/wei/casper/casper_mlib/tutorials_devel/zcu111/rfdc_multi_adc_cores/mode4/2048GSps_MTS/rfdc_multi_eight_adcs_2048gsps_mts/myproj/myproj.srcs/sources_1/bd/zcu111/ip/zcu111_proc_sys_reset_0_0/zcu111_proc_sys_reset_0_0_board.xdc] for cell 'zcu111_inst/proc_sys_reset_0/U0'
-Finished Parsing XDC File [/home/wei/casper/casper_mlib/tutorials_devel/zcu111/rfdc_multi_adc_cores/mode4/2048GSps_MTS/rfdc_multi_eight_adcs_2048gsps_mts/myproj/myproj.srcs/sources_1/bd/zcu111/ip/zcu111_proc_sys_reset_0_0/zcu111_proc_sys_reset_0_0_board.xdc] for cell 'zcu111_inst/proc_sys_reset_0/U0'
-Parsing XDC File [/home/wei/casper/casper_mlib/tutorials_devel/zcu111/rfdc_multi_adc_cores/mode4/2048GSps_MTS/rfdc_multi_eight_adcs_2048gsps_mts/myproj/myproj.srcs/sources_1/bd/zcu111/ip/zcu111_proc_sys_reset_0_0/zcu111_proc_sys_reset_0_0.xdc] for cell 'zcu111_inst/proc_sys_reset_0/U0'
-Finished Parsing XDC File [/home/wei/casper/casper_mlib/tutorials_devel/zcu111/rfdc_multi_adc_cores/mode4/2048GSps_MTS/rfdc_multi_eight_adcs_2048gsps_mts/myproj/myproj.srcs/sources_1/bd/zcu111/ip/zcu111_proc_sys_reset_0_0/zcu111_proc_sys_reset_0_0.xdc] for cell 'zcu111_inst/proc_sys_reset_0/U0'
-Parsing XDC File [/home/wei/casper/casper_mlib/tutorials_devel/zcu111/rfdc_multi_adc_cores/mode4/2048GSps_MTS/rfdc_multi_eight_adcs_2048gsps_mts/myproj/myproj.srcs/sources_1/bd/zcu111/ip/zcu111_zynq_ultra_ps_e_0_0/zcu111_zynq_ultra_ps_e_0_0.xdc] for cell 'zcu111_inst/zynq_ultra_ps_e_0/U0'
-Finished Parsing XDC File [/home/wei/casper/casper_mlib/tutorials_devel/zcu111/rfdc_multi_adc_cores/mode4/2048GSps_MTS/rfdc_multi_eight_adcs_2048gsps_mts/myproj/myproj.srcs/sources_1/bd/zcu111/ip/zcu111_zynq_ultra_ps_e_0_0/zcu111_zynq_ultra_ps_e_0_0.xdc] for cell 'zcu111_inst/zynq_ultra_ps_e_0/U0'
-Parsing XDC File [/home/wei/casper/casper_mlib/tutorials_devel/zcu111/rfdc_multi_adc_cores/mode4/2048GSps_MTS/rfdc_multi_eight_adcs_2048gsps_mts/myproj/myproj.srcs/sources_1/ip/ADC8_R2R_MTS_2048/synth/ADC8_R2R_MTS_2048_clocks.xdc] for cell 'rfdc_multi_eight_adcs_2048gsps_mts_rfdc_V0_4/inst'
-INFO: [Timing 38-35] Done setting XDC timing constraints. [/home/wei/casper/casper_mlib/tutorials_devel/zcu111/rfdc_multi_adc_cores/mode4/2048GSps_MTS/rfdc_multi_eight_adcs_2048gsps_mts/myproj/myproj.srcs/sources_1/ip/ADC8_R2R_MTS_2048/synth/ADC8_R2R_MTS_2048_clocks.xdc:56]
-get_clocks: Time (s): cpu = 00:00:08 ; elapsed = 00:00:08 . Memory (MB): peak = 2866.852 ; gain = 438.891 ; free physical = 10179 ; free virtual = 31309
-Finished Parsing XDC File [/home/wei/casper/casper_mlib/tutorials_devel/zcu111/rfdc_multi_adc_cores/mode4/2048GSps_MTS/rfdc_multi_eight_adcs_2048gsps_mts/myproj/myproj.srcs/sources_1/ip/ADC8_R2R_MTS_2048/synth/ADC8_R2R_MTS_2048_clocks.xdc] for cell 'rfdc_multi_eight_adcs_2048gsps_mts_rfdc_V0_4/inst'
-Parsing XDC File [/home/wei/casper/casper_mlib/tutorials_devel/zcu111/rfdc_multi_adc_cores/mode4/2048GSps_MTS/rfdc_multi_eight_adcs_2048gsps_mts/myproj/myproj.srcs/constrs_1/imports/rfdc_multi_eight_adcs_2048gsps_mts/user_const.xdc]
-INFO: [Timing 38-2] Deriving generated clocks [/home/wei/casper/casper_mlib/tutorials_devel/zcu111/rfdc_multi_adc_cores/mode4/2048GSps_MTS/rfdc_multi_eight_adcs_2048gsps_mts/myproj/myproj.srcs/constrs_1/imports/rfdc_multi_eight_adcs_2048gsps_mts/user_const.xdc:12]
-Finished Parsing XDC File [/home/wei/casper/casper_mlib/tutorials_devel/zcu111/rfdc_multi_adc_cores/mode4/2048GSps_MTS/rfdc_multi_eight_adcs_2048gsps_mts/myproj/myproj.srcs/constrs_1/imports/rfdc_multi_eight_adcs_2048gsps_mts/user_const.xdc]
-Parsing XDC File [/home/wei/casper/casper_mlib/tutorials_devel/zcu111/rfdc_multi_adc_cores/mode4/2048GSps_MTS/rfdc_multi_eight_adcs_2048gsps_mts/myproj/myproj.srcs/sources_1/bd/zcu111/ip/zcu111_auto_ds_0/zcu111_auto_ds_0_clocks.xdc] for cell 'zcu111_inst/axi_interconnect_0/m00_couplers/auto_ds/inst'
-Finished Parsing XDC File [/home/wei/casper/casper_mlib/tutorials_devel/zcu111/rfdc_multi_adc_cores/mode4/2048GSps_MTS/rfdc_multi_eight_adcs_2048gsps_mts/myproj/myproj.srcs/sources_1/bd/zcu111/ip/zcu111_auto_ds_0/zcu111_auto_ds_0_clocks.xdc] for cell 'zcu111_inst/axi_interconnect_0/m00_couplers/auto_ds/inst'
-Parsing XDC File [/home/wei/casper/casper_mlib/tutorials_devel/zcu111/rfdc_multi_adc_cores/mode4/2048GSps_MTS/rfdc_multi_eight_adcs_2048gsps_mts/myproj/myproj.srcs/sources_1/bd/zcu111/ip/zcu111_auto_ds_1/zcu111_auto_ds_1_clocks.xdc] for cell 'zcu111_inst/axi_interconnect_0/m01_couplers/auto_ds/inst'
-Finished Parsing XDC File [/home/wei/casper/casper_mlib/tutorials_devel/zcu111/rfdc_multi_adc_cores/mode4/2048GSps_MTS/rfdc_multi_eight_adcs_2048gsps_mts/myproj/myproj.srcs/sources_1/bd/zcu111/ip/zcu111_auto_ds_1/zcu111_auto_ds_1_clocks.xdc] for cell 'zcu111_inst/axi_interconnect_0/m01_couplers/auto_ds/inst'
-Parsing XDC File [/home/wei/casper/casper_mlib/tutorials_devel/zcu111/rfdc_multi_adc_cores/mode4/2048GSps_MTS/rfdc_multi_eight_adcs_2048gsps_mts/myproj/myproj.srcs/sources_1/ip/ADC8_R2R_MTS_2048/synth/ADC8_R2R_MTS_2048.xdc] for cell 'rfdc_multi_eight_adcs_2048gsps_mts_rfdc_V0_4/inst'
-Finished Parsing XDC File [/home/wei/casper/casper_mlib/tutorials_devel/zcu111/rfdc_multi_adc_cores/mode4/2048GSps_MTS/rfdc_multi_eight_adcs_2048gsps_mts/myproj/myproj.srcs/sources_1/ip/ADC8_R2R_MTS_2048/synth/ADC8_R2R_MTS_2048.xdc] for cell 'rfdc_multi_eight_adcs_2048gsps_mts_rfdc_V0_4/inst'
-Sourcing Tcl File [/home/wei/Software/Vivado/install/Vivado/2018.3/data/ip/xpm/xpm_cdc/tcl/xpm_cdc_async_rst.tcl] for cell 'rfdc_multi_eight_adcs_2048gsps_mts_rfdc_V0_4/inst/i_mts_sysref_count_adc/i_xpm_cdc_single_start_pulse'
-Finished Sourcing Tcl File [/home/wei/Software/Vivado/install/Vivado/2018.3/data/ip/xpm/xpm_cdc/tcl/xpm_cdc_async_rst.tcl] for cell 'rfdc_multi_eight_adcs_2048gsps_mts_rfdc_V0_4/inst/i_mts_sysref_count_adc/i_xpm_cdc_single_start_pulse'
-Sourcing Tcl File [/home/wei/Software/Vivado/install/Vivado/2018.3/data/ip/xpm/xpm_cdc/tcl/xpm_cdc_async_rst.tcl] for cell 'rfdc_multi_eight_adcs_2048gsps_mts_rfdc_V0_4/inst/i_xpm_cdc_single_mt_mrk_rst'
-Finished Sourcing Tcl File [/home/wei/Software/Vivado/install/Vivado/2018.3/data/ip/xpm/xpm_cdc/tcl/xpm_cdc_async_rst.tcl] for cell 'rfdc_multi_eight_adcs_2048gsps_mts_rfdc_V0_4/inst/i_xpm_cdc_single_mt_mrk_rst'
-Sourcing Tcl File [/home/wei/Software/Vivado/install/Vivado/2018.3/data/ip/xpm/xpm_cdc/tcl/xpm_cdc_async_rst.tcl] for cell 'zcu111_inst/axi_interconnect_0/m00_couplers/auto_ds/inst/gen_downsizer.gen_simple_downsizer.axi_downsizer_inst/USE_READ.read_addr_inst/cmd_queue/inst/fifo_gen_inst/inst_fifo_gen/gconvfifo.rf/grf.rf/rstblk/ngwrdrst.grst.g7serrst.gnsckt_wrst.rst_wr_reg2_inst'
-Finished Sourcing Tcl File [/home/wei/Software/Vivado/install/Vivado/2018.3/data/ip/xpm/xpm_cdc/tcl/xpm_cdc_async_rst.tcl] for cell 'zcu111_inst/axi_interconnect_0/m00_couplers/auto_ds/inst/gen_downsizer.gen_simple_downsizer.axi_downsizer_inst/USE_READ.read_addr_inst/cmd_queue/inst/fifo_gen_inst/inst_fifo_gen/gconvfifo.rf/grf.rf/rstblk/ngwrdrst.grst.g7serrst.gnsckt_wrst.rst_wr_reg2_inst'
-Sourcing Tcl File [/home/wei/Software/Vivado/install/Vivado/2018.3/data/ip/xpm/xpm_cdc/tcl/xpm_cdc_async_rst.tcl] for cell 'zcu111_inst/axi_interconnect_0/m00_couplers/auto_ds/inst/gen_downsizer.gen_simple_downsizer.axi_downsizer_inst/USE_WRITE.write_addr_inst/USE_B_CHANNEL.cmd_b_queue/inst/fifo_gen_inst/inst_fifo_gen/gconvfifo.rf/grf.rf/rstblk/ngwrdrst.grst.g7serrst.gnsckt_wrst.rst_wr_reg2_inst'
-Finished Sourcing Tcl File [/home/wei/Software/Vivado/install/Vivado/2018.3/data/ip/xpm/xpm_cdc/tcl/xpm_cdc_async_rst.tcl] for cell 'zcu111_inst/axi_interconnect_0/m00_couplers/auto_ds/inst/gen_downsizer.gen_simple_downsizer.axi_downsizer_inst/USE_WRITE.write_addr_inst/USE_B_CHANNEL.cmd_b_queue/inst/fifo_gen_inst/inst_fifo_gen/gconvfifo.rf/grf.rf/rstblk/ngwrdrst.grst.g7serrst.gnsckt_wrst.rst_wr_reg2_inst'
-Sourcing Tcl File [/home/wei/Software/Vivado/install/Vivado/2018.3/data/ip/xpm/xpm_cdc/tcl/xpm_cdc_async_rst.tcl] for cell 'zcu111_inst/axi_interconnect_0/m00_couplers/auto_ds/inst/gen_downsizer.gen_simple_downsizer.axi_downsizer_inst/USE_WRITE.write_addr_inst/cmd_queue/inst/fifo_gen_inst/inst_fifo_gen/gconvfifo.rf/grf.rf/rstblk/ngwrdrst.grst.g7serrst.gnsckt_wrst.rst_wr_reg2_inst'
-Finished Sourcing Tcl File [/home/wei/Software/Vivado/install/Vivado/2018.3/data/ip/xpm/xpm_cdc/tcl/xpm_cdc_async_rst.tcl] for cell 'zcu111_inst/axi_interconnect_0/m00_couplers/auto_ds/inst/gen_downsizer.gen_simple_downsizer.axi_downsizer_inst/USE_WRITE.write_addr_inst/cmd_queue/inst/fifo_gen_inst/inst_fifo_gen/gconvfifo.rf/grf.rf/rstblk/ngwrdrst.grst.g7serrst.gnsckt_wrst.rst_wr_reg2_inst'
-Sourcing Tcl File [/home/wei/Software/Vivado/install/Vivado/2018.3/data/ip/xpm/xpm_cdc/tcl/xpm_cdc_async_rst.tcl] for cell 'zcu111_inst/axi_interconnect_0/m01_couplers/auto_ds/inst/gen_downsizer.gen_simple_downsizer.axi_downsizer_inst/USE_READ.read_addr_inst/cmd_queue/inst/fifo_gen_inst/inst_fifo_gen/gconvfifo.rf/grf.rf/rstblk/ngwrdrst.grst.g7serrst.gnsckt_wrst.rst_wr_reg2_inst'
-Finished Sourcing Tcl File [/home/wei/Software/Vivado/install/Vivado/2018.3/data/ip/xpm/xpm_cdc/tcl/xpm_cdc_async_rst.tcl] for cell 'zcu111_inst/axi_interconnect_0/m01_couplers/auto_ds/inst/gen_downsizer.gen_simple_downsizer.axi_downsizer_inst/USE_READ.read_addr_inst/cmd_queue/inst/fifo_gen_inst/inst_fifo_gen/gconvfifo.rf/grf.rf/rstblk/ngwrdrst.grst.g7serrst.gnsckt_wrst.rst_wr_reg2_inst'
-Sourcing Tcl File [/home/wei/Software/Vivado/install/Vivado/2018.3/data/ip/xpm/xpm_cdc/tcl/xpm_cdc_async_rst.tcl] for cell 'zcu111_inst/axi_interconnect_0/m01_couplers/auto_ds/inst/gen_downsizer.gen_simple_downsizer.axi_downsizer_inst/USE_WRITE.write_addr_inst/USE_B_CHANNEL.cmd_b_queue/inst/fifo_gen_inst/inst_fifo_gen/gconvfifo.rf/grf.rf/rstblk/ngwrdrst.grst.g7serrst.gnsckt_wrst.rst_wr_reg2_inst'
-Finished Sourcing Tcl File [/home/wei/Software/Vivado/install/Vivado/2018.3/data/ip/xpm/xpm_cdc/tcl/xpm_cdc_async_rst.tcl] for cell 'zcu111_inst/axi_interconnect_0/m01_couplers/auto_ds/inst/gen_downsizer.gen_simple_downsizer.axi_downsizer_inst/USE_WRITE.write_addr_inst/USE_B_CHANNEL.cmd_b_queue/inst/fifo_gen_inst/inst_fifo_gen/gconvfifo.rf/grf.rf/rstblk/ngwrdrst.grst.g7serrst.gnsckt_wrst.rst_wr_reg2_inst'
-Sourcing Tcl File [/home/wei/Software/Vivado/install/Vivado/2018.3/data/ip/xpm/xpm_cdc/tcl/xpm_cdc_async_rst.tcl] for cell 'zcu111_inst/axi_interconnect_0/m01_couplers/auto_ds/inst/gen_downsizer.gen_simple_downsizer.axi_downsizer_inst/USE_WRITE.write_addr_inst/cmd_queue/inst/fifo_gen_inst/inst_fifo_gen/gconvfifo.rf/grf.rf/rstblk/ngwrdrst.grst.g7serrst.gnsckt_wrst.rst_wr_reg2_inst'
-Finished Sourcing Tcl File [/home/wei/Software/Vivado/install/Vivado/2018.3/data/ip/xpm/xpm_cdc/tcl/xpm_cdc_async_rst.tcl] for cell 'zcu111_inst/axi_interconnect_0/m01_couplers/auto_ds/inst/gen_downsizer.gen_simple_downsizer.axi_downsizer_inst/USE_WRITE.write_addr_inst/cmd_queue/inst/fifo_gen_inst/inst_fifo_gen/gconvfifo.rf/grf.rf/rstblk/ngwrdrst.grst.g7serrst.gnsckt_wrst.rst_wr_reg2_inst'
-Sourcing Tcl File [/home/wei/Software/Vivado/install/Vivado/2018.3/data/ip/xpm/xpm_cdc/tcl/xpm_cdc_single.tcl] for cell 'rfdc_multi_eight_adcs_2048gsps_mts_rfdc_V0_4/inst/cdc_adc0_clk_valid_i'
-Finished Sourcing Tcl File [/home/wei/Software/Vivado/install/Vivado/2018.3/data/ip/xpm/xpm_cdc/tcl/xpm_cdc_single.tcl] for cell 'rfdc_multi_eight_adcs_2048gsps_mts_rfdc_V0_4/inst/cdc_adc0_clk_valid_i'
-Sourcing Tcl File [/home/wei/Software/Vivado/install/Vivado/2018.3/data/ip/xpm/xpm_cdc/tcl/xpm_cdc_single.tcl] for cell 'rfdc_multi_eight_adcs_2048gsps_mts_rfdc_V0_4/inst/cdc_adc12_mrk_cntr_done_i'
-Finished Sourcing Tcl File [/home/wei/Software/Vivado/install/Vivado/2018.3/data/ip/xpm/xpm_cdc/tcl/xpm_cdc_single.tcl] for cell 'rfdc_multi_eight_adcs_2048gsps_mts_rfdc_V0_4/inst/cdc_adc12_mrk_cntr_done_i'
-Sourcing Tcl File [/home/wei/Software/Vivado/install/Vivado/2018.3/data/ip/xpm/xpm_cdc/tcl/xpm_cdc_single.tcl] for cell 'rfdc_multi_eight_adcs_2048gsps_mts_rfdc_V0_4/inst/cdc_adc10_mrk_cntr_done_i'
-Finished Sourcing Tcl File [/home/wei/Software/Vivado/install/Vivado/2018.3/data/ip/xpm/xpm_cdc/tcl/xpm_cdc_single.tcl] for cell 'rfdc_multi_eight_adcs_2048gsps_mts_rfdc_V0_4/inst/cdc_adc10_mrk_cntr_done_i'
-Sourcing Tcl File [/home/wei/Software/Vivado/install/Vivado/2018.3/data/ip/xpm/xpm_cdc/tcl/xpm_cdc_single.tcl] for cell 'rfdc_multi_eight_adcs_2048gsps_mts_rfdc_V0_4/inst/cdc_adc02_mrk_cntr_done_i'
-Finished Sourcing Tcl File [/home/wei/Software/Vivado/install/Vivado/2018.3/data/ip/xpm/xpm_cdc/tcl/xpm_cdc_single.tcl] for cell 'rfdc_multi_eight_adcs_2048gsps_mts_rfdc_V0_4/inst/cdc_adc02_mrk_cntr_done_i'
-Sourcing Tcl File [/home/wei/Software/Vivado/install/Vivado/2018.3/data/ip/xpm/xpm_cdc/tcl/xpm_cdc_single.tcl] for cell 'rfdc_multi_eight_adcs_2048gsps_mts_rfdc_V0_4/inst/cdc_adc00_mrk_cntr_done_i'
-Finished Sourcing Tcl File [/home/wei/Software/Vivado/install/Vivado/2018.3/data/ip/xpm/xpm_cdc/tcl/xpm_cdc_single.tcl] for cell 'rfdc_multi_eight_adcs_2048gsps_mts_rfdc_V0_4/inst/cdc_adc00_mrk_cntr_done_i'
-Sourcing Tcl File [/home/wei/Software/Vivado/install/Vivado/2018.3/data/ip/xpm/xpm_cdc/tcl/xpm_cdc_single.tcl] for cell 'rfdc_multi_eight_adcs_2048gsps_mts_rfdc_V0_4/inst/cdc_adc3_clk_valid_i'
-Finished Sourcing Tcl File [/home/wei/Software/Vivado/install/Vivado/2018.3/data/ip/xpm/xpm_cdc/tcl/xpm_cdc_single.tcl] for cell 'rfdc_multi_eight_adcs_2048gsps_mts_rfdc_V0_4/inst/cdc_adc3_clk_valid_i'
-Sourcing Tcl File [/home/wei/Software/Vivado/install/Vivado/2018.3/data/ip/xpm/xpm_cdc/tcl/xpm_cdc_single.tcl] for cell 'rfdc_multi_eight_adcs_2048gsps_mts_rfdc_V0_4/inst/cdc_adc2_clk_valid_i'
-Finished Sourcing Tcl File [/home/wei/Software/Vivado/install/Vivado/2018.3/data/ip/xpm/xpm_cdc/tcl/xpm_cdc_single.tcl] for cell 'rfdc_multi_eight_adcs_2048gsps_mts_rfdc_V0_4/inst/cdc_adc2_clk_valid_i'
-Sourcing Tcl File [/home/wei/Software/Vivado/install/Vivado/2018.3/data/ip/xpm/xpm_cdc/tcl/xpm_cdc_single.tcl] for cell 'rfdc_multi_eight_adcs_2048gsps_mts_rfdc_V0_4/inst/cdc_adc1_clk_valid_i'
-Finished Sourcing Tcl File [/home/wei/Software/Vivado/install/Vivado/2018.3/data/ip/xpm/xpm_cdc/tcl/xpm_cdc_single.tcl] for cell 'rfdc_multi_eight_adcs_2048gsps_mts_rfdc_V0_4/inst/cdc_adc1_clk_valid_i'
-Sourcing Tcl File [/home/wei/Software/Vivado/install/Vivado/2018.3/data/ip/xpm/xpm_cdc/tcl/xpm_cdc_single.tcl] for cell 'rfdc_multi_eight_adcs_2048gsps_mts_rfdc_V0_4/inst/ADC8_R2R_MTS_2048_rf_wrapper_i/por_state_machine_i/por_fsm_dac0/cdc_adc0_status_i'
-Finished Sourcing Tcl File [/home/wei/Software/Vivado/install/Vivado/2018.3/data/ip/xpm/xpm_cdc/tcl/xpm_cdc_single.tcl] for cell 'rfdc_multi_eight_adcs_2048gsps_mts_rfdc_V0_4/inst/ADC8_R2R_MTS_2048_rf_wrapper_i/por_state_machine_i/por_fsm_dac0/cdc_adc0_status_i'
-Sourcing Tcl File [/home/wei/Software/Vivado/install/Vivado/2018.3/data/ip/xpm/xpm_cdc/tcl/xpm_cdc_single.tcl] for cell 'rfdc_multi_eight_adcs_2048gsps_mts_rfdc_V0_4/inst/ADC8_R2R_MTS_2048_rf_wrapper_i/por_state_machine_i/por_fsm_dac0/cdc_adc1_status_i'
-Finished Sourcing Tcl File [/home/wei/Software/Vivado/install/Vivado/2018.3/data/ip/xpm/xpm_cdc/tcl/xpm_cdc_single.tcl] for cell 'rfdc_multi_eight_adcs_2048gsps_mts_rfdc_V0_4/inst/ADC8_R2R_MTS_2048_rf_wrapper_i/por_state_machine_i/por_fsm_dac0/cdc_adc1_status_i'
-Sourcing Tcl File [/home/wei/Software/Vivado/install/Vivado/2018.3/data/ip/xpm/xpm_cdc/tcl/xpm_cdc_single.tcl] for cell 'rfdc_multi_eight_adcs_2048gsps_mts_rfdc_V0_4/inst/ADC8_R2R_MTS_2048_rf_wrapper_i/por_state_machine_i/por_fsm_dac0/cdc_adc2_status_i'
-Finished Sourcing Tcl File [/home/wei/Software/Vivado/install/Vivado/2018.3/data/ip/xpm/xpm_cdc/tcl/xpm_cdc_single.tcl] for cell 'rfdc_multi_eight_adcs_2048gsps_mts_rfdc_V0_4/inst/ADC8_R2R_MTS_2048_rf_wrapper_i/por_state_machine_i/por_fsm_dac0/cdc_adc2_status_i'
-Sourcing Tcl File [/home/wei/Software/Vivado/install/Vivado/2018.3/data/ip/xpm/xpm_cdc/tcl/xpm_cdc_single.tcl] for cell 'rfdc_multi_eight_adcs_2048gsps_mts_rfdc_V0_4/inst/ADC8_R2R_MTS_2048_rf_wrapper_i/por_state_machine_i/por_fsm_dac0/cdc_adc3_status_i'
-Finished Sourcing Tcl File [/home/wei/Software/Vivado/install/Vivado/2018.3/data/ip/xpm/xpm_cdc/tcl/xpm_cdc_single.tcl] for cell 'rfdc_multi_eight_adcs_2048gsps_mts_rfdc_V0_4/inst/ADC8_R2R_MTS_2048_rf_wrapper_i/por_state_machine_i/por_fsm_dac0/cdc_adc3_status_i'
-Sourcing Tcl File [/home/wei/Software/Vivado/install/Vivado/2018.3/data/ip/xpm/xpm_cdc/tcl/xpm_cdc_single.tcl] for cell 'rfdc_multi_eight_adcs_2048gsps_mts_rfdc_V0_4/inst/ADC8_R2R_MTS_2048_rf_wrapper_i/por_state_machine_i/por_fsm_adc3/cdc_adc0_status_i'
-Finished Sourcing Tcl File [/home/wei/Software/Vivado/install/Vivado/2018.3/data/ip/xpm/xpm_cdc/tcl/xpm_cdc_single.tcl] for cell 'rfdc_multi_eight_adcs_2048gsps_mts_rfdc_V0_4/inst/ADC8_R2R_MTS_2048_rf_wrapper_i/por_state_machine_i/por_fsm_adc3/cdc_adc0_status_i'
-Sourcing Tcl File [/home/wei/Software/Vivado/install/Vivado/2018.3/data/ip/xpm/xpm_cdc/tcl/xpm_cdc_single.tcl] for cell 'rfdc_multi_eight_adcs_2048gsps_mts_rfdc_V0_4/inst/ADC8_R2R_MTS_2048_rf_wrapper_i/por_state_machine_i/por_fsm_adc3/cdc_adc1_status_i'
-Finished Sourcing Tcl File [/home/wei/Software/Vivado/install/Vivado/2018.3/data/ip/xpm/xpm_cdc/tcl/xpm_cdc_single.tcl] for cell 'rfdc_multi_eight_adcs_2048gsps_mts_rfdc_V0_4/inst/ADC8_R2R_MTS_2048_rf_wrapper_i/por_state_machine_i/por_fsm_adc3/cdc_adc1_status_i'
-Sourcing Tcl File [/home/wei/Software/Vivado/install/Vivado/2018.3/data/ip/xpm/xpm_cdc/tcl/xpm_cdc_single.tcl] for cell 'rfdc_multi_eight_adcs_2048gsps_mts_rfdc_V0_4/inst/ADC8_R2R_MTS_2048_rf_wrapper_i/por_state_machine_i/por_fsm_adc3/cdc_adc2_status_i'
-Finished Sourcing Tcl File [/home/wei/Software/Vivado/install/Vivado/2018.3/data/ip/xpm/xpm_cdc/tcl/xpm_cdc_single.tcl] for cell 'rfdc_multi_eight_adcs_2048gsps_mts_rfdc_V0_4/inst/ADC8_R2R_MTS_2048_rf_wrapper_i/por_state_machine_i/por_fsm_adc3/cdc_adc2_status_i'
-Sourcing Tcl File [/home/wei/Software/Vivado/install/Vivado/2018.3/data/ip/xpm/xpm_cdc/tcl/xpm_cdc_single.tcl] for cell 'rfdc_multi_eight_adcs_2048gsps_mts_rfdc_V0_4/inst/ADC8_R2R_MTS_2048_rf_wrapper_i/por_state_machine_i/por_fsm_adc3/cdc_adc3_status_i'
-Finished Sourcing Tcl File [/home/wei/Software/Vivado/install/Vivado/2018.3/data/ip/xpm/xpm_cdc/tcl/xpm_cdc_single.tcl] for cell 'rfdc_multi_eight_adcs_2048gsps_mts_rfdc_V0_4/inst/ADC8_R2R_MTS_2048_rf_wrapper_i/por_state_machine_i/por_fsm_adc3/cdc_adc3_status_i'
-Sourcing Tcl File [/home/wei/Software/Vivado/install/Vivado/2018.3/data/ip/xpm/xpm_cdc/tcl/xpm_cdc_single.tcl] for cell 'rfdc_multi_eight_adcs_2048gsps_mts_rfdc_V0_4/inst/ADC8_R2R_MTS_2048_rf_wrapper_i/por_state_machine_i/por_fsm_adc2/cdc_adc0_status_i'
-Finished Sourcing Tcl File [/home/wei/Software/Vivado/install/Vivado/2018.3/data/ip/xpm/xpm_cdc/tcl/xpm_cdc_single.tcl] for cell 'rfdc_multi_eight_adcs_2048gsps_mts_rfdc_V0_4/inst/ADC8_R2R_MTS_2048_rf_wrapper_i/por_state_machine_i/por_fsm_adc2/cdc_adc0_status_i'
-Sourcing Tcl File [/home/wei/Software/Vivado/install/Vivado/2018.3/data/ip/xpm/xpm_cdc/tcl/xpm_cdc_single.tcl] for cell 'rfdc_multi_eight_adcs_2048gsps_mts_rfdc_V0_4/inst/ADC8_R2R_MTS_2048_rf_wrapper_i/por_state_machine_i/por_fsm_adc2/cdc_adc1_status_i'
-Finished Sourcing Tcl File [/home/wei/Software/Vivado/install/Vivado/2018.3/data/ip/xpm/xpm_cdc/tcl/xpm_cdc_single.tcl] for cell 'rfdc_multi_eight_adcs_2048gsps_mts_rfdc_V0_4/inst/ADC8_R2R_MTS_2048_rf_wrapper_i/por_state_machine_i/por_fsm_adc2/cdc_adc1_status_i'
-Sourcing Tcl File [/home/wei/Software/Vivado/install/Vivado/2018.3/data/ip/xpm/xpm_cdc/tcl/xpm_cdc_single.tcl] for cell 'rfdc_multi_eight_adcs_2048gsps_mts_rfdc_V0_4/inst/ADC8_R2R_MTS_2048_rf_wrapper_i/por_state_machine_i/por_fsm_adc2/cdc_adc2_status_i'
-Finished Sourcing Tcl File [/home/wei/Software/Vivado/install/Vivado/2018.3/data/ip/xpm/xpm_cdc/tcl/xpm_cdc_single.tcl] for cell 'rfdc_multi_eight_adcs_2048gsps_mts_rfdc_V0_4/inst/ADC8_R2R_MTS_2048_rf_wrapper_i/por_state_machine_i/por_fsm_adc2/cdc_adc2_status_i'
-Sourcing Tcl File [/home/wei/Software/Vivado/install/Vivado/2018.3/data/ip/xpm/xpm_cdc/tcl/xpm_cdc_single.tcl] for cell 'rfdc_multi_eight_adcs_2048gsps_mts_rfdc_V0_4/inst/ADC8_R2R_MTS_2048_rf_wrapper_i/por_state_machine_i/por_fsm_adc2/cdc_adc3_status_i'
-Finished Sourcing Tcl File [/home/wei/Software/Vivado/install/Vivado/2018.3/data/ip/xpm/xpm_cdc/tcl/xpm_cdc_single.tcl] for cell 'rfdc_multi_eight_adcs_2048gsps_mts_rfdc_V0_4/inst/ADC8_R2R_MTS_2048_rf_wrapper_i/por_state_machine_i/por_fsm_adc2/cdc_adc3_status_i'
-Sourcing Tcl File [/home/wei/Software/Vivado/install/Vivado/2018.3/data/ip/xpm/xpm_cdc/tcl/xpm_cdc_single.tcl] for cell 'rfdc_multi_eight_adcs_2048gsps_mts_rfdc_V0_4/inst/ADC8_R2R_MTS_2048_rf_wrapper_i/por_state_machine_i/por_fsm_adc1/cdc_adc0_status_i'
-Finished Sourcing Tcl File [/home/wei/Software/Vivado/install/Vivado/2018.3/data/ip/xpm/xpm_cdc/tcl/xpm_cdc_single.tcl] for cell 'rfdc_multi_eight_adcs_2048gsps_mts_rfdc_V0_4/inst/ADC8_R2R_MTS_2048_rf_wrapper_i/por_state_machine_i/por_fsm_adc1/cdc_adc0_status_i'
-Sourcing Tcl File [/home/wei/Software/Vivado/install/Vivado/2018.3/data/ip/xpm/xpm_cdc/tcl/xpm_cdc_single.tcl] for cell 'rfdc_multi_eight_adcs_2048gsps_mts_rfdc_V0_4/inst/ADC8_R2R_MTS_2048_rf_wrapper_i/por_state_machine_i/por_fsm_adc1/cdc_adc1_status_i'
-Finished Sourcing Tcl File [/home/wei/Software/Vivado/install/Vivado/2018.3/data/ip/xpm/xpm_cdc/tcl/xpm_cdc_single.tcl] for cell 'rfdc_multi_eight_adcs_2048gsps_mts_rfdc_V0_4/inst/ADC8_R2R_MTS_2048_rf_wrapper_i/por_state_machine_i/por_fsm_adc1/cdc_adc1_status_i'
-Sourcing Tcl File [/home/wei/Software/Vivado/install/Vivado/2018.3/data/ip/xpm/xpm_cdc/tcl/xpm_cdc_single.tcl] for cell 'rfdc_multi_eight_adcs_2048gsps_mts_rfdc_V0_4/inst/ADC8_R2R_MTS_2048_rf_wrapper_i/por_state_machine_i/por_fsm_adc1/cdc_adc2_status_i'
-Finished Sourcing Tcl File [/home/wei/Software/Vivado/install/Vivado/2018.3/data/ip/xpm/xpm_cdc/tcl/xpm_cdc_single.tcl] for cell 'rfdc_multi_eight_adcs_2048gsps_mts_rfdc_V0_4/inst/ADC8_R2R_MTS_2048_rf_wrapper_i/por_state_machine_i/por_fsm_adc1/cdc_adc2_status_i'
-Sourcing Tcl File [/home/wei/Software/Vivado/install/Vivado/2018.3/data/ip/xpm/xpm_cdc/tcl/xpm_cdc_single.tcl] for cell 'rfdc_multi_eight_adcs_2048gsps_mts_rfdc_V0_4/inst/ADC8_R2R_MTS_2048_rf_wrapper_i/por_state_machine_i/por_fsm_adc1/cdc_adc3_status_i'
-Finished Sourcing Tcl File [/home/wei/Software/Vivado/install/Vivado/2018.3/data/ip/xpm/xpm_cdc/tcl/xpm_cdc_single.tcl] for cell 'rfdc_multi_eight_adcs_2048gsps_mts_rfdc_V0_4/inst/ADC8_R2R_MTS_2048_rf_wrapper_i/por_state_machine_i/por_fsm_adc1/cdc_adc3_status_i'
-Sourcing Tcl File [/home/wei/Software/Vivado/install/Vivado/2018.3/data/ip/xpm/xpm_cdc/tcl/xpm_cdc_single.tcl] for cell 'rfdc_multi_eight_adcs_2048gsps_mts_rfdc_V0_4/inst/ADC8_R2R_MTS_2048_rf_wrapper_i/por_state_machine_i/por_fsm_adc0/cdc_adc0_status_i'
-Finished Sourcing Tcl File [/home/wei/Software/Vivado/install/Vivado/2018.3/data/ip/xpm/xpm_cdc/tcl/xpm_cdc_single.tcl] for cell 'rfdc_multi_eight_adcs_2048gsps_mts_rfdc_V0_4/inst/ADC8_R2R_MTS_2048_rf_wrapper_i/por_state_machine_i/por_fsm_adc0/cdc_adc0_status_i'
-Sourcing Tcl File [/home/wei/Software/Vivado/install/Vivado/2018.3/data/ip/xpm/xpm_cdc/tcl/xpm_cdc_single.tcl] for cell 'rfdc_multi_eight_adcs_2048gsps_mts_rfdc_V0_4/inst/ADC8_R2R_MTS_2048_rf_wrapper_i/por_state_machine_i/por_fsm_adc0/cdc_adc1_status_i'
-Finished Sourcing Tcl File [/home/wei/Software/Vivado/install/Vivado/2018.3/data/ip/xpm/xpm_cdc/tcl/xpm_cdc_single.tcl] for cell 'rfdc_multi_eight_adcs_2048gsps_mts_rfdc_V0_4/inst/ADC8_R2R_MTS_2048_rf_wrapper_i/por_state_machine_i/por_fsm_adc0/cdc_adc1_status_i'
-Sourcing Tcl File [/home/wei/Software/Vivado/install/Vivado/2018.3/data/ip/xpm/xpm_cdc/tcl/xpm_cdc_single.tcl] for cell 'rfdc_multi_eight_adcs_2048gsps_mts_rfdc_V0_4/inst/ADC8_R2R_MTS_2048_rf_wrapper_i/por_state_machine_i/por_fsm_adc0/cdc_adc2_status_i'
-Finished Sourcing Tcl File [/home/wei/Software/Vivado/install/Vivado/2018.3/data/ip/xpm/xpm_cdc/tcl/xpm_cdc_single.tcl] for cell 'rfdc_multi_eight_adcs_2048gsps_mts_rfdc_V0_4/inst/ADC8_R2R_MTS_2048_rf_wrapper_i/por_state_machine_i/por_fsm_adc0/cdc_adc2_status_i'
-Sourcing Tcl File [/home/wei/Software/Vivado/install/Vivado/2018.3/data/ip/xpm/xpm_cdc/tcl/xpm_cdc_single.tcl] for cell 'rfdc_multi_eight_adcs_2048gsps_mts_rfdc_V0_4/inst/ADC8_R2R_MTS_2048_rf_wrapper_i/por_state_machine_i/por_fsm_adc0/cdc_adc3_status_i'
-Finished Sourcing Tcl File [/home/wei/Software/Vivado/install/Vivado/2018.3/data/ip/xpm/xpm_cdc/tcl/xpm_cdc_single.tcl] for cell 'rfdc_multi_eight_adcs_2048gsps_mts_rfdc_V0_4/inst/ADC8_R2R_MTS_2048_rf_wrapper_i/por_state_machine_i/por_fsm_adc0/cdc_adc3_status_i'
-Sourcing Tcl File [/home/wei/Software/Vivado/install/Vivado/2018.3/data/ip/xpm/xpm_cdc/tcl/xpm_cdc_single.tcl] for cell 'rfdc_multi_eight_adcs_2048gsps_mts_rfdc_V0_4/inst/ADC8_R2R_MTS_2048_rf_wrapper_i/cdc_adc0_done_i'
-Finished Sourcing Tcl File [/home/wei/Software/Vivado/install/Vivado/2018.3/data/ip/xpm/xpm_cdc/tcl/xpm_cdc_single.tcl] for cell 'rfdc_multi_eight_adcs_2048gsps_mts_rfdc_V0_4/inst/ADC8_R2R_MTS_2048_rf_wrapper_i/cdc_adc0_done_i'
-Sourcing Tcl File [/home/wei/Software/Vivado/install/Vivado/2018.3/data/ip/xpm/xpm_cdc/tcl/xpm_cdc_single.tcl] for cell 'rfdc_multi_eight_adcs_2048gsps_mts_rfdc_V0_4/inst/ADC8_R2R_MTS_2048_rf_wrapper_i/cdc_adc1_done_i'
-Finished Sourcing Tcl File [/home/wei/Software/Vivado/install/Vivado/2018.3/data/ip/xpm/xpm_cdc/tcl/xpm_cdc_single.tcl] for cell 'rfdc_multi_eight_adcs_2048gsps_mts_rfdc_V0_4/inst/ADC8_R2R_MTS_2048_rf_wrapper_i/cdc_adc1_done_i'
-Sourcing Tcl File [/home/wei/Software/Vivado/install/Vivado/2018.3/data/ip/xpm/xpm_cdc/tcl/xpm_cdc_single.tcl] for cell 'rfdc_multi_eight_adcs_2048gsps_mts_rfdc_V0_4/inst/ADC8_R2R_MTS_2048_rf_wrapper_i/cdc_adc2_done_i'
-Finished Sourcing Tcl File [/home/wei/Software/Vivado/install/Vivado/2018.3/data/ip/xpm/xpm_cdc/tcl/xpm_cdc_single.tcl] for cell 'rfdc_multi_eight_adcs_2048gsps_mts_rfdc_V0_4/inst/ADC8_R2R_MTS_2048_rf_wrapper_i/cdc_adc2_done_i'
-Sourcing Tcl File [/home/wei/Software/Vivado/install/Vivado/2018.3/data/ip/xpm/xpm_cdc/tcl/xpm_cdc_single.tcl] for cell 'rfdc_multi_eight_adcs_2048gsps_mts_rfdc_V0_4/inst/ADC8_R2R_MTS_2048_rf_wrapper_i/cdc_adc3_done_i'
-Finished Sourcing Tcl File [/home/wei/Software/Vivado/install/Vivado/2018.3/data/ip/xpm/xpm_cdc/tcl/xpm_cdc_single.tcl] for cell 'rfdc_multi_eight_adcs_2048gsps_mts_rfdc_V0_4/inst/ADC8_R2R_MTS_2048_rf_wrapper_i/cdc_adc3_done_i'
-Sourcing Tcl File [/home/wei/Software/Vivado/install/Vivado/2018.3/data/ip/xpm/xpm_cdc/tcl/xpm_cdc_single.tcl] for cell 'rfdc_multi_eight_adcs_2048gsps_mts_rfdc_V0_4/inst/ADC8_R2R_MTS_2048_rf_wrapper_i/cdc_adc0_pll_lock_i'
-Finished Sourcing Tcl File [/home/wei/Software/Vivado/install/Vivado/2018.3/data/ip/xpm/xpm_cdc/tcl/xpm_cdc_single.tcl] for cell 'rfdc_multi_eight_adcs_2048gsps_mts_rfdc_V0_4/inst/ADC8_R2R_MTS_2048_rf_wrapper_i/cdc_adc0_pll_lock_i'
-Sourcing Tcl File [/home/wei/Software/Vivado/install/Vivado/2018.3/data/ip/xpm/xpm_cdc/tcl/xpm_cdc_single.tcl] for cell 'rfdc_multi_eight_adcs_2048gsps_mts_rfdc_V0_4/inst/ADC8_R2R_MTS_2048_rf_wrapper_i/cdc_adc0_powerup_state_i'
-Finished Sourcing Tcl File [/home/wei/Software/Vivado/install/Vivado/2018.3/data/ip/xpm/xpm_cdc/tcl/xpm_cdc_single.tcl] for cell 'rfdc_multi_eight_adcs_2048gsps_mts_rfdc_V0_4/inst/ADC8_R2R_MTS_2048_rf_wrapper_i/cdc_adc0_powerup_state_i'
-Sourcing Tcl File [/home/wei/Software/Vivado/install/Vivado/2018.3/data/ip/xpm/xpm_cdc/tcl/xpm_cdc_single.tcl] for cell 'rfdc_multi_eight_adcs_2048gsps_mts_rfdc_V0_4/inst/ADC8_R2R_MTS_2048_rf_wrapper_i/cdc_adc0_supplies_up_i'
-Finished Sourcing Tcl File [/home/wei/Software/Vivado/install/Vivado/2018.3/data/ip/xpm/xpm_cdc/tcl/xpm_cdc_single.tcl] for cell 'rfdc_multi_eight_adcs_2048gsps_mts_rfdc_V0_4/inst/ADC8_R2R_MTS_2048_rf_wrapper_i/cdc_adc0_supplies_up_i'
-Sourcing Tcl File [/home/wei/Software/Vivado/install/Vivado/2018.3/data/ip/xpm/xpm_cdc/tcl/xpm_cdc_single.tcl] for cell 'rfdc_multi_eight_adcs_2048gsps_mts_rfdc_V0_4/inst/ADC8_R2R_MTS_2048_rf_wrapper_i/cdc_adc0_clk_present_i'
-Finished Sourcing Tcl File [/home/wei/Software/Vivado/install/Vivado/2018.3/data/ip/xpm/xpm_cdc/tcl/xpm_cdc_single.tcl] for cell 'rfdc_multi_eight_adcs_2048gsps_mts_rfdc_V0_4/inst/ADC8_R2R_MTS_2048_rf_wrapper_i/cdc_adc0_clk_present_i'
-Sourcing Tcl File [/home/wei/Software/Vivado/install/Vivado/2018.3/data/ip/xpm/xpm_cdc/tcl/xpm_cdc_single.tcl] for cell 'rfdc_multi_eight_adcs_2048gsps_mts_rfdc_V0_4/inst/ADC8_R2R_MTS_2048_rf_wrapper_i/cdc_adc1_pll_lock_i'
-Finished Sourcing Tcl File [/home/wei/Software/Vivado/install/Vivado/2018.3/data/ip/xpm/xpm_cdc/tcl/xpm_cdc_single.tcl] for cell 'rfdc_multi_eight_adcs_2048gsps_mts_rfdc_V0_4/inst/ADC8_R2R_MTS_2048_rf_wrapper_i/cdc_adc1_pll_lock_i'
-Sourcing Tcl File [/home/wei/Software/Vivado/install/Vivado/2018.3/data/ip/xpm/xpm_cdc/tcl/xpm_cdc_single.tcl] for cell 'rfdc_multi_eight_adcs_2048gsps_mts_rfdc_V0_4/inst/ADC8_R2R_MTS_2048_rf_wrapper_i/cdc_adc1_powerup_state_i'
-Finished Sourcing Tcl File [/home/wei/Software/Vivado/install/Vivado/2018.3/data/ip/xpm/xpm_cdc/tcl/xpm_cdc_single.tcl] for cell 'rfdc_multi_eight_adcs_2048gsps_mts_rfdc_V0_4/inst/ADC8_R2R_MTS_2048_rf_wrapper_i/cdc_adc1_powerup_state_i'
-Sourcing Tcl File [/home/wei/Software/Vivado/install/Vivado/2018.3/data/ip/xpm/xpm_cdc/tcl/xpm_cdc_single.tcl] for cell 'rfdc_multi_eight_adcs_2048gsps_mts_rfdc_V0_4/inst/ADC8_R2R_MTS_2048_rf_wrapper_i/cdc_adc1_supplies_up_i'
-Finished Sourcing Tcl File [/home/wei/Software/Vivado/install/Vivado/2018.3/data/ip/xpm/xpm_cdc/tcl/xpm_cdc_single.tcl] for cell 'rfdc_multi_eight_adcs_2048gsps_mts_rfdc_V0_4/inst/ADC8_R2R_MTS_2048_rf_wrapper_i/cdc_adc1_supplies_up_i'
-Sourcing Tcl File [/home/wei/Software/Vivado/install/Vivado/2018.3/data/ip/xpm/xpm_cdc/tcl/xpm_cdc_single.tcl] for cell 'rfdc_multi_eight_adcs_2048gsps_mts_rfdc_V0_4/inst/ADC8_R2R_MTS_2048_rf_wrapper_i/cdc_adc1_clk_present_i'
-Finished Sourcing Tcl File [/home/wei/Software/Vivado/install/Vivado/2018.3/data/ip/xpm/xpm_cdc/tcl/xpm_cdc_single.tcl] for cell 'rfdc_multi_eight_adcs_2048gsps_mts_rfdc_V0_4/inst/ADC8_R2R_MTS_2048_rf_wrapper_i/cdc_adc1_clk_present_i'
-Sourcing Tcl File [/home/wei/Software/Vivado/install/Vivado/2018.3/data/ip/xpm/xpm_cdc/tcl/xpm_cdc_single.tcl] for cell 'rfdc_multi_eight_adcs_2048gsps_mts_rfdc_V0_4/inst/ADC8_R2R_MTS_2048_rf_wrapper_i/cdc_adc2_pll_lock_i'
-Finished Sourcing Tcl File [/home/wei/Software/Vivado/install/Vivado/2018.3/data/ip/xpm/xpm_cdc/tcl/xpm_cdc_single.tcl] for cell 'rfdc_multi_eight_adcs_2048gsps_mts_rfdc_V0_4/inst/ADC8_R2R_MTS_2048_rf_wrapper_i/cdc_adc2_pll_lock_i'
-Sourcing Tcl File [/home/wei/Software/Vivado/install/Vivado/2018.3/data/ip/xpm/xpm_cdc/tcl/xpm_cdc_single.tcl] for cell 'rfdc_multi_eight_adcs_2048gsps_mts_rfdc_V0_4/inst/ADC8_R2R_MTS_2048_rf_wrapper_i/cdc_adc2_powerup_state_i'
-Finished Sourcing Tcl File [/home/wei/Software/Vivado/install/Vivado/2018.3/data/ip/xpm/xpm_cdc/tcl/xpm_cdc_single.tcl] for cell 'rfdc_multi_eight_adcs_2048gsps_mts_rfdc_V0_4/inst/ADC8_R2R_MTS_2048_rf_wrapper_i/cdc_adc2_powerup_state_i'
-Sourcing Tcl File [/home/wei/Software/Vivado/install/Vivado/2018.3/data/ip/xpm/xpm_cdc/tcl/xpm_cdc_single.tcl] for cell 'rfdc_multi_eight_adcs_2048gsps_mts_rfdc_V0_4/inst/ADC8_R2R_MTS_2048_rf_wrapper_i/cdc_adc2_supplies_up_i'
-Finished Sourcing Tcl File [/home/wei/Software/Vivado/install/Vivado/2018.3/data/ip/xpm/xpm_cdc/tcl/xpm_cdc_single.tcl] for cell 'rfdc_multi_eight_adcs_2048gsps_mts_rfdc_V0_4/inst/ADC8_R2R_MTS_2048_rf_wrapper_i/cdc_adc2_supplies_up_i'
-Sourcing Tcl File [/home/wei/Software/Vivado/install/Vivado/2018.3/data/ip/xpm/xpm_cdc/tcl/xpm_cdc_single.tcl] for cell 'rfdc_multi_eight_adcs_2048gsps_mts_rfdc_V0_4/inst/ADC8_R2R_MTS_2048_rf_wrapper_i/cdc_adc2_clk_present_i'
-Finished Sourcing Tcl File [/home/wei/Software/Vivado/install/Vivado/2018.3/data/ip/xpm/xpm_cdc/tcl/xpm_cdc_single.tcl] for cell 'rfdc_multi_eight_adcs_2048gsps_mts_rfdc_V0_4/inst/ADC8_R2R_MTS_2048_rf_wrapper_i/cdc_adc2_clk_present_i'
-Sourcing Tcl File [/home/wei/Software/Vivado/install/Vivado/2018.3/data/ip/xpm/xpm_cdc/tcl/xpm_cdc_single.tcl] for cell 'rfdc_multi_eight_adcs_2048gsps_mts_rfdc_V0_4/inst/ADC8_R2R_MTS_2048_rf_wrapper_i/cdc_adc3_pll_lock_i'
-Finished Sourcing Tcl File [/home/wei/Software/Vivado/install/Vivado/2018.3/data/ip/xpm/xpm_cdc/tcl/xpm_cdc_single.tcl] for cell 'rfdc_multi_eight_adcs_2048gsps_mts_rfdc_V0_4/inst/ADC8_R2R_MTS_2048_rf_wrapper_i/cdc_adc3_pll_lock_i'
-Sourcing Tcl File [/home/wei/Software/Vivado/install/Vivado/2018.3/data/ip/xpm/xpm_cdc/tcl/xpm_cdc_single.tcl] for cell 'rfdc_multi_eight_adcs_2048gsps_mts_rfdc_V0_4/inst/ADC8_R2R_MTS_2048_rf_wrapper_i/cdc_adc3_powerup_state_i'
-Finished Sourcing Tcl File [/home/wei/Software/Vivado/install/Vivado/2018.3/data/ip/xpm/xpm_cdc/tcl/xpm_cdc_single.tcl] for cell 'rfdc_multi_eight_adcs_2048gsps_mts_rfdc_V0_4/inst/ADC8_R2R_MTS_2048_rf_wrapper_i/cdc_adc3_powerup_state_i'
-Sourcing Tcl File [/home/wei/Software/Vivado/install/Vivado/2018.3/data/ip/xpm/xpm_cdc/tcl/xpm_cdc_single.tcl] for cell 'rfdc_multi_eight_adcs_2048gsps_mts_rfdc_V0_4/inst/ADC8_R2R_MTS_2048_rf_wrapper_i/cdc_adc3_supplies_up_i'
-Finished Sourcing Tcl File [/home/wei/Software/Vivado/install/Vivado/2018.3/data/ip/xpm/xpm_cdc/tcl/xpm_cdc_single.tcl] for cell 'rfdc_multi_eight_adcs_2048gsps_mts_rfdc_V0_4/inst/ADC8_R2R_MTS_2048_rf_wrapper_i/cdc_adc3_supplies_up_i'
-Sourcing Tcl File [/home/wei/Software/Vivado/install/Vivado/2018.3/data/ip/xpm/xpm_cdc/tcl/xpm_cdc_single.tcl] for cell 'rfdc_multi_eight_adcs_2048gsps_mts_rfdc_V0_4/inst/ADC8_R2R_MTS_2048_rf_wrapper_i/cdc_adc3_clk_present_i'
-Finished Sourcing Tcl File [/home/wei/Software/Vivado/install/Vivado/2018.3/data/ip/xpm/xpm_cdc/tcl/xpm_cdc_single.tcl] for cell 'rfdc_multi_eight_adcs_2048gsps_mts_rfdc_V0_4/inst/ADC8_R2R_MTS_2048_rf_wrapper_i/cdc_adc3_clk_present_i'
-Sourcing Tcl File [/home/wei/Software/Vivado/install/Vivado/2018.3/data/ip/xpm/xpm_cdc/tcl/xpm_cdc_single.tcl] for cell 'rfdc_multi_eight_adcs_2048gsps_mts_rfdc_V0_4/inst/ADC8_R2R_MTS_2048_rf_wrapper_i/cdc_dac0_supplies_up_i'
-Finished Sourcing Tcl File [/home/wei/Software/Vivado/install/Vivado/2018.3/data/ip/xpm/xpm_cdc/tcl/xpm_cdc_single.tcl] for cell 'rfdc_multi_eight_adcs_2048gsps_mts_rfdc_V0_4/inst/ADC8_R2R_MTS_2048_rf_wrapper_i/cdc_dac0_supplies_up_i'
-Sourcing Tcl File [/home/wei/Software/Vivado/install/Vivado/2018.3/data/ip/xpm/xpm_cdc/tcl/xpm_cdc_single.tcl] for cell 'rfdc_multi_eight_adcs_2048gsps_mts_rfdc_V0_4/inst/ADC8_R2R_MTS_2048_rf_wrapper_i/cdc_dac1_supplies_up_i'
-Finished Sourcing Tcl File [/home/wei/Software/Vivado/install/Vivado/2018.3/data/ip/xpm/xpm_cdc/tcl/xpm_cdc_single.tcl] for cell 'rfdc_multi_eight_adcs_2048gsps_mts_rfdc_V0_4/inst/ADC8_R2R_MTS_2048_rf_wrapper_i/cdc_dac1_supplies_up_i'
-Sourcing Tcl File [/home/wei/Software/Vivado/install/Vivado/2018.3/data/ip/xpm/xpm_cdc/tcl/xpm_cdc_single.tcl] for cell 'rfdc_multi_eight_adcs_2048gsps_mts_rfdc_V0_4/inst/cdc_adc32_mrk_cntr_done_i'
-Finished Sourcing Tcl File [/home/wei/Software/Vivado/install/Vivado/2018.3/data/ip/xpm/xpm_cdc/tcl/xpm_cdc_single.tcl] for cell 'rfdc_multi_eight_adcs_2048gsps_mts_rfdc_V0_4/inst/cdc_adc32_mrk_cntr_done_i'
-Sourcing Tcl File [/home/wei/Software/Vivado/install/Vivado/2018.3/data/ip/xpm/xpm_cdc/tcl/xpm_cdc_single.tcl] for cell 'rfdc_multi_eight_adcs_2048gsps_mts_rfdc_V0_4/inst/cdc_adc30_mrk_cntr_done_i'
-Finished Sourcing Tcl File [/home/wei/Software/Vivado/install/Vivado/2018.3/data/ip/xpm/xpm_cdc/tcl/xpm_cdc_single.tcl] for cell 'rfdc_multi_eight_adcs_2048gsps_mts_rfdc_V0_4/inst/cdc_adc30_mrk_cntr_done_i'
-Sourcing Tcl File [/home/wei/Software/Vivado/install/Vivado/2018.3/data/ip/xpm/xpm_cdc/tcl/xpm_cdc_single.tcl] for cell 'rfdc_multi_eight_adcs_2048gsps_mts_rfdc_V0_4/inst/cdc_adc22_mrk_cntr_done_i'
-Finished Sourcing Tcl File [/home/wei/Software/Vivado/install/Vivado/2018.3/data/ip/xpm/xpm_cdc/tcl/xpm_cdc_single.tcl] for cell 'rfdc_multi_eight_adcs_2048gsps_mts_rfdc_V0_4/inst/cdc_adc22_mrk_cntr_done_i'
-Sourcing Tcl File [/home/wei/Software/Vivado/install/Vivado/2018.3/data/ip/xpm/xpm_cdc/tcl/xpm_cdc_single.tcl] for cell 'rfdc_multi_eight_adcs_2048gsps_mts_rfdc_V0_4/inst/cdc_adc20_mrk_cntr_done_i'
-Finished Sourcing Tcl File [/home/wei/Software/Vivado/install/Vivado/2018.3/data/ip/xpm/xpm_cdc/tcl/xpm_cdc_single.tcl] for cell 'rfdc_multi_eight_adcs_2048gsps_mts_rfdc_V0_4/inst/cdc_adc20_mrk_cntr_done_i'
-Sourcing Tcl File [/home/wei/Software/Vivado/install/Vivado/2018.3/data/ip/xpm/xpm_cdc/tcl/xpm_cdc_single.tcl] for cell 'rfdc_multi_eight_adcs_2048gsps_mts_rfdc_V0_4/inst/i_mts_sysref_count_adc/i_xpm_cdc_sysref'
-Finished Sourcing Tcl File [/home/wei/Software/Vivado/install/Vivado/2018.3/data/ip/xpm/xpm_cdc/tcl/xpm_cdc_single.tcl] for cell 'rfdc_multi_eight_adcs_2048gsps_mts_rfdc_V0_4/inst/i_mts_sysref_count_adc/i_xpm_cdc_sysref'
-Sourcing Tcl File [/home/wei/Software/Vivado/install/Vivado/2018.3/data/ip/xpm/xpm_cdc/tcl/xpm_cdc_single.tcl] for cell 'rfdc_multi_eight_adcs_2048gsps_mts_rfdc_V0_4/inst/ADC8_R2R_MTS_2048_rf_wrapper_i/i_fifo_ctrl_adc/Ixpm_cdc_fifo_en'
-Finished Sourcing Tcl File [/home/wei/Software/Vivado/install/Vivado/2018.3/data/ip/xpm/xpm_cdc/tcl/xpm_cdc_single.tcl] for cell 'rfdc_multi_eight_adcs_2048gsps_mts_rfdc_V0_4/inst/ADC8_R2R_MTS_2048_rf_wrapper_i/i_fifo_ctrl_adc/Ixpm_cdc_fifo_en'
-Sourcing Tcl File [/home/wei/Software/Vivado/install/Vivado/2018.3/data/ip/xpm/xpm_cdc/tcl/xpm_cdc_single.tcl] for cell 'rfdc_multi_eight_adcs_2048gsps_mts_rfdc_V0_4/inst/ADC8_R2R_MTS_2048_rf_wrapper_i/i_fifo_ctrl_adc/Ixpm_cdc_fifo_src'
-Finished Sourcing Tcl File [/home/wei/Software/Vivado/install/Vivado/2018.3/data/ip/xpm/xpm_cdc/tcl/xpm_cdc_single.tcl] for cell 'rfdc_multi_eight_adcs_2048gsps_mts_rfdc_V0_4/inst/ADC8_R2R_MTS_2048_rf_wrapper_i/i_fifo_ctrl_adc/Ixpm_cdc_fifo_src'
-Sourcing Tcl File [/home/wei/Software/Vivado/install/Vivado/2018.3/data/ip/xpm/xpm_cdc/tcl/xpm_cdc_single.tcl] for cell 'rfdc_multi_eight_adcs_2048gsps_mts_rfdc_V0_4/inst/i_rf_conv_mt_data_align_adc32/sync_bypass'
-Finished Sourcing Tcl File [/home/wei/Software/Vivado/install/Vivado/2018.3/data/ip/xpm/xpm_cdc/tcl/xpm_cdc_single.tcl] for cell 'rfdc_multi_eight_adcs_2048gsps_mts_rfdc_V0_4/inst/i_rf_conv_mt_data_align_adc32/sync_bypass'
-Sourcing Tcl File [/home/wei/Software/Vivado/install/Vivado/2018.3/data/ip/xpm/xpm_cdc/tcl/xpm_cdc_single.tcl] for cell 'rfdc_multi_eight_adcs_2048gsps_mts_rfdc_V0_4/inst/i_ADC8_R2R_MTS_2048_irq_sync/sync_dac03_fifo_irq'
-Finished Sourcing Tcl File [/home/wei/Software/Vivado/install/Vivado/2018.3/data/ip/xpm/xpm_cdc/tcl/xpm_cdc_single.tcl] for cell 'rfdc_multi_eight_adcs_2048gsps_mts_rfdc_V0_4/inst/i_ADC8_R2R_MTS_2048_irq_sync/sync_dac03_fifo_irq'
-Sourcing Tcl File [/home/wei/Software/Vivado/install/Vivado/2018.3/data/ip/xpm/xpm_cdc/tcl/xpm_cdc_single.tcl] for cell 'rfdc_multi_eight_adcs_2048gsps_mts_rfdc_V0_4/inst/i_ADC8_R2R_MTS_2048_irq_sync/sync_dac10_data_irq'
-Finished Sourcing Tcl File [/home/wei/Software/Vivado/install/Vivado/2018.3/data/ip/xpm/xpm_cdc/tcl/xpm_cdc_single.tcl] for cell 'rfdc_multi_eight_adcs_2048gsps_mts_rfdc_V0_4/inst/i_ADC8_R2R_MTS_2048_irq_sync/sync_dac10_data_irq'
-Sourcing Tcl File [/home/wei/Software/Vivado/install/Vivado/2018.3/data/ip/xpm/xpm_cdc/tcl/xpm_cdc_single.tcl] for cell 'rfdc_multi_eight_adcs_2048gsps_mts_rfdc_V0_4/inst/i_ADC8_R2R_MTS_2048_irq_sync/sync_dac10_fifo_irq'
-Finished Sourcing Tcl File [/home/wei/Software/Vivado/install/Vivado/2018.3/data/ip/xpm/xpm_cdc/tcl/xpm_cdc_single.tcl] for cell 'rfdc_multi_eight_adcs_2048gsps_mts_rfdc_V0_4/inst/i_ADC8_R2R_MTS_2048_irq_sync/sync_dac10_fifo_irq'
-Sourcing Tcl File [/home/wei/Software/Vivado/install/Vivado/2018.3/data/ip/xpm/xpm_cdc/tcl/xpm_cdc_single.tcl] for cell 'rfdc_multi_eight_adcs_2048gsps_mts_rfdc_V0_4/inst/i_ADC8_R2R_MTS_2048_irq_sync/sync_dac11_data_irq'
-Finished Sourcing Tcl File [/home/wei/Software/Vivado/install/Vivado/2018.3/data/ip/xpm/xpm_cdc/tcl/xpm_cdc_single.tcl] for cell 'rfdc_multi_eight_adcs_2048gsps_mts_rfdc_V0_4/inst/i_ADC8_R2R_MTS_2048_irq_sync/sync_dac11_data_irq'
-Sourcing Tcl File [/home/wei/Software/Vivado/install/Vivado/2018.3/data/ip/xpm/xpm_cdc/tcl/xpm_cdc_single.tcl] for cell 'rfdc_multi_eight_adcs_2048gsps_mts_rfdc_V0_4/inst/i_ADC8_R2R_MTS_2048_irq_sync/sync_dac11_fifo_irq'
-Finished Sourcing Tcl File [/home/wei/Software/Vivado/install/Vivado/2018.3/data/ip/xpm/xpm_cdc/tcl/xpm_cdc_single.tcl] for cell 'rfdc_multi_eight_adcs_2048gsps_mts_rfdc_V0_4/inst/i_ADC8_R2R_MTS_2048_irq_sync/sync_dac11_fifo_irq'
-Sourcing Tcl File [/home/wei/Software/Vivado/install/Vivado/2018.3/data/ip/xpm/xpm_cdc/tcl/xpm_cdc_single.tcl] for cell 'rfdc_multi_eight_adcs_2048gsps_mts_rfdc_V0_4/inst/i_ADC8_R2R_MTS_2048_irq_sync/sync_dac12_data_irq'
-Finished Sourcing Tcl File [/home/wei/Software/Vivado/install/Vivado/2018.3/data/ip/xpm/xpm_cdc/tcl/xpm_cdc_single.tcl] for cell 'rfdc_multi_eight_adcs_2048gsps_mts_rfdc_V0_4/inst/i_ADC8_R2R_MTS_2048_irq_sync/sync_dac12_data_irq'
-Sourcing Tcl File [/home/wei/Software/Vivado/install/Vivado/2018.3/data/ip/xpm/xpm_cdc/tcl/xpm_cdc_single.tcl] for cell 'rfdc_multi_eight_adcs_2048gsps_mts_rfdc_V0_4/inst/i_ADC8_R2R_MTS_2048_irq_sync/sync_dac12_fifo_irq'
-Finished Sourcing Tcl File [/home/wei/Software/Vivado/install/Vivado/2018.3/data/ip/xpm/xpm_cdc/tcl/xpm_cdc_single.tcl] for cell 'rfdc_multi_eight_adcs_2048gsps_mts_rfdc_V0_4/inst/i_ADC8_R2R_MTS_2048_irq_sync/sync_dac12_fifo_irq'
-Sourcing Tcl File [/home/wei/Software/Vivado/install/Vivado/2018.3/data/ip/xpm/xpm_cdc/tcl/xpm_cdc_single.tcl] for cell 'rfdc_multi_eight_adcs_2048gsps_mts_rfdc_V0_4/inst/i_ADC8_R2R_MTS_2048_irq_sync/sync_dac13_data_irq'
-Finished Sourcing Tcl File [/home/wei/Software/Vivado/install/Vivado/2018.3/data/ip/xpm/xpm_cdc/tcl/xpm_cdc_single.tcl] for cell 'rfdc_multi_eight_adcs_2048gsps_mts_rfdc_V0_4/inst/i_ADC8_R2R_MTS_2048_irq_sync/sync_dac13_data_irq'
-Sourcing Tcl File [/home/wei/Software/Vivado/install/Vivado/2018.3/data/ip/xpm/xpm_cdc/tcl/xpm_cdc_single.tcl] for cell 'rfdc_multi_eight_adcs_2048gsps_mts_rfdc_V0_4/inst/i_ADC8_R2R_MTS_2048_irq_sync/sync_dac13_fifo_irq'
-Finished Sourcing Tcl File [/home/wei/Software/Vivado/install/Vivado/2018.3/data/ip/xpm/xpm_cdc/tcl/xpm_cdc_single.tcl] for cell 'rfdc_multi_eight_adcs_2048gsps_mts_rfdc_V0_4/inst/i_ADC8_R2R_MTS_2048_irq_sync/sync_dac13_fifo_irq'
-Sourcing Tcl File [/home/wei/Software/Vivado/install/Vivado/2018.3/data/ip/xpm/xpm_cdc/tcl/xpm_cdc_single.tcl] for cell 'rfdc_multi_eight_adcs_2048gsps_mts_rfdc_V0_4/inst/i_ADC8_R2R_MTS_2048_irq_sync/sync_adc00_over_vol'
-Finished Sourcing Tcl File [/home/wei/Software/Vivado/install/Vivado/2018.3/data/ip/xpm/xpm_cdc/tcl/xpm_cdc_single.tcl] for cell 'rfdc_multi_eight_adcs_2048gsps_mts_rfdc_V0_4/inst/i_ADC8_R2R_MTS_2048_irq_sync/sync_adc00_over_vol'
-Sourcing Tcl File [/home/wei/Software/Vivado/install/Vivado/2018.3/data/ip/xpm/xpm_cdc/tcl/xpm_cdc_single.tcl] for cell 'rfdc_multi_eight_adcs_2048gsps_mts_rfdc_V0_4/inst/i_ADC8_R2R_MTS_2048_irq_sync/sync_adc00_over_range'
-Finished Sourcing Tcl File [/home/wei/Software/Vivado/install/Vivado/2018.3/data/ip/xpm/xpm_cdc/tcl/xpm_cdc_single.tcl] for cell 'rfdc_multi_eight_adcs_2048gsps_mts_rfdc_V0_4/inst/i_ADC8_R2R_MTS_2048_irq_sync/sync_adc00_over_range'
-Sourcing Tcl File [/home/wei/Software/Vivado/install/Vivado/2018.3/data/ip/xpm/xpm_cdc/tcl/xpm_cdc_single.tcl] for cell 'rfdc_multi_eight_adcs_2048gsps_mts_rfdc_V0_4/inst/i_ADC8_R2R_MTS_2048_irq_sync/sync_adc00_data_irq'
-Finished Sourcing Tcl File [/home/wei/Software/Vivado/install/Vivado/2018.3/data/ip/xpm/xpm_cdc/tcl/xpm_cdc_single.tcl] for cell 'rfdc_multi_eight_adcs_2048gsps_mts_rfdc_V0_4/inst/i_ADC8_R2R_MTS_2048_irq_sync/sync_adc00_data_irq'
-Sourcing Tcl File [/home/wei/Software/Vivado/install/Vivado/2018.3/data/ip/xpm/xpm_cdc/tcl/xpm_cdc_single.tcl] for cell 'rfdc_multi_eight_adcs_2048gsps_mts_rfdc_V0_4/inst/i_ADC8_R2R_MTS_2048_irq_sync/sync_adc00_fifo_irq'
-Finished Sourcing Tcl File [/home/wei/Software/Vivado/install/Vivado/2018.3/data/ip/xpm/xpm_cdc/tcl/xpm_cdc_single.tcl] for cell 'rfdc_multi_eight_adcs_2048gsps_mts_rfdc_V0_4/inst/i_ADC8_R2R_MTS_2048_irq_sync/sync_adc00_fifo_irq'
-Sourcing Tcl File [/home/wei/Software/Vivado/install/Vivado/2018.3/data/ip/xpm/xpm_cdc/tcl/xpm_cdc_single.tcl] for cell 'rfdc_multi_eight_adcs_2048gsps_mts_rfdc_V0_4/inst/i_ADC8_R2R_MTS_2048_irq_sync/sync_adc01_over_vol'
-Finished Sourcing Tcl File [/home/wei/Software/Vivado/install/Vivado/2018.3/data/ip/xpm/xpm_cdc/tcl/xpm_cdc_single.tcl] for cell 'rfdc_multi_eight_adcs_2048gsps_mts_rfdc_V0_4/inst/i_ADC8_R2R_MTS_2048_irq_sync/sync_adc01_over_vol'
-Sourcing Tcl File [/home/wei/Software/Vivado/install/Vivado/2018.3/data/ip/xpm/xpm_cdc/tcl/xpm_cdc_single.tcl] for cell 'rfdc_multi_eight_adcs_2048gsps_mts_rfdc_V0_4/inst/i_ADC8_R2R_MTS_2048_irq_sync/sync_adc01_over_range'
-Finished Sourcing Tcl File [/home/wei/Software/Vivado/install/Vivado/2018.3/data/ip/xpm/xpm_cdc/tcl/xpm_cdc_single.tcl] for cell 'rfdc_multi_eight_adcs_2048gsps_mts_rfdc_V0_4/inst/i_ADC8_R2R_MTS_2048_irq_sync/sync_adc01_over_range'
-Sourcing Tcl File [/home/wei/Software/Vivado/install/Vivado/2018.3/data/ip/xpm/xpm_cdc/tcl/xpm_cdc_single.tcl] for cell 'rfdc_multi_eight_adcs_2048gsps_mts_rfdc_V0_4/inst/i_ADC8_R2R_MTS_2048_irq_sync/sync_adc01_data_irq'
-Finished Sourcing Tcl File [/home/wei/Software/Vivado/install/Vivado/2018.3/data/ip/xpm/xpm_cdc/tcl/xpm_cdc_single.tcl] for cell 'rfdc_multi_eight_adcs_2048gsps_mts_rfdc_V0_4/inst/i_ADC8_R2R_MTS_2048_irq_sync/sync_adc01_data_irq'
-Sourcing Tcl File [/home/wei/Software/Vivado/install/Vivado/2018.3/data/ip/xpm/xpm_cdc/tcl/xpm_cdc_single.tcl] for cell 'rfdc_multi_eight_adcs_2048gsps_mts_rfdc_V0_4/inst/i_ADC8_R2R_MTS_2048_irq_sync/sync_adc01_fifo_irq'
-Finished Sourcing Tcl File [/home/wei/Software/Vivado/install/Vivado/2018.3/data/ip/xpm/xpm_cdc/tcl/xpm_cdc_single.tcl] for cell 'rfdc_multi_eight_adcs_2048gsps_mts_rfdc_V0_4/inst/i_ADC8_R2R_MTS_2048_irq_sync/sync_adc01_fifo_irq'
-Sourcing Tcl File [/home/wei/Software/Vivado/install/Vivado/2018.3/data/ip/xpm/xpm_cdc/tcl/xpm_cdc_single.tcl] for cell 'rfdc_multi_eight_adcs_2048gsps_mts_rfdc_V0_4/inst/i_ADC8_R2R_MTS_2048_irq_sync/sync_adc02_over_vol'
-Finished Sourcing Tcl File [/home/wei/Software/Vivado/install/Vivado/2018.3/data/ip/xpm/xpm_cdc/tcl/xpm_cdc_single.tcl] for cell 'rfdc_multi_eight_adcs_2048gsps_mts_rfdc_V0_4/inst/i_ADC8_R2R_MTS_2048_irq_sync/sync_adc02_over_vol'
-Sourcing Tcl File [/home/wei/Software/Vivado/install/Vivado/2018.3/data/ip/xpm/xpm_cdc/tcl/xpm_cdc_single.tcl] for cell 'rfdc_multi_eight_adcs_2048gsps_mts_rfdc_V0_4/inst/i_ADC8_R2R_MTS_2048_irq_sync/sync_adc02_over_range'
-Finished Sourcing Tcl File [/home/wei/Software/Vivado/install/Vivado/2018.3/data/ip/xpm/xpm_cdc/tcl/xpm_cdc_single.tcl] for cell 'rfdc_multi_eight_adcs_2048gsps_mts_rfdc_V0_4/inst/i_ADC8_R2R_MTS_2048_irq_sync/sync_adc02_over_range'
-Sourcing Tcl File [/home/wei/Software/Vivado/install/Vivado/2018.3/data/ip/xpm/xpm_cdc/tcl/xpm_cdc_single.tcl] for cell 'rfdc_multi_eight_adcs_2048gsps_mts_rfdc_V0_4/inst/i_ADC8_R2R_MTS_2048_irq_sync/sync_adc02_data_irq'
-Finished Sourcing Tcl File [/home/wei/Software/Vivado/install/Vivado/2018.3/data/ip/xpm/xpm_cdc/tcl/xpm_cdc_single.tcl] for cell 'rfdc_multi_eight_adcs_2048gsps_mts_rfdc_V0_4/inst/i_ADC8_R2R_MTS_2048_irq_sync/sync_adc02_data_irq'
-Sourcing Tcl File [/home/wei/Software/Vivado/install/Vivado/2018.3/data/ip/xpm/xpm_cdc/tcl/xpm_cdc_single.tcl] for cell 'rfdc_multi_eight_adcs_2048gsps_mts_rfdc_V0_4/inst/i_ADC8_R2R_MTS_2048_irq_sync/sync_adc02_fifo_irq'
-Finished Sourcing Tcl File [/home/wei/Software/Vivado/install/Vivado/2018.3/data/ip/xpm/xpm_cdc/tcl/xpm_cdc_single.tcl] for cell 'rfdc_multi_eight_adcs_2048gsps_mts_rfdc_V0_4/inst/i_ADC8_R2R_MTS_2048_irq_sync/sync_adc02_fifo_irq'
-Sourcing Tcl File [/home/wei/Software/Vivado/install/Vivado/2018.3/data/ip/xpm/xpm_cdc/tcl/xpm_cdc_single.tcl] for cell 'rfdc_multi_eight_adcs_2048gsps_mts_rfdc_V0_4/inst/i_ADC8_R2R_MTS_2048_irq_sync/sync_adc03_over_vol'
-Finished Sourcing Tcl File [/home/wei/Software/Vivado/install/Vivado/2018.3/data/ip/xpm/xpm_cdc/tcl/xpm_cdc_single.tcl] for cell 'rfdc_multi_eight_adcs_2048gsps_mts_rfdc_V0_4/inst/i_ADC8_R2R_MTS_2048_irq_sync/sync_adc03_over_vol'
-Sourcing Tcl File [/home/wei/Software/Vivado/install/Vivado/2018.3/data/ip/xpm/xpm_cdc/tcl/xpm_cdc_single.tcl] for cell 'rfdc_multi_eight_adcs_2048gsps_mts_rfdc_V0_4/inst/i_ADC8_R2R_MTS_2048_irq_sync/sync_adc03_over_range'
-Finished Sourcing Tcl File [/home/wei/Software/Vivado/install/Vivado/2018.3/data/ip/xpm/xpm_cdc/tcl/xpm_cdc_single.tcl] for cell 'rfdc_multi_eight_adcs_2048gsps_mts_rfdc_V0_4/inst/i_ADC8_R2R_MTS_2048_irq_sync/sync_adc03_over_range'
-Sourcing Tcl File [/home/wei/Software/Vivado/install/Vivado/2018.3/data/ip/xpm/xpm_cdc/tcl/xpm_cdc_single.tcl] for cell 'rfdc_multi_eight_adcs_2048gsps_mts_rfdc_V0_4/inst/i_ADC8_R2R_MTS_2048_irq_sync/sync_adc03_data_irq'
-Finished Sourcing Tcl File [/home/wei/Software/Vivado/install/Vivado/2018.3/data/ip/xpm/xpm_cdc/tcl/xpm_cdc_single.tcl] for cell 'rfdc_multi_eight_adcs_2048gsps_mts_rfdc_V0_4/inst/i_ADC8_R2R_MTS_2048_irq_sync/sync_adc03_data_irq'
-Sourcing Tcl File [/home/wei/Software/Vivado/install/Vivado/2018.3/data/ip/xpm/xpm_cdc/tcl/xpm_cdc_single.tcl] for cell 'rfdc_multi_eight_adcs_2048gsps_mts_rfdc_V0_4/inst/i_ADC8_R2R_MTS_2048_irq_sync/sync_adc03_fifo_irq'
-Finished Sourcing Tcl File [/home/wei/Software/Vivado/install/Vivado/2018.3/data/ip/xpm/xpm_cdc/tcl/xpm_cdc_single.tcl] for cell 'rfdc_multi_eight_adcs_2048gsps_mts_rfdc_V0_4/inst/i_ADC8_R2R_MTS_2048_irq_sync/sync_adc03_fifo_irq'
-Sourcing Tcl File [/home/wei/Software/Vivado/install/Vivado/2018.3/data/ip/xpm/xpm_cdc/tcl/xpm_cdc_single.tcl] for cell 'rfdc_multi_eight_adcs_2048gsps_mts_rfdc_V0_4/inst/i_ADC8_R2R_MTS_2048_irq_sync/sync_adc10_over_vol'
-Finished Sourcing Tcl File [/home/wei/Software/Vivado/install/Vivado/2018.3/data/ip/xpm/xpm_cdc/tcl/xpm_cdc_single.tcl] for cell 'rfdc_multi_eight_adcs_2048gsps_mts_rfdc_V0_4/inst/i_ADC8_R2R_MTS_2048_irq_sync/sync_adc10_over_vol'
-Sourcing Tcl File [/home/wei/Software/Vivado/install/Vivado/2018.3/data/ip/xpm/xpm_cdc/tcl/xpm_cdc_single.tcl] for cell 'rfdc_multi_eight_adcs_2048gsps_mts_rfdc_V0_4/inst/i_ADC8_R2R_MTS_2048_irq_sync/sync_adc10_over_range'
-Finished Sourcing Tcl File [/home/wei/Software/Vivado/install/Vivado/2018.3/data/ip/xpm/xpm_cdc/tcl/xpm_cdc_single.tcl] for cell 'rfdc_multi_eight_adcs_2048gsps_mts_rfdc_V0_4/inst/i_ADC8_R2R_MTS_2048_irq_sync/sync_adc10_over_range'
-Sourcing Tcl File [/home/wei/Software/Vivado/install/Vivado/2018.3/data/ip/xpm/xpm_cdc/tcl/xpm_cdc_single.tcl] for cell 'rfdc_multi_eight_adcs_2048gsps_mts_rfdc_V0_4/inst/i_ADC8_R2R_MTS_2048_irq_sync/sync_adc10_data_irq'
-Finished Sourcing Tcl File [/home/wei/Software/Vivado/install/Vivado/2018.3/data/ip/xpm/xpm_cdc/tcl/xpm_cdc_single.tcl] for cell 'rfdc_multi_eight_adcs_2048gsps_mts_rfdc_V0_4/inst/i_ADC8_R2R_MTS_2048_irq_sync/sync_adc10_data_irq'
-Sourcing Tcl File [/home/wei/Software/Vivado/install/Vivado/2018.3/data/ip/xpm/xpm_cdc/tcl/xpm_cdc_single.tcl] for cell 'rfdc_multi_eight_adcs_2048gsps_mts_rfdc_V0_4/inst/i_ADC8_R2R_MTS_2048_irq_sync/sync_adc10_fifo_irq'
-Finished Sourcing Tcl File [/home/wei/Software/Vivado/install/Vivado/2018.3/data/ip/xpm/xpm_cdc/tcl/xpm_cdc_single.tcl] for cell 'rfdc_multi_eight_adcs_2048gsps_mts_rfdc_V0_4/inst/i_ADC8_R2R_MTS_2048_irq_sync/sync_adc10_fifo_irq'
-Sourcing Tcl File [/home/wei/Software/Vivado/install/Vivado/2018.3/data/ip/xpm/xpm_cdc/tcl/xpm_cdc_single.tcl] for cell 'rfdc_multi_eight_adcs_2048gsps_mts_rfdc_V0_4/inst/i_ADC8_R2R_MTS_2048_irq_sync/sync_adc11_over_vol'
-Finished Sourcing Tcl File [/home/wei/Software/Vivado/install/Vivado/2018.3/data/ip/xpm/xpm_cdc/tcl/xpm_cdc_single.tcl] for cell 'rfdc_multi_eight_adcs_2048gsps_mts_rfdc_V0_4/inst/i_ADC8_R2R_MTS_2048_irq_sync/sync_adc11_over_vol'
-Sourcing Tcl File [/home/wei/Software/Vivado/install/Vivado/2018.3/data/ip/xpm/xpm_cdc/tcl/xpm_cdc_single.tcl] for cell 'rfdc_multi_eight_adcs_2048gsps_mts_rfdc_V0_4/inst/i_ADC8_R2R_MTS_2048_irq_sync/sync_adc11_over_range'
-Finished Sourcing Tcl File [/home/wei/Software/Vivado/install/Vivado/2018.3/data/ip/xpm/xpm_cdc/tcl/xpm_cdc_single.tcl] for cell 'rfdc_multi_eight_adcs_2048gsps_mts_rfdc_V0_4/inst/i_ADC8_R2R_MTS_2048_irq_sync/sync_adc11_over_range'
-Sourcing Tcl File [/home/wei/Software/Vivado/install/Vivado/2018.3/data/ip/xpm/xpm_cdc/tcl/xpm_cdc_single.tcl] for cell 'rfdc_multi_eight_adcs_2048gsps_mts_rfdc_V0_4/inst/i_ADC8_R2R_MTS_2048_irq_sync/sync_adc11_data_irq'
-Finished Sourcing Tcl File [/home/wei/Software/Vivado/install/Vivado/2018.3/data/ip/xpm/xpm_cdc/tcl/xpm_cdc_single.tcl] for cell 'rfdc_multi_eight_adcs_2048gsps_mts_rfdc_V0_4/inst/i_ADC8_R2R_MTS_2048_irq_sync/sync_adc11_data_irq'
-Sourcing Tcl File [/home/wei/Software/Vivado/install/Vivado/2018.3/data/ip/xpm/xpm_cdc/tcl/xpm_cdc_single.tcl] for cell 'rfdc_multi_eight_adcs_2048gsps_mts_rfdc_V0_4/inst/i_ADC8_R2R_MTS_2048_irq_sync/sync_adc11_fifo_irq'
-Finished Sourcing Tcl File [/home/wei/Software/Vivado/install/Vivado/2018.3/data/ip/xpm/xpm_cdc/tcl/xpm_cdc_single.tcl] for cell 'rfdc_multi_eight_adcs_2048gsps_mts_rfdc_V0_4/inst/i_ADC8_R2R_MTS_2048_irq_sync/sync_adc11_fifo_irq'
-Sourcing Tcl File [/home/wei/Software/Vivado/install/Vivado/2018.3/data/ip/xpm/xpm_cdc/tcl/xpm_cdc_single.tcl] for cell 'rfdc_multi_eight_adcs_2048gsps_mts_rfdc_V0_4/inst/i_ADC8_R2R_MTS_2048_irq_sync/sync_adc12_over_vol'
-Finished Sourcing Tcl File [/home/wei/Software/Vivado/install/Vivado/2018.3/data/ip/xpm/xpm_cdc/tcl/xpm_cdc_single.tcl] for cell 'rfdc_multi_eight_adcs_2048gsps_mts_rfdc_V0_4/inst/i_ADC8_R2R_MTS_2048_irq_sync/sync_adc12_over_vol'
-Sourcing Tcl File [/home/wei/Software/Vivado/install/Vivado/2018.3/data/ip/xpm/xpm_cdc/tcl/xpm_cdc_single.tcl] for cell 'rfdc_multi_eight_adcs_2048gsps_mts_rfdc_V0_4/inst/i_ADC8_R2R_MTS_2048_irq_sync/sync_adc12_over_range'
-Finished Sourcing Tcl File [/home/wei/Software/Vivado/install/Vivado/2018.3/data/ip/xpm/xpm_cdc/tcl/xpm_cdc_single.tcl] for cell 'rfdc_multi_eight_adcs_2048gsps_mts_rfdc_V0_4/inst/i_ADC8_R2R_MTS_2048_irq_sync/sync_adc12_over_range'
-Sourcing Tcl File [/home/wei/Software/Vivado/install/Vivado/2018.3/data/ip/xpm/xpm_cdc/tcl/xpm_cdc_single.tcl] for cell 'rfdc_multi_eight_adcs_2048gsps_mts_rfdc_V0_4/inst/i_ADC8_R2R_MTS_2048_irq_sync/sync_adc12_data_irq'
-Finished Sourcing Tcl File [/home/wei/Software/Vivado/install/Vivado/2018.3/data/ip/xpm/xpm_cdc/tcl/xpm_cdc_single.tcl] for cell 'rfdc_multi_eight_adcs_2048gsps_mts_rfdc_V0_4/inst/i_ADC8_R2R_MTS_2048_irq_sync/sync_adc12_data_irq'
-Sourcing Tcl File [/home/wei/Software/Vivado/install/Vivado/2018.3/data/ip/xpm/xpm_cdc/tcl/xpm_cdc_single.tcl] for cell 'rfdc_multi_eight_adcs_2048gsps_mts_rfdc_V0_4/inst/i_ADC8_R2R_MTS_2048_irq_sync/sync_adc12_fifo_irq'
-Finished Sourcing Tcl File [/home/wei/Software/Vivado/install/Vivado/2018.3/data/ip/xpm/xpm_cdc/tcl/xpm_cdc_single.tcl] for cell 'rfdc_multi_eight_adcs_2048gsps_mts_rfdc_V0_4/inst/i_ADC8_R2R_MTS_2048_irq_sync/sync_adc12_fifo_irq'
-Sourcing Tcl File [/home/wei/Software/Vivado/install/Vivado/2018.3/data/ip/xpm/xpm_cdc/tcl/xpm_cdc_single.tcl] for cell 'rfdc_multi_eight_adcs_2048gsps_mts_rfdc_V0_4/inst/i_ADC8_R2R_MTS_2048_irq_sync/sync_adc13_over_vol'
-Finished Sourcing Tcl File [/home/wei/Software/Vivado/install/Vivado/2018.3/data/ip/xpm/xpm_cdc/tcl/xpm_cdc_single.tcl] for cell 'rfdc_multi_eight_adcs_2048gsps_mts_rfdc_V0_4/inst/i_ADC8_R2R_MTS_2048_irq_sync/sync_adc13_over_vol'
-Sourcing Tcl File [/home/wei/Software/Vivado/install/Vivado/2018.3/data/ip/xpm/xpm_cdc/tcl/xpm_cdc_single.tcl] for cell 'rfdc_multi_eight_adcs_2048gsps_mts_rfdc_V0_4/inst/i_ADC8_R2R_MTS_2048_irq_sync/sync_adc13_over_range'
-Finished Sourcing Tcl File [/home/wei/Software/Vivado/install/Vivado/2018.3/data/ip/xpm/xpm_cdc/tcl/xpm_cdc_single.tcl] for cell 'rfdc_multi_eight_adcs_2048gsps_mts_rfdc_V0_4/inst/i_ADC8_R2R_MTS_2048_irq_sync/sync_adc13_over_range'
-Sourcing Tcl File [/home/wei/Software/Vivado/install/Vivado/2018.3/data/ip/xpm/xpm_cdc/tcl/xpm_cdc_single.tcl] for cell 'rfdc_multi_eight_adcs_2048gsps_mts_rfdc_V0_4/inst/i_ADC8_R2R_MTS_2048_irq_sync/sync_adc13_data_irq'
-Finished Sourcing Tcl File [/home/wei/Software/Vivado/install/Vivado/2018.3/data/ip/xpm/xpm_cdc/tcl/xpm_cdc_single.tcl] for cell 'rfdc_multi_eight_adcs_2048gsps_mts_rfdc_V0_4/inst/i_ADC8_R2R_MTS_2048_irq_sync/sync_adc13_data_irq'
-Sourcing Tcl File [/home/wei/Software/Vivado/install/Vivado/2018.3/data/ip/xpm/xpm_cdc/tcl/xpm_cdc_single.tcl] for cell 'rfdc_multi_eight_adcs_2048gsps_mts_rfdc_V0_4/inst/i_ADC8_R2R_MTS_2048_irq_sync/sync_adc13_fifo_irq'
-Finished Sourcing Tcl File [/home/wei/Software/Vivado/install/Vivado/2018.3/data/ip/xpm/xpm_cdc/tcl/xpm_cdc_single.tcl] for cell 'rfdc_multi_eight_adcs_2048gsps_mts_rfdc_V0_4/inst/i_ADC8_R2R_MTS_2048_irq_sync/sync_adc13_fifo_irq'
-Sourcing Tcl File [/home/wei/Software/Vivado/install/Vivado/2018.3/data/ip/xpm/xpm_cdc/tcl/xpm_cdc_single.tcl] for cell 'rfdc_multi_eight_adcs_2048gsps_mts_rfdc_V0_4/inst/i_ADC8_R2R_MTS_2048_irq_sync/sync_adc20_over_vol'
-Finished Sourcing Tcl File [/home/wei/Software/Vivado/install/Vivado/2018.3/data/ip/xpm/xpm_cdc/tcl/xpm_cdc_single.tcl] for cell 'rfdc_multi_eight_adcs_2048gsps_mts_rfdc_V0_4/inst/i_ADC8_R2R_MTS_2048_irq_sync/sync_adc20_over_vol'
-Sourcing Tcl File [/home/wei/Software/Vivado/install/Vivado/2018.3/data/ip/xpm/xpm_cdc/tcl/xpm_cdc_single.tcl] for cell 'rfdc_multi_eight_adcs_2048gsps_mts_rfdc_V0_4/inst/i_ADC8_R2R_MTS_2048_irq_sync/sync_adc20_over_range'
-Finished Sourcing Tcl File [/home/wei/Software/Vivado/install/Vivado/2018.3/data/ip/xpm/xpm_cdc/tcl/xpm_cdc_single.tcl] for cell 'rfdc_multi_eight_adcs_2048gsps_mts_rfdc_V0_4/inst/i_ADC8_R2R_MTS_2048_irq_sync/sync_adc20_over_range'
-Sourcing Tcl File [/home/wei/Software/Vivado/install/Vivado/2018.3/data/ip/xpm/xpm_cdc/tcl/xpm_cdc_single.tcl] for cell 'rfdc_multi_eight_adcs_2048gsps_mts_rfdc_V0_4/inst/i_ADC8_R2R_MTS_2048_irq_sync/sync_adc20_data_irq'
-Finished Sourcing Tcl File [/home/wei/Software/Vivado/install/Vivado/2018.3/data/ip/xpm/xpm_cdc/tcl/xpm_cdc_single.tcl] for cell 'rfdc_multi_eight_adcs_2048gsps_mts_rfdc_V0_4/inst/i_ADC8_R2R_MTS_2048_irq_sync/sync_adc20_data_irq'
-Sourcing Tcl File [/home/wei/Software/Vivado/install/Vivado/2018.3/data/ip/xpm/xpm_cdc/tcl/xpm_cdc_single.tcl] for cell 'rfdc_multi_eight_adcs_2048gsps_mts_rfdc_V0_4/inst/i_ADC8_R2R_MTS_2048_irq_sync/sync_adc20_fifo_irq'
-Finished Sourcing Tcl File [/home/wei/Software/Vivado/install/Vivado/2018.3/data/ip/xpm/xpm_cdc/tcl/xpm_cdc_single.tcl] for cell 'rfdc_multi_eight_adcs_2048gsps_mts_rfdc_V0_4/inst/i_ADC8_R2R_MTS_2048_irq_sync/sync_adc20_fifo_irq'
-Sourcing Tcl File [/home/wei/Software/Vivado/install/Vivado/2018.3/data/ip/xpm/xpm_cdc/tcl/xpm_cdc_single.tcl] for cell 'rfdc_multi_eight_adcs_2048gsps_mts_rfdc_V0_4/inst/i_ADC8_R2R_MTS_2048_irq_sync/sync_adc21_over_vol'
-Finished Sourcing Tcl File [/home/wei/Software/Vivado/install/Vivado/2018.3/data/ip/xpm/xpm_cdc/tcl/xpm_cdc_single.tcl] for cell 'rfdc_multi_eight_adcs_2048gsps_mts_rfdc_V0_4/inst/i_ADC8_R2R_MTS_2048_irq_sync/sync_adc21_over_vol'
-Sourcing Tcl File [/home/wei/Software/Vivado/install/Vivado/2018.3/data/ip/xpm/xpm_cdc/tcl/xpm_cdc_single.tcl] for cell 'rfdc_multi_eight_adcs_2048gsps_mts_rfdc_V0_4/inst/i_ADC8_R2R_MTS_2048_irq_sync/sync_adc21_over_range'
-Finished Sourcing Tcl File [/home/wei/Software/Vivado/install/Vivado/2018.3/data/ip/xpm/xpm_cdc/tcl/xpm_cdc_single.tcl] for cell 'rfdc_multi_eight_adcs_2048gsps_mts_rfdc_V0_4/inst/i_ADC8_R2R_MTS_2048_irq_sync/sync_adc21_over_range'
-Sourcing Tcl File [/home/wei/Software/Vivado/install/Vivado/2018.3/data/ip/xpm/xpm_cdc/tcl/xpm_cdc_single.tcl] for cell 'rfdc_multi_eight_adcs_2048gsps_mts_rfdc_V0_4/inst/i_ADC8_R2R_MTS_2048_irq_sync/sync_adc21_data_irq'
-Finished Sourcing Tcl File [/home/wei/Software/Vivado/install/Vivado/2018.3/data/ip/xpm/xpm_cdc/tcl/xpm_cdc_single.tcl] for cell 'rfdc_multi_eight_adcs_2048gsps_mts_rfdc_V0_4/inst/i_ADC8_R2R_MTS_2048_irq_sync/sync_adc21_data_irq'
-Sourcing Tcl File [/home/wei/Software/Vivado/install/Vivado/2018.3/data/ip/xpm/xpm_cdc/tcl/xpm_cdc_single.tcl] for cell 'rfdc_multi_eight_adcs_2048gsps_mts_rfdc_V0_4/inst/i_ADC8_R2R_MTS_2048_irq_sync/sync_adc21_fifo_irq'
-Finished Sourcing Tcl File [/home/wei/Software/Vivado/install/Vivado/2018.3/data/ip/xpm/xpm_cdc/tcl/xpm_cdc_single.tcl] for cell 'rfdc_multi_eight_adcs_2048gsps_mts_rfdc_V0_4/inst/i_ADC8_R2R_MTS_2048_irq_sync/sync_adc21_fifo_irq'
-Sourcing Tcl File [/home/wei/Software/Vivado/install/Vivado/2018.3/data/ip/xpm/xpm_cdc/tcl/xpm_cdc_single.tcl] for cell 'rfdc_multi_eight_adcs_2048gsps_mts_rfdc_V0_4/inst/i_ADC8_R2R_MTS_2048_irq_sync/sync_adc22_over_vol'
-Finished Sourcing Tcl File [/home/wei/Software/Vivado/install/Vivado/2018.3/data/ip/xpm/xpm_cdc/tcl/xpm_cdc_single.tcl] for cell 'rfdc_multi_eight_adcs_2048gsps_mts_rfdc_V0_4/inst/i_ADC8_R2R_MTS_2048_irq_sync/sync_adc22_over_vol'
-Sourcing Tcl File [/home/wei/Software/Vivado/install/Vivado/2018.3/data/ip/xpm/xpm_cdc/tcl/xpm_cdc_single.tcl] for cell 'rfdc_multi_eight_adcs_2048gsps_mts_rfdc_V0_4/inst/i_ADC8_R2R_MTS_2048_irq_sync/sync_adc22_over_range'
-Finished Sourcing Tcl File [/home/wei/Software/Vivado/install/Vivado/2018.3/data/ip/xpm/xpm_cdc/tcl/xpm_cdc_single.tcl] for cell 'rfdc_multi_eight_adcs_2048gsps_mts_rfdc_V0_4/inst/i_ADC8_R2R_MTS_2048_irq_sync/sync_adc22_over_range'
-Sourcing Tcl File [/home/wei/Software/Vivado/install/Vivado/2018.3/data/ip/xpm/xpm_cdc/tcl/xpm_cdc_single.tcl] for cell 'rfdc_multi_eight_adcs_2048gsps_mts_rfdc_V0_4/inst/i_ADC8_R2R_MTS_2048_irq_sync/sync_adc22_data_irq'
-Finished Sourcing Tcl File [/home/wei/Software/Vivado/install/Vivado/2018.3/data/ip/xpm/xpm_cdc/tcl/xpm_cdc_single.tcl] for cell 'rfdc_multi_eight_adcs_2048gsps_mts_rfdc_V0_4/inst/i_ADC8_R2R_MTS_2048_irq_sync/sync_adc22_data_irq'
-Sourcing Tcl File [/home/wei/Software/Vivado/install/Vivado/2018.3/data/ip/xpm/xpm_cdc/tcl/xpm_cdc_single.tcl] for cell 'rfdc_multi_eight_adcs_2048gsps_mts_rfdc_V0_4/inst/i_ADC8_R2R_MTS_2048_irq_sync/sync_adc22_fifo_irq'
-Finished Sourcing Tcl File [/home/wei/Software/Vivado/install/Vivado/2018.3/data/ip/xpm/xpm_cdc/tcl/xpm_cdc_single.tcl] for cell 'rfdc_multi_eight_adcs_2048gsps_mts_rfdc_V0_4/inst/i_ADC8_R2R_MTS_2048_irq_sync/sync_adc22_fifo_irq'
-Sourcing Tcl File [/home/wei/Software/Vivado/install/Vivado/2018.3/data/ip/xpm/xpm_cdc/tcl/xpm_cdc_single.tcl] for cell 'rfdc_multi_eight_adcs_2048gsps_mts_rfdc_V0_4/inst/i_ADC8_R2R_MTS_2048_irq_sync/sync_adc23_over_vol'
-Finished Sourcing Tcl File [/home/wei/Software/Vivado/install/Vivado/2018.3/data/ip/xpm/xpm_cdc/tcl/xpm_cdc_single.tcl] for cell 'rfdc_multi_eight_adcs_2048gsps_mts_rfdc_V0_4/inst/i_ADC8_R2R_MTS_2048_irq_sync/sync_adc23_over_vol'
-Sourcing Tcl File [/home/wei/Software/Vivado/install/Vivado/2018.3/data/ip/xpm/xpm_cdc/tcl/xpm_cdc_single.tcl] for cell 'rfdc_multi_eight_adcs_2048gsps_mts_rfdc_V0_4/inst/i_ADC8_R2R_MTS_2048_irq_sync/sync_adc23_over_range'
-Finished Sourcing Tcl File [/home/wei/Software/Vivado/install/Vivado/2018.3/data/ip/xpm/xpm_cdc/tcl/xpm_cdc_single.tcl] for cell 'rfdc_multi_eight_adcs_2048gsps_mts_rfdc_V0_4/inst/i_ADC8_R2R_MTS_2048_irq_sync/sync_adc23_over_range'
-Sourcing Tcl File [/home/wei/Software/Vivado/install/Vivado/2018.3/data/ip/xpm/xpm_cdc/tcl/xpm_cdc_single.tcl] for cell 'rfdc_multi_eight_adcs_2048gsps_mts_rfdc_V0_4/inst/i_ADC8_R2R_MTS_2048_irq_sync/sync_adc23_data_irq'
-Finished Sourcing Tcl File [/home/wei/Software/Vivado/install/Vivado/2018.3/data/ip/xpm/xpm_cdc/tcl/xpm_cdc_single.tcl] for cell 'rfdc_multi_eight_adcs_2048gsps_mts_rfdc_V0_4/inst/i_ADC8_R2R_MTS_2048_irq_sync/sync_adc23_data_irq'
-Sourcing Tcl File [/home/wei/Software/Vivado/install/Vivado/2018.3/data/ip/xpm/xpm_cdc/tcl/xpm_cdc_single.tcl] for cell 'rfdc_multi_eight_adcs_2048gsps_mts_rfdc_V0_4/inst/i_ADC8_R2R_MTS_2048_irq_sync/sync_adc23_fifo_irq'
-Finished Sourcing Tcl File [/home/wei/Software/Vivado/install/Vivado/2018.3/data/ip/xpm/xpm_cdc/tcl/xpm_cdc_single.tcl] for cell 'rfdc_multi_eight_adcs_2048gsps_mts_rfdc_V0_4/inst/i_ADC8_R2R_MTS_2048_irq_sync/sync_adc23_fifo_irq'
-Sourcing Tcl File [/home/wei/Software/Vivado/install/Vivado/2018.3/data/ip/xpm/xpm_cdc/tcl/xpm_cdc_single.tcl] for cell 'rfdc_multi_eight_adcs_2048gsps_mts_rfdc_V0_4/inst/i_ADC8_R2R_MTS_2048_irq_sync/sync_adc30_over_vol'
-Finished Sourcing Tcl File [/home/wei/Software/Vivado/install/Vivado/2018.3/data/ip/xpm/xpm_cdc/tcl/xpm_cdc_single.tcl] for cell 'rfdc_multi_eight_adcs_2048gsps_mts_rfdc_V0_4/inst/i_ADC8_R2R_MTS_2048_irq_sync/sync_adc30_over_vol'
-Sourcing Tcl File [/home/wei/Software/Vivado/install/Vivado/2018.3/data/ip/xpm/xpm_cdc/tcl/xpm_cdc_single.tcl] for cell 'rfdc_multi_eight_adcs_2048gsps_mts_rfdc_V0_4/inst/i_ADC8_R2R_MTS_2048_irq_sync/sync_adc30_over_range'
-Finished Sourcing Tcl File [/home/wei/Software/Vivado/install/Vivado/2018.3/data/ip/xpm/xpm_cdc/tcl/xpm_cdc_single.tcl] for cell 'rfdc_multi_eight_adcs_2048gsps_mts_rfdc_V0_4/inst/i_ADC8_R2R_MTS_2048_irq_sync/sync_adc30_over_range'
-Sourcing Tcl File [/home/wei/Software/Vivado/install/Vivado/2018.3/data/ip/xpm/xpm_cdc/tcl/xpm_cdc_single.tcl] for cell 'rfdc_multi_eight_adcs_2048gsps_mts_rfdc_V0_4/inst/i_ADC8_R2R_MTS_2048_irq_sync/sync_adc30_data_irq'
-Finished Sourcing Tcl File [/home/wei/Software/Vivado/install/Vivado/2018.3/data/ip/xpm/xpm_cdc/tcl/xpm_cdc_single.tcl] for cell 'rfdc_multi_eight_adcs_2048gsps_mts_rfdc_V0_4/inst/i_ADC8_R2R_MTS_2048_irq_sync/sync_adc30_data_irq'
-Sourcing Tcl File [/home/wei/Software/Vivado/install/Vivado/2018.3/data/ip/xpm/xpm_cdc/tcl/xpm_cdc_single.tcl] for cell 'rfdc_multi_eight_adcs_2048gsps_mts_rfdc_V0_4/inst/i_ADC8_R2R_MTS_2048_irq_sync/sync_adc30_fifo_irq'
-Finished Sourcing Tcl File [/home/wei/Software/Vivado/install/Vivado/2018.3/data/ip/xpm/xpm_cdc/tcl/xpm_cdc_single.tcl] for cell 'rfdc_multi_eight_adcs_2048gsps_mts_rfdc_V0_4/inst/i_ADC8_R2R_MTS_2048_irq_sync/sync_adc30_fifo_irq'
-Sourcing Tcl File [/home/wei/Software/Vivado/install/Vivado/2018.3/data/ip/xpm/xpm_cdc/tcl/xpm_cdc_single.tcl] for cell 'rfdc_multi_eight_adcs_2048gsps_mts_rfdc_V0_4/inst/i_ADC8_R2R_MTS_2048_irq_sync/sync_adc31_over_vol'
-Finished Sourcing Tcl File [/home/wei/Software/Vivado/install/Vivado/2018.3/data/ip/xpm/xpm_cdc/tcl/xpm_cdc_single.tcl] for cell 'rfdc_multi_eight_adcs_2048gsps_mts_rfdc_V0_4/inst/i_ADC8_R2R_MTS_2048_irq_sync/sync_adc31_over_vol'
-Sourcing Tcl File [/home/wei/Software/Vivado/install/Vivado/2018.3/data/ip/xpm/xpm_cdc/tcl/xpm_cdc_single.tcl] for cell 'rfdc_multi_eight_adcs_2048gsps_mts_rfdc_V0_4/inst/i_ADC8_R2R_MTS_2048_irq_sync/sync_adc31_over_range'
-Finished Sourcing Tcl File [/home/wei/Software/Vivado/install/Vivado/2018.3/data/ip/xpm/xpm_cdc/tcl/xpm_cdc_single.tcl] for cell 'rfdc_multi_eight_adcs_2048gsps_mts_rfdc_V0_4/inst/i_ADC8_R2R_MTS_2048_irq_sync/sync_adc31_over_range'
-Sourcing Tcl File [/home/wei/Software/Vivado/install/Vivado/2018.3/data/ip/xpm/xpm_cdc/tcl/xpm_cdc_single.tcl] for cell 'rfdc_multi_eight_adcs_2048gsps_mts_rfdc_V0_4/inst/i_ADC8_R2R_MTS_2048_irq_sync/sync_adc31_data_irq'
-Finished Sourcing Tcl File [/home/wei/Software/Vivado/install/Vivado/2018.3/data/ip/xpm/xpm_cdc/tcl/xpm_cdc_single.tcl] for cell 'rfdc_multi_eight_adcs_2048gsps_mts_rfdc_V0_4/inst/i_ADC8_R2R_MTS_2048_irq_sync/sync_adc31_data_irq'
-Sourcing Tcl File [/home/wei/Software/Vivado/install/Vivado/2018.3/data/ip/xpm/xpm_cdc/tcl/xpm_cdc_single.tcl] for cell 'rfdc_multi_eight_adcs_2048gsps_mts_rfdc_V0_4/inst/i_ADC8_R2R_MTS_2048_irq_sync/sync_adc31_fifo_irq'
-Finished Sourcing Tcl File [/home/wei/Software/Vivado/install/Vivado/2018.3/data/ip/xpm/xpm_cdc/tcl/xpm_cdc_single.tcl] for cell 'rfdc_multi_eight_adcs_2048gsps_mts_rfdc_V0_4/inst/i_ADC8_R2R_MTS_2048_irq_sync/sync_adc31_fifo_irq'
-Sourcing Tcl File [/home/wei/Software/Vivado/install/Vivado/2018.3/data/ip/xpm/xpm_cdc/tcl/xpm_cdc_single.tcl] for cell 'rfdc_multi_eight_adcs_2048gsps_mts_rfdc_V0_4/inst/i_ADC8_R2R_MTS_2048_irq_sync/sync_adc32_over_vol'
-Finished Sourcing Tcl File [/home/wei/Software/Vivado/install/Vivado/2018.3/data/ip/xpm/xpm_cdc/tcl/xpm_cdc_single.tcl] for cell 'rfdc_multi_eight_adcs_2048gsps_mts_rfdc_V0_4/inst/i_ADC8_R2R_MTS_2048_irq_sync/sync_adc32_over_vol'
-Sourcing Tcl File [/home/wei/Software/Vivado/install/Vivado/2018.3/data/ip/xpm/xpm_cdc/tcl/xpm_cdc_single.tcl] for cell 'rfdc_multi_eight_adcs_2048gsps_mts_rfdc_V0_4/inst/i_ADC8_R2R_MTS_2048_irq_sync/sync_adc32_over_range'
-Finished Sourcing Tcl File [/home/wei/Software/Vivado/install/Vivado/2018.3/data/ip/xpm/xpm_cdc/tcl/xpm_cdc_single.tcl] for cell 'rfdc_multi_eight_adcs_2048gsps_mts_rfdc_V0_4/inst/i_ADC8_R2R_MTS_2048_irq_sync/sync_adc32_over_range'
-Sourcing Tcl File [/home/wei/Software/Vivado/install/Vivado/2018.3/data/ip/xpm/xpm_cdc/tcl/xpm_cdc_single.tcl] for cell 'rfdc_multi_eight_adcs_2048gsps_mts_rfdc_V0_4/inst/i_ADC8_R2R_MTS_2048_irq_sync/sync_adc32_data_irq'
-Finished Sourcing Tcl File [/home/wei/Software/Vivado/install/Vivado/2018.3/data/ip/xpm/xpm_cdc/tcl/xpm_cdc_single.tcl] for cell 'rfdc_multi_eight_adcs_2048gsps_mts_rfdc_V0_4/inst/i_ADC8_R2R_MTS_2048_irq_sync/sync_adc32_data_irq'
-Sourcing Tcl File [/home/wei/Software/Vivado/install/Vivado/2018.3/data/ip/xpm/xpm_cdc/tcl/xpm_cdc_single.tcl] for cell 'rfdc_multi_eight_adcs_2048gsps_mts_rfdc_V0_4/inst/i_ADC8_R2R_MTS_2048_irq_sync/sync_adc32_fifo_irq'
-Finished Sourcing Tcl File [/home/wei/Software/Vivado/install/Vivado/2018.3/data/ip/xpm/xpm_cdc/tcl/xpm_cdc_single.tcl] for cell 'rfdc_multi_eight_adcs_2048gsps_mts_rfdc_V0_4/inst/i_ADC8_R2R_MTS_2048_irq_sync/sync_adc32_fifo_irq'
-Sourcing Tcl File [/home/wei/Software/Vivado/install/Vivado/2018.3/data/ip/xpm/xpm_cdc/tcl/xpm_cdc_single.tcl] for cell 'rfdc_multi_eight_adcs_2048gsps_mts_rfdc_V0_4/inst/i_ADC8_R2R_MTS_2048_irq_sync/sync_adc33_over_vol'
-Finished Sourcing Tcl File [/home/wei/Software/Vivado/install/Vivado/2018.3/data/ip/xpm/xpm_cdc/tcl/xpm_cdc_single.tcl] for cell 'rfdc_multi_eight_adcs_2048gsps_mts_rfdc_V0_4/inst/i_ADC8_R2R_MTS_2048_irq_sync/sync_adc33_over_vol'
-Sourcing Tcl File [/home/wei/Software/Vivado/install/Vivado/2018.3/data/ip/xpm/xpm_cdc/tcl/xpm_cdc_single.tcl] for cell 'rfdc_multi_eight_adcs_2048gsps_mts_rfdc_V0_4/inst/i_ADC8_R2R_MTS_2048_irq_sync/sync_adc33_over_range'
-Finished Sourcing Tcl File [/home/wei/Software/Vivado/install/Vivado/2018.3/data/ip/xpm/xpm_cdc/tcl/xpm_cdc_single.tcl] for cell 'rfdc_multi_eight_adcs_2048gsps_mts_rfdc_V0_4/inst/i_ADC8_R2R_MTS_2048_irq_sync/sync_adc33_over_range'
-Sourcing Tcl File [/home/wei/Software/Vivado/install/Vivado/2018.3/data/ip/xpm/xpm_cdc/tcl/xpm_cdc_single.tcl] for cell 'rfdc_multi_eight_adcs_2048gsps_mts_rfdc_V0_4/inst/i_ADC8_R2R_MTS_2048_irq_sync/sync_adc33_data_irq'
-Finished Sourcing Tcl File [/home/wei/Software/Vivado/install/Vivado/2018.3/data/ip/xpm/xpm_cdc/tcl/xpm_cdc_single.tcl] for cell 'rfdc_multi_eight_adcs_2048gsps_mts_rfdc_V0_4/inst/i_ADC8_R2R_MTS_2048_irq_sync/sync_adc33_data_irq'
-Sourcing Tcl File [/home/wei/Software/Vivado/install/Vivado/2018.3/data/ip/xpm/xpm_cdc/tcl/xpm_cdc_single.tcl] for cell 'rfdc_multi_eight_adcs_2048gsps_mts_rfdc_V0_4/inst/i_ADC8_R2R_MTS_2048_irq_sync/sync_adc33_fifo_irq'
-Finished Sourcing Tcl File [/home/wei/Software/Vivado/install/Vivado/2018.3/data/ip/xpm/xpm_cdc/tcl/xpm_cdc_single.tcl] for cell 'rfdc_multi_eight_adcs_2048gsps_mts_rfdc_V0_4/inst/i_ADC8_R2R_MTS_2048_irq_sync/sync_adc33_fifo_irq'
-Sourcing Tcl File [/home/wei/Software/Vivado/install/Vivado/2018.3/data/ip/xpm/xpm_cdc/tcl/xpm_cdc_single.tcl] for cell 'rfdc_multi_eight_adcs_2048gsps_mts_rfdc_V0_4/inst/i_mts_sysref_count_adc/i_xpm_cdc_sysref_done'
-Finished Sourcing Tcl File [/home/wei/Software/Vivado/install/Vivado/2018.3/data/ip/xpm/xpm_cdc/tcl/xpm_cdc_single.tcl] for cell 'rfdc_multi_eight_adcs_2048gsps_mts_rfdc_V0_4/inst/i_mts_sysref_count_adc/i_xpm_cdc_sysref_done'
-Sourcing Tcl File [/home/wei/Software/Vivado/install/Vivado/2018.3/data/ip/xpm/xpm_cdc/tcl/xpm_cdc_single.tcl] for cell 'rfdc_multi_eight_adcs_2048gsps_mts_rfdc_V0_4/inst/i_rf_conv_mt_data_align_adc20/sync_bypass'
-Finished Sourcing Tcl File [/home/wei/Software/Vivado/install/Vivado/2018.3/data/ip/xpm/xpm_cdc/tcl/xpm_cdc_single.tcl] for cell 'rfdc_multi_eight_adcs_2048gsps_mts_rfdc_V0_4/inst/i_rf_conv_mt_data_align_adc20/sync_bypass'
-Sourcing Tcl File [/home/wei/Software/Vivado/install/Vivado/2018.3/data/ip/xpm/xpm_cdc/tcl/xpm_cdc_single.tcl] for cell 'rfdc_multi_eight_adcs_2048gsps_mts_rfdc_V0_4/inst/i_rf_conv_mt_data_align_adc22/sync_bypass'
-Finished Sourcing Tcl File [/home/wei/Software/Vivado/install/Vivado/2018.3/data/ip/xpm/xpm_cdc/tcl/xpm_cdc_single.tcl] for cell 'rfdc_multi_eight_adcs_2048gsps_mts_rfdc_V0_4/inst/i_rf_conv_mt_data_align_adc22/sync_bypass'
-Sourcing Tcl File [/home/wei/Software/Vivado/install/Vivado/2018.3/data/ip/xpm/xpm_cdc/tcl/xpm_cdc_single.tcl] for cell 'rfdc_multi_eight_adcs_2048gsps_mts_rfdc_V0_4/inst/i_rf_conv_mt_data_align_adc30/sync_bypass'
-Finished Sourcing Tcl File [/home/wei/Software/Vivado/install/Vivado/2018.3/data/ip/xpm/xpm_cdc/tcl/xpm_cdc_single.tcl] for cell 'rfdc_multi_eight_adcs_2048gsps_mts_rfdc_V0_4/inst/i_rf_conv_mt_data_align_adc30/sync_bypass'
-Sourcing Tcl File [/home/wei/Software/Vivado/install/Vivado/2018.3/data/ip/xpm/xpm_cdc/tcl/xpm_cdc_single.tcl] for cell 'rfdc_multi_eight_adcs_2048gsps_mts_rfdc_V0_4/inst/i_rf_conv_mt_data_align_adc10/sync_bypass'
-Finished Sourcing Tcl File [/home/wei/Software/Vivado/install/Vivado/2018.3/data/ip/xpm/xpm_cdc/tcl/xpm_cdc_single.tcl] for cell 'rfdc_multi_eight_adcs_2048gsps_mts_rfdc_V0_4/inst/i_rf_conv_mt_data_align_adc10/sync_bypass'
-Sourcing Tcl File [/home/wei/Software/Vivado/install/Vivado/2018.3/data/ip/xpm/xpm_cdc/tcl/xpm_cdc_single.tcl] for cell 'rfdc_multi_eight_adcs_2048gsps_mts_rfdc_V0_4/inst/i_rf_conv_mt_data_align_adc12/sync_bypass'
-Finished Sourcing Tcl File [/home/wei/Software/Vivado/install/Vivado/2018.3/data/ip/xpm/xpm_cdc/tcl/xpm_cdc_single.tcl] for cell 'rfdc_multi_eight_adcs_2048gsps_mts_rfdc_V0_4/inst/i_rf_conv_mt_data_align_adc12/sync_bypass'
-Sourcing Tcl File [/home/wei/Software/Vivado/install/Vivado/2018.3/data/ip/xpm/xpm_cdc/tcl/xpm_cdc_single.tcl] for cell 'rfdc_multi_eight_adcs_2048gsps_mts_rfdc_V0_4/inst/i_rf_conv_mt_data_align_adc02/sync_bypass'
-Finished Sourcing Tcl File [/home/wei/Software/Vivado/install/Vivado/2018.3/data/ip/xpm/xpm_cdc/tcl/xpm_cdc_single.tcl] for cell 'rfdc_multi_eight_adcs_2048gsps_mts_rfdc_V0_4/inst/i_rf_conv_mt_data_align_adc02/sync_bypass'
-Sourcing Tcl File [/home/wei/Software/Vivado/install/Vivado/2018.3/data/ip/xpm/xpm_cdc/tcl/xpm_cdc_single.tcl] for cell 'rfdc_multi_eight_adcs_2048gsps_mts_rfdc_V0_4/inst/i_rf_conv_mt_data_align_adc00/sync_bypass'
-Finished Sourcing Tcl File [/home/wei/Software/Vivado/install/Vivado/2018.3/data/ip/xpm/xpm_cdc/tcl/xpm_cdc_single.tcl] for cell 'rfdc_multi_eight_adcs_2048gsps_mts_rfdc_V0_4/inst/i_rf_conv_mt_data_align_adc00/sync_bypass'
-Sourcing Tcl File [/home/wei/Software/Vivado/install/Vivado/2018.3/data/ip/xpm/xpm_cdc/tcl/xpm_cdc_single.tcl] for cell 'rfdc_multi_eight_adcs_2048gsps_mts_rfdc_V0_4/inst/i_ADC8_R2R_MTS_2048_irq_sync/sync_dac00_data_irq'
-Finished Sourcing Tcl File [/home/wei/Software/Vivado/install/Vivado/2018.3/data/ip/xpm/xpm_cdc/tcl/xpm_cdc_single.tcl] for cell 'rfdc_multi_eight_adcs_2048gsps_mts_rfdc_V0_4/inst/i_ADC8_R2R_MTS_2048_irq_sync/sync_dac00_data_irq'
-Sourcing Tcl File [/home/wei/Software/Vivado/install/Vivado/2018.3/data/ip/xpm/xpm_cdc/tcl/xpm_cdc_single.tcl] for cell 'rfdc_multi_eight_adcs_2048gsps_mts_rfdc_V0_4/inst/i_ADC8_R2R_MTS_2048_irq_sync/sync_dac00_fifo_irq'
-Finished Sourcing Tcl File [/home/wei/Software/Vivado/install/Vivado/2018.3/data/ip/xpm/xpm_cdc/tcl/xpm_cdc_single.tcl] for cell 'rfdc_multi_eight_adcs_2048gsps_mts_rfdc_V0_4/inst/i_ADC8_R2R_MTS_2048_irq_sync/sync_dac00_fifo_irq'
-Sourcing Tcl File [/home/wei/Software/Vivado/install/Vivado/2018.3/data/ip/xpm/xpm_cdc/tcl/xpm_cdc_single.tcl] for cell 'rfdc_multi_eight_adcs_2048gsps_mts_rfdc_V0_4/inst/i_ADC8_R2R_MTS_2048_irq_sync/sync_dac01_data_irq'
-Finished Sourcing Tcl File [/home/wei/Software/Vivado/install/Vivado/2018.3/data/ip/xpm/xpm_cdc/tcl/xpm_cdc_single.tcl] for cell 'rfdc_multi_eight_adcs_2048gsps_mts_rfdc_V0_4/inst/i_ADC8_R2R_MTS_2048_irq_sync/sync_dac01_data_irq'
-Sourcing Tcl File [/home/wei/Software/Vivado/install/Vivado/2018.3/data/ip/xpm/xpm_cdc/tcl/xpm_cdc_single.tcl] for cell 'rfdc_multi_eight_adcs_2048gsps_mts_rfdc_V0_4/inst/i_ADC8_R2R_MTS_2048_irq_sync/sync_dac01_fifo_irq'
-Finished Sourcing Tcl File [/home/wei/Software/Vivado/install/Vivado/2018.3/data/ip/xpm/xpm_cdc/tcl/xpm_cdc_single.tcl] for cell 'rfdc_multi_eight_adcs_2048gsps_mts_rfdc_V0_4/inst/i_ADC8_R2R_MTS_2048_irq_sync/sync_dac01_fifo_irq'
-Sourcing Tcl File [/home/wei/Software/Vivado/install/Vivado/2018.3/data/ip/xpm/xpm_cdc/tcl/xpm_cdc_single.tcl] for cell 'rfdc_multi_eight_adcs_2048gsps_mts_rfdc_V0_4/inst/i_ADC8_R2R_MTS_2048_irq_sync/sync_dac02_data_irq'
-Finished Sourcing Tcl File [/home/wei/Software/Vivado/install/Vivado/2018.3/data/ip/xpm/xpm_cdc/tcl/xpm_cdc_single.tcl] for cell 'rfdc_multi_eight_adcs_2048gsps_mts_rfdc_V0_4/inst/i_ADC8_R2R_MTS_2048_irq_sync/sync_dac02_data_irq'
-Sourcing Tcl File [/home/wei/Software/Vivado/install/Vivado/2018.3/data/ip/xpm/xpm_cdc/tcl/xpm_cdc_single.tcl] for cell 'rfdc_multi_eight_adcs_2048gsps_mts_rfdc_V0_4/inst/i_ADC8_R2R_MTS_2048_irq_sync/sync_dac02_fifo_irq'
-Finished Sourcing Tcl File [/home/wei/Software/Vivado/install/Vivado/2018.3/data/ip/xpm/xpm_cdc/tcl/xpm_cdc_single.tcl] for cell 'rfdc_multi_eight_adcs_2048gsps_mts_rfdc_V0_4/inst/i_ADC8_R2R_MTS_2048_irq_sync/sync_dac02_fifo_irq'
-Sourcing Tcl File [/home/wei/Software/Vivado/install/Vivado/2018.3/data/ip/xpm/xpm_cdc/tcl/xpm_cdc_single.tcl] for cell 'rfdc_multi_eight_adcs_2048gsps_mts_rfdc_V0_4/inst/i_ADC8_R2R_MTS_2048_irq_sync/sync_dac03_data_irq'
-Finished Sourcing Tcl File [/home/wei/Software/Vivado/install/Vivado/2018.3/data/ip/xpm/xpm_cdc/tcl/xpm_cdc_single.tcl] for cell 'rfdc_multi_eight_adcs_2048gsps_mts_rfdc_V0_4/inst/i_ADC8_R2R_MTS_2048_irq_sync/sync_dac03_data_irq'
-Sourcing Tcl File [/home/wei/Software/Vivado/install/Vivado/2018.3/data/ip/xpm/xpm_cdc/tcl/xpm_cdc_single.tcl] for cell 'rfdc_multi_eight_adcs_2048gsps_mts_rfdc_V0_4sysref/xpm_cdc_single_inst'
-Finished Sourcing Tcl File [/home/wei/Software/Vivado/install/Vivado/2018.3/data/ip/xpm/xpm_cdc/tcl/xpm_cdc_single.tcl] for cell 'rfdc_multi_eight_adcs_2048gsps_mts_rfdc_V0_4sysref/xpm_cdc_single_inst'
-INFO: [Opt 31-138] Pushed 0 inverter(s) to 0 load pin(s).
-Netlist sorting complete. Time (s): cpu = 00:00:00.01 ; elapsed = 00:00:00.01 . Memory (MB): peak = 3044.930 ; gain = 0.000 ; free physical = 10204 ; free virtual = 31334
+INFO: [Timing 38-478] Restoring timing data from binary archive.
+INFO: [Timing 38-479] Binary timing data restore complete.
+INFO: [Project 1-856] Restoring constraints from binary archive.
+INFO: [Project 1-853] Binary constraint restore complete.
+Reading XDEF placement.
+Reading placer database...
+Reading XDEF routing.
+Read XDEF File: Time (s): cpu = 00:00:00.11 ; elapsed = 00:00:00.14 . Memory (MB): peak = 2585.895 ; gain = 4.000 ; free physical = 9343 ; free virtual = 30667
+Restored from archive | CPU: 0.160000 secs | Memory: 1.380875 MB |
+Finished XDEF File Restore: Time (s): cpu = 00:00:00.11 ; elapsed = 00:00:00.14 . Memory (MB): peak = 2585.895 ; gain = 4.000 ; free physical = 9343 ; free virtual = 30667
+Netlist sorting complete. Time (s): cpu = 00:00:00.01 ; elapsed = 00:00:00 . Memory (MB): peak = 2585.895 ; gain = 0.000 ; free physical = 9351 ; free virtual = 30675
 INFO: [Project 1-111] Unisim Transformation Summary:
   A total of 48 instances were transformed.
   DSP48E1 => DSP48E2 (DSP_ALU, DSP_A_B_DATA, DSP_C_DATA, DSP_MULTIPLIER, DSP_M_DATA, DSP_OUTPUT, DSP_PREADD_DATA, DSP_PREADD): 32 instances
   IBUFDS => IBUFDS (DIFFINBUF, IBUFCTRL): 2 instances
   RAM32M16 => RAM32M16 (RAMD32, RAMD32, RAMD32, RAMD32, RAMD32, RAMD32, RAMD32, RAMD32, RAMD32, RAMD32, RAMD32, RAMD32, RAMD32, RAMD32, RAMS32, RAMS32): 14 instances
 
-23 Infos, 0 Warnings, 0 Critical Warnings and 0 Errors encountered.
-link_design completed successfully
-link_design: Time (s): cpu = 00:00:30 ; elapsed = 00:00:35 . Memory (MB): peak = 3044.930 ; gain = 1660.199 ; free physical = 10204 ; free virtual = 31335
+INFO: [Project 1-604] Checkpoint was created with Vivado v2018.3.1_AR71948 (64-bit) build 2489853
+open_checkpoint: Time (s): cpu = 00:00:20 ; elapsed = 00:00:29 . Memory (MB): peak = 2585.895 ; gain = 1190.977 ; free physical = 9351 ; free virtual = 30675
 Command: opt_design
 Attempting to get a license for feature 'Implementation' and/or device 'xczu28dr'
 INFO: [Common 17-349] Got license for feature 'Implementation' and/or device 'xczu28dr'
-INFO: [Common 17-86] Your Implementation license expires in 11 day(s)
-INFO: [Common 17-1223] The version limit for your license is '2020.08' and will expire in 6 days. A version limit expiration means that, although you may be able to continue to use the current version of tools or IP with this license, you will not be eligible for any updates or new releases.
+INFO: [Common 17-86] Your Implementation license expires in 24 day(s)
 Running DRC as a precondition to command opt_design
 
 Starting DRC Task
@@ -384,58 +50,58 @@ INFO: [DRC 23-27] Running DRC with 8 threads
 INFO: [Project 1-461] DRC finished with 0 Errors
 INFO: [Project 1-462] Please refer to the DRC report (report_drc) for more information.
 
-Time (s): cpu = 00:00:03 ; elapsed = 00:00:02 . Memory (MB): peak = 3044.930 ; gain = 0.000 ; free physical = 10190 ; free virtual = 31322
+Time (s): cpu = 00:00:02 ; elapsed = 00:00:02 . Memory (MB): peak = 2664.930 ; gain = 70.031 ; free physical = 9338 ; free virtual = 30662
 
 Starting Cache Timing Information Task
 INFO: [Timing 38-35] Done setting XDC timing constraints.
-Ending Cache Timing Information Task | Checksum: 27b6939ac
+Ending Cache Timing Information Task | Checksum: 24f350e10
 
-Time (s): cpu = 00:00:06 ; elapsed = 00:00:02 . Memory (MB): peak = 3044.930 ; gain = 0.000 ; free physical = 10152 ; free virtual = 31285
+Time (s): cpu = 00:00:04 ; elapsed = 00:00:01 . Memory (MB): peak = 2801.930 ; gain = 137.000 ; free physical = 9274 ; free virtual = 30598
 
 Starting Logic Optimization Task
 
 Phase 1 Retarget
-INFO: [Opt 31-138] Pushed 208 inverter(s) to 5436 load pin(s).
+INFO: [Opt 31-138] Pushed 26 inverter(s) to 5263 load pin(s).
 INFO: [Opt 31-49] Retargeted 0 cell(s).
-Phase 1 Retarget | Checksum: 1e7e43692
+Phase 1 Retarget | Checksum: 1d0059c25
 
-Time (s): cpu = 00:00:04 ; elapsed = 00:00:02 . Memory (MB): peak = 3044.930 ; gain = 0.000 ; free physical = 10119 ; free virtual = 31252
-INFO: [Opt 31-389] Phase Retarget created 1036 cells and removed 1529 cells
-INFO: [Opt 31-1021] In phase Retarget, 42 netlist objects are constrained preventing optimization. Please run opt_design with -debug_log to get more detail. 
+Time (s): cpu = 00:00:03 ; elapsed = 00:00:02 . Memory (MB): peak = 2925.957 ; gain = 56.027 ; free physical = 9252 ; free virtual = 30576
+INFO: [Opt 31-389] Phase Retarget created 1036 cells and removed 1346 cells
+INFO: [Opt 31-1021] In phase Retarget, 41 netlist objects are constrained preventing optimization. Please run opt_design with -debug_log to get more detail. 
 
 Phase 2 Constant propagation
 INFO: [Opt 31-138] Pushed 0 inverter(s) to 0 load pin(s).
-Phase 2 Constant propagation | Checksum: 24a3e4ffe
+Phase 2 Constant propagation | Checksum: 1d4f15f69
 
-Time (s): cpu = 00:00:04 ; elapsed = 00:00:03 . Memory (MB): peak = 3044.930 ; gain = 0.000 ; free physical = 10119 ; free virtual = 31252
+Time (s): cpu = 00:00:03 ; elapsed = 00:00:02 . Memory (MB): peak = 2925.957 ; gain = 56.027 ; free physical = 9252 ; free virtual = 30576
 INFO: [Opt 31-389] Phase Constant propagation created 48 cells and removed 346 cells
 INFO: [Opt 31-1021] In phase Constant propagation, 38 netlist objects are constrained preventing optimization. Please run opt_design with -debug_log to get more detail. 
 
 Phase 3 Sweep
-Phase 3 Sweep | Checksum: 25bedb9e5
+Phase 3 Sweep | Checksum: 18c4b39c0
 
-Time (s): cpu = 00:00:06 ; elapsed = 00:00:05 . Memory (MB): peak = 3044.930 ; gain = 0.000 ; free physical = 10118 ; free virtual = 31251
-INFO: [Opt 31-389] Phase Sweep created 0 cells and removed 879 cells
+Time (s): cpu = 00:00:05 ; elapsed = 00:00:04 . Memory (MB): peak = 2925.957 ; gain = 56.027 ; free physical = 9250 ; free virtual = 30574
+INFO: [Opt 31-389] Phase Sweep created 0 cells and removed 913 cells
 INFO: [Opt 31-1021] In phase Sweep, 178 netlist objects are constrained preventing optimization. Please run opt_design with -debug_log to get more detail. 
 
 Phase 4 BUFG optimization
 INFO: [Opt 31-194] Inserted BUFG zcu111_infr_inst/user_clk_mmcm_BUFG_inst to drive 0 load(s) on clock net zcu111_infr_inst/user_clk_mmcm_BUFGCE
 INFO: [Opt 31-193] Inserted 1 BUFG(s) on clock nets
-Phase 4 BUFG optimization | Checksum: 2742867b6
+Phase 4 BUFG optimization | Checksum: 17c237924
 
-Time (s): cpu = 00:00:07 ; elapsed = 00:00:05 . Memory (MB): peak = 3044.930 ; gain = 0.000 ; free physical = 10121 ; free virtual = 31254
+Time (s): cpu = 00:00:05 ; elapsed = 00:00:04 . Memory (MB): peak = 2925.957 ; gain = 56.027 ; free physical = 9245 ; free virtual = 30569
 INFO: [Opt 31-662] Phase BUFG optimization created 0 cells of which 0 are BUFGs and removed 0 cells.
 
 Phase 5 Shift Register Optimization
-Phase 5 Shift Register Optimization | Checksum: 1a4979c22
+Phase 5 Shift Register Optimization | Checksum: 1bebe2875
 
-Time (s): cpu = 00:00:08 ; elapsed = 00:00:07 . Memory (MB): peak = 3044.930 ; gain = 0.000 ; free physical = 10123 ; free virtual = 31256
+Time (s): cpu = 00:00:07 ; elapsed = 00:00:05 . Memory (MB): peak = 2925.957 ; gain = 56.027 ; free physical = 9247 ; free virtual = 30571
 INFO: [Opt 31-389] Phase Shift Register Optimization created 0 cells and removed 0 cells
 
 Phase 6 Post Processing Netlist
-Phase 6 Post Processing Netlist | Checksum: 1ebe7dad1
+Phase 6 Post Processing Netlist | Checksum: 1207dc278
 
-Time (s): cpu = 00:00:09 ; elapsed = 00:00:07 . Memory (MB): peak = 3044.930 ; gain = 0.000 ; free physical = 10121 ; free virtual = 31254
+Time (s): cpu = 00:00:07 ; elapsed = 00:00:06 . Memory (MB): peak = 2925.957 ; gain = 56.027 ; free physical = 9247 ; free virtual = 30571
 INFO: [Opt 31-389] Phase Post Processing Netlist created 0 cells and removed 0 cells
 INFO: [Opt 31-1021] In phase Post Processing Netlist, 39 netlist objects are constrained preventing optimization. Please run opt_design with -debug_log to get more detail. 
 Opt_design Change Summary
@@ -445,9 +111,9 @@ Opt_design Change Summary
 -------------------------------------------------------------------------------------------------------------------------
 |  Phase                        |  #Cells created  |  #Cells Removed  |  #Constrained objects preventing optimizations  |
 -------------------------------------------------------------------------------------------------------------------------
-|  Retarget                     |            1036  |            1529  |                                             42  |
+|  Retarget                     |            1036  |            1346  |                                             41  |
 |  Constant propagation         |              48  |             346  |                                             38  |
-|  Sweep                        |               0  |             879  |                                            178  |
+|  Sweep                        |               0  |             913  |                                            178  |
 |  BUFG optimization            |               0  |               0  |                                              0  |
 |  Shift Register Optimization  |               0  |               0  |                                              0  |
 |  Post Processing Netlist      |               0  |               0  |                                             39  |
@@ -457,17 +123,17 @@ Opt_design Change Summary
 
 Starting Connectivity Check Task
 
-Time (s): cpu = 00:00:00.07 ; elapsed = 00:00:00.07 . Memory (MB): peak = 3044.930 ; gain = 0.000 ; free physical = 10121 ; free virtual = 31254
-Ending Logic Optimization Task | Checksum: 25f39274e
+Time (s): cpu = 00:00:00.05 ; elapsed = 00:00:00.05 . Memory (MB): peak = 2925.957 ; gain = 0.000 ; free physical = 9247 ; free virtual = 30571
+Ending Logic Optimization Task | Checksum: 167a88b1e
 
-Time (s): cpu = 00:00:09 ; elapsed = 00:00:07 . Memory (MB): peak = 3044.930 ; gain = 0.000 ; free physical = 10121 ; free virtual = 31254
+Time (s): cpu = 00:00:07 ; elapsed = 00:00:06 . Memory (MB): peak = 2925.957 ; gain = 56.027 ; free physical = 9247 ; free virtual = 30571
 
 Starting Power Optimization Task
 INFO: [Pwropt 34-132] Skipping clock gating for clocks with a period < 2.00 ns.
 INFO: [Pwropt 34-9] Applying IDT optimizations ...
 INFO: [Pwropt 34-10] Applying ODC optimizations ...
 INFO: [Timing 38-35] Done setting XDC timing constraints.
-INFO: [Physopt 32-619] Estimated Timing Summary | WNS=3.888 | TNS=0.000 |
+INFO: [Physopt 32-619] Estimated Timing Summary | WNS=2.804 | TNS=0.000 |
 Running Vector-less Activity Propagation...
 
 Finished Running Vector-less Activity Propagation
@@ -477,54 +143,55 @@ Starting PowerOpt Patch Enables Task
 INFO: [Pwropt 34-162] WRITE_MODE attribute of 32 BRAM(s) out of a total of 32 has been updated to save power. Run report_power_opt to get a complete listing of the BRAMs updated.
 INFO: [Pwropt 34-201] Structural ODC has moved 32 WE to EN ports
 Number of BRAM Ports augmented: 0 newly gated: 35 Total Ports: 64
-Ending PowerOpt Patch Enables Task | Checksum: 272d8bcb5
+Ending PowerOpt Patch Enables Task | Checksum: 21351d475
 
-Time (s): cpu = 00:00:00.30 ; elapsed = 00:00:00.30 . Memory (MB): peak = 4563.621 ; gain = 0.000 ; free physical = 8982 ; free virtual = 30257
-Ending Power Optimization Task | Checksum: 272d8bcb5
+Time (s): cpu = 00:00:00.24 ; elapsed = 00:00:00.24 . Memory (MB): peak = 4512.215 ; gain = 0.000 ; free physical = 8248 ; free virtual = 29573
+Ending Power Optimization Task | Checksum: 21351d475
 
-Time (s): cpu = 00:01:06 ; elapsed = 00:00:55 . Memory (MB): peak = 4563.621 ; gain = 1518.691 ; free physical = 9003 ; free virtual = 30277
+Time (s): cpu = 00:00:54 ; elapsed = 00:00:46 . Memory (MB): peak = 4512.215 ; gain = 1586.258 ; free physical = 8282 ; free virtual = 29607
 
 Starting Final Cleanup Task
 
 Starting Logic Optimization Task
 INFO: [Timing 38-35] Done setting XDC timing constraints.
-Ending Logic Optimization Task | Checksum: 1b890c791
+Ending Logic Optimization Task | Checksum: 15b88fb37
 
-Time (s): cpu = 00:00:08 ; elapsed = 00:00:03 . Memory (MB): peak = 4563.621 ; gain = 0.000 ; free physical = 9007 ; free virtual = 30282
-Ending Final Cleanup Task | Checksum: 1b890c791
+Time (s): cpu = 00:00:06 ; elapsed = 00:00:02 . Memory (MB): peak = 4512.215 ; gain = 0.000 ; free physical = 8289 ; free virtual = 29614
+Ending Final Cleanup Task | Checksum: 15b88fb37
 
-Time (s): cpu = 00:00:09 ; elapsed = 00:00:04 . Memory (MB): peak = 4563.621 ; gain = 0.000 ; free physical = 9006 ; free virtual = 30280
+Time (s): cpu = 00:00:07 ; elapsed = 00:00:03 . Memory (MB): peak = 4512.215 ; gain = 0.000 ; free physical = 8289 ; free virtual = 29613
 
 Starting Netlist Obfuscation Task
-Netlist sorting complete. Time (s): cpu = 00:00:00.01 ; elapsed = 00:00:00.01 . Memory (MB): peak = 4563.621 ; gain = 0.000 ; free physical = 9006 ; free virtual = 30280
-Ending Netlist Obfuscation Task | Checksum: 1b890c791
+Netlist sorting complete. Time (s): cpu = 00:00:00.01 ; elapsed = 00:00:00 . Memory (MB): peak = 4512.215 ; gain = 0.000 ; free physical = 8289 ; free virtual = 29613
+Ending Netlist Obfuscation Task | Checksum: 15b88fb37
 
-Time (s): cpu = 00:00:00.01 ; elapsed = 00:00:00.01 . Memory (MB): peak = 4563.621 ; gain = 0.000 ; free physical = 9005 ; free virtual = 30280
+Time (s): cpu = 00:00:00.01 ; elapsed = 00:00:00 . Memory (MB): peak = 4512.215 ; gain = 0.000 ; free physical = 8289 ; free virtual = 29613
 INFO: [Common 17-83] Releasing license: Implementation
-54 Infos, 0 Warnings, 0 Critical Warnings and 0 Errors encountered.
+41 Infos, 0 Warnings, 0 Critical Warnings and 0 Errors encountered.
 opt_design completed successfully
-opt_design: Time (s): cpu = 00:01:33 ; elapsed = 00:01:12 . Memory (MB): peak = 4563.621 ; gain = 1518.691 ; free physical = 9005 ; free virtual = 30280
-Netlist sorting complete. Time (s): cpu = 00:00:00.01 ; elapsed = 00:00:00.01 . Memory (MB): peak = 4563.621 ; gain = 0.000 ; free physical = 9006 ; free virtual = 30281
+opt_design: Time (s): cpu = 00:01:15 ; elapsed = 00:00:59 . Memory (MB): peak = 4512.215 ; gain = 1926.320 ; free physical = 8289 ; free virtual = 29613
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00 . Memory (MB): peak = 4512.215 ; gain = 0.000 ; free physical = 8289 ; free virtual = 29613
 INFO: [Timing 38-480] Writing timing data to binary archive.
 Writing placer database...
 Writing XDEF routing.
 Writing XDEF routing logical nets.
 Writing XDEF routing special nets.
-Write XDEF Complete: Time (s): cpu = 00:00:00.28 ; elapsed = 00:00:00.09 . Memory (MB): peak = 4563.621 ; gain = 0.000 ; free physical = 8994 ; free virtual = 30274
-Netlist sorting complete. Time (s): cpu = 00:00:00.02 ; elapsed = 00:00:00.01 . Memory (MB): peak = 4563.621 ; gain = 0.000 ; free physical = 8996 ; free virtual = 30277
+Write XDEF Complete: Time (s): cpu = 00:00:00.12 ; elapsed = 00:00:00.03 . Memory (MB): peak = 4512.215 ; gain = 0.000 ; free physical = 8281 ; free virtual = 29610
+Netlist sorting complete. Time (s): cpu = 00:00:00.01 ; elapsed = 00:00:00.01 . Memory (MB): peak = 4512.215 ; gain = 0.000 ; free physical = 8278 ; free virtual = 29608
 INFO: [Common 17-1381] The checkpoint '/home/wei/casper/casper_mlib/tutorials_devel/zcu111/rfdc_multi_adc_cores/mode4/2048GSps_MTS/rfdc_multi_eight_adcs_2048gsps_mts/myproj/myproj.runs/impl_1/top_opt.dcp' has been generated.
-write_checkpoint: Time (s): cpu = 00:00:11 ; elapsed = 00:00:09 . Memory (MB): peak = 4563.621 ; gain = 0.000 ; free physical = 8998 ; free virtual = 30281
+write_checkpoint: Time (s): cpu = 00:00:10 ; elapsed = 00:00:08 . Memory (MB): peak = 4512.215 ; gain = 0.000 ; free physical = 8278 ; free virtual = 29610
 INFO: [runtcl-4] Executing : report_drc -file top_drc_opted.rpt -pb top_drc_opted.pb -rpx top_drc_opted.rpx
 Command: report_drc -file top_drc_opted.rpt -pb top_drc_opted.pb -rpx top_drc_opted.rpx
-INFO: [IP_Flow 19-1839] IP Catalog is up to date.
+INFO: [IP_Flow 19-234] Refreshing IP repositories
+INFO: [IP_Flow 19-1704] No user IP repositories specified
+INFO: [IP_Flow 19-2313] Loaded Vivado IP repository '/home/wei/Software/Vivado/install/Vivado/2018.3/data/ip'.
 INFO: [DRC 23-27] Running DRC with 8 threads
 INFO: [Coretcl 2-168] The results of DRC are in file /home/wei/casper/casper_mlib/tutorials_devel/zcu111/rfdc_multi_adc_cores/mode4/2048GSps_MTS/rfdc_multi_eight_adcs_2048gsps_mts/myproj/myproj.runs/impl_1/top_drc_opted.rpt.
 report_drc completed successfully
 Command: place_design
 Attempting to get a license for feature 'Implementation' and/or device 'xczu28dr'
 INFO: [Common 17-349] Got license for feature 'Implementation' and/or device 'xczu28dr'
-INFO: [Common 17-86] Your Implementation license expires in 11 day(s)
-INFO: [Common 17-1223] The version limit for your license is '2020.08' and will expire in 6 days. A version limit expiration means that, although you may be able to continue to use the current version of tools or IP with this license, you will not be eligible for any updates or new releases.
+INFO: [Common 17-86] Your Implementation license expires in 24 day(s)
 INFO: [DRC 23-27] Running DRC with 8 threads
 INFO: [Vivado_Tcl 4-198] DRC finished with 0 Errors
 INFO: [Vivado_Tcl 4-199] Please refer to the DRC report (report_drc) for more information.
@@ -539,38 +206,38 @@ INFO: [Place 30-611] Multithreading enabled for place_design using a maximum of 
 Phase 1 Placer Initialization
 
 Phase 1.1 Placer Initialization Netlist Sorting
-Netlist sorting complete. Time (s): cpu = 00:00:00.01 ; elapsed = 00:00:00.01 . Memory (MB): peak = 4563.621 ; gain = 0.000 ; free physical = 8982 ; free virtual = 30266
-Phase 1.1 Placer Initialization Netlist Sorting | Checksum: 12c12618b
+Netlist sorting complete. Time (s): cpu = 00:00:00.01 ; elapsed = 00:00:00 . Memory (MB): peak = 4512.215 ; gain = 0.000 ; free physical = 8245 ; free virtual = 29578
+Phase 1.1 Placer Initialization Netlist Sorting | Checksum: 106c2b409
 
-Time (s): cpu = 00:00:00.03 ; elapsed = 00:00:00.13 . Memory (MB): peak = 4563.621 ; gain = 0.000 ; free physical = 8982 ; free virtual = 30266
-Netlist sorting complete. Time (s): cpu = 00:00:00.01 ; elapsed = 00:00:00.01 . Memory (MB): peak = 4563.621 ; gain = 0.000 ; free physical = 8974 ; free virtual = 30258
+Time (s): cpu = 00:00:00.02 ; elapsed = 00:00:00.04 . Memory (MB): peak = 4512.215 ; gain = 0.000 ; free physical = 8245 ; free virtual = 29578
+Netlist sorting complete. Time (s): cpu = 00:00:00.01 ; elapsed = 00:00:00 . Memory (MB): peak = 4512.215 ; gain = 0.000 ; free physical = 8245 ; free virtual = 29578
 
 Phase 1.2 IO Placement/ Clock Placement/ Build Placer Device
 INFO: [Timing 38-35] Done setting XDC timing constraints.
-Phase 1.2 IO Placement/ Clock Placement/ Build Placer Device | Checksum: d412d156
+Phase 1.2 IO Placement/ Clock Placement/ Build Placer Device | Checksum: 862cef57
 
-Time (s): cpu = 00:00:10 ; elapsed = 00:00:05 . Memory (MB): peak = 4563.621 ; gain = 0.000 ; free physical = 8927 ; free virtual = 30215
+Time (s): cpu = 00:00:08 ; elapsed = 00:00:04 . Memory (MB): peak = 4512.215 ; gain = 0.000 ; free physical = 8193 ; free virtual = 29525
 
 Phase 1.3 Build Placer Netlist Model
 INFO: [Place 30-896] Complex timing constraints detected. Disabling fast timing updates
-Phase 1.3 Build Placer Netlist Model | Checksum: 189b19eea
+Phase 1.3 Build Placer Netlist Model | Checksum: 154947b02
 
-Time (s): cpu = 00:00:19 ; elapsed = 00:00:08 . Memory (MB): peak = 4563.621 ; gain = 0.000 ; free physical = 8906 ; free virtual = 30195
+Time (s): cpu = 00:00:15 ; elapsed = 00:00:06 . Memory (MB): peak = 4512.215 ; gain = 0.000 ; free physical = 8167 ; free virtual = 29500
 
 Phase 1.4 Constrain Clocks/Macros
-Phase 1.4 Constrain Clocks/Macros | Checksum: 189b19eea
+Phase 1.4 Constrain Clocks/Macros | Checksum: 154947b02
 
-Time (s): cpu = 00:00:20 ; elapsed = 00:00:08 . Memory (MB): peak = 4563.621 ; gain = 0.000 ; free physical = 8907 ; free virtual = 30196
-Phase 1 Placer Initialization | Checksum: 189b19eea
+Time (s): cpu = 00:00:15 ; elapsed = 00:00:06 . Memory (MB): peak = 4512.215 ; gain = 0.000 ; free physical = 8167 ; free virtual = 29500
+Phase 1 Placer Initialization | Checksum: 154947b02
 
-Time (s): cpu = 00:00:20 ; elapsed = 00:00:09 . Memory (MB): peak = 4563.621 ; gain = 0.000 ; free physical = 8909 ; free virtual = 30198
+Time (s): cpu = 00:00:15 ; elapsed = 00:00:07 . Memory (MB): peak = 4512.215 ; gain = 0.000 ; free physical = 8167 ; free virtual = 29499
 
 Phase 2 Global Placement
 
 Phase 2.1 Floorplanning
-Phase 2.1 Floorplanning | Checksum: 1e3a5c5b3
+Phase 2.1 Floorplanning | Checksum: 18d9ff0b0
 
-Time (s): cpu = 00:00:48 ; elapsed = 00:00:19 . Memory (MB): peak = 4563.621 ; gain = 0.000 ; free physical = 8802 ; free virtual = 30092
+Time (s): cpu = 00:00:38 ; elapsed = 00:00:15 . Memory (MB): peak = 4512.215 ; gain = 0.000 ; free physical = 8055 ; free virtual = 29388
 
 Phase 2.2 Physical Synthesis In Placer
 INFO: [Physopt 32-65] No nets found for high-fanout optimization.
@@ -581,7 +248,7 @@ INFO: [Physopt 32-670] No setup violation found.  Shift Register Optimization wa
 INFO: [Physopt 32-670] No setup violation found.  BRAM Register Optimization was not performed.
 INFO: [Physopt 32-949] No candidate nets found for HD net replication
 INFO: [Physopt 32-775] End 1 Pass. Optimized 0 net or cell. Created 0 new cell, deleted 0 existing cell and moved 0 existing cell
-Netlist sorting complete. Time (s): cpu = 00:00:00.01 ; elapsed = 00:00:00 . Memory (MB): peak = 4563.621 ; gain = 0.000 ; free physical = 8765 ; free virtual = 30056
+Netlist sorting complete. Time (s): cpu = 00:00:00.01 ; elapsed = 00:00:00.01 . Memory (MB): peak = 4512.215 ; gain = 0.000 ; free physical = 8036 ; free virtual = 29368
 
 Summary of Physical Synthesis Optimizations
 ============================================
@@ -599,151 +266,149 @@ Summary of Physical Synthesis Optimizations
 ----------------------------------------------------------------------------------------------------------------------------------------
 
 
-Phase 2.2 Physical Synthesis In Placer | Checksum: cca0ebc1
+Phase 2.2 Physical Synthesis In Placer | Checksum: 1c1cca4a8
 
-Time (s): cpu = 00:02:14 ; elapsed = 00:00:51 . Memory (MB): peak = 4563.621 ; gain = 0.000 ; free physical = 8782 ; free virtual = 30073
-Phase 2 Global Placement | Checksum: 1473833b6
+Time (s): cpu = 00:01:43 ; elapsed = 00:00:39 . Memory (MB): peak = 4512.215 ; gain = 0.000 ; free physical = 8036 ; free virtual = 29368
+Phase 2 Global Placement | Checksum: 12e63711e
 
-Time (s): cpu = 00:02:18 ; elapsed = 00:00:53 . Memory (MB): peak = 4563.621 ; gain = 0.000 ; free physical = 8791 ; free virtual = 30082
+Time (s): cpu = 00:01:46 ; elapsed = 00:00:40 . Memory (MB): peak = 4512.215 ; gain = 0.000 ; free physical = 8044 ; free virtual = 29376
 
 Phase 3 Detail Placement
 
 Phase 3.1 Commit Multi Column Macros
-Phase 3.1 Commit Multi Column Macros | Checksum: 1473833b6
+Phase 3.1 Commit Multi Column Macros | Checksum: 12e63711e
 
-Time (s): cpu = 00:02:18 ; elapsed = 00:00:53 . Memory (MB): peak = 4563.621 ; gain = 0.000 ; free physical = 8791 ; free virtual = 30082
+Time (s): cpu = 00:01:47 ; elapsed = 00:00:40 . Memory (MB): peak = 4512.215 ; gain = 0.000 ; free physical = 8046 ; free virtual = 29379
 
 Phase 3.2 Commit Most Macros & LUTRAMs
-Phase 3.2 Commit Most Macros & LUTRAMs | Checksum: 110c05b62
+Phase 3.2 Commit Most Macros & LUTRAMs | Checksum: be979e70
 
-Time (s): cpu = 00:02:25 ; elapsed = 00:00:55 . Memory (MB): peak = 4563.621 ; gain = 0.000 ; free physical = 8790 ; free virtual = 30081
+Time (s): cpu = 00:01:52 ; elapsed = 00:00:42 . Memory (MB): peak = 4512.215 ; gain = 0.000 ; free physical = 8045 ; free virtual = 29378
 
 Phase 3.3 Area Swap Optimization
-Phase 3.3 Area Swap Optimization | Checksum: a0f7ef18
+Phase 3.3 Area Swap Optimization | Checksum: b4d5cd8c
 
-Time (s): cpu = 00:02:26 ; elapsed = 00:00:56 . Memory (MB): peak = 4563.621 ; gain = 0.000 ; free physical = 8787 ; free virtual = 30079
+Time (s): cpu = 00:01:53 ; elapsed = 00:00:42 . Memory (MB): peak = 4512.215 ; gain = 0.000 ; free physical = 8045 ; free virtual = 29377
 
 Phase 3.4 Small Shape Clustering
-Phase 3.4 Small Shape Clustering | Checksum: 7a31f375
+Phase 3.4 Small Shape Clustering | Checksum: c363c1a8
 
-Time (s): cpu = 00:02:29 ; elapsed = 00:00:59 . Memory (MB): peak = 4563.621 ; gain = 0.000 ; free physical = 8759 ; free virtual = 30050
+Time (s): cpu = 00:01:56 ; elapsed = 00:00:45 . Memory (MB): peak = 4512.215 ; gain = 0.000 ; free physical = 8019 ; free virtual = 29352
 
 Phase 3.5 Flow Legalize Slice Clusters
-Phase 3.5 Flow Legalize Slice Clusters | Checksum: 13adefa95
+Phase 3.5 Flow Legalize Slice Clusters | Checksum: 1215ef1b1
 
-Time (s): cpu = 00:02:30 ; elapsed = 00:00:59 . Memory (MB): peak = 4563.621 ; gain = 0.000 ; free physical = 8756 ; free virtual = 30047
+Time (s): cpu = 00:01:57 ; elapsed = 00:00:45 . Memory (MB): peak = 4512.215 ; gain = 0.000 ; free physical = 8016 ; free virtual = 29349
 
 Phase 3.6 Slice Area Swap
-Phase 3.6 Slice Area Swap | Checksum: c8dfab2f
+Phase 3.6 Slice Area Swap | Checksum: 139d6797c
 
-Time (s): cpu = 00:02:34 ; elapsed = 00:01:02 . Memory (MB): peak = 4563.621 ; gain = 0.000 ; free physical = 8724 ; free virtual = 30016
+Time (s): cpu = 00:01:58 ; elapsed = 00:00:46 . Memory (MB): peak = 4512.215 ; gain = 0.000 ; free physical = 7982 ; free virtual = 29315
 
 Phase 3.7 Commit Slice Clusters
-Phase 3.7 Commit Slice Clusters | Checksum: 1201a05cc
+Phase 3.7 Commit Slice Clusters | Checksum: 50c88450
 
-Time (s): cpu = 00:02:41 ; elapsed = 00:01:05 . Memory (MB): peak = 4563.621 ; gain = 0.000 ; free physical = 8733 ; free virtual = 30025
+Time (s): cpu = 00:02:03 ; elapsed = 00:00:48 . Memory (MB): peak = 4512.215 ; gain = 0.000 ; free physical = 7992 ; free virtual = 29325
 
 Phase 3.8 Re-assign LUT pins
-Phase 3.8 Re-assign LUT pins | Checksum: 13581ba75
+Phase 3.8 Re-assign LUT pins | Checksum: 7d6be2b3
 
-Time (s): cpu = 00:02:43 ; elapsed = 00:01:06 . Memory (MB): peak = 4563.621 ; gain = 0.000 ; free physical = 8733 ; free virtual = 30025
+Time (s): cpu = 00:02:05 ; elapsed = 00:00:49 . Memory (MB): peak = 4512.215 ; gain = 0.000 ; free physical = 7993 ; free virtual = 29326
 
 Phase 3.9 Pipeline Register Optimization
-Phase 3.9 Pipeline Register Optimization | Checksum: fddb0aac
+Phase 3.9 Pipeline Register Optimization | Checksum: 1112a4c4d
 
-Time (s): cpu = 00:02:43 ; elapsed = 00:01:06 . Memory (MB): peak = 4563.621 ; gain = 0.000 ; free physical = 8743 ; free virtual = 30034
-Phase 3 Detail Placement | Checksum: fddb0aac
+Time (s): cpu = 00:02:05 ; elapsed = 00:00:49 . Memory (MB): peak = 4512.215 ; gain = 0.000 ; free physical = 8000 ; free virtual = 29333
+Phase 3 Detail Placement | Checksum: 1112a4c4d
 
-Time (s): cpu = 00:02:43 ; elapsed = 00:01:06 . Memory (MB): peak = 4563.621 ; gain = 0.000 ; free physical = 8742 ; free virtual = 30034
+Time (s): cpu = 00:02:05 ; elapsed = 00:00:49 . Memory (MB): peak = 4512.215 ; gain = 0.000 ; free physical = 8000 ; free virtual = 29333
 
 Phase 4 Post Placement Optimization and Clean-Up
 
 Phase 4.1 Post Commit Optimization
 
 Phase 4.1.1 Post Placement Optimization
-Post Placement Optimization Initialization | Checksum: 27cfb23d6
+Post Placement Optimization Initialization | Checksum: 1b5f1ec31
 
 Phase 4.1.1.1 BUFG Insertion
-INFO: [Place 46-35] Processed net zcu111_inst/proc_sys_reset_0/U0/peripheral_aresetn[0], inserted BUFG to drive 3626 loads.
+INFO: [Place 46-35] Processed net zcu111_inst/proc_sys_reset_0/U0/peripheral_aresetn[0], inserted BUFG to drive 3617 loads.
 INFO: [Place 46-45] Replicated bufg driver zcu111_inst/proc_sys_reset_0/U0/ACTIVE_LOW_PR_OUT_DFF[0].FDRE_PER_N_bufg_rep
 INFO: [Place 46-46] BUFG insertion identified 1 candidate nets, 1 success, 1 bufg driver replicated, 0 skipped for placement/routing, 0 skipped for timing, 0 skipped for netlist change reason
-Phase 4.1.1.1 BUFG Insertion | Checksum: 2446a1687
+Phase 4.1.1.1 BUFG Insertion | Checksum: 1dd7c1ae8
 
-Time (s): cpu = 00:03:00 ; elapsed = 00:01:11 . Memory (MB): peak = 4563.621 ; gain = 0.000 ; free physical = 8730 ; free virtual = 30021
-INFO: [Place 30-746] Post Placement Timing Summary WNS=2.511. For the most accurate timing information please run report_timing.
-Phase 4.1.1 Post Placement Optimization | Checksum: 2da16f4ee
+Time (s): cpu = 00:02:17 ; elapsed = 00:00:53 . Memory (MB): peak = 4512.215 ; gain = 0.000 ; free physical = 7990 ; free virtual = 29323
+INFO: [Place 30-746] Post Placement Timing Summary WNS=1.749. For the most accurate timing information please run report_timing.
+Phase 4.1.1 Post Placement Optimization | Checksum: 16cd24588
 
-Time (s): cpu = 00:03:00 ; elapsed = 00:01:11 . Memory (MB): peak = 4563.621 ; gain = 0.000 ; free physical = 8731 ; free virtual = 30023
-Phase 4.1 Post Commit Optimization | Checksum: 2da16f4ee
+Time (s): cpu = 00:02:17 ; elapsed = 00:00:53 . Memory (MB): peak = 4512.215 ; gain = 0.000 ; free physical = 7991 ; free virtual = 29323
+Phase 4.1 Post Commit Optimization | Checksum: 16cd24588
 
-Time (s): cpu = 00:03:00 ; elapsed = 00:01:12 . Memory (MB): peak = 4563.621 ; gain = 0.000 ; free physical = 8730 ; free virtual = 30022
+Time (s): cpu = 00:02:17 ; elapsed = 00:00:53 . Memory (MB): peak = 4512.215 ; gain = 0.000 ; free physical = 7991 ; free virtual = 29324
 
 Phase 4.2 Post Placement Cleanup
-Phase 4.2 Post Placement Cleanup | Checksum: 2da16f4ee
+Phase 4.2 Post Placement Cleanup | Checksum: 16cd24588
 
-Time (s): cpu = 00:03:01 ; elapsed = 00:01:12 . Memory (MB): peak = 4563.621 ; gain = 0.000 ; free physical = 8748 ; free virtual = 30040
-Netlist sorting complete. Time (s): cpu = 00:00:00.04 ; elapsed = 00:00:00.03 . Memory (MB): peak = 4563.621 ; gain = 0.000 ; free physical = 8706 ; free virtual = 29998
+Time (s): cpu = 00:02:18 ; elapsed = 00:00:53 . Memory (MB): peak = 4512.215 ; gain = 0.000 ; free physical = 8009 ; free virtual = 29342
+Netlist sorting complete. Time (s): cpu = 00:00:00.02 ; elapsed = 00:00:00.02 . Memory (MB): peak = 4512.215 ; gain = 0.000 ; free physical = 7962 ; free virtual = 29295
 
 Phase 4.3 Placer Reporting
-Phase 4.3 Placer Reporting | Checksum: 34e03252d
+Phase 4.3 Placer Reporting | Checksum: 193e34fb2
 
-Time (s): cpu = 00:03:13 ; elapsed = 00:01:24 . Memory (MB): peak = 4563.621 ; gain = 0.000 ; free physical = 8701 ; free virtual = 29993
+Time (s): cpu = 00:02:28 ; elapsed = 00:01:03 . Memory (MB): peak = 4512.215 ; gain = 0.000 ; free physical = 7964 ; free virtual = 29296
 
 Phase 4.4 Final Placement Cleanup
-Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.01 . Memory (MB): peak = 4563.621 ; gain = 0.000 ; free physical = 8700 ; free virtual = 29992
-Phase 4.4 Final Placement Cleanup | Checksum: 2aa20bf2a
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00 . Memory (MB): peak = 4512.215 ; gain = 0.000 ; free physical = 7964 ; free virtual = 29296
+Phase 4.4 Final Placement Cleanup | Checksum: 17a075cbd
 
-Time (s): cpu = 00:03:13 ; elapsed = 00:01:24 . Memory (MB): peak = 4563.621 ; gain = 0.000 ; free physical = 8701 ; free virtual = 29993
-Phase 4 Post Placement Optimization and Clean-Up | Checksum: 2aa20bf2a
+Time (s): cpu = 00:02:28 ; elapsed = 00:01:03 . Memory (MB): peak = 4512.215 ; gain = 0.000 ; free physical = 7964 ; free virtual = 29296
+Phase 4 Post Placement Optimization and Clean-Up | Checksum: 17a075cbd
 
-Time (s): cpu = 00:03:13 ; elapsed = 00:01:24 . Memory (MB): peak = 4563.621 ; gain = 0.000 ; free physical = 8702 ; free virtual = 29994
-Ending Placer Task | Checksum: 1c1220577
+Time (s): cpu = 00:02:28 ; elapsed = 00:01:04 . Memory (MB): peak = 4512.215 ; gain = 0.000 ; free physical = 7964 ; free virtual = 29296
+Ending Placer Task | Checksum: 126d1bfb7
 
-Time (s): cpu = 00:03:13 ; elapsed = 00:01:24 . Memory (MB): peak = 4563.621 ; gain = 0.000 ; free physical = 8833 ; free virtual = 30125
+Time (s): cpu = 00:02:28 ; elapsed = 00:01:04 . Memory (MB): peak = 4512.215 ; gain = 0.000 ; free physical = 8094 ; free virtual = 29427
 INFO: [Common 17-83] Releasing license: Implementation
-85 Infos, 0 Warnings, 0 Critical Warnings and 0 Errors encountered.
+73 Infos, 0 Warnings, 0 Critical Warnings and 0 Errors encountered.
 place_design completed successfully
-place_design: Time (s): cpu = 00:03:19 ; elapsed = 00:01:27 . Memory (MB): peak = 4563.621 ; gain = 0.000 ; free physical = 8832 ; free virtual = 30124
-Netlist sorting complete. Time (s): cpu = 00:00:00.01 ; elapsed = 00:00:00 . Memory (MB): peak = 4563.621 ; gain = 0.000 ; free physical = 8832 ; free virtual = 30124
+place_design: Time (s): cpu = 00:02:33 ; elapsed = 00:01:06 . Memory (MB): peak = 4512.215 ; gain = 0.000 ; free physical = 8094 ; free virtual = 29427
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.01 . Memory (MB): peak = 4512.215 ; gain = 0.000 ; free physical = 8094 ; free virtual = 29427
 INFO: [Timing 38-480] Writing timing data to binary archive.
 Writing placer database...
-Netlist sorting complete. Time (s): cpu = 00:00:00.02 ; elapsed = 00:00:00.01 . Memory (MB): peak = 4563.621 ; gain = 0.000 ; free physical = 8809 ; free virtual = 30117
+Netlist sorting complete. Time (s): cpu = 00:00:00.02 ; elapsed = 00:00:00.01 . Memory (MB): peak = 4512.215 ; gain = 0.000 ; free physical = 8073 ; free virtual = 29420
 Writing XDEF routing.
 Writing XDEF routing logical nets.
 Writing XDEF routing special nets.
-Write XDEF Complete: Time (s): cpu = 00:00:03 ; elapsed = 00:00:01 . Memory (MB): peak = 4563.621 ; gain = 0.000 ; free physical = 8774 ; free virtual = 30115
+Write XDEF Complete: Time (s): cpu = 00:00:03 ; elapsed = 00:00:00.98 . Memory (MB): peak = 4512.215 ; gain = 0.000 ; free physical = 8034 ; free virtual = 29414
 INFO: [Common 17-1381] The checkpoint '/home/wei/casper/casper_mlib/tutorials_devel/zcu111/rfdc_multi_adc_cores/mode4/2048GSps_MTS/rfdc_multi_eight_adcs_2048gsps_mts/myproj/myproj.runs/impl_1/top_placed.dcp' has been generated.
-write_checkpoint: Time (s): cpu = 00:00:13 ; elapsed = 00:00:09 . Memory (MB): peak = 4563.621 ; gain = 0.000 ; free physical = 8815 ; free virtual = 30121
+write_checkpoint: Time (s): cpu = 00:00:11 ; elapsed = 00:00:08 . Memory (MB): peak = 4512.215 ; gain = 0.000 ; free physical = 8108 ; free virtual = 29454
 INFO: [runtcl-4] Executing : report_io -file top_io_placed.rpt
-report_io: Time (s): cpu = 00:00:00.24 ; elapsed = 00:00:00.33 . Memory (MB): peak = 4563.621 ; gain = 0.000 ; free physical = 8777 ; free virtual = 30083
+report_io: Time (s): cpu = 00:00:00.21 ; elapsed = 00:00:00.28 . Memory (MB): peak = 4512.215 ; gain = 0.000 ; free physical = 8070 ; free virtual = 29416
 INFO: [runtcl-4] Executing : report_utilization -file top_utilization_placed.rpt -pb top_utilization_placed.pb
 INFO: [runtcl-4] Executing : report_control_sets -verbose -file top_control_sets_placed.rpt
-report_control_sets: Time (s): cpu = 00:00:00.14 ; elapsed = 00:00:00.21 . Memory (MB): peak = 4563.621 ; gain = 0.000 ; free physical = 8813 ; free virtual = 30120
+report_control_sets: Time (s): cpu = 00:00:00.12 ; elapsed = 00:00:00.17 . Memory (MB): peak = 4512.215 ; gain = 0.000 ; free physical = 8106 ; free virtual = 29453
 Command: phys_opt_design
 Attempting to get a license for feature 'Implementation' and/or device 'xczu28dr'
 INFO: [Common 17-349] Got license for feature 'Implementation' and/or device 'xczu28dr'
-INFO: [Common 17-86] Your Implementation license expires in 11 day(s)
-INFO: [Common 17-1223] The version limit for your license is '2020.08' and will expire in 6 days. A version limit expiration means that, although you may be able to continue to use the current version of tools or IP with this license, you will not be eligible for any updates or new releases.
+INFO: [Common 17-86] Your Implementation license expires in 24 day(s)
 INFO: [Vivado_Tcl 4-383] Design worst setup slack (WNS) is greater than or equal to 0.250 ns. Skipping all physical synthesis optimizations.
 INFO: [Vivado_Tcl 4-232] No setup violation found. The netlist was not modified.
 INFO: [Common 17-83] Releasing license: Implementation
-96 Infos, 0 Warnings, 0 Critical Warnings and 0 Errors encountered.
+83 Infos, 0 Warnings, 0 Critical Warnings and 0 Errors encountered.
 phys_opt_design completed successfully
-Netlist sorting complete. Time (s): cpu = 00:00:00.01 ; elapsed = 00:00:00 . Memory (MB): peak = 4563.621 ; gain = 0.000 ; free physical = 8780 ; free virtual = 30087
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00 . Memory (MB): peak = 4512.215 ; gain = 0.000 ; free physical = 8078 ; free virtual = 29424
 INFO: [Timing 38-480] Writing timing data to binary archive.
 Writing placer database...
-Netlist sorting complete. Time (s): cpu = 00:00:00.04 ; elapsed = 00:00:00.01 . Memory (MB): peak = 4563.621 ; gain = 0.000 ; free physical = 8754 ; free virtual = 30075
+Netlist sorting complete. Time (s): cpu = 00:00:00.02 ; elapsed = 00:00:00.01 . Memory (MB): peak = 4512.215 ; gain = 0.000 ; free physical = 8054 ; free virtual = 29415
 Writing XDEF routing.
 Writing XDEF routing logical nets.
 Writing XDEF routing special nets.
-Write XDEF Complete: Time (s): cpu = 00:00:04 ; elapsed = 00:00:01 . Memory (MB): peak = 4563.621 ; gain = 0.000 ; free physical = 8717 ; free virtual = 30072
+Write XDEF Complete: Time (s): cpu = 00:00:03 ; elapsed = 00:00:00.99 . Memory (MB): peak = 4512.215 ; gain = 0.000 ; free physical = 8015 ; free virtual = 29410
 INFO: [Common 17-1381] The checkpoint '/home/wei/casper/casper_mlib/tutorials_devel/zcu111/rfdc_multi_adc_cores/mode4/2048GSps_MTS/rfdc_multi_eight_adcs_2048gsps_mts/myproj/myproj.runs/impl_1/top_physopt.dcp' has been generated.
-write_checkpoint: Time (s): cpu = 00:00:13 ; elapsed = 00:00:10 . Memory (MB): peak = 4563.621 ; gain = 0.000 ; free physical = 8761 ; free virtual = 30081
+write_checkpoint: Time (s): cpu = 00:00:11 ; elapsed = 00:00:08 . Memory (MB): peak = 4512.215 ; gain = 0.000 ; free physical = 8055 ; free virtual = 29416
 Command: route_design
 Attempting to get a license for feature 'Implementation' and/or device 'xczu28dr'
 INFO: [Common 17-349] Got license for feature 'Implementation' and/or device 'xczu28dr'
-INFO: [Common 17-86] Your Implementation license expires in 11 day(s)
-INFO: [Common 17-1223] The version limit for your license is '2020.08' and will expire in 6 days. A version limit expiration means that, although you may be able to continue to use the current version of tools or IP with this license, you will not be eligible for any updates or new releases.
+INFO: [Common 17-86] Your Implementation license expires in 24 day(s)
 Running DRC as a precondition to command route_design
 INFO: [DRC 23-27] Running DRC with 8 threads
 INFO: [Vivado_Tcl 4-198] DRC finished with 0 Errors
@@ -752,123 +417,122 @@ INFO: [Vivado_Tcl 4-199] Please refer to the DRC report (report_drc) for more in
 
 Starting Routing Task
 INFO: [Route 35-254] Multithreading enabled for route_design using a maximum of 8 CPUs
-Checksum: PlaceDB: fa2e4bb1 ConstDB: 0 ShapeSum: 53078987 RouteDB: 73ec303f
+Checksum: PlaceDB: 7aefca97 ConstDB: 0 ShapeSum: 84d0eaf6 RouteDB: 27110a2a
 
 Phase 1 Build RT Design
-Phase 1 Build RT Design | Checksum: 905334eb
+Phase 1 Build RT Design | Checksum: 15ef604b0
 
-Time (s): cpu = 00:01:40 ; elapsed = 00:01:16 . Memory (MB): peak = 4806.633 ; gain = 243.012 ; free physical = 8380 ; free virtual = 29710
-Post Restoration Checksum: NetGraph: 6ad0ae31 NumContArr: 7e4a352f Constraints: a24e2c3b Timing: 0
+Time (s): cpu = 00:01:19 ; elapsed = 00:01:01 . Memory (MB): peak = 4782.227 ; gain = 270.012 ; free physical = 7678 ; free virtual = 29038
+Post Restoration Checksum: NetGraph: 85b9dfbc NumContArr: e138f4ec Constraints: 4118fec Timing: 0
 
 Phase 2 Router Initialization
 
 Phase 2.1 Create Timer
-Phase 2.1 Create Timer | Checksum: 18b690f9b
+Phase 2.1 Create Timer | Checksum: 16b046494
 
-Time (s): cpu = 00:01:40 ; elapsed = 00:01:17 . Memory (MB): peak = 4806.633 ; gain = 243.012 ; free physical = 8382 ; free virtual = 29712
+Time (s): cpu = 00:01:19 ; elapsed = 00:01:01 . Memory (MB): peak = 4782.227 ; gain = 270.012 ; free physical = 7681 ; free virtual = 29042
 
 Phase 2.2 Fix Topology Constraints
-Phase 2.2 Fix Topology Constraints | Checksum: 18b690f9b
+Phase 2.2 Fix Topology Constraints | Checksum: 16b046494
 
-Time (s): cpu = 00:01:40 ; elapsed = 00:01:17 . Memory (MB): peak = 4820.527 ; gain = 256.906 ; free physical = 8302 ; free virtual = 29632
+Time (s): cpu = 00:01:19 ; elapsed = 00:01:01 . Memory (MB): peak = 4816.098 ; gain = 303.883 ; free physical = 7603 ; free virtual = 28964
 
 Phase 2.3 Pre Route Cleanup
-Phase 2.3 Pre Route Cleanup | Checksum: 18b690f9b
+Phase 2.3 Pre Route Cleanup | Checksum: 16b046494
 
-Time (s): cpu = 00:01:40 ; elapsed = 00:01:17 . Memory (MB): peak = 4820.527 ; gain = 256.906 ; free physical = 8302 ; free virtual = 29632
+Time (s): cpu = 00:01:19 ; elapsed = 00:01:01 . Memory (MB): peak = 4816.098 ; gain = 303.883 ; free physical = 7603 ; free virtual = 28964
 
 Phase 2.4 Global Clock Net Routing
  Number of Nodes with overlaps = 0
-Phase 2.4 Global Clock Net Routing | Checksum: 220711c9a
+Phase 2.4 Global Clock Net Routing | Checksum: 11fc621b3
 
-Time (s): cpu = 00:01:44 ; elapsed = 00:01:21 . Memory (MB): peak = 4894.770 ; gain = 331.148 ; free physical = 8275 ; free virtual = 29605
+Time (s): cpu = 00:01:24 ; elapsed = 00:01:07 . Memory (MB): peak = 4972.402 ; gain = 460.188 ; free physical = 7577 ; free virtual = 28938
 
 Phase 2.5 Update Timing
-Phase 2.5 Update Timing | Checksum: 1c609d935
+Phase 2.5 Update Timing | Checksum: 2b0fe8840
 
-Time (s): cpu = 00:02:01 ; elapsed = 00:01:25 . Memory (MB): peak = 4894.770 ; gain = 331.148 ; free physical = 8292 ; free virtual = 29623
-INFO: [Route 35-416] Intermediate Timing Summary | WNS=2.722  | TNS=0.000  | WHS=-0.044 | THS=-3.668 |
+Time (s): cpu = 00:01:37 ; elapsed = 00:01:10 . Memory (MB): peak = 4972.402 ; gain = 460.188 ; free physical = 7590 ; free virtual = 28951
+INFO: [Route 35-416] Intermediate Timing Summary | WNS=1.809  | TNS=0.000  | WHS=-0.039 | THS=-4.758 |
 
-Phase 2 Router Initialization | Checksum: 223c8b4cd
+Phase 2 Router Initialization | Checksum: 2a7bad4d7
 
-Time (s): cpu = 00:02:13 ; elapsed = 00:01:29 . Memory (MB): peak = 4894.770 ; gain = 331.148 ; free physical = 8283 ; free virtual = 29614
+Time (s): cpu = 00:01:46 ; elapsed = 00:01:12 . Memory (MB): peak = 4972.402 ; gain = 460.188 ; free physical = 7583 ; free virtual = 28943
 
 Phase 3 Initial Routing
-Phase 3 Initial Routing | Checksum: 1930f34ee
+Phase 3 Initial Routing | Checksum: 2df358b45
 
-Time (s): cpu = 00:02:34 ; elapsed = 00:01:37 . Memory (MB): peak = 4894.770 ; gain = 331.148 ; free physical = 8248 ; free virtual = 29578
+Time (s): cpu = 00:02:03 ; elapsed = 00:01:19 . Memory (MB): peak = 4972.402 ; gain = 460.188 ; free physical = 7554 ; free virtual = 28914
 
 Phase 4 Rip-up And Reroute
 
 Phase 4.1 Global Iteration 0
- Number of Nodes with overlaps = 5099
- Number of Nodes with overlaps = 451
- Number of Nodes with overlaps = 59
- Number of Nodes with overlaps = 6
- Number of Nodes with overlaps = 3
- Number of Nodes with overlaps = 0
-INFO: [Route 35-416] Intermediate Timing Summary | WNS=1.840  | TNS=0.000  | WHS=-0.022 | THS=-0.022 |
-
-Phase 4.1 Global Iteration 0 | Checksum: 26afebc2d
-
-Time (s): cpu = 00:03:26 ; elapsed = 00:01:57 . Memory (MB): peak = 4894.770 ; gain = 331.148 ; free physical = 8245 ; free virtual = 29575
-
-Phase 4.2 Global Iteration 1
+ Number of Nodes with overlaps = 5184
+ Number of Nodes with overlaps = 389
+ Number of Nodes with overlaps = 48
+ Number of Nodes with overlaps = 5
+ Number of Nodes with overlaps = 4
+ Number of Nodes with overlaps = 2
+ Number of Nodes with overlaps = 1
  Number of Nodes with overlaps = 1
  Number of Nodes with overlaps = 0
-INFO: [Route 35-416] Intermediate Timing Summary | WNS=1.840  | TNS=0.000  | WHS=N/A    | THS=N/A    |
+INFO: [Route 35-416] Intermediate Timing Summary | WNS=1.738  | TNS=0.000  | WHS=-0.019 | THS=-0.019 |
 
-Phase 4.2 Global Iteration 1 | Checksum: 1cac41b0a
+Phase 4.1 Global Iteration 0 | Checksum: 1b8539bfd
 
-Time (s): cpu = 00:03:30 ; elapsed = 00:02:00 . Memory (MB): peak = 4894.770 ; gain = 331.148 ; free physical = 8246 ; free virtual = 29577
-Phase 4 Rip-up And Reroute | Checksum: 1cac41b0a
+Time (s): cpu = 00:02:53 ; elapsed = 00:01:43 . Memory (MB): peak = 4972.402 ; gain = 460.188 ; free physical = 7550 ; free virtual = 28910
 
-Time (s): cpu = 00:03:30 ; elapsed = 00:02:00 . Memory (MB): peak = 4894.770 ; gain = 331.148 ; free physical = 8246 ; free virtual = 29576
+Phase 4.2 Additional Iteration for Hold
+Phase 4.2 Additional Iteration for Hold | Checksum: 22b35105e
+
+Time (s): cpu = 00:02:53 ; elapsed = 00:01:43 . Memory (MB): peak = 4972.402 ; gain = 460.188 ; free physical = 7550 ; free virtual = 28910
+Phase 4 Rip-up And Reroute | Checksum: 22b35105e
+
+Time (s): cpu = 00:02:53 ; elapsed = 00:01:43 . Memory (MB): peak = 4972.402 ; gain = 460.188 ; free physical = 7550 ; free virtual = 28910
 
 Phase 5 Delay and Skew Optimization
 
 Phase 5.1 Delay CleanUp
 
 Phase 5.1.1 Update Timing
-Phase 5.1.1 Update Timing | Checksum: 1b8d32cd8
+Phase 5.1.1 Update Timing | Checksum: 27c67b7be
 
-Time (s): cpu = 00:03:38 ; elapsed = 00:02:02 . Memory (MB): peak = 4894.770 ; gain = 331.148 ; free physical = 8256 ; free virtual = 29586
-INFO: [Route 35-416] Intermediate Timing Summary | WNS=1.840  | TNS=0.000  | WHS=0.011  | THS=0.000  |
+Time (s): cpu = 00:02:59 ; elapsed = 00:01:45 . Memory (MB): peak = 4972.402 ; gain = 460.188 ; free physical = 7556 ; free virtual = 28917
+INFO: [Route 35-416] Intermediate Timing Summary | WNS=1.738  | TNS=0.000  | WHS=0.010  | THS=0.000  |
 
-Phase 5.1 Delay CleanUp | Checksum: 1b8d32cd8
+Phase 5.1 Delay CleanUp | Checksum: 27c67b7be
 
-Time (s): cpu = 00:03:38 ; elapsed = 00:02:02 . Memory (MB): peak = 4894.770 ; gain = 331.148 ; free physical = 8255 ; free virtual = 29586
+Time (s): cpu = 00:02:59 ; elapsed = 00:01:45 . Memory (MB): peak = 4972.402 ; gain = 460.188 ; free physical = 7556 ; free virtual = 28917
 
 Phase 5.2 Clock Skew Optimization
-Phase 5.2 Clock Skew Optimization | Checksum: 1b8d32cd8
+Phase 5.2 Clock Skew Optimization | Checksum: 27c67b7be
 
-Time (s): cpu = 00:03:38 ; elapsed = 00:02:02 . Memory (MB): peak = 4894.770 ; gain = 331.148 ; free physical = 8254 ; free virtual = 29585
-Phase 5 Delay and Skew Optimization | Checksum: 1b8d32cd8
+Time (s): cpu = 00:02:59 ; elapsed = 00:01:45 . Memory (MB): peak = 4972.402 ; gain = 460.188 ; free physical = 7556 ; free virtual = 28917
+Phase 5 Delay and Skew Optimization | Checksum: 27c67b7be
 
-Time (s): cpu = 00:03:38 ; elapsed = 00:02:02 . Memory (MB): peak = 4894.770 ; gain = 331.148 ; free physical = 8254 ; free virtual = 29585
+Time (s): cpu = 00:02:59 ; elapsed = 00:01:45 . Memory (MB): peak = 4972.402 ; gain = 460.188 ; free physical = 7556 ; free virtual = 28917
 
 Phase 6 Post Hold Fix
 
 Phase 6.1 Hold Fix Iter
 
 Phase 6.1.1 Update Timing
-Phase 6.1.1 Update Timing | Checksum: 213c40135
+Phase 6.1.1 Update Timing | Checksum: 2b0c1d239
 
-Time (s): cpu = 00:03:44 ; elapsed = 00:02:04 . Memory (MB): peak = 4894.770 ; gain = 331.148 ; free physical = 8238 ; free virtual = 29568
-INFO: [Route 35-416] Intermediate Timing Summary | WNS=1.840  | TNS=0.000  | WHS=0.011  | THS=0.000  |
+Time (s): cpu = 00:03:03 ; elapsed = 00:01:46 . Memory (MB): peak = 4972.402 ; gain = 460.188 ; free physical = 7554 ; free virtual = 28915
+INFO: [Route 35-416] Intermediate Timing Summary | WNS=1.738  | TNS=0.000  | WHS=0.010  | THS=0.000  |
 
-Phase 6.1 Hold Fix Iter | Checksum: 20d961304
+Phase 6.1 Hold Fix Iter | Checksum: 2c76f56fe
 
-Time (s): cpu = 00:03:44 ; elapsed = 00:02:04 . Memory (MB): peak = 4894.770 ; gain = 331.148 ; free physical = 8237 ; free virtual = 29568
-Phase 6 Post Hold Fix | Checksum: 20d961304
+Time (s): cpu = 00:03:04 ; elapsed = 00:01:46 . Memory (MB): peak = 4972.402 ; gain = 460.188 ; free physical = 7554 ; free virtual = 28915
+Phase 6 Post Hold Fix | Checksum: 2c76f56fe
 
-Time (s): cpu = 00:03:44 ; elapsed = 00:02:04 . Memory (MB): peak = 4894.770 ; gain = 331.148 ; free physical = 8237 ; free virtual = 29568
+Time (s): cpu = 00:03:04 ; elapsed = 00:01:47 . Memory (MB): peak = 4972.402 ; gain = 460.188 ; free physical = 7554 ; free virtual = 28915
 
 Phase 7 Route finalize
 
 Router Utilization Summary
-  Global Vertical Routing Utilization    = 1.28166 %
-  Global Horizontal Routing Utilization  = 0.970778 %
+  Global Vertical Routing Utilization    = 1.30547 %
+  Global Horizontal Routing Utilization  = 0.985191 %
   Routable Net Status*
   *Does not include unroutable nets such as driverless and loadless.
   Run report_route_status for detailed report.
@@ -877,48 +541,48 @@ Router Utilization Summary
   Number of Partially Routed Nets     = 0
   Number of Node Overlaps             = 0
 
-Phase 7 Route finalize | Checksum: 248f95063
+Phase 7 Route finalize | Checksum: 284b6af5b
 
-Time (s): cpu = 00:03:46 ; elapsed = 00:02:05 . Memory (MB): peak = 4894.770 ; gain = 331.148 ; free physical = 8231 ; free virtual = 29561
+Time (s): cpu = 00:03:05 ; elapsed = 00:01:47 . Memory (MB): peak = 4972.402 ; gain = 460.188 ; free physical = 7548 ; free virtual = 28909
 
 Phase 8 Verifying routed nets
 
  Verification completed successfully
-Phase 8 Verifying routed nets | Checksum: 248f95063
+Phase 8 Verifying routed nets | Checksum: 284b6af5b
 
-Time (s): cpu = 00:03:46 ; elapsed = 00:02:05 . Memory (MB): peak = 4894.770 ; gain = 331.148 ; free physical = 8230 ; free virtual = 29561
+Time (s): cpu = 00:03:05 ; elapsed = 00:01:47 . Memory (MB): peak = 4972.402 ; gain = 460.188 ; free physical = 7548 ; free virtual = 28908
 
 Phase 9 Depositing Routes
-Phase 9 Depositing Routes | Checksum: 248f95063
+Phase 9 Depositing Routes | Checksum: 284b6af5b
 
-Time (s): cpu = 00:03:47 ; elapsed = 00:02:07 . Memory (MB): peak = 4894.770 ; gain = 331.148 ; free physical = 8234 ; free virtual = 29565
+Time (s): cpu = 00:03:06 ; elapsed = 00:01:48 . Memory (MB): peak = 4972.402 ; gain = 460.188 ; free physical = 7547 ; free virtual = 28907
 
 Phase 10 Post Router Timing
-INFO: [Route 35-57] Estimated Timing Summary | WNS=1.840  | TNS=0.000  | WHS=0.011  | THS=0.000  |
+INFO: [Route 35-57] Estimated Timing Summary | WNS=1.738  | TNS=0.000  | WHS=0.010  | THS=0.000  |
 
 INFO: [Route 35-327] The final timing numbers are based on the router estimated timing analysis. For a complete and accurate timing signoff, please run report_timing_summary.
-Phase 10 Post Router Timing | Checksum: 248f95063
+Phase 10 Post Router Timing | Checksum: 284b6af5b
 
-Time (s): cpu = 00:03:48 ; elapsed = 00:02:07 . Memory (MB): peak = 4894.770 ; gain = 331.148 ; free physical = 8239 ; free virtual = 29569
+Time (s): cpu = 00:03:06 ; elapsed = 00:01:49 . Memory (MB): peak = 4972.402 ; gain = 460.188 ; free physical = 7556 ; free virtual = 28916
 INFO: [Route 35-16] Router Completed Successfully
 
-Time (s): cpu = 00:03:48 ; elapsed = 00:02:07 . Memory (MB): peak = 4894.770 ; gain = 331.148 ; free physical = 8348 ; free virtual = 29678
+Time (s): cpu = 00:03:06 ; elapsed = 00:01:49 . Memory (MB): peak = 4972.402 ; gain = 460.188 ; free physical = 7662 ; free virtual = 29022
 
 Routing Is Done.
 INFO: [Common 17-83] Releasing license: Implementation
-114 Infos, 0 Warnings, 0 Critical Warnings and 0 Errors encountered.
+99 Infos, 0 Warnings, 0 Critical Warnings and 0 Errors encountered.
 route_design completed successfully
-route_design: Time (s): cpu = 00:03:55 ; elapsed = 00:02:10 . Memory (MB): peak = 4894.770 ; gain = 331.148 ; free physical = 8348 ; free virtual = 29678
-Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.01 . Memory (MB): peak = 4894.770 ; gain = 0.000 ; free physical = 8349 ; free virtual = 29679
+route_design: Time (s): cpu = 00:03:12 ; elapsed = 00:01:51 . Memory (MB): peak = 4972.402 ; gain = 460.188 ; free physical = 7662 ; free virtual = 29022
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.01 . Memory (MB): peak = 4972.402 ; gain = 0.000 ; free physical = 7662 ; free virtual = 29022
 INFO: [Timing 38-480] Writing timing data to binary archive.
 Writing placer database...
-Netlist sorting complete. Time (s): cpu = 00:00:00.03 ; elapsed = 00:00:00.01 . Memory (MB): peak = 4894.770 ; gain = 0.000 ; free physical = 8329 ; free virtual = 29673
+Netlist sorting complete. Time (s): cpu = 00:00:00.01 ; elapsed = 00:00:00 . Memory (MB): peak = 4972.402 ; gain = 0.000 ; free physical = 7645 ; free virtual = 29020
 Writing XDEF routing.
 Writing XDEF routing logical nets.
 Writing XDEF routing special nets.
-Write XDEF Complete: Time (s): cpu = 00:00:04 ; elapsed = 00:00:02 . Memory (MB): peak = 4894.770 ; gain = 0.000 ; free physical = 8290 ; free virtual = 29681
+Write XDEF Complete: Time (s): cpu = 00:00:03 ; elapsed = 00:00:01 . Memory (MB): peak = 4972.402 ; gain = 0.000 ; free physical = 7596 ; free virtual = 29017
 INFO: [Common 17-1381] The checkpoint '/home/wei/casper/casper_mlib/tutorials_devel/zcu111/rfdc_multi_adc_cores/mode4/2048GSps_MTS/rfdc_multi_eight_adcs_2048gsps_mts/myproj/myproj.runs/impl_1/top_routed.dcp' has been generated.
-write_checkpoint: Time (s): cpu = 00:00:13 ; elapsed = 00:00:10 . Memory (MB): peak = 4894.770 ; gain = 0.000 ; free physical = 8338 ; free virtual = 29686
+write_checkpoint: Time (s): cpu = 00:00:11 ; elapsed = 00:00:08 . Memory (MB): peak = 4972.402 ; gain = 0.000 ; free physical = 7644 ; free virtual = 29021
 INFO: [runtcl-4] Executing : report_drc -file top_drc_routed.rpt -pb top_drc_routed.pb -rpx top_drc_routed.rpx
 Command: report_drc -file top_drc_routed.rpt -pb top_drc_routed.pb -rpx top_drc_routed.rpx
 INFO: [IP_Flow 19-1839] IP Catalog is up to date.
@@ -931,7 +595,7 @@ INFO: [Timing 38-35] Done setting XDC timing constraints.
 INFO: [DRC 23-133] Running Methodology with 8 threads
 INFO: [Coretcl 2-1520] The results of Report Methodology are in file /home/wei/casper/casper_mlib/tutorials_devel/zcu111/rfdc_multi_adc_cores/mode4/2048GSps_MTS/rfdc_multi_eight_adcs_2048gsps_mts/myproj/myproj.runs/impl_1/top_methodology_drc_routed.rpt.
 report_methodology completed successfully
-report_methodology: Time (s): cpu = 00:00:29 ; elapsed = 00:00:07 . Memory (MB): peak = 4982.812 ; gain = 0.000 ; free physical = 8200 ; free virtual = 29548
+report_methodology: Time (s): cpu = 00:00:22 ; elapsed = 00:00:05 . Memory (MB): peak = 5060.445 ; gain = 0.000 ; free physical = 7497 ; free virtual = 28874
 INFO: [runtcl-4] Executing : report_power -file top_power_routed.rpt -pb top_power_summary_routed.pb -rpx top_power_routed.rpx
 Command: report_power -file top_power_routed.rpt -pb top_power_summary_routed.pb -rpx top_power_routed.rpx
 INFO: [Timing 38-35] Done setting XDC timing constraints.
@@ -940,9 +604,9 @@ Running Vector-less Activity Propagation...
 Finished Running Vector-less Activity Propagation
 WARNING: [Power 33-332] Found switching activity that implies high-fanout reset nets being asserted for excessive periods of time which may result in inaccurate power analysis.
 Resolution: To review and fix problems, please run Power Constraints Advisor in the GUI from Tools > Power Constraints Advisor or run report_power with the -advisory option to generate a text report.
-126 Infos, 1 Warnings, 0 Critical Warnings and 0 Errors encountered.
+111 Infos, 1 Warnings, 0 Critical Warnings and 0 Errors encountered.
 report_power completed successfully
-report_power: Time (s): cpu = 00:00:19 ; elapsed = 00:00:08 . Memory (MB): peak = 4982.812 ; gain = 0.000 ; free physical = 8145 ; free virtual = 29506
+report_power: Time (s): cpu = 00:00:18 ; elapsed = 00:00:09 . Memory (MB): peak = 5060.445 ; gain = 0.000 ; free physical = 7439 ; free virtual = 28829
 INFO: [runtcl-4] Executing : report_route_status -file top_route_status.rpt -pb top_route_status.pb
 INFO: [runtcl-4] Executing : report_timing_summary -max_paths 10 -file top_timing_summary_routed.rpt -pb top_timing_summary_routed.pb -rpx top_timing_summary_routed.rpx
 INFO: [Timing 38-91] UpdateTimingParams: Speed grade: -2, Temperature grade: E, Delay Type: min_max.
@@ -950,44 +614,86 @@ INFO: [Timing 38-191] Multithreading enabled for timing update using a maximum o
 INFO: [runtcl-4] Executing : report_incremental_reuse -file top_incremental_reuse_routed.rpt
 INFO: [Vivado_Tcl 4-1062] Incremental flow is disabled. No incremental reuse Info to report.
 INFO: [runtcl-4] Executing : report_clock_utilization -file top_clock_utilization_routed.rpt
-report_clock_utilization: Time (s): cpu = 00:00:06 ; elapsed = 00:00:06 . Memory (MB): peak = 4982.812 ; gain = 0.000 ; free physical = 8139 ; free virtual = 29501
 INFO: [runtcl-4] Executing : report_bus_skew -warn_on_violation -file top_bus_skew_routed.rpt -pb top_bus_skew_routed.pb -rpx top_bus_skew_routed.rpx
 INFO: [Timing 38-91] UpdateTimingParams: Speed grade: -2, Temperature grade: E, Delay Type: min_max.
 INFO: [Timing 38-191] Multithreading enabled for timing update using a maximum of 8 CPUs
 Command: phys_opt_design
 Attempting to get a license for feature 'Implementation' and/or device 'xczu28dr'
 INFO: [Common 17-349] Got license for feature 'Implementation' and/or device 'xczu28dr'
-INFO: [Common 17-86] Your Implementation license expires in 11 day(s)
-INFO: [Common 17-1223] The version limit for your license is '2020.08' and will expire in 6 days. A version limit expiration means that, although you may be able to continue to use the current version of tools or IP with this license, you will not be eligible for any updates or new releases.
+INFO: [Common 17-86] Your Implementation license expires in 24 day(s)
 INFO: [Vivado_Tcl 4-241] Physical synthesis in post route mode ( 100.0% nets are fully routed)
 INFO: [Vivado_Tcl 4-383] Design worst setup slack (WNS) is greater than or equal to 0.000 ns. Skipping all physical synthesis optimizations.
 INFO: [Vivado_Tcl 4-232] No setup violation found. The netlist was not modified.
 INFO: [Common 17-83] Releasing license: Implementation
-143 Infos, 1 Warnings, 0 Critical Warnings and 0 Errors encountered.
+127 Infos, 1 Warnings, 0 Critical Warnings and 0 Errors encountered.
 phys_opt_design completed successfully
-Netlist sorting complete. Time (s): cpu = 00:00:00.01 ; elapsed = 00:00:00.01 . Memory (MB): peak = 4982.812 ; gain = 0.000 ; free physical = 8142 ; free virtual = 29504
+Netlist sorting complete. Time (s): cpu = 00:00:00.01 ; elapsed = 00:00:00 . Memory (MB): peak = 5060.445 ; gain = 0.000 ; free physical = 7434 ; free virtual = 28824
 INFO: [Timing 38-480] Writing timing data to binary archive.
 Writing placer database...
-Netlist sorting complete. Time (s): cpu = 00:00:00.02 ; elapsed = 00:00:00.01 . Memory (MB): peak = 4982.812 ; gain = 0.000 ; free physical = 8112 ; free virtual = 29488
+Netlist sorting complete. Time (s): cpu = 00:00:00.01 ; elapsed = 00:00:00.01 . Memory (MB): peak = 5060.445 ; gain = 0.000 ; free physical = 7412 ; free virtual = 28817
 Writing XDEF routing.
 Writing XDEF routing logical nets.
 Writing XDEF routing special nets.
-Write XDEF Complete: Time (s): cpu = 00:00:04 ; elapsed = 00:00:02 . Memory (MB): peak = 4982.812 ; gain = 0.000 ; free physical = 8062 ; free virtual = 29485
+Write XDEF Complete: Time (s): cpu = 00:00:03 ; elapsed = 00:00:01 . Memory (MB): peak = 5060.445 ; gain = 0.000 ; free physical = 7361 ; free virtual = 28811
 INFO: [Common 17-1381] The checkpoint '/home/wei/casper/casper_mlib/tutorials_devel/zcu111/rfdc_multi_adc_cores/mode4/2048GSps_MTS/rfdc_multi_eight_adcs_2048gsps_mts/myproj/myproj.runs/impl_1/top_postroute_physopt.dcp' has been generated.
-write_checkpoint: Time (s): cpu = 00:00:13 ; elapsed = 00:00:10 . Memory (MB): peak = 4982.812 ; gain = 0.000 ; free physical = 8113 ; free virtual = 29491
+write_checkpoint: Time (s): cpu = 00:00:11 ; elapsed = 00:00:08 . Memory (MB): peak = 5060.445 ; gain = 0.000 ; free physical = 7411 ; free virtual = 28818
 INFO: [runtcl-4] Executing : report_timing_summary -max_paths 10 -warn_on_violation -file top_timing_summary_postroute_physopted.rpt -pb top_timing_summary_postroute_physopted.pb -rpx top_timing_summary_postroute_physopted.rpx
 INFO: [Timing 38-91] UpdateTimingParams: Speed grade: -2, Temperature grade: E, Delay Type: min_max.
 INFO: [Timing 38-191] Multithreading enabled for timing update using a maximum of 8 CPUs
 INFO: [runtcl-4] Executing : report_bus_skew -warn_on_violation -file top_bus_skew_postroute_physopted.rpt -pb top_bus_skew_postroute_physopted.pb -rpx top_bus_skew_postroute_physopted.rpx
 INFO: [Timing 38-91] UpdateTimingParams: Speed grade: -2, Temperature grade: E, Delay Type: min_max.
 INFO: [Timing 38-191] Multithreading enabled for timing update using a maximum of 8 CPUs
+INFO: [Common 17-206] Exiting Vivado at Fri Sep 25 12:34:44 2020...
+#-----------------------------------------------------------
+# Vivado v2018.3.1_AR71948 (64-bit)
+# SW Build 2489853 on Tue Mar 26 04:18:30 MDT 2019
+# IP Build 2486929 on Tue Mar 26 06:44:21 MDT 2019
+# Start of session at: Fri Sep 25 12:35:03 2020
+# Process ID: 5526
+# Current directory: /home/wei/casper/casper_mlib/tutorials_devel/zcu111/rfdc_multi_adc_cores/mode4/2048GSps_MTS/rfdc_multi_eight_adcs_2048gsps_mts/myproj/myproj.runs/impl_1
+# Command line: vivado -log top.vdi -applog -product Vivado -messageDb vivado.pb -mode batch -source top.tcl -notrace
+# Log file: /home/wei/casper/casper_mlib/tutorials_devel/zcu111/rfdc_multi_adc_cores/mode4/2048GSps_MTS/rfdc_multi_eight_adcs_2048gsps_mts/myproj/myproj.runs/impl_1/top.vdi
+# Journal file: /home/wei/casper/casper_mlib/tutorials_devel/zcu111/rfdc_multi_adc_cores/mode4/2048GSps_MTS/rfdc_multi_eight_adcs_2048gsps_mts/myproj/myproj.runs/impl_1/vivado.jou
+#-----------------------------------------------------------
+source top.tcl -notrace
+Command: open_checkpoint top_postroute_physopt.dcp
+
+Starting open_checkpoint Task
+
+Time (s): cpu = 00:00:00.03 ; elapsed = 00:00:00.06 . Memory (MB): peak = 1394.926 ; gain = 0.000 ; free physical = 10193 ; free virtual = 31601
+INFO: [Netlist 29-17] Analyzing 224 Unisim elements for replacement
+INFO: [Netlist 29-28] Unisim Transformation completed in 0 CPU seconds
+INFO: [Project 1-479] Netlist was created with Vivado 2018.3.1_AR71948
+INFO: [Device 21-403] Loading part xczu28dr-ffvg1517-2-e
+INFO: [Project 1-570] Preparing netlist for logic optimization
+INFO: [Timing 38-478] Restoring timing data from binary archive.
+INFO: [Timing 38-479] Binary timing data restore complete.
+INFO: [Project 1-856] Restoring constraints from binary archive.
+INFO: [Project 1-853] Binary constraint restore complete.
+Reading XDEF placement.
+Reading placer database...
+Reading XDEF routing.
+Read XDEF File: Time (s): cpu = 00:00:02 ; elapsed = 00:00:02 . Memory (MB): peak = 2815.512 ; gain = 52.617 ; free physical = 8726 ; free virtual = 30134
+Restored from archive | CPU: 1.980000 secs | Memory: 34.252510 MB |
+Finished XDEF File Restore: Time (s): cpu = 00:00:02 ; elapsed = 00:00:02 . Memory (MB): peak = 2815.512 ; gain = 52.617 ; free physical = 8726 ; free virtual = 30134
+Netlist sorting complete. Time (s): cpu = 00:00:00.01 ; elapsed = 00:00:00 . Memory (MB): peak = 2815.512 ; gain = 0.000 ; free physical = 8732 ; free virtual = 30140
+INFO: [Project 1-111] Unisim Transformation Summary:
+  A total of 1074 instances were transformed.
+  DSP48E1 => DSP48E2 (DSP_ALU, DSP_A_B_DATA, DSP_C_DATA, DSP_MULTIPLIER, DSP_M_DATA, DSP_OUTPUT, DSP_PREADD_DATA, DSP_PREADD): 32 instances
+  IBUFDS => IBUFDS (DIFFINBUF, IBUFCTRL): 2 instances
+  RAM32M16 => RAM32M16 (RAMD32, RAMD32, RAMD32, RAMD32, RAMD32, RAMD32, RAMD32, RAMD32, RAMD32, RAMD32, RAMD32, RAMD32, RAMD32, RAMD32, RAMS32, RAMS32): 14 instances
+  SRLC32E => SRL16E: 1026 instances
+
+INFO: [Project 1-604] Checkpoint was created with Vivado v2018.3.1_AR71948 (64-bit) build 2489853
+open_checkpoint: Time (s): cpu = 00:00:22 ; elapsed = 00:00:32 . Memory (MB): peak = 2815.512 ; gain = 1420.586 ; free physical = 8732 ; free virtual = 30140
 Command: write_bitstream -force top.bit -bin_file
 Attempting to get a license for feature 'Implementation' and/or device 'xczu28dr'
 INFO: [Common 17-349] Got license for feature 'Implementation' and/or device 'xczu28dr'
-INFO: [Common 17-86] Your Implementation license expires in 11 day(s)
-INFO: [Common 17-1223] The version limit for your license is '2020.08' and will expire in 6 days. A version limit expiration means that, although you may be able to continue to use the current version of tools or IP with this license, you will not be eligible for any updates or new releases.
+INFO: [Common 17-86] Your Implementation license expires in 24 day(s)
 Running DRC as a precondition to command write_bitstream
-INFO: [IP_Flow 19-1839] IP Catalog is up to date.
+INFO: [IP_Flow 19-234] Refreshing IP repositories
+INFO: [IP_Flow 19-1704] No user IP repositories specified
+INFO: [IP_Flow 19-2313] Loaded Vivado IP repository '/home/wei/Software/Vivado/install/Vivado/2018.3/data/ip'.
 INFO: [DRC 23-27] Running DRC with 8 threads
 WARNING: [DRC RTSTAT-10] No routable loads: 86 net(s) have no routable loads. The problem bus(es) and/or net(s) are rfdc_multi_eight_adcs_2048gsps_mts_rfdc_V0_4/inst/ADC8_R2R_MTS_2048_rf_wrapper_i/adc00_status[1], rfdc_multi_eight_adcs_2048gsps_mts_rfdc_V0_4/inst/ADC8_R2R_MTS_2048_rf_wrapper_i/adc00_status[4], rfdc_multi_eight_adcs_2048gsps_mts_rfdc_V0_4/inst/ADC8_R2R_MTS_2048_rf_wrapper_i/adc00_status[5], rfdc_multi_eight_adcs_2048gsps_mts_rfdc_V0_4/inst/ADC8_R2R_MTS_2048_rf_wrapper_i/adc00_status[6], rfdc_multi_eight_adcs_2048gsps_mts_rfdc_V0_4/inst/ADC8_R2R_MTS_2048_rf_wrapper_i/adc00_status[7], rfdc_multi_eight_adcs_2048gsps_mts_rfdc_V0_4/inst/ADC8_R2R_MTS_2048_rf_wrapper_i/adc00_status[12], rfdc_multi_eight_adcs_2048gsps_mts_rfdc_V0_4/inst/ADC8_R2R_MTS_2048_rf_wrapper_i/adc00_status[13], rfdc_multi_eight_adcs_2048gsps_mts_rfdc_V0_4/inst/ADC8_R2R_MTS_2048_rf_wrapper_i/adc02_status[1], rfdc_multi_eight_adcs_2048gsps_mts_rfdc_V0_4/inst/ADC8_R2R_MTS_2048_rf_wrapper_i/adc02_status[4], rfdc_multi_eight_adcs_2048gsps_mts_rfdc_V0_4/inst/ADC8_R2R_MTS_2048_rf_wrapper_i/adc02_status[5], rfdc_multi_eight_adcs_2048gsps_mts_rfdc_V0_4/inst/ADC8_R2R_MTS_2048_rf_wrapper_i/adc02_status[6], rfdc_multi_eight_adcs_2048gsps_mts_rfdc_V0_4/inst/ADC8_R2R_MTS_2048_rf_wrapper_i/adc02_status[7], rfdc_multi_eight_adcs_2048gsps_mts_rfdc_V0_4/inst/ADC8_R2R_MTS_2048_rf_wrapper_i/adc02_status[12], rfdc_multi_eight_adcs_2048gsps_mts_rfdc_V0_4/inst/ADC8_R2R_MTS_2048_rf_wrapper_i/adc02_status[13], rfdc_multi_eight_adcs_2048gsps_mts_rfdc_V0_4/inst/ADC8_R2R_MTS_2048_rf_wrapper_i/adc10_status[1]... and (the first 15 of 86 listed).
 INFO: [DRC AVAL-156] enum_USE_MULT_NONE__enum_DREG_ADREG_0_connects_CED_CEAD_RSTD_GND: rfdc_multi_eight_adcs_2048gsps_mts_inst/rfdc_multi_eight_adcs_2048gsps_mts_struct/snapshot0_01/ss/add_gen/add_gen/comp1.core_instance1/U0/i_synth/i_baseip.i_xbip_counter/i_dsp48.i_dsp/i_vx7.i_dsp48e_wrap/i_primitive: DSP48E2 is not using the Multiplier (USE_MULT = NONE). For improved power characteristics, set DREG and ADREG to '1', tie CED, CEAD, and RSTD to logic '0'.
@@ -1036,7 +742,7 @@ Writing bitstream ./top.bin...
 INFO: [Vivado 12-1842] Bitgen Completed Successfully.
 INFO: [Project 1-118] WebTalk data collection is enabled (User setting is ON. Install Setting is ON.).
 INFO: [Common 17-83] Releasing license: Implementation
-194 Infos, 2 Warnings, 0 Critical Warnings and 0 Errors encountered.
+55 Infos, 1 Warnings, 0 Critical Warnings and 0 Errors encountered.
 write_bitstream completed successfully
-write_bitstream: Time (s): cpu = 00:00:45 ; elapsed = 00:00:29 . Memory (MB): peak = 5064.895 ; gain = 82.082 ; free physical = 8125 ; free virtual = 29575
-INFO: [Common 17-206] Exiting Vivado at Tue Aug 25 09:52:45 2020...
+write_bitstream: Time (s): cpu = 00:00:51 ; elapsed = 00:00:47 . Memory (MB): peak = 3722.316 ; gain = 906.805 ; free physical = 8298 ; free virtual = 29772
+INFO: [Common 17-206] Exiting Vivado at Fri Sep 25 12:36:27 2020...

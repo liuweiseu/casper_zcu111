@@ -1,0 +1,297 @@
+!!python/object:castro.Castro
+design_name: top
+ips: []
+mm_slaves:
+- !!python/object:castro.mm_slave {base_address: 2684436480, high_address: 2684436484,
+  mode: 3, name: dest_ip, span: 4}
+- !!python/object:castro.mm_slave {base_address: 2684436484, high_address: 2684436488,
+  mode: 3, name: dest_port, span: 4}
+- !!python/object:castro.mm_slave {base_address: 2684354560, high_address: 2684416000,
+  mode: 3, name: gbe0, span: 61440}
+- !!python/object:castro.mm_slave {base_address: 2684436488, high_address: 2684436492,
+  mode: 1, name: gbe0_rxbadctr, span: 4}
+- !!python/object:castro.mm_slave {base_address: 2684436492, high_address: 2684436496,
+  mode: 1, name: gbe0_rxctr, span: 4}
+- !!python/object:castro.mm_slave {base_address: 2684436496, high_address: 2684436500,
+  mode: 1, name: gbe0_rxeofctr, span: 4}
+- !!python/object:castro.mm_slave {base_address: 2684436500, high_address: 2684436504,
+  mode: 1, name: gbe0_rxofctr, span: 4}
+- !!python/object:castro.mm_slave {base_address: 2684436504, high_address: 2684436508,
+  mode: 1, name: gbe0_rxvldctr, span: 4}
+- !!python/object:castro.mm_slave {base_address: 2684436508, high_address: 2684436512,
+  mode: 1, name: gbe0_txctr, span: 4}
+- !!python/object:castro.mm_slave {base_address: 2684436512, high_address: 2684436516,
+  mode: 1, name: gbe0_txfullctr, span: 4}
+- !!python/object:castro.mm_slave {base_address: 2684436516, high_address: 2684436520,
+  mode: 1, name: gbe0_txofctr, span: 4}
+- !!python/object:castro.mm_slave {base_address: 2684436520, high_address: 2684436524,
+  mode: 1, name: gbe0_txvldctr, span: 4}
+- !!python/object:castro.mm_slave {base_address: 2684436524, high_address: 2684436528,
+  mode: 1, name: gbe0_linkup, span: 4}
+- !!python/object:castro.mm_slave {base_address: 2684436528, high_address: 2684436532,
+  mode: 1, name: gbe0_tx_cnt, span: 4}
+- !!python/object:castro.mm_slave {base_address: 2684436532, high_address: 2684436536,
+  mode: 3, name: pkt_sim_enable, span: 4}
+- !!python/object:castro.mm_slave {base_address: 2684436536, high_address: 2684436540,
+  mode: 3, name: pkt_sim_payload_len, span: 4}
+- !!python/object:castro.mm_slave {base_address: 2684436540, high_address: 2684436544,
+  mode: 3, name: pkt_sim_period, span: 4}
+- !!python/object:castro.mm_slave {base_address: 2684436544, high_address: 2684436548,
+  mode: 3, name: rst, span: 4}
+- !!python/object:castro.mm_slave {base_address: 2684420096, high_address: 2684436480,
+  mode: 3, name: tx_snapshot_ss_bram, span: 16384}
+- !!python/object:castro.mm_slave {base_address: 2684436548, high_address: 2684436552,
+  mode: 3, name: tx_snapshot_ss_ctrl, span: 4}
+- !!python/object:castro.mm_slave {base_address: 2684436552, high_address: 2684436556,
+  mode: 1, name: tx_snapshot_ss_status, span: 4}
+- !!python/object:castro.mm_slave {base_address: 2684436608, high_address: 2684436640,
+  mode: 1, name: sys_block, span: 32}
+src_files: [/home/wei/casper/casper_mlib/tutorials_devel/zcu111/raw_axi_test/tengbe_test/tengbe_test/top.v,
+  /home/wei/casper/casper_mlib/tutorials_devel/zcu111/mlib_devel/jasper_library/hdl_sources/wb_register_ppc2simulink,
+  /home/wei/casper/casper_mlib/tutorials_devel/zcu111/mlib_devel/jasper_library/hdl_sources/wb_register_ppc2simulink,
+  /home/wei/casper/casper_mlib/tutorials_devel/zcu111/mlib_devel/jasper_library/hdl_sources/kat_ten_gb_eth/tge_tx.v,
+  /home/wei/casper/casper_mlib/tutorials_devel/zcu111/mlib_devel/jasper_library/hdl_sources/kat_ten_gb_eth/tx_fifo_ext.xci,
+  /home/wei/casper/casper_mlib/tutorials_devel/zcu111/mlib_devel/jasper_library/hdl_sources/kat_ten_gb_eth/kat_ten_gb_eth.v,
+  /home/wei/casper/casper_mlib/tutorials_devel/zcu111/mlib_devel/jasper_library/hdl_sources/kat_ten_gb_eth/tb,
+  /home/wei/casper/casper_mlib/tutorials_devel/zcu111/mlib_devel/jasper_library/hdl_sources/kat_ten_gb_eth/ten_gig_eth_mac_UCB.vhd,
+  /home/wei/casper/casper_mlib/tutorials_devel/zcu111/mlib_devel/jasper_library/hdl_sources/kat_ten_gb_eth/arp_cache.xci,
+  /home/wei/casper/casper_mlib/tutorials_devel/zcu111/mlib_devel/jasper_library/hdl_sources/kat_ten_gb_eth/tx_packet_ctrl_fifo.xci,
+  /home/wei/casper/casper_mlib/tutorials_devel/zcu111/mlib_devel/jasper_library/hdl_sources/kat_ten_gb_eth/rx_packet_ctrl_fifo.xci,
+  /home/wei/casper/casper_mlib/tutorials_devel/zcu111/mlib_devel/jasper_library/hdl_sources/kat_ten_gb_eth/wb_attach.v,
+  /home/wei/casper/casper_mlib/tutorials_devel/zcu111/mlib_devel/jasper_library/hdl_sources/kat_ten_gb_eth/tx_packet_fifo.xci,
+  /home/wei/casper/casper_mlib/tutorials_devel/zcu111/mlib_devel/jasper_library/hdl_sources/kat_ten_gb_eth/tge_rx.v,
+  /home/wei/casper/casper_mlib/tutorials_devel/zcu111/mlib_devel/jasper_library/hdl_sources/kat_ten_gb_eth/rx_packet_fifo_bram.xci,
+  /home/wei/casper/casper_mlib/tutorials_devel/zcu111/mlib_devel/jasper_library/hdl_sources/kat_ten_gb_eth/cpu_buffer.xci,
+  /home/wei/casper/casper_mlib/tutorials_devel/zcu111/mlib_devel/jasper_library/hdl_sources/kat_ten_gb_eth/rx_packet_fifo_dist.xci,
+  /home/wei/casper/casper_mlib/tutorials_devel/zcu111/mlib_devel/jasper_library/hdl_sources/tengbaser_phy_ultrascale/tengbaser_phy_ultrascale.xci,
+  /home/wei/casper/casper_mlib/tutorials_devel/zcu111/mlib_devel/jasper_library/hdl_sources/tengbaser_infrastructure_ultrascale/xxv_ethernet_1_reset_wrapper.v,
+  /home/wei/casper/casper_mlib/tutorials_devel/zcu111/mlib_devel/jasper_library/hdl_sources/tengbaser_infrastructure_ultrascale/xxv_ethernet_1_gt_gtye4_common_wrapper.v,
+  /home/wei/casper/casper_mlib/tutorials_devel/zcu111/mlib_devel/jasper_library/hdl_sources/tengbaser_infrastructure_ultrascale/tengbaser_infrastructure_ultrascale.v,
+  /home/wei/casper/casper_mlib/tutorials_devel/zcu111/mlib_devel/jasper_library/hdl_sources/tengbaser_infrastructure_ultrascale/xxv_ethernet_1_clocking_wrapper.v,
+  /home/wei/casper/casper_mlib/tutorials_devel/zcu111/mlib_devel/jasper_library/hdl_sources/tengbaser_infrastructure_ultrascale/gtwizard_ultrascale_v1_7_gtye4_common.v,
+  /home/wei/casper/casper_mlib/tutorials_devel/zcu111/mlib_devel/jasper_library/hdl_sources/tengbaser_infrastructure_ultrascale/xxv_ethernet_1_common_wrapper.v,
+  /home/wei/casper/casper_mlib/tutorials_devel/zcu111/mlib_devel/jasper_library/hdl_sources/tengbaser_infrastructure_ultrascale/axi_slave_wishbone_classic_master.vhd,
+  /home/wei/casper/casper_mlib/tutorials_devel/zcu111/mlib_devel/jasper_library/hdl_sources/wb_register_simulink2ppc,
+  /home/wei/casper/casper_mlib/tutorials_devel/zcu111/mlib_devel/jasper_library/hdl_sources/wb_register_simulink2ppc,
+  /home/wei/casper/casper_mlib/tutorials_devel/zcu111/mlib_devel/jasper_library/hdl_sources/wb_register_simulink2ppc,
+  /home/wei/casper/casper_mlib/tutorials_devel/zcu111/mlib_devel/jasper_library/hdl_sources/wb_register_simulink2ppc,
+  /home/wei/casper/casper_mlib/tutorials_devel/zcu111/mlib_devel/jasper_library/hdl_sources/wb_register_simulink2ppc,
+  /home/wei/casper/casper_mlib/tutorials_devel/zcu111/mlib_devel/jasper_library/hdl_sources/wb_register_simulink2ppc,
+  /home/wei/casper/casper_mlib/tutorials_devel/zcu111/mlib_devel/jasper_library/hdl_sources/wb_register_simulink2ppc,
+  /home/wei/casper/casper_mlib/tutorials_devel/zcu111/mlib_devel/jasper_library/hdl_sources/wb_register_simulink2ppc,
+  /home/wei/casper/casper_mlib/tutorials_devel/zcu111/mlib_devel/jasper_library/hdl_sources/wb_register_simulink2ppc,
+  /home/wei/casper/casper_mlib/tutorials_devel/zcu111/mlib_devel/jasper_library/hdl_sources/wb_register_simulink2ppc,
+  /home/wei/casper/casper_mlib/tutorials_devel/zcu111/mlib_devel/jasper_library/hdl_sources/wb_register_simulink2ppc,
+  /home/wei/casper/casper_mlib/tutorials_devel/zcu111/mlib_devel/jasper_library/hdl_sources/gpio_simulink2ext,
+  /home/wei/casper/casper_mlib/tutorials_devel/zcu111/mlib_devel/jasper_library/hdl_sources/gpio_simulink2ext,
+  /home/wei/casper/casper_mlib/tutorials_devel/zcu111/mlib_devel/jasper_library/hdl_sources/wb_register_ppc2simulink,
+  /home/wei/casper/casper_mlib/tutorials_devel/zcu111/mlib_devel/jasper_library/hdl_sources/wb_register_ppc2simulink,
+  /home/wei/casper/casper_mlib/tutorials_devel/zcu111/mlib_devel/jasper_library/hdl_sources/wb_register_ppc2simulink,
+  /home/wei/casper/casper_mlib/tutorials_devel/zcu111/mlib_devel/jasper_library/hdl_sources/wb_register_ppc2simulink,
+  /home/wei/casper/casper_mlib/tutorials_devel/zcu111/mlib_devel/jasper_library/hdl_sources/wb_register_ppc2simulink,
+  /home/wei/casper/casper_mlib/tutorials_devel/zcu111/mlib_devel/jasper_library/hdl_sources/wb_register_simulink2ppc,
+  /home/wei/casper/casper_mlib/tutorials_devel/zcu111/mlib_devel/jasper_library/hdl_sources/infrastructure/zcu111_infrastructure.v,
+  /home/wei/casper/casper_mlib/tutorials_devel/zcu111/mlib_devel/jasper_library/hdl_sources/utils/cdc_synchroniser.vhd,
+  /home/wei/casper/casper_mlib/tutorials_devel/zcu111/mlib_devel/jasper_library/hdl_sources/sys_block,
+  /home/wei/casper/casper_mlib/tutorials_devel/zcu111/raw_axi_test/tengbe_test/tengbe_test/sysgen/hdl_netlist/tengbe_test.srcs/sources_1/imports/sysgen,
+  /home/wei/casper/casper_mlib/tutorials_devel/zcu111/raw_axi_test/tengbe_test/tengbe_test/sysgen/hdl_netlist/tengbe_test.srcs/sources_1/ip/tengbe_test_c_counter_binary_v12_0_i1/tengbe_test_c_counter_binary_v12_0_i1.xci,
+  /home/wei/casper/casper_mlib/tutorials_devel/zcu111/raw_axi_test/tengbe_test/tengbe_test/sysgen/hdl_netlist/tengbe_test.srcs/sources_1/ip/tengbe_test_c_counter_binary_v12_0_i0/tengbe_test_c_counter_binary_v12_0_i0.xci,
+  /home/wei/casper/casper_mlib/tutorials_devel/zcu111/raw_axi_test/tengbe_test/tengbe_test/sysgen/hdl_netlist/tengbe_test.srcs/sources_1/ip/tengbe_test_c_counter_binary_v12_0_i3/tengbe_test_c_counter_binary_v12_0_i3.xci,
+  /home/wei/casper/casper_mlib/tutorials_devel/zcu111/raw_axi_test/tengbe_test/tengbe_test/sysgen/hdl_netlist/tengbe_test.srcs/sources_1/ip/tengbe_test_c_counter_binary_v12_0_i2/tengbe_test_c_counter_binary_v12_0_i2.xci,
+  /home/wei/casper/casper_mlib/tutorials_devel/zcu111/raw_axi_test/tengbe_test/tengbe_test/sysgen/hdl_netlist/tengbe_test.srcs/sources_1/ip/tengbe_test_c_counter_binary_v12_0_i4/tengbe_test_c_counter_binary_v12_0_i4.xci]
+synthesis: !!python/object:castro.Synthesis
+  clk_constraints:
+  - !!python/object:castro.ClkConstraint {clkname: ethclk0, freq_mhz: 156.25, period_ns: 6.4,
+    port_en: true, portname: ref_clk_p0, virtual_en: false, waveform_max_ns: 3.2,
+    waveform_min_ns: 0.0}
+  - !!python/object:castro.ClkConstraint {clkname: clk_100_p, freq_mhz: 128.0, period_ns: 7.8125,
+    port_en: true, portname: clk_100_p, virtual_en: false, waveform_max_ns: 3.90625,
+    waveform_min_ns: 0.0}
+  clk_grp_constraints:
+  - !!python/object:castro.ClkGrpConstraint {clkdomaintype: asynchronous, clknamegrp1: '-of_objects
+      [get_pins zcu111_infr_inst/user_clk_mmcm_inst/CLKOUT0]', clknamegrp2: '-of_objects
+      [get_pins zcu111_inst/zynq_ultra_ps_e_0/U0/PS8_i/PLCLK[0]]'}
+  - !!python/object:castro.ClkGrpConstraint {clkdomaintype: asynchronous, clknamegrp1: '-of_objects
+      [get_pins zcu111_inst/zynq_ultra_ps_e_0/U0/PS8_i/PLCLK[0]]', clknamegrp2: '-of_objects
+      [get_pins zcu111_infr_inst/user_clk_mmcm_inst/CLKOUT0]'}
+  false_path_constraints:
+  - !!python/object:castro.FalsePthConstraint {destpath: '[get_ports {tengbe_test_led0_gbe0_pulse_tx_ext[*]}]',
+    sourcepath: null}
+  - !!python/object:castro.FalsePthConstraint {destpath: '[get_ports {tengbe_test_led1_gbe0_up_ext[*]}]',
+    sourcepath: null}
+  fpga_manufacturer: Xilinx
+  fpga_model: xczu28dr-ffvg1517-2-e
+  gen_clk_constraints: []
+  input_delay_constraints: []
+  max_delay_constraints:
+  - !!python/object:castro.MaxDelayConstraint {constdelay_ns: 1.0, destpath: '[get_ports
+      {tengbe_test_led0_gbe0_pulse_tx_ext[*]}]', sourcepath: null}
+  - !!python/object:castro.MaxDelayConstraint {constdelay_ns: 1.0, destpath: '[get_ports
+      {tengbe_test_led1_gbe0_up_ext[*]}]', sourcepath: null}
+  min_delay_constraints:
+  - !!python/object:castro.MinDelayConstraint {constdelay_ns: 1.0, destpath: '[get_ports
+      {tengbe_test_led0_gbe0_pulse_tx_ext[*]}]', sourcepath: null}
+  - !!python/object:castro.MinDelayConstraint {constdelay_ns: 1.0, destpath: '[get_ports
+      {tengbe_test_led1_gbe0_up_ext[*]}]', sourcepath: null}
+  multi_cycle_constraints: []
+  output_delay_constraints: []
+  pin_constraints:
+  - !!python/object:castro.PinConstraint
+    drive_strength: 0
+    io_standard: [null]
+    location: [Y31]
+    portname: ref_clk_p0
+    portname_indices: &id001 []
+    slew_rate: 0
+    symbolic_indices: [0]
+    symbolic_name: eth_clk_p
+    termination: ''
+  - !!python/object:castro.PinConstraint
+    drive_strength: 0
+    io_standard: [null]
+    location: [Y32]
+    portname: ref_clk_n0
+    portname_indices: *id001
+    slew_rate: 0
+    symbolic_indices: [0]
+    symbolic_name: eth_clk_n
+    termination: ''
+  - !!python/object:castro.PinConstraint
+    drive_strength: 0
+    io_standard: [null]
+    location: [V35]
+    portname: mgt_tx_p1
+    portname_indices: *id001
+    slew_rate: 0
+    symbolic_indices: [1]
+    symbolic_name: mgt_tx_p
+    termination: ''
+  - !!python/object:castro.PinConstraint
+    drive_strength: 0
+    io_standard: [null]
+    location: [V36]
+    portname: mgt_tx_n1
+    portname_indices: *id001
+    slew_rate: 0
+    symbolic_indices: [1]
+    symbolic_name: mgt_tx_n
+    termination: ''
+  - !!python/object:castro.PinConstraint
+    drive_strength: 0
+    io_standard: [null]
+    location: [W38]
+    portname: mgt_rx_p1
+    portname_indices: *id001
+    slew_rate: 0
+    symbolic_indices: [1]
+    symbolic_name: mgt_rx_p
+    termination: ''
+  - !!python/object:castro.PinConstraint
+    drive_strength: 0
+    io_standard: [null]
+    location: [W39]
+    portname: mgt_rx_n1
+    portname_indices: *id001
+    slew_rate: 0
+    symbolic_indices: [1]
+    symbolic_name: mgt_rx_n
+    termination: ''
+  - !!python/object:castro.PinConstraint
+    drive_strength: 0
+    io_standard: [LVCMOS18]
+    location: [AR13]
+    portname: tengbe_test_led0_gbe0_pulse_tx_ext
+    portname_indices: [0]
+    slew_rate: 0
+    symbolic_indices: [0]
+    symbolic_name: led
+    termination: ''
+  - !!python/object:castro.PinConstraint
+    drive_strength: 0
+    io_standard: [LVCMOS18]
+    location: [AP13]
+    portname: tengbe_test_led1_gbe0_up_ext
+    portname_indices: [0]
+    slew_rate: 0
+    symbolic_indices: [1]
+    symbolic_name: led
+    termination: ''
+  - !!python/object:castro.PinConstraint
+    drive_strength: 0
+    io_standard: [LVDS]
+    location: [AL16]
+    portname: clk_100_p
+    portname_indices: *id001
+    slew_rate: 0
+    symbolic_indices: [0]
+    symbolic_name: clk_100_p
+    termination: ''
+  pin_map:
+    clk_100_n:
+    - !!python/object:casper_platform.Pin {iostd: LVDS, loc: AN15}
+    clk_100_p:
+    - !!python/object:casper_platform.Pin {iostd: LVDS, loc: AL16}
+    eth_clk_n:
+    - !!python/object:casper_platform.Pin {iostd: null, loc: Y32}
+    eth_clk_p:
+    - !!python/object:casper_platform.Pin {iostd: null, loc: Y31}
+    led:
+    - !!python/object:casper_platform.Pin {iostd: LVCMOS18, loc: AR13}
+    - !!python/object:casper_platform.Pin {iostd: LVCMOS18, loc: AP13}
+    - !!python/object:casper_platform.Pin {iostd: LVCMOS18, loc: AR16}
+    - !!python/object:casper_platform.Pin {iostd: LVCMOS18, loc: AP16}
+    - !!python/object:casper_platform.Pin {iostd: LVCMOS18, loc: AP15}
+    - !!python/object:casper_platform.Pin {iostd: LVCMOS18, loc: AN16}
+    - !!python/object:casper_platform.Pin {iostd: LVCMOS18, loc: AN17}
+    - !!python/object:casper_platform.Pin {iostd: LVCMOS18, loc: AV15}
+    mgt_rx_n:
+    - !!python/object:casper_platform.Pin {iostd: null, loc: AA39}
+    - !!python/object:casper_platform.Pin {iostd: null, loc: W39}
+    - !!python/object:casper_platform.Pin {iostd: null, loc: U39}
+    - !!python/object:casper_platform.Pin {iostd: null, loc: R39}
+    mgt_rx_p:
+    - !!python/object:casper_platform.Pin {iostd: null, loc: AA38}
+    - !!python/object:casper_platform.Pin {iostd: null, loc: W38}
+    - !!python/object:casper_platform.Pin {iostd: null, loc: U38}
+    - !!python/object:casper_platform.Pin {iostd: null, loc: R38}
+    mgt_tx_n:
+    - !!python/object:casper_platform.Pin {iostd: null, loc: Y36}
+    - !!python/object:casper_platform.Pin {iostd: null, loc: V36}
+    - !!python/object:casper_platform.Pin {iostd: null, loc: T36}
+    - !!python/object:casper_platform.Pin {iostd: null, loc: R34}
+    mgt_tx_p:
+    - !!python/object:casper_platform.Pin {iostd: null, loc: Y35}
+    - !!python/object:casper_platform.Pin {iostd: null, loc: V35}
+    - !!python/object:casper_platform.Pin {iostd: null, loc: T35}
+    - !!python/object:casper_platform.Pin {iostd: null, loc: R33}
+    pl_sysref_n:
+    - !!python/object:casper_platform.Pin {iostd: LVDS, loc: AK16}
+    pl_sysref_p:
+    - !!python/object:casper_platform.Pin {iostd: LVDS, loc: AK17}
+    sfp_disable:
+    - !!python/object:casper_platform.Pin {iostd: LVCMOS12, loc: G12}
+    - !!python/object:casper_platform.Pin {iostd: LVCMOS12, loc: G10}
+    - !!python/object:casper_platform.Pin {iostd: LVCMOS12, loc: K12}
+    - !!python/object:casper_platform.Pin {iostd: LVCMOS12, loc: J7}
+  platform_name: zcu111
+  raw_constraints:
+  - !!python/object:castro.RawConstraint {raw: 'set_clock_groups -name asyncclocks_eth0
+      -asynchronous -group [get_clocks -include_generated_clocks clk_100_p] -group
+      [get_clocks -include_generated_clocks ethclk0]
+
+      '}
+  - !!python/object:castro.RawConstraint {raw: 'set_clock_groups -name asyncclocks_eth1
+      -asynchronous -group [get_clocks -of_objects [get_pins zcu111_inst/zynq_ultra_ps_e_0/U0/PS8_i/PLCLK[0]]]
+      -group [get_clocks -include_generated_clocks ethclk0]
+
+      '}
+  - !!python/object:castro.RawConstraint {raw: 'set_clock_groups -name asyncclocks_eth2
+      -asynchronous -group [get_clocks -of_objects [get_pins zcu111_inst/zynq_ultra_ps_e_0/U0/PS8_i/PLCLK[0]]]
+      -group [get_clocks -include_generated_clocks clk_100_p]
+
+      '}
+  synth_tool: ''
+  temp_fpga_model: ''
+  temp_quartus_qsf_files: []
+  vendor_constraints_files: ''
+version: 0.0.0

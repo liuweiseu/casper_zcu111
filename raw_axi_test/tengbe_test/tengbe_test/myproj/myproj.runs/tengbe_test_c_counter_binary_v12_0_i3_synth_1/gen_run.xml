@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<GenRun Id="tengbe_test_c_counter_binary_v12_0_i3_synth_1" LaunchPart="xczu28dr-ffvg1517-2-e" LaunchTime="1602746243">
+  <File Type="RDS-UTIL-PB" Name="tengbe_test_c_counter_binary_v12_0_i3_utilization_synth.pb"/>
+  <File Type="RDS-UTIL" Name="tengbe_test_c_counter_binary_v12_0_i3_utilization_synth.rpt"/>
+  <File Type="RDS-RDS" Name="tengbe_test_c_counter_binary_v12_0_i3.vds"/>
+  <File Type="RDS-DCP" Name="tengbe_test_c_counter_binary_v12_0_i3.dcp"/>
+  <File Type="PA-TCL" Name="tengbe_test_c_counter_binary_v12_0_i3.tcl"/>
+  <File Type="REPORTS-TCL" Name="tengbe_test_c_counter_binary_v12_0_i3_reports.tcl"/>
+  <FileSet Name="sources" Type="BlockSrcs" RelSrcDir="$PSRCDIR/tengbe_test_c_counter_binary_v12_0_i3">
+    <File Path="$PSRCDIR/sources_1/ip/tengbe_test_c_counter_binary_v12_0_i3/tengbe_test_c_counter_binary_v12_0_i3.xci">
+      <FileInfo>
+        <Attr Name="ImportPath" Val="$PPRDIR/../sysgen/hdl_netlist/tengbe_test.srcs/sources_1/ip/tengbe_test_c_counter_binary_v12_0_i3/tengbe_test_c_counter_binary_v12_0_i3.xci"/>
+        <Attr Name="ImportTime" Val="1602746155"/>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="implementation"/>
+        <Attr Name="UsedIn" Val="simulation"/>
+      </FileInfo>
+    </File>
+    <Config>
+      <Option Name="TopModule" Val="tengbe_test_c_counter_binary_v12_0_i3"/>
+      <Option Name="UseBlackboxStub" Val="1"/>
+    </Config>
+  </FileSet>
+  <FileSet Name="constrs_in" Type="BlockSrcs" RelSrcDir="$PSRCDIR/tengbe_test_c_counter_binary_v12_0_i3">
+    <File Path="$PSRCDIR/sources_1/ip/tengbe_test_c_counter_binary_v12_0_i3/tengbe_test_c_counter_binary_v12_0_i3.xci">
+      <FileInfo>
+        <Attr Name="ImportPath" Val="$PPRDIR/../sysgen/hdl_netlist/tengbe_test.srcs/sources_1/ip/tengbe_test_c_counter_binary_v12_0_i3/tengbe_test_c_counter_binary_v12_0_i3.xci"/>
+        <Attr Name="ImportTime" Val="1602746155"/>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="implementation"/>
+        <Attr Name="UsedIn" Val="simulation"/>
+      </FileInfo>
+    </File>
+    <Config>
+      <Option Name="TopModule" Val="tengbe_test_c_counter_binary_v12_0_i3"/>
+      <Option Name="UseBlackboxStub" Val="1"/>
+    </Config>
+  </FileSet>
+  <FileSet Name="utils" Type="Utils" RelSrcDir="$PSRCDIR/utils_1">
+    <Filter Type="Utils"/>
+    <Config>
+      <Option Name="TopAutoSet" Val="TRUE"/>
+    </Config>
+  </FileSet>
+  <Strategy Version="1" Minor="2">
+    <StratHandle Name="Vivado Synthesis Defaults" Flow="Vivado Synthesis 2018"/>
+    <Step Id="synth_design"/>
+  </Strategy>
+</GenRun>

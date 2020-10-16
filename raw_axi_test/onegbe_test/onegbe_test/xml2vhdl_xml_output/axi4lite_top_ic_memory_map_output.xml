@@ -1,0 +1,27 @@
+<?xml version="1.0" ?>
+<node address="0xa0000000" byte_size="131072" hw_type="ic" id="axi4lite_top">
+   <node absolute_id="axi4lite_top.bitfield_snapshot_ss_bram" absolute_offset="a0010000" address="0x00010000" byte_size="32768" id="bitfield_snapshot_ss_bram" link_done="bitfield_snapshot_ss_bram_memory_map_output.xml">
+      <node absolute_id="axi4lite_top.bitfield_snapshot_ss_bram.bitfield_snapshot_ss_bram" absolute_offset="a0010000" address="0x00000000" description="bitfield_snapshot_ss_bram_bitfield_snapshot_ss_bram" hw_rst="0" id="bitfield_snapshot_ss_bram" mask="0xffffffff" permission="rw" size="8192"/>
+   </node>
+   <node absolute_id="axi4lite_top.one_gbe" absolute_offset="a0000000" address="0x00000000" byte_size="4" id="one_gbe" link_done="one_gbe_memory_map_output.xml">
+      <node absolute_id="axi4lite_top.one_gbe.one_gbe" absolute_offset="a0000000" address="0x00000000" description="one_gbe_one_gbe" hw_rst="0" id="one_gbe" mask="0xffffffff" permission="rw" size="1"/>
+   </node>
+   <node absolute_id="axi4lite_top.sw_reg" absolute_offset="a0018000" address="0x00018000" byte_size="32" id="sw_reg" link_done="sw_reg_memory_map_output.xml">
+      <node absolute_id="axi4lite_top.sw_reg.bitfield_snapshot_ss_ctrl" absolute_offset="a0018000" address="0x00000000" description="sw_reg_bitfield_snapshot_ss_ctrl" hw_rst="0" id="bitfield_snapshot_ss_ctrl" mask="0xffffffff" permission="rw" size="1"/>
+      <node absolute_id="axi4lite_top.sw_reg.bitfield_snapshot_ss_status" absolute_offset="a0018004" address="0x00000004" description="sw_reg_bitfield_snapshot_ss_status" hw_rst="0x0" id="bitfield_snapshot_ss_status" mask="0xffffffff" permission="r" size="1"/>
+      <node absolute_id="axi4lite_top.sw_reg.dest_ip" absolute_offset="a0018008" address="0x00000008" description="sw_reg_dest_ip" hw_rst="0" id="dest_ip" mask="0xffffffff" permission="rw" size="1"/>
+      <node absolute_id="axi4lite_top.sw_reg.dest_port" absolute_offset="a001800c" address="0x0000000c" description="sw_reg_dest_port" hw_rst="0" id="dest_port" mask="0xffffffff" permission="rw" size="1"/>
+      <node absolute_id="axi4lite_top.sw_reg.pkt_sim_enable" absolute_offset="a0018010" address="0x00000010" description="sw_reg_pkt_sim_enable" hw_rst="0" id="pkt_sim_enable" mask="0xffffffff" permission="rw" size="1"/>
+      <node absolute_id="axi4lite_top.sw_reg.pkt_sim_payload_len" absolute_offset="a0018014" address="0x00000014" description="sw_reg_pkt_sim_payload_len" hw_rst="0" id="pkt_sim_payload_len" mask="0xffffffff" permission="rw" size="1"/>
+      <node absolute_id="axi4lite_top.sw_reg.pkt_sim_period" absolute_offset="a0018018" address="0x00000018" description="sw_reg_pkt_sim_period" hw_rst="0" id="pkt_sim_period" mask="0xffffffff" permission="rw" size="1"/>
+      <node absolute_id="axi4lite_top.sw_reg.rst" absolute_offset="a001801c" address="0x0000001c" description="sw_reg_rst" hw_rst="0" id="rst" mask="0xffffffff" permission="rw" size="1"/>
+   </node>
+   <node absolute_id="axi4lite_top.sys_block" absolute_offset="a0018020" address="0x00018020" byte_size="32" id="sys_block" link_done="sys_block_memory_map_output.xml">
+      <node absolute_id="axi4lite_top.sys_block.sys_board_id" absolute_offset="a0018020" address="0x00000000" description="sys_block_sys_board_id" hw_rst="3" id="sys_board_id" mask="0xffffffff" permission="r" size="1"/>
+      <node absolute_id="axi4lite_top.sys_block.sys_rev" absolute_offset="a0018024" address="0x00000004" description="sys_block_sys_rev" hw_rst="131072" id="sys_rev" mask="0xffffffff" permission="r" size="1"/>
+      <node absolute_id="axi4lite_top.sys_block.sys_rev_rcs" absolute_offset="a001802c" address="0x0000000c" description="sys_block_sys_rev_rcs" hw_rst="1" id="sys_rev_rcs" mask="0xffffffff" permission="r" size="1"/>
+      <node absolute_id="axi4lite_top.sys_block.sys_scratchpad" absolute_offset="a0018030" address="0x00000010" description="sys_block_sys_scratchpad" hw_rst="0" id="sys_scratchpad" mask="0xffffffff" permission="rw" size="1"/>
+      <node absolute_id="axi4lite_top.sys_block.sys_clkcounter" absolute_offset="a0018034" address="0x00000014" description="sys_block_sys_clkcounter" hw_rst="0x0" id="sys_clkcounter" mask="0xffffffff" permission="r" size="1"/>
+   </node>
+</node>
+<!-- This file has been automatically generated using xml_map_gen.py version 1.8 /!-->

@@ -117,9 +117,6 @@ begin
          -- hw_permission="w" or hw_permission="wen"
          -- hw_prio="logic"
          --
-         axi4lite_sys_block_int.sys_board_id <= axi4lite_sys_block_in.sys_board_id;
-         axi4lite_sys_block_int.sys_rev <= axi4lite_sys_block_in.sys_rev;
-         axi4lite_sys_block_int.sys_rev_rcs <= axi4lite_sys_block_in.sys_rev_rcs;
          axi4lite_sys_block_int.sys_clkcounter <= axi4lite_sys_block_in.sys_clkcounter;
 
       end if;

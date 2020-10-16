@@ -13,3 +13,7 @@ set_property src_info {type:XDC file:1 line:12 export:INPUT save:INPUT read:READ
 set_clock_groups -asynchronous -group [get_clocks -of_objects [get_pins zcu111_infr_inst/user_clk_mmcm_inst/CLKOUT0]] -group [get_clocks -of_objects [get_pins zcu111_inst/zynq_ultra_ps_e_0/U0/PS8_i/PLCLK[0]]]
 set_property src_info {type:XDC file:1 line:13 export:INPUT save:INPUT read:READ} [current_design]
 set_clock_groups -asynchronous -group [get_clocks -of_objects [get_pins zcu111_inst/zynq_ultra_ps_e_0/U0/PS8_i/PLCLK[0]]] -group [get_clocks -of_objects [get_pins zcu111_infr_inst/user_clk_mmcm_inst/CLKOUT0]]
+set_property src_info {type:XDC file:1 line:16 export:INPUT save:INPUT read:READ} [current_design]
+set_min_delay 1.0 -to [get_ports {rfdc_multi_eight_adcs_2048gsps_mts_gpio_led_ext[*]}]
+set_property src_info {type:XDC file:1 line:17 export:INPUT save:INPUT read:READ} [current_design]
+set_min_delay 1.0 -to [get_ports {rfdc_multi_eight_adcs_2048gsps_mts_gpio_led1_ext[*]}]

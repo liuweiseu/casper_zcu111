@@ -1,0 +1,1316 @@
+INFO - 2020-10-15 00:15:56,387 - jasper.toolflow - Trying to generate AXI HDL from XML
+INFO - 2020-10-15 00:15:56,388 - jasper.toolflow -   Input directory: ['/home/wei/casper/casper_mlib/tutorials_devel/zcu111/raw_axi_test/tengbe_test/tengbe_test/xml2vhdl_source']
+INFO - 2020-10-15 00:15:56,388 - jasper.toolflow -   Output XML directory: /home/wei/casper/casper_mlib/tutorials_devel/zcu111/raw_axi_test/tengbe_test/tengbe_test/xml2vhdl_xml_output
+INFO - 2020-10-15 00:15:56,388 - jasper.toolflow -   Output directory: /home/wei/casper/casper_mlib/tutorials_devel/zcu111/raw_axi_test/tengbe_test/tengbe_test/xml2vhdl_hdl_output
+INFO - 2020-10-15 00:15:56,388 - jasper.toolflow -   Slave library: xil_defaultlib
+INFO - 2020-10-15 00:15:56,389 - jasper.toolflow -   Bus library: xil_defaultlib
+INFO - 2020-10-15 00:15:56,501 - jasper.toolflow - instantiating user_ip
+DEBUG - 2020-10-15 00:15:56,501 - jasper.verilog - Initializing second-layer dictionairies for: default
+DEBUG - 2020-10-15 00:15:56,501 - jasper.verilog - Initializing second-layer dictionairies for: usermodule: tengbe_test
+DEBUG - 2020-10-15 00:15:56,501 - jasper.verilog - Attempting to add port "clk" (parent sig: False, parent port: False)
+DEBUG - 2020-10-15 00:15:56,501 - jasper.verilog -   Port "clk" is new
+DEBUG - 2020-10-15 00:15:56,501 - jasper.verilog - Attempting to add port "tengbe_test_dest_ip_user_data_out" (parent sig: False, parent port: False)
+DEBUG - 2020-10-15 00:15:56,501 - jasper.verilog -   Port "tengbe_test_dest_ip_user_data_out" is new
+DEBUG - 2020-10-15 00:15:56,501 - jasper.verilog - Attempting to add port "tengbe_test_dest_port_user_data_out" (parent sig: False, parent port: False)
+DEBUG - 2020-10-15 00:15:56,501 - jasper.verilog -   Port "tengbe_test_dest_port_user_data_out" is new
+DEBUG - 2020-10-15 00:15:56,501 - jasper.verilog - Attempting to add port "tengbe_test_gbe0_led_rx" (parent sig: False, parent port: False)
+DEBUG - 2020-10-15 00:15:56,501 - jasper.verilog -   Port "tengbe_test_gbe0_led_rx" is new
+DEBUG - 2020-10-15 00:15:56,501 - jasper.verilog - Attempting to add port "tengbe_test_gbe0_led_tx" (parent sig: False, parent port: False)
+DEBUG - 2020-10-15 00:15:56,502 - jasper.verilog -   Port "tengbe_test_gbe0_led_tx" is new
+DEBUG - 2020-10-15 00:15:56,502 - jasper.verilog - Attempting to add port "tengbe_test_gbe0_led_up" (parent sig: False, parent port: False)
+DEBUG - 2020-10-15 00:15:56,502 - jasper.verilog -   Port "tengbe_test_gbe0_led_up" is new
+DEBUG - 2020-10-15 00:15:56,502 - jasper.verilog - Attempting to add port "tengbe_test_gbe0_rx_bad_frame" (parent sig: False, parent port: False)
+DEBUG - 2020-10-15 00:15:56,502 - jasper.verilog -   Port "tengbe_test_gbe0_rx_bad_frame" is new
+DEBUG - 2020-10-15 00:15:56,502 - jasper.verilog - Attempting to add port "tengbe_test_gbe0_rx_data" (parent sig: False, parent port: False)
+DEBUG - 2020-10-15 00:15:56,502 - jasper.verilog -   Port "tengbe_test_gbe0_rx_data" is new
+DEBUG - 2020-10-15 00:15:56,502 - jasper.verilog - Attempting to add port "tengbe_test_gbe0_rx_end_of_frame" (parent sig: False, parent port: False)
+DEBUG - 2020-10-15 00:15:56,502 - jasper.verilog -   Port "tengbe_test_gbe0_rx_end_of_frame" is new
+DEBUG - 2020-10-15 00:15:56,502 - jasper.verilog - Attempting to add port "tengbe_test_gbe0_rx_overrun" (parent sig: False, parent port: False)
+DEBUG - 2020-10-15 00:15:56,502 - jasper.verilog -   Port "tengbe_test_gbe0_rx_overrun" is new
+DEBUG - 2020-10-15 00:15:56,502 - jasper.verilog - Attempting to add port "tengbe_test_gbe0_rx_source_ip" (parent sig: False, parent port: False)
+DEBUG - 2020-10-15 00:15:56,502 - jasper.verilog -   Port "tengbe_test_gbe0_rx_source_ip" is new
+DEBUG - 2020-10-15 00:15:56,502 - jasper.verilog - Attempting to add port "tengbe_test_gbe0_rx_source_port" (parent sig: False, parent port: False)
+DEBUG - 2020-10-15 00:15:56,502 - jasper.verilog -   Port "tengbe_test_gbe0_rx_source_port" is new
+DEBUG - 2020-10-15 00:15:56,502 - jasper.verilog - Attempting to add port "tengbe_test_gbe0_rx_valid" (parent sig: False, parent port: False)
+DEBUG - 2020-10-15 00:15:56,502 - jasper.verilog -   Port "tengbe_test_gbe0_rx_valid" is new
+DEBUG - 2020-10-15 00:15:56,502 - jasper.verilog - Attempting to add port "tengbe_test_gbe0_tx_afull" (parent sig: False, parent port: False)
+DEBUG - 2020-10-15 00:15:56,503 - jasper.verilog -   Port "tengbe_test_gbe0_tx_afull" is new
+DEBUG - 2020-10-15 00:15:56,503 - jasper.verilog - Attempting to add port "tengbe_test_gbe0_tx_overflow" (parent sig: False, parent port: False)
+DEBUG - 2020-10-15 00:15:56,503 - jasper.verilog -   Port "tengbe_test_gbe0_tx_overflow" is new
+DEBUG - 2020-10-15 00:15:56,503 - jasper.verilog - Attempting to add port "tengbe_test_pkt_sim_enable_user_data_out" (parent sig: False, parent port: False)
+DEBUG - 2020-10-15 00:15:56,503 - jasper.verilog -   Port "tengbe_test_pkt_sim_enable_user_data_out" is new
+DEBUG - 2020-10-15 00:15:56,503 - jasper.verilog - Attempting to add port "tengbe_test_pkt_sim_payload_len_user_data_out" (parent sig: False, parent port: False)
+DEBUG - 2020-10-15 00:15:56,503 - jasper.verilog -   Port "tengbe_test_pkt_sim_payload_len_user_data_out" is new
+DEBUG - 2020-10-15 00:15:56,503 - jasper.verilog - Attempting to add port "tengbe_test_pkt_sim_period_user_data_out" (parent sig: False, parent port: False)
+DEBUG - 2020-10-15 00:15:56,503 - jasper.verilog -   Port "tengbe_test_pkt_sim_period_user_data_out" is new
+DEBUG - 2020-10-15 00:15:56,503 - jasper.verilog - Attempting to add port "tengbe_test_rst_user_data_out" (parent sig: False, parent port: False)
+DEBUG - 2020-10-15 00:15:56,503 - jasper.verilog -   Port "tengbe_test_rst_user_data_out" is new
+DEBUG - 2020-10-15 00:15:56,503 - jasper.verilog - Attempting to add port "tengbe_test_tx_snapshot_ss_bram_data_out" (parent sig: False, parent port: False)
+DEBUG - 2020-10-15 00:15:56,503 - jasper.verilog -   Port "tengbe_test_tx_snapshot_ss_bram_data_out" is new
+DEBUG - 2020-10-15 00:15:56,503 - jasper.verilog - Attempting to add port "tengbe_test_tx_snapshot_ss_ctrl_user_data_out" (parent sig: False, parent port: False)
+DEBUG - 2020-10-15 00:15:56,503 - jasper.verilog -   Port "tengbe_test_tx_snapshot_ss_ctrl_user_data_out" is new
+DEBUG - 2020-10-15 00:15:56,503 - jasper.verilog - Attempting to add port "tengbe_test_gbe0_rxbadctr_user_data_in" (parent sig: False, parent port: False)
+DEBUG - 2020-10-15 00:15:56,503 - jasper.verilog -   Port "tengbe_test_gbe0_rxbadctr_user_data_in" is new
+DEBUG - 2020-10-15 00:15:56,504 - jasper.verilog - Attempting to add port "tengbe_test_gbe0_rxctr_user_data_in" (parent sig: False, parent port: False)
+DEBUG - 2020-10-15 00:15:56,504 - jasper.verilog -   Port "tengbe_test_gbe0_rxctr_user_data_in" is new
+DEBUG - 2020-10-15 00:15:56,504 - jasper.verilog - Attempting to add port "tengbe_test_gbe0_rxeofctr_user_data_in" (parent sig: False, parent port: False)
+DEBUG - 2020-10-15 00:15:56,504 - jasper.verilog -   Port "tengbe_test_gbe0_rxeofctr_user_data_in" is new
+DEBUG - 2020-10-15 00:15:56,504 - jasper.verilog - Attempting to add port "tengbe_test_gbe0_rxofctr_user_data_in" (parent sig: False, parent port: False)
+DEBUG - 2020-10-15 00:15:56,504 - jasper.verilog -   Port "tengbe_test_gbe0_rxofctr_user_data_in" is new
+DEBUG - 2020-10-15 00:15:56,504 - jasper.verilog - Attempting to add port "tengbe_test_gbe0_rxvldctr_user_data_in" (parent sig: False, parent port: False)
+DEBUG - 2020-10-15 00:15:56,504 - jasper.verilog -   Port "tengbe_test_gbe0_rxvldctr_user_data_in" is new
+DEBUG - 2020-10-15 00:15:56,504 - jasper.verilog - Attempting to add port "tengbe_test_gbe0_rst" (parent sig: False, parent port: False)
+DEBUG - 2020-10-15 00:15:56,504 - jasper.verilog -   Port "tengbe_test_gbe0_rst" is new
+DEBUG - 2020-10-15 00:15:56,504 - jasper.verilog - Attempting to add port "tengbe_test_gbe0_rx_ack" (parent sig: False, parent port: False)
+DEBUG - 2020-10-15 00:15:56,504 - jasper.verilog -   Port "tengbe_test_gbe0_rx_ack" is new
+DEBUG - 2020-10-15 00:15:56,504 - jasper.verilog - Attempting to add port "tengbe_test_gbe0_rx_overrun_ack" (parent sig: False, parent port: False)
+DEBUG - 2020-10-15 00:15:56,504 - jasper.verilog -   Port "tengbe_test_gbe0_rx_overrun_ack" is new
+DEBUG - 2020-10-15 00:15:56,504 - jasper.verilog - Attempting to add port "tengbe_test_gbe0_tx_data" (parent sig: False, parent port: False)
+DEBUG - 2020-10-15 00:15:56,504 - jasper.verilog -   Port "tengbe_test_gbe0_tx_data" is new
+DEBUG - 2020-10-15 00:15:56,504 - jasper.verilog - Attempting to add port "tengbe_test_gbe0_tx_dest_ip" (parent sig: False, parent port: False)
+DEBUG - 2020-10-15 00:15:56,504 - jasper.verilog -   Port "tengbe_test_gbe0_tx_dest_ip" is new
+DEBUG - 2020-10-15 00:15:56,505 - jasper.verilog - Attempting to add port "tengbe_test_gbe0_tx_dest_port" (parent sig: False, parent port: False)
+DEBUG - 2020-10-15 00:15:56,505 - jasper.verilog -   Port "tengbe_test_gbe0_tx_dest_port" is new
+DEBUG - 2020-10-15 00:15:56,505 - jasper.verilog - Attempting to add port "tengbe_test_gbe0_tx_end_of_frame" (parent sig: False, parent port: False)
+DEBUG - 2020-10-15 00:15:56,505 - jasper.verilog -   Port "tengbe_test_gbe0_tx_end_of_frame" is new
+DEBUG - 2020-10-15 00:15:56,505 - jasper.verilog - Attempting to add port "tengbe_test_gbe0_tx_valid" (parent sig: False, parent port: False)
+DEBUG - 2020-10-15 00:15:56,505 - jasper.verilog -   Port "tengbe_test_gbe0_tx_valid" is new
+DEBUG - 2020-10-15 00:15:56,505 - jasper.verilog - Attempting to add port "tengbe_test_gbe0_txctr_user_data_in" (parent sig: False, parent port: False)
+DEBUG - 2020-10-15 00:15:56,505 - jasper.verilog -   Port "tengbe_test_gbe0_txctr_user_data_in" is new
+DEBUG - 2020-10-15 00:15:56,505 - jasper.verilog - Attempting to add port "tengbe_test_gbe0_txfullctr_user_data_in" (parent sig: False, parent port: False)
+DEBUG - 2020-10-15 00:15:56,505 - jasper.verilog -   Port "tengbe_test_gbe0_txfullctr_user_data_in" is new
+DEBUG - 2020-10-15 00:15:56,505 - jasper.verilog - Attempting to add port "tengbe_test_gbe0_txofctr_user_data_in" (parent sig: False, parent port: False)
+DEBUG - 2020-10-15 00:15:56,505 - jasper.verilog -   Port "tengbe_test_gbe0_txofctr_user_data_in" is new
+DEBUG - 2020-10-15 00:15:56,505 - jasper.verilog - Attempting to add port "tengbe_test_gbe0_txvldctr_user_data_in" (parent sig: False, parent port: False)
+DEBUG - 2020-10-15 00:15:56,505 - jasper.verilog -   Port "tengbe_test_gbe0_txvldctr_user_data_in" is new
+DEBUG - 2020-10-15 00:15:56,505 - jasper.verilog - Attempting to add port "tengbe_test_gbe0_linkup_user_data_in" (parent sig: False, parent port: False)
+DEBUG - 2020-10-15 00:15:56,505 - jasper.verilog -   Port "tengbe_test_gbe0_linkup_user_data_in" is new
+DEBUG - 2020-10-15 00:15:56,505 - jasper.verilog - Attempting to add port "tengbe_test_gbe0_tx_cnt_user_data_in" (parent sig: False, parent port: False)
+DEBUG - 2020-10-15 00:15:56,505 - jasper.verilog -   Port "tengbe_test_gbe0_tx_cnt_user_data_in" is new
+DEBUG - 2020-10-15 00:15:56,506 - jasper.verilog - Attempting to add port "tengbe_test_led0_gbe0_pulse_tx_gateway" (parent sig: False, parent port: False)
+DEBUG - 2020-10-15 00:15:56,506 - jasper.verilog -   Port "tengbe_test_led0_gbe0_pulse_tx_gateway" is new
+DEBUG - 2020-10-15 00:15:56,506 - jasper.verilog - Attempting to add port "tengbe_test_led1_gbe0_up_gateway" (parent sig: False, parent port: False)
+DEBUG - 2020-10-15 00:15:56,506 - jasper.verilog -   Port "tengbe_test_led1_gbe0_up_gateway" is new
+DEBUG - 2020-10-15 00:15:56,506 - jasper.verilog - Attempting to add port "tengbe_test_tx_snapshot_ss_bram_addr" (parent sig: False, parent port: False)
+DEBUG - 2020-10-15 00:15:56,506 - jasper.verilog -   Port "tengbe_test_tx_snapshot_ss_bram_addr" is new
+DEBUG - 2020-10-15 00:15:56,506 - jasper.verilog - Attempting to add port "tengbe_test_tx_snapshot_ss_bram_data_in" (parent sig: False, parent port: False)
+DEBUG - 2020-10-15 00:15:56,506 - jasper.verilog -   Port "tengbe_test_tx_snapshot_ss_bram_data_in" is new
+DEBUG - 2020-10-15 00:15:56,506 - jasper.verilog - Attempting to add port "tengbe_test_tx_snapshot_ss_bram_we" (parent sig: False, parent port: False)
+DEBUG - 2020-10-15 00:15:56,506 - jasper.verilog -   Port "tengbe_test_tx_snapshot_ss_bram_we" is new
+DEBUG - 2020-10-15 00:15:56,506 - jasper.verilog - Attempting to add port "tengbe_test_tx_snapshot_ss_status_user_data_in" (parent sig: False, parent port: False)
+DEBUG - 2020-10-15 00:15:56,506 - jasper.verilog -   Port "tengbe_test_tx_snapshot_ss_status_user_data_in" is new
+INFO - 2020-10-15 00:15:56,507 - jasper.toolflow - regenerating top
+DEBUG - 2020-10-15 00:15:56,507 - jasper.toolflow - Looking for a max_devices_per_arbiter spec
+DEBUG - 2020-10-15 00:15:56,507 - jasper.verilog - Instantiating child ports for tengbe_test_led0_gbe0_pulse_tx
+DEBUG - 2020-10-15 00:15:56,507 - jasper.verilog -   Adding instance port gateway as signal tengbe_test_led0_gbe0_pulse_tx_gateway to top
+DEBUG - 2020-10-15 00:15:56,507 - jasper.verilog -   Signal "tengbe_test_led0_gbe0_pulse_tx_gateway" is new
+DEBUG - 2020-10-15 00:15:56,507 - jasper.verilog -   Adding instance port io_pad to top
+DEBUG - 2020-10-15 00:15:56,507 - jasper.verilog - Attempting to add port "tengbe_test_led0_gbe0_pulse_tx_ext" (parent sig: False, parent port: False)
+DEBUG - 2020-10-15 00:15:56,507 - jasper.verilog -   Port "tengbe_test_led0_gbe0_pulse_tx_ext" is new
+DEBUG - 2020-10-15 00:15:56,507 - jasper.verilog - Instantiating child ports for tengbe_test_led1_gbe0_up
+DEBUG - 2020-10-15 00:15:56,507 - jasper.verilog -   Adding instance port gateway as signal tengbe_test_led1_gbe0_up_gateway to top
+DEBUG - 2020-10-15 00:15:56,508 - jasper.verilog -   Signal "tengbe_test_led1_gbe0_up_gateway" is new
+DEBUG - 2020-10-15 00:15:56,508 - jasper.verilog -   Adding instance port io_pad to top
+DEBUG - 2020-10-15 00:15:56,508 - jasper.verilog - Attempting to add port "tengbe_test_led1_gbe0_up_ext" (parent sig: False, parent port: False)
+DEBUG - 2020-10-15 00:15:56,508 - jasper.verilog -   Port "tengbe_test_led1_gbe0_up_ext" is new
+DEBUG - 2020-10-15 00:15:56,508 - jasper.verilog - Instantiating child ports for tengbe_test_dest_ip
+DEBUG - 2020-10-15 00:15:56,508 - jasper.verilog -   Adding instance port IP_BUS as signal tengbe_test_dest_ip_out to top
+DEBUG - 2020-10-15 00:15:56,508 - jasper.verilog -   Signal "tengbe_test_dest_ip_out" is new
+DEBUG - 2020-10-15 00:15:56,508 - jasper.verilog -   Adding instance port OP_BUS as signal tengbe_test_dest_ip_user_data_out to top
+DEBUG - 2020-10-15 00:15:56,508 - jasper.verilog -   Signal "tengbe_test_dest_ip_user_data_out" is new
+DEBUG - 2020-10-15 00:15:56,508 - jasper.verilog - Instantiating child ports for tengbe_test_dest_port
+DEBUG - 2020-10-15 00:15:56,508 - jasper.verilog -   Adding instance port IP_BUS as signal tengbe_test_dest_port_out to top
+DEBUG - 2020-10-15 00:15:56,508 - jasper.verilog -   Signal "tengbe_test_dest_port_out" is new
+DEBUG - 2020-10-15 00:15:56,508 - jasper.verilog -   Adding instance port OP_BUS as signal tengbe_test_dest_port_user_data_out to top
+DEBUG - 2020-10-15 00:15:56,508 - jasper.verilog -   Signal "tengbe_test_dest_port_user_data_out" is new
+DEBUG - 2020-10-15 00:15:56,508 - jasper.verilog - Instantiating child ports for tengbe_test_gbe0_rxbadctr
+DEBUG - 2020-10-15 00:15:56,508 - jasper.verilog -   Adding instance port IP_BUS as signal tengbe_test_gbe0_rxbadctr_user_data_in to top
+DEBUG - 2020-10-15 00:15:56,508 - jasper.verilog -   Signal "tengbe_test_gbe0_rxbadctr_user_data_in" is new
+DEBUG - 2020-10-15 00:15:56,509 - jasper.verilog -   Adding instance port OP_BUS as signal tengbe_test_gbe0_rxbadctr_in to top
+DEBUG - 2020-10-15 00:15:56,509 - jasper.verilog -   Signal "tengbe_test_gbe0_rxbadctr_in" is new
+DEBUG - 2020-10-15 00:15:56,509 - jasper.verilog - Instantiating child ports for tengbe_test_gbe0_rxctr
+DEBUG - 2020-10-15 00:15:56,509 - jasper.verilog -   Adding instance port IP_BUS as signal tengbe_test_gbe0_rxctr_user_data_in to top
+DEBUG - 2020-10-15 00:15:56,509 - jasper.verilog -   Signal "tengbe_test_gbe0_rxctr_user_data_in" is new
+DEBUG - 2020-10-15 00:15:56,509 - jasper.verilog -   Adding instance port OP_BUS as signal tengbe_test_gbe0_rxctr_in to top
+DEBUG - 2020-10-15 00:15:56,509 - jasper.verilog -   Signal "tengbe_test_gbe0_rxctr_in" is new
+DEBUG - 2020-10-15 00:15:56,509 - jasper.verilog - Instantiating child ports for tengbe_test_gbe0_rxeofctr
+DEBUG - 2020-10-15 00:15:56,509 - jasper.verilog -   Adding instance port IP_BUS as signal tengbe_test_gbe0_rxeofctr_user_data_in to top
+DEBUG - 2020-10-15 00:15:56,509 - jasper.verilog -   Signal "tengbe_test_gbe0_rxeofctr_user_data_in" is new
+DEBUG - 2020-10-15 00:15:56,509 - jasper.verilog -   Adding instance port OP_BUS as signal tengbe_test_gbe0_rxeofctr_in to top
+DEBUG - 2020-10-15 00:15:56,509 - jasper.verilog -   Signal "tengbe_test_gbe0_rxeofctr_in" is new
+DEBUG - 2020-10-15 00:15:56,509 - jasper.verilog - Instantiating child ports for tengbe_test_gbe0_rxofctr
+DEBUG - 2020-10-15 00:15:56,509 - jasper.verilog -   Adding instance port IP_BUS as signal tengbe_test_gbe0_rxofctr_user_data_in to top
+DEBUG - 2020-10-15 00:15:56,509 - jasper.verilog -   Signal "tengbe_test_gbe0_rxofctr_user_data_in" is new
+DEBUG - 2020-10-15 00:15:56,509 - jasper.verilog -   Adding instance port OP_BUS as signal tengbe_test_gbe0_rxofctr_in to top
+DEBUG - 2020-10-15 00:15:56,510 - jasper.verilog -   Signal "tengbe_test_gbe0_rxofctr_in" is new
+DEBUG - 2020-10-15 00:15:56,510 - jasper.verilog - Instantiating child ports for tengbe_test_gbe0_rxvldctr
+DEBUG - 2020-10-15 00:15:56,510 - jasper.verilog -   Adding instance port IP_BUS as signal tengbe_test_gbe0_rxvldctr_user_data_in to top
+DEBUG - 2020-10-15 00:15:56,510 - jasper.verilog -   Signal "tengbe_test_gbe0_rxvldctr_user_data_in" is new
+DEBUG - 2020-10-15 00:15:56,510 - jasper.verilog -   Adding instance port OP_BUS as signal tengbe_test_gbe0_rxvldctr_in to top
+DEBUG - 2020-10-15 00:15:56,510 - jasper.verilog -   Signal "tengbe_test_gbe0_rxvldctr_in" is new
+DEBUG - 2020-10-15 00:15:56,510 - jasper.verilog - Instantiating child ports for tengbe_test_gbe0_txctr
+DEBUG - 2020-10-15 00:15:56,510 - jasper.verilog -   Adding instance port IP_BUS as signal tengbe_test_gbe0_txctr_user_data_in to top
+DEBUG - 2020-10-15 00:15:56,510 - jasper.verilog -   Signal "tengbe_test_gbe0_txctr_user_data_in" is new
+DEBUG - 2020-10-15 00:15:56,510 - jasper.verilog -   Adding instance port OP_BUS as signal tengbe_test_gbe0_txctr_in to top
+DEBUG - 2020-10-15 00:15:56,510 - jasper.verilog -   Signal "tengbe_test_gbe0_txctr_in" is new
+DEBUG - 2020-10-15 00:15:56,510 - jasper.verilog - Instantiating child ports for tengbe_test_gbe0_txfullctr
+DEBUG - 2020-10-15 00:15:56,510 - jasper.verilog -   Adding instance port IP_BUS as signal tengbe_test_gbe0_txfullctr_user_data_in to top
+DEBUG - 2020-10-15 00:15:56,510 - jasper.verilog -   Signal "tengbe_test_gbe0_txfullctr_user_data_in" is new
+DEBUG - 2020-10-15 00:15:56,510 - jasper.verilog -   Adding instance port OP_BUS as signal tengbe_test_gbe0_txfullctr_in to top
+DEBUG - 2020-10-15 00:15:56,510 - jasper.verilog -   Signal "tengbe_test_gbe0_txfullctr_in" is new
+DEBUG - 2020-10-15 00:15:56,511 - jasper.verilog - Instantiating child ports for tengbe_test_gbe0_txofctr
+DEBUG - 2020-10-15 00:15:56,511 - jasper.verilog -   Adding instance port IP_BUS as signal tengbe_test_gbe0_txofctr_user_data_in to top
+DEBUG - 2020-10-15 00:15:56,511 - jasper.verilog -   Signal "tengbe_test_gbe0_txofctr_user_data_in" is new
+DEBUG - 2020-10-15 00:15:56,511 - jasper.verilog -   Adding instance port OP_BUS as signal tengbe_test_gbe0_txofctr_in to top
+DEBUG - 2020-10-15 00:15:56,511 - jasper.verilog -   Signal "tengbe_test_gbe0_txofctr_in" is new
+DEBUG - 2020-10-15 00:15:56,511 - jasper.verilog - Instantiating child ports for tengbe_test_gbe0_txvldctr
+DEBUG - 2020-10-15 00:15:56,511 - jasper.verilog -   Adding instance port IP_BUS as signal tengbe_test_gbe0_txvldctr_user_data_in to top
+DEBUG - 2020-10-15 00:15:56,511 - jasper.verilog -   Signal "tengbe_test_gbe0_txvldctr_user_data_in" is new
+DEBUG - 2020-10-15 00:15:56,511 - jasper.verilog -   Adding instance port OP_BUS as signal tengbe_test_gbe0_txvldctr_in to top
+DEBUG - 2020-10-15 00:15:56,511 - jasper.verilog -   Signal "tengbe_test_gbe0_txvldctr_in" is new
+DEBUG - 2020-10-15 00:15:56,511 - jasper.verilog - Instantiating child ports for tengbe_test_gbe0_linkup
+DEBUG - 2020-10-15 00:15:56,511 - jasper.verilog -   Adding instance port IP_BUS as signal tengbe_test_gbe0_linkup_user_data_in to top
+DEBUG - 2020-10-15 00:15:56,511 - jasper.verilog -   Signal "tengbe_test_gbe0_linkup_user_data_in" is new
+DEBUG - 2020-10-15 00:15:56,511 - jasper.verilog -   Adding instance port OP_BUS as signal tengbe_test_gbe0_linkup_in to top
+DEBUG - 2020-10-15 00:15:56,511 - jasper.verilog -   Signal "tengbe_test_gbe0_linkup_in" is new
+DEBUG - 2020-10-15 00:15:56,511 - jasper.verilog - Instantiating child ports for tengbe_test_gbe0_tx_cnt
+DEBUG - 2020-10-15 00:15:56,512 - jasper.verilog -   Adding instance port IP_BUS as signal tengbe_test_gbe0_tx_cnt_user_data_in to top
+DEBUG - 2020-10-15 00:15:56,512 - jasper.verilog -   Signal "tengbe_test_gbe0_tx_cnt_user_data_in" is new
+DEBUG - 2020-10-15 00:15:56,512 - jasper.verilog -   Adding instance port OP_BUS as signal tengbe_test_gbe0_tx_cnt_in to top
+DEBUG - 2020-10-15 00:15:56,512 - jasper.verilog -   Signal "tengbe_test_gbe0_tx_cnt_in" is new
+DEBUG - 2020-10-15 00:15:56,512 - jasper.verilog - Instantiating child ports for tengbe_test_pkt_sim_enable
+DEBUG - 2020-10-15 00:15:56,512 - jasper.verilog -   Adding instance port IP_BUS as signal tengbe_test_pkt_sim_enable_out to top
+DEBUG - 2020-10-15 00:15:56,512 - jasper.verilog -   Signal "tengbe_test_pkt_sim_enable_out" is new
+DEBUG - 2020-10-15 00:15:56,512 - jasper.verilog -   Adding instance port OP_BUS as signal tengbe_test_pkt_sim_enable_user_data_out to top
+DEBUG - 2020-10-15 00:15:56,512 - jasper.verilog -   Signal "tengbe_test_pkt_sim_enable_user_data_out" is new
+DEBUG - 2020-10-15 00:15:56,512 - jasper.verilog - Instantiating child ports for tengbe_test_pkt_sim_payload_len
+DEBUG - 2020-10-15 00:15:56,512 - jasper.verilog -   Adding instance port IP_BUS as signal tengbe_test_pkt_sim_payload_len_out to top
+DEBUG - 2020-10-15 00:15:56,512 - jasper.verilog -   Signal "tengbe_test_pkt_sim_payload_len_out" is new
+DEBUG - 2020-10-15 00:15:56,512 - jasper.verilog -   Adding instance port OP_BUS as signal tengbe_test_pkt_sim_payload_len_user_data_out to top
+DEBUG - 2020-10-15 00:15:56,512 - jasper.verilog -   Signal "tengbe_test_pkt_sim_payload_len_user_data_out" is new
+DEBUG - 2020-10-15 00:15:56,512 - jasper.verilog - Instantiating child ports for tengbe_test_pkt_sim_period
+DEBUG - 2020-10-15 00:15:56,512 - jasper.verilog -   Adding instance port IP_BUS as signal tengbe_test_pkt_sim_period_out to top
+DEBUG - 2020-10-15 00:15:56,512 - jasper.verilog -   Signal "tengbe_test_pkt_sim_period_out" is new
+DEBUG - 2020-10-15 00:15:56,513 - jasper.verilog -   Adding instance port OP_BUS as signal tengbe_test_pkt_sim_period_user_data_out to top
+DEBUG - 2020-10-15 00:15:56,513 - jasper.verilog -   Signal "tengbe_test_pkt_sim_period_user_data_out" is new
+DEBUG - 2020-10-15 00:15:56,513 - jasper.verilog - Instantiating child ports for tengbe_test_rst
+DEBUG - 2020-10-15 00:15:56,513 - jasper.verilog -   Adding instance port IP_BUS as signal tengbe_test_rst_out to top
+DEBUG - 2020-10-15 00:15:56,513 - jasper.verilog -   Signal "tengbe_test_rst_out" is new
+DEBUG - 2020-10-15 00:15:56,513 - jasper.verilog -   Adding instance port OP_BUS as signal tengbe_test_rst_user_data_out to top
+DEBUG - 2020-10-15 00:15:56,513 - jasper.verilog -   Signal "tengbe_test_rst_user_data_out" is new
+DEBUG - 2020-10-15 00:15:56,513 - jasper.verilog - Instantiating child ports for tengbe_test_tx_snapshot_ss_ctrl
+DEBUG - 2020-10-15 00:15:56,513 - jasper.verilog -   Adding instance port IP_BUS as signal tengbe_test_tx_snapshot_ss_ctrl_out to top
+DEBUG - 2020-10-15 00:15:56,513 - jasper.verilog -   Signal "tengbe_test_tx_snapshot_ss_ctrl_out" is new
+DEBUG - 2020-10-15 00:15:56,513 - jasper.verilog -   Adding instance port OP_BUS as signal tengbe_test_tx_snapshot_ss_ctrl_user_data_out to top
+DEBUG - 2020-10-15 00:15:56,513 - jasper.verilog -   Signal "tengbe_test_tx_snapshot_ss_ctrl_user_data_out" is new
+DEBUG - 2020-10-15 00:15:56,513 - jasper.verilog - Instantiating child ports for tengbe_test_tx_snapshot_ss_status
+DEBUG - 2020-10-15 00:15:56,513 - jasper.verilog -   Adding instance port IP_BUS as signal tengbe_test_tx_snapshot_ss_status_user_data_in to top
+DEBUG - 2020-10-15 00:15:56,513 - jasper.verilog -   Signal "tengbe_test_tx_snapshot_ss_status_user_data_in" is new
+DEBUG - 2020-10-15 00:15:56,513 - jasper.verilog -   Adding instance port OP_BUS as signal tengbe_test_tx_snapshot_ss_status_in to top
+DEBUG - 2020-10-15 00:15:56,514 - jasper.verilog -   Signal "tengbe_test_tx_snapshot_ss_status_in" is new
+DEBUG - 2020-10-15 00:15:56,514 - jasper.verilog - Instantiating child ports for axi4lite_interconnect
+DEBUG - 2020-10-15 00:15:56,514 - jasper.verilog -   Adding instance port axi4lite_aclk as signal axil_clk to top
+DEBUG - 2020-10-15 00:15:56,514 - jasper.verilog -   Signal "axil_clk" is new
+DEBUG - 2020-10-15 00:15:56,514 - jasper.verilog -   Adding instance port axi4lite_aresetn as signal axil_rst_n to top
+DEBUG - 2020-10-15 00:15:56,514 - jasper.verilog -   Signal "axil_rst_n" is new
+DEBUG - 2020-10-15 00:15:56,514 - jasper.verilog -   Adding instance port axi4lite_tx_snapshot_ss_bram_tx_snapshot_ss_bram_add as signal tengbe_test_tx_snapshot_ss_bram_addr to top
+DEBUG - 2020-10-15 00:15:56,514 - jasper.verilog -   Signal "tengbe_test_tx_snapshot_ss_bram_addr" is new
+DEBUG - 2020-10-15 00:15:56,514 - jasper.verilog -   Adding instance port axi4lite_tx_snapshot_ss_bram_tx_snapshot_ss_bram_data_in as signal tengbe_test_tx_snapshot_ss_bram_data_in to top
+DEBUG - 2020-10-15 00:15:56,514 - jasper.verilog -   Signal "tengbe_test_tx_snapshot_ss_bram_data_in" is new
+DEBUG - 2020-10-15 00:15:56,514 - jasper.verilog -   Adding instance port axi4lite_tx_snapshot_ss_bram_tx_snapshot_ss_bram_data_out as signal tengbe_test_tx_snapshot_ss_bram_data_out to top
+DEBUG - 2020-10-15 00:15:56,514 - jasper.verilog -   Signal "tengbe_test_tx_snapshot_ss_bram_data_out" is new
+DEBUG - 2020-10-15 00:15:56,514 - jasper.verilog -   Adding instance port axi4lite_tx_snapshot_ss_bram_tx_snapshot_ss_bram_we as signal tengbe_test_tx_snapshot_ss_bram_we to top
+DEBUG - 2020-10-15 00:15:56,514 - jasper.verilog -   Signal "tengbe_test_tx_snapshot_ss_bram_we" is new
+DEBUG - 2020-10-15 00:15:56,514 - jasper.verilog -   Adding instance port axi4lite_sw_reg_dest_ip_out as signal tengbe_test_dest_ip_out to top
+DEBUG - 2020-10-15 00:15:56,514 - jasper.verilog -   Signal "tengbe_test_dest_ip_out" already exists
+DEBUG - 2020-10-15 00:15:56,515 - jasper.verilog -   Adding instance port axi4lite_sw_reg_dest_ip_out_we as signal tengbe_test_dest_ip_out_we to top
+DEBUG - 2020-10-15 00:15:56,515 - jasper.verilog -   Signal "tengbe_test_dest_ip_out_we" is new
+DEBUG - 2020-10-15 00:15:56,515 - jasper.verilog -   Adding instance port axi4lite_sw_reg_dest_port_out as signal tengbe_test_dest_port_out to top
+DEBUG - 2020-10-15 00:15:56,515 - jasper.verilog -   Signal "tengbe_test_dest_port_out" already exists
+DEBUG - 2020-10-15 00:15:56,515 - jasper.verilog -   Adding instance port axi4lite_sw_reg_dest_port_out_we as signal tengbe_test_dest_port_out_we to top
+DEBUG - 2020-10-15 00:15:56,515 - jasper.verilog -   Signal "tengbe_test_dest_port_out_we" is new
+DEBUG - 2020-10-15 00:15:56,515 - jasper.verilog -   Adding instance port axi4lite_sw_reg_gbe0_rxbadctr_in as signal tengbe_test_gbe0_rxbadctr_in to top
+DEBUG - 2020-10-15 00:15:56,515 - jasper.verilog -   Signal "tengbe_test_gbe0_rxbadctr_in" already exists
+DEBUG - 2020-10-15 00:15:56,515 - jasper.verilog -   Adding instance port axi4lite_sw_reg_gbe0_rxbadctr_in_we as signal tengbe_test_gbe0_rxbadctr_in_we to top
+DEBUG - 2020-10-15 00:15:56,515 - jasper.verilog -   Signal "tengbe_test_gbe0_rxbadctr_in_we" is new
+DEBUG - 2020-10-15 00:15:56,515 - jasper.verilog -   Adding instance port axi4lite_sw_reg_gbe0_rxctr_in as signal tengbe_test_gbe0_rxctr_in to top
+DEBUG - 2020-10-15 00:15:56,515 - jasper.verilog -   Signal "tengbe_test_gbe0_rxctr_in" already exists
+DEBUG - 2020-10-15 00:15:56,515 - jasper.verilog -   Adding instance port axi4lite_sw_reg_gbe0_rxctr_in_we as signal tengbe_test_gbe0_rxctr_in_we to top
+DEBUG - 2020-10-15 00:15:56,515 - jasper.verilog -   Signal "tengbe_test_gbe0_rxctr_in_we" is new
+DEBUG - 2020-10-15 00:15:56,515 - jasper.verilog -   Adding instance port axi4lite_sw_reg_gbe0_rxeofctr_in as signal tengbe_test_gbe0_rxeofctr_in to top
+DEBUG - 2020-10-15 00:15:56,515 - jasper.verilog -   Signal "tengbe_test_gbe0_rxeofctr_in" already exists
+DEBUG - 2020-10-15 00:15:56,515 - jasper.verilog -   Adding instance port axi4lite_sw_reg_gbe0_rxeofctr_in_we as signal tengbe_test_gbe0_rxeofctr_in_we to top
+DEBUG - 2020-10-15 00:15:56,516 - jasper.verilog -   Signal "tengbe_test_gbe0_rxeofctr_in_we" is new
+DEBUG - 2020-10-15 00:15:56,516 - jasper.verilog -   Adding instance port axi4lite_sw_reg_gbe0_rxofctr_in as signal tengbe_test_gbe0_rxofctr_in to top
+DEBUG - 2020-10-15 00:15:56,516 - jasper.verilog -   Signal "tengbe_test_gbe0_rxofctr_in" already exists
+DEBUG - 2020-10-15 00:15:56,516 - jasper.verilog -   Adding instance port axi4lite_sw_reg_gbe0_rxofctr_in_we as signal tengbe_test_gbe0_rxofctr_in_we to top
+DEBUG - 2020-10-15 00:15:56,516 - jasper.verilog -   Signal "tengbe_test_gbe0_rxofctr_in_we" is new
+DEBUG - 2020-10-15 00:15:56,516 - jasper.verilog -   Adding instance port axi4lite_sw_reg_gbe0_rxvldctr_in as signal tengbe_test_gbe0_rxvldctr_in to top
+DEBUG - 2020-10-15 00:15:56,516 - jasper.verilog -   Signal "tengbe_test_gbe0_rxvldctr_in" already exists
+DEBUG - 2020-10-15 00:15:56,516 - jasper.verilog -   Adding instance port axi4lite_sw_reg_gbe0_rxvldctr_in_we as signal tengbe_test_gbe0_rxvldctr_in_we to top
+DEBUG - 2020-10-15 00:15:56,516 - jasper.verilog -   Signal "tengbe_test_gbe0_rxvldctr_in_we" is new
+DEBUG - 2020-10-15 00:15:56,516 - jasper.verilog -   Adding instance port axi4lite_sw_reg_gbe0_txctr_in as signal tengbe_test_gbe0_txctr_in to top
+DEBUG - 2020-10-15 00:15:56,516 - jasper.verilog -   Signal "tengbe_test_gbe0_txctr_in" already exists
+DEBUG - 2020-10-15 00:15:56,516 - jasper.verilog -   Adding instance port axi4lite_sw_reg_gbe0_txctr_in_we as signal tengbe_test_gbe0_txctr_in_we to top
+DEBUG - 2020-10-15 00:15:56,516 - jasper.verilog -   Signal "tengbe_test_gbe0_txctr_in_we" is new
+DEBUG - 2020-10-15 00:15:56,516 - jasper.verilog -   Adding instance port axi4lite_sw_reg_gbe0_txfullctr_in as signal tengbe_test_gbe0_txfullctr_in to top
+DEBUG - 2020-10-15 00:15:56,516 - jasper.verilog -   Signal "tengbe_test_gbe0_txfullctr_in" already exists
+DEBUG - 2020-10-15 00:15:56,516 - jasper.verilog -   Adding instance port axi4lite_sw_reg_gbe0_txfullctr_in_we as signal tengbe_test_gbe0_txfullctr_in_we to top
+DEBUG - 2020-10-15 00:15:56,517 - jasper.verilog -   Signal "tengbe_test_gbe0_txfullctr_in_we" is new
+DEBUG - 2020-10-15 00:15:56,517 - jasper.verilog -   Adding instance port axi4lite_sw_reg_gbe0_txofctr_in as signal tengbe_test_gbe0_txofctr_in to top
+DEBUG - 2020-10-15 00:15:56,517 - jasper.verilog -   Signal "tengbe_test_gbe0_txofctr_in" already exists
+DEBUG - 2020-10-15 00:15:56,517 - jasper.verilog -   Adding instance port axi4lite_sw_reg_gbe0_txofctr_in_we as signal tengbe_test_gbe0_txofctr_in_we to top
+DEBUG - 2020-10-15 00:15:56,517 - jasper.verilog -   Signal "tengbe_test_gbe0_txofctr_in_we" is new
+DEBUG - 2020-10-15 00:15:56,517 - jasper.verilog -   Adding instance port axi4lite_sw_reg_gbe0_txvldctr_in as signal tengbe_test_gbe0_txvldctr_in to top
+DEBUG - 2020-10-15 00:15:56,517 - jasper.verilog -   Signal "tengbe_test_gbe0_txvldctr_in" already exists
+DEBUG - 2020-10-15 00:15:56,517 - jasper.verilog -   Adding instance port axi4lite_sw_reg_gbe0_txvldctr_in_we as signal tengbe_test_gbe0_txvldctr_in_we to top
+DEBUG - 2020-10-15 00:15:56,517 - jasper.verilog -   Signal "tengbe_test_gbe0_txvldctr_in_we" is new
+DEBUG - 2020-10-15 00:15:56,517 - jasper.verilog -   Adding instance port axi4lite_sw_reg_gbe0_linkup_in as signal tengbe_test_gbe0_linkup_in to top
+DEBUG - 2020-10-15 00:15:56,517 - jasper.verilog -   Signal "tengbe_test_gbe0_linkup_in" already exists
+DEBUG - 2020-10-15 00:15:56,517 - jasper.verilog -   Adding instance port axi4lite_sw_reg_gbe0_linkup_in_we as signal tengbe_test_gbe0_linkup_in_we to top
+DEBUG - 2020-10-15 00:15:56,517 - jasper.verilog -   Signal "tengbe_test_gbe0_linkup_in_we" is new
+DEBUG - 2020-10-15 00:15:56,517 - jasper.verilog -   Adding instance port axi4lite_sw_reg_gbe0_tx_cnt_in as signal tengbe_test_gbe0_tx_cnt_in to top
+DEBUG - 2020-10-15 00:15:56,517 - jasper.verilog -   Signal "tengbe_test_gbe0_tx_cnt_in" already exists
+DEBUG - 2020-10-15 00:15:56,517 - jasper.verilog -   Adding instance port axi4lite_sw_reg_gbe0_tx_cnt_in_we as signal tengbe_test_gbe0_tx_cnt_in_we to top
+DEBUG - 2020-10-15 00:15:56,517 - jasper.verilog -   Signal "tengbe_test_gbe0_tx_cnt_in_we" is new
+DEBUG - 2020-10-15 00:15:56,518 - jasper.verilog -   Adding instance port axi4lite_sw_reg_pkt_sim_enable_out as signal tengbe_test_pkt_sim_enable_out to top
+DEBUG - 2020-10-15 00:15:56,518 - jasper.verilog -   Signal "tengbe_test_pkt_sim_enable_out" already exists
+DEBUG - 2020-10-15 00:15:56,518 - jasper.verilog -   Adding instance port axi4lite_sw_reg_pkt_sim_enable_out_we as signal tengbe_test_pkt_sim_enable_out_we to top
+DEBUG - 2020-10-15 00:15:56,518 - jasper.verilog -   Signal "tengbe_test_pkt_sim_enable_out_we" is new
+DEBUG - 2020-10-15 00:15:56,518 - jasper.verilog -   Adding instance port axi4lite_sw_reg_pkt_sim_payload_len_out as signal tengbe_test_pkt_sim_payload_len_out to top
+DEBUG - 2020-10-15 00:15:56,518 - jasper.verilog -   Signal "tengbe_test_pkt_sim_payload_len_out" already exists
+DEBUG - 2020-10-15 00:15:56,518 - jasper.verilog -   Adding instance port axi4lite_sw_reg_pkt_sim_payload_len_out_we as signal tengbe_test_pkt_sim_payload_len_out_we to top
+DEBUG - 2020-10-15 00:15:56,518 - jasper.verilog -   Signal "tengbe_test_pkt_sim_payload_len_out_we" is new
+DEBUG - 2020-10-15 00:15:56,518 - jasper.verilog -   Adding instance port axi4lite_sw_reg_pkt_sim_period_out as signal tengbe_test_pkt_sim_period_out to top
+DEBUG - 2020-10-15 00:15:56,518 - jasper.verilog -   Signal "tengbe_test_pkt_sim_period_out" already exists
+DEBUG - 2020-10-15 00:15:56,518 - jasper.verilog -   Adding instance port axi4lite_sw_reg_pkt_sim_period_out_we as signal tengbe_test_pkt_sim_period_out_we to top
+DEBUG - 2020-10-15 00:15:56,518 - jasper.verilog -   Signal "tengbe_test_pkt_sim_period_out_we" is new
+DEBUG - 2020-10-15 00:15:56,518 - jasper.verilog -   Adding instance port axi4lite_sw_reg_rst_out as signal tengbe_test_rst_out to top
+DEBUG - 2020-10-15 00:15:56,518 - jasper.verilog -   Signal "tengbe_test_rst_out" already exists
+DEBUG - 2020-10-15 00:15:56,518 - jasper.verilog -   Adding instance port axi4lite_sw_reg_rst_out_we as signal tengbe_test_rst_out_we to top
+DEBUG - 2020-10-15 00:15:56,518 - jasper.verilog -   Signal "tengbe_test_rst_out_we" is new
+DEBUG - 2020-10-15 00:15:56,519 - jasper.verilog -   Adding instance port axi4lite_sw_reg_tx_snapshot_ss_ctrl_out as signal tengbe_test_tx_snapshot_ss_ctrl_out to top
+DEBUG - 2020-10-15 00:15:56,519 - jasper.verilog -   Signal "tengbe_test_tx_snapshot_ss_ctrl_out" already exists
+DEBUG - 2020-10-15 00:15:56,519 - jasper.verilog -   Adding instance port axi4lite_sw_reg_tx_snapshot_ss_ctrl_out_we as signal tengbe_test_tx_snapshot_ss_ctrl_out_we to top
+DEBUG - 2020-10-15 00:15:56,519 - jasper.verilog -   Signal "tengbe_test_tx_snapshot_ss_ctrl_out_we" is new
+DEBUG - 2020-10-15 00:15:56,519 - jasper.verilog -   Adding instance port axi4lite_sw_reg_tx_snapshot_ss_status_in as signal tengbe_test_tx_snapshot_ss_status_in to top
+DEBUG - 2020-10-15 00:15:56,519 - jasper.verilog -   Signal "tengbe_test_tx_snapshot_ss_status_in" already exists
+DEBUG - 2020-10-15 00:15:56,519 - jasper.verilog -   Adding instance port axi4lite_sw_reg_tx_snapshot_ss_status_in_we as signal tengbe_test_tx_snapshot_ss_status_in_we to top
+DEBUG - 2020-10-15 00:15:56,519 - jasper.verilog -   Signal "tengbe_test_tx_snapshot_ss_status_in_we" is new
+DEBUG - 2020-10-15 00:15:56,519 - jasper.verilog -   Adding instance port axi4lite_sys_block_sys_board_id_in as signal tengbe_test_sys_board_id_in to top
+DEBUG - 2020-10-15 00:15:56,519 - jasper.verilog -   Signal "tengbe_test_sys_board_id_in" is new
+DEBUG - 2020-10-15 00:15:56,519 - jasper.verilog -   Adding instance port axi4lite_sys_block_sys_board_id_in_we as signal tengbe_test_sys_board_id_in_we to top
+DEBUG - 2020-10-15 00:15:56,519 - jasper.verilog -   Signal "tengbe_test_sys_board_id_in_we" is new
+DEBUG - 2020-10-15 00:15:56,519 - jasper.verilog -   Adding instance port axi4lite_sys_block_sys_rev_in as signal tengbe_test_sys_rev_in to top
+DEBUG - 2020-10-15 00:15:56,519 - jasper.verilog -   Signal "tengbe_test_sys_rev_in" is new
+DEBUG - 2020-10-15 00:15:56,519 - jasper.verilog -   Adding instance port axi4lite_sys_block_sys_rev_in_we as signal tengbe_test_sys_rev_in_we to top
+DEBUG - 2020-10-15 00:15:56,519 - jasper.verilog -   Signal "tengbe_test_sys_rev_in_we" is new
+DEBUG - 2020-10-15 00:15:56,520 - jasper.verilog -   Adding instance port axi4lite_sys_block_sys_rev_rcs_in as signal tengbe_test_sys_rev_rcs_in to top
+DEBUG - 2020-10-15 00:15:56,520 - jasper.verilog -   Signal "tengbe_test_sys_rev_rcs_in" is new
+DEBUG - 2020-10-15 00:15:56,520 - jasper.verilog -   Adding instance port axi4lite_sys_block_sys_rev_rcs_in_we as signal tengbe_test_sys_rev_rcs_in_we to top
+DEBUG - 2020-10-15 00:15:56,520 - jasper.verilog -   Signal "tengbe_test_sys_rev_rcs_in_we" is new
+DEBUG - 2020-10-15 00:15:56,520 - jasper.verilog -   Adding instance port axi4lite_sys_block_sys_scratchpad_out as signal tengbe_test_sys_scratchpad_out to top
+DEBUG - 2020-10-15 00:15:56,520 - jasper.verilog -   Signal "tengbe_test_sys_scratchpad_out" is new
+DEBUG - 2020-10-15 00:15:56,520 - jasper.verilog -   Adding instance port axi4lite_sys_block_sys_scratchpad_out_we as signal tengbe_test_sys_scratchpad_out_we to top
+DEBUG - 2020-10-15 00:15:56,520 - jasper.verilog -   Signal "tengbe_test_sys_scratchpad_out_we" is new
+DEBUG - 2020-10-15 00:15:56,520 - jasper.verilog -   Adding instance port axi4lite_sys_block_sys_clkcounter_in as signal tengbe_test_sys_clkcounter_in to top
+DEBUG - 2020-10-15 00:15:56,520 - jasper.verilog -   Signal "tengbe_test_sys_clkcounter_in" is new
+DEBUG - 2020-10-15 00:15:56,520 - jasper.verilog -   Adding instance port axi4lite_sys_block_sys_clkcounter_in_we as signal tengbe_test_sys_clkcounter_in_we to top
+DEBUG - 2020-10-15 00:15:56,520 - jasper.verilog -   Signal "tengbe_test_sys_clkcounter_in_we" is new
+DEBUG - 2020-10-15 00:15:56,520 - jasper.verilog - Instantiating child ports for tengbe_test_inst
+DEBUG - 2020-10-15 00:15:56,520 - jasper.verilog - Instantiating child ports for tengbaser_infra0_inst
+DEBUG - 2020-10-15 00:15:56,520 - jasper.verilog -   Adding instance port gt_refclk_n to top
+DEBUG - 2020-10-15 00:15:56,520 - jasper.verilog - Attempting to add port "ref_clk_n0" (parent sig: False, parent port: False)
+DEBUG - 2020-10-15 00:15:56,520 - jasper.verilog -   Port "ref_clk_n0" is new
+DEBUG - 2020-10-15 00:15:56,521 - jasper.verilog -   Adding instance port gt_refclk_p to top
+DEBUG - 2020-10-15 00:15:56,521 - jasper.verilog - Attempting to add port "ref_clk_p0" (parent sig: False, parent port: False)
+DEBUG - 2020-10-15 00:15:56,521 - jasper.verilog -   Port "ref_clk_p0" is new
+DEBUG - 2020-10-15 00:15:56,521 - jasper.verilog -   Adding instance port gt_refclk_out as signal core_clk_156_0 to top
+DEBUG - 2020-10-15 00:15:56,521 - jasper.verilog -   Signal "core_clk_156_0" is new
+DEBUG - 2020-10-15 00:15:56,521 - jasper.verilog -   Adding instance port qpll0reset as signal gtwiz_reset_qpll0reset_out to top
+DEBUG - 2020-10-15 00:15:56,521 - jasper.verilog -   Signal "gtwiz_reset_qpll0reset_out" is new
+DEBUG - 2020-10-15 00:15:56,521 - jasper.verilog -   Adding instance port qpll0lock as signal gtwiz_reset_qpll0lock_in to top
+DEBUG - 2020-10-15 00:15:56,521 - jasper.verilog -   Signal "gtwiz_reset_qpll0lock_in" is new
+DEBUG - 2020-10-15 00:15:56,521 - jasper.verilog -   Adding instance port qpll0outclk as signal qpll0clk_in to top
+DEBUG - 2020-10-15 00:15:56,521 - jasper.verilog -   Signal "qpll0clk_in" is new
+DEBUG - 2020-10-15 00:15:56,521 - jasper.verilog -   Adding instance port qpll0outrefclk as signal qpll0refclk_in to top
+DEBUG - 2020-10-15 00:15:56,521 - jasper.verilog -   Signal "qpll0refclk_in" is new
+DEBUG - 2020-10-15 00:15:56,521 - jasper.verilog -   Adding instance port qpll1reset as signal gtwiz_reset_qpll1reset_out to top
+DEBUG - 2020-10-15 00:15:56,521 - jasper.verilog -   Signal "gtwiz_reset_qpll1reset_out" is new
+DEBUG - 2020-10-15 00:15:56,521 - jasper.verilog -   Adding instance port qpll1lock as signal gtwiz_reset_qpll1lock_in to top
+DEBUG - 2020-10-15 00:15:56,522 - jasper.verilog -   Signal "gtwiz_reset_qpll1lock_in" is new
+DEBUG - 2020-10-15 00:15:56,522 - jasper.verilog -   Adding instance port qpll1outclk as signal qpll1clk_in to top
+DEBUG - 2020-10-15 00:15:56,522 - jasper.verilog -   Signal "qpll1clk_in" is new
+DEBUG - 2020-10-15 00:15:56,522 - jasper.verilog -   Adding instance port qpll1outrefclk as signal qpll1refclk_in to top
+DEBUG - 2020-10-15 00:15:56,522 - jasper.verilog -   Signal "qpll1refclk_in" is new
+DEBUG - 2020-10-15 00:15:56,522 - jasper.verilog -   Adding instance port gt_txusrclk2_0 as signal tx_mii_clk_0 to top
+DEBUG - 2020-10-15 00:15:56,522 - jasper.verilog -   Signal "tx_mii_clk_0" is new
+DEBUG - 2020-10-15 00:15:56,522 - jasper.verilog -   Adding instance port gt_rxusrclk2_0 as signal rx_clk_out_0 to top
+DEBUG - 2020-10-15 00:15:56,522 - jasper.verilog -   Signal "rx_clk_out_0" is new
+DEBUG - 2020-10-15 00:15:56,522 - jasper.verilog -   Adding instance port rx_core_clk_0 as signal rx_clk_out_0 to top
+DEBUG - 2020-10-15 00:15:56,522 - jasper.verilog -   Signal "rx_clk_out_0" already exists
+DEBUG - 2020-10-15 00:15:56,522 - jasper.verilog -   Adding instance port gt_tx_reset_in_0 as signal gt_reset_tx_done_out_0 to top
+DEBUG - 2020-10-15 00:15:56,522 - jasper.verilog -   Signal "gt_reset_tx_done_out_0" is new
+DEBUG - 2020-10-15 00:15:56,522 - jasper.verilog -   Adding instance port gt_rx_reset_in_0 as signal gt_reset_rx_done_out_0 to top
+DEBUG - 2020-10-15 00:15:56,522 - jasper.verilog -   Signal "gt_reset_rx_done_out_0" is new
+DEBUG - 2020-10-15 00:15:56,522 - jasper.verilog -   Adding instance port tx_core_reset_in_0 as signal axil_rst to top
+DEBUG - 2020-10-15 00:15:56,522 - jasper.verilog -   Signal "axil_rst" is new
+DEBUG - 2020-10-15 00:15:56,523 - jasper.verilog -   Adding instance port rx_core_reset_in_0 as signal axil_rst to top
+DEBUG - 2020-10-15 00:15:56,523 - jasper.verilog -   Signal "axil_rst" already exists
+DEBUG - 2020-10-15 00:15:56,523 - jasper.verilog -   Adding instance port tx_core_reset_out_0 as signal tx_core_reset_out to top
+DEBUG - 2020-10-15 00:15:56,523 - jasper.verilog -   Signal "tx_core_reset_out" is new
+DEBUG - 2020-10-15 00:15:56,523 - jasper.verilog -   Adding instance port rx_core_reset_out_0 as signal rx_core_reset_out to top
+DEBUG - 2020-10-15 00:15:56,523 - jasper.verilog -   Signal "rx_core_reset_out" is new
+DEBUG - 2020-10-15 00:15:56,523 - jasper.verilog -   Adding instance port rx_serdes_reset_out_0 as signal rx_serdes_reset_0 to top
+DEBUG - 2020-10-15 00:15:56,523 - jasper.verilog -   Signal "rx_serdes_reset_0" is new
+DEBUG - 2020-10-15 00:15:56,523 - jasper.verilog -   Adding instance port gtwiz_reset_all_0 as signal gt_reset_all_0 to top
+DEBUG - 2020-10-15 00:15:56,523 - jasper.verilog -   Signal "gt_reset_all_0" is new
+DEBUG - 2020-10-15 00:15:56,523 - jasper.verilog -   Adding instance port gtwiz_reset_tx_datapath_out_0 as signal gtwiz_reset_tx_datapath_out_0 to top
+DEBUG - 2020-10-15 00:15:56,523 - jasper.verilog -   Signal "gtwiz_reset_tx_datapath_out_0" is new
+DEBUG - 2020-10-15 00:15:56,523 - jasper.verilog -   Adding instance port gtwiz_reset_rx_datapath_out_0 as signal gtwiz_reset_rx_datapath_out_0 to top
+DEBUG - 2020-10-15 00:15:56,523 - jasper.verilog -   Signal "gtwiz_reset_rx_datapath_out_0" is new
+DEBUG - 2020-10-15 00:15:56,523 - jasper.verilog -   Adding instance port sys_reset as signal axil_rst to top
+DEBUG - 2020-10-15 00:15:56,523 - jasper.verilog -   Signal "axil_rst" already exists
+DEBUG - 2020-10-15 00:15:56,523 - jasper.verilog -   Adding instance port dclk as signal dclk0 to top
+DEBUG - 2020-10-15 00:15:56,524 - jasper.verilog -   Signal "dclk0" is new
+DEBUG - 2020-10-15 00:15:56,524 - jasper.verilog - Instantiating child ports for tengbaser_phy1
+DEBUG - 2020-10-15 00:15:56,524 - jasper.verilog -   Adding instance port gt_txp_out_0 to top
+DEBUG - 2020-10-15 00:15:56,524 - jasper.verilog - Attempting to add port "mgt_tx_p1" (parent sig: False, parent port: False)
+DEBUG - 2020-10-15 00:15:56,524 - jasper.verilog -   Port "mgt_tx_p1" is new
+DEBUG - 2020-10-15 00:15:56,524 - jasper.verilog -   Adding instance port gt_txn_out_0 to top
+DEBUG - 2020-10-15 00:15:56,524 - jasper.verilog - Attempting to add port "mgt_tx_n1" (parent sig: False, parent port: False)
+DEBUG - 2020-10-15 00:15:56,524 - jasper.verilog -   Port "mgt_tx_n1" is new
+DEBUG - 2020-10-15 00:15:56,524 - jasper.verilog -   Adding instance port gt_rxp_in_0 to top
+DEBUG - 2020-10-15 00:15:56,524 - jasper.verilog - Attempting to add port "mgt_rx_p1" (parent sig: False, parent port: False)
+DEBUG - 2020-10-15 00:15:56,524 - jasper.verilog -   Port "mgt_rx_p1" is new
+DEBUG - 2020-10-15 00:15:56,524 - jasper.verilog -   Adding instance port gt_rxn_in_0 to top
+DEBUG - 2020-10-15 00:15:56,524 - jasper.verilog - Attempting to add port "mgt_rx_n1" (parent sig: False, parent port: False)
+DEBUG - 2020-10-15 00:15:56,524 - jasper.verilog -   Port "mgt_rx_n1" is new
+DEBUG - 2020-10-15 00:15:56,524 - jasper.verilog -   Adding instance port tx_mii_clk_0 as signal tx_mii_clk_0 to top
+DEBUG - 2020-10-15 00:15:56,524 - jasper.verilog -   Signal "tx_mii_clk_0" already exists
+DEBUG - 2020-10-15 00:15:56,524 - jasper.verilog -   Adding instance port rx_core_clk_0 as signal rx_clk_out_0 to top
+DEBUG - 2020-10-15 00:15:56,525 - jasper.verilog -   Signal "rx_clk_out_0" already exists
+DEBUG - 2020-10-15 00:15:56,525 - jasper.verilog -   Adding instance port rx_clk_out_0 as signal rx_clk_out_0 to top
+DEBUG - 2020-10-15 00:15:56,525 - jasper.verilog -   Signal "rx_clk_out_0" already exists
+DEBUG - 2020-10-15 00:15:56,525 - jasper.verilog -   Adding instance port rx_reset_0 as signal rx_core_reset_out to top
+DEBUG - 2020-10-15 00:15:56,525 - jasper.verilog -   Signal "rx_core_reset_out" already exists
+DEBUG - 2020-10-15 00:15:56,525 - jasper.verilog -   Adding instance port rx_mii_d_0 as signal xgmii_rxd1 to top
+DEBUG - 2020-10-15 00:15:56,525 - jasper.verilog -   Signal "xgmii_rxd1" is new
+DEBUG - 2020-10-15 00:15:56,525 - jasper.verilog -   Adding instance port rx_mii_c_0 as signal xgmii_rxc1 to top
+DEBUG - 2020-10-15 00:15:56,525 - jasper.verilog -   Signal "xgmii_rxc1" is new
+DEBUG - 2020-10-15 00:15:56,525 - jasper.verilog -   Adding instance port stat_rx_block_lock_0 as signal stat_rx_block_lock_0 to top
+DEBUG - 2020-10-15 00:15:56,525 - jasper.verilog -   Signal "stat_rx_block_lock_0" is new
+DEBUG - 2020-10-15 00:15:56,525 - jasper.verilog -   Adding instance port tx_reset_0 as signal tx_core_reset_out to top
+DEBUG - 2020-10-15 00:15:56,525 - jasper.verilog -   Signal "tx_core_reset_out" already exists
+DEBUG - 2020-10-15 00:15:56,525 - jasper.verilog -   Adding instance port tx_mii_d_0 as signal xgmii_txd1 to top
+DEBUG - 2020-10-15 00:15:56,525 - jasper.verilog -   Signal "xgmii_txd1" is new
+DEBUG - 2020-10-15 00:15:56,525 - jasper.verilog -   Adding instance port tx_mii_c_0 as signal xgmii_txc1 to top
+DEBUG - 2020-10-15 00:15:56,525 - jasper.verilog -   Signal "xgmii_txc1" is new
+DEBUG - 2020-10-15 00:15:56,526 - jasper.verilog -   Adding instance port rx_serdes_reset_0 as signal rx_serdes_reset_0 to top
+DEBUG - 2020-10-15 00:15:56,526 - jasper.verilog -   Signal "rx_serdes_reset_0" already exists
+DEBUG - 2020-10-15 00:15:56,526 - jasper.verilog -   Adding instance port gt_reset_all_in_0 as signal gt_reset_all_0 to top
+DEBUG - 2020-10-15 00:15:56,526 - jasper.verilog -   Signal "gt_reset_all_0" already exists
+DEBUG - 2020-10-15 00:15:56,526 - jasper.verilog -   Adding instance port gt_tx_reset_in_0 as signal gtwiz_reset_tx_datapath_out_0 to top
+DEBUG - 2020-10-15 00:15:56,526 - jasper.verilog -   Signal "gtwiz_reset_tx_datapath_out_0" already exists
+DEBUG - 2020-10-15 00:15:56,526 - jasper.verilog -   Adding instance port gt_rx_reset_in_0 as signal gtwiz_reset_rx_datapath_out_0 to top
+DEBUG - 2020-10-15 00:15:56,526 - jasper.verilog -   Signal "gtwiz_reset_rx_datapath_out_0" already exists
+DEBUG - 2020-10-15 00:15:56,526 - jasper.verilog -   Adding instance port gt_reset_tx_done_out_0 as signal gt_reset_tx_done_out_0 to top
+DEBUG - 2020-10-15 00:15:56,526 - jasper.verilog -   Signal "gt_reset_tx_done_out_0" already exists
+DEBUG - 2020-10-15 00:15:56,526 - jasper.verilog -   Adding instance port gt_reset_rx_done_out_0 as signal gt_reset_rx_done_out_0 to top
+DEBUG - 2020-10-15 00:15:56,526 - jasper.verilog -   Signal "gt_reset_rx_done_out_0" already exists
+DEBUG - 2020-10-15 00:15:56,526 - jasper.verilog -   Adding instance port qpll0clk_in as signal qpll0clk_in to top
+DEBUG - 2020-10-15 00:15:56,526 - jasper.verilog -   Signal "qpll0clk_in" already exists
+DEBUG - 2020-10-15 00:15:56,526 - jasper.verilog -   Adding instance port qpll0refclk_in as signal qpll0refclk_in to top
+DEBUG - 2020-10-15 00:15:56,526 - jasper.verilog -   Signal "qpll0refclk_in" already exists
+DEBUG - 2020-10-15 00:15:56,526 - jasper.verilog -   Adding instance port qpll1clk_in as signal qpll1clk_in to top
+DEBUG - 2020-10-15 00:15:56,526 - jasper.verilog -   Signal "qpll1clk_in" already exists
+DEBUG - 2020-10-15 00:15:56,527 - jasper.verilog -   Adding instance port qpll1refclk_in as signal qpll1refclk_in to top
+DEBUG - 2020-10-15 00:15:56,527 - jasper.verilog -   Signal "qpll1refclk_in" already exists
+DEBUG - 2020-10-15 00:15:56,527 - jasper.verilog -   Adding instance port gtwiz_reset_qpll0lock_in as signal gtwiz_reset_qpll0lock_in to top
+DEBUG - 2020-10-15 00:15:56,527 - jasper.verilog -   Signal "gtwiz_reset_qpll0lock_in" already exists
+DEBUG - 2020-10-15 00:15:56,527 - jasper.verilog -   Adding instance port gtwiz_reset_qpll1lock_in as signal gtwiz_reset_qpll1lock_in to top
+DEBUG - 2020-10-15 00:15:56,527 - jasper.verilog -   Signal "gtwiz_reset_qpll1lock_in" already exists
+DEBUG - 2020-10-15 00:15:56,527 - jasper.verilog -   Adding instance port gtwiz_reset_qpll0reset_out as signal gtwiz_reset_qpll0reset_out to top
+DEBUG - 2020-10-15 00:15:56,527 - jasper.verilog -   Signal "gtwiz_reset_qpll0reset_out" already exists
+DEBUG - 2020-10-15 00:15:56,527 - jasper.verilog -   Adding instance port gtwiz_reset_qpll1reset_out as signal gtwiz_reset_qpll1reset_out to top
+DEBUG - 2020-10-15 00:15:56,527 - jasper.verilog -   Signal "gtwiz_reset_qpll1reset_out" already exists
+DEBUG - 2020-10-15 00:15:56,527 - jasper.verilog -   Adding instance port sys_reset as signal axil_rst to top
+DEBUG - 2020-10-15 00:15:56,527 - jasper.verilog -   Signal "axil_rst" already exists
+DEBUG - 2020-10-15 00:15:56,527 - jasper.verilog -   Adding instance port dclk as signal dclk0 to top
+DEBUG - 2020-10-15 00:15:56,527 - jasper.verilog -   Signal "dclk0" already exists
+DEBUG - 2020-10-15 00:15:56,527 - jasper.verilog - Instantiating child ports for tengbe_test_gbe0
+DEBUG - 2020-10-15 00:15:56,527 - jasper.verilog -   Adding instance port mgt_txpostemphasis as signal mgt_txpostemphasis1 to top
+DEBUG - 2020-10-15 00:15:56,527 - jasper.verilog -   Signal "mgt_txpostemphasis1" is new
+DEBUG - 2020-10-15 00:15:56,527 - jasper.verilog -   Adding instance port mgt_txpreemphasis as signal mgt_txpreemphasis1 to top
+DEBUG - 2020-10-15 00:15:56,528 - jasper.verilog -   Signal "mgt_txpreemphasis1" is new
+DEBUG - 2020-10-15 00:15:56,528 - jasper.verilog -   Adding instance port mgt_txdiffctrl as signal mgt_txdiffctrl1 to top
+DEBUG - 2020-10-15 00:15:56,528 - jasper.verilog -   Signal "mgt_txdiffctrl1" is new
+DEBUG - 2020-10-15 00:15:56,528 - jasper.verilog -   Adding instance port mgt_rxeqmix as signal mgt_rxeqmix1 to top
+DEBUG - 2020-10-15 00:15:56,528 - jasper.verilog -   Signal "mgt_rxeqmix1" is new
+DEBUG - 2020-10-15 00:15:56,528 - jasper.verilog -   Adding instance port xaui_clk as signal core_clk_156_0 to top
+DEBUG - 2020-10-15 00:15:56,528 - jasper.verilog -   Signal "core_clk_156_0" already exists
+DEBUG - 2020-10-15 00:15:56,528 - jasper.verilog -   Adding instance port xgmii_txd as signal xgmii_txd1 to top
+DEBUG - 2020-10-15 00:15:56,528 - jasper.verilog -   Signal "xgmii_txd1" already exists
+DEBUG - 2020-10-15 00:15:56,528 - jasper.verilog -   Adding instance port xgmii_txc as signal xgmii_txc1 to top
+DEBUG - 2020-10-15 00:15:56,528 - jasper.verilog -   Signal "xgmii_txc1" already exists
+DEBUG - 2020-10-15 00:15:56,528 - jasper.verilog -   Adding instance port xgmii_rxd as signal xgmii_rxd1 to top
+DEBUG - 2020-10-15 00:15:56,528 - jasper.verilog -   Signal "xgmii_rxd1" already exists
+DEBUG - 2020-10-15 00:15:56,528 - jasper.verilog -   Adding instance port xgmii_rxc as signal xgmii_rxc1 to top
+DEBUG - 2020-10-15 00:15:56,528 - jasper.verilog -   Signal "xgmii_rxc1" already exists
+DEBUG - 2020-10-15 00:15:56,528 - jasper.verilog -   Adding instance port rst as signal tengbe_test_gbe0_rst to top
+DEBUG - 2020-10-15 00:15:56,529 - jasper.verilog -   Signal "tengbe_test_gbe0_rst" is new
+DEBUG - 2020-10-15 00:15:56,529 - jasper.verilog -   Adding instance port tx_valid as signal tengbe_test_gbe0_tx_valid to top
+DEBUG - 2020-10-15 00:15:56,529 - jasper.verilog -   Signal "tengbe_test_gbe0_tx_valid" is new
+DEBUG - 2020-10-15 00:15:56,529 - jasper.verilog -   Adding instance port tx_afull as signal tengbe_test_gbe0_tx_afull to top
+DEBUG - 2020-10-15 00:15:56,529 - jasper.verilog -   Signal "tengbe_test_gbe0_tx_afull" is new
+DEBUG - 2020-10-15 00:15:56,529 - jasper.verilog -   Adding instance port tx_overflow as signal tengbe_test_gbe0_tx_overflow to top
+DEBUG - 2020-10-15 00:15:56,529 - jasper.verilog -   Signal "tengbe_test_gbe0_tx_overflow" is new
+DEBUG - 2020-10-15 00:15:56,529 - jasper.verilog -   Adding instance port tx_end_of_frame as signal tengbe_test_gbe0_tx_end_of_frame to top
+DEBUG - 2020-10-15 00:15:56,529 - jasper.verilog -   Signal "tengbe_test_gbe0_tx_end_of_frame" is new
+DEBUG - 2020-10-15 00:15:56,529 - jasper.verilog -   Adding instance port tx_data as signal tengbe_test_gbe0_tx_data to top
+DEBUG - 2020-10-15 00:15:56,529 - jasper.verilog -   Signal "tengbe_test_gbe0_tx_data" is new
+DEBUG - 2020-10-15 00:15:56,529 - jasper.verilog -   Adding instance port tx_dest_ip as signal tengbe_test_gbe0_tx_dest_ip to top
+DEBUG - 2020-10-15 00:15:56,529 - jasper.verilog -   Signal "tengbe_test_gbe0_tx_dest_ip" is new
+DEBUG - 2020-10-15 00:15:56,529 - jasper.verilog -   Adding instance port tx_dest_port as signal tengbe_test_gbe0_tx_dest_port to top
+DEBUG - 2020-10-15 00:15:56,529 - jasper.verilog -   Signal "tengbe_test_gbe0_tx_dest_port" is new
+DEBUG - 2020-10-15 00:15:56,530 - jasper.verilog -   Adding instance port rx_valid as signal tengbe_test_gbe0_rx_valid to top
+DEBUG - 2020-10-15 00:15:56,530 - jasper.verilog -   Signal "tengbe_test_gbe0_rx_valid" is new
+DEBUG - 2020-10-15 00:15:56,530 - jasper.verilog -   Adding instance port rx_end_of_frame as signal tengbe_test_gbe0_rx_end_of_frame to top
+DEBUG - 2020-10-15 00:15:56,530 - jasper.verilog -   Signal "tengbe_test_gbe0_rx_end_of_frame" is new
+DEBUG - 2020-10-15 00:15:56,530 - jasper.verilog -   Adding instance port rx_data as signal tengbe_test_gbe0_rx_data to top
+DEBUG - 2020-10-15 00:15:56,530 - jasper.verilog -   Signal "tengbe_test_gbe0_rx_data" is new
+DEBUG - 2020-10-15 00:15:56,530 - jasper.verilog -   Adding instance port rx_source_ip as signal tengbe_test_gbe0_rx_source_ip to top
+DEBUG - 2020-10-15 00:15:56,530 - jasper.verilog -   Signal "tengbe_test_gbe0_rx_source_ip" is new
+DEBUG - 2020-10-15 00:15:56,530 - jasper.verilog -   Adding instance port rx_source_port as signal tengbe_test_gbe0_rx_source_port to top
+DEBUG - 2020-10-15 00:15:56,530 - jasper.verilog -   Signal "tengbe_test_gbe0_rx_source_port" is new
+DEBUG - 2020-10-15 00:15:56,530 - jasper.verilog -   Adding instance port rx_bad_frame as signal tengbe_test_gbe0_rx_bad_frame to top
+DEBUG - 2020-10-15 00:15:56,530 - jasper.verilog -   Signal "tengbe_test_gbe0_rx_bad_frame" is new
+DEBUG - 2020-10-15 00:15:56,530 - jasper.verilog -   Adding instance port rx_overrun as signal tengbe_test_gbe0_rx_overrun to top
+DEBUG - 2020-10-15 00:15:56,530 - jasper.verilog -   Signal "tengbe_test_gbe0_rx_overrun" is new
+DEBUG - 2020-10-15 00:15:56,530 - jasper.verilog -   Adding instance port rx_overrun_ack as signal tengbe_test_gbe0_rx_overrun_ack to top
+DEBUG - 2020-10-15 00:15:56,531 - jasper.verilog -   Signal "tengbe_test_gbe0_rx_overrun_ack" is new
+DEBUG - 2020-10-15 00:15:56,531 - jasper.verilog -   Adding instance port rx_ack as signal tengbe_test_gbe0_rx_ack to top
+DEBUG - 2020-10-15 00:15:56,531 - jasper.verilog -   Signal "tengbe_test_gbe0_rx_ack" is new
+DEBUG - 2020-10-15 00:15:56,531 - jasper.verilog -   Adding instance port led_up as signal tengbe_test_gbe0_led_up to top
+DEBUG - 2020-10-15 00:15:56,531 - jasper.verilog -   Signal "tengbe_test_gbe0_led_up" is new
+DEBUG - 2020-10-15 00:15:56,531 - jasper.verilog -   Adding instance port led_rx as signal tengbe_test_gbe0_led_rx to top
+DEBUG - 2020-10-15 00:15:56,531 - jasper.verilog -   Signal "tengbe_test_gbe0_led_rx" is new
+DEBUG - 2020-10-15 00:15:56,531 - jasper.verilog -   Adding instance port led_tx as signal tengbe_test_gbe0_led_tx to top
+DEBUG - 2020-10-15 00:15:56,531 - jasper.verilog -   Signal "tengbe_test_gbe0_led_tx" is new
+DEBUG - 2020-10-15 00:15:56,531 - jasper.verilog -   Adding instance port wb_clk_i as signal axil_clk to top
+DEBUG - 2020-10-15 00:15:56,531 - jasper.verilog -   Signal "axil_clk" already exists
+DEBUG - 2020-10-15 00:15:56,531 - jasper.verilog -   Adding instance port wb_rst_i as signal tengbe_test_gbe0wb_rst to top
+DEBUG - 2020-10-15 00:15:56,531 - jasper.verilog -   Signal "tengbe_test_gbe0wb_rst" is new
+DEBUG - 2020-10-15 00:15:56,531 - jasper.verilog -   Adding instance port wb_stb_i as signal tengbe_test_gbe0_wb_stb to top
+DEBUG - 2020-10-15 00:15:56,531 - jasper.verilog -   Signal "tengbe_test_gbe0_wb_stb" is new
+DEBUG - 2020-10-15 00:15:56,532 - jasper.verilog -   Adding instance port wb_cyc_i as signal tengbe_test_gbe0_wb_cyc to top
+DEBUG - 2020-10-15 00:15:56,532 - jasper.verilog -   Signal "tengbe_test_gbe0_wb_cyc" is new
+DEBUG - 2020-10-15 00:15:56,532 - jasper.verilog -   Adding instance port wb_we_i as signal tengbe_test_gbe0_wb_we to top
+DEBUG - 2020-10-15 00:15:56,532 - jasper.verilog -   Signal "tengbe_test_gbe0_wb_we" is new
+DEBUG - 2020-10-15 00:15:56,532 - jasper.verilog -   Adding instance port wb_adr_i as signal tengbe_test_gbe0wb_adr to top
+DEBUG - 2020-10-15 00:15:56,532 - jasper.verilog -   Signal "tengbe_test_gbe0wb_adr" is new
+DEBUG - 2020-10-15 00:15:56,532 - jasper.verilog -   Adding instance port wb_dat_i as signal tengbe_test_gbe0wb_dat_i to top
+DEBUG - 2020-10-15 00:15:56,532 - jasper.verilog -   Signal "tengbe_test_gbe0wb_dat_i" is new
+DEBUG - 2020-10-15 00:15:56,532 - jasper.verilog -   Adding instance port wb_sel_i as signal tengbe_test_gbe0wb_sel to top
+DEBUG - 2020-10-15 00:15:56,532 - jasper.verilog -   Signal "tengbe_test_gbe0wb_sel" is new
+DEBUG - 2020-10-15 00:15:56,532 - jasper.verilog -   Adding instance port wb_dat_o as signal tengbe_test_gbe0wb_dat_o to top
+DEBUG - 2020-10-15 00:15:56,532 - jasper.verilog -   Signal "tengbe_test_gbe0wb_dat_o" is new
+DEBUG - 2020-10-15 00:15:56,532 - jasper.verilog -   Adding instance port wb_err_o as signal tengbe_test_gbe0wb_err to top
+DEBUG - 2020-10-15 00:15:56,532 - jasper.verilog -   Signal "tengbe_test_gbe0wb_err" is new
+DEBUG - 2020-10-15 00:15:56,532 - jasper.verilog -   Adding instance port wb_ack_o as signal tengbe_test_gbe0wb_ack to top
+DEBUG - 2020-10-15 00:15:56,533 - jasper.verilog -   Signal "tengbe_test_gbe0wb_ack" is new
+DEBUG - 2020-10-15 00:15:56,533 - jasper.verilog - Instantiating child ports for tengbe_test_gbe0_wb2axi4lite
+DEBUG - 2020-10-15 00:15:56,533 - jasper.verilog -   Adding instance port RST_O as signal tengbe_test_gbe0wb_rst to top
+DEBUG - 2020-10-15 00:15:56,533 - jasper.verilog -   Signal "tengbe_test_gbe0wb_rst" already exists
+DEBUG - 2020-10-15 00:15:56,533 - jasper.verilog -   Adding instance port DAT_O as signal tengbe_test_gbe0wb_dat_i to top
+DEBUG - 2020-10-15 00:15:56,533 - jasper.verilog -   Signal "tengbe_test_gbe0wb_dat_i" already exists
+DEBUG - 2020-10-15 00:15:56,533 - jasper.verilog -   Adding instance port DAT_I as signal tengbe_test_gbe0wb_dat_o to top
+DEBUG - 2020-10-15 00:15:56,533 - jasper.verilog -   Signal "tengbe_test_gbe0wb_dat_o" already exists
+DEBUG - 2020-10-15 00:15:56,533 - jasper.verilog -   Adding instance port ACK_I as signal tengbe_test_gbe0wb_ack to top
+DEBUG - 2020-10-15 00:15:56,533 - jasper.verilog -   Signal "tengbe_test_gbe0wb_ack" already exists
+DEBUG - 2020-10-15 00:15:56,533 - jasper.verilog -   Adding instance port ADR_O as signal tengbe_test_gbe0wb_adr to top
+DEBUG - 2020-10-15 00:15:56,533 - jasper.verilog -   Signal "tengbe_test_gbe0wb_adr" already exists
+DEBUG - 2020-10-15 00:15:56,533 - jasper.verilog -   Adding instance port CYC_O as signal tengbe_test_gbe0_wb_cyc to top
+DEBUG - 2020-10-15 00:15:56,533 - jasper.verilog -   Signal "tengbe_test_gbe0_wb_cyc" already exists
+DEBUG - 2020-10-15 00:15:56,533 - jasper.verilog -   Adding instance port SEL_O as signal tengbe_test_gbe0wb_sel to top
+DEBUG - 2020-10-15 00:15:56,534 - jasper.verilog -   Signal "tengbe_test_gbe0wb_sel" already exists
+DEBUG - 2020-10-15 00:15:56,534 - jasper.verilog -   Adding instance port STB_O as signal tengbe_test_gbe0_wb_stb to top
+DEBUG - 2020-10-15 00:15:56,534 - jasper.verilog -   Signal "tengbe_test_gbe0_wb_stb" already exists
+DEBUG - 2020-10-15 00:15:56,534 - jasper.verilog -   Adding instance port WE_O as signal tengbe_test_gbe0_wb_we to top
+DEBUG - 2020-10-15 00:15:56,534 - jasper.verilog -   Signal "tengbe_test_gbe0_wb_we" already exists
+DEBUG - 2020-10-15 00:15:56,534 - jasper.verilog -   Adding instance port S_AXI_ACLK as signal axil_clk to top
+DEBUG - 2020-10-15 00:15:56,534 - jasper.verilog -   Signal "axil_clk" already exists
+DEBUG - 2020-10-15 00:15:56,534 - jasper.verilog -   Adding instance port S_AXI_ARESETN as signal axil_rst_n to top
+DEBUG - 2020-10-15 00:15:56,534 - jasper.verilog -   Signal "axil_rst_n" already exists
+DEBUG - 2020-10-15 00:15:56,534 - jasper.verilog -   Adding instance port S_AXI_AWREADY as signal m_axi4lite_gbe0_awready to top
+DEBUG - 2020-10-15 00:15:56,534 - jasper.verilog -   Signal "m_axi4lite_gbe0_awready" is new
+DEBUG - 2020-10-15 00:15:56,534 - jasper.verilog -   Adding instance port S_AXI_WREADY as signal m_axi4lite_gbe0_wready to top
+DEBUG - 2020-10-15 00:15:56,534 - jasper.verilog -   Signal "m_axi4lite_gbe0_wready" is new
+DEBUG - 2020-10-15 00:15:56,534 - jasper.verilog -   Adding instance port S_AXI_BRESP as signal m_axi4lite_gbe0_bresp to top
+DEBUG - 2020-10-15 00:15:56,534 - jasper.verilog -   Signal "m_axi4lite_gbe0_bresp" is new
+DEBUG - 2020-10-15 00:15:56,535 - jasper.verilog -   Adding instance port S_AXI_BVALID as signal m_axi4lite_gbe0_bvalid to top
+DEBUG - 2020-10-15 00:15:56,535 - jasper.verilog -   Signal "m_axi4lite_gbe0_bvalid" is new
+DEBUG - 2020-10-15 00:15:56,535 - jasper.verilog -   Adding instance port S_AXI_ARREADY as signal m_axi4lite_gbe0_arready to top
+DEBUG - 2020-10-15 00:15:56,535 - jasper.verilog -   Signal "m_axi4lite_gbe0_arready" is new
+DEBUG - 2020-10-15 00:15:56,535 - jasper.verilog -   Adding instance port S_AXI_RRESP as signal m_axi4lite_gbe0_rresp to top
+DEBUG - 2020-10-15 00:15:56,535 - jasper.verilog -   Signal "m_axi4lite_gbe0_rresp" is new
+DEBUG - 2020-10-15 00:15:56,535 - jasper.verilog -   Adding instance port S_AXI_RDATA as signal m_axi4lite_gbe0_rdata to top
+DEBUG - 2020-10-15 00:15:56,535 - jasper.verilog -   Signal "m_axi4lite_gbe0_rdata" is new
+DEBUG - 2020-10-15 00:15:56,535 - jasper.verilog -   Adding instance port S_AXI_RVALID as signal m_axi4lite_gbe0_rvalid to top
+DEBUG - 2020-10-15 00:15:56,535 - jasper.verilog -   Signal "m_axi4lite_gbe0_rvalid" is new
+DEBUG - 2020-10-15 00:15:56,535 - jasper.verilog -   Adding instance port S_AXI_AWADDR as signal m_axi4lite_gbe0_awaddr to top
+DEBUG - 2020-10-15 00:15:56,535 - jasper.verilog -   Signal "m_axi4lite_gbe0_awaddr" is new
+DEBUG - 2020-10-15 00:15:56,535 - jasper.verilog -   Adding instance port S_AXI_AWVALID as signal m_axi4lite_gbe0_awvalid to top
+DEBUG - 2020-10-15 00:15:56,535 - jasper.verilog -   Signal "m_axi4lite_gbe0_awvalid" is new
+DEBUG - 2020-10-15 00:15:56,535 - jasper.verilog -   Adding instance port S_AXI_WDATA as signal m_axi4lite_gbe0_wdata to top
+DEBUG - 2020-10-15 00:15:56,536 - jasper.verilog -   Signal "m_axi4lite_gbe0_wdata" is new
+DEBUG - 2020-10-15 00:15:56,536 - jasper.verilog -   Adding instance port S_AXI_WVALID as signal m_axi4lite_gbe0_wvalid to top
+DEBUG - 2020-10-15 00:15:56,536 - jasper.verilog -   Signal "m_axi4lite_gbe0_wvalid" is new
+DEBUG - 2020-10-15 00:15:56,536 - jasper.verilog -   Adding instance port S_AXI_WSTRB as signal m_axi4lite_gbe0_wstrb to top
+DEBUG - 2020-10-15 00:15:56,536 - jasper.verilog -   Signal "m_axi4lite_gbe0_wstrb" is new
+DEBUG - 2020-10-15 00:15:56,536 - jasper.verilog -   Adding instance port S_AXI_ARADDR as signal m_axi4lite_gbe0_araddr to top
+DEBUG - 2020-10-15 00:15:56,536 - jasper.verilog -   Signal "m_axi4lite_gbe0_araddr" is new
+DEBUG - 2020-10-15 00:15:56,536 - jasper.verilog -   Adding instance port S_AXI_ARVALID as signal m_axi4lite_gbe0_arvalid to top
+DEBUG - 2020-10-15 00:15:56,536 - jasper.verilog -   Signal "m_axi4lite_gbe0_arvalid" is new
+DEBUG - 2020-10-15 00:15:56,536 - jasper.verilog -   Adding instance port S_AXI_RREADY as signal m_axi4lite_gbe0_rready to top
+DEBUG - 2020-10-15 00:15:56,536 - jasper.verilog -   Signal "m_axi4lite_gbe0_rready" is new
+DEBUG - 2020-10-15 00:15:56,536 - jasper.verilog -   Adding instance port S_AXI_BREADY as signal m_axi4lite_gbe0_bready to top
+DEBUG - 2020-10-15 00:15:56,537 - jasper.verilog -   Signal "m_axi4lite_gbe0_bready" is new
+DEBUG - 2020-10-15 00:15:56,537 - jasper.verilog - Instantiating child ports for zcu111_inst
+DEBUG - 2020-10-15 00:15:56,537 - jasper.verilog -   Adding instance port axil_clk as signal axil_clk to top
+DEBUG - 2020-10-15 00:15:56,537 - jasper.verilog -   Signal "axil_clk" already exists
+DEBUG - 2020-10-15 00:15:56,537 - jasper.verilog -   Adding instance port axil_rst as signal axil_rst to top
+DEBUG - 2020-10-15 00:15:56,537 - jasper.verilog -   Signal "axil_rst" already exists
+DEBUG - 2020-10-15 00:15:56,537 - jasper.verilog -   Adding instance port axil_rst_n as signal axil_rst_n to top
+DEBUG - 2020-10-15 00:15:56,537 - jasper.verilog -   Signal "axil_rst_n" already exists
+DEBUG - 2020-10-15 00:15:56,537 - jasper.verilog -   Adding instance port M_AXI_araddr as signal M_AXI_araddr to top
+DEBUG - 2020-10-15 00:15:56,537 - jasper.verilog -   Signal "M_AXI_araddr" is new
+DEBUG - 2020-10-15 00:15:56,538 - jasper.verilog -   Adding instance port M_AXI_arprot as signal M_AXI_arprot to top
+DEBUG - 2020-10-15 00:15:56,538 - jasper.verilog -   Signal "M_AXI_arprot" is new
+DEBUG - 2020-10-15 00:15:56,538 - jasper.verilog -   Adding instance port M_AXI_arready as signal M_AXI_arready to top
+DEBUG - 2020-10-15 00:15:56,538 - jasper.verilog -   Signal "M_AXI_arready" is new
+DEBUG - 2020-10-15 00:15:56,538 - jasper.verilog -   Adding instance port M_AXI_arvalid as signal M_AXI_arvalid to top
+DEBUG - 2020-10-15 00:15:56,538 - jasper.verilog -   Signal "M_AXI_arvalid" is new
+DEBUG - 2020-10-15 00:15:56,538 - jasper.verilog -   Adding instance port M_AXI_awaddr as signal M_AXI_awaddr to top
+DEBUG - 2020-10-15 00:15:56,538 - jasper.verilog -   Signal "M_AXI_awaddr" is new
+DEBUG - 2020-10-15 00:15:56,538 - jasper.verilog -   Adding instance port M_AXI_awprot as signal M_AXI_awprot to top
+DEBUG - 2020-10-15 00:15:56,538 - jasper.verilog -   Signal "M_AXI_awprot" is new
+DEBUG - 2020-10-15 00:15:56,538 - jasper.verilog -   Adding instance port M_AXI_awready as signal M_AXI_awready to top
+DEBUG - 2020-10-15 00:15:56,538 - jasper.verilog -   Signal "M_AXI_awready" is new
+DEBUG - 2020-10-15 00:15:56,538 - jasper.verilog -   Adding instance port M_AXI_awvalid as signal M_AXI_awvalid to top
+DEBUG - 2020-10-15 00:15:56,538 - jasper.verilog -   Signal "M_AXI_awvalid" is new
+DEBUG - 2020-10-15 00:15:56,539 - jasper.verilog -   Adding instance port M_AXI_bready as signal M_AXI_bready to top
+DEBUG - 2020-10-15 00:15:56,539 - jasper.verilog -   Signal "M_AXI_bready" is new
+DEBUG - 2020-10-15 00:15:56,539 - jasper.verilog -   Adding instance port M_AXI_bresp as signal M_AXI_bresp to top
+DEBUG - 2020-10-15 00:15:56,539 - jasper.verilog -   Signal "M_AXI_bresp" is new
+DEBUG - 2020-10-15 00:15:56,539 - jasper.verilog -   Adding instance port M_AXI_bvalid as signal M_AXI_bvalid to top
+DEBUG - 2020-10-15 00:15:56,539 - jasper.verilog -   Signal "M_AXI_bvalid" is new
+DEBUG - 2020-10-15 00:15:56,539 - jasper.verilog -   Adding instance port M_AXI_rdata as signal M_AXI_rdata to top
+DEBUG - 2020-10-15 00:15:56,539 - jasper.verilog -   Signal "M_AXI_rdata" is new
+DEBUG - 2020-10-15 00:15:56,539 - jasper.verilog -   Adding instance port M_AXI_rready as signal M_AXI_rready to top
+DEBUG - 2020-10-15 00:15:56,539 - jasper.verilog -   Signal "M_AXI_rready" is new
+DEBUG - 2020-10-15 00:15:56,539 - jasper.verilog -   Adding instance port M_AXI_rresp as signal M_AXI_rresp to top
+DEBUG - 2020-10-15 00:15:56,539 - jasper.verilog -   Signal "M_AXI_rresp" is new
+DEBUG - 2020-10-15 00:15:56,539 - jasper.verilog -   Adding instance port M_AXI_rvalid as signal M_AXI_rvalid to top
+DEBUG - 2020-10-15 00:15:56,539 - jasper.verilog -   Signal "M_AXI_rvalid" is new
+DEBUG - 2020-10-15 00:15:56,539 - jasper.verilog -   Adding instance port M_AXI_wdata as signal M_AXI_wdata to top
+DEBUG - 2020-10-15 00:15:56,540 - jasper.verilog -   Signal "M_AXI_wdata" is new
+DEBUG - 2020-10-15 00:15:56,540 - jasper.verilog -   Adding instance port M_AXI_wready as signal M_AXI_wready to top
+DEBUG - 2020-10-15 00:15:56,540 - jasper.verilog -   Signal "M_AXI_wready" is new
+DEBUG - 2020-10-15 00:15:56,540 - jasper.verilog -   Adding instance port M_AXI_wstrb as signal M_AXI_wstrb to top
+DEBUG - 2020-10-15 00:15:56,540 - jasper.verilog -   Signal "M_AXI_wstrb" is new
+DEBUG - 2020-10-15 00:15:56,540 - jasper.verilog -   Adding instance port M_AXI_wvalid as signal M_AXI_wvalid to top
+DEBUG - 2020-10-15 00:15:56,540 - jasper.verilog -   Signal "M_AXI_wvalid" is new
+DEBUG - 2020-10-15 00:15:56,540 - jasper.verilog -   Adding instance port M_AXI_RFDC_araddr as signal M_AXI_RFDC_araddr to top
+DEBUG - 2020-10-15 00:15:56,540 - jasper.verilog -   Signal "M_AXI_RFDC_araddr" is new
+DEBUG - 2020-10-15 00:15:56,540 - jasper.verilog -   Adding instance port M_AXI_RFDC_arprot as signal M_AXI_RFDC_arprot to top
+DEBUG - 2020-10-15 00:15:56,540 - jasper.verilog -   Signal "M_AXI_RFDC_arprot" is new
+DEBUG - 2020-10-15 00:15:56,540 - jasper.verilog -   Adding instance port M_AXI_RFDC_arready as signal M_AXI_RFDC_arready to top
+DEBUG - 2020-10-15 00:15:56,540 - jasper.verilog -   Signal "M_AXI_RFDC_arready" is new
+DEBUG - 2020-10-15 00:15:56,540 - jasper.verilog -   Adding instance port M_AXI_RFDC_arvalid as signal M_AXI_RFDC_arvalid to top
+DEBUG - 2020-10-15 00:15:56,541 - jasper.verilog -   Signal "M_AXI_RFDC_arvalid" is new
+DEBUG - 2020-10-15 00:15:56,541 - jasper.verilog -   Adding instance port M_AXI_RFDC_awaddr as signal M_AXI_RFDC_awaddr to top
+DEBUG - 2020-10-15 00:15:56,541 - jasper.verilog -   Signal "M_AXI_RFDC_awaddr" is new
+DEBUG - 2020-10-15 00:15:56,541 - jasper.verilog -   Adding instance port M_AXI_RFDC_awprot as signal M_AXI_RFDC_awprot to top
+DEBUG - 2020-10-15 00:15:56,541 - jasper.verilog -   Signal "M_AXI_RFDC_awprot" is new
+DEBUG - 2020-10-15 00:15:56,541 - jasper.verilog -   Adding instance port M_AXI_RFDC_awready as signal M_AXI_RFDC_awready to top
+DEBUG - 2020-10-15 00:15:56,541 - jasper.verilog -   Signal "M_AXI_RFDC_awready" is new
+DEBUG - 2020-10-15 00:15:56,541 - jasper.verilog -   Adding instance port M_AXI_RFDC_awvalid as signal M_AXI_RFDC_awvalid to top
+DEBUG - 2020-10-15 00:15:56,541 - jasper.verilog -   Signal "M_AXI_RFDC_awvalid" is new
+DEBUG - 2020-10-15 00:15:56,541 - jasper.verilog -   Adding instance port M_AXI_RFDC_bready as signal M_AXI_RFDC_bready to top
+DEBUG - 2020-10-15 00:15:56,541 - jasper.verilog -   Signal "M_AXI_RFDC_bready" is new
+DEBUG - 2020-10-15 00:15:56,541 - jasper.verilog -   Adding instance port M_AXI_RFDC_bresp as signal M_AXI_RFDC_bresp to top
+DEBUG - 2020-10-15 00:15:56,541 - jasper.verilog -   Signal "M_AXI_RFDC_bresp" is new
+DEBUG - 2020-10-15 00:15:56,542 - jasper.verilog -   Adding instance port M_AXI_RFDC_bvalid as signal M_AXI_RFDC_bvalid to top
+DEBUG - 2020-10-15 00:15:56,542 - jasper.verilog -   Signal "M_AXI_RFDC_bvalid" is new
+DEBUG - 2020-10-15 00:15:56,542 - jasper.verilog -   Adding instance port M_AXI_RFDC_rdata as signal M_AXI_RFDC_rdata to top
+DEBUG - 2020-10-15 00:15:56,542 - jasper.verilog -   Signal "M_AXI_RFDC_rdata" is new
+DEBUG - 2020-10-15 00:15:56,542 - jasper.verilog -   Adding instance port M_AXI_RFDC_rready as signal M_AXI_RFDC_rready to top
+DEBUG - 2020-10-15 00:15:56,542 - jasper.verilog -   Signal "M_AXI_RFDC_rready" is new
+DEBUG - 2020-10-15 00:15:56,542 - jasper.verilog -   Adding instance port M_AXI_RFDC_rresp as signal M_AXI_RFDC_rresp to top
+DEBUG - 2020-10-15 00:15:56,542 - jasper.verilog -   Signal "M_AXI_RFDC_rresp" is new
+DEBUG - 2020-10-15 00:15:56,542 - jasper.verilog -   Adding instance port M_AXI_RFDC_rvalid as signal M_AXI_RFDC_rvalid to top
+DEBUG - 2020-10-15 00:15:56,542 - jasper.verilog -   Signal "M_AXI_RFDC_rvalid" is new
+DEBUG - 2020-10-15 00:15:56,542 - jasper.verilog -   Adding instance port M_AXI_RFDC_wdata as signal M_AXI_RFDC_wdata to top
+DEBUG - 2020-10-15 00:15:56,542 - jasper.verilog -   Signal "M_AXI_RFDC_wdata" is new
+DEBUG - 2020-10-15 00:15:56,542 - jasper.verilog -   Adding instance port M_AXI_RFDC_wready as signal M_AXI_RFDC_wready to top
+DEBUG - 2020-10-15 00:15:56,542 - jasper.verilog -   Signal "M_AXI_RFDC_wready" is new
+DEBUG - 2020-10-15 00:15:56,543 - jasper.verilog -   Adding instance port M_AXI_RFDC_wstrb as signal M_AXI_RFDC_wstrb to top
+DEBUG - 2020-10-15 00:15:56,543 - jasper.verilog -   Signal "M_AXI_RFDC_wstrb" is new
+DEBUG - 2020-10-15 00:15:56,543 - jasper.verilog -   Adding instance port M_AXI_RFDC_wvalid as signal M_AXI_RFDC_wvalid to top
+DEBUG - 2020-10-15 00:15:56,543 - jasper.verilog -   Signal "M_AXI_RFDC_wvalid" is new
+DEBUG - 2020-10-15 00:15:56,543 - jasper.verilog - Instantiating child ports for zcu111_infr_inst
+DEBUG - 2020-10-15 00:15:56,543 - jasper.verilog -   Adding instance port clk_100_p to top
+DEBUG - 2020-10-15 00:15:56,543 - jasper.verilog - Attempting to add port "clk_100_p" (parent sig: False, parent port: False)
+DEBUG - 2020-10-15 00:15:56,543 - jasper.verilog -   Port "clk_100_p" is new
+DEBUG - 2020-10-15 00:15:56,543 - jasper.verilog -   Adding instance port clk_100_n to top
+DEBUG - 2020-10-15 00:15:56,543 - jasper.verilog - Attempting to add port "clk_100_n" (parent sig: False, parent port: False)
+DEBUG - 2020-10-15 00:15:56,543 - jasper.verilog -   Port "clk_100_n" is new
+DEBUG - 2020-10-15 00:15:56,543 - jasper.verilog -   Adding instance port sys_clk as signal sys_clk    to top
+DEBUG - 2020-10-15 00:15:56,543 - jasper.verilog -   Signal "sys_clk" is new
+DEBUG - 2020-10-15 00:15:56,543 - jasper.verilog -   Adding instance port sys_clk90 as signal sys_clk90  to top
+DEBUG - 2020-10-15 00:15:56,544 - jasper.verilog -   Signal "sys_clk90" is new
+DEBUG - 2020-10-15 00:15:56,544 - jasper.verilog -   Adding instance port sys_clk180 as signal sys_clk180 to top
+DEBUG - 2020-10-15 00:15:56,544 - jasper.verilog -   Signal "sys_clk180" is new
+DEBUG - 2020-10-15 00:15:56,544 - jasper.verilog -   Adding instance port sys_clk270 as signal sys_clk270 to top
+DEBUG - 2020-10-15 00:15:56,544 - jasper.verilog -   Signal "sys_clk270" is new
+DEBUG - 2020-10-15 00:15:56,544 - jasper.verilog -   Adding instance port clk_200 as signal clk_200 to top
+DEBUG - 2020-10-15 00:15:56,544 - jasper.verilog -   Signal "clk_200" is new
+DEBUG - 2020-10-15 00:15:56,544 - jasper.verilog -   Adding instance port sys_clk_rst as signal sys_clk_rst to top
+DEBUG - 2020-10-15 00:15:56,544 - jasper.verilog -   Signal "sys_clk_rst" is new
+DEBUG - 2020-10-15 00:15:56,544 - jasper.verilog - Generating port tengbe_test_led0_gbe0_pulse_tx_ext
+DEBUG - 2020-10-15 00:15:56,544 - jasper.verilog - Generating port tengbe_test_led1_gbe0_up_ext
+DEBUG - 2020-10-15 00:15:56,544 - jasper.verilog - Generating port mgt_rx_n1
+DEBUG - 2020-10-15 00:15:56,544 - jasper.verilog - Generating port mgt_rx_p1
+DEBUG - 2020-10-15 00:15:56,544 - jasper.verilog - Generating port ref_clk_n0
+DEBUG - 2020-10-15 00:15:56,545 - jasper.verilog - Generating port ref_clk_p0
+DEBUG - 2020-10-15 00:15:56,545 - jasper.verilog - Generating port mgt_tx_n1
+DEBUG - 2020-10-15 00:15:56,545 - jasper.verilog - Generating port mgt_tx_p1
+DEBUG - 2020-10-15 00:15:56,545 - jasper.verilog - Generating port clk_100_n
+DEBUG - 2020-10-15 00:15:56,545 - jasper.verilog - Generating port clk_100_p
+DEBUG - 2020-10-15 00:15:56,545 - jasper.verilog - i: 11 n_ports: 10
+DEBUG - 2020-10-15 00:15:56,545 - jasper.verilog - Writing verilog for signal tengbe_test_led0_gbe0_pulse_tx_gateway
+DEBUG - 2020-10-15 00:15:56,545 - jasper.verilog - Writing verilog for signal tengbe_test_led1_gbe0_up_gateway
+DEBUG - 2020-10-15 00:15:56,545 - jasper.verilog - Writing verilog for signal tengbe_test_dest_ip_out
+DEBUG - 2020-10-15 00:15:56,545 - jasper.verilog - Writing verilog for signal tengbe_test_dest_ip_user_data_out
+DEBUG - 2020-10-15 00:15:56,545 - jasper.verilog - Writing verilog for signal tengbe_test_dest_port_out
+DEBUG - 2020-10-15 00:15:56,545 - jasper.verilog - Writing verilog for signal tengbe_test_dest_port_user_data_out
+DEBUG - 2020-10-15 00:15:56,545 - jasper.verilog - Writing verilog for signal tengbe_test_gbe0_rxbadctr_in
+DEBUG - 2020-10-15 00:15:56,545 - jasper.verilog - Writing verilog for signal tengbe_test_gbe0_rxbadctr_user_data_in
+DEBUG - 2020-10-15 00:15:56,545 - jasper.verilog - Writing verilog for signal tengbe_test_gbe0_rxctr_in
+DEBUG - 2020-10-15 00:15:56,545 - jasper.verilog - Writing verilog for signal tengbe_test_gbe0_rxctr_user_data_in
+DEBUG - 2020-10-15 00:15:56,545 - jasper.verilog - Writing verilog for signal tengbe_test_gbe0_rxeofctr_in
+DEBUG - 2020-10-15 00:15:56,545 - jasper.verilog - Writing verilog for signal tengbe_test_gbe0_rxeofctr_user_data_in
+DEBUG - 2020-10-15 00:15:56,546 - jasper.verilog - Writing verilog for signal tengbe_test_gbe0_rxofctr_in
+DEBUG - 2020-10-15 00:15:56,546 - jasper.verilog - Writing verilog for signal tengbe_test_gbe0_rxofctr_user_data_in
+DEBUG - 2020-10-15 00:15:56,546 - jasper.verilog - Writing verilog for signal tengbe_test_gbe0_rxvldctr_in
+DEBUG - 2020-10-15 00:15:56,546 - jasper.verilog - Writing verilog for signal tengbe_test_gbe0_rxvldctr_user_data_in
+DEBUG - 2020-10-15 00:15:56,546 - jasper.verilog - Writing verilog for signal tengbe_test_gbe0_txctr_in
+DEBUG - 2020-10-15 00:15:56,546 - jasper.verilog - Writing verilog for signal tengbe_test_gbe0_txctr_user_data_in
+DEBUG - 2020-10-15 00:15:56,546 - jasper.verilog - Writing verilog for signal tengbe_test_gbe0_txfullctr_in
+DEBUG - 2020-10-15 00:15:56,546 - jasper.verilog - Writing verilog for signal tengbe_test_gbe0_txfullctr_user_data_in
+DEBUG - 2020-10-15 00:15:56,546 - jasper.verilog - Writing verilog for signal tengbe_test_gbe0_txofctr_in
+DEBUG - 2020-10-15 00:15:56,546 - jasper.verilog - Writing verilog for signal tengbe_test_gbe0_txofctr_user_data_in
+DEBUG - 2020-10-15 00:15:56,546 - jasper.verilog - Writing verilog for signal tengbe_test_gbe0_txvldctr_in
+DEBUG - 2020-10-15 00:15:56,546 - jasper.verilog - Writing verilog for signal tengbe_test_gbe0_txvldctr_user_data_in
+DEBUG - 2020-10-15 00:15:56,546 - jasper.verilog - Writing verilog for signal tengbe_test_gbe0_linkup_in
+DEBUG - 2020-10-15 00:15:56,546 - jasper.verilog - Writing verilog for signal tengbe_test_gbe0_linkup_user_data_in
+DEBUG - 2020-10-15 00:15:56,546 - jasper.verilog - Writing verilog for signal tengbe_test_gbe0_tx_cnt_in
+DEBUG - 2020-10-15 00:15:56,546 - jasper.verilog - Writing verilog for signal tengbe_test_gbe0_tx_cnt_user_data_in
+DEBUG - 2020-10-15 00:15:56,546 - jasper.verilog - Writing verilog for signal tengbe_test_pkt_sim_enable_out
+DEBUG - 2020-10-15 00:15:56,546 - jasper.verilog - Writing verilog for signal tengbe_test_pkt_sim_enable_user_data_out
+DEBUG - 2020-10-15 00:15:56,546 - jasper.verilog - Writing verilog for signal tengbe_test_pkt_sim_payload_len_out
+DEBUG - 2020-10-15 00:15:56,547 - jasper.verilog - Writing verilog for signal tengbe_test_pkt_sim_payload_len_user_data_out
+DEBUG - 2020-10-15 00:15:56,547 - jasper.verilog - Writing verilog for signal tengbe_test_pkt_sim_period_out
+DEBUG - 2020-10-15 00:15:56,547 - jasper.verilog - Writing verilog for signal tengbe_test_pkt_sim_period_user_data_out
+DEBUG - 2020-10-15 00:15:56,547 - jasper.verilog - Writing verilog for signal tengbe_test_rst_out
+DEBUG - 2020-10-15 00:15:56,547 - jasper.verilog - Writing verilog for signal tengbe_test_rst_user_data_out
+DEBUG - 2020-10-15 00:15:56,547 - jasper.verilog - Writing verilog for signal tengbe_test_tx_snapshot_ss_ctrl_out
+DEBUG - 2020-10-15 00:15:56,547 - jasper.verilog - Writing verilog for signal tengbe_test_tx_snapshot_ss_ctrl_user_data_out
+DEBUG - 2020-10-15 00:15:56,547 - jasper.verilog - Writing verilog for signal tengbe_test_tx_snapshot_ss_status_in
+DEBUG - 2020-10-15 00:15:56,547 - jasper.verilog - Writing verilog for signal tengbe_test_tx_snapshot_ss_status_user_data_in
+DEBUG - 2020-10-15 00:15:56,547 - jasper.verilog - Writing verilog for signal axil_clk
+DEBUG - 2020-10-15 00:15:56,547 - jasper.verilog - Writing verilog for signal axil_rst_n
+DEBUG - 2020-10-15 00:15:56,547 - jasper.verilog - Writing verilog for signal tengbe_test_dest_ip_out_we
+DEBUG - 2020-10-15 00:15:56,547 - jasper.verilog - Writing verilog for signal tengbe_test_dest_port_out_we
+DEBUG - 2020-10-15 00:15:56,547 - jasper.verilog - Writing verilog for signal tengbe_test_gbe0_linkup_in_we
+DEBUG - 2020-10-15 00:15:56,547 - jasper.verilog - Writing verilog for signal tengbe_test_gbe0_rxbadctr_in_we
+DEBUG - 2020-10-15 00:15:56,547 - jasper.verilog - Writing verilog for signal tengbe_test_gbe0_rxctr_in_we
+DEBUG - 2020-10-15 00:15:56,547 - jasper.verilog - Writing verilog for signal tengbe_test_gbe0_rxeofctr_in_we
+DEBUG - 2020-10-15 00:15:56,547 - jasper.verilog - Writing verilog for signal tengbe_test_gbe0_rxofctr_in_we
+DEBUG - 2020-10-15 00:15:56,548 - jasper.verilog - Writing verilog for signal tengbe_test_gbe0_rxvldctr_in_we
+DEBUG - 2020-10-15 00:15:56,548 - jasper.verilog - Writing verilog for signal tengbe_test_gbe0_tx_cnt_in_we
+DEBUG - 2020-10-15 00:15:56,548 - jasper.verilog - Writing verilog for signal tengbe_test_gbe0_txctr_in_we
+DEBUG - 2020-10-15 00:15:56,548 - jasper.verilog - Writing verilog for signal tengbe_test_gbe0_txfullctr_in_we
+DEBUG - 2020-10-15 00:15:56,548 - jasper.verilog - Writing verilog for signal tengbe_test_gbe0_txofctr_in_we
+DEBUG - 2020-10-15 00:15:56,548 - jasper.verilog - Writing verilog for signal tengbe_test_gbe0_txvldctr_in_we
+DEBUG - 2020-10-15 00:15:56,548 - jasper.verilog - Writing verilog for signal tengbe_test_pkt_sim_enable_out_we
+DEBUG - 2020-10-15 00:15:56,548 - jasper.verilog - Writing verilog for signal tengbe_test_pkt_sim_payload_len_out_we
+DEBUG - 2020-10-15 00:15:56,548 - jasper.verilog - Writing verilog for signal tengbe_test_pkt_sim_period_out_we
+DEBUG - 2020-10-15 00:15:56,548 - jasper.verilog - Writing verilog for signal tengbe_test_rst_out_we
+DEBUG - 2020-10-15 00:15:56,548 - jasper.verilog - Writing verilog for signal tengbe_test_sys_board_id_in
+DEBUG - 2020-10-15 00:15:56,548 - jasper.verilog - Writing verilog for signal tengbe_test_sys_board_id_in_we
+DEBUG - 2020-10-15 00:15:56,548 - jasper.verilog - Writing verilog for signal tengbe_test_sys_clkcounter_in
+DEBUG - 2020-10-15 00:15:56,548 - jasper.verilog - Writing verilog for signal tengbe_test_sys_clkcounter_in_we
+DEBUG - 2020-10-15 00:15:56,548 - jasper.verilog - Writing verilog for signal tengbe_test_sys_rev_in
+DEBUG - 2020-10-15 00:15:56,548 - jasper.verilog - Writing verilog for signal tengbe_test_sys_rev_in_we
+DEBUG - 2020-10-15 00:15:56,548 - jasper.verilog - Writing verilog for signal tengbe_test_sys_rev_rcs_in
+DEBUG - 2020-10-15 00:15:56,548 - jasper.verilog - Writing verilog for signal tengbe_test_sys_rev_rcs_in_we
+DEBUG - 2020-10-15 00:15:56,548 - jasper.verilog - Writing verilog for signal tengbe_test_sys_scratchpad_out
+DEBUG - 2020-10-15 00:15:56,549 - jasper.verilog - Writing verilog for signal tengbe_test_sys_scratchpad_out_we
+DEBUG - 2020-10-15 00:15:56,549 - jasper.verilog - Writing verilog for signal tengbe_test_tx_snapshot_ss_bram_addr
+DEBUG - 2020-10-15 00:15:56,549 - jasper.verilog - Writing verilog for signal tengbe_test_tx_snapshot_ss_bram_data_in
+DEBUG - 2020-10-15 00:15:56,549 - jasper.verilog - Writing verilog for signal tengbe_test_tx_snapshot_ss_bram_data_out
+DEBUG - 2020-10-15 00:15:56,549 - jasper.verilog - Writing verilog for signal tengbe_test_tx_snapshot_ss_bram_we
+DEBUG - 2020-10-15 00:15:56,549 - jasper.verilog - Writing verilog for signal tengbe_test_tx_snapshot_ss_ctrl_out_we
+DEBUG - 2020-10-15 00:15:56,549 - jasper.verilog - Writing verilog for signal tengbe_test_tx_snapshot_ss_status_in_we
+DEBUG - 2020-10-15 00:15:56,549 - jasper.verilog - Writing verilog for signal axil_rst
+DEBUG - 2020-10-15 00:15:56,549 - jasper.verilog - Writing verilog for signal core_clk_156_0
+DEBUG - 2020-10-15 00:15:56,549 - jasper.verilog - Writing verilog for signal dclk0
+DEBUG - 2020-10-15 00:15:56,549 - jasper.verilog - Writing verilog for signal gt_reset_all_0
+DEBUG - 2020-10-15 00:15:56,549 - jasper.verilog - Writing verilog for signal gt_reset_rx_done_out_0
+DEBUG - 2020-10-15 00:15:56,549 - jasper.verilog - Writing verilog for signal gt_reset_tx_done_out_0
+DEBUG - 2020-10-15 00:15:56,549 - jasper.verilog - Writing verilog for signal gtwiz_reset_qpll0lock_in
+DEBUG - 2020-10-15 00:15:56,549 - jasper.verilog - Writing verilog for signal gtwiz_reset_qpll0reset_out
+DEBUG - 2020-10-15 00:15:56,549 - jasper.verilog - Writing verilog for signal gtwiz_reset_qpll1lock_in
+DEBUG - 2020-10-15 00:15:56,549 - jasper.verilog - Writing verilog for signal gtwiz_reset_qpll1reset_out
+DEBUG - 2020-10-15 00:15:56,549 - jasper.verilog - Writing verilog for signal gtwiz_reset_rx_datapath_out_0
+DEBUG - 2020-10-15 00:15:56,549 - jasper.verilog - Writing verilog for signal gtwiz_reset_tx_datapath_out_0
+DEBUG - 2020-10-15 00:15:56,549 - jasper.verilog - Writing verilog for signal m_axi4lite_gbe0_araddr
+DEBUG - 2020-10-15 00:15:56,549 - jasper.verilog - Writing verilog for signal m_axi4lite_gbe0_arready
+DEBUG - 2020-10-15 00:15:56,550 - jasper.verilog - Writing verilog for signal m_axi4lite_gbe0_arvalid
+DEBUG - 2020-10-15 00:15:56,550 - jasper.verilog - Writing verilog for signal m_axi4lite_gbe0_awaddr
+DEBUG - 2020-10-15 00:15:56,550 - jasper.verilog - Writing verilog for signal m_axi4lite_gbe0_awready
+DEBUG - 2020-10-15 00:15:56,550 - jasper.verilog - Writing verilog for signal m_axi4lite_gbe0_awvalid
+DEBUG - 2020-10-15 00:15:56,550 - jasper.verilog - Writing verilog for signal m_axi4lite_gbe0_bready
+DEBUG - 2020-10-15 00:15:56,550 - jasper.verilog - Writing verilog for signal m_axi4lite_gbe0_bresp
+DEBUG - 2020-10-15 00:15:56,550 - jasper.verilog - Writing verilog for signal m_axi4lite_gbe0_bvalid
+DEBUG - 2020-10-15 00:15:56,550 - jasper.verilog - Writing verilog for signal m_axi4lite_gbe0_rdata
+DEBUG - 2020-10-15 00:15:56,550 - jasper.verilog - Writing verilog for signal m_axi4lite_gbe0_rready
+DEBUG - 2020-10-15 00:15:56,550 - jasper.verilog - Writing verilog for signal m_axi4lite_gbe0_rresp
+DEBUG - 2020-10-15 00:15:56,550 - jasper.verilog - Writing verilog for signal m_axi4lite_gbe0_rvalid
+DEBUG - 2020-10-15 00:15:56,550 - jasper.verilog - Writing verilog for signal m_axi4lite_gbe0_wdata
+DEBUG - 2020-10-15 00:15:56,550 - jasper.verilog - Writing verilog for signal m_axi4lite_gbe0_wready
+DEBUG - 2020-10-15 00:15:56,550 - jasper.verilog - Writing verilog for signal m_axi4lite_gbe0_wstrb
+DEBUG - 2020-10-15 00:15:56,550 - jasper.verilog - Writing verilog for signal m_axi4lite_gbe0_wvalid
+DEBUG - 2020-10-15 00:15:56,550 - jasper.verilog - Writing verilog for signal mgt_rxeqmix1
+DEBUG - 2020-10-15 00:15:56,550 - jasper.verilog - Writing verilog for signal mgt_txdiffctrl1
+DEBUG - 2020-10-15 00:15:56,550 - jasper.verilog - Writing verilog for signal mgt_txpostemphasis1
+DEBUG - 2020-10-15 00:15:56,550 - jasper.verilog - Writing verilog for signal mgt_txpreemphasis1
+DEBUG - 2020-10-15 00:15:56,550 - jasper.verilog - Writing verilog for signal qpll0clk_in
+DEBUG - 2020-10-15 00:15:56,550 - jasper.verilog - Writing verilog for signal qpll0refclk_in
+DEBUG - 2020-10-15 00:15:56,551 - jasper.verilog - Writing verilog for signal qpll1clk_in
+DEBUG - 2020-10-15 00:15:56,551 - jasper.verilog - Writing verilog for signal qpll1refclk_in
+DEBUG - 2020-10-15 00:15:56,551 - jasper.verilog - Writing verilog for signal rx_clk_out_0
+DEBUG - 2020-10-15 00:15:56,551 - jasper.verilog - Writing verilog for signal rx_core_reset_out
+DEBUG - 2020-10-15 00:15:56,551 - jasper.verilog - Writing verilog for signal rx_serdes_reset_0
+DEBUG - 2020-10-15 00:15:56,551 - jasper.verilog - Writing verilog for signal stat_rx_block_lock_0
+DEBUG - 2020-10-15 00:15:56,551 - jasper.verilog - Writing verilog for signal tengbe_test_gbe0_led_rx
+DEBUG - 2020-10-15 00:15:56,551 - jasper.verilog - Writing verilog for signal tengbe_test_gbe0_led_tx
+DEBUG - 2020-10-15 00:15:56,551 - jasper.verilog - Writing verilog for signal tengbe_test_gbe0_led_up
+DEBUG - 2020-10-15 00:15:56,551 - jasper.verilog - Writing verilog for signal tengbe_test_gbe0_rst
+DEBUG - 2020-10-15 00:15:56,551 - jasper.verilog - Writing verilog for signal tengbe_test_gbe0_rx_ack
+DEBUG - 2020-10-15 00:15:56,551 - jasper.verilog - Writing verilog for signal tengbe_test_gbe0_rx_bad_frame
+DEBUG - 2020-10-15 00:15:56,551 - jasper.verilog - Writing verilog for signal tengbe_test_gbe0_rx_data
+DEBUG - 2020-10-15 00:15:56,551 - jasper.verilog - Writing verilog for signal tengbe_test_gbe0_rx_end_of_frame
+DEBUG - 2020-10-15 00:15:56,551 - jasper.verilog - Writing verilog for signal tengbe_test_gbe0_rx_overrun
+DEBUG - 2020-10-15 00:15:56,551 - jasper.verilog - Writing verilog for signal tengbe_test_gbe0_rx_overrun_ack
+DEBUG - 2020-10-15 00:15:56,551 - jasper.verilog - Writing verilog for signal tengbe_test_gbe0_rx_source_ip
+DEBUG - 2020-10-15 00:15:56,551 - jasper.verilog - Writing verilog for signal tengbe_test_gbe0_rx_source_port
+DEBUG - 2020-10-15 00:15:56,551 - jasper.verilog - Writing verilog for signal tengbe_test_gbe0_rx_valid
+DEBUG - 2020-10-15 00:15:56,551 - jasper.verilog - Writing verilog for signal tengbe_test_gbe0_tx_afull
+DEBUG - 2020-10-15 00:15:56,551 - jasper.verilog - Writing verilog for signal tengbe_test_gbe0_tx_data
+DEBUG - 2020-10-15 00:15:56,552 - jasper.verilog - Writing verilog for signal tengbe_test_gbe0_tx_dest_ip
+DEBUG - 2020-10-15 00:15:56,552 - jasper.verilog - Writing verilog for signal tengbe_test_gbe0_tx_dest_port
+DEBUG - 2020-10-15 00:15:56,552 - jasper.verilog - Writing verilog for signal tengbe_test_gbe0_tx_end_of_frame
+DEBUG - 2020-10-15 00:15:56,552 - jasper.verilog - Writing verilog for signal tengbe_test_gbe0_tx_overflow
+DEBUG - 2020-10-15 00:15:56,552 - jasper.verilog - Writing verilog for signal tengbe_test_gbe0_tx_valid
+DEBUG - 2020-10-15 00:15:56,552 - jasper.verilog - Writing verilog for signal tengbe_test_gbe0_wb_cyc
+DEBUG - 2020-10-15 00:15:56,552 - jasper.verilog - Writing verilog for signal tengbe_test_gbe0_wb_stb
+DEBUG - 2020-10-15 00:15:56,552 - jasper.verilog - Writing verilog for signal tengbe_test_gbe0_wb_we
+DEBUG - 2020-10-15 00:15:56,552 - jasper.verilog - Writing verilog for signal tengbe_test_gbe0wb_ack
+DEBUG - 2020-10-15 00:15:56,552 - jasper.verilog - Writing verilog for signal tengbe_test_gbe0wb_adr
+DEBUG - 2020-10-15 00:15:56,552 - jasper.verilog - Writing verilog for signal tengbe_test_gbe0wb_dat_i
+DEBUG - 2020-10-15 00:15:56,552 - jasper.verilog - Writing verilog for signal tengbe_test_gbe0wb_dat_o
+DEBUG - 2020-10-15 00:15:56,552 - jasper.verilog - Writing verilog for signal tengbe_test_gbe0wb_err
+DEBUG - 2020-10-15 00:15:56,552 - jasper.verilog - Writing verilog for signal tengbe_test_gbe0wb_rst
+DEBUG - 2020-10-15 00:15:56,552 - jasper.verilog - Writing verilog for signal tengbe_test_gbe0wb_sel
+DEBUG - 2020-10-15 00:15:56,552 - jasper.verilog - Writing verilog for signal tx_core_reset_out
+DEBUG - 2020-10-15 00:15:56,552 - jasper.verilog - Writing verilog for signal tx_mii_clk_0
+DEBUG - 2020-10-15 00:15:56,552 - jasper.verilog - Writing verilog for signal xgmii_rxc1
+DEBUG - 2020-10-15 00:15:56,552 - jasper.verilog - Writing verilog for signal xgmii_rxd1
+DEBUG - 2020-10-15 00:15:56,552 - jasper.verilog - Writing verilog for signal xgmii_txc1
+DEBUG - 2020-10-15 00:15:56,552 - jasper.verilog - Writing verilog for signal xgmii_txd1
+DEBUG - 2020-10-15 00:15:56,553 - jasper.verilog - Writing verilog for signal user_clk
+DEBUG - 2020-10-15 00:15:56,553 - jasper.verilog - Writing verilog for signal user_clk180
+DEBUG - 2020-10-15 00:15:56,553 - jasper.verilog - Writing verilog for signal user_clk270
+DEBUG - 2020-10-15 00:15:56,553 - jasper.verilog - Writing verilog for signal user_clk90
+DEBUG - 2020-10-15 00:15:56,553 - jasper.verilog - Writing verilog for signal M_AXI_RFDC_araddr
+DEBUG - 2020-10-15 00:15:56,553 - jasper.verilog - Writing verilog for signal M_AXI_RFDC_arprot
+DEBUG - 2020-10-15 00:15:56,553 - jasper.verilog - Writing verilog for signal M_AXI_RFDC_arready
+DEBUG - 2020-10-15 00:15:56,553 - jasper.verilog - Writing verilog for signal M_AXI_RFDC_arvalid
+DEBUG - 2020-10-15 00:15:56,553 - jasper.verilog - Writing verilog for signal M_AXI_RFDC_awaddr
+DEBUG - 2020-10-15 00:15:56,553 - jasper.verilog - Writing verilog for signal M_AXI_RFDC_awprot
+DEBUG - 2020-10-15 00:15:56,553 - jasper.verilog - Writing verilog for signal M_AXI_RFDC_awready
+DEBUG - 2020-10-15 00:15:56,553 - jasper.verilog - Writing verilog for signal M_AXI_RFDC_awvalid
+DEBUG - 2020-10-15 00:15:56,553 - jasper.verilog - Writing verilog for signal M_AXI_RFDC_bready
+DEBUG - 2020-10-15 00:15:56,553 - jasper.verilog - Writing verilog for signal M_AXI_RFDC_bresp
+DEBUG - 2020-10-15 00:15:56,553 - jasper.verilog - Writing verilog for signal M_AXI_RFDC_bvalid
+DEBUG - 2020-10-15 00:15:56,553 - jasper.verilog - Writing verilog for signal M_AXI_RFDC_rdata
+DEBUG - 2020-10-15 00:15:56,553 - jasper.verilog - Writing verilog for signal M_AXI_RFDC_rready
+DEBUG - 2020-10-15 00:15:56,553 - jasper.verilog - Writing verilog for signal M_AXI_RFDC_rresp
+DEBUG - 2020-10-15 00:15:56,553 - jasper.verilog - Writing verilog for signal M_AXI_RFDC_rvalid
+DEBUG - 2020-10-15 00:15:56,553 - jasper.verilog - Writing verilog for signal M_AXI_RFDC_wdata
+DEBUG - 2020-10-15 00:15:56,553 - jasper.verilog - Writing verilog for signal M_AXI_RFDC_wready
+DEBUG - 2020-10-15 00:15:56,553 - jasper.verilog - Writing verilog for signal M_AXI_RFDC_wstrb
+DEBUG - 2020-10-15 00:15:56,554 - jasper.verilog - Writing verilog for signal M_AXI_RFDC_wvalid
+DEBUG - 2020-10-15 00:15:56,554 - jasper.verilog - Writing verilog for signal M_AXI_araddr
+DEBUG - 2020-10-15 00:15:56,554 - jasper.verilog - Writing verilog for signal M_AXI_arprot
+DEBUG - 2020-10-15 00:15:56,554 - jasper.verilog - Writing verilog for signal M_AXI_arready
+DEBUG - 2020-10-15 00:15:56,554 - jasper.verilog - Writing verilog for signal M_AXI_arvalid
+DEBUG - 2020-10-15 00:15:56,554 - jasper.verilog - Writing verilog for signal M_AXI_awaddr
+DEBUG - 2020-10-15 00:15:56,554 - jasper.verilog - Writing verilog for signal M_AXI_awprot
+DEBUG - 2020-10-15 00:15:56,554 - jasper.verilog - Writing verilog for signal M_AXI_awready
+DEBUG - 2020-10-15 00:15:56,554 - jasper.verilog - Writing verilog for signal M_AXI_awvalid
+DEBUG - 2020-10-15 00:15:56,554 - jasper.verilog - Writing verilog for signal M_AXI_bready
+DEBUG - 2020-10-15 00:15:56,554 - jasper.verilog - Writing verilog for signal M_AXI_bresp
+DEBUG - 2020-10-15 00:15:56,554 - jasper.verilog - Writing verilog for signal M_AXI_bvalid
+DEBUG - 2020-10-15 00:15:56,554 - jasper.verilog - Writing verilog for signal M_AXI_rdata
+DEBUG - 2020-10-15 00:15:56,554 - jasper.verilog - Writing verilog for signal M_AXI_rready
+DEBUG - 2020-10-15 00:15:56,554 - jasper.verilog - Writing verilog for signal M_AXI_rresp
+DEBUG - 2020-10-15 00:15:56,554 - jasper.verilog - Writing verilog for signal M_AXI_rvalid
+DEBUG - 2020-10-15 00:15:56,554 - jasper.verilog - Writing verilog for signal M_AXI_wdata
+DEBUG - 2020-10-15 00:15:56,554 - jasper.verilog - Writing verilog for signal M_AXI_wready
+DEBUG - 2020-10-15 00:15:56,554 - jasper.verilog - Writing verilog for signal M_AXI_wstrb
+DEBUG - 2020-10-15 00:15:56,554 - jasper.verilog - Writing verilog for signal M_AXI_wvalid
+DEBUG - 2020-10-15 00:15:56,554 - jasper.verilog - Writing verilog for signal clk_200
+DEBUG - 2020-10-15 00:15:56,555 - jasper.verilog - Writing verilog for signal sys_clk
+DEBUG - 2020-10-15 00:15:56,555 - jasper.verilog - Writing verilog for signal sys_clk180
+DEBUG - 2020-10-15 00:15:56,555 - jasper.verilog - Writing verilog for signal sys_clk270
+DEBUG - 2020-10-15 00:15:56,555 - jasper.verilog - Writing verilog for signal sys_clk90
+DEBUG - 2020-10-15 00:15:56,555 - jasper.verilog - Writing verilog for signal sys_clk_rst
+INFO - 2020-10-15 00:15:56,555 - jasper.toolflow - Dumping pickle of top-level Verilog module
+INFO - 2020-10-15 00:15:56,557 - jasper.toolflow - Extracting constraints from peripherals
+DEBUG - 2020-10-15 00:15:56,557 - jasper.toolflow.constraints - new PortConstraint:
+DEBUG - 2020-10-15 00:15:56,557 - jasper.toolflow.constraints -   portname: ref_clk_p0
+DEBUG - 2020-10-15 00:15:56,557 - jasper.toolflow.constraints -   iogroup: eth_clk_p
+DEBUG - 2020-10-15 00:15:56,557 - jasper.toolflow.constraints -   port_index: []
+DEBUG - 2020-10-15 00:15:56,557 - jasper.toolflow.constraints -   iogroup_index: 0
+DEBUG - 2020-10-15 00:15:56,557 - jasper.toolflow.constraints -   loc: None
+DEBUG - 2020-10-15 00:15:56,557 - jasper.toolflow.constraints -   iostd: None
+DEBUG - 2020-10-15 00:15:56,557 - jasper.toolflow.constraints - new PortConstraint:
+DEBUG - 2020-10-15 00:15:56,557 - jasper.toolflow.constraints -   portname: ref_clk_n0
+DEBUG - 2020-10-15 00:15:56,557 - jasper.toolflow.constraints -   iogroup: eth_clk_n
+DEBUG - 2020-10-15 00:15:56,557 - jasper.toolflow.constraints -   port_index: []
+DEBUG - 2020-10-15 00:15:56,557 - jasper.toolflow.constraints -   iogroup_index: 0
+DEBUG - 2020-10-15 00:15:56,557 - jasper.toolflow.constraints -   loc: None
+DEBUG - 2020-10-15 00:15:56,557 - jasper.toolflow.constraints -   iostd: None
+DEBUG - 2020-10-15 00:15:56,557 - jasper.toolflow.constraints - new PortConstraint:
+DEBUG - 2020-10-15 00:15:56,558 - jasper.toolflow.constraints -   portname: mgt_tx_p1
+DEBUG - 2020-10-15 00:15:56,558 - jasper.toolflow.constraints -   iogroup: mgt_tx_p
+DEBUG - 2020-10-15 00:15:56,558 - jasper.toolflow.constraints -   port_index: []
+DEBUG - 2020-10-15 00:15:56,558 - jasper.toolflow.constraints -   iogroup_index: 1
+DEBUG - 2020-10-15 00:15:56,558 - jasper.toolflow.constraints -   loc: None
+DEBUG - 2020-10-15 00:15:56,558 - jasper.toolflow.constraints -   iostd: None
+DEBUG - 2020-10-15 00:15:56,558 - jasper.toolflow.constraints - new PortConstraint:
+DEBUG - 2020-10-15 00:15:56,558 - jasper.toolflow.constraints -   portname: mgt_tx_n1
+DEBUG - 2020-10-15 00:15:56,558 - jasper.toolflow.constraints -   iogroup: mgt_tx_n
+DEBUG - 2020-10-15 00:15:56,558 - jasper.toolflow.constraints -   port_index: []
+DEBUG - 2020-10-15 00:15:56,558 - jasper.toolflow.constraints -   iogroup_index: 1
+DEBUG - 2020-10-15 00:15:56,558 - jasper.toolflow.constraints -   loc: None
+DEBUG - 2020-10-15 00:15:56,558 - jasper.toolflow.constraints -   iostd: None
+DEBUG - 2020-10-15 00:15:56,558 - jasper.toolflow.constraints - new PortConstraint:
+DEBUG - 2020-10-15 00:15:56,558 - jasper.toolflow.constraints -   portname: mgt_rx_p1
+DEBUG - 2020-10-15 00:15:56,558 - jasper.toolflow.constraints -   iogroup: mgt_rx_p
+DEBUG - 2020-10-15 00:15:56,558 - jasper.toolflow.constraints -   port_index: []
+DEBUG - 2020-10-15 00:15:56,558 - jasper.toolflow.constraints -   iogroup_index: 1
+DEBUG - 2020-10-15 00:15:56,558 - jasper.toolflow.constraints -   loc: None
+DEBUG - 2020-10-15 00:15:56,558 - jasper.toolflow.constraints -   iostd: None
+DEBUG - 2020-10-15 00:15:56,558 - jasper.toolflow.constraints - new PortConstraint:
+DEBUG - 2020-10-15 00:15:56,559 - jasper.toolflow.constraints -   portname: mgt_rx_n1
+DEBUG - 2020-10-15 00:15:56,559 - jasper.toolflow.constraints -   iogroup: mgt_rx_n
+DEBUG - 2020-10-15 00:15:56,559 - jasper.toolflow.constraints -   port_index: []
+DEBUG - 2020-10-15 00:15:56,559 - jasper.toolflow.constraints -   iogroup_index: 1
+DEBUG - 2020-10-15 00:15:56,559 - jasper.toolflow.constraints -   loc: None
+DEBUG - 2020-10-15 00:15:56,559 - jasper.toolflow.constraints -   iostd: None
+DEBUG - 2020-10-15 00:15:56,559 - jasper.toolflow.constraints - New clock constraint
+DEBUG - 2020-10-15 00:15:56,559 - jasper.toolflow.constraints - clock signal: ref_clk_p0
+DEBUG - 2020-10-15 00:15:56,559 - jasper.toolflow.constraints - name: ethclk0
+DEBUG - 2020-10-15 00:15:56,559 - jasper.toolflow.constraints - freq: 156.25
+DEBUG - 2020-10-15 00:15:56,559 - jasper.toolflow.constraints - period: None
+DEBUG - 2020-10-15 00:15:56,559 - jasper.toolflow.constraints - port_en: True
+DEBUG - 2020-10-15 00:15:56,559 - jasper.toolflow.constraints - waveform_min: 0.0
+DEBUG - 2020-10-15 00:15:56,559 - jasper.toolflow.constraints - waveform_max: None
+DEBUG - 2020-10-15 00:15:56,559 - jasper.toolflow.constraints - virtual_en: False
+DEBUG - 2020-10-15 00:15:56,559 - jasper.toolflow.constraints - new PortConstraint:
+DEBUG - 2020-10-15 00:15:56,559 - jasper.toolflow.constraints -   portname: tengbe_test_led0_gbe0_pulse_tx_ext
+DEBUG - 2020-10-15 00:15:56,559 - jasper.toolflow.constraints -   iogroup: led
+DEBUG - 2020-10-15 00:15:56,559 - jasper.toolflow.constraints -   port_index: [0]
+DEBUG - 2020-10-15 00:15:56,559 - jasper.toolflow.constraints -   iogroup_index: [0]
+DEBUG - 2020-10-15 00:15:56,559 - jasper.toolflow.constraints -   loc: None
+DEBUG - 2020-10-15 00:15:56,559 - jasper.toolflow.constraints -   iostd: None
+DEBUG - 2020-10-15 00:15:56,560 - jasper.toolflow.constraints - New set max delay constraint
+DEBUG - 2020-10-15 00:15:56,560 - jasper.toolflow.constraints - source path: None
+DEBUG - 2020-10-15 00:15:56,560 - jasper.toolflow.constraints - destination path: [get_ports {tengbe_test_led0_gbe0_pulse_tx_ext[*]}]
+DEBUG - 2020-10-15 00:15:56,560 - jasper.toolflow.constraints - constraint delay: 1.0
+DEBUG - 2020-10-15 00:15:56,560 - jasper.toolflow.constraints - New set max delay constraint
+DEBUG - 2020-10-15 00:15:56,560 - jasper.toolflow.constraints - source path: None
+DEBUG - 2020-10-15 00:15:56,560 - jasper.toolflow.constraints - destination path: [get_ports {tengbe_test_led0_gbe0_pulse_tx_ext[*]}]
+DEBUG - 2020-10-15 00:15:56,560 - jasper.toolflow.constraints - constraint delay: 1.0
+DEBUG - 2020-10-15 00:15:56,560 - jasper.toolflow.constraints - New false path constraint
+DEBUG - 2020-10-15 00:15:56,560 - jasper.toolflow.constraints - source path: None
+DEBUG - 2020-10-15 00:15:56,560 - jasper.toolflow.constraints - destination path: [get_ports {tengbe_test_led0_gbe0_pulse_tx_ext[*]}]
+DEBUG - 2020-10-15 00:15:56,560 - jasper.toolflow.constraints - new PortConstraint:
+DEBUG - 2020-10-15 00:15:56,560 - jasper.toolflow.constraints -   portname: tengbe_test_led1_gbe0_up_ext
+DEBUG - 2020-10-15 00:15:56,560 - jasper.toolflow.constraints -   iogroup: led
+DEBUG - 2020-10-15 00:15:56,560 - jasper.toolflow.constraints -   port_index: [0]
+DEBUG - 2020-10-15 00:15:56,560 - jasper.toolflow.constraints -   iogroup_index: [1]
+DEBUG - 2020-10-15 00:15:56,560 - jasper.toolflow.constraints -   loc: None
+DEBUG - 2020-10-15 00:15:56,560 - jasper.toolflow.constraints -   iostd: None
+DEBUG - 2020-10-15 00:15:56,560 - jasper.toolflow.constraints - New set max delay constraint
+DEBUG - 2020-10-15 00:15:56,560 - jasper.toolflow.constraints - source path: None
+DEBUG - 2020-10-15 00:15:56,560 - jasper.toolflow.constraints - destination path: [get_ports {tengbe_test_led1_gbe0_up_ext[*]}]
+DEBUG - 2020-10-15 00:15:56,560 - jasper.toolflow.constraints - constraint delay: 1.0
+DEBUG - 2020-10-15 00:15:56,561 - jasper.toolflow.constraints - New set max delay constraint
+DEBUG - 2020-10-15 00:15:56,561 - jasper.toolflow.constraints - source path: None
+DEBUG - 2020-10-15 00:15:56,561 - jasper.toolflow.constraints - destination path: [get_ports {tengbe_test_led1_gbe0_up_ext[*]}]
+DEBUG - 2020-10-15 00:15:56,561 - jasper.toolflow.constraints - constraint delay: 1.0
+DEBUG - 2020-10-15 00:15:56,561 - jasper.toolflow.constraints - New false path constraint
+DEBUG - 2020-10-15 00:15:56,561 - jasper.toolflow.constraints - source path: None
+DEBUG - 2020-10-15 00:15:56,561 - jasper.toolflow.constraints - destination path: [get_ports {tengbe_test_led1_gbe0_up_ext[*]}]
+DEBUG - 2020-10-15 00:15:56,561 - jasper.toolflow.constraints - new PortConstraint:
+DEBUG - 2020-10-15 00:15:56,561 - jasper.toolflow.constraints -   portname: clk_100_p
+DEBUG - 2020-10-15 00:15:56,561 - jasper.toolflow.constraints -   iogroup: clk_100_p
+DEBUG - 2020-10-15 00:15:56,561 - jasper.toolflow.constraints -   port_index: []
+DEBUG - 2020-10-15 00:15:56,561 - jasper.toolflow.constraints -   iogroup_index: [0]
+DEBUG - 2020-10-15 00:15:56,561 - jasper.toolflow.constraints -   loc: None
+DEBUG - 2020-10-15 00:15:56,561 - jasper.toolflow.constraints -   iostd: None
+DEBUG - 2020-10-15 00:15:56,561 - jasper.toolflow.constraints - New clock constraint
+DEBUG - 2020-10-15 00:15:56,561 - jasper.toolflow.constraints - clock signal: clk_100_p
+DEBUG - 2020-10-15 00:15:56,561 - jasper.toolflow.constraints - name: clk_100_p
+DEBUG - 2020-10-15 00:15:56,561 - jasper.toolflow.constraints - freq: None
+DEBUG - 2020-10-15 00:15:56,561 - jasper.toolflow.constraints - period: 7.8125
+DEBUG - 2020-10-15 00:15:56,561 - jasper.toolflow.constraints - port_en: True
+DEBUG - 2020-10-15 00:15:56,561 - jasper.toolflow.constraints - waveform_min: 0.0
+DEBUG - 2020-10-15 00:15:56,561 - jasper.toolflow.constraints - waveform_max: 3.90625
+DEBUG - 2020-10-15 00:15:56,561 - jasper.toolflow.constraints - virtual_en: False
+DEBUG - 2020-10-15 00:15:56,562 - jasper.toolflow.constraints - New clock group constraint
+DEBUG - 2020-10-15 00:15:56,562 - jasper.toolflow.constraints - clock name group 1: -of_objects [get_pins zcu111_infr_inst/user_clk_mmcm_inst/CLKOUT0]
+DEBUG - 2020-10-15 00:15:56,562 - jasper.toolflow.constraints - clock name group 2: -of_objects [get_pins zcu111_inst/zynq_ultra_ps_e_0/U0/PS8_i/PLCLK[0]]
+DEBUG - 2020-10-15 00:15:56,562 - jasper.toolflow.constraints - clock domain relationship: asynchronous
+DEBUG - 2020-10-15 00:15:56,562 - jasper.toolflow.constraints - New clock group constraint
+DEBUG - 2020-10-15 00:15:56,562 - jasper.toolflow.constraints - clock name group 1: -of_objects [get_pins zcu111_inst/zynq_ultra_ps_e_0/U0/PS8_i/PLCLK[0]]
+DEBUG - 2020-10-15 00:15:56,562 - jasper.toolflow.constraints - clock name group 2: -of_objects [get_pins zcu111_infr_inst/user_clk_mmcm_inst/CLKOUT0]
+DEBUG - 2020-10-15 00:15:56,562 - jasper.toolflow.constraints - clock domain relationship: asynchronous
+INFO - 2020-10-15 00:15:56,562 - jasper.toolflow - Generating physical constraints
+DEBUG - 2020-10-15 00:15:56,562 - jasper.toolflow.constraints - Attempting to get physical constraints for port ref_clk_p0 on eth_clk_p 
+DEBUG - 2020-10-15 00:15:56,562 - jasper.toolflow.constraints - Setting pin loc: ref_clk_p0 Y31
+DEBUG - 2020-10-15 00:15:56,562 - jasper.toolflow.constraints - Setting pin iostd: ref_clk_p0 None
+DEBUG - 2020-10-15 00:15:56,562 - jasper.toolflow.constraints - Attempting to get physical constraints for port ref_clk_n0 on eth_clk_n 
+DEBUG - 2020-10-15 00:15:56,562 - jasper.toolflow.constraints - Setting pin loc: ref_clk_n0 Y32
+DEBUG - 2020-10-15 00:15:56,562 - jasper.toolflow.constraints - Setting pin iostd: ref_clk_n0 None
+DEBUG - 2020-10-15 00:15:56,562 - jasper.toolflow.constraints - Attempting to get physical constraints for port mgt_tx_p1 on mgt_tx_p 
+DEBUG - 2020-10-15 00:15:56,562 - jasper.toolflow.constraints - Setting pin loc: mgt_tx_p1 V35
+DEBUG - 2020-10-15 00:15:56,562 - jasper.toolflow.constraints - Setting pin iostd: mgt_tx_p1 None
+DEBUG - 2020-10-15 00:15:56,562 - jasper.toolflow.constraints - Attempting to get physical constraints for port mgt_tx_n1 on mgt_tx_n 
+DEBUG - 2020-10-15 00:15:56,562 - jasper.toolflow.constraints - Setting pin loc: mgt_tx_n1 V36
+DEBUG - 2020-10-15 00:15:56,563 - jasper.toolflow.constraints - Setting pin iostd: mgt_tx_n1 None
+DEBUG - 2020-10-15 00:15:56,563 - jasper.toolflow.constraints - Attempting to get physical constraints for port mgt_rx_p1 on mgt_rx_p 
+DEBUG - 2020-10-15 00:15:56,563 - jasper.toolflow.constraints - Setting pin loc: mgt_rx_p1 W38
+DEBUG - 2020-10-15 00:15:56,563 - jasper.toolflow.constraints - Setting pin iostd: mgt_rx_p1 None
+DEBUG - 2020-10-15 00:15:56,563 - jasper.toolflow.constraints - Attempting to get physical constraints for port mgt_rx_n1 on mgt_rx_n 
+DEBUG - 2020-10-15 00:15:56,563 - jasper.toolflow.constraints - Setting pin loc: mgt_rx_n1 W39
+DEBUG - 2020-10-15 00:15:56,563 - jasper.toolflow.constraints - Setting pin iostd: mgt_rx_n1 None
+DEBUG - 2020-10-15 00:15:56,563 - jasper.toolflow.constraints - Attempting to get physical constraints for port tengbe_test_led0_gbe0_pulse_tx_ext on led 
+DEBUG - 2020-10-15 00:15:56,563 - jasper.toolflow.constraints - Setting pin loc: tengbe_test_led0_gbe0_pulse_tx_ext AR13
+DEBUG - 2020-10-15 00:15:56,563 - jasper.toolflow.constraints - Setting pin iostd: tengbe_test_led0_gbe0_pulse_tx_ext LVCMOS18
+DEBUG - 2020-10-15 00:15:56,563 - jasper.toolflow.constraints - Attempting to get physical constraints for port tengbe_test_led1_gbe0_up_ext on led 
+DEBUG - 2020-10-15 00:15:56,563 - jasper.toolflow.constraints - Setting pin loc: tengbe_test_led1_gbe0_up_ext AP13
+DEBUG - 2020-10-15 00:15:56,563 - jasper.toolflow.constraints - Setting pin iostd: tengbe_test_led1_gbe0_up_ext LVCMOS18
+DEBUG - 2020-10-15 00:15:56,563 - jasper.toolflow.constraints - Attempting to get physical constraints for port clk_100_p on clk_100_p 
+DEBUG - 2020-10-15 00:15:56,563 - jasper.toolflow.constraints - Setting pin loc: clk_100_p AL16
+DEBUG - 2020-10-15 00:15:56,563 - jasper.toolflow.constraints - Setting pin iostd: clk_100_p LVDS
+DEBUG - 2020-10-15 00:15:56,563 - jasper.toolflow - Opening /home/wei/casper/casper_mlib/tutorials_devel/zcu111/mlib_devel/jasper_library/hdl_sources/zcu111/core_info.tab
+DEBUG - 2020-10-15 00:15:56,563 - jasper.toolflow - Adding core_info.tab entry for gbe0
+DEBUG - 2020-10-15 00:15:56,563 - jasper.toolflow - Adding core_info.tab entry for tx_snapshot_ss_bram
+DEBUG - 2020-10-15 00:15:56,564 - jasper.toolflow - Adding core_info.tab entry for dest_ip
+DEBUG - 2020-10-15 00:15:56,564 - jasper.toolflow - Adding core_info.tab entry for dest_port
+DEBUG - 2020-10-15 00:15:56,564 - jasper.toolflow - Adding core_info.tab entry for gbe0_rxbadctr
+DEBUG - 2020-10-15 00:15:56,564 - jasper.toolflow - Adding core_info.tab entry for gbe0_rxctr
+DEBUG - 2020-10-15 00:15:56,564 - jasper.toolflow - Adding core_info.tab entry for gbe0_rxeofctr
+DEBUG - 2020-10-15 00:15:56,564 - jasper.toolflow - Adding core_info.tab entry for gbe0_rxofctr
+DEBUG - 2020-10-15 00:15:56,564 - jasper.toolflow - Adding core_info.tab entry for gbe0_rxvldctr
+DEBUG - 2020-10-15 00:15:56,564 - jasper.toolflow - Adding core_info.tab entry for gbe0_txctr
+DEBUG - 2020-10-15 00:15:56,564 - jasper.toolflow - Adding core_info.tab entry for gbe0_txfullctr
+DEBUG - 2020-10-15 00:15:56,564 - jasper.toolflow - Adding core_info.tab entry for gbe0_txofctr
+DEBUG - 2020-10-15 00:15:56,564 - jasper.toolflow - Adding core_info.tab entry for gbe0_txvldctr
+DEBUG - 2020-10-15 00:15:56,564 - jasper.toolflow - Adding core_info.tab entry for gbe0_linkup
+DEBUG - 2020-10-15 00:15:56,564 - jasper.toolflow - Adding core_info.tab entry for gbe0_tx_cnt
+DEBUG - 2020-10-15 00:15:56,564 - jasper.toolflow - Adding core_info.tab entry for pkt_sim_enable
+DEBUG - 2020-10-15 00:15:56,564 - jasper.toolflow - Adding core_info.tab entry for pkt_sim_payload_len
+DEBUG - 2020-10-15 00:15:56,564 - jasper.toolflow - Adding core_info.tab entry for pkt_sim_period
+DEBUG - 2020-10-15 00:15:56,564 - jasper.toolflow - Adding core_info.tab entry for rst
+DEBUG - 2020-10-15 00:15:56,564 - jasper.toolflow - Adding core_info.tab entry for tx_snapshot_ss_ctrl
+DEBUG - 2020-10-15 00:15:56,564 - jasper.toolflow - Adding core_info.tab entry for tx_snapshot_ss_status
+DEBUG - 2020-10-15 00:15:56,564 - jasper.toolflow - Adding core_info.tab entry for sys_block
+DEBUG - 2020-10-15 00:15:56,564 - jasper.toolflow - Opening /home/wei/casper/casper_mlib/tutorials_devel/zcu111/mlib_devel/jasper_library/hdl_sources/zcu111/core_info.tab
+DEBUG - 2020-10-15 00:15:56,565 - jasper.toolflow - Opening /home/wei/casper/casper_mlib/tutorials_devel/zcu111/mlib_devel/jasper_library/hdl_sources/zcu111/core_info.jam.tab
+DEBUG - 2020-10-15 00:15:56,565 - jasper.toolflow - Adding core_info.jam.tab entry for gbe0
+DEBUG - 2020-10-15 00:15:56,565 - jasper.toolflow - Adding core_info.jam.tab entry for tx_snapshot_ss_bram
+DEBUG - 2020-10-15 00:15:56,565 - jasper.toolflow - Adding core_info.jam.tab entry for dest_ip
+DEBUG - 2020-10-15 00:15:56,565 - jasper.toolflow - Adding core_info.jam.tab entry for dest_port
+DEBUG - 2020-10-15 00:15:56,565 - jasper.toolflow - Adding core_info.jam.tab entry for gbe0_rxbadctr
+DEBUG - 2020-10-15 00:15:56,565 - jasper.toolflow - Adding core_info.jam.tab entry for gbe0_rxctr
+DEBUG - 2020-10-15 00:15:56,565 - jasper.toolflow - Adding core_info.jam.tab entry for gbe0_rxeofctr
+DEBUG - 2020-10-15 00:15:56,565 - jasper.toolflow - Adding core_info.jam.tab entry for gbe0_rxofctr
+DEBUG - 2020-10-15 00:15:56,565 - jasper.toolflow - Adding core_info.jam.tab entry for gbe0_rxvldctr
+DEBUG - 2020-10-15 00:15:56,565 - jasper.toolflow - Adding core_info.jam.tab entry for gbe0_txctr
+DEBUG - 2020-10-15 00:15:56,565 - jasper.toolflow - Adding core_info.jam.tab entry for gbe0_txfullctr
+DEBUG - 2020-10-15 00:15:56,565 - jasper.toolflow - Adding core_info.jam.tab entry for gbe0_txofctr
+DEBUG - 2020-10-15 00:15:56,565 - jasper.toolflow - Adding core_info.jam.tab entry for gbe0_txvldctr
+DEBUG - 2020-10-15 00:15:56,565 - jasper.toolflow - Adding core_info.jam.tab entry for gbe0_linkup
+DEBUG - 2020-10-15 00:15:56,565 - jasper.toolflow - Adding core_info.jam.tab entry for gbe0_tx_cnt
+DEBUG - 2020-10-15 00:15:56,565 - jasper.toolflow - Adding core_info.jam.tab entry for pkt_sim_enable
+DEBUG - 2020-10-15 00:15:56,565 - jasper.toolflow - Adding core_info.jam.tab entry for pkt_sim_payload_len
+DEBUG - 2020-10-15 00:15:56,566 - jasper.toolflow - Adding core_info.jam.tab entry for pkt_sim_period
+DEBUG - 2020-10-15 00:15:56,566 - jasper.toolflow - Adding core_info.jam.tab entry for rst
+DEBUG - 2020-10-15 00:15:56,566 - jasper.toolflow - Adding core_info.jam.tab entry for tx_snapshot_ss_ctrl
+DEBUG - 2020-10-15 00:15:56,566 - jasper.toolflow - Adding core_info.jam.tab entry for tx_snapshot_ss_status
+DEBUG - 2020-10-15 00:15:56,566 - jasper.toolflow - Adding core_info.jam.tab entry for sys_block
+DEBUG - 2020-10-15 00:15:56,566 - jasper.toolflow - Opening /home/wei/casper/casper_mlib/tutorials_devel/zcu111/mlib_devel/jasper_library/hdl_sources/zcu111/core_info.jam.tab
+INFO - 2020-10-15 00:15:56,643 - jasper.toolflow - Carrying out constraints rule check
+WARNING - 2020-10-15 00:15:56,644 - jasper.toolflow - Port clk_100_n (instantiated by zcu111: ZCU111) has no constraints!
+INFO - 2020-10-15 00:15:56,644 - jasper.toolflow - Constraint rule check complete
+DEBUG - 2020-10-15 00:15:56,667 - jasper.toolflow.backend - Adding tcl command: puts "Starting tcl script"
+DEBUG - 2020-10-15 00:15:56,667 - jasper.toolflow.backend - Adding tcl command: create_project -f myproj /home/wei/casper/casper_mlib/tutorials_devel/zcu111/raw_axi_test/tengbe_test/tengbe_test/myproj -part xczu28dr-ffvg1517-2-e
+DEBUG - 2020-10-15 00:15:56,667 - jasper.toolflow.backend - Adding tcl command: set_property target_language VHDL [current_project]
+DEBUG - 2020-10-15 00:15:56,715 - jasper.toolflow.backend - Adding source file: /home/wei/casper/casper_mlib/tutorials_devel/zcu111/raw_axi_test/tengbe_test/tengbe_test/top.v
+DEBUG - 2020-10-15 00:15:56,715 - jasper.toolflow.backend - Adding tcl command: import_files -force /home/wei/casper/casper_mlib/tutorials_devel/zcu111/raw_axi_test/tengbe_test/tengbe_test/top.v
+DEBUG - 2020-10-15 00:15:56,715 - jasper.toolflow.backend - Adding source file: /home/wei/casper/casper_mlib/tutorials_devel/zcu111/mlib_devel/jasper_library/hdl_sources/wb_register_ppc2simulink
+DEBUG - 2020-10-15 00:15:56,715 - jasper.toolflow.backend - Adding tcl command: import_files -force /home/wei/casper/casper_mlib/tutorials_devel/zcu111/mlib_devel/jasper_library/hdl_sources/wb_register_ppc2simulink
+DEBUG - 2020-10-15 00:15:56,715 - jasper.toolflow.backend - Adding source file: /home/wei/casper/casper_mlib/tutorials_devel/zcu111/mlib_devel/jasper_library/hdl_sources/kat_ten_gb_eth/tge_tx.v
+DEBUG - 2020-10-15 00:15:56,715 - jasper.toolflow.backend - Adding tcl command: import_files -force /home/wei/casper/casper_mlib/tutorials_devel/zcu111/mlib_devel/jasper_library/hdl_sources/kat_ten_gb_eth/tge_tx.v
+DEBUG - 2020-10-15 00:15:56,715 - jasper.toolflow.backend - Adding source file: /home/wei/casper/casper_mlib/tutorials_devel/zcu111/mlib_devel/jasper_library/hdl_sources/kat_ten_gb_eth/tx_fifo_ext.xci
+DEBUG - 2020-10-15 00:15:56,715 - jasper.toolflow.backend - Adding tcl command: import_files -force /home/wei/casper/casper_mlib/tutorials_devel/zcu111/mlib_devel/jasper_library/hdl_sources/kat_ten_gb_eth/tx_fifo_ext.xci
+DEBUG - 2020-10-15 00:15:56,715 - jasper.toolflow.backend - Adding source file: /home/wei/casper/casper_mlib/tutorials_devel/zcu111/mlib_devel/jasper_library/hdl_sources/kat_ten_gb_eth/kat_ten_gb_eth.v
+DEBUG - 2020-10-15 00:15:56,715 - jasper.toolflow.backend - Adding tcl command: import_files -force /home/wei/casper/casper_mlib/tutorials_devel/zcu111/mlib_devel/jasper_library/hdl_sources/kat_ten_gb_eth/kat_ten_gb_eth.v
+DEBUG - 2020-10-15 00:15:56,715 - jasper.toolflow.backend - Adding source file: /home/wei/casper/casper_mlib/tutorials_devel/zcu111/mlib_devel/jasper_library/hdl_sources/kat_ten_gb_eth/tb
+DEBUG - 2020-10-15 00:15:56,715 - jasper.toolflow.backend - Adding tcl command: import_files -force /home/wei/casper/casper_mlib/tutorials_devel/zcu111/mlib_devel/jasper_library/hdl_sources/kat_ten_gb_eth/tb
+DEBUG - 2020-10-15 00:15:56,715 - jasper.toolflow.backend - Adding source file: /home/wei/casper/casper_mlib/tutorials_devel/zcu111/mlib_devel/jasper_library/hdl_sources/kat_ten_gb_eth/ten_gig_eth_mac_UCB.vhd
+DEBUG - 2020-10-15 00:15:56,715 - jasper.toolflow.backend - Adding tcl command: import_files -force /home/wei/casper/casper_mlib/tutorials_devel/zcu111/mlib_devel/jasper_library/hdl_sources/kat_ten_gb_eth/ten_gig_eth_mac_UCB.vhd
+DEBUG - 2020-10-15 00:15:56,715 - jasper.toolflow.backend - Adding source file: /home/wei/casper/casper_mlib/tutorials_devel/zcu111/mlib_devel/jasper_library/hdl_sources/kat_ten_gb_eth/arp_cache.xci
+DEBUG - 2020-10-15 00:15:56,715 - jasper.toolflow.backend - Adding tcl command: import_files -force /home/wei/casper/casper_mlib/tutorials_devel/zcu111/mlib_devel/jasper_library/hdl_sources/kat_ten_gb_eth/arp_cache.xci
+DEBUG - 2020-10-15 00:15:56,715 - jasper.toolflow.backend - Adding source file: /home/wei/casper/casper_mlib/tutorials_devel/zcu111/mlib_devel/jasper_library/hdl_sources/kat_ten_gb_eth/tx_packet_ctrl_fifo.xci
+DEBUG - 2020-10-15 00:15:56,715 - jasper.toolflow.backend - Adding tcl command: import_files -force /home/wei/casper/casper_mlib/tutorials_devel/zcu111/mlib_devel/jasper_library/hdl_sources/kat_ten_gb_eth/tx_packet_ctrl_fifo.xci
+DEBUG - 2020-10-15 00:15:56,716 - jasper.toolflow.backend - Adding source file: /home/wei/casper/casper_mlib/tutorials_devel/zcu111/mlib_devel/jasper_library/hdl_sources/kat_ten_gb_eth/rx_packet_ctrl_fifo.xci
+DEBUG - 2020-10-15 00:15:56,716 - jasper.toolflow.backend - Adding tcl command: import_files -force /home/wei/casper/casper_mlib/tutorials_devel/zcu111/mlib_devel/jasper_library/hdl_sources/kat_ten_gb_eth/rx_packet_ctrl_fifo.xci
+DEBUG - 2020-10-15 00:15:56,716 - jasper.toolflow.backend - Adding source file: /home/wei/casper/casper_mlib/tutorials_devel/zcu111/mlib_devel/jasper_library/hdl_sources/kat_ten_gb_eth/wb_attach.v
+DEBUG - 2020-10-15 00:15:56,716 - jasper.toolflow.backend - Adding tcl command: import_files -force /home/wei/casper/casper_mlib/tutorials_devel/zcu111/mlib_devel/jasper_library/hdl_sources/kat_ten_gb_eth/wb_attach.v
+DEBUG - 2020-10-15 00:15:56,716 - jasper.toolflow.backend - Adding source file: /home/wei/casper/casper_mlib/tutorials_devel/zcu111/mlib_devel/jasper_library/hdl_sources/kat_ten_gb_eth/tx_packet_fifo.xci
+DEBUG - 2020-10-15 00:15:56,716 - jasper.toolflow.backend - Adding tcl command: import_files -force /home/wei/casper/casper_mlib/tutorials_devel/zcu111/mlib_devel/jasper_library/hdl_sources/kat_ten_gb_eth/tx_packet_fifo.xci
+DEBUG - 2020-10-15 00:15:56,716 - jasper.toolflow.backend - Adding source file: /home/wei/casper/casper_mlib/tutorials_devel/zcu111/mlib_devel/jasper_library/hdl_sources/kat_ten_gb_eth/tge_rx.v
+DEBUG - 2020-10-15 00:15:56,716 - jasper.toolflow.backend - Adding tcl command: import_files -force /home/wei/casper/casper_mlib/tutorials_devel/zcu111/mlib_devel/jasper_library/hdl_sources/kat_ten_gb_eth/tge_rx.v
+DEBUG - 2020-10-15 00:15:56,716 - jasper.toolflow.backend - Adding source file: /home/wei/casper/casper_mlib/tutorials_devel/zcu111/mlib_devel/jasper_library/hdl_sources/kat_ten_gb_eth/rx_packet_fifo_bram.xci
+DEBUG - 2020-10-15 00:15:56,716 - jasper.toolflow.backend - Adding tcl command: import_files -force /home/wei/casper/casper_mlib/tutorials_devel/zcu111/mlib_devel/jasper_library/hdl_sources/kat_ten_gb_eth/rx_packet_fifo_bram.xci
+DEBUG - 2020-10-15 00:15:56,716 - jasper.toolflow.backend - Adding source file: /home/wei/casper/casper_mlib/tutorials_devel/zcu111/mlib_devel/jasper_library/hdl_sources/kat_ten_gb_eth/cpu_buffer.xci
+DEBUG - 2020-10-15 00:15:56,716 - jasper.toolflow.backend - Adding tcl command: import_files -force /home/wei/casper/casper_mlib/tutorials_devel/zcu111/mlib_devel/jasper_library/hdl_sources/kat_ten_gb_eth/cpu_buffer.xci
+DEBUG - 2020-10-15 00:15:56,716 - jasper.toolflow.backend - Adding source file: /home/wei/casper/casper_mlib/tutorials_devel/zcu111/mlib_devel/jasper_library/hdl_sources/kat_ten_gb_eth/rx_packet_fifo_dist.xci
+DEBUG - 2020-10-15 00:15:56,716 - jasper.toolflow.backend - Adding tcl command: import_files -force /home/wei/casper/casper_mlib/tutorials_devel/zcu111/mlib_devel/jasper_library/hdl_sources/kat_ten_gb_eth/rx_packet_fifo_dist.xci
+DEBUG - 2020-10-15 00:15:56,716 - jasper.toolflow.backend - Adding source file: /home/wei/casper/casper_mlib/tutorials_devel/zcu111/mlib_devel/jasper_library/hdl_sources/tengbaser_phy_ultrascale/tengbaser_phy_ultrascale.xci
+DEBUG - 2020-10-15 00:15:56,716 - jasper.toolflow.backend - Adding tcl command: import_files -force /home/wei/casper/casper_mlib/tutorials_devel/zcu111/mlib_devel/jasper_library/hdl_sources/tengbaser_phy_ultrascale/tengbaser_phy_ultrascale.xci
+DEBUG - 2020-10-15 00:15:56,716 - jasper.toolflow.backend - Adding source file: /home/wei/casper/casper_mlib/tutorials_devel/zcu111/mlib_devel/jasper_library/hdl_sources/tengbaser_infrastructure_ultrascale/xxv_ethernet_1_reset_wrapper.v
+DEBUG - 2020-10-15 00:15:56,716 - jasper.toolflow.backend - Adding tcl command: import_files -force /home/wei/casper/casper_mlib/tutorials_devel/zcu111/mlib_devel/jasper_library/hdl_sources/tengbaser_infrastructure_ultrascale/xxv_ethernet_1_reset_wrapper.v
+DEBUG - 2020-10-15 00:15:56,716 - jasper.toolflow.backend - Adding source file: /home/wei/casper/casper_mlib/tutorials_devel/zcu111/mlib_devel/jasper_library/hdl_sources/tengbaser_infrastructure_ultrascale/xxv_ethernet_1_gt_gtye4_common_wrapper.v
+DEBUG - 2020-10-15 00:15:56,716 - jasper.toolflow.backend - Adding tcl command: import_files -force /home/wei/casper/casper_mlib/tutorials_devel/zcu111/mlib_devel/jasper_library/hdl_sources/tengbaser_infrastructure_ultrascale/xxv_ethernet_1_gt_gtye4_common_wrapper.v
+DEBUG - 2020-10-15 00:15:56,717 - jasper.toolflow.backend - Adding source file: /home/wei/casper/casper_mlib/tutorials_devel/zcu111/mlib_devel/jasper_library/hdl_sources/tengbaser_infrastructure_ultrascale/tengbaser_infrastructure_ultrascale.v
+DEBUG - 2020-10-15 00:15:56,717 - jasper.toolflow.backend - Adding tcl command: import_files -force /home/wei/casper/casper_mlib/tutorials_devel/zcu111/mlib_devel/jasper_library/hdl_sources/tengbaser_infrastructure_ultrascale/tengbaser_infrastructure_ultrascale.v
+DEBUG - 2020-10-15 00:15:56,717 - jasper.toolflow.backend - Adding source file: /home/wei/casper/casper_mlib/tutorials_devel/zcu111/mlib_devel/jasper_library/hdl_sources/tengbaser_infrastructure_ultrascale/xxv_ethernet_1_clocking_wrapper.v
+DEBUG - 2020-10-15 00:15:56,717 - jasper.toolflow.backend - Adding tcl command: import_files -force /home/wei/casper/casper_mlib/tutorials_devel/zcu111/mlib_devel/jasper_library/hdl_sources/tengbaser_infrastructure_ultrascale/xxv_ethernet_1_clocking_wrapper.v
+DEBUG - 2020-10-15 00:15:56,717 - jasper.toolflow.backend - Adding source file: /home/wei/casper/casper_mlib/tutorials_devel/zcu111/mlib_devel/jasper_library/hdl_sources/tengbaser_infrastructure_ultrascale/gtwizard_ultrascale_v1_7_gtye4_common.v
+DEBUG - 2020-10-15 00:15:56,717 - jasper.toolflow.backend - Adding tcl command: import_files -force /home/wei/casper/casper_mlib/tutorials_devel/zcu111/mlib_devel/jasper_library/hdl_sources/tengbaser_infrastructure_ultrascale/gtwizard_ultrascale_v1_7_gtye4_common.v
+DEBUG - 2020-10-15 00:15:56,717 - jasper.toolflow.backend - Adding source file: /home/wei/casper/casper_mlib/tutorials_devel/zcu111/mlib_devel/jasper_library/hdl_sources/tengbaser_infrastructure_ultrascale/xxv_ethernet_1_common_wrapper.v
+DEBUG - 2020-10-15 00:15:56,717 - jasper.toolflow.backend - Adding tcl command: import_files -force /home/wei/casper/casper_mlib/tutorials_devel/zcu111/mlib_devel/jasper_library/hdl_sources/tengbaser_infrastructure_ultrascale/xxv_ethernet_1_common_wrapper.v
+DEBUG - 2020-10-15 00:15:56,717 - jasper.toolflow.backend - Adding source file: /home/wei/casper/casper_mlib/tutorials_devel/zcu111/mlib_devel/jasper_library/hdl_sources/tengbaser_infrastructure_ultrascale/axi_slave_wishbone_classic_master.vhd
+DEBUG - 2020-10-15 00:15:56,717 - jasper.toolflow.backend - Adding tcl command: import_files -force /home/wei/casper/casper_mlib/tutorials_devel/zcu111/mlib_devel/jasper_library/hdl_sources/tengbaser_infrastructure_ultrascale/axi_slave_wishbone_classic_master.vhd
+DEBUG - 2020-10-15 00:15:56,717 - jasper.toolflow.backend - Adding source file: /home/wei/casper/casper_mlib/tutorials_devel/zcu111/mlib_devel/jasper_library/hdl_sources/wb_register_simulink2ppc
+DEBUG - 2020-10-15 00:15:56,717 - jasper.toolflow.backend - Adding tcl command: import_files -force /home/wei/casper/casper_mlib/tutorials_devel/zcu111/mlib_devel/jasper_library/hdl_sources/wb_register_simulink2ppc
+DEBUG - 2020-10-15 00:15:56,717 - jasper.toolflow.backend - Adding source file: /home/wei/casper/casper_mlib/tutorials_devel/zcu111/mlib_devel/jasper_library/hdl_sources/gpio_simulink2ext
+DEBUG - 2020-10-15 00:15:56,717 - jasper.toolflow.backend - Adding tcl command: import_files -force /home/wei/casper/casper_mlib/tutorials_devel/zcu111/mlib_devel/jasper_library/hdl_sources/gpio_simulink2ext
+DEBUG - 2020-10-15 00:15:56,717 - jasper.toolflow.backend - Adding source file: /home/wei/casper/casper_mlib/tutorials_devel/zcu111/mlib_devel/jasper_library/hdl_sources/infrastructure/zcu111_infrastructure.v
+DEBUG - 2020-10-15 00:15:56,717 - jasper.toolflow.backend - Adding tcl command: import_files -force /home/wei/casper/casper_mlib/tutorials_devel/zcu111/mlib_devel/jasper_library/hdl_sources/infrastructure/zcu111_infrastructure.v
+DEBUG - 2020-10-15 00:15:56,717 - jasper.toolflow.backend - Adding source file: /home/wei/casper/casper_mlib/tutorials_devel/zcu111/mlib_devel/jasper_library/hdl_sources/utils/cdc_synchroniser.vhd
+DEBUG - 2020-10-15 00:15:56,717 - jasper.toolflow.backend - Adding tcl command: import_files -force /home/wei/casper/casper_mlib/tutorials_devel/zcu111/mlib_devel/jasper_library/hdl_sources/utils/cdc_synchroniser.vhd
+DEBUG - 2020-10-15 00:15:56,717 - jasper.toolflow.backend - Adding source file: /home/wei/casper/casper_mlib/tutorials_devel/zcu111/mlib_devel/jasper_library/hdl_sources/sys_block
+DEBUG - 2020-10-15 00:15:56,717 - jasper.toolflow.backend - Adding tcl command: import_files -force /home/wei/casper/casper_mlib/tutorials_devel/zcu111/mlib_devel/jasper_library/hdl_sources/sys_block
+DEBUG - 2020-10-15 00:15:56,717 - jasper.toolflow.backend - Adding source file: /home/wei/casper/casper_mlib/tutorials_devel/zcu111/raw_axi_test/tengbe_test/tengbe_test/sysgen/hdl_netlist/tengbe_test.srcs/sources_1/imports/sysgen
+DEBUG - 2020-10-15 00:15:56,718 - jasper.toolflow.backend - Adding tcl command: import_files -force /home/wei/casper/casper_mlib/tutorials_devel/zcu111/raw_axi_test/tengbe_test/tengbe_test/sysgen/hdl_netlist/tengbe_test.srcs/sources_1/imports/sysgen
+DEBUG - 2020-10-15 00:15:56,718 - jasper.toolflow.backend - Adding source file: /home/wei/casper/casper_mlib/tutorials_devel/zcu111/raw_axi_test/tengbe_test/tengbe_test/sysgen/hdl_netlist/tengbe_test.srcs/sources_1/ip/tengbe_test_c_counter_binary_v12_0_i1/tengbe_test_c_counter_binary_v12_0_i1.xci
+DEBUG - 2020-10-15 00:15:56,718 - jasper.toolflow.backend - Adding tcl command: import_files -force /home/wei/casper/casper_mlib/tutorials_devel/zcu111/raw_axi_test/tengbe_test/tengbe_test/sysgen/hdl_netlist/tengbe_test.srcs/sources_1/ip/tengbe_test_c_counter_binary_v12_0_i1/tengbe_test_c_counter_binary_v12_0_i1.xci
+DEBUG - 2020-10-15 00:15:56,718 - jasper.toolflow.backend - Adding source file: /home/wei/casper/casper_mlib/tutorials_devel/zcu111/raw_axi_test/tengbe_test/tengbe_test/sysgen/hdl_netlist/tengbe_test.srcs/sources_1/ip/tengbe_test_c_counter_binary_v12_0_i0/tengbe_test_c_counter_binary_v12_0_i0.xci
+DEBUG - 2020-10-15 00:15:56,718 - jasper.toolflow.backend - Adding tcl command: import_files -force /home/wei/casper/casper_mlib/tutorials_devel/zcu111/raw_axi_test/tengbe_test/tengbe_test/sysgen/hdl_netlist/tengbe_test.srcs/sources_1/ip/tengbe_test_c_counter_binary_v12_0_i0/tengbe_test_c_counter_binary_v12_0_i0.xci
+DEBUG - 2020-10-15 00:15:56,718 - jasper.toolflow.backend - Adding source file: /home/wei/casper/casper_mlib/tutorials_devel/zcu111/raw_axi_test/tengbe_test/tengbe_test/sysgen/hdl_netlist/tengbe_test.srcs/sources_1/ip/tengbe_test_c_counter_binary_v12_0_i3/tengbe_test_c_counter_binary_v12_0_i3.xci
+DEBUG - 2020-10-15 00:15:56,718 - jasper.toolflow.backend - Adding tcl command: import_files -force /home/wei/casper/casper_mlib/tutorials_devel/zcu111/raw_axi_test/tengbe_test/tengbe_test/sysgen/hdl_netlist/tengbe_test.srcs/sources_1/ip/tengbe_test_c_counter_binary_v12_0_i3/tengbe_test_c_counter_binary_v12_0_i3.xci
+DEBUG - 2020-10-15 00:15:56,718 - jasper.toolflow.backend - Adding source file: /home/wei/casper/casper_mlib/tutorials_devel/zcu111/raw_axi_test/tengbe_test/tengbe_test/sysgen/hdl_netlist/tengbe_test.srcs/sources_1/ip/tengbe_test_c_counter_binary_v12_0_i2/tengbe_test_c_counter_binary_v12_0_i2.xci
+DEBUG - 2020-10-15 00:15:56,718 - jasper.toolflow.backend - Adding tcl command: import_files -force /home/wei/casper/casper_mlib/tutorials_devel/zcu111/raw_axi_test/tengbe_test/tengbe_test/sysgen/hdl_netlist/tengbe_test.srcs/sources_1/ip/tengbe_test_c_counter_binary_v12_0_i2/tengbe_test_c_counter_binary_v12_0_i2.xci
+DEBUG - 2020-10-15 00:15:56,718 - jasper.toolflow.backend - Adding source file: /home/wei/casper/casper_mlib/tutorials_devel/zcu111/raw_axi_test/tengbe_test/tengbe_test/sysgen/hdl_netlist/tengbe_test.srcs/sources_1/ip/tengbe_test_c_counter_binary_v12_0_i4/tengbe_test_c_counter_binary_v12_0_i4.xci
+DEBUG - 2020-10-15 00:15:56,718 - jasper.toolflow.backend - Adding tcl command: import_files -force /home/wei/casper/casper_mlib/tutorials_devel/zcu111/raw_axi_test/tengbe_test/tengbe_test/sysgen/hdl_netlist/tengbe_test.srcs/sources_1/ip/tengbe_test_c_counter_binary_v12_0_i4/tengbe_test_c_counter_binary_v12_0_i4.xci
+INFO - 2020-10-15 00:15:56,718 - jasper.toolflow.backend - parsing constraint <castro.PinConstraint object at 0x7fd348a7fd30>
+DEBUG - 2020-10-15 00:15:56,718 - jasper.toolflow.backend - New PortConstraint instance found: ref_clk_p0 -> eth_clk_p
+DEBUG - 2020-10-15 00:15:56,718 - jasper.toolflow.backend - Getting loc for port index 0
+DEBUG - 2020-10-15 00:15:56,718 - jasper.toolflow.backend - LOC constraint found at Y31
+DEBUG - 2020-10-15 00:15:56,718 - jasper.toolflow.backend - Getting iostd for port index 0
+INFO - 2020-10-15 00:15:56,718 - jasper.toolflow.backend - parsing constraint <castro.PinConstraint object at 0x7fd348a7fd68>
+DEBUG - 2020-10-15 00:15:56,718 - jasper.toolflow.backend - New PortConstraint instance found: ref_clk_n0 -> eth_clk_n
+DEBUG - 2020-10-15 00:15:56,719 - jasper.toolflow.backend - Getting loc for port index 0
+DEBUG - 2020-10-15 00:15:56,719 - jasper.toolflow.backend - LOC constraint found at Y32
+DEBUG - 2020-10-15 00:15:56,719 - jasper.toolflow.backend - Getting iostd for port index 0
+INFO - 2020-10-15 00:15:56,719 - jasper.toolflow.backend - parsing constraint <castro.PinConstraint object at 0x7fd348a7fda0>
+DEBUG - 2020-10-15 00:15:56,719 - jasper.toolflow.backend - New PortConstraint instance found: mgt_tx_p1 -> mgt_tx_p
+DEBUG - 2020-10-15 00:15:56,719 - jasper.toolflow.backend - Getting loc for port index 0
+DEBUG - 2020-10-15 00:15:56,719 - jasper.toolflow.backend - LOC constraint found at V35
+DEBUG - 2020-10-15 00:15:56,719 - jasper.toolflow.backend - Getting iostd for port index 0
+INFO - 2020-10-15 00:15:56,719 - jasper.toolflow.backend - parsing constraint <castro.PinConstraint object at 0x7fd348a7fdd8>
+DEBUG - 2020-10-15 00:15:56,719 - jasper.toolflow.backend - New PortConstraint instance found: mgt_tx_n1 -> mgt_tx_n
+DEBUG - 2020-10-15 00:15:56,719 - jasper.toolflow.backend - Getting loc for port index 0
+DEBUG - 2020-10-15 00:15:56,719 - jasper.toolflow.backend - LOC constraint found at V36
+DEBUG - 2020-10-15 00:15:56,719 - jasper.toolflow.backend - Getting iostd for port index 0
+INFO - 2020-10-15 00:15:56,719 - jasper.toolflow.backend - parsing constraint <castro.PinConstraint object at 0x7fd348a7fe10>
+DEBUG - 2020-10-15 00:15:56,719 - jasper.toolflow.backend - New PortConstraint instance found: mgt_rx_p1 -> mgt_rx_p
+DEBUG - 2020-10-15 00:15:56,719 - jasper.toolflow.backend - Getting loc for port index 0
+DEBUG - 2020-10-15 00:15:56,719 - jasper.toolflow.backend - LOC constraint found at W38
+DEBUG - 2020-10-15 00:15:56,719 - jasper.toolflow.backend - Getting iostd for port index 0
+INFO - 2020-10-15 00:15:56,719 - jasper.toolflow.backend - parsing constraint <castro.PinConstraint object at 0x7fd348a7fe48>
+DEBUG - 2020-10-15 00:15:56,720 - jasper.toolflow.backend - New PortConstraint instance found: mgt_rx_n1 -> mgt_rx_n
+DEBUG - 2020-10-15 00:15:56,720 - jasper.toolflow.backend - Getting loc for port index 0
+DEBUG - 2020-10-15 00:15:56,720 - jasper.toolflow.backend - LOC constraint found at W39
+DEBUG - 2020-10-15 00:15:56,720 - jasper.toolflow.backend - Getting iostd for port index 0
+INFO - 2020-10-15 00:15:56,720 - jasper.toolflow.backend - parsing constraint <castro.PinConstraint object at 0x7fd348a7fe80>
+DEBUG - 2020-10-15 00:15:56,720 - jasper.toolflow.backend - New PortConstraint instance found: tengbe_test_led0_gbe0_pulse_tx_ext -> led
+DEBUG - 2020-10-15 00:15:56,720 - jasper.toolflow.backend - Getting loc for port index 0
+DEBUG - 2020-10-15 00:15:56,720 - jasper.toolflow.backend - LOC constraint found at AR13
+DEBUG - 2020-10-15 00:15:56,720 - jasper.toolflow.backend - Getting iostd for port index 0
+DEBUG - 2020-10-15 00:15:56,720 - jasper.toolflow.backend - IOSTD constraint found: LVCMOS18
+INFO - 2020-10-15 00:15:56,720 - jasper.toolflow.backend - parsing constraint <castro.PinConstraint object at 0x7fd348a7feb8>
+DEBUG - 2020-10-15 00:15:56,720 - jasper.toolflow.backend - New PortConstraint instance found: tengbe_test_led1_gbe0_up_ext -> led
+DEBUG - 2020-10-15 00:15:56,720 - jasper.toolflow.backend - Getting loc for port index 0
+DEBUG - 2020-10-15 00:15:56,720 - jasper.toolflow.backend - LOC constraint found at AP13
+DEBUG - 2020-10-15 00:15:56,720 - jasper.toolflow.backend - Getting iostd for port index 0
+DEBUG - 2020-10-15 00:15:56,720 - jasper.toolflow.backend - IOSTD constraint found: LVCMOS18
+INFO - 2020-10-15 00:15:56,720 - jasper.toolflow.backend - parsing constraint <castro.PinConstraint object at 0x7fd348a7fef0>
+DEBUG - 2020-10-15 00:15:56,720 - jasper.toolflow.backend - New PortConstraint instance found: clk_100_p -> clk_100_p
+DEBUG - 2020-10-15 00:15:56,720 - jasper.toolflow.backend - Getting loc for port index 0
+DEBUG - 2020-10-15 00:15:56,720 - jasper.toolflow.backend - LOC constraint found at AL16
+DEBUG - 2020-10-15 00:15:56,721 - jasper.toolflow.backend - Getting iostd for port index 0
+DEBUG - 2020-10-15 00:15:56,721 - jasper.toolflow.backend - IOSTD constraint found: LVDS
+INFO - 2020-10-15 00:15:56,721 - jasper.toolflow.backend - parsing constraint <castro.ClkConstraint object at 0x7fd348a7fb00>
+DEBUG - 2020-10-15 00:15:56,721 - jasper.toolflow.backend - New Clock constraint found
+INFO - 2020-10-15 00:15:56,721 - jasper.toolflow.backend - parsing constraint <castro.ClkConstraint object at 0x7fd348a7fb38>
+DEBUG - 2020-10-15 00:15:56,721 - jasper.toolflow.backend - New Clock constraint found
+INFO - 2020-10-15 00:15:56,721 - jasper.toolflow.backend - parsing constraint <castro.ClkGrpConstraint object at 0x7fd348a7fb70>
+DEBUG - 2020-10-15 00:15:56,721 - jasper.toolflow.backend - New Clock group constraint found
+INFO - 2020-10-15 00:15:56,721 - jasper.toolflow.backend - parsing constraint <castro.ClkGrpConstraint object at 0x7fd348a7fba8>
+DEBUG - 2020-10-15 00:15:56,721 - jasper.toolflow.backend - New Clock group constraint found
+INFO - 2020-10-15 00:15:56,721 - jasper.toolflow.backend - parsing constraint <castro.MaxDelayConstraint object at 0x7fd348a7fc50>
+DEBUG - 2020-10-15 00:15:56,721 - jasper.toolflow.backend - New Max delay constraint found
+INFO - 2020-10-15 00:15:56,721 - jasper.toolflow.backend - parsing constraint <castro.MaxDelayConstraint object at 0x7fd348a7fc88>
+DEBUG - 2020-10-15 00:15:56,721 - jasper.toolflow.backend - New Max delay constraint found
+INFO - 2020-10-15 00:15:56,721 - jasper.toolflow.backend - parsing constraint <castro.MinDelayConstraint object at 0x7fd348a7fcc0>
+DEBUG - 2020-10-15 00:15:56,722 - jasper.toolflow.backend - New Min delay constraint found
+INFO - 2020-10-15 00:15:56,722 - jasper.toolflow.backend - parsing constraint <castro.MinDelayConstraint object at 0x7fd348a7fcf8>
+DEBUG - 2020-10-15 00:15:56,722 - jasper.toolflow.backend - New Min delay constraint found
+INFO - 2020-10-15 00:15:56,722 - jasper.toolflow.backend - parsing constraint <castro.FalsePthConstraint object at 0x7fd348a7fbe0>
+DEBUG - 2020-10-15 00:15:56,722 - jasper.toolflow.backend - New False Path constraint found
+INFO - 2020-10-15 00:15:56,722 - jasper.toolflow.backend - parsing constraint <castro.FalsePthConstraint object at 0x7fd348a7fc18>
+DEBUG - 2020-10-15 00:15:56,722 - jasper.toolflow.backend - New False Path constraint found
+INFO - 2020-10-15 00:15:56,722 - jasper.toolflow.backend - parsing constraint <castro.RawConstraint object at 0x7fd348a7ff28>
+DEBUG - 2020-10-15 00:15:56,722 - jasper.toolflow.backend - New Raw constraint found
+INFO - 2020-10-15 00:15:56,722 - jasper.toolflow.backend - parsing constraint <castro.RawConstraint object at 0x7fd348a7ff60>
+DEBUG - 2020-10-15 00:15:56,722 - jasper.toolflow.backend - New Raw constraint found
+INFO - 2020-10-15 00:15:56,722 - jasper.toolflow.backend - parsing constraint <castro.RawConstraint object at 0x7fd348a7ff98>
+DEBUG - 2020-10-15 00:15:56,722 - jasper.toolflow.backend - New Raw constraint found
+INFO - 2020-10-15 00:15:56,723 - jasper.toolflow.backend - Constraints: set_property PACKAGE_PIN Y31 [get_ports ref_clk_p0]
+set_property PACKAGE_PIN Y32 [get_ports ref_clk_n0]
+set_property PACKAGE_PIN V35 [get_ports mgt_tx_p1]
+set_property PACKAGE_PIN V36 [get_ports mgt_tx_n1]
+set_property PACKAGE_PIN W38 [get_ports mgt_rx_p1]
+set_property PACKAGE_PIN W39 [get_ports mgt_rx_n1]
+set_property PACKAGE_PIN AR13 [get_ports tengbe_test_led0_gbe0_pulse_tx_ext[0]]
+set_property IOSTANDARD LVCMOS18 [get_ports tengbe_test_led0_gbe0_pulse_tx_ext[0]]
+set_property PACKAGE_PIN AP13 [get_ports tengbe_test_led1_gbe0_up_ext[0]]
+set_property IOSTANDARD LVCMOS18 [get_ports tengbe_test_led1_gbe0_up_ext[0]]
+set_property PACKAGE_PIN AL16 [get_ports clk_100_p]
+set_property IOSTANDARD LVDS [get_ports clk_100_p]
+create_clock -period 6.400 -name ethclk0 -waveform {0.000 3.200} [get_ports {ref_clk_p0}]
+create_clock -period 7.812 -name clk_100_p -waveform {0.000 3.906} [get_ports {clk_100_p}]
+set_clock_groups -asynchronous -group [get_clocks -of_objects [get_pins zcu111_infr_inst/user_clk_mmcm_inst/CLKOUT0]] -group [get_clocks -of_objects [get_pins zcu111_inst/zynq_ultra_ps_e_0/U0/PS8_i/PLCLK[0]]]
+set_clock_groups -asynchronous -group [get_clocks -of_objects [get_pins zcu111_inst/zynq_ultra_ps_e_0/U0/PS8_i/PLCLK[0]]] -group [get_clocks -of_objects [get_pins zcu111_infr_inst/user_clk_mmcm_inst/CLKOUT0]]
+set_max_delay 1.0 -to [get_ports {tengbe_test_led0_gbe0_pulse_tx_ext[*]}]
+set_max_delay 1.0 -to [get_ports {tengbe_test_led1_gbe0_up_ext[*]}]
+set_min_delay 1.0 -to [get_ports {tengbe_test_led0_gbe0_pulse_tx_ext[*]}]
+set_min_delay 1.0 -to [get_ports {tengbe_test_led1_gbe0_up_ext[*]}]
+set_false_path -to [get_ports {tengbe_test_led0_gbe0_pulse_tx_ext[*]}]
+set_false_path -to [get_ports {tengbe_test_led1_gbe0_up_ext[*]}]
+set_clock_groups -name asyncclocks_eth0 -asynchronous -group [get_clocks -include_generated_clocks clk_100_p] -group [get_clocks -include_generated_clocks ethclk0]
+set_clock_groups -name asyncclocks_eth1 -asynchronous -group [get_clocks -of_objects [get_pins zcu111_inst/zynq_ultra_ps_e_0/U0/PS8_i/PLCLK[0]]] -group [get_clocks -include_generated_clocks ethclk0]
+set_clock_groups -name asyncclocks_eth2 -asynchronous -group [get_clocks -of_objects [get_pins zcu111_inst/zynq_ultra_ps_e_0/U0/PS8_i/PLCLK[0]]] -group [get_clocks -include_generated_clocks clk_100_p]
+
+INFO - 2020-10-15 00:15:56,723 - jasper.toolflow.backend - Finished writing constraints file: /home/wei/casper/casper_mlib/tutorials_devel/zcu111/raw_axi_test/tengbe_test/tengbe_test/user_const.xdc
+DEBUG - 2020-10-15 00:15:56,723 - jasper.toolflow.backend - Adding constraint file: /home/wei/casper/casper_mlib/tutorials_devel/zcu111/raw_axi_test/tengbe_test/tengbe_test/user_const.xdc
+DEBUG - 2020-10-15 00:15:56,723 - jasper.toolflow.backend - Adding tcl command: import_files -force -fileset constrs_1 /home/wei/casper/casper_mlib/tutorials_devel/zcu111/raw_axi_test/tengbe_test/tengbe_test/user_const.xdc
+DEBUG - 2020-10-15 00:15:56,723 - jasper.toolflow.backend - Adding tcl command: set_property top top [current_fileset]
+DEBUG - 2020-10-15 00:15:56,723 - jasper.toolflow.backend - Adding tcl command: update_compile_order -fileset sources_1
+DEBUG - 2020-10-15 00:15:56,723 - jasper.toolflow.backend - Adding tcl command: if {[llength [glob -nocomplain [get_property directory [current_project]]/myproj.srcs/sources_1/imports/*.coe]] > 0} {
+DEBUG - 2020-10-15 00:15:56,723 - jasper.toolflow.backend - Adding tcl command: file copy -force {*}[glob [get_property directory [current_project]]/myproj.srcs/sources_1/imports/*.coe] [get_property directory [current_project]]/myproj.srcs/sources_1/ip/
+DEBUG - 2020-10-15 00:15:56,723 - jasper.toolflow.backend - Adding tcl command: }
+DEBUG - 2020-10-15 00:15:56,723 - jasper.toolflow.backend - Adding tcl command: upgrade_ip -quiet [get_ips *]
+DEBUG - 2020-10-15 00:15:56,723 - jasper.toolflow.backend - adding the upgrade_ip command to the tcl script
+DEBUG - 2020-10-15 00:15:56,723 - jasper.toolflow.backend - Adding tcl command: reset_run synth_1
+DEBUG - 2020-10-15 00:15:56,723 - jasper.toolflow.backend - Adding tcl command: launch_runs synth_1 -jobs 4
+DEBUG - 2020-10-15 00:15:56,723 - jasper.toolflow.backend - Adding tcl command: wait_on_run synth_1
+DEBUG - 2020-10-15 00:15:56,723 - jasper.toolflow.backend - Adding tcl command: open_run synth_1
+DEBUG - 2020-10-15 00:15:56,723 - jasper.toolflow.backend - Adding tcl command: set_property STEPS.WRITE_BITSTREAM.ARGS.BIN_FILE true [get_runs impl_1]
+DEBUG - 2020-10-15 00:15:56,724 - jasper.toolflow.backend - Adding tcl command: set_property STEPS.PHYS_OPT_DESIGN.IS_ENABLED true [get_runs impl_1]
+DEBUG - 2020-10-15 00:15:56,724 - jasper.toolflow.backend - Adding tcl command: set_property STEPS.POST_ROUTE_PHYS_OPT_DESIGN.IS_ENABLED true [get_runs impl_1]
+DEBUG - 2020-10-15 00:15:56,724 - jasper.toolflow.backend - Adding tcl command: launch_runs impl_1 -jobs 4
+DEBUG - 2020-10-15 00:15:56,724 - jasper.toolflow.backend - Adding tcl command: wait_on_run impl_1
+DEBUG - 2020-10-15 00:15:56,724 - jasper.toolflow.backend - Adding tcl command: open_run impl_1
+DEBUG - 2020-10-15 00:15:56,724 - jasper.toolflow.backend - Adding tcl command: launch_runs impl_1 -to_step write_bitstream
+DEBUG - 2020-10-15 00:15:56,724 - jasper.toolflow.backend - Adding tcl command: wait_on_run impl_1
+DEBUG - 2020-10-15 00:15:56,724 - jasper.toolflow.backend - Adding tcl command: cd [get_property DIRECTORY [current_project]]
+DEBUG - 2020-10-15 00:15:56,724 - jasper.toolflow.backend - Adding tcl command: if { [get_property STATS.WNS [get_runs impl_1] ] < 0 } {
+DEBUG - 2020-10-15 00:15:56,724 - jasper.toolflow.backend - Adding tcl command: puts "Found timing violations => Worst Negative Slack: [get_property STATS.WNS [get_runs impl_1]] ns" 
+DEBUG - 2020-10-15 00:15:56,724 - jasper.toolflow.backend - Adding tcl command: } else {
+DEBUG - 2020-10-15 00:15:56,724 - jasper.toolflow.backend - Adding tcl command: puts "No timing violations => Worst Negative Slack: [get_property STATS.WNS [get_runs impl_1]] ns" 
+DEBUG - 2020-10-15 00:15:56,724 - jasper.toolflow.backend - Adding tcl command: }
+DEBUG - 2020-10-15 00:15:56,724 - jasper.toolflow.backend - Adding tcl command: if { [get_property STATS.TNS [get_runs impl_1] ] < 0 } {
+DEBUG - 2020-10-15 00:15:56,724 - jasper.toolflow.backend - Adding tcl command: puts "Found timing violations => Total Negative Slack: [get_property STATS.TNS [get_runs impl_1]] ns" 
+DEBUG - 2020-10-15 00:15:56,724 - jasper.toolflow.backend - Adding tcl command: } else {
+DEBUG - 2020-10-15 00:15:56,724 - jasper.toolflow.backend - Adding tcl command: puts "No timing violations => Total Negative Slack: [get_property STATS.TNS [get_runs impl_1]] ns" 
+DEBUG - 2020-10-15 00:15:56,724 - jasper.toolflow.backend - Adding tcl command: }
+DEBUG - 2020-10-15 00:15:56,724 - jasper.toolflow.backend - Adding tcl command: if { [get_property STATS.WHS [get_runs impl_1] ] < 0 } {
+DEBUG - 2020-10-15 00:15:56,724 - jasper.toolflow.backend - Adding tcl command: puts "Found timing violations => Worst Hold Slack: [get_property STATS.WHS [get_runs impl_1]] ns" 
+DEBUG - 2020-10-15 00:15:56,724 - jasper.toolflow.backend - Adding tcl command: } else {
+DEBUG - 2020-10-15 00:15:56,724 - jasper.toolflow.backend - Adding tcl command: puts "No timing violations => Worst Hold Slack: [get_property STATS.WHS [get_runs impl_1]] ns" 
+DEBUG - 2020-10-15 00:15:56,725 - jasper.toolflow.backend - Adding tcl command: }
+DEBUG - 2020-10-15 00:15:56,725 - jasper.toolflow.backend - Adding tcl command: if { [get_property STATS.THS [get_runs impl_1] ] < 0 } {
+DEBUG - 2020-10-15 00:15:56,725 - jasper.toolflow.backend - Adding tcl command: puts "Found timing violations => Total Hold Slack: [get_property STATS.THS [get_runs impl_1]] ns" 
+DEBUG - 2020-10-15 00:15:56,725 - jasper.toolflow.backend - Adding tcl command: } else {
+DEBUG - 2020-10-15 00:15:56,725 - jasper.toolflow.backend - Adding tcl command: puts "No timing violations => Total Hold Slack: [get_property STATS.THS [get_runs impl_1]] ns" 
+DEBUG - 2020-10-15 00:15:56,725 - jasper.toolflow.backend - Adding tcl command: }
+INFO - 2020-10-15 00:15:56,725 - jasper.toolflow.backend - Extracting yellow block tcl commands from peripherals
+DEBUG - 2020-10-15 00:15:56,725 - jasper.toolflow.backend - Adding tcl command: source /home/wei/casper/casper_mlib/tutorials_devel/zcu111/mlib_devel/jasper_library/hdl_sources/infrastructure/zcu111.tcl
+DEBUG - 2020-10-15 00:15:56,725 - jasper.toolflow.backend - Adding tcl command: generate_target all [get_files [get_property directory [current_project]]/myproj.srcs/sources_1/bd/zcu111/zcu111.bd]
+DEBUG - 2020-10-15 00:15:56,725 - jasper.toolflow.backend - Adding tcl command: make_wrapper -files [get_files [get_property directory [current_project]]/myproj.srcs/sources_1/bd/zcu111/zcu111.bd] -top
+DEBUG - 2020-10-15 00:15:56,725 - jasper.toolflow.backend - Adding tcl command: add_files -norecurse [get_property directory [current_project]]/myproj.srcs/sources_1/bd/zcu111/hdl/zcu111_wrapper.vhd
+DEBUG - 2020-10-15 00:15:56,725 - jasper.toolflow.backend - Adding tcl command: update_compile_order -fileset sources_1
+DEBUG - 2020-10-15 00:15:56,725 - jasper.toolflow.backend - Adding tcl command: import_files {/home/wei/casper/casper_mlib/tutorials_devel/zcu111/mlib_devel/jasper_library/hdl_sources/axi4_lite/axi4lite_slave_logic.vhd /home/wei/casper/casper_mlib/tutorials_devel/zcu111/mlib_devel/jasper_library/hdl_sources/axi4_lite/axi4lite_pkg.vhd}
+DEBUG - 2020-10-15 00:15:56,725 - jasper.toolflow.backend - Adding tcl command: update_compile_order -fileset sources_1
+INFO - 2020-10-15 00:15:56,725 - jasper.toolflow.backend - Generating yellow block custom hdl files
+DEBUG - 2020-10-15 00:15:56,726 - jasper.toolflow.backend - Adding source file: /home/wei/casper/casper_mlib/tutorials_devel/zcu111/raw_axi_test/tengbe_test/tengbe_test/axi4lite_ic_wrapper.vhdl
+DEBUG - 2020-10-15 00:15:56,726 - jasper.toolflow.backend - Adding tcl command: import_files -force /home/wei/casper/casper_mlib/tutorials_devel/zcu111/raw_axi_test/tengbe_test/tengbe_test/axi4lite_ic_wrapper.vhdl
+INFO - 2020-10-15 00:15:56,726 - jasper.toolflow.backend - Generating yellow block custom hdl files
+DEBUG - 2020-10-15 00:15:56,726 - jasper.toolflow.backend - Adding tcl command: import_files /home/wei/casper/casper_mlib/tutorials_devel/zcu111/raw_axi_test/tengbe_test/tengbe_test/xml2vhdl_hdl_output/
+DEBUG - 2020-10-15 00:15:56,726 - jasper.toolflow.backend - Adding tcl command: update_compile_order -fileset sources_1
+DEBUG - 2020-10-15 00:36:19,207 - jasper.toolflow.backend - Opening core_info.tab file /home/wei/casper/casper_mlib/tutorials_devel/zcu111/raw_axi_test/tengbe_test/tengbe_test/core_info.tab
+DEBUG - 2020-10-15 00:36:19,207 - jasper.toolflow.backend - Opening design_info.tab file /home/wei/casper/casper_mlib/tutorials_devel/zcu111/raw_axi_test/tengbe_test/tengbe_test/design_info.tab
+DEBUG - 2020-10-15 00:36:19,208 - jasper.toolflow.backend - Opening git_info.tab file /home/wei/casper/casper_mlib/tutorials_devel/zcu111/raw_axi_test/tengbe_test/tengbe_test/git_info.tab

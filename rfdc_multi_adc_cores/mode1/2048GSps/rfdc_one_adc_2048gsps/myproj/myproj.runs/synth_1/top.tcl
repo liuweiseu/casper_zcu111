@@ -35,34 +35,34 @@ read_verilog -library xil_defaultlib {
   /home/wei/casper/casper_mlib/tutorials_devel/zcu111/rfdc_multi_adc_cores/mode1/2048GSps/rfdc_one_adc_2048gsps/myproj/myproj.srcs/sources_1/imports/rfdc_one_adc_2048gsps/top.v
 }
 read_vhdl -library xil_defaultlib {
-  /home/wei/casper/casper_mlib/tutorials_devel/zcu111/rfdc_multi_adc_cores/mode1/2048GSps/rfdc_one_adc_2048gsps/xml2vhdl_hdl_output/asym_bram_tdp.vhd
-  /home/wei/casper/casper_mlib/tutorials_devel/zcu111/mlib_devel/jasper_library/hdl_sources/axi4_lite/axi4lite_pkg.vhd
-  /home/wei/casper/casper_mlib/tutorials_devel/zcu111/rfdc_multi_adc_cores/mode1/2048GSps/rfdc_one_adc_2048gsps/xml2vhdl_hdl_output/axi4lite_axi4lite_top_ic_pkg.vhd
-  /home/wei/casper/casper_mlib/tutorials_devel/zcu111/rfdc_multi_adc_cores/mode1/2048GSps/rfdc_one_adc_2048gsps/xml2vhdl_hdl_output/axi4lite_axi4lite_top_mmap_pkg.vhd
-  /home/wei/casper/casper_mlib/tutorials_devel/zcu111/rfdc_multi_adc_cores/mode1/2048GSps/rfdc_one_adc_2048gsps/xml2vhdl_hdl_output/axi4lite_axi4lite_top_ic.vhd
-  /home/wei/casper/casper_mlib/tutorials_devel/zcu111/rfdc_multi_adc_cores/mode1/2048GSps/rfdc_one_adc_2048gsps/xml2vhdl_hdl_output/axi4lite_snapshot0_01_ss_bram_pkg.vhd
-  /home/wei/casper/casper_mlib/tutorials_devel/zcu111/rfdc_multi_adc_cores/mode1/2048GSps/rfdc_one_adc_2048gsps/xml2vhdl_hdl_output/axi4lite_snapshot0_23_ss_bram_pkg.vhd
-  /home/wei/casper/casper_mlib/tutorials_devel/zcu111/rfdc_multi_adc_cores/mode1/2048GSps/rfdc_one_adc_2048gsps/xml2vhdl_hdl_output/axi4lite_snapshot0_45_ss_bram_pkg.vhd
-  /home/wei/casper/casper_mlib/tutorials_devel/zcu111/rfdc_multi_adc_cores/mode1/2048GSps/rfdc_one_adc_2048gsps/xml2vhdl_hdl_output/axi4lite_snapshot0_67_ss_bram_pkg.vhd
-  /home/wei/casper/casper_mlib/tutorials_devel/zcu111/rfdc_multi_adc_cores/mode1/2048GSps/rfdc_one_adc_2048gsps/xml2vhdl_hdl_output/axi4lite_sw_reg_pkg.vhd
-  /home/wei/casper/casper_mlib/tutorials_devel/zcu111/rfdc_multi_adc_cores/mode1/2048GSps/rfdc_one_adc_2048gsps/xml2vhdl_hdl_output/axi4lite_sys_block_pkg.vhd
-  /home/wei/casper/casper_mlib/tutorials_devel/zcu111/mlib_devel/jasper_library/hdl_sources/axi4_lite/axi4lite_slave_logic.vhd
-  /home/wei/casper/casper_mlib/tutorials_devel/zcu111/rfdc_multi_adc_cores/mode1/2048GSps/rfdc_one_adc_2048gsps/xml2vhdl_hdl_output/axi4lite_snapshot0_01_ss_bram_muxdemux.vhd
-  /home/wei/casper/casper_mlib/tutorials_devel/zcu111/rfdc_multi_adc_cores/mode1/2048GSps/rfdc_one_adc_2048gsps/xml2vhdl_hdl_output/ipb_snapshot0_01_ss_bram_dp_ram.vhd
-  /home/wei/casper/casper_mlib/tutorials_devel/zcu111/rfdc_multi_adc_cores/mode1/2048GSps/rfdc_one_adc_2048gsps/xml2vhdl_hdl_output/axi4lite_snapshot0_01_ss_bram.vhd
-  /home/wei/casper/casper_mlib/tutorials_devel/zcu111/rfdc_multi_adc_cores/mode1/2048GSps/rfdc_one_adc_2048gsps/xml2vhdl_hdl_output/axi4lite_snapshot0_23_ss_bram_muxdemux.vhd
-  /home/wei/casper/casper_mlib/tutorials_devel/zcu111/rfdc_multi_adc_cores/mode1/2048GSps/rfdc_one_adc_2048gsps/xml2vhdl_hdl_output/ipb_snapshot0_23_ss_bram_dp_ram.vhd
-  /home/wei/casper/casper_mlib/tutorials_devel/zcu111/rfdc_multi_adc_cores/mode1/2048GSps/rfdc_one_adc_2048gsps/xml2vhdl_hdl_output/axi4lite_snapshot0_23_ss_bram.vhd
-  /home/wei/casper/casper_mlib/tutorials_devel/zcu111/rfdc_multi_adc_cores/mode1/2048GSps/rfdc_one_adc_2048gsps/xml2vhdl_hdl_output/axi4lite_snapshot0_45_ss_bram_muxdemux.vhd
-  /home/wei/casper/casper_mlib/tutorials_devel/zcu111/rfdc_multi_adc_cores/mode1/2048GSps/rfdc_one_adc_2048gsps/xml2vhdl_hdl_output/ipb_snapshot0_45_ss_bram_dp_ram.vhd
-  /home/wei/casper/casper_mlib/tutorials_devel/zcu111/rfdc_multi_adc_cores/mode1/2048GSps/rfdc_one_adc_2048gsps/xml2vhdl_hdl_output/axi4lite_snapshot0_45_ss_bram.vhd
-  /home/wei/casper/casper_mlib/tutorials_devel/zcu111/rfdc_multi_adc_cores/mode1/2048GSps/rfdc_one_adc_2048gsps/xml2vhdl_hdl_output/axi4lite_snapshot0_67_ss_bram_muxdemux.vhd
-  /home/wei/casper/casper_mlib/tutorials_devel/zcu111/rfdc_multi_adc_cores/mode1/2048GSps/rfdc_one_adc_2048gsps/xml2vhdl_hdl_output/ipb_snapshot0_67_ss_bram_dp_ram.vhd
-  /home/wei/casper/casper_mlib/tutorials_devel/zcu111/rfdc_multi_adc_cores/mode1/2048GSps/rfdc_one_adc_2048gsps/xml2vhdl_hdl_output/axi4lite_snapshot0_67_ss_bram.vhd
-  /home/wei/casper/casper_mlib/tutorials_devel/zcu111/rfdc_multi_adc_cores/mode1/2048GSps/rfdc_one_adc_2048gsps/xml2vhdl_hdl_output/axi4lite_sw_reg_muxdemux.vhd
-  /home/wei/casper/casper_mlib/tutorials_devel/zcu111/rfdc_multi_adc_cores/mode1/2048GSps/rfdc_one_adc_2048gsps/xml2vhdl_hdl_output/axi4lite_sw_reg.vhd
-  /home/wei/casper/casper_mlib/tutorials_devel/zcu111/rfdc_multi_adc_cores/mode1/2048GSps/rfdc_one_adc_2048gsps/xml2vhdl_hdl_output/axi4lite_sys_block_muxdemux.vhd
-  /home/wei/casper/casper_mlib/tutorials_devel/zcu111/rfdc_multi_adc_cores/mode1/2048GSps/rfdc_one_adc_2048gsps/xml2vhdl_hdl_output/axi4lite_sys_block.vhd
+  /home/wei/casper/casper_mlib/tutorials_devel/zcu111/rfdc_multi_adc_cores/mode1/2048GSps/rfdc_one_adc_2048gsps/myproj/myproj.srcs/sources_1/imports/xml2vhdl_hdl_output/asym_bram_tdp.vhd
+  /home/wei/casper/casper_mlib/tutorials_devel/zcu111/rfdc_multi_adc_cores/mode1/2048GSps/rfdc_one_adc_2048gsps/myproj/myproj.srcs/sources_1/imports/axi4_lite/axi4lite_pkg.vhd
+  /home/wei/casper/casper_mlib/tutorials_devel/zcu111/rfdc_multi_adc_cores/mode1/2048GSps/rfdc_one_adc_2048gsps/myproj/myproj.srcs/sources_1/imports/xml2vhdl_hdl_output/axi4lite_axi4lite_top_ic_pkg.vhd
+  /home/wei/casper/casper_mlib/tutorials_devel/zcu111/rfdc_multi_adc_cores/mode1/2048GSps/rfdc_one_adc_2048gsps/myproj/myproj.srcs/sources_1/imports/xml2vhdl_hdl_output/axi4lite_axi4lite_top_mmap_pkg.vhd
+  /home/wei/casper/casper_mlib/tutorials_devel/zcu111/rfdc_multi_adc_cores/mode1/2048GSps/rfdc_one_adc_2048gsps/myproj/myproj.srcs/sources_1/imports/xml2vhdl_hdl_output/axi4lite_axi4lite_top_ic.vhd
+  /home/wei/casper/casper_mlib/tutorials_devel/zcu111/rfdc_multi_adc_cores/mode1/2048GSps/rfdc_one_adc_2048gsps/myproj/myproj.srcs/sources_1/imports/xml2vhdl_hdl_output/axi4lite_snapshot0_01_ss_bram_pkg.vhd
+  /home/wei/casper/casper_mlib/tutorials_devel/zcu111/rfdc_multi_adc_cores/mode1/2048GSps/rfdc_one_adc_2048gsps/myproj/myproj.srcs/sources_1/imports/xml2vhdl_hdl_output/axi4lite_snapshot0_23_ss_bram_pkg.vhd
+  /home/wei/casper/casper_mlib/tutorials_devel/zcu111/rfdc_multi_adc_cores/mode1/2048GSps/rfdc_one_adc_2048gsps/myproj/myproj.srcs/sources_1/imports/xml2vhdl_hdl_output/axi4lite_snapshot0_45_ss_bram_pkg.vhd
+  /home/wei/casper/casper_mlib/tutorials_devel/zcu111/rfdc_multi_adc_cores/mode1/2048GSps/rfdc_one_adc_2048gsps/myproj/myproj.srcs/sources_1/imports/xml2vhdl_hdl_output/axi4lite_snapshot0_67_ss_bram_pkg.vhd
+  /home/wei/casper/casper_mlib/tutorials_devel/zcu111/rfdc_multi_adc_cores/mode1/2048GSps/rfdc_one_adc_2048gsps/myproj/myproj.srcs/sources_1/imports/xml2vhdl_hdl_output/axi4lite_sw_reg_pkg.vhd
+  /home/wei/casper/casper_mlib/tutorials_devel/zcu111/rfdc_multi_adc_cores/mode1/2048GSps/rfdc_one_adc_2048gsps/myproj/myproj.srcs/sources_1/imports/xml2vhdl_hdl_output/axi4lite_sys_block_pkg.vhd
+  /home/wei/casper/casper_mlib/tutorials_devel/zcu111/rfdc_multi_adc_cores/mode1/2048GSps/rfdc_one_adc_2048gsps/myproj/myproj.srcs/sources_1/imports/axi4_lite/axi4lite_slave_logic.vhd
+  /home/wei/casper/casper_mlib/tutorials_devel/zcu111/rfdc_multi_adc_cores/mode1/2048GSps/rfdc_one_adc_2048gsps/myproj/myproj.srcs/sources_1/imports/xml2vhdl_hdl_output/axi4lite_snapshot0_01_ss_bram_muxdemux.vhd
+  /home/wei/casper/casper_mlib/tutorials_devel/zcu111/rfdc_multi_adc_cores/mode1/2048GSps/rfdc_one_adc_2048gsps/myproj/myproj.srcs/sources_1/imports/xml2vhdl_hdl_output/ipb_snapshot0_01_ss_bram_dp_ram.vhd
+  /home/wei/casper/casper_mlib/tutorials_devel/zcu111/rfdc_multi_adc_cores/mode1/2048GSps/rfdc_one_adc_2048gsps/myproj/myproj.srcs/sources_1/imports/xml2vhdl_hdl_output/axi4lite_snapshot0_01_ss_bram.vhd
+  /home/wei/casper/casper_mlib/tutorials_devel/zcu111/rfdc_multi_adc_cores/mode1/2048GSps/rfdc_one_adc_2048gsps/myproj/myproj.srcs/sources_1/imports/xml2vhdl_hdl_output/axi4lite_snapshot0_23_ss_bram_muxdemux.vhd
+  /home/wei/casper/casper_mlib/tutorials_devel/zcu111/rfdc_multi_adc_cores/mode1/2048GSps/rfdc_one_adc_2048gsps/myproj/myproj.srcs/sources_1/imports/xml2vhdl_hdl_output/ipb_snapshot0_23_ss_bram_dp_ram.vhd
+  /home/wei/casper/casper_mlib/tutorials_devel/zcu111/rfdc_multi_adc_cores/mode1/2048GSps/rfdc_one_adc_2048gsps/myproj/myproj.srcs/sources_1/imports/xml2vhdl_hdl_output/axi4lite_snapshot0_23_ss_bram.vhd
+  /home/wei/casper/casper_mlib/tutorials_devel/zcu111/rfdc_multi_adc_cores/mode1/2048GSps/rfdc_one_adc_2048gsps/myproj/myproj.srcs/sources_1/imports/xml2vhdl_hdl_output/axi4lite_snapshot0_45_ss_bram_muxdemux.vhd
+  /home/wei/casper/casper_mlib/tutorials_devel/zcu111/rfdc_multi_adc_cores/mode1/2048GSps/rfdc_one_adc_2048gsps/myproj/myproj.srcs/sources_1/imports/xml2vhdl_hdl_output/ipb_snapshot0_45_ss_bram_dp_ram.vhd
+  /home/wei/casper/casper_mlib/tutorials_devel/zcu111/rfdc_multi_adc_cores/mode1/2048GSps/rfdc_one_adc_2048gsps/myproj/myproj.srcs/sources_1/imports/xml2vhdl_hdl_output/axi4lite_snapshot0_45_ss_bram.vhd
+  /home/wei/casper/casper_mlib/tutorials_devel/zcu111/rfdc_multi_adc_cores/mode1/2048GSps/rfdc_one_adc_2048gsps/myproj/myproj.srcs/sources_1/imports/xml2vhdl_hdl_output/axi4lite_snapshot0_67_ss_bram_muxdemux.vhd
+  /home/wei/casper/casper_mlib/tutorials_devel/zcu111/rfdc_multi_adc_cores/mode1/2048GSps/rfdc_one_adc_2048gsps/myproj/myproj.srcs/sources_1/imports/xml2vhdl_hdl_output/ipb_snapshot0_67_ss_bram_dp_ram.vhd
+  /home/wei/casper/casper_mlib/tutorials_devel/zcu111/rfdc_multi_adc_cores/mode1/2048GSps/rfdc_one_adc_2048gsps/myproj/myproj.srcs/sources_1/imports/xml2vhdl_hdl_output/axi4lite_snapshot0_67_ss_bram.vhd
+  /home/wei/casper/casper_mlib/tutorials_devel/zcu111/rfdc_multi_adc_cores/mode1/2048GSps/rfdc_one_adc_2048gsps/myproj/myproj.srcs/sources_1/imports/xml2vhdl_hdl_output/axi4lite_sw_reg_muxdemux.vhd
+  /home/wei/casper/casper_mlib/tutorials_devel/zcu111/rfdc_multi_adc_cores/mode1/2048GSps/rfdc_one_adc_2048gsps/myproj/myproj.srcs/sources_1/imports/xml2vhdl_hdl_output/axi4lite_sw_reg.vhd
+  /home/wei/casper/casper_mlib/tutorials_devel/zcu111/rfdc_multi_adc_cores/mode1/2048GSps/rfdc_one_adc_2048gsps/myproj/myproj.srcs/sources_1/imports/xml2vhdl_hdl_output/axi4lite_sys_block_muxdemux.vhd
+  /home/wei/casper/casper_mlib/tutorials_devel/zcu111/rfdc_multi_adc_cores/mode1/2048GSps/rfdc_one_adc_2048gsps/myproj/myproj.srcs/sources_1/imports/xml2vhdl_hdl_output/axi4lite_sys_block.vhd
   /home/wei/casper/casper_mlib/tutorials_devel/zcu111/rfdc_multi_adc_cores/mode1/2048GSps/rfdc_one_adc_2048gsps/myproj/myproj.srcs/sources_1/imports/rfdc_one_adc_2048gsps/axi4lite_ic_wrapper.vhdl
   /home/wei/casper/casper_mlib/tutorials_devel/zcu111/rfdc_multi_adc_cores/mode1/2048GSps/rfdc_one_adc_2048gsps/myproj/myproj.srcs/sources_1/imports/utils/cdc_synchroniser.vhd
   /home/wei/casper/casper_mlib/tutorials_devel/zcu111/rfdc_multi_adc_cores/mode1/2048GSps/rfdc_one_adc_2048gsps/myproj/myproj.srcs/sources_1/imports/sysgen/conv_pkg.vhd
@@ -93,6 +93,11 @@ set_property used_in_implementation false [get_files -all /home/wei/casper/caspe
 set_property used_in_implementation false [get_files -all /home/wei/casper/casper_mlib/tutorials_devel/zcu111/rfdc_multi_adc_cores/mode1/2048GSps/rfdc_one_adc_2048gsps/myproj/myproj.srcs/sources_1/bd/zcu111/ip/zcu111_auto_ds_1/zcu111_auto_ds_1_ooc.xdc]
 set_property used_in_implementation false [get_files -all /home/wei/casper/casper_mlib/tutorials_devel/zcu111/rfdc_multi_adc_cores/mode1/2048GSps/rfdc_one_adc_2048gsps/myproj/myproj.srcs/sources_1/bd/zcu111/zcu111_ooc.xdc]
 
+read_ip -quiet /home/wei/casper/casper_mlib/tutorials_devel/zcu111/rfdc_multi_adc_cores/mode1/2048GSps/rfdc_one_adc_2048gsps/myproj/myproj.srcs/sources_1/ip/ADC1_R2R_2048/ADC1_R2R_2048.xci
+set_property used_in_implementation false [get_files -all /home/wei/casper/casper_mlib/tutorials_devel/zcu111/rfdc_multi_adc_cores/mode1/2048GSps/rfdc_one_adc_2048gsps/myproj/myproj.srcs/sources_1/ip/ADC1_R2R_2048/synth/ADC1_R2R_2048.xdc]
+set_property used_in_implementation false [get_files -all /home/wei/casper/casper_mlib/tutorials_devel/zcu111/rfdc_multi_adc_cores/mode1/2048GSps/rfdc_one_adc_2048gsps/myproj/myproj.srcs/sources_1/ip/ADC1_R2R_2048/synth/ADC1_R2R_2048_clocks.xdc]
+set_property used_in_implementation false [get_files -all /home/wei/casper/casper_mlib/tutorials_devel/zcu111/rfdc_multi_adc_cores/mode1/2048GSps/rfdc_one_adc_2048gsps/myproj/myproj.srcs/sources_1/ip/ADC1_R2R_2048/synth/ADC1_R2R_2048_ooc.xdc]
+
 read_ip -quiet /home/wei/casper/casper_mlib/tutorials_devel/zcu111/rfdc_multi_adc_cores/mode1/2048GSps/rfdc_one_adc_2048gsps/myproj/myproj.srcs/sources_1/ip/rfdc_one_adc_2048gsps_c_counter_binary_v12_0_i0/rfdc_one_adc_2048gsps_c_counter_binary_v12_0_i0.xci
 set_property used_in_implementation false [get_files -all /home/wei/casper/casper_mlib/tutorials_devel/zcu111/rfdc_multi_adc_cores/mode1/2048GSps/rfdc_one_adc_2048gsps/myproj/myproj.srcs/sources_1/ip/rfdc_one_adc_2048gsps_c_counter_binary_v12_0_i0/rfdc_one_adc_2048gsps_c_counter_binary_v12_0_i0_ooc.xdc]
 
@@ -118,7 +123,7 @@ set_property used_in_implementation false [get_files dont_touch.xdc]
 set_param ips.enableIPCacheLiteLoad 1
 close [open __synthesis_is_running__ w]
 
-synth_design -top top -part xczu28dr-ffvg1517-2-e -flatten_hierarchy none
+synth_design -top top -part xczu28dr-ffvg1517-2-e
 
 
 # disable binary constraint mode for synth run checkpoints

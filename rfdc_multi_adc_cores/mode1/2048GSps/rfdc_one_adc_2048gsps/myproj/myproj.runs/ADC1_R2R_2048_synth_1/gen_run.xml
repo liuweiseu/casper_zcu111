@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<GenRun Id="ADC1_R2R_2048_synth_1" LaunchPart="xczu28dr-ffvg1517-2-e" LaunchTime="1601061387">
+  <File Type="VDS-TIMING-PB" Name="ADC1_R2R_2048_timing_summary_synth.pb"/>
+  <File Type="VDS-TIMINGSUMMARY" Name="ADC1_R2R_2048_timing_summary_synth.rpt"/>
+  <File Type="RDS-DCP" Name="ADC1_R2R_2048.dcp"/>
+  <File Type="REPORTS-TCL" Name="ADC1_R2R_2048_reports.tcl"/>
+  <File Type="PA-TCL" Name="ADC1_R2R_2048.tcl"/>
+  <File Type="RDS-RDS" Name="ADC1_R2R_2048.vds"/>
+  <File Type="RDS-PROPCONSTRS" Name="ADC1_R2R_2048_drc_synth.rpt"/>
+  <File Type="RDS-UTIL" Name="ADC1_R2R_2048_utilization_synth.rpt"/>
+  <File Type="RDS-UTIL-PB" Name="ADC1_R2R_2048_utilization_synth.pb"/>
+  <FileSet Name="sources" Type="BlockSrcs" RelSrcDir="$PSRCDIR/ADC1_R2R_2048">
+    <File Path="$PSRCDIR/sources_1/ip/ADC1_R2R_2048/ADC1_R2R_2048.xci">
+      <FileInfo>
+        <Attr Name="ImportPath" Val="$PPRDIR/../../../../../mlib_devel/jasper_library/hdl_sources/rfdc_V0_3/ADC1_R2R_2048.xci"/>
+        <Attr Name="ImportTime" Val="1597795281"/>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="implementation"/>
+        <Attr Name="UsedIn" Val="simulation"/>
+      </FileInfo>
+    </File>
+    <Config>
+      <Option Name="TopModule" Val="ADC1_R2R_2048"/>
+      <Option Name="UseBlackboxStub" Val="1"/>
+    </Config>
+  </FileSet>
+  <FileSet Name="constrs_in" Type="BlockSrcs" RelSrcDir="$PSRCDIR/ADC1_R2R_2048">
+    <File Path="$PSRCDIR/sources_1/ip/ADC1_R2R_2048/ADC1_R2R_2048.xci">
+      <FileInfo>
+        <Attr Name="ImportPath" Val="$PPRDIR/../../../../../mlib_devel/jasper_library/hdl_sources/rfdc_V0_3/ADC1_R2R_2048.xci"/>
+        <Attr Name="ImportTime" Val="1597795281"/>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="implementation"/>
+        <Attr Name="UsedIn" Val="simulation"/>
+      </FileInfo>
+    </File>
+    <Config>
+      <Option Name="TopModule" Val="ADC1_R2R_2048"/>
+      <Option Name="UseBlackboxStub" Val="1"/>
+    </Config>
+  </FileSet>
+  <FileSet Name="utils" Type="Utils" RelSrcDir="$PSRCDIR/utils_1">
+    <Filter Type="Utils"/>
+    <Config>
+      <Option Name="TopAutoSet" Val="TRUE"/>
+    </Config>
+  </FileSet>
+  <Strategy Version="1" Minor="2">
+    <StratHandle Name="Vivado Synthesis Defaults" Flow="Vivado Synthesis 2018">
+      <Desc>Vivado Synthesis Defaults</Desc>
+    </StratHandle>
+    <Step Id="synth_design"/>
+  </Strategy>
+</GenRun>

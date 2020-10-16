@@ -1,0 +1,25 @@
+--------------------------------- Version Log ----------------------------------
+Version                                 Path
+System Generator 2018.3                 /home/wei/Software/Vivado/install/Vivado/2018.3
+Matlab 9.4.0.949201 (R2018a) Update 6   /home/wei/Software/matlab2018a/install
+Vivado 2018.3                           /home/wei/Software/Vivado/install/Vivado/2018.3
+--------------------------------------------------------------------------------
+Summary of Errors:
+Error 0001: Type assertion failed
+     Block: 'onegbe_test/bitfield_snapshot/assert_data'
+--------------------------------------------------------------------------------
+
+Error 0001:
+
+Reported by:
+  'onegbe_test/bitfield_snapshot/assert_data'
+
+Details:
+The input type propagated to this block did not match the
+specified type.
+  Expected Type: UFix_8_0
+  Actual Type: UFix_64_0
+
+Error occurred during "Rate and Type Error Checking".
+
+--------------------------------------------------------------------------------

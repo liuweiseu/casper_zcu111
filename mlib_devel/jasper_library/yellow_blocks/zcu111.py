@@ -74,7 +74,8 @@ class zcu111(YellowBlock):
         inst_infr.add_port('sys_clk90    ', 'sys_clk90 ')
         inst_infr.add_port('sys_clk180   ', 'sys_clk180')
         inst_infr.add_port('sys_clk270   ', 'sys_clk270')
-
+        inst_infr.add_port('clk_200   ', 'clk_200')
+		
         inst_infr.add_port('sys_clk_rst', 'sys_clk_rst')
 
     def gen_children(self):

@@ -1,0 +1,192 @@
+!!python/object:castro.Castro
+design_name: top
+ips: []
+mm_slaves:
+- !!python/object:castro.mm_slave {base_address: 2684420096, high_address: 2684452864,
+  mode: 3, name: bitfield_snapshot_ss_bram, span: 32768}
+- !!python/object:castro.mm_slave {base_address: 2684452864, high_address: 2684452868,
+  mode: 3, name: bitfield_snapshot_ss_ctrl, span: 4}
+- !!python/object:castro.mm_slave {base_address: 2684452868, high_address: 2684452872,
+  mode: 1, name: bitfield_snapshot_ss_status, span: 4}
+- !!python/object:castro.mm_slave {base_address: 2684452872, high_address: 2684452876,
+  mode: 3, name: dest_ip, span: 4}
+- !!python/object:castro.mm_slave {base_address: 2684452876, high_address: 2684452880,
+  mode: 3, name: dest_port, span: 4}
+- !!python/object:castro.mm_slave {base_address: 2684354560, high_address: 2684420096,
+  mode: 3, name: one_gbe, span: 65536}
+- !!python/object:castro.mm_slave {base_address: 2684452880, high_address: 2684452884,
+  mode: 3, name: pkt_sim_enable, span: 4}
+- !!python/object:castro.mm_slave {base_address: 2684452884, high_address: 2684452888,
+  mode: 3, name: pkt_sim_payload_len, span: 4}
+- !!python/object:castro.mm_slave {base_address: 2684452888, high_address: 2684452892,
+  mode: 3, name: pkt_sim_period, span: 4}
+- !!python/object:castro.mm_slave {base_address: 2684452892, high_address: 2684452896,
+  mode: 3, name: rst, span: 4}
+- !!python/object:castro.mm_slave {base_address: 2684452896, high_address: 2684452928,
+  mode: 1, name: sys_block, span: 32}
+src_files: [/home/wei/casper/casper_mlib/tutorials_devel/zcu111/raw_axi_test/onegbe_test/onegbe_test/top.v,
+  /home/wei/casper/casper_mlib/tutorials_devel/zcu111/mlib_devel/jasper_library/hdl_sources/wb_register_ppc2simulink,
+  /home/wei/casper/casper_mlib/tutorials_devel/zcu111/mlib_devel/jasper_library/hdl_sources/wb_register_simulink2ppc,
+  /home/wei/casper/casper_mlib/tutorials_devel/zcu111/mlib_devel/jasper_library/hdl_sources/wb_register_ppc2simulink,
+  /home/wei/casper/casper_mlib/tutorials_devel/zcu111/mlib_devel/jasper_library/hdl_sources/wb_register_ppc2simulink,
+  /home/wei/casper/casper_mlib/tutorials_devel/zcu111/mlib_devel/jasper_library/hdl_sources/onegbe/CRC_gen.v,
+  /home/wei/casper/casper_mlib/tutorials_devel/zcu111/mlib_devel/jasper_library/hdl_sources/onegbe/gig_eth_mac_rx.v,
+  /home/wei/casper/casper_mlib/tutorials_devel/zcu111/mlib_devel/jasper_library/hdl_sources/onegbe/CRC_chk.v,
+  /home/wei/casper/casper_mlib/tutorials_devel/zcu111/mlib_devel/jasper_library/hdl_sources/onegbe/gbe_udp.v,
+  /home/wei/casper/casper_mlib/tutorials_devel/zcu111/mlib_devel/jasper_library/hdl_sources/onegbe/gbe_cpu_attach_wb.v,
+  /home/wei/casper/casper_mlib/tutorials_devel/zcu111/mlib_devel/jasper_library/hdl_sources/onegbe/gig_eth_mac_tx.v,
+  /home/wei/casper/casper_mlib/tutorials_devel/zcu111/mlib_devel/jasper_library/hdl_sources/onegbe/gig_eth_mac.v,
+  /home/wei/casper/casper_mlib/tutorials_devel/zcu111/mlib_devel/jasper_library/hdl_sources/onegbe/mdio_master.v,
+  /home/wei/casper/casper_mlib/tutorials_devel/zcu111/mlib_devel/jasper_library/hdl_sources/onegbe/gbe_rx.v,
+  /home/wei/casper/casper_mlib/tutorials_devel/zcu111/mlib_devel/jasper_library/hdl_sources/onegbe/gbe_tx.v,
+  /home/wei/casper/casper_mlib/tutorials_devel/zcu111/mlib_devel/jasper_library/hdl_sources/onegbe/mdio_config.v,
+  /home/wei/casper/casper_mlib/tutorials_devel/zcu111/mlib_devel/jasper_library/hdl_sources/onegbe/rfsoc/axi_slave_wishbone_classic_master.vhd,
+  /home/wei/casper/casper_mlib/tutorials_devel/zcu111/mlib_devel/jasper_library/hdl_sources/onegbe/rfsoc/gbe_cpu_buffer.xci,
+  /home/wei/casper/casper_mlib/tutorials_devel/zcu111/mlib_devel/jasper_library/hdl_sources/onegbe/rfsoc/gbe_arp_cache.xci,
+  /home/wei/casper/casper_mlib/tutorials_devel/zcu111/mlib_devel/jasper_library/hdl_sources/onegbe/rfsoc/gbe_ctrl_fifo.xci,
+  /home/wei/casper/casper_mlib/tutorials_devel/zcu111/mlib_devel/jasper_library/hdl_sources/onegbe/rfsoc/gbe_rx_packet_fifo.xci,
+  /home/wei/casper/casper_mlib/tutorials_devel/zcu111/mlib_devel/jasper_library/hdl_sources/onegbe/rfsoc/gig_ethernet_pcs_pma_autonegotiation_1000BASEX.xci,
+  /home/wei/casper/casper_mlib/tutorials_devel/zcu111/mlib_devel/jasper_library/hdl_sources/onegbe/rfsoc/gbe_tx_packet_fifo.xci,
+  /home/wei/casper/casper_mlib/tutorials_devel/zcu111/mlib_devel/jasper_library/hdl_sources/onegbe/rfsoc/gbe_rx_ctrl_fifo.xci,
+  /home/wei/casper/casper_mlib/tutorials_devel/zcu111/mlib_devel/jasper_library/hdl_sources/wb_register_ppc2simulink,
+  /home/wei/casper/casper_mlib/tutorials_devel/zcu111/mlib_devel/jasper_library/hdl_sources/wb_register_ppc2simulink,
+  /home/wei/casper/casper_mlib/tutorials_devel/zcu111/mlib_devel/jasper_library/hdl_sources/wb_register_ppc2simulink,
+  /home/wei/casper/casper_mlib/tutorials_devel/zcu111/mlib_devel/jasper_library/hdl_sources/wb_register_ppc2simulink,
+  /home/wei/casper/casper_mlib/tutorials_devel/zcu111/mlib_devel/jasper_library/hdl_sources/infrastructure/zcu111_infrastructure.v,
+  /home/wei/casper/casper_mlib/tutorials_devel/zcu111/mlib_devel/jasper_library/hdl_sources/utils/cdc_synchroniser.vhd,
+  /home/wei/casper/casper_mlib/tutorials_devel/zcu111/mlib_devel/jasper_library/hdl_sources/sys_block,
+  /home/wei/casper/casper_mlib/tutorials_devel/zcu111/raw_axi_test/onegbe_test/onegbe_test/sysgen/hdl_netlist/onegbe_test.srcs/sources_1/imports/sysgen,
+  /home/wei/casper/casper_mlib/tutorials_devel/zcu111/raw_axi_test/onegbe_test/onegbe_test/sysgen/hdl_netlist/onegbe_test.srcs/sources_1/ip/onegbe_test_c_counter_binary_v12_0_i3/onegbe_test_c_counter_binary_v12_0_i3.xci,
+  /home/wei/casper/casper_mlib/tutorials_devel/zcu111/raw_axi_test/onegbe_test/onegbe_test/sysgen/hdl_netlist/onegbe_test.srcs/sources_1/ip/onegbe_test_c_counter_binary_v12_0_i2/onegbe_test_c_counter_binary_v12_0_i2.xci,
+  /home/wei/casper/casper_mlib/tutorials_devel/zcu111/raw_axi_test/onegbe_test/onegbe_test/sysgen/hdl_netlist/onegbe_test.srcs/sources_1/ip/onegbe_test_c_counter_binary_v12_0_i1/onegbe_test_c_counter_binary_v12_0_i1.xci,
+  /home/wei/casper/casper_mlib/tutorials_devel/zcu111/raw_axi_test/onegbe_test/onegbe_test/sysgen/hdl_netlist/onegbe_test.srcs/sources_1/ip/onegbe_test_c_counter_binary_v12_0_i4/onegbe_test_c_counter_binary_v12_0_i4.xci,
+  /home/wei/casper/casper_mlib/tutorials_devel/zcu111/raw_axi_test/onegbe_test/onegbe_test/sysgen/hdl_netlist/onegbe_test.srcs/sources_1/ip/onegbe_test_c_counter_binary_v12_0_i0/onegbe_test_c_counter_binary_v12_0_i0.xci]
+synthesis: !!python/object:castro.Synthesis
+  clk_constraints:
+  - !!python/object:castro.ClkConstraint {clkname: clk_100_p, freq_mhz: 128.0, period_ns: 7.8125,
+    port_en: true, portname: clk_100_p, virtual_en: false, waveform_max_ns: 3.90625,
+    waveform_min_ns: 0.0}
+  clk_grp_constraints:
+  - !!python/object:castro.ClkGrpConstraint {clkdomaintype: asynchronous, clknamegrp1: '-of_objects
+      [get_pins zcu111_infr_inst/user_clk_mmcm_inst/CLKOUT0]', clknamegrp2: '-of_objects
+      [get_pins zcu111_inst/zynq_ultra_ps_e_0/U0/PS8_i/PLCLK[0]]'}
+  - !!python/object:castro.ClkGrpConstraint {clkdomaintype: asynchronous, clknamegrp1: '-of_objects
+      [get_pins zcu111_inst/zynq_ultra_ps_e_0/U0/PS8_i/PLCLK[0]]', clknamegrp2: '-of_objects
+      [get_pins zcu111_infr_inst/user_clk_mmcm_inst/CLKOUT0]'}
+  false_path_constraints: []
+  fpga_manufacturer: Xilinx
+  fpga_model: xczu28dr-ffvg1517-2-e
+  gen_clk_constraints: []
+  input_delay_constraints: []
+  max_delay_constraints: []
+  min_delay_constraints: []
+  multi_cycle_constraints: []
+  output_delay_constraints: []
+  pin_constraints:
+  - !!python/object:castro.PinConstraint
+    drive_strength: 0
+    io_standard: [null]
+    location: [Y35]
+    portname: onegbe_test_one_gbe_sfp_tx_p
+    portname_indices: &id001 []
+    slew_rate: 0
+    symbolic_indices: &id002 [0]
+    symbolic_name: mgt_tx_p
+    termination: ''
+  - !!python/object:castro.PinConstraint
+    drive_strength: 0
+    io_standard: [null]
+    location: [Y36]
+    portname: onegbe_test_one_gbe_sfp_tx_n
+    portname_indices: *id001
+    slew_rate: 0
+    symbolic_indices: *id002
+    symbolic_name: mgt_tx_n
+    termination: ''
+  - !!python/object:castro.PinConstraint
+    drive_strength: 0
+    io_standard: [null]
+    location: [AA38]
+    portname: onegbe_test_one_gbe_sfp_rx_p
+    portname_indices: *id001
+    slew_rate: 0
+    symbolic_indices: *id002
+    symbolic_name: mgt_rx_p
+    termination: ''
+  - !!python/object:castro.PinConstraint
+    drive_strength: 0
+    io_standard: [null]
+    location: [AA39]
+    portname: onegbe_test_one_gbe_sfp_rx_n
+    portname_indices: *id001
+    slew_rate: 0
+    symbolic_indices: *id002
+    symbolic_name: mgt_rx_n
+    termination: ''
+  - !!python/object:castro.PinConstraint
+    drive_strength: 0
+    io_standard: [null]
+    location: [Y31]
+    portname: onegbe_test_one_gbe_mgt_clk_p
+    portname_indices: *id001
+    slew_rate: 0
+    symbolic_indices: *id002
+    symbolic_name: eth_clk_p
+    termination: ''
+  - !!python/object:castro.PinConstraint
+    drive_strength: 0
+    io_standard: [null]
+    location: [Y32]
+    portname: onegbe_test_one_gbe_mgt_clk_n
+    portname_indices: *id001
+    slew_rate: 0
+    symbolic_indices: *id002
+    symbolic_name: eth_clk_n
+    termination: ''
+  - !!python/object:castro.PinConstraint
+    drive_strength: 0
+    io_standard: [LVDS]
+    location: [AL16]
+    portname: clk_100_p
+    portname_indices: *id001
+    slew_rate: 0
+    symbolic_indices: *id002
+    symbolic_name: clk_100_p
+    termination: ''
+  pin_map:
+    clk_100_n:
+    - !!python/object:casper_platform.Pin {iostd: LVDS, loc: AN15}
+    clk_100_p:
+    - !!python/object:casper_platform.Pin {iostd: LVDS, loc: AL16}
+    eth_clk_n:
+    - !!python/object:casper_platform.Pin {iostd: null, loc: Y32}
+    eth_clk_p:
+    - !!python/object:casper_platform.Pin {iostd: null, loc: Y31}
+    led:
+    - !!python/object:casper_platform.Pin {iostd: LVCMOS18, loc: AR13}
+    - !!python/object:casper_platform.Pin {iostd: LVCMOS18, loc: AP13}
+    - !!python/object:casper_platform.Pin {iostd: LVCMOS18, loc: AR16}
+    - !!python/object:casper_platform.Pin {iostd: LVCMOS18, loc: AP16}
+    - !!python/object:casper_platform.Pin {iostd: LVCMOS18, loc: AP15}
+    - !!python/object:casper_platform.Pin {iostd: LVCMOS18, loc: AN16}
+    - !!python/object:casper_platform.Pin {iostd: LVCMOS18, loc: AN17}
+    - !!python/object:casper_platform.Pin {iostd: LVCMOS18, loc: AV15}
+    mgt_rx_n:
+    - !!python/object:casper_platform.Pin {iostd: null, loc: AA39}
+    mgt_rx_p:
+    - !!python/object:casper_platform.Pin {iostd: null, loc: AA38}
+    mgt_tx_n:
+    - !!python/object:casper_platform.Pin {iostd: null, loc: Y36}
+    mgt_tx_p:
+    - !!python/object:casper_platform.Pin {iostd: null, loc: Y35}
+    pl_sysref_n:
+    - !!python/object:casper_platform.Pin {iostd: LVDS, loc: AK16}
+    pl_sysref_p:
+    - !!python/object:casper_platform.Pin {iostd: LVDS, loc: AK17}
+  platform_name: zcu111
+  raw_constraints: []
+  synth_tool: ''
+  temp_fpga_model: ''
+  temp_quartus_qsf_files: []
+  vendor_constraints_files: ''
+version: 0.0.0

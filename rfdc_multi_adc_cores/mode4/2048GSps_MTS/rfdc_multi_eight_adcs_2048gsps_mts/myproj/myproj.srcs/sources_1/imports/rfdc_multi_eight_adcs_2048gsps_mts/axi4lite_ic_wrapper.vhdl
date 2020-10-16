@@ -1072,7 +1072,6 @@ begin
 	axi4lite_sys_block_in.sys_clkcounter <= axi4lite_sys_block_sys_clkcounter_in;
 	axi4lite_sys_block_in_we.sys_clkcounter <= axi4lite_sys_block_sys_clkcounter_in_we;
 	s_axi4lite_arready <= axi4lite_miso.arready;
-	s_axi4lite_arready <= axi4lite_miso.arready;
 	s_axi4lite_awready <= axi4lite_miso.awready;
 	s_axi4lite_bresp <= axi4lite_miso.bresp;
 	s_axi4lite_bvalid <= axi4lite_miso.bvalid;

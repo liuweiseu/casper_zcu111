@@ -6,7 +6,7 @@ else
     build_cmd = jasper_frontend;
 end
 
-if isempty(build_cmd)
+ if isempty(build_cmd)
     error(['JASPER front-end completed okay, but could not find ', ...
         'a valid back-end to use. Have you defined the JASPER_BACKEND ', ...
         'environment variable?']);

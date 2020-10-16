@@ -1,7 +1,7 @@
 Copyright 1986-2019 Xilinx, Inc. All Rights Reserved.
 -------------------------------------------------------------------------------------------------------------------------------
 | Tool Version     : Vivado v.2018.3.1_AR71948 (lin64) Build 2489853 Tue Mar 26 04:18:30 MDT 2019
-| Date             : Tue Aug 25 09:51:56 2020
+| Date             : Fri Sep 25 12:34:28 2020
 | Host             : wei-Berkeley running 64-bit Ubuntu 18.04.5 LTS
 | Command          : report_power -file top_power_routed.rpt -pb top_power_summary_routed.pb -rpx top_power_routed.rpx
 | Design           : top
@@ -30,11 +30,11 @@ Table of Contents
 ----------
 
 +--------------------------+--------------+
-| Total On-Chip Power (W)  | 7.342        |
+| Total On-Chip Power (W)  | 7.388        |
 | Design Power Budget (W)  | Unspecified* |
 | Power Budget Margin (W)  | NA           |
-| Dynamic (W)              | 6.109        |
-| Device Static (W)        | 1.233        |
+| Dynamic (W)              | 6.155        |
+| Device Static (W)        | 1.234        |
 | Effective TJA (C/W)      | 0.8          |
 | Max Ambient (C)          | 93.8         |
 | Junction Temperature (C) | 31.2         |
@@ -52,29 +52,29 @@ Table of Contents
 +--------------------------+-----------+----------+-----------+-----------------+
 | On-Chip                  | Power (W) | Used     | Available | Utilization (%) |
 +--------------------------+-----------+----------+-----------+-----------------+
-| Clocks                   |     0.084 |       23 |       --- |             --- |
-| CLB Logic                |     0.046 |    34857 |       --- |             --- |
-|   LUT as Logic           |     0.026 |    12508 |    425280 |            2.94 |
-|   LUT as Shift Register  |     0.014 |     1100 |    213600 |            0.51 |
-|   Register               |     0.005 |    15800 |    850560 |            1.86 |
+| Clocks                   |     0.096 |       23 |       --- |             --- |
+| CLB Logic                |     0.053 |    34098 |       --- |             --- |
+|   LUT as Logic           |     0.029 |    12200 |    425280 |            2.87 |
+|   LUT as Shift Register  |     0.018 |     1100 |    213600 |            0.51 |
+|   Register               |     0.006 |    15697 |    850560 |            1.85 |
 |   LUT as Distributed RAM |    <0.001 |      112 |    213600 |            0.05 |
 |   CARRY8                 |    <0.001 |       48 |     53160 |            0.09 |
-|   F7/F8 Muxes            |     0.000 |      129 |    425280 |            0.03 |
-|   Others                 |     0.000 |     2212 |       --- |             --- |
+|   F7/F8 Muxes            |     0.000 |      127 |    425280 |            0.03 |
+|   Others                 |     0.000 |     2148 |       --- |             --- |
 |   BUFG                   |     0.000 |        1 |        64 |            1.56 |
-| Signals                  |     0.056 |    29176 |       --- |             --- |
-| Block RAM                |     0.049 |       32 |      1080 |            2.96 |
+| Signals                  |     0.066 |    28729 |       --- |             --- |
+| Block RAM                |     0.051 |       32 |      1080 |            2.96 |
 | RFAMS                    |     3.092 |        6 |       --- |             --- |
 |   RFADC                  |     3.092 |        4 |         4 |          100.00 |
 |   RFDAC                  |     0.000 |        2 |         4 |           50.00 |
-| MMCM                     |     0.078 |        0 |       --- |             --- |
-| DSPs                     |     0.006 |       32 |      4272 |            0.75 |
+| MMCM                     |     0.089 |        0 |       --- |             --- |
+| DSPs                     |     0.008 |       32 |      4272 |            0.75 |
 | I/O                      |     0.007 |        6 |       347 |            1.73 |
 | PS8                      |     2.691 |        1 |       --- |             --- |
-| Static Power             |     1.233 |          |           |                 |
+| Static Power             |     1.234 |          |           |                 |
 |   PS Static              |     0.102 |          |           |                 |
-|   PL Static              |     1.131 |          |           |                 |
-| Total                    |     7.342 |          |           |                 |
+|   PL Static              |     1.132 |          |           |                 |
+| Total                    |     7.388 |          |           |                 |
 +--------------------------+-----------+----------+-----------+-----------------+
 
 
@@ -84,10 +84,10 @@ Table of Contents
 +-----------------+-------------+-----------+-------------+------------+
 | Source          | Voltage (V) | Total (A) | Dynamic (A) | Static (A) |
 +-----------------+-------------+-----------+-------------+------------+
-| Vccint          |       0.850 |     0.621 |       0.280 |      0.342 |
+| Vccint          |       0.850 |     0.662 |       0.320 |      0.342 |
 | Vccint_io       |       0.850 |     0.073 |       0.001 |      0.072 |
 | Vccbram         |       0.850 |     0.008 |       0.003 |      0.005 |
-| Vccaux          |       1.800 |     0.320 |       0.043 |      0.277 |
+| Vccaux          |       1.800 |     0.327 |       0.049 |      0.277 |
 | Vccaux_io       |       1.800 |     0.060 |       0.003 |      0.058 |
 | Vcco33          |       3.300 |     0.000 |       0.000 |      0.000 |
 | Vcco25          |       2.500 |     0.000 |       0.000 |      0.000 |
@@ -97,7 +97,7 @@ Table of Contents
 | Vcco12          |       1.200 |     0.000 |       0.000 |      0.000 |
 | Vcco10          |       1.000 |     0.000 |       0.000 |      0.000 |
 | Vccadc          |       1.800 |     0.008 |       0.000 |      0.008 |
-| VCC_PSINTFP     |       0.850 |     1.069 |       1.032 |      0.037 |
+| VCC_PSINTFP     |       0.850 |     1.069 |       1.032 |      0.038 |
 | VCC_PSINTLP     |       0.850 |     0.276 |       0.268 |      0.008 |
 | VPS_MGTRAVCC    |       0.850 |     0.139 |       0.138 |      0.001 |
 | VCC_PSINTFP_DDR |       0.850 |     0.701 |       0.696 |      0.005 |
@@ -165,9 +165,9 @@ Table of Contents
 +---------------+-------------------------------------------------------+-----------------+
 | Clock         | Domain                                                | Constraint (ns) |
 +---------------+-------------------------------------------------------+-----------------+
-| clk_100_p     | clk_100_p                                             |            10.0 |
+| clk_100_p     | clk_100_p                                             |             7.8 |
 | clk_pl_0      | zcu111_inst/zynq_ultra_ps_e_0/U0/pl_clk_unbuffered[0] |            10.0 |
-| user_clk_mmcm | zcu111_infr_inst/user_clk_mmcm                        |             5.0 |
+| user_clk_mmcm | zcu111_infr_inst/user_clk_mmcm                        |             3.9 |
 +---------------+-------------------------------------------------------+-----------------+
 
 
@@ -180,10 +180,11 @@ Table of Contents
 +------------------------------------------------------+-----------+
 | Name                                                 | Power (W) |
 +------------------------------------------------------+-----------+
-| top                                                  |     6.109 |
-|   axi4lite_interconnect                              |     0.067 |
+| top                                                  |     6.155 |
+|   axi4lite_interconnect                              |     0.071 |
 |     axi4lite_axi4lite_ic_inst                        |     0.002 |
-|     axi4lite_snapshot0_01_ss_bram_inst               |     0.001 |
+|     axi4lite_snapshot0_01_ss_bram_inst               |     0.003 |
+|       axi4lite_slave_logic_inst                      |     0.002 |
 |       ipb_snapshot0_01_ss_bram_dp_ram_inst           |     0.001 |
 |     axi4lite_snapshot0_23_ss_bram_inst               |     0.002 |
 |       ipb_snapshot0_23_ss_bram_dp_ram_inst           |     0.001 |
@@ -248,32 +249,32 @@ Table of Contents
 |     axi4lite_snapshot7_67_ss_bram_inst               |     0.002 |
 |       ipb_snapshot7_67_ss_bram_dp_ram_inst           |     0.002 |
 |     axi4lite_sw_reg_inst                             |     0.007 |
-|   rfdc_multi_eight_adcs_2048gsps_mts_inst            |     0.051 |
-|     rfdc_multi_eight_adcs_2048gsps_mts_struct        |     0.051 |
+|   rfdc_multi_eight_adcs_2048gsps_mts_inst            |     0.064 |
+|     rfdc_multi_eight_adcs_2048gsps_mts_struct        |     0.064 |
 |       snapshot0_01                                   |     0.002 |
 |       snapshot0_23                                   |     0.002 |
 |       snapshot0_45                                   |     0.002 |
 |       snapshot0_67                                   |     0.002 |
 |       snapshot1_01                                   |     0.002 |
 |       snapshot1_23                                   |     0.002 |
-|       snapshot1_45                                   |     0.001 |
+|       snapshot1_45                                   |     0.002 |
 |       snapshot1_67                                   |     0.002 |
-|       snapshot2_01                                   |     0.001 |
-|       snapshot2_23                                   |     0.001 |
-|       snapshot2_45                                   |     0.001 |
+|       snapshot2_01                                   |     0.002 |
+|       snapshot2_23                                   |     0.002 |
+|       snapshot2_45                                   |     0.002 |
 |       snapshot2_67                                   |     0.002 |
-|       snapshot3_01                                   |     0.001 |
-|       snapshot3_23                                   |     0.001 |
-|       snapshot3_45                                   |     0.001 |
-|       snapshot3_67                                   |     0.001 |
-|       snapshot4_01                                   |     0.001 |
-|       snapshot4_23                                   |     0.001 |
+|       snapshot3_01                                   |     0.002 |
+|       snapshot3_23                                   |     0.002 |
+|       snapshot3_45                                   |     0.002 |
+|       snapshot3_67                                   |     0.002 |
+|       snapshot4_01                                   |     0.002 |
+|       snapshot4_23                                   |     0.002 |
 |       snapshot4_45                                   |     0.002 |
-|       snapshot4_67                                   |     0.001 |
+|       snapshot4_67                                   |     0.002 |
 |       snapshot5_01                                   |     0.002 |
 |       snapshot5_23                                   |     0.002 |
 |       snapshot5_45                                   |     0.002 |
-|       snapshot5_67                                   |     0.001 |
+|       snapshot5_67                                   |     0.002 |
 |       snapshot6_01                                   |     0.002 |
 |       snapshot6_23                                   |     0.002 |
 |       snapshot6_45                                   |     0.002 |
@@ -282,32 +283,32 @@ Table of Contents
 |       snapshot7_23                                   |     0.002 |
 |       snapshot7_45                                   |     0.002 |
 |       snapshot7_67                                   |     0.002 |
-|   rfdc_multi_eight_adcs_2048gsps_mts_rfdc_V0_4       |     3.177 |
-|     inst                                             |     3.177 |
-|       ADC8_R2R_MTS_2048_rf_wrapper_i                 |     3.117 |
+|   rfdc_multi_eight_adcs_2048gsps_mts_rfdc_V0_4       |     3.194 |
+|     inst                                             |     3.194 |
+|       ADC8_R2R_MTS_2048_rf_wrapper_i                 |     3.120 |
 |       i_ADC8_R2R_MTS_2048_irq_sync                   |     0.002 |
 |       i_axi_lite_ipif                                |     0.005 |
-|       i_rf_conv_mt_data_align_adc00                  |     0.006 |
-|       i_rf_conv_mt_data_align_adc02                  |     0.006 |
-|       i_rf_conv_mt_data_align_adc10                  |     0.006 |
-|       i_rf_conv_mt_data_align_adc12                  |     0.006 |
-|       i_rf_conv_mt_data_align_adc20                  |     0.006 |
-|       i_rf_conv_mt_data_align_adc22                  |     0.006 |
-|       i_rf_conv_mt_data_align_adc30                  |     0.006 |
-|       i_rf_conv_mt_data_align_adc32                  |     0.006 |
+|       i_rf_conv_mt_data_align_adc00                  |     0.007 |
+|       i_rf_conv_mt_data_align_adc02                  |     0.007 |
+|       i_rf_conv_mt_data_align_adc10                  |     0.007 |
+|       i_rf_conv_mt_data_align_adc12                  |     0.007 |
+|       i_rf_conv_mt_data_align_adc20                  |     0.008 |
+|       i_rf_conv_mt_data_align_adc22                  |     0.007 |
+|       i_rf_conv_mt_data_align_adc30                  |     0.007 |
+|       i_rf_conv_mt_data_align_adc32                  |     0.007 |
 |   rfdc_multi_eight_adcs_2048gsps_mts_rfdc_V0_4sysref |     0.002 |
 |     IBUFDS_inst                                      |     0.002 |
-|   zcu111_infr_inst                                   |     0.080 |
+|   zcu111_infr_inst                                   |     0.092 |
 |     i_clk                                            |     0.002 |
-|   zcu111_inst                                        |     2.724 |
+|   zcu111_inst                                        |     2.723 |
 |     axi_interconnect_0                               |     0.023 |
-|       m00_couplers                                   |     0.006 |
+|       m00_couplers                                   |     0.007 |
 |       m01_couplers                                   |     0.008 |
 |       xbar                                           |     0.008 |
 |     axi_protocol_convert_1                           |     0.003 |
 |       inst                                           |     0.003 |
-|     axi_protocol_convert_2                           |     0.006 |
-|       inst                                           |     0.006 |
+|     axi_protocol_convert_2                           |     0.004 |
+|       inst                                           |     0.004 |
 |     zynq_ultra_ps_e_0                                |     2.692 |
 |       U0                                             |     2.692 |
 +------------------------------------------------------+-----------+

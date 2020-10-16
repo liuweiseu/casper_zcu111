@@ -23,7 +23,7 @@
       <node absolute_id="axi4lite_top.sw_reg.snapshot0_45_ss_status" absolute_offset="a000401c" address="0x0000001c" description="sw_reg_snapshot0_45_ss_status" hw_rst="0x0" id="snapshot0_45_ss_status" mask="0xffffffff" permission="r" size="1"/>
       <node absolute_id="axi4lite_top.sw_reg.snapshot0_67_ss_ctrl" absolute_offset="a0004020" address="0x00000020" description="sw_reg_snapshot0_67_ss_ctrl" hw_rst="0" id="snapshot0_67_ss_ctrl" mask="0xffffffff" permission="rw" size="1"/>
       <node absolute_id="axi4lite_top.sw_reg.snapshot0_67_ss_status" absolute_offset="a0004024" address="0x00000024" description="sw_reg_snapshot0_67_ss_status" hw_rst="0x0" id="snapshot0_67_ss_status" mask="0xffffffff" permission="r" size="1"/>
-      <node absolute_id="axi4lite_top.sw_reg.sync_state" absolute_offset="a0004028" address="0x00000028" description="sw_reg_sync_state" hw_rst="0x0" id="sync_state" mask="0xffffffff" permission="r" size="1"/>
+      <node absolute_id="axi4lite_top.sw_reg.sync_state" absolute_offset="a0004028" address="0x00000028" description="sw_reg_sync_state" hw_rst="1" id="sync_state" mask="0xffffffff" permission="r" size="1"/>
    </node>
    <node absolute_id="axi4lite_top.sys_block" absolute_offset="a0004040" address="0x00004040" byte_size="32" id="sys_block" link_done="sys_block_memory_map_output.xml">
       <node absolute_id="axi4lite_top.sys_block.sys_board_id" absolute_offset="a0004040" address="0x00000000" description="sys_block_sys_board_id" hw_rst="3" id="sys_board_id" mask="0xffffffff" permission="r" size="1"/>

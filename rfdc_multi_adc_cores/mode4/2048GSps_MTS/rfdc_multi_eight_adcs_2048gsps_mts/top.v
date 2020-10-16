@@ -30,21 +30,10 @@ module top (
           __/ |                  
          |___/                   
 */
-  // xsg: ZCU111
-  wire user_clk;
-  wire user_clk180;
-  wire user_clk270;
-  wire user_clk90;
   // gpio: gpio_led
   wire [0:0] rfdc_multi_eight_adcs_2048gsps_mts_gpio_led_gateway;
   // gpio: gpio_led1
   wire [0:0] rfdc_multi_eight_adcs_2048gsps_mts_gpio_led1_gateway;
-  // sw_reg: led_cntrl
-  wire [31:0] rfdc_multi_eight_adcs_2048gsps_mts_led_cntrl_out;
-  wire [31:0] rfdc_multi_eight_adcs_2048gsps_mts_led_cntrl_user_data_out;
-  // sw_reg: reg_cntrl
-  wire [31:0] rfdc_multi_eight_adcs_2048gsps_mts_reg_cntrl_out;
-  wire [31:0] rfdc_multi_eight_adcs_2048gsps_mts_reg_cntrl_user_data_out;
   // rfdc_V0_4: rfdc_V0_4
   wire adc0_clk_clk_n;
   wire adc0_clk_clk_p;
@@ -95,6 +84,12 @@ module top (
   wire vin3_01_p;
   wire vin3_23_n;
   wire vin3_23_p;
+  // sw_reg: led_cntrl
+  wire [31:0] rfdc_multi_eight_adcs_2048gsps_mts_led_cntrl_out;
+  wire [31:0] rfdc_multi_eight_adcs_2048gsps_mts_led_cntrl_user_data_out;
+  // sw_reg: reg_cntrl
+  wire [31:0] rfdc_multi_eight_adcs_2048gsps_mts_reg_cntrl_out;
+  wire [31:0] rfdc_multi_eight_adcs_2048gsps_mts_reg_cntrl_user_data_out;
   // sw_reg: snapshot0_01/ss/ctrl
   wire [31:0] rfdc_multi_eight_adcs_2048gsps_mts_snapshot0_01_ss_ctrl_out;
   wire [31:0] rfdc_multi_eight_adcs_2048gsps_mts_snapshot0_01_ss_ctrl_user_data_out;
@@ -311,54 +306,9 @@ module top (
   // sw_reg: sync_state7
   wire [31:0] rfdc_multi_eight_adcs_2048gsps_mts_sync_state7_in;
   wire [31:0] rfdc_multi_eight_adcs_2048gsps_mts_sync_state7_user_data_in;
-  // zcu111: ZCU111
-  wire [39:0] M_AXI_RFDC_araddr;
-  wire [2:0] M_AXI_RFDC_arprot;
-  wire M_AXI_RFDC_arready;
-  wire M_AXI_RFDC_arvalid;
-  wire [39:0] M_AXI_RFDC_awaddr;
-  wire [2:0] M_AXI_RFDC_awprot;
-  wire M_AXI_RFDC_awready;
-  wire M_AXI_RFDC_awvalid;
-  wire M_AXI_RFDC_bready;
-  wire [1:0] M_AXI_RFDC_bresp;
-  wire M_AXI_RFDC_bvalid;
-  wire [31:0] M_AXI_RFDC_rdata;
-  wire M_AXI_RFDC_rready;
-  wire [1:0] M_AXI_RFDC_rresp;
-  wire M_AXI_RFDC_rvalid;
-  wire [31:0] M_AXI_RFDC_wdata;
-  wire M_AXI_RFDC_wready;
-  wire [3:0] M_AXI_RFDC_wstrb;
-  wire M_AXI_RFDC_wvalid;
-  wire [39:0] M_AXI_araddr;
-  wire [2:0] M_AXI_arprot;
-  wire M_AXI_arready;
-  wire M_AXI_arvalid;
-  wire [39:0] M_AXI_awaddr;
-  wire [2:0] M_AXI_awprot;
-  wire M_AXI_awready;
-  wire M_AXI_awvalid;
-  wire M_AXI_bready;
-  wire [1:0] M_AXI_bresp;
-  wire M_AXI_bvalid;
-  wire [31:0] M_AXI_rdata;
-  wire M_AXI_rready;
-  wire [1:0] M_AXI_rresp;
-  wire M_AXI_rvalid;
-  wire [31:0] M_AXI_wdata;
-  wire M_AXI_wready;
-  wire [3:0] M_AXI_wstrb;
-  wire M_AXI_wvalid;
-  wire axil_clk;
-  wire axil_rst;
-  wire axil_rst_n;
-  wire sys_clk;
-  wire sys_clk180;
-  wire sys_clk270;
-  wire sys_clk90;
-  wire sys_clk_rst;
   // sys_block: xps:sys_block0
+  wire axil_clk;
+  wire axil_rst_n;
   wire [0:0] rfdc_multi_eight_adcs_2048gsps_mts_led_cntrl_out_we;
   wire [0:0] rfdc_multi_eight_adcs_2048gsps_mts_reg_cntrl_out_we;
   wire [9:0] rfdc_multi_eight_adcs_2048gsps_mts_snapshot0_01_ss_bram_addr;
@@ -571,6 +521,57 @@ module top (
   wire [0:0] rfdc_multi_eight_adcs_2048gsps_mts_sys_rev_rcs_in_we;
   wire [31:0] rfdc_multi_eight_adcs_2048gsps_mts_sys_scratchpad_out;
   wire [0:0] rfdc_multi_eight_adcs_2048gsps_mts_sys_scratchpad_out_we;
+  // xsg: ZCU111
+  wire user_clk;
+  wire user_clk180;
+  wire user_clk270;
+  wire user_clk90;
+  // zcu111: ZCU111
+  wire [39:0] M_AXI_RFDC_araddr;
+  wire [2:0] M_AXI_RFDC_arprot;
+  wire M_AXI_RFDC_arready;
+  wire M_AXI_RFDC_arvalid;
+  wire [39:0] M_AXI_RFDC_awaddr;
+  wire [2:0] M_AXI_RFDC_awprot;
+  wire M_AXI_RFDC_awready;
+  wire M_AXI_RFDC_awvalid;
+  wire M_AXI_RFDC_bready;
+  wire [1:0] M_AXI_RFDC_bresp;
+  wire M_AXI_RFDC_bvalid;
+  wire [31:0] M_AXI_RFDC_rdata;
+  wire M_AXI_RFDC_rready;
+  wire [1:0] M_AXI_RFDC_rresp;
+  wire M_AXI_RFDC_rvalid;
+  wire [31:0] M_AXI_RFDC_wdata;
+  wire M_AXI_RFDC_wready;
+  wire [3:0] M_AXI_RFDC_wstrb;
+  wire M_AXI_RFDC_wvalid;
+  wire [39:0] M_AXI_araddr;
+  wire [2:0] M_AXI_arprot;
+  wire M_AXI_arready;
+  wire M_AXI_arvalid;
+  wire [39:0] M_AXI_awaddr;
+  wire [2:0] M_AXI_awprot;
+  wire M_AXI_awready;
+  wire M_AXI_awvalid;
+  wire M_AXI_bready;
+  wire [1:0] M_AXI_bresp;
+  wire M_AXI_bvalid;
+  wire [31:0] M_AXI_rdata;
+  wire M_AXI_rready;
+  wire [1:0] M_AXI_rresp;
+  wire M_AXI_rvalid;
+  wire [31:0] M_AXI_wdata;
+  wire M_AXI_wready;
+  wire [3:0] M_AXI_wstrb;
+  wire M_AXI_wvalid;
+  wire axil_rst;
+  wire clk_200;
+  wire sys_clk;
+  wire sys_clk180;
+  wire sys_clk270;
+  wire sys_clk90;
+  wire sys_clk_rst;
 
 /*
   _____           _                            
@@ -604,28 +605,6 @@ module top (
     .clk90(user_clk90),
     .gateway(rfdc_multi_eight_adcs_2048gsps_mts_gpio_led1_gateway),
     .io_pad(rfdc_multi_eight_adcs_2048gsps_mts_gpio_led1_ext)
-  );
-
-  // sw_reg: led_cntrl
-  cdc_synchroniser #(
-    .G_BUS_WIDTH(32)
-  ) rfdc_multi_eight_adcs_2048gsps_mts_led_cntrl (
-    .IP_BUS(rfdc_multi_eight_adcs_2048gsps_mts_led_cntrl_out),
-    .IP_BUS_VALID(rfdc_multi_eight_adcs_2048gsps_mts_led_cntrl_out_we),
-    .IP_CLK(user_clk),
-    .IP_RESET(user_rst),
-    .OP_BUS(rfdc_multi_eight_adcs_2048gsps_mts_led_cntrl_user_data_out)
-  );
-
-  // sw_reg: reg_cntrl
-  cdc_synchroniser #(
-    .G_BUS_WIDTH(32)
-  ) rfdc_multi_eight_adcs_2048gsps_mts_reg_cntrl (
-    .IP_BUS(rfdc_multi_eight_adcs_2048gsps_mts_reg_cntrl_out),
-    .IP_BUS_VALID(rfdc_multi_eight_adcs_2048gsps_mts_reg_cntrl_out_we),
-    .IP_CLK(user_clk),
-    .IP_RESET(user_rst),
-    .OP_BUS(rfdc_multi_eight_adcs_2048gsps_mts_reg_cntrl_user_data_out)
   );
 
   // rfdc_V0_4: rfdc_V0_4
@@ -721,6 +700,28 @@ module top (
     .pl_sysref_n(pl_sysref_n),
     .pl_sysref_p(pl_sysref_p),
     .sysref_adc(sysref_adc)
+  );
+
+  // sw_reg: led_cntrl
+  cdc_synchroniser #(
+    .G_BUS_WIDTH(32)
+  ) rfdc_multi_eight_adcs_2048gsps_mts_led_cntrl (
+    .IP_BUS(rfdc_multi_eight_adcs_2048gsps_mts_led_cntrl_out),
+    .IP_BUS_VALID(rfdc_multi_eight_adcs_2048gsps_mts_led_cntrl_out_we),
+    .IP_CLK(user_clk),
+    .IP_RESET(user_rst),
+    .OP_BUS(rfdc_multi_eight_adcs_2048gsps_mts_led_cntrl_user_data_out)
+  );
+
+  // sw_reg: reg_cntrl
+  cdc_synchroniser #(
+    .G_BUS_WIDTH(32)
+  ) rfdc_multi_eight_adcs_2048gsps_mts_reg_cntrl (
+    .IP_BUS(rfdc_multi_eight_adcs_2048gsps_mts_reg_cntrl_out),
+    .IP_BUS_VALID(rfdc_multi_eight_adcs_2048gsps_mts_reg_cntrl_out_we),
+    .IP_CLK(user_clk),
+    .IP_RESET(user_rst),
+    .OP_BUS(rfdc_multi_eight_adcs_2048gsps_mts_reg_cntrl_user_data_out)
   );
 
   // sw_reg: snapshot0_01/ss/ctrl
@@ -1515,66 +1516,6 @@ module top (
     .OP_BUS(rfdc_multi_eight_adcs_2048gsps_mts_sync_state7_in)
   );
 
-  // zcu111: ZCU111
-  zcu111_infrastructure #(
-    .DIVCLK(1),
-    .DIVIDE(4.0),
-    .MULTIPLY(8.0)
-  ) zcu111_infr_inst (
-    .clk_100_n(clk_100_n),
-    .clk_100_p(clk_100_p),
-    .sys_clk(sys_clk),
-    .sys_clk180(sys_clk180),
-    .sys_clk270(sys_clk270),
-    .sys_clk90(sys_clk90),
-    .sys_clk_rst(sys_clk_rst)
-  );
-
-
-  zcu111  zcu111_inst (
-    .M_AXI_RFDC_araddr(M_AXI_RFDC_araddr),
-    .M_AXI_RFDC_arprot(M_AXI_RFDC_arprot),
-    .M_AXI_RFDC_arready(M_AXI_RFDC_arready),
-    .M_AXI_RFDC_arvalid(M_AXI_RFDC_arvalid),
-    .M_AXI_RFDC_awaddr(M_AXI_RFDC_awaddr),
-    .M_AXI_RFDC_awprot(M_AXI_RFDC_awprot),
-    .M_AXI_RFDC_awready(M_AXI_RFDC_awready),
-    .M_AXI_RFDC_awvalid(M_AXI_RFDC_awvalid),
-    .M_AXI_RFDC_bready(M_AXI_RFDC_bready),
-    .M_AXI_RFDC_bresp(M_AXI_RFDC_bresp),
-    .M_AXI_RFDC_bvalid(M_AXI_RFDC_bvalid),
-    .M_AXI_RFDC_rdata(M_AXI_RFDC_rdata),
-    .M_AXI_RFDC_rready(M_AXI_RFDC_rready),
-    .M_AXI_RFDC_rresp(M_AXI_RFDC_rresp),
-    .M_AXI_RFDC_rvalid(M_AXI_RFDC_rvalid),
-    .M_AXI_RFDC_wdata(M_AXI_RFDC_wdata),
-    .M_AXI_RFDC_wready(M_AXI_RFDC_wready),
-    .M_AXI_RFDC_wstrb(M_AXI_RFDC_wstrb),
-    .M_AXI_RFDC_wvalid(M_AXI_RFDC_wvalid),
-    .M_AXI_araddr(M_AXI_araddr),
-    .M_AXI_arprot(M_AXI_arprot),
-    .M_AXI_arready(M_AXI_arready),
-    .M_AXI_arvalid(M_AXI_arvalid),
-    .M_AXI_awaddr(M_AXI_awaddr),
-    .M_AXI_awprot(M_AXI_awprot),
-    .M_AXI_awready(M_AXI_awready),
-    .M_AXI_awvalid(M_AXI_awvalid),
-    .M_AXI_bready(M_AXI_bready),
-    .M_AXI_bresp(M_AXI_bresp),
-    .M_AXI_bvalid(M_AXI_bvalid),
-    .M_AXI_rdata(M_AXI_rdata),
-    .M_AXI_rready(M_AXI_rready),
-    .M_AXI_rresp(M_AXI_rresp),
-    .M_AXI_rvalid(M_AXI_rvalid),
-    .M_AXI_wdata(M_AXI_wdata),
-    .M_AXI_wready(M_AXI_wready),
-    .M_AXI_wstrb(M_AXI_wstrb),
-    .M_AXI_wvalid(M_AXI_wvalid),
-    .axil_clk(axil_clk),
-    .axil_rst(axil_rst),
-    .axil_rst_n(axil_rst_n)
-  );
-
   // sys_block: xps:sys_block0
   axi4lite_ic_wrapper  axi4lite_interconnect (
     .axi4lite_aclk(axil_clk),
@@ -1929,10 +1870,10 @@ module top (
     .axi4lite_sys_block_sys_rev_rcs_in_we(rfdc_multi_eight_adcs_2048gsps_mts_sys_rev_rcs_in_we),
     .axi4lite_sys_block_sys_scratchpad_out(rfdc_multi_eight_adcs_2048gsps_mts_sys_scratchpad_out),
     .axi4lite_sys_block_sys_scratchpad_out_we(rfdc_multi_eight_adcs_2048gsps_mts_sys_scratchpad_out_we),
-    .s_axi4lite_araddr(M_AXI_araddr[31:0]),
+    .s_axi4lite_araddr(M_AXI_araddr),
     .s_axi4lite_arready(M_AXI_arready),
     .s_axi4lite_arvalid(M_AXI_arvalid),
-    .s_axi4lite_awaddr(M_AXI_awaddr[31:0]),
+    .s_axi4lite_awaddr(M_AXI_awaddr),
     .s_axi4lite_awready(M_AXI_awready),
     .s_axi4lite_awvalid(M_AXI_awvalid),
     .s_axi4lite_bready(M_AXI_bready),
@@ -2173,6 +2114,67 @@ module top (
     .rfdc_multi_eight_adcs_2048gsps_mts_sync_state7_user_data_in(rfdc_multi_eight_adcs_2048gsps_mts_sync_state7_user_data_in)
   );
 
+  // zcu111: ZCU111
+  zcu111_infrastructure #(
+    .DIVCLK(1),
+    .DIVIDE(4.0),
+    .MULTIPLY(8.0)
+  ) zcu111_infr_inst (
+    .clk_100_n(clk_100_n),
+    .clk_100_p(clk_100_p),
+    .clk_200(clk_200),
+    .sys_clk(sys_clk),
+    .sys_clk180(sys_clk180),
+    .sys_clk270(sys_clk270),
+    .sys_clk90(sys_clk90),
+    .sys_clk_rst(sys_clk_rst)
+  );
+
+
+  zcu111  zcu111_inst (
+    .M_AXI_RFDC_araddr(M_AXI_RFDC_araddr),
+    .M_AXI_RFDC_arprot(M_AXI_RFDC_arprot),
+    .M_AXI_RFDC_arready(M_AXI_RFDC_arready),
+    .M_AXI_RFDC_arvalid(M_AXI_RFDC_arvalid),
+    .M_AXI_RFDC_awaddr(M_AXI_RFDC_awaddr),
+    .M_AXI_RFDC_awprot(M_AXI_RFDC_awprot),
+    .M_AXI_RFDC_awready(M_AXI_RFDC_awready),
+    .M_AXI_RFDC_awvalid(M_AXI_RFDC_awvalid),
+    .M_AXI_RFDC_bready(M_AXI_RFDC_bready),
+    .M_AXI_RFDC_bresp(M_AXI_RFDC_bresp),
+    .M_AXI_RFDC_bvalid(M_AXI_RFDC_bvalid),
+    .M_AXI_RFDC_rdata(M_AXI_RFDC_rdata),
+    .M_AXI_RFDC_rready(M_AXI_RFDC_rready),
+    .M_AXI_RFDC_rresp(M_AXI_RFDC_rresp),
+    .M_AXI_RFDC_rvalid(M_AXI_RFDC_rvalid),
+    .M_AXI_RFDC_wdata(M_AXI_RFDC_wdata),
+    .M_AXI_RFDC_wready(M_AXI_RFDC_wready),
+    .M_AXI_RFDC_wstrb(M_AXI_RFDC_wstrb),
+    .M_AXI_RFDC_wvalid(M_AXI_RFDC_wvalid),
+    .M_AXI_araddr(M_AXI_araddr),
+    .M_AXI_arprot(M_AXI_arprot),
+    .M_AXI_arready(M_AXI_arready),
+    .M_AXI_arvalid(M_AXI_arvalid),
+    .M_AXI_awaddr(M_AXI_awaddr),
+    .M_AXI_awprot(M_AXI_awprot),
+    .M_AXI_awready(M_AXI_awready),
+    .M_AXI_awvalid(M_AXI_awvalid),
+    .M_AXI_bready(M_AXI_bready),
+    .M_AXI_bresp(M_AXI_bresp),
+    .M_AXI_bvalid(M_AXI_bvalid),
+    .M_AXI_rdata(M_AXI_rdata),
+    .M_AXI_rready(M_AXI_rready),
+    .M_AXI_rresp(M_AXI_rresp),
+    .M_AXI_rvalid(M_AXI_rvalid),
+    .M_AXI_wdata(M_AXI_wdata),
+    .M_AXI_wready(M_AXI_wready),
+    .M_AXI_wstrb(M_AXI_wstrb),
+    .M_AXI_wvalid(M_AXI_wvalid),
+    .axil_clk(axil_clk),
+    .axil_rst(axil_rst),
+    .axil_rst_n(axil_rst_n)
+  );
+
 
 /*
                    _                                  _       
@@ -2184,13 +2186,13 @@ module top (
                       __/ |                                   
                      |___/                                    
 */
+  // rfdc_V0_4: rfdc_V0_4
+  assign user_rst = sys_clk_rst;
   // xsg: ZCU111
   assign user_clk = sys_clk;
   assign user_clk180 = sys_clk180;
   assign user_clk270 = sys_clk270;
   assign user_clk90 = sys_clk90;
-  // rfdc_V0_4: rfdc_V0_4
-  assign user_rst = sys_clk_rst;
 
 
 endmodule

@@ -1,0 +1,97 @@
+#-----------------------------------------------------------
+# Vivado v2018.3.1_AR71948 (64-bit)
+# SW Build 2489853 on Tue Mar 26 04:18:30 MDT 2019
+# IP Build 2486929 on Tue Mar 26 06:44:21 MDT 2019
+# Start of session at: Thu Sep 24 16:27:40 2020
+# Process ID: 16861
+# Current directory: /home/wei/casper/casper_mlib/tutorials_devel/zcu111
+# Command line: vivado -jou /home/wei/casper/casper_mlib/tutorials_devel/zcu111/raw_axi_test/onegbe_test/onegbe_test/vivado.jou -log /home/wei/casper/casper_mlib/tutorials_devel/zcu111/raw_axi_test/onegbe_test/onegbe_test/vivado.log -mode batch -source /home/wei/casper/casper_mlib/tutorials_devel/zcu111/raw_axi_test/onegbe_test/onegbe_test/gogogo.tcl
+# Log file: /home/wei/casper/casper_mlib/tutorials_devel/zcu111/raw_axi_test/onegbe_test/onegbe_test/vivado.log
+# Journal file: /home/wei/casper/casper_mlib/tutorials_devel/zcu111/raw_axi_test/onegbe_test/onegbe_test/vivado.jou
+#-----------------------------------------------------------
+source /home/wei/casper/casper_mlib/tutorials_devel/zcu111/raw_axi_test/onegbe_test/onegbe_test/gogogo.tcl
+# puts "Starting tcl script"
+Starting tcl script
+# create_project -f myproj /home/wei/casper/casper_mlib/tutorials_devel/zcu111/raw_axi_test/onegbe_test/onegbe_test/myproj -part xczu28dr-ffvg1517-2-e
+# set_property target_language VHDL [current_project]
+# import_files -force /home/wei/casper/casper_mlib/tutorials_devel/zcu111/raw_axi_test/onegbe_test/onegbe_test/top.v
+# import_files -force /home/wei/casper/casper_mlib/tutorials_devel/zcu111/mlib_devel/jasper_library/hdl_sources/wb_register_ppc2simulink
+# import_files -force /home/wei/casper/casper_mlib/tutorials_devel/zcu111/mlib_devel/jasper_library/hdl_sources/wb_register_simulink2ppc
+# import_files -force /home/wei/casper/casper_mlib/tutorials_devel/zcu111/mlib_devel/jasper_library/hdl_sources/onegbe/CRC_gen.v
+# import_files -force /home/wei/casper/casper_mlib/tutorials_devel/zcu111/mlib_devel/jasper_library/hdl_sources/onegbe/gig_eth_mac_rx.v
+# import_files -force /home/wei/casper/casper_mlib/tutorials_devel/zcu111/mlib_devel/jasper_library/hdl_sources/onegbe/CRC_chk.v
+# import_files -force /home/wei/casper/casper_mlib/tutorials_devel/zcu111/mlib_devel/jasper_library/hdl_sources/onegbe/gbe_udp.v
+# import_files -force /home/wei/casper/casper_mlib/tutorials_devel/zcu111/mlib_devel/jasper_library/hdl_sources/onegbe/gbe_cpu_attach_wb.v
+# import_files -force /home/wei/casper/casper_mlib/tutorials_devel/zcu111/mlib_devel/jasper_library/hdl_sources/onegbe/gig_eth_mac_tx.v
+# import_files -force /home/wei/casper/casper_mlib/tutorials_devel/zcu111/mlib_devel/jasper_library/hdl_sources/onegbe/gig_eth_mac.v
+# import_files -force /home/wei/casper/casper_mlib/tutorials_devel/zcu111/mlib_devel/jasper_library/hdl_sources/onegbe/mdio_master.v
+# import_files -force /home/wei/casper/casper_mlib/tutorials_devel/zcu111/mlib_devel/jasper_library/hdl_sources/onegbe/gbe_rx.v
+# import_files -force /home/wei/casper/casper_mlib/tutorials_devel/zcu111/mlib_devel/jasper_library/hdl_sources/onegbe/gbe_tx.v
+# import_files -force /home/wei/casper/casper_mlib/tutorials_devel/zcu111/mlib_devel/jasper_library/hdl_sources/onegbe/mdio_config.v
+# import_files -force /home/wei/casper/casper_mlib/tutorials_devel/zcu111/mlib_devel/jasper_library/hdl_sources/onegbe/rfsoc/axi_slave_wishbone_classic_master.vhd
+# import_files -force /home/wei/casper/casper_mlib/tutorials_devel/zcu111/mlib_devel/jasper_library/hdl_sources/onegbe/rfsoc/gbe_cpu_buffer.xci
+INFO: [IP_Flow 19-234] Refreshing IP repositories
+INFO: [IP_Flow 19-1704] No user IP repositories specified
+INFO: [IP_Flow 19-2313] Loaded Vivado IP repository '/home/wei/Software/Vivado/install/Vivado/2018.3/data/ip'.
+WARNING: [IP_Flow 19-2162] IP 'gbe_cpu_buffer' is locked:
+* IP definition 'Block Memory Generator (8.3)' for IP 'gbe_cpu_buffer' (customized with software release 2016.4) has a newer minor version in the IP Catalog.
+* IP definition 'Block Memory Generator (8.3)' for IP 'gbe_cpu_buffer' (customized with software release 2016.4) has a different revision in the IP Catalog.
+* Current project part 'xczu28dr-ffvg1517-2-e' and the part 'xcvu9p-flga2104-2L-e-es1' used to customize the IP 'gbe_cpu_buffer' do not match.
+Please select 'Report IP Status' from the 'Tools/Report' menu or run Tcl command 'report_ip_status' for more information.
+# import_files -force /home/wei/casper/casper_mlib/tutorials_devel/zcu111/mlib_devel/jasper_library/hdl_sources/onegbe/rfsoc/gbe_arp_cache.xci
+WARNING: [IP_Flow 19-2162] IP 'gbe_arp_cache' is locked:
+* IP definition 'Block Memory Generator (8.3)' for IP 'gbe_arp_cache' (customized with software release 2016.4) has a newer minor version in the IP Catalog.
+* IP definition 'Block Memory Generator (8.3)' for IP 'gbe_arp_cache' (customized with software release 2016.4) has a different revision in the IP Catalog.
+* Current project part 'xczu28dr-ffvg1517-2-e' and the part 'xcvu9p-flga2104-2L-e-es1' used to customize the IP 'gbe_arp_cache' do not match.
+Please select 'Report IP Status' from the 'Tools/Report' menu or run Tcl command 'report_ip_status' for more information.
+# import_files -force /home/wei/casper/casper_mlib/tutorials_devel/zcu111/mlib_devel/jasper_library/hdl_sources/onegbe/rfsoc/gbe_ctrl_fifo.xci
+WARNING: [IP_Flow 19-2162] IP 'gbe_ctrl_fifo' is locked:
+* IP definition 'FIFO Generator (13.1)' for IP 'gbe_ctrl_fifo' (customized with software release 2016.4) has a newer minor version in the IP Catalog.
+* IP definition 'FIFO Generator (13.1)' for IP 'gbe_ctrl_fifo' (customized with software release 2016.4) has a different revision in the IP Catalog.
+* Current project part 'xczu28dr-ffvg1517-2-e' and the part 'xcvu9p-flga2104-2L-e-es1' used to customize the IP 'gbe_ctrl_fifo' do not match.
+Please select 'Report IP Status' from the 'Tools/Report' menu or run Tcl command 'report_ip_status' for more information.
+# import_files -force /home/wei/casper/casper_mlib/tutorials_devel/zcu111/mlib_devel/jasper_library/hdl_sources/onegbe/rfsoc/gbe_rx_packet_fifo.xci
+WARNING: [IP_Flow 19-2162] IP 'gbe_rx_packet_fifo' is locked:
+* IP definition 'FIFO Generator (13.1)' for IP 'gbe_rx_packet_fifo' (customized with software release 2016.4) has a newer minor version in the IP Catalog.
+* IP definition 'FIFO Generator (13.1)' for IP 'gbe_rx_packet_fifo' (customized with software release 2016.4) has a different revision in the IP Catalog.
+* Current project part 'xczu28dr-ffvg1517-2-e' and the part 'xcvu9p-flga2104-2L-e-es1' used to customize the IP 'gbe_rx_packet_fifo' do not match.
+Please select 'Report IP Status' from the 'Tools/Report' menu or run Tcl command 'report_ip_status' for more information.
+# import_files -force /home/wei/casper/casper_mlib/tutorials_devel/zcu111/mlib_devel/jasper_library/hdl_sources/onegbe/rfsoc/gig_ethernet_pcs_pma_autonegotiation_1000BASEX.xci
+INFO: [Device 21-403] Loading part xczu28dr-ffvg1517-2-e
+INFO: [Common 17-365] Interrupt caught but 'source' cannot be canceled. Please wait for command to finish.
+INFO: [Common 17-365] Interrupt caught but 'source' cannot be canceled. Please wait for command to finish.
+INFO: [xilinx.com:ip:gig_ethernet_pcs_pma:16.1-98989] gig_ethernet_pcs_pma_autonegotiation_1000BASEX: ARCHITECTURE : zynquplus
+INFO: [xilinx.com:ip:gig_ethernet_pcs_pma:16.1-98989] gig_ethernet_pcs_pma_autonegotiation_1000BASEX: PART : xczu28dr-ffvg1517-2-e
+INFO: [xilinx.com:ip:gig_ethernet_pcs_pma:16.1-98989] gig_ethernet_pcs_pma_autonegotiation_1000BASEX: SPEEDGRADE : -2
+INFO: [xilinx.com:ip:gig_ethernet_pcs_pma:16.1-98989] gig_ethernet_pcs_pma_autonegotiation_1000BASEX: Standard : 1000BASEX
+INFO: [xilinx.com:ip:gig_ethernet_pcs_pma:16.1-98989] gig_ethernet_pcs_pma_autonegotiation_1000BASEX: ARCHITECTURE : zynquplus
+INFO: [xilinx.com:ip:gig_ethernet_pcs_pma:16.1-98989] gig_ethernet_pcs_pma_autonegotiation_1000BASEX: PART : xczu28dr-ffvg1517-2-e
+INFO: [xilinx.com:ip:gig_ethernet_pcs_pma:16.1-98989] gig_ethernet_pcs_pma_autonegotiation_1000BASEX: SPEEDGRADE : -2
+INFO: [xilinx.com:ip:gig_ethernet_pcs_pma:16.1-98989] gig_ethernet_pcs_pma_autonegotiation_1000BASEX: Standard : 1000BASEX
+INFO: [xilinx.com:ip:gig_ethernet_pcs_pma:16.1-98989] gig_ethernet_pcs_pma_autonegotiation_1000BASEX: ARCHITECTURE : zynquplus
+INFO: [xilinx.com:ip:gig_ethernet_pcs_pma:16.1-98989] gig_ethernet_pcs_pma_autonegotiation_1000BASEX: PART : xczu28dr-ffvg1517-2-e
+INFO: [xilinx.com:ip:gig_ethernet_pcs_pma:16.1-98989] gig_ethernet_pcs_pma_autonegotiation_1000BASEX: SPEEDGRADE : -2
+INFO: [xilinx.com:ip:gig_ethernet_pcs_pma:16.1-98989] gig_ethernet_pcs_pma_autonegotiation_1000BASEX: Standard : 1000BASEX
+INFO: [Common 17-365] Interrupt caught but 'source' cannot be canceled. Please wait for command to finish.
+INFO: [xilinx.com:ip:gig_ethernet_pcs_pma:16.1-98989] gig_ethernet_pcs_pma_autonegotiation_1000BASEX: ARCHITECTURE : zynquplus
+INFO: [xilinx.com:ip:gig_ethernet_pcs_pma:16.1-98989] gig_ethernet_pcs_pma_autonegotiation_1000BASEX: PART : xczu28dr-ffvg1517-2-e
+INFO: [xilinx.com:ip:gig_ethernet_pcs_pma:16.1-98989] gig_ethernet_pcs_pma_autonegotiation_1000BASEX: SPEEDGRADE : -2
+INFO: [xilinx.com:ip:gig_ethernet_pcs_pma:16.1-98989] gig_ethernet_pcs_pma_autonegotiation_1000BASEX: Standard : 1000BASEX
+INFO: [Common 17-365] Interrupt caught but 'source' cannot be canceled. Please wait for command to finish.
+INFO: [Common 17-365] Interrupt caught but 'source' cannot be canceled. Please wait for command to finish.
+INFO: [xilinx.com:ip:gig_ethernet_pcs_pma:16.1-98989] gig_ethernet_pcs_pma_autonegotiation_1000BASEX: ARCHITECTURE : zynquplus
+INFO: [xilinx.com:ip:gig_ethernet_pcs_pma:16.1-98989] gig_ethernet_pcs_pma_autonegotiation_1000BASEX: PART : xczu28dr-ffvg1517-2-e
+INFO: [xilinx.com:ip:gig_ethernet_pcs_pma:16.1-98989] gig_ethernet_pcs_pma_autonegotiation_1000BASEX: SPEEDGRADE : -2
+INFO: [xilinx.com:ip:gig_ethernet_pcs_pma:16.1-98989] gig_ethernet_pcs_pma_autonegotiation_1000BASEX: Standard : 1000BASEX
+INFO: [Common 17-365] Interrupt caught but 'source' cannot be canceled. Please wait for command to finish.
+INFO: [Common 17-365] Interrupt caught but 'source' cannot be canceled. Please wait for command to finish.
+INFO: [xilinx.com:ip:gig_ethernet_pcs_pma:16.1-98989] gig_ethernet_pcs_pma_autonegotiation_1000BASEX: ARCHITECTURE : zynquplus
+INFO: [xilinx.com:ip:gig_ethernet_pcs_pma:16.1-98989] gig_ethernet_pcs_pma_autonegotiation_1000BASEX: PART : xczu28dr-ffvg1517-2-e
+INFO: [xilinx.com:ip:gig_ethernet_pcs_pma:16.1-98989] gig_ethernet_pcs_pma_autonegotiation_1000BASEX: SPEEDGRADE : -2
+INFO: [xilinx.com:ip:gig_ethernet_pcs_pma:16.1-98989] gig_ethernet_pcs_pma_autonegotiation_1000BASEX: Standard : 1000BASEX
+INFO: [Common 17-365] Interrupt caught but 'source' cannot be canceled. Please wait for command to finish.
+INFO: [Common 17-365] Interrupt caught but 'source' cannot be canceled. Please wait for command to finish.
+INFO: [Common 17-365] Interrupt caught but 'source' cannot be canceled. Please wait for command to finish.
+import_files: Time (s): cpu = 00:00:10 ; elapsed = 00:00:14 . Memory (MB): peak = 2291.852 ; gain = 887.910 ; free physical = 6549 ; free virtual = 30069
+INFO: [Common 17-681] Processing pending cancel.
+INFO: [Common 17-206] Exiting Vivado at Thu Sep 24 16:28:04 2020...

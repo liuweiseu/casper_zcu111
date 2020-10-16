@@ -1,11 +1,14 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<GenRun Id="ADC8_R2R_MTS_2048_synth_1" LaunchPart="xczu28dr-ffvg1517-2-e" LaunchTime="1598076636">
-  <File Type="RDS-UTIL-PB" Name="ADC8_R2R_MTS_2048_utilization_synth.pb"/>
-  <File Type="RDS-UTIL" Name="ADC8_R2R_MTS_2048_utilization_synth.rpt"/>
-  <File Type="RDS-RDS" Name="ADC8_R2R_MTS_2048.vds"/>
+<GenRun Id="ADC8_R2R_MTS_2048_synth_1" LaunchPart="xczu28dr-ffvg1517-2-e" LaunchTime="1601061633">
+  <File Type="VDS-TIMING-PB" Name="ADC8_R2R_MTS_2048_timing_summary_synth.pb"/>
+  <File Type="VDS-TIMINGSUMMARY" Name="ADC8_R2R_MTS_2048_timing_summary_synth.rpt"/>
   <File Type="RDS-DCP" Name="ADC8_R2R_MTS_2048.dcp"/>
-  <File Type="PA-TCL" Name="ADC8_R2R_MTS_2048.tcl"/>
   <File Type="REPORTS-TCL" Name="ADC8_R2R_MTS_2048_reports.tcl"/>
+  <File Type="PA-TCL" Name="ADC8_R2R_MTS_2048.tcl"/>
+  <File Type="RDS-RDS" Name="ADC8_R2R_MTS_2048.vds"/>
+  <File Type="RDS-PROPCONSTRS" Name="ADC8_R2R_MTS_2048_drc_synth.rpt"/>
+  <File Type="RDS-UTIL" Name="ADC8_R2R_MTS_2048_utilization_synth.rpt"/>
+  <File Type="RDS-UTIL-PB" Name="ADC8_R2R_MTS_2048_utilization_synth.pb"/>
   <FileSet Name="sources" Type="BlockSrcs" RelSrcDir="$PSRCDIR/ADC8_R2R_MTS_2048">
     <File Path="$PSRCDIR/sources_1/ip/ADC8_R2R_MTS_2048/ADC8_R2R_MTS_2048.xci">
       <FileInfo>
@@ -43,7 +46,9 @@
     </Config>
   </FileSet>
   <Strategy Version="1" Minor="2">
-    <StratHandle Name="Vivado Synthesis Defaults" Flow="Vivado Synthesis 2018"/>
+    <StratHandle Name="Vivado Synthesis Defaults" Flow="Vivado Synthesis 2018">
+      <Desc>Vivado Synthesis Defaults</Desc>
+    </StratHandle>
     <Step Id="synth_design"/>
   </Strategy>
 </GenRun>

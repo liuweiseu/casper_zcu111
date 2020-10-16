@@ -1,0 +1,12 @@
+<?xml version="1.0" ?>
+<node byte_size="32" id="sw_reg">
+	<node address="0x00000000" description="sw_reg_bitfield_snapshot_ss_ctrl" hw_rst="0" id="bitfield_snapshot_ss_ctrl" mask="0xffffffff" permission="rw" size="1"/>
+	<node address="0x00000004" description="sw_reg_bitfield_snapshot_ss_status" hw_rst="0x0" id="bitfield_snapshot_ss_status" mask="0xffffffff" permission="r" size="1"/>
+	<node address="0x00000008" description="sw_reg_dest_ip" hw_rst="0" id="dest_ip" mask="0xffffffff" permission="rw" size="1"/>
+	<node address="0x0000000c" description="sw_reg_dest_port" hw_rst="0" id="dest_port" mask="0xffffffff" permission="rw" size="1"/>
+	<node address="0x00000010" description="sw_reg_pkt_sim_enable" hw_rst="0" id="pkt_sim_enable" mask="0xffffffff" permission="rw" size="1"/>
+	<node address="0x00000014" description="sw_reg_pkt_sim_payload_len" hw_rst="0" id="pkt_sim_payload_len" mask="0xffffffff" permission="rw" size="1"/>
+	<node address="0x00000018" description="sw_reg_pkt_sim_period" hw_rst="0" id="pkt_sim_period" mask="0xffffffff" permission="rw" size="1"/>
+	<node address="0x0000001c" description="sw_reg_rst" hw_rst="0" id="rst" mask="0xffffffff" permission="rw" size="1"/>
+</node>
+<!-- This file has been automatically generated using xml2vhdl.py version 1.16 /!-->

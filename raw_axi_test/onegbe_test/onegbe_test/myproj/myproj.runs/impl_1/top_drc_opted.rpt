@@ -1,0 +1,47 @@
+Copyright 1986-2019 Xilinx, Inc. All Rights Reserved.
+------------------------------------------------------------------------------------------------
+| Tool Version : Vivado v.2018.3.1_AR71948 (lin64) Build 2489853 Tue Mar 26 04:18:30 MDT 2019
+| Date         : Thu Sep 24 16:44:31 2020
+| Host         : wei-Berkeley running 64-bit Ubuntu 18.04.5 LTS
+| Command      : report_drc -file top_drc_opted.rpt -pb top_drc_opted.pb -rpx top_drc_opted.rpx
+| Design       : top
+| Device       : xczu28dr-ffvg1517-2-e
+| Speed File   : -2
+| Design State : Synthesized
+------------------------------------------------------------------------------------------------
+
+Report DRC
+
+Table of Contents
+-----------------
+1. REPORT SUMMARY
+2. REPORT DETAILS
+
+1. REPORT SUMMARY
+-----------------
+            Netlist: netlist
+          Floorplan: checkpoint_top
+      Design limits: <entire design considered>
+           Ruledeck: default
+             Max violations: <unlimited>
+             Violations found: 2
++----------+----------+------------------------------------------------------------------+------------+
+| Rule     | Severity | Description                                                      | Violations |
++----------+----------+------------------------------------------------------------------+------------+
+| AVAL-168 | Warning  | Phase shift check                                                | 1          |
+| AVAL-156 | Advisory | enum_USE_MULT_NONE__enum_DREG_ADREG_0_connects_CED_CEAD_RSTD_GND | 1          |
++----------+----------+------------------------------------------------------------------+------------+
+
+2. REPORT DETAILS
+-----------------
+AVAL-168#1 Warning
+Phase shift check  
+The MMCME4_ADV cell zcu111_infr_inst/user_200m_mmcm_inst has a fractional CLKOUT0_DIVIDE_F value (5.120) which is not a multiple of the hardware granularity (0.125) and will be adjusted to the nearest supportable value.
+Related violations: <none>
+
+AVAL-156#1 Advisory
+enum_USE_MULT_NONE__enum_DREG_ADREG_0_connects_CED_CEAD_RSTD_GND  
+onegbe_test_inst/onegbe_test_struct/bitfield_snapshot/ss/add_gen/add_gen/comp0.core_instance0/U0/i_synth/i_baseip.i_xbip_counter/i_dsp48.i_dsp/i_vx7.i_dsp48e_wrap/i_primitive: DSP48E2 is not using the Multiplier (USE_MULT = NONE). For improved power characteristics, set DREG and ADREG to '1', tie CED, CEAD, and RSTD to logic '0'.
+Related violations: <none>
+
+

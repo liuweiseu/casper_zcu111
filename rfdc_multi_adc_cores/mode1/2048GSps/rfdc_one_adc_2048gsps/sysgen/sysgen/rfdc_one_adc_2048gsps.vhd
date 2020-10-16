@@ -12,12 +12,12 @@ entity rfdc_one_adc_2048gsps_edge_detect_x5 is
   );
 end rfdc_one_adc_2048gsps_edge_detect_x5;
 architecture structural of rfdc_one_adc_2048gsps_edge_detect_x5 is 
-  signal edge_op_y_net : std_logic_vector( 1-1 downto 0 );
   signal slice_rst_cntrl_y_net : std_logic_vector( 1-1 downto 0 );
-  signal clk_net : std_logic;
-  signal ce_net : std_logic;
   signal delay_q_net : std_logic_vector( 1-1 downto 0 );
   signal inverter_op_net : std_logic_vector( 1-1 downto 0 );
+  signal clk_net : std_logic;
+  signal ce_net : std_logic;
+  signal edge_op_y_net : std_logic_vector( 1-1 downto 0 );
 begin
   out_x0 <= edge_op_y_net;
   slice_rst_cntrl_y_net <= in_x0;
@@ -71,8 +71,8 @@ entity rfdc_one_adc_2048gsps_gpio_led is
 end rfdc_one_adc_2048gsps_gpio_led;
 architecture structural of rfdc_one_adc_2048gsps_gpio_led is 
   signal slice_msb_y_net : std_logic_vector( 1-1 downto 0 );
-  signal convert_dout_net : std_logic_vector( 1-1 downto 0 );
   signal clk_net : std_logic;
+  signal convert_dout_net : std_logic_vector( 1-1 downto 0 );
   signal ce_net : std_logic;
 begin
   slice_msb_y_net <= gpio_out;
@@ -115,10 +115,10 @@ entity rfdc_one_adc_2048gsps_gpio_led1 is
   );
 end rfdc_one_adc_2048gsps_gpio_led1;
 architecture structural of rfdc_one_adc_2048gsps_gpio_led1 is 
-  signal convert_dout_net : std_logic_vector( 1-1 downto 0 );
-  signal clk_net : std_logic;
   signal ce_net : std_logic;
   signal slice_led_cntrl_y_net : std_logic_vector( 1-1 downto 0 );
+  signal convert_dout_net : std_logic_vector( 1-1 downto 0 );
+  signal clk_net : std_logic;
 begin
   slice_led_cntrl_y_net <= gpio_out;
   rfdc_one_adc_2048gsps_gpio_led1_gateway <= convert_dout_net;
@@ -158,9 +158,9 @@ entity rfdc_one_adc_2048gsps_led_cntrl is
   );
 end rfdc_one_adc_2048gsps_led_cntrl;
 architecture structural of rfdc_one_adc_2048gsps_led_cntrl is 
-  signal slice_led_cntrl_y_net : std_logic_vector( 1-1 downto 0 );
-  signal rfdc_one_adc_2048gsps_led_cntrl_user_data_out_net : std_logic_vector( 32-1 downto 0 );
   signal io_delay_q_net : std_logic_vector( 32-1 downto 0 );
+  signal rfdc_one_adc_2048gsps_led_cntrl_user_data_out_net : std_logic_vector( 32-1 downto 0 );
+  signal slice_led_cntrl_y_net : std_logic_vector( 1-1 downto 0 );
 begin
   in_led_cntrl <= slice_led_cntrl_y_net;
   rfdc_one_adc_2048gsps_led_cntrl_user_data_out_net <= rfdc_one_adc_2048gsps_led_cntrl_user_data_out;
@@ -196,9 +196,9 @@ entity rfdc_one_adc_2048gsps_reg_cntrl is
   );
 end rfdc_one_adc_2048gsps_reg_cntrl;
 architecture structural of rfdc_one_adc_2048gsps_reg_cntrl is 
-  signal slice_rst_cntrl_y_net : std_logic_vector( 1-1 downto 0 );
-  signal rfdc_one_adc_2048gsps_reg_cntrl_user_data_out_net : std_logic_vector( 32-1 downto 0 );
   signal io_delay_q_net : std_logic_vector( 32-1 downto 0 );
+  signal rfdc_one_adc_2048gsps_reg_cntrl_user_data_out_net : std_logic_vector( 32-1 downto 0 );
+  signal slice_rst_cntrl_y_net : std_logic_vector( 1-1 downto 0 );
 begin
   in_rst_cntrl <= slice_rst_cntrl_y_net;
   rfdc_one_adc_2048gsps_reg_cntrl_user_data_out_net <= rfdc_one_adc_2048gsps_reg_cntrl_user_data_out;
@@ -253,11 +253,11 @@ entity rfdc_one_adc_2048gsps_buscreate_x1 is
   );
 end rfdc_one_adc_2048gsps_buscreate_x1;
 architecture structural of rfdc_one_adc_2048gsps_buscreate_x1 is 
-  signal reinterpret1_output_port_net : std_logic_vector( 16-1 downto 0 );
   signal reinterpret2_output_port_net : std_logic_vector( 16-1 downto 0 );
+  signal reinterpret1_output_port_net : std_logic_vector( 16-1 downto 0 );
   signal concatenate_y_net : std_logic_vector( 32-1 downto 0 );
-  signal assert_d0_dout_net : std_logic_vector( 16-1 downto 0 );
   signal assert_d1_dout_net : std_logic_vector( 16-1 downto 0 );
+  signal assert_d0_dout_net : std_logic_vector( 16-1 downto 0 );
 begin
   bus_out <= concatenate_y_net;
   assert_d0_dout_net <= in1;
@@ -304,10 +304,10 @@ end rfdc_one_adc_2048gsps_edge_detect_x4;
 architecture structural of rfdc_one_adc_2048gsps_edge_detect_x4 is 
   signal inverter_op_net : std_logic_vector( 1-1 downto 0 );
   signal delay_q_net : std_logic_vector( 1-1 downto 0 );
+  signal ce_net : std_logic;
   signal edge_op_y_net : std_logic_vector( 1-1 downto 0 );
   signal slice3_y_net : std_logic_vector( 1-1 downto 0 );
   signal clk_net : std_logic;
-  signal ce_net : std_logic;
 begin
   out_x0 <= edge_op_y_net;
   slice3_y_net <= in_x0;
@@ -367,32 +367,32 @@ entity rfdc_one_adc_2048gsps_add_gen_x1 is
   );
 end rfdc_one_adc_2048gsps_add_gen_x1;
 architecture structural of rfdc_one_adc_2048gsps_add_gen_x1 is 
-  signal inverter1_op_net : std_logic_vector( 1-1 downto 0 );
-  signal logical1_y_net : std_logic_vector( 1-1 downto 0 );
-  signal logical4_y_net : std_logic_vector( 1-1 downto 0 );
-  signal add_gen_op_net : std_logic_vector( 13-1 downto 0 );
-  signal slice3_y_net : std_logic_vector( 1-1 downto 0 );
-  signal shift_op_net : std_logic_vector( 19-1 downto 0 );
   signal inverter_op_net : std_logic_vector( 1-1 downto 0 );
   signal delay1_q_net : std_logic_vector( 12-1 downto 0 );
-  signal slice2_y_net : std_logic_vector( 10-1 downto 0 );
-  signal delay6_q_net : std_logic_vector( 32-1 downto 0 );
-  signal register6_q_net : std_logic_vector( 1-1 downto 0 );
-  signal never_op_net : std_logic_vector( 1-1 downto 0 );
-  signal edge_op_y_net : std_logic_vector( 1-1 downto 0 );
-  signal clk_net : std_logic;
-  signal ce_net : std_logic;
-  signal edge_op_y_net_x0 : std_logic_vector( 1-1 downto 0 );
-  signal logical6_y_net : std_logic_vector( 1-1 downto 0 );
-  signal concat_y_net : std_logic_vector( 32-1 downto 0 );
-  signal data_choice_y_net : std_logic_vector( 32-1 downto 0 );
-  signal we_choice_y_net : std_logic_vector( 1-1 downto 0 );
-  signal convert_dout_net : std_logic_vector( 19-1 downto 0 );
-  signal register5_q_net : std_logic_vector( 1-1 downto 0 );
-  signal delay_q_net : std_logic_vector( 1-1 downto 0 );
-  signal delay4_q_net : std_logic_vector( 1-1 downto 0 );
-  signal slice1_y_net : std_logic_vector( 12-1 downto 0 );
   signal delay3_q_net : std_logic_vector( 1-1 downto 0 );
+  signal logical6_y_net : std_logic_vector( 1-1 downto 0 );
+  signal inverter1_op_net : std_logic_vector( 1-1 downto 0 );
+  signal slice3_y_net : std_logic_vector( 1-1 downto 0 );
+  signal shift_op_net : std_logic_vector( 19-1 downto 0 );
+  signal register5_q_net : std_logic_vector( 1-1 downto 0 );
+  signal logical1_y_net : std_logic_vector( 1-1 downto 0 );
+  signal never_op_net : std_logic_vector( 1-1 downto 0 );
+  signal delay4_q_net : std_logic_vector( 1-1 downto 0 );
+  signal register6_q_net : std_logic_vector( 1-1 downto 0 );
+  signal add_gen_op_net : std_logic_vector( 13-1 downto 0 );
+  signal delay_q_net : std_logic_vector( 1-1 downto 0 );
+  signal delay6_q_net : std_logic_vector( 32-1 downto 0 );
+  signal convert_dout_net : std_logic_vector( 19-1 downto 0 );
+  signal edge_op_y_net_x0 : std_logic_vector( 1-1 downto 0 );
+  signal slice1_y_net : std_logic_vector( 12-1 downto 0 );
+  signal logical4_y_net : std_logic_vector( 1-1 downto 0 );
+  signal we_choice_y_net : std_logic_vector( 1-1 downto 0 );
+  signal data_choice_y_net : std_logic_vector( 32-1 downto 0 );
+  signal slice2_y_net : std_logic_vector( 10-1 downto 0 );
+  signal ce_net : std_logic;
+  signal edge_op_y_net : std_logic_vector( 1-1 downto 0 );
+  signal concat_y_net : std_logic_vector( 32-1 downto 0 );
+  signal clk_net : std_logic;
 begin
   add <= slice2_y_net;
   dout <= delay6_q_net;
@@ -620,36 +620,36 @@ entity rfdc_one_adc_2048gsps_dram_munge_x1 is
   );
 end rfdc_one_adc_2048gsps_dram_munge_x1;
 architecture structural of rfdc_one_adc_2048gsps_dram_munge_x1 is 
-  signal relational_op_net : std_logic_vector( 1-1 downto 0 );
-  signal relational1_op_net : std_logic_vector( 1-1 downto 0 );
-  signal relational2_op_net : std_logic_vector( 1-1 downto 0 );
-  signal we_choice_y_net : std_logic_vector( 1-1 downto 0 );
-  signal cast_dout_net : std_logic_vector( 32-1 downto 0 );
-  signal mux1_y_net_x0 : std_logic_vector( 1-1 downto 0 );
-  signal edge_op_y_net : std_logic_vector( 1-1 downto 0 );
-  signal clk_net : std_logic;
-  signal ce_net : std_logic;
-  signal concat_y_net : std_logic_vector( 80-1 downto 0 );
-  signal constant_op_net : std_logic_vector( 8-1 downto 0 );
-  signal register_q_net : std_logic_vector( 32-1 downto 0 );
-  signal register1_q_net : std_logic_vector( 32-1 downto 0 );
-  signal concat1_y_net : std_logic_vector( 80-1 downto 0 );
-  signal register2_q_net : std_logic_vector( 32-1 downto 0 );
   signal register3_q_net : std_logic_vector( 32-1 downto 0 );
-  signal data_choice_y_net : std_logic_vector( 32-1 downto 0 );
-  signal input_count_op_net : std_logic_vector( 2-1 downto 0 );
+  signal logical1_y_net : std_logic_vector( 1-1 downto 0 );
+  signal ce_net : std_logic;
+  signal mux1_y_net : std_logic_vector( 80-1 downto 0 );
+  signal logical_y_net : std_logic_vector( 1-1 downto 0 );
+  signal register1_q_net : std_logic_vector( 32-1 downto 0 );
+  signal relational3_op_net : std_logic_vector( 1-1 downto 0 );
+  signal concat1_y_net : std_logic_vector( 80-1 downto 0 );
+  signal constant_op_net : std_logic_vector( 8-1 downto 0 );
+  signal edge_op_y_net : std_logic_vector( 1-1 downto 0 );
+  signal we_choice_y_net : std_logic_vector( 1-1 downto 0 );
   signal con0_op_net : std_logic_vector( 2-1 downto 0 );
-  signal con1_op_net : std_logic_vector( 2-1 downto 0 );
+  signal mux1_y_net_x0 : std_logic_vector( 1-1 downto 0 );
+  signal cast_dout_net : std_logic_vector( 32-1 downto 0 );
+  signal clk_net : std_logic;
+  signal data_choice_y_net : std_logic_vector( 32-1 downto 0 );
   signal con2_op_net : std_logic_vector( 2-1 downto 0 );
   signal con3_op_net : std_logic_vector( 2-1 downto 0 );
-  signal delay_q_net : std_logic_vector( 1-1 downto 0 );
-  signal logical_y_net : std_logic_vector( 1-1 downto 0 );
-  signal delay1_q_net : std_logic_vector( 1-1 downto 0 );
-  signal logical1_y_net : std_logic_vector( 1-1 downto 0 );
-  signal relational3_op_net : std_logic_vector( 1-1 downto 0 );
-  signal mux1_y_net : std_logic_vector( 80-1 downto 0 );
-  signal dout_count_op_net : std_logic_vector( 1-1 downto 0 );
   signal dram_op_net : std_logic_vector( 1-1 downto 0 );
+  signal relational_op_net : std_logic_vector( 1-1 downto 0 );
+  signal con1_op_net : std_logic_vector( 2-1 downto 0 );
+  signal delay1_q_net : std_logic_vector( 1-1 downto 0 );
+  signal register_q_net : std_logic_vector( 32-1 downto 0 );
+  signal concat_y_net : std_logic_vector( 80-1 downto 0 );
+  signal delay_q_net : std_logic_vector( 1-1 downto 0 );
+  signal dout_count_op_net : std_logic_vector( 1-1 downto 0 );
+  signal register2_q_net : std_logic_vector( 32-1 downto 0 );
+  signal relational1_op_net : std_logic_vector( 1-1 downto 0 );
+  signal input_count_op_net : std_logic_vector( 2-1 downto 0 );
+  signal relational2_op_net : std_logic_vector( 1-1 downto 0 );
 begin
   dout <= data_choice_y_net;
   we_o <= we_choice_y_net;
@@ -926,12 +926,12 @@ entity rfdc_one_adc_2048gsps_edge_detect_x3 is
   );
 end rfdc_one_adc_2048gsps_edge_detect_x3;
 architecture structural of rfdc_one_adc_2048gsps_edge_detect_x3 is 
-  signal edge_op_y_net : std_logic_vector( 1-1 downto 0 );
-  signal delay1_q_net : std_logic_vector( 1-1 downto 0 );
+  signal inverter_op_net : std_logic_vector( 1-1 downto 0 );
   signal clk_net : std_logic;
   signal ce_net : std_logic;
+  signal delay1_q_net : std_logic_vector( 1-1 downto 0 );
+  signal edge_op_y_net : std_logic_vector( 1-1 downto 0 );
   signal delay_q_net : std_logic_vector( 1-1 downto 0 );
-  signal inverter_op_net : std_logic_vector( 1-1 downto 0 );
 begin
   out_x0 <= edge_op_y_net;
   delay1_q_net <= in_x0;
@@ -993,29 +993,29 @@ end rfdc_one_adc_2048gsps_basic_ctrl_x1;
 architecture structural of rfdc_one_adc_2048gsps_basic_ctrl_x1 is 
   signal logical_y_net : std_logic_vector( 1-1 downto 0 );
   signal mux2_y_net : std_logic_vector( 1-1 downto 0 );
-  signal register1_q_net : std_logic_vector( 1-1 downto 0 );
-  signal valid_src_y_net : std_logic_vector( 1-1 downto 0 );
-  signal inverter_op_net : std_logic_vector( 1-1 downto 0 );
+  signal delay1_q_net : std_logic_vector( 1-1 downto 0 );
   signal constant1_op_net : std_logic_vector( 1-1 downto 0 );
-  signal constant2_op_net : std_logic_vector( 1-1 downto 0 );
-  signal enable_y_net : std_logic_vector( 1-1 downto 0 );
-  signal delay2_q_net : std_logic_vector( 1-1 downto 0 );
-  signal trig_src_y_net : std_logic_vector( 1-1 downto 0 );
-  signal delay3_q_net : std_logic_vector( 1-1 downto 0 );
-  signal data_choice_y_net : std_logic_vector( 32-1 downto 0 );
-  signal we_choice_y_net : std_logic_vector( 1-1 downto 0 );
-  signal register6_q_net : std_logic_vector( 1-1 downto 0 );
-  signal edge_op_y_net_x0 : std_logic_vector( 1-1 downto 0 );
-  signal cast_dout_net : std_logic_vector( 32-1 downto 0 );
-  signal rfdc_v0_3_rfdc_v0_3_adc0_sync_net : std_logic_vector( 1-1 downto 0 );
   signal edge_op_y_net : std_logic_vector( 1-1 downto 0 );
+  signal delay2_q_net : std_logic_vector( 1-1 downto 0 );
+  signal mux1_y_net : std_logic_vector( 1-1 downto 0 );
+  signal constant2_op_net : std_logic_vector( 1-1 downto 0 );
+  signal register6_q_net : std_logic_vector( 1-1 downto 0 );
+  signal we_choice_y_net : std_logic_vector( 1-1 downto 0 );
+  signal ce_net : std_logic;
+  signal register1_q_net : std_logic_vector( 1-1 downto 0 );
+  signal edge_op_y_net_x0 : std_logic_vector( 1-1 downto 0 );
+  signal trig_src_y_net : std_logic_vector( 1-1 downto 0 );
+  signal constant_op_net : std_logic_vector( 1-1 downto 0 );
   signal concatenate_y_net : std_logic_vector( 32-1 downto 0 );
   signal never_op_net : std_logic_vector( 1-1 downto 0 );
+  signal cast_dout_net : std_logic_vector( 32-1 downto 0 );
+  signal rfdc_v0_3_rfdc_v0_3_adc0_sync_net : std_logic_vector( 1-1 downto 0 );
+  signal enable_y_net : std_logic_vector( 1-1 downto 0 );
+  signal data_choice_y_net : std_logic_vector( 32-1 downto 0 );
+  signal inverter_op_net : std_logic_vector( 1-1 downto 0 );
+  signal valid_src_y_net : std_logic_vector( 1-1 downto 0 );
+  signal delay3_q_net : std_logic_vector( 1-1 downto 0 );
   signal clk_net : std_logic;
-  signal ce_net : std_logic;
-  signal mux1_y_net : std_logic_vector( 1-1 downto 0 );
-  signal delay1_q_net : std_logic_vector( 1-1 downto 0 );
-  signal constant_op_net : std_logic_vector( 1-1 downto 0 );
 begin
   dout <= data_choice_y_net;
   we_o <= we_choice_y_net;
@@ -1213,26 +1213,26 @@ library IEEE;
 use IEEE.std_logic_1164.all;
 library xil_defaultlib;
 use xil_defaultlib.conv_pkg.all;
-entity rfdc_one_adc_2048gsps_calc_add_x2 is
+entity rfdc_one_adc_2048gsps_calc_add_x1 is
   port (
     in_x0 : in std_logic_vector( 10-1 downto 0 );
     clk_1 : in std_logic;
     ce_1 : in std_logic;
     out_x0 : out std_logic_vector( 10-1 downto 0 )
   );
-end rfdc_one_adc_2048gsps_calc_add_x2;
-architecture structural of rfdc_one_adc_2048gsps_calc_add_x2 is 
-  signal convert_addr_dout_net : std_logic_vector( 10-1 downto 0 );
+end rfdc_one_adc_2048gsps_calc_add_x1;
+architecture structural of rfdc_one_adc_2048gsps_calc_add_x1 is 
+  signal const_op_net : std_logic_vector( 1-1 downto 0 );
   signal manipulate_op_net : std_logic_vector( 1-1 downto 0 );
+  signal msw_y_net : std_logic_vector( 9-1 downto 0 );
+  signal concat_y_net : std_logic_vector( 10-1 downto 0 );
+  signal convert_addr_dout_net : std_logic_vector( 10-1 downto 0 );
+  signal add_sub_s_net : std_logic_vector( 1-1 downto 0 );
   signal mux_y_net : std_logic_vector( 10-1 downto 0 );
+  signal lsw_y_net : std_logic_vector( 1-1 downto 0 );
+  signal ce_net : std_logic;
   signal add_del_q_net : std_logic_vector( 10-1 downto 0 );
   signal clk_net : std_logic;
-  signal ce_net : std_logic;
-  signal add_sub_s_net : std_logic_vector( 1-1 downto 0 );
-  signal const_op_net : std_logic_vector( 1-1 downto 0 );
-  signal lsw_y_net : std_logic_vector( 1-1 downto 0 );
-  signal concat_y_net : std_logic_vector( 10-1 downto 0 );
-  signal msw_y_net : std_logic_vector( 9-1 downto 0 );
 begin
   out_x0 <= mux_y_net;
   add_del_q_net <= in_x0;
@@ -1368,16 +1368,16 @@ entity rfdc_one_adc_2048gsps_bram_x1 is
   );
 end rfdc_one_adc_2048gsps_bram_x1;
 architecture structural of rfdc_one_adc_2048gsps_bram_x1 is 
-  signal add_del_q_net : std_logic_vector( 10-1 downto 0 );
-  signal dat_del_q_net : std_logic_vector( 32-1 downto 0 );
-  signal we_del_q_net : std_logic_vector( 1-1 downto 0 );
-  signal convert_addr_dout_net : std_logic_vector( 10-1 downto 0 );
-  signal convert_din1_dout_net : std_logic_vector( 32-1 downto 0 );
-  signal convert_we_dout_net : std_logic_vector( 1-1 downto 0 );
+  signal reinterpret_out_output_port_net : std_logic_vector( 32-1 downto 0 );
   signal clk_net : std_logic;
   signal ce_net : std_logic;
+  signal convert_addr_dout_net : std_logic_vector( 10-1 downto 0 );
+  signal convert_we_dout_net : std_logic_vector( 1-1 downto 0 );
+  signal we_del_q_net : std_logic_vector( 1-1 downto 0 );
+  signal dat_del_q_net : std_logic_vector( 32-1 downto 0 );
+  signal add_del_q_net : std_logic_vector( 10-1 downto 0 );
   signal mux_y_net : std_logic_vector( 10-1 downto 0 );
-  signal reinterpret_out_output_port_net : std_logic_vector( 32-1 downto 0 );
+  signal convert_din1_dout_net : std_logic_vector( 32-1 downto 0 );
 begin
   add_del_q_net <= addr;
   dat_del_q_net <= data_in;
@@ -1387,7 +1387,7 @@ begin
   rfdc_one_adc_2048gsps_snapshot0_01_ss_bram_we <= convert_we_dout_net;
   clk_net <= clk_1;
   ce_net <= ce_1;
-  calc_add : entity xil_defaultlib.rfdc_one_adc_2048gsps_calc_add_x2 
+  calc_add : entity xil_defaultlib.rfdc_one_adc_2048gsps_calc_add_x1 
   port map (
     in_x0 => add_del_q_net,
     clk_1 => clk_net,
@@ -1475,9 +1475,9 @@ entity rfdc_one_adc_2048gsps_ctrl_x2 is
   );
 end rfdc_one_adc_2048gsps_ctrl_x2;
 architecture structural of rfdc_one_adc_2048gsps_ctrl_x2 is 
-  signal reint1_output_port_net : std_logic_vector( 32-1 downto 0 );
   signal rfdc_one_adc_2048gsps_snapshot0_01_ss_ctrl_user_data_out_net : std_logic_vector( 32-1 downto 0 );
   signal io_delay_q_net : std_logic_vector( 32-1 downto 0 );
+  signal reint1_output_port_net : std_logic_vector( 32-1 downto 0 );
   signal slice_reg_y_net : std_logic_vector( 32-1 downto 0 );
 begin
   in_reg <= reint1_output_port_net;
@@ -1525,15 +1525,15 @@ entity rfdc_one_adc_2048gsps_ctrl_combine_x2 is
   );
 end rfdc_one_adc_2048gsps_ctrl_combine_x2;
 architecture structural of rfdc_one_adc_2048gsps_ctrl_combine_x2 is 
-  signal concatenate_y_net : std_logic_vector( 32-1 downto 0 );
-  signal reinterpret4_output_port_net_x0 : std_logic_vector( 28-1 downto 0 );
-  signal circ_or_y_net : std_logic_vector( 1-1 downto 0 );
-  signal reinterpret2_output_port_net : std_logic_vector( 2-1 downto 0 );
   signal arm_or_y_net : std_logic_vector( 1-1 downto 0 );
+  signal circ_or_y_net : std_logic_vector( 1-1 downto 0 );
   signal reinterpret1_output_port_net : std_logic_vector( 28-1 downto 0 );
-  signal reinterpret2_output_port_net_x0 : std_logic_vector( 1-1 downto 0 );
-  signal reinterpret3_output_port_net : std_logic_vector( 2-1 downto 0 );
   signal reinterpret4_output_port_net : std_logic_vector( 1-1 downto 0 );
+  signal reinterpret2_output_port_net_x0 : std_logic_vector( 1-1 downto 0 );
+  signal reinterpret4_output_port_net_x0 : std_logic_vector( 28-1 downto 0 );
+  signal concatenate_y_net : std_logic_vector( 32-1 downto 0 );
+  signal reinterpret2_output_port_net : std_logic_vector( 2-1 downto 0 );
+  signal reinterpret3_output_port_net : std_logic_vector( 2-1 downto 0 );
 begin
   bus_out <= concatenate_y_net;
   reinterpret4_output_port_net_x0 <= in1;
@@ -1599,13 +1599,13 @@ entity rfdc_one_adc_2048gsps_ctrl_split_x2 is
   );
 end rfdc_one_adc_2048gsps_ctrl_split_x2;
 architecture structural of rfdc_one_adc_2048gsps_ctrl_split_x2 is 
+  signal slice4_y_net : std_logic_vector( 28-1 downto 0 );
+  signal reint1_output_port_net : std_logic_vector( 32-1 downto 0 );
+  signal slice1_y_net : std_logic_vector( 1-1 downto 0 );
+  signal slice2_y_net : std_logic_vector( 2-1 downto 0 );
   signal reinterpret4_output_port_net : std_logic_vector( 28-1 downto 0 );
   signal slice3_y_net : std_logic_vector( 1-1 downto 0 );
   signal reinterpret2_output_port_net : std_logic_vector( 2-1 downto 0 );
-  signal slice1_y_net : std_logic_vector( 1-1 downto 0 );
-  signal reint1_output_port_net : std_logic_vector( 32-1 downto 0 );
-  signal slice2_y_net : std_logic_vector( 2-1 downto 0 );
-  signal slice4_y_net : std_logic_vector( 28-1 downto 0 );
 begin
   msb_out4 <= reinterpret4_output_port_net;
   out3 <= slice3_y_net;
@@ -1689,11 +1689,11 @@ end rfdc_one_adc_2048gsps_status_x2;
 architecture structural of rfdc_one_adc_2048gsps_status_x2 is 
   signal io_delay_q_net : std_logic_vector( 32-1 downto 0 );
   signal reint1_output_port_net : std_logic_vector( 32-1 downto 0 );
-  signal assert_reg_dout_net : std_logic_vector( 32-1 downto 0 );
-  signal concat_y_net : std_logic_vector( 32-1 downto 0 );
+  signal ce_net : std_logic;
   signal cast_gw_dout_net : std_logic_vector( 32-1 downto 0 );
   signal clk_net : std_logic;
-  signal ce_net : std_logic;
+  signal concat_y_net : std_logic_vector( 32-1 downto 0 );
+  signal assert_reg_dout_net : std_logic_vector( 32-1 downto 0 );
 begin
   concat_y_net <= out_reg;
   rfdc_one_adc_2048gsps_snapshot0_01_ss_status_user_data_in <= cast_gw_dout_net;
@@ -1769,40 +1769,40 @@ entity rfdc_one_adc_2048gsps_ss_x1 is
   );
 end rfdc_one_adc_2048gsps_ss_x1;
 architecture structural of rfdc_one_adc_2048gsps_ss_x1 is 
-  signal arm_or_y_net : std_logic_vector( 1-1 downto 0 );
-  signal concatenate_y_net : std_logic_vector( 32-1 downto 0 );
+  signal dat_del_q_net : std_logic_vector( 32-1 downto 0 );
+  signal never_op_net : std_logic_vector( 1-1 downto 0 );
+  signal slice3_y_net : std_logic_vector( 1-1 downto 0 );
+  signal cast_dout_net : std_logic_vector( 32-1 downto 0 );
+  signal we_del_q_net : std_logic_vector( 1-1 downto 0 );
   signal rfdc_v0_3_rfdc_v0_3_adc0_sync_net : std_logic_vector( 1-1 downto 0 );
+  signal concatenate_y_net : std_logic_vector( 32-1 downto 0 );
+  signal arm_op_net : std_logic_vector( 1-1 downto 0 );
+  signal data_choice_y_net : std_logic_vector( 32-1 downto 0 );
+  signal clk_net : std_logic;
   signal edge_op_y_net_x0 : std_logic_vector( 1-1 downto 0 );
+  signal slice1_y_net : std_logic_vector( 1-1 downto 0 );
+  signal arm_or_y_net : std_logic_vector( 1-1 downto 0 );
+  signal reinterpret4_output_port_net : std_logic_vector( 28-1 downto 0 );
+  signal ri_output_port_net : std_logic_vector( 32-1 downto 0 );
+  signal slice2_y_net : std_logic_vector( 10-1 downto 0 );
+  signal edge_op_y_net_x1 : std_logic_vector( 1-1 downto 0 );
+  signal concat_y_net : std_logic_vector( 32-1 downto 0 );
+  signal reinterpret2_output_port_net : std_logic_vector( 2-1 downto 0 );
+  signal ce_net : std_logic;
+  signal rfdc_one_adc_2048gsps_snapshot0_01_ss_ctrl_user_data_out_net : std_logic_vector( 32-1 downto 0 );
+  signal add_del_q_net : std_logic_vector( 10-1 downto 0 );
+  signal delay6_q_net : std_logic_vector( 32-1 downto 0 );
+  signal concatenate_y_net_x0 : std_logic_vector( 32-1 downto 0 );
+  signal reint1_output_port_net : std_logic_vector( 32-1 downto 0 );
+  signal convert_we_dout_net : std_logic_vector( 1-1 downto 0 );
+  signal cast_gw_dout_net : std_logic_vector( 32-1 downto 0 );
+  signal register6_q_net : std_logic_vector( 1-1 downto 0 );
   signal we_choice_y_net : std_logic_vector( 1-1 downto 0 );
   signal logical6_y_net : std_logic_vector( 1-1 downto 0 );
-  signal arm_op_net : std_logic_vector( 1-1 downto 0 );
-  signal ri_output_port_net : std_logic_vector( 32-1 downto 0 );
+  signal convert_din1_dout_net : std_logic_vector( 32-1 downto 0 );
+  signal circ_or_y_net : std_logic_vector( 1-1 downto 0 );
   signal circ_op_net : std_logic_vector( 1-1 downto 0 );
   signal convert_addr_dout_net : std_logic_vector( 10-1 downto 0 );
-  signal convert_din1_dout_net : std_logic_vector( 32-1 downto 0 );
-  signal convert_we_dout_net : std_logic_vector( 1-1 downto 0 );
-  signal rfdc_one_adc_2048gsps_snapshot0_01_ss_ctrl_user_data_out_net : std_logic_vector( 32-1 downto 0 );
-  signal cast_gw_dout_net : std_logic_vector( 32-1 downto 0 );
-  signal clk_net : std_logic;
-  signal ce_net : std_logic;
-  signal slice2_y_net : std_logic_vector( 10-1 downto 0 );
-  signal delay6_q_net : std_logic_vector( 32-1 downto 0 );
-  signal concat_y_net : std_logic_vector( 32-1 downto 0 );
-  signal data_choice_y_net : std_logic_vector( 32-1 downto 0 );
-  signal register6_q_net : std_logic_vector( 1-1 downto 0 );
-  signal never_op_net : std_logic_vector( 1-1 downto 0 );
-  signal edge_op_y_net_x1 : std_logic_vector( 1-1 downto 0 );
-  signal cast_dout_net : std_logic_vector( 32-1 downto 0 );
-  signal concatenate_y_net_x0 : std_logic_vector( 32-1 downto 0 );
-  signal add_del_q_net : std_logic_vector( 10-1 downto 0 );
-  signal dat_del_q_net : std_logic_vector( 32-1 downto 0 );
-  signal we_del_q_net : std_logic_vector( 1-1 downto 0 );
-  signal reint1_output_port_net : std_logic_vector( 32-1 downto 0 );
-  signal reinterpret4_output_port_net : std_logic_vector( 28-1 downto 0 );
-  signal circ_or_y_net : std_logic_vector( 1-1 downto 0 );
-  signal reinterpret2_output_port_net : std_logic_vector( 2-1 downto 0 );
-  signal slice3_y_net : std_logic_vector( 1-1 downto 0 );
-  signal slice1_y_net : std_logic_vector( 1-1 downto 0 );
 begin
   arm_out <= arm_or_y_net;
   concatenate_y_net <= din;
@@ -2001,23 +2001,23 @@ entity rfdc_one_adc_2048gsps_snapshot0_01 is
   );
 end rfdc_one_adc_2048gsps_snapshot0_01;
 architecture structural of rfdc_one_adc_2048gsps_snapshot0_01 is 
-  signal arm_or_y_net : std_logic_vector( 1-1 downto 0 );
-  signal slice_y_net : std_logic_vector( 16-1 downto 0 );
-  signal slice7_y_net : std_logic_vector( 16-1 downto 0 );
-  signal rfdc_v0_3_rfdc_v0_3_adc0_sync_net : std_logic_vector( 1-1 downto 0 );
-  signal edge_op_y_net : std_logic_vector( 1-1 downto 0 );
-  signal convert_addr_dout_net : std_logic_vector( 10-1 downto 0 );
-  signal convert_din1_dout_net : std_logic_vector( 32-1 downto 0 );
-  signal convert_we_dout_net : std_logic_vector( 1-1 downto 0 );
   signal rfdc_one_adc_2048gsps_snapshot0_01_ss_ctrl_user_data_out_net : std_logic_vector( 32-1 downto 0 );
-  signal cast_gw_dout_net : std_logic_vector( 32-1 downto 0 );
-  signal we_choice_y_net : std_logic_vector( 1-1 downto 0 );
-  signal logical6_y_net : std_logic_vector( 1-1 downto 0 );
-  signal clk_net : std_logic;
   signal ce_net : std_logic;
-  signal concatenate_y_net : std_logic_vector( 32-1 downto 0 );
-  signal assert_d0_dout_net : std_logic_vector( 16-1 downto 0 );
+  signal convert_we_dout_net : std_logic_vector( 1-1 downto 0 );
   signal assert_d1_dout_net : std_logic_vector( 16-1 downto 0 );
+  signal convert_din1_dout_net : std_logic_vector( 32-1 downto 0 );
+  signal cast_gw_dout_net : std_logic_vector( 32-1 downto 0 );
+  signal slice_y_net : std_logic_vector( 16-1 downto 0 );
+  signal edge_op_y_net : std_logic_vector( 1-1 downto 0 );
+  signal we_choice_y_net : std_logic_vector( 1-1 downto 0 );
+  signal arm_or_y_net : std_logic_vector( 1-1 downto 0 );
+  signal assert_d0_dout_net : std_logic_vector( 16-1 downto 0 );
+  signal logical6_y_net : std_logic_vector( 1-1 downto 0 );
+  signal concatenate_y_net : std_logic_vector( 32-1 downto 0 );
+  signal rfdc_v0_3_rfdc_v0_3_adc0_sync_net : std_logic_vector( 1-1 downto 0 );
+  signal clk_net : std_logic;
+  signal convert_addr_dout_net : std_logic_vector( 10-1 downto 0 );
+  signal slice7_y_net : std_logic_vector( 16-1 downto 0 );
 begin
   arm_out <= arm_or_y_net;
   slice_y_net <= in_d0;
@@ -2087,11 +2087,11 @@ entity rfdc_one_adc_2048gsps_buscreate_x2 is
   );
 end rfdc_one_adc_2048gsps_buscreate_x2;
 architecture structural of rfdc_one_adc_2048gsps_buscreate_x2 is 
+  signal reinterpret2_output_port_net : std_logic_vector( 16-1 downto 0 );
   signal concatenate_y_net : std_logic_vector( 32-1 downto 0 );
+  signal reinterpret1_output_port_net : std_logic_vector( 16-1 downto 0 );
   signal assert_d0_dout_net : std_logic_vector( 16-1 downto 0 );
   signal assert_d1_dout_net : std_logic_vector( 16-1 downto 0 );
-  signal reinterpret1_output_port_net : std_logic_vector( 16-1 downto 0 );
-  signal reinterpret2_output_port_net : std_logic_vector( 16-1 downto 0 );
 begin
   bus_out <= concatenate_y_net;
   assert_d0_dout_net <= in1;
@@ -2136,10 +2136,10 @@ entity rfdc_one_adc_2048gsps_edge_detect_x7 is
   );
 end rfdc_one_adc_2048gsps_edge_detect_x7;
 architecture structural of rfdc_one_adc_2048gsps_edge_detect_x7 is 
-  signal edge_op_y_net : std_logic_vector( 1-1 downto 0 );
-  signal slice3_y_net : std_logic_vector( 1-1 downto 0 );
   signal clk_net : std_logic;
   signal ce_net : std_logic;
+  signal edge_op_y_net : std_logic_vector( 1-1 downto 0 );
+  signal slice3_y_net : std_logic_vector( 1-1 downto 0 );
   signal delay_q_net : std_logic_vector( 1-1 downto 0 );
   signal inverter_op_net : std_logic_vector( 1-1 downto 0 );
 begin
@@ -2201,32 +2201,32 @@ entity rfdc_one_adc_2048gsps_add_gen_x2 is
   );
 end rfdc_one_adc_2048gsps_add_gen_x2;
 architecture structural of rfdc_one_adc_2048gsps_add_gen_x2 is 
-  signal slice2_y_net : std_logic_vector( 10-1 downto 0 );
-  signal add_gen_op_net : std_logic_vector( 13-1 downto 0 );
-  signal convert_dout_net : std_logic_vector( 19-1 downto 0 );
   signal register5_q_net : std_logic_vector( 1-1 downto 0 );
-  signal delay_q_net : std_logic_vector( 1-1 downto 0 );
-  signal delay4_q_net : std_logic_vector( 1-1 downto 0 );
-  signal slice1_y_net : std_logic_vector( 12-1 downto 0 );
-  signal delay3_q_net : std_logic_vector( 1-1 downto 0 );
-  signal delay6_q_net : std_logic_vector( 32-1 downto 0 );
-  signal logical6_y_net : std_logic_vector( 1-1 downto 0 );
   signal concat_y_net : std_logic_vector( 32-1 downto 0 );
-  signal data_choice_y_net : std_logic_vector( 32-1 downto 0 );
-  signal we_choice_y_net : std_logic_vector( 1-1 downto 0 );
-  signal register6_q_net : std_logic_vector( 1-1 downto 0 );
-  signal never_op_net : std_logic_vector( 1-1 downto 0 );
-  signal edge_op_y_net : std_logic_vector( 1-1 downto 0 );
-  signal clk_net : std_logic;
-  signal ce_net : std_logic;
-  signal edge_op_y_net_x0 : std_logic_vector( 1-1 downto 0 );
-  signal slice3_y_net : std_logic_vector( 1-1 downto 0 );
-  signal shift_op_net : std_logic_vector( 19-1 downto 0 );
-  signal inverter_op_net : std_logic_vector( 1-1 downto 0 );
-  signal delay1_q_net : std_logic_vector( 12-1 downto 0 );
-  signal inverter1_op_net : std_logic_vector( 1-1 downto 0 );
+  signal delay_q_net : std_logic_vector( 1-1 downto 0 );
   signal logical1_y_net : std_logic_vector( 1-1 downto 0 );
+  signal edge_op_y_net_x0 : std_logic_vector( 1-1 downto 0 );
   signal logical4_y_net : std_logic_vector( 1-1 downto 0 );
+  signal we_choice_y_net : std_logic_vector( 1-1 downto 0 );
+  signal shift_op_net : std_logic_vector( 19-1 downto 0 );
+  signal register6_q_net : std_logic_vector( 1-1 downto 0 );
+  signal delay1_q_net : std_logic_vector( 12-1 downto 0 );
+  signal delay3_q_net : std_logic_vector( 1-1 downto 0 );
+  signal ce_net : std_logic;
+  signal never_op_net : std_logic_vector( 1-1 downto 0 );
+  signal inverter_op_net : std_logic_vector( 1-1 downto 0 );
+  signal logical6_y_net : std_logic_vector( 1-1 downto 0 );
+  signal inverter1_op_net : std_logic_vector( 1-1 downto 0 );
+  signal slice3_y_net : std_logic_vector( 1-1 downto 0 );
+  signal add_gen_op_net : std_logic_vector( 13-1 downto 0 );
+  signal delay4_q_net : std_logic_vector( 1-1 downto 0 );
+  signal data_choice_y_net : std_logic_vector( 32-1 downto 0 );
+  signal slice2_y_net : std_logic_vector( 10-1 downto 0 );
+  signal clk_net : std_logic;
+  signal delay6_q_net : std_logic_vector( 32-1 downto 0 );
+  signal convert_dout_net : std_logic_vector( 19-1 downto 0 );
+  signal edge_op_y_net : std_logic_vector( 1-1 downto 0 );
+  signal slice1_y_net : std_logic_vector( 12-1 downto 0 );
 begin
   add <= slice2_y_net;
   dout <= delay6_q_net;
@@ -2454,36 +2454,36 @@ entity rfdc_one_adc_2048gsps_dram_munge_x2 is
   );
 end rfdc_one_adc_2048gsps_dram_munge_x2;
 architecture structural of rfdc_one_adc_2048gsps_dram_munge_x2 is 
-  signal dout_count_op_net : std_logic_vector( 1-1 downto 0 );
-  signal data_choice_y_net : std_logic_vector( 32-1 downto 0 );
-  signal we_choice_y_net : std_logic_vector( 1-1 downto 0 );
-  signal cast_dout_net : std_logic_vector( 32-1 downto 0 );
   signal mux1_y_net_x0 : std_logic_vector( 1-1 downto 0 );
-  signal edge_op_y_net : std_logic_vector( 1-1 downto 0 );
   signal clk_net : std_logic;
-  signal ce_net : std_logic;
   signal concat_y_net : std_logic_vector( 80-1 downto 0 );
-  signal constant_op_net : std_logic_vector( 8-1 downto 0 );
-  signal register_q_net : std_logic_vector( 32-1 downto 0 );
-  signal register1_q_net : std_logic_vector( 32-1 downto 0 );
-  signal concat1_y_net : std_logic_vector( 80-1 downto 0 );
-  signal register2_q_net : std_logic_vector( 32-1 downto 0 );
-  signal register3_q_net : std_logic_vector( 32-1 downto 0 );
-  signal dram_op_net : std_logic_vector( 1-1 downto 0 );
-  signal relational_op_net : std_logic_vector( 1-1 downto 0 );
-  signal relational1_op_net : std_logic_vector( 1-1 downto 0 );
-  signal relational2_op_net : std_logic_vector( 1-1 downto 0 );
   signal input_count_op_net : std_logic_vector( 2-1 downto 0 );
+  signal register_q_net : std_logic_vector( 32-1 downto 0 );
+  signal edge_op_y_net : std_logic_vector( 1-1 downto 0 );
   signal con0_op_net : std_logic_vector( 2-1 downto 0 );
-  signal con1_op_net : std_logic_vector( 2-1 downto 0 );
+  signal cast_dout_net : std_logic_vector( 32-1 downto 0 );
+  signal data_choice_y_net : std_logic_vector( 32-1 downto 0 );
+  signal ce_net : std_logic;
   signal con2_op_net : std_logic_vector( 2-1 downto 0 );
-  signal con3_op_net : std_logic_vector( 2-1 downto 0 );
-  signal delay_q_net : std_logic_vector( 1-1 downto 0 );
+  signal dram_op_net : std_logic_vector( 1-1 downto 0 );
+  signal register3_q_net : std_logic_vector( 32-1 downto 0 );
+  signal register2_q_net : std_logic_vector( 32-1 downto 0 );
+  signal relational_op_net : std_logic_vector( 1-1 downto 0 );
+  signal dout_count_op_net : std_logic_vector( 1-1 downto 0 );
+  signal relational2_op_net : std_logic_vector( 1-1 downto 0 );
+  signal mux1_y_net : std_logic_vector( 80-1 downto 0 );
+  signal relational3_op_net : std_logic_vector( 1-1 downto 0 );
   signal logical_y_net : std_logic_vector( 1-1 downto 0 );
+  signal relational1_op_net : std_logic_vector( 1-1 downto 0 );
+  signal delay_q_net : std_logic_vector( 1-1 downto 0 );
   signal delay1_q_net : std_logic_vector( 1-1 downto 0 );
   signal logical1_y_net : std_logic_vector( 1-1 downto 0 );
-  signal relational3_op_net : std_logic_vector( 1-1 downto 0 );
-  signal mux1_y_net : std_logic_vector( 80-1 downto 0 );
+  signal concat1_y_net : std_logic_vector( 80-1 downto 0 );
+  signal con1_op_net : std_logic_vector( 2-1 downto 0 );
+  signal we_choice_y_net : std_logic_vector( 1-1 downto 0 );
+  signal con3_op_net : std_logic_vector( 2-1 downto 0 );
+  signal register1_q_net : std_logic_vector( 32-1 downto 0 );
+  signal constant_op_net : std_logic_vector( 8-1 downto 0 );
 begin
   dout <= data_choice_y_net;
   we_o <= we_choice_y_net;
@@ -2760,12 +2760,12 @@ entity rfdc_one_adc_2048gsps_edge_detect_x6 is
   );
 end rfdc_one_adc_2048gsps_edge_detect_x6;
 architecture structural of rfdc_one_adc_2048gsps_edge_detect_x6 is 
-  signal delay_q_net : std_logic_vector( 1-1 downto 0 );
   signal inverter_op_net : std_logic_vector( 1-1 downto 0 );
   signal edge_op_y_net : std_logic_vector( 1-1 downto 0 );
-  signal delay1_q_net : std_logic_vector( 1-1 downto 0 );
   signal clk_net : std_logic;
+  signal delay_q_net : std_logic_vector( 1-1 downto 0 );
   signal ce_net : std_logic;
+  signal delay1_q_net : std_logic_vector( 1-1 downto 0 );
 begin
   out_x0 <= edge_op_y_net;
   delay1_q_net <= in_x0;
@@ -2825,31 +2825,31 @@ entity rfdc_one_adc_2048gsps_basic_ctrl_x2 is
   );
 end rfdc_one_adc_2048gsps_basic_ctrl_x2;
 architecture structural of rfdc_one_adc_2048gsps_basic_ctrl_x2 is 
-  signal delay3_q_net : std_logic_vector( 1-1 downto 0 );
-  signal valid_src_y_net : std_logic_vector( 1-1 downto 0 );
-  signal inverter_op_net : std_logic_vector( 1-1 downto 0 );
-  signal logical_y_net : std_logic_vector( 1-1 downto 0 );
-  signal mux2_y_net : std_logic_vector( 1-1 downto 0 );
-  signal register1_q_net : std_logic_vector( 1-1 downto 0 );
   signal data_choice_y_net : std_logic_vector( 32-1 downto 0 );
-  signal we_choice_y_net : std_logic_vector( 1-1 downto 0 );
-  signal register6_q_net : std_logic_vector( 1-1 downto 0 );
   signal edge_op_y_net_x0 : std_logic_vector( 1-1 downto 0 );
-  signal cast_dout_net : std_logic_vector( 32-1 downto 0 );
   signal rfdc_v0_3_rfdc_v0_3_adc0_sync_net : std_logic_vector( 1-1 downto 0 );
   signal edge_op_y_net : std_logic_vector( 1-1 downto 0 );
+  signal register1_q_net : std_logic_vector( 1-1 downto 0 );
+  signal valid_src_y_net : std_logic_vector( 1-1 downto 0 );
+  signal enable_y_net : std_logic_vector( 1-1 downto 0 );
+  signal mux1_y_net : std_logic_vector( 1-1 downto 0 );
+  signal cast_dout_net : std_logic_vector( 32-1 downto 0 );
+  signal constant_op_net : std_logic_vector( 1-1 downto 0 );
   signal concatenate_y_net : std_logic_vector( 32-1 downto 0 );
+  signal delay2_q_net : std_logic_vector( 1-1 downto 0 );
   signal never_op_net : std_logic_vector( 1-1 downto 0 );
   signal clk_net : std_logic;
   signal ce_net : std_logic;
-  signal mux1_y_net : std_logic_vector( 1-1 downto 0 );
-  signal delay1_q_net : std_logic_vector( 1-1 downto 0 );
-  signal constant_op_net : std_logic_vector( 1-1 downto 0 );
   signal constant1_op_net : std_logic_vector( 1-1 downto 0 );
+  signal register6_q_net : std_logic_vector( 1-1 downto 0 );
+  signal inverter_op_net : std_logic_vector( 1-1 downto 0 );
+  signal delay1_q_net : std_logic_vector( 1-1 downto 0 );
+  signal mux2_y_net : std_logic_vector( 1-1 downto 0 );
   signal constant2_op_net : std_logic_vector( 1-1 downto 0 );
-  signal enable_y_net : std_logic_vector( 1-1 downto 0 );
-  signal delay2_q_net : std_logic_vector( 1-1 downto 0 );
   signal trig_src_y_net : std_logic_vector( 1-1 downto 0 );
+  signal we_choice_y_net : std_logic_vector( 1-1 downto 0 );
+  signal logical_y_net : std_logic_vector( 1-1 downto 0 );
+  signal delay3_q_net : std_logic_vector( 1-1 downto 0 );
 begin
   dout <= data_choice_y_net;
   we_o <= we_choice_y_net;
@@ -3047,26 +3047,26 @@ library IEEE;
 use IEEE.std_logic_1164.all;
 library xil_defaultlib;
 use xil_defaultlib.conv_pkg.all;
-entity rfdc_one_adc_2048gsps_calc_add_x1 is
+entity rfdc_one_adc_2048gsps_calc_add_x2 is
   port (
     in_x0 : in std_logic_vector( 10-1 downto 0 );
     clk_1 : in std_logic;
     ce_1 : in std_logic;
     out_x0 : out std_logic_vector( 10-1 downto 0 )
   );
-end rfdc_one_adc_2048gsps_calc_add_x1;
-architecture structural of rfdc_one_adc_2048gsps_calc_add_x1 is 
-  signal concat_y_net : std_logic_vector( 10-1 downto 0 );
-  signal msw_y_net : std_logic_vector( 9-1 downto 0 );
+end rfdc_one_adc_2048gsps_calc_add_x2;
+architecture structural of rfdc_one_adc_2048gsps_calc_add_x2 is 
   signal convert_addr_dout_net : std_logic_vector( 10-1 downto 0 );
-  signal manipulate_op_net : std_logic_vector( 1-1 downto 0 );
   signal mux_y_net : std_logic_vector( 10-1 downto 0 );
+  signal concat_y_net : std_logic_vector( 10-1 downto 0 );
+  signal const_op_net : std_logic_vector( 1-1 downto 0 );
   signal add_del_q_net : std_logic_vector( 10-1 downto 0 );
   signal clk_net : std_logic;
+  signal msw_y_net : std_logic_vector( 9-1 downto 0 );
   signal ce_net : std_logic;
-  signal add_sub_s_net : std_logic_vector( 1-1 downto 0 );
-  signal const_op_net : std_logic_vector( 1-1 downto 0 );
   signal lsw_y_net : std_logic_vector( 1-1 downto 0 );
+  signal add_sub_s_net : std_logic_vector( 1-1 downto 0 );
+  signal manipulate_op_net : std_logic_vector( 1-1 downto 0 );
 begin
   out_x0 <= mux_y_net;
   add_del_q_net <= in_x0;
@@ -3202,16 +3202,16 @@ entity rfdc_one_adc_2048gsps_bram_x2 is
   );
 end rfdc_one_adc_2048gsps_bram_x2;
 architecture structural of rfdc_one_adc_2048gsps_bram_x2 is 
-  signal add_del_q_net : std_logic_vector( 10-1 downto 0 );
-  signal dat_del_q_net : std_logic_vector( 32-1 downto 0 );
-  signal we_del_q_net : std_logic_vector( 1-1 downto 0 );
-  signal convert_addr_dout_net : std_logic_vector( 10-1 downto 0 );
-  signal convert_din1_dout_net : std_logic_vector( 32-1 downto 0 );
-  signal convert_we_dout_net : std_logic_vector( 1-1 downto 0 );
   signal clk_net : std_logic;
+  signal dat_del_q_net : std_logic_vector( 32-1 downto 0 );
+  signal convert_we_dout_net : std_logic_vector( 1-1 downto 0 );
+  signal add_del_q_net : std_logic_vector( 10-1 downto 0 );
+  signal reinterpret_out_output_port_net : std_logic_vector( 32-1 downto 0 );
+  signal we_del_q_net : std_logic_vector( 1-1 downto 0 );
+  signal convert_din1_dout_net : std_logic_vector( 32-1 downto 0 );
+  signal convert_addr_dout_net : std_logic_vector( 10-1 downto 0 );
   signal ce_net : std_logic;
   signal mux_y_net : std_logic_vector( 10-1 downto 0 );
-  signal reinterpret_out_output_port_net : std_logic_vector( 32-1 downto 0 );
 begin
   add_del_q_net <= addr;
   dat_del_q_net <= data_in;
@@ -3221,7 +3221,7 @@ begin
   rfdc_one_adc_2048gsps_snapshot0_23_ss_bram_we <= convert_we_dout_net;
   clk_net <= clk_1;
   ce_net <= ce_1;
-  calc_add : entity xil_defaultlib.rfdc_one_adc_2048gsps_calc_add_x1 
+  calc_add : entity xil_defaultlib.rfdc_one_adc_2048gsps_calc_add_x2 
   port map (
     in_x0 => add_del_q_net,
     clk_1 => clk_net,
@@ -3302,17 +3302,17 @@ library IEEE;
 use IEEE.std_logic_1164.all;
 library xil_defaultlib;
 use xil_defaultlib.conv_pkg.all;
-entity rfdc_one_adc_2048gsps_ctrl_x0 is
+entity rfdc_one_adc_2048gsps_ctrl is
   port (
     rfdc_one_adc_2048gsps_snapshot0_23_ss_ctrl_user_data_out : in std_logic_vector( 32-1 downto 0 );
     in_reg : out std_logic_vector( 32-1 downto 0 )
   );
-end rfdc_one_adc_2048gsps_ctrl_x0;
-architecture structural of rfdc_one_adc_2048gsps_ctrl_x0 is 
-  signal reint1_output_port_net : std_logic_vector( 32-1 downto 0 );
-  signal rfdc_one_adc_2048gsps_snapshot0_23_ss_ctrl_user_data_out_net : std_logic_vector( 32-1 downto 0 );
+end rfdc_one_adc_2048gsps_ctrl;
+architecture structural of rfdc_one_adc_2048gsps_ctrl is 
   signal io_delay_q_net : std_logic_vector( 32-1 downto 0 );
+  signal reint1_output_port_net : std_logic_vector( 32-1 downto 0 );
   signal slice_reg_y_net : std_logic_vector( 32-1 downto 0 );
+  signal rfdc_one_adc_2048gsps_snapshot0_23_ss_ctrl_user_data_out_net : std_logic_vector( 32-1 downto 0 );
 begin
   in_reg <= reint1_output_port_net;
   rfdc_one_adc_2048gsps_snapshot0_23_ss_ctrl_user_data_out_net <= rfdc_one_adc_2048gsps_snapshot0_23_ss_ctrl_user_data_out;
@@ -3349,7 +3349,7 @@ library IEEE;
 use IEEE.std_logic_1164.all;
 library xil_defaultlib;
 use xil_defaultlib.conv_pkg.all;
-entity rfdc_one_adc_2048gsps_ctrl_combine is
+entity rfdc_one_adc_2048gsps_ctrl_combine_x0 is
   port (
     in1 : in std_logic_vector( 28-1 downto 0 );
     in2 : in std_logic_vector( 1-1 downto 0 );
@@ -3357,17 +3357,17 @@ entity rfdc_one_adc_2048gsps_ctrl_combine is
     in4 : in std_logic_vector( 1-1 downto 0 );
     bus_out : out std_logic_vector( 32-1 downto 0 )
   );
-end rfdc_one_adc_2048gsps_ctrl_combine;
-architecture structural of rfdc_one_adc_2048gsps_ctrl_combine is 
-  signal concatenate_y_net : std_logic_vector( 32-1 downto 0 );
-  signal reinterpret4_output_port_net_x0 : std_logic_vector( 28-1 downto 0 );
-  signal circ_or_y_net : std_logic_vector( 1-1 downto 0 );
-  signal reinterpret2_output_port_net : std_logic_vector( 2-1 downto 0 );
+end rfdc_one_adc_2048gsps_ctrl_combine_x0;
+architecture structural of rfdc_one_adc_2048gsps_ctrl_combine_x0 is 
   signal arm_or_y_net : std_logic_vector( 1-1 downto 0 );
+  signal reinterpret2_output_port_net : std_logic_vector( 2-1 downto 0 );
+  signal circ_or_y_net : std_logic_vector( 1-1 downto 0 );
+  signal reinterpret4_output_port_net_x0 : std_logic_vector( 28-1 downto 0 );
+  signal concatenate_y_net : std_logic_vector( 32-1 downto 0 );
+  signal reinterpret4_output_port_net : std_logic_vector( 1-1 downto 0 );
+  signal reinterpret3_output_port_net : std_logic_vector( 2-1 downto 0 );
   signal reinterpret1_output_port_net : std_logic_vector( 28-1 downto 0 );
   signal reinterpret2_output_port_net_x0 : std_logic_vector( 1-1 downto 0 );
-  signal reinterpret3_output_port_net : std_logic_vector( 2-1 downto 0 );
-  signal reinterpret4_output_port_net : std_logic_vector( 1-1 downto 0 );
 begin
   bus_out <= concatenate_y_net;
   reinterpret4_output_port_net_x0 <= in1;
@@ -3433,13 +3433,13 @@ entity rfdc_one_adc_2048gsps_ctrl_split is
   );
 end rfdc_one_adc_2048gsps_ctrl_split;
 architecture structural of rfdc_one_adc_2048gsps_ctrl_split is 
-  signal reinterpret4_output_port_net : std_logic_vector( 28-1 downto 0 );
+  signal slice4_y_net : std_logic_vector( 28-1 downto 0 );
+  signal slice2_y_net : std_logic_vector( 2-1 downto 0 );
+  signal reint1_output_port_net : std_logic_vector( 32-1 downto 0 );
   signal slice3_y_net : std_logic_vector( 1-1 downto 0 );
+  signal reinterpret4_output_port_net : std_logic_vector( 28-1 downto 0 );
   signal reinterpret2_output_port_net : std_logic_vector( 2-1 downto 0 );
   signal slice1_y_net : std_logic_vector( 1-1 downto 0 );
-  signal reint1_output_port_net : std_logic_vector( 32-1 downto 0 );
-  signal slice2_y_net : std_logic_vector( 2-1 downto 0 );
-  signal slice4_y_net : std_logic_vector( 28-1 downto 0 );
 begin
   msb_out4 <= reinterpret4_output_port_net;
   out3 <= slice3_y_net;
@@ -3521,13 +3521,13 @@ entity rfdc_one_adc_2048gsps_status is
   );
 end rfdc_one_adc_2048gsps_status;
 architecture structural of rfdc_one_adc_2048gsps_status is 
-  signal concat_y_net : std_logic_vector( 32-1 downto 0 );
-  signal cast_gw_dout_net : std_logic_vector( 32-1 downto 0 );
-  signal clk_net : std_logic;
-  signal ce_net : std_logic;
-  signal io_delay_q_net : std_logic_vector( 32-1 downto 0 );
-  signal reint1_output_port_net : std_logic_vector( 32-1 downto 0 );
   signal assert_reg_dout_net : std_logic_vector( 32-1 downto 0 );
+  signal reint1_output_port_net : std_logic_vector( 32-1 downto 0 );
+  signal io_delay_q_net : std_logic_vector( 32-1 downto 0 );
+  signal ce_net : std_logic;
+  signal clk_net : std_logic;
+  signal cast_gw_dout_net : std_logic_vector( 32-1 downto 0 );
+  signal concat_y_net : std_logic_vector( 32-1 downto 0 );
 begin
   concat_y_net <= out_reg;
   rfdc_one_adc_2048gsps_snapshot0_23_ss_status_user_data_in <= cast_gw_dout_net;
@@ -3603,40 +3603,40 @@ entity rfdc_one_adc_2048gsps_ss_x2 is
   );
 end rfdc_one_adc_2048gsps_ss_x2;
 architecture structural of rfdc_one_adc_2048gsps_ss_x2 is 
-  signal logical6_y_net : std_logic_vector( 1-1 downto 0 );
-  signal convert_addr_dout_net : std_logic_vector( 10-1 downto 0 );
-  signal convert_din1_dout_net : std_logic_vector( 32-1 downto 0 );
-  signal convert_we_dout_net : std_logic_vector( 1-1 downto 0 );
-  signal rfdc_one_adc_2048gsps_snapshot0_23_ss_ctrl_user_data_out_net : std_logic_vector( 32-1 downto 0 );
-  signal cast_gw_dout_net : std_logic_vector( 32-1 downto 0 );
-  signal clk_net : std_logic;
-  signal ce_net : std_logic;
-  signal slice2_y_net : std_logic_vector( 10-1 downto 0 );
-  signal delay6_q_net : std_logic_vector( 32-1 downto 0 );
-  signal concat_y_net : std_logic_vector( 32-1 downto 0 );
-  signal data_choice_y_net : std_logic_vector( 32-1 downto 0 );
-  signal register6_q_net : std_logic_vector( 1-1 downto 0 );
-  signal never_op_net : std_logic_vector( 1-1 downto 0 );
-  signal edge_op_y_net_x1 : std_logic_vector( 1-1 downto 0 );
-  signal cast_dout_net : std_logic_vector( 32-1 downto 0 );
-  signal concatenate_y_net_x0 : std_logic_vector( 32-1 downto 0 );
-  signal add_del_q_net : std_logic_vector( 10-1 downto 0 );
-  signal dat_del_q_net : std_logic_vector( 32-1 downto 0 );
-  signal we_del_q_net : std_logic_vector( 1-1 downto 0 );
-  signal reint1_output_port_net : std_logic_vector( 32-1 downto 0 );
-  signal reinterpret4_output_port_net : std_logic_vector( 28-1 downto 0 );
-  signal circ_or_y_net : std_logic_vector( 1-1 downto 0 );
-  signal reinterpret2_output_port_net : std_logic_vector( 2-1 downto 0 );
-  signal slice3_y_net : std_logic_vector( 1-1 downto 0 );
   signal slice1_y_net : std_logic_vector( 1-1 downto 0 );
-  signal arm_op_net : std_logic_vector( 1-1 downto 0 );
-  signal ri_output_port_net : std_logic_vector( 32-1 downto 0 );
-  signal circ_op_net : std_logic_vector( 1-1 downto 0 );
-  signal arm_or_y_net : std_logic_vector( 1-1 downto 0 );
-  signal concatenate_y_net : std_logic_vector( 32-1 downto 0 );
-  signal rfdc_v0_3_rfdc_v0_3_adc0_sync_net : std_logic_vector( 1-1 downto 0 );
-  signal edge_op_y_net_x0 : std_logic_vector( 1-1 downto 0 );
+  signal slice3_y_net : std_logic_vector( 1-1 downto 0 );
+  signal reinterpret2_output_port_net : std_logic_vector( 2-1 downto 0 );
+  signal circ_or_y_net : std_logic_vector( 1-1 downto 0 );
+  signal reinterpret4_output_port_net : std_logic_vector( 28-1 downto 0 );
+  signal reint1_output_port_net : std_logic_vector( 32-1 downto 0 );
+  signal we_del_q_net : std_logic_vector( 1-1 downto 0 );
+  signal dat_del_q_net : std_logic_vector( 32-1 downto 0 );
+  signal add_del_q_net : std_logic_vector( 10-1 downto 0 );
+  signal concatenate_y_net_x0 : std_logic_vector( 32-1 downto 0 );
+  signal cast_dout_net : std_logic_vector( 32-1 downto 0 );
+  signal edge_op_y_net_x1 : std_logic_vector( 1-1 downto 0 );
+  signal never_op_net : std_logic_vector( 1-1 downto 0 );
+  signal register6_q_net : std_logic_vector( 1-1 downto 0 );
+  signal data_choice_y_net : std_logic_vector( 32-1 downto 0 );
+  signal concat_y_net : std_logic_vector( 32-1 downto 0 );
+  signal delay6_q_net : std_logic_vector( 32-1 downto 0 );
+  signal slice2_y_net : std_logic_vector( 10-1 downto 0 );
+  signal ce_net : std_logic;
+  signal clk_net : std_logic;
+  signal cast_gw_dout_net : std_logic_vector( 32-1 downto 0 );
+  signal rfdc_one_adc_2048gsps_snapshot0_23_ss_ctrl_user_data_out_net : std_logic_vector( 32-1 downto 0 );
+  signal convert_we_dout_net : std_logic_vector( 1-1 downto 0 );
+  signal convert_din1_dout_net : std_logic_vector( 32-1 downto 0 );
+  signal convert_addr_dout_net : std_logic_vector( 10-1 downto 0 );
+  signal logical6_y_net : std_logic_vector( 1-1 downto 0 );
   signal we_choice_y_net : std_logic_vector( 1-1 downto 0 );
+  signal edge_op_y_net_x0 : std_logic_vector( 1-1 downto 0 );
+  signal rfdc_v0_3_rfdc_v0_3_adc0_sync_net : std_logic_vector( 1-1 downto 0 );
+  signal concatenate_y_net : std_logic_vector( 32-1 downto 0 );
+  signal arm_or_y_net : std_logic_vector( 1-1 downto 0 );
+  signal circ_op_net : std_logic_vector( 1-1 downto 0 );
+  signal ri_output_port_net : std_logic_vector( 32-1 downto 0 );
+  signal arm_op_net : std_logic_vector( 1-1 downto 0 );
 begin
   arm_out <= arm_or_y_net;
   concatenate_y_net <= din;
@@ -3690,12 +3690,12 @@ begin
     rfdc_one_adc_2048gsps_snapshot0_23_ss_bram_data_in => convert_din1_dout_net,
     rfdc_one_adc_2048gsps_snapshot0_23_ss_bram_we => convert_we_dout_net
   );
-  ctrl : entity xil_defaultlib.rfdc_one_adc_2048gsps_ctrl_x0 
+  ctrl : entity xil_defaultlib.rfdc_one_adc_2048gsps_ctrl 
   port map (
     rfdc_one_adc_2048gsps_snapshot0_23_ss_ctrl_user_data_out => rfdc_one_adc_2048gsps_snapshot0_23_ss_ctrl_user_data_out_net,
     in_reg => reint1_output_port_net
   );
-  ctrl_combine : entity xil_defaultlib.rfdc_one_adc_2048gsps_ctrl_combine 
+  ctrl_combine : entity xil_defaultlib.rfdc_one_adc_2048gsps_ctrl_combine_x0 
   port map (
     in1 => reinterpret4_output_port_net,
     in2 => circ_or_y_net,
@@ -3835,23 +3835,23 @@ entity rfdc_one_adc_2048gsps_snapshot0_23 is
   );
 end rfdc_one_adc_2048gsps_snapshot0_23;
 architecture structural of rfdc_one_adc_2048gsps_snapshot0_23 is 
-  signal arm_or_y_net : std_logic_vector( 1-1 downto 0 );
-  signal slice1_y_net : std_logic_vector( 16-1 downto 0 );
-  signal slice6_y_net : std_logic_vector( 16-1 downto 0 );
-  signal rfdc_v0_3_rfdc_v0_3_adc0_sync_net : std_logic_vector( 1-1 downto 0 );
-  signal edge_op_y_net : std_logic_vector( 1-1 downto 0 );
-  signal convert_addr_dout_net : std_logic_vector( 10-1 downto 0 );
-  signal convert_din1_dout_net : std_logic_vector( 32-1 downto 0 );
-  signal convert_we_dout_net : std_logic_vector( 1-1 downto 0 );
-  signal rfdc_one_adc_2048gsps_snapshot0_23_ss_ctrl_user_data_out_net : std_logic_vector( 32-1 downto 0 );
-  signal cast_gw_dout_net : std_logic_vector( 32-1 downto 0 );
   signal we_choice_y_net : std_logic_vector( 1-1 downto 0 );
-  signal logical6_y_net : std_logic_vector( 1-1 downto 0 );
-  signal clk_net : std_logic;
-  signal ce_net : std_logic;
-  signal concatenate_y_net : std_logic_vector( 32-1 downto 0 );
+  signal convert_din1_dout_net : std_logic_vector( 32-1 downto 0 );
+  signal arm_or_y_net : std_logic_vector( 1-1 downto 0 );
   signal assert_d0_dout_net : std_logic_vector( 16-1 downto 0 );
+  signal edge_op_y_net : std_logic_vector( 1-1 downto 0 );
   signal assert_d1_dout_net : std_logic_vector( 16-1 downto 0 );
+  signal slice1_y_net : std_logic_vector( 16-1 downto 0 );
+  signal rfdc_one_adc_2048gsps_snapshot0_23_ss_ctrl_user_data_out_net : std_logic_vector( 32-1 downto 0 );
+  signal rfdc_v0_3_rfdc_v0_3_adc0_sync_net : std_logic_vector( 1-1 downto 0 );
+  signal convert_we_dout_net : std_logic_vector( 1-1 downto 0 );
+  signal slice6_y_net : std_logic_vector( 16-1 downto 0 );
+  signal cast_gw_dout_net : std_logic_vector( 32-1 downto 0 );
+  signal logical6_y_net : std_logic_vector( 1-1 downto 0 );
+  signal convert_addr_dout_net : std_logic_vector( 10-1 downto 0 );
+  signal concatenate_y_net : std_logic_vector( 32-1 downto 0 );
+  signal ce_net : std_logic;
+  signal clk_net : std_logic;
 begin
   arm_out <= arm_or_y_net;
   slice1_y_net <= in_d0;
@@ -3921,11 +3921,11 @@ entity rfdc_one_adc_2048gsps_buscreate is
   );
 end rfdc_one_adc_2048gsps_buscreate;
 architecture structural of rfdc_one_adc_2048gsps_buscreate is 
-  signal assert_d1_dout_net : std_logic_vector( 16-1 downto 0 );
   signal reinterpret1_output_port_net : std_logic_vector( 16-1 downto 0 );
   signal reinterpret2_output_port_net : std_logic_vector( 16-1 downto 0 );
-  signal concatenate_y_net : std_logic_vector( 32-1 downto 0 );
+  signal assert_d1_dout_net : std_logic_vector( 16-1 downto 0 );
   signal assert_d0_dout_net : std_logic_vector( 16-1 downto 0 );
+  signal concatenate_y_net : std_logic_vector( 32-1 downto 0 );
 begin
   bus_out <= concatenate_y_net;
   assert_d0_dout_net <= in1;
@@ -3970,12 +3970,12 @@ entity rfdc_one_adc_2048gsps_edge_detect_x0 is
   );
 end rfdc_one_adc_2048gsps_edge_detect_x0;
 architecture structural of rfdc_one_adc_2048gsps_edge_detect_x0 is 
-  signal edge_op_y_net : std_logic_vector( 1-1 downto 0 );
   signal slice3_y_net : std_logic_vector( 1-1 downto 0 );
-  signal clk_net : std_logic;
-  signal ce_net : std_logic;
   signal delay_q_net : std_logic_vector( 1-1 downto 0 );
+  signal clk_net : std_logic;
   signal inverter_op_net : std_logic_vector( 1-1 downto 0 );
+  signal ce_net : std_logic;
+  signal edge_op_y_net : std_logic_vector( 1-1 downto 0 );
 begin
   out_x0 <= edge_op_y_net;
   slice3_y_net <= in_x0;
@@ -4035,32 +4035,32 @@ entity rfdc_one_adc_2048gsps_add_gen is
   );
 end rfdc_one_adc_2048gsps_add_gen;
 architecture structural of rfdc_one_adc_2048gsps_add_gen is 
-  signal convert_dout_net : std_logic_vector( 19-1 downto 0 );
-  signal register5_q_net : std_logic_vector( 1-1 downto 0 );
   signal delay_q_net : std_logic_vector( 1-1 downto 0 );
-  signal delay4_q_net : std_logic_vector( 1-1 downto 0 );
-  signal slice1_y_net : std_logic_vector( 12-1 downto 0 );
+  signal shift_op_net : std_logic_vector( 19-1 downto 0 );
   signal delay3_q_net : std_logic_vector( 1-1 downto 0 );
-  signal inverter1_op_net : std_logic_vector( 1-1 downto 0 );
-  signal logical1_y_net : std_logic_vector( 1-1 downto 0 );
-  signal logical4_y_net : std_logic_vector( 1-1 downto 0 );
-  signal add_gen_op_net : std_logic_vector( 13-1 downto 0 );
-  signal slice2_y_net : std_logic_vector( 10-1 downto 0 );
-  signal delay6_q_net : std_logic_vector( 32-1 downto 0 );
-  signal logical6_y_net : std_logic_vector( 1-1 downto 0 );
-  signal concat_y_net : std_logic_vector( 32-1 downto 0 );
-  signal data_choice_y_net : std_logic_vector( 32-1 downto 0 );
-  signal we_choice_y_net : std_logic_vector( 1-1 downto 0 );
   signal register6_q_net : std_logic_vector( 1-1 downto 0 );
   signal never_op_net : std_logic_vector( 1-1 downto 0 );
   signal edge_op_y_net : std_logic_vector( 1-1 downto 0 );
-  signal clk_net : std_logic;
+  signal logical6_y_net : std_logic_vector( 1-1 downto 0 );
   signal ce_net : std_logic;
-  signal edge_op_y_net_x0 : std_logic_vector( 1-1 downto 0 );
-  signal slice3_y_net : std_logic_vector( 1-1 downto 0 );
-  signal shift_op_net : std_logic_vector( 19-1 downto 0 );
-  signal inverter_op_net : std_logic_vector( 1-1 downto 0 );
+  signal add_gen_op_net : std_logic_vector( 13-1 downto 0 );
+  signal delay6_q_net : std_logic_vector( 32-1 downto 0 );
+  signal concat_y_net : std_logic_vector( 32-1 downto 0 );
+  signal clk_net : std_logic;
+  signal convert_dout_net : std_logic_vector( 19-1 downto 0 );
   signal delay1_q_net : std_logic_vector( 12-1 downto 0 );
+  signal inverter1_op_net : std_logic_vector( 1-1 downto 0 );
+  signal slice2_y_net : std_logic_vector( 10-1 downto 0 );
+  signal logical4_y_net : std_logic_vector( 1-1 downto 0 );
+  signal delay4_q_net : std_logic_vector( 1-1 downto 0 );
+  signal inverter_op_net : std_logic_vector( 1-1 downto 0 );
+  signal edge_op_y_net_x0 : std_logic_vector( 1-1 downto 0 );
+  signal data_choice_y_net : std_logic_vector( 32-1 downto 0 );
+  signal we_choice_y_net : std_logic_vector( 1-1 downto 0 );
+  signal slice3_y_net : std_logic_vector( 1-1 downto 0 );
+  signal logical1_y_net : std_logic_vector( 1-1 downto 0 );
+  signal slice1_y_net : std_logic_vector( 12-1 downto 0 );
+  signal register5_q_net : std_logic_vector( 1-1 downto 0 );
 begin
   add <= slice2_y_net;
   dout <= delay6_q_net;
@@ -4288,36 +4288,36 @@ entity rfdc_one_adc_2048gsps_dram_munge is
   );
 end rfdc_one_adc_2048gsps_dram_munge;
 architecture structural of rfdc_one_adc_2048gsps_dram_munge is 
-  signal data_choice_y_net : std_logic_vector( 32-1 downto 0 );
-  signal we_choice_y_net : std_logic_vector( 1-1 downto 0 );
-  signal cast_dout_net : std_logic_vector( 32-1 downto 0 );
-  signal mux1_y_net_x0 : std_logic_vector( 1-1 downto 0 );
-  signal edge_op_y_net : std_logic_vector( 1-1 downto 0 );
-  signal clk_net : std_logic;
-  signal ce_net : std_logic;
-  signal concat_y_net : std_logic_vector( 80-1 downto 0 );
-  signal constant_op_net : std_logic_vector( 8-1 downto 0 );
+  signal logical_y_net : std_logic_vector( 1-1 downto 0 );
+  signal logical1_y_net : std_logic_vector( 1-1 downto 0 );
+  signal con0_op_net : std_logic_vector( 2-1 downto 0 );
   signal register_q_net : std_logic_vector( 32-1 downto 0 );
   signal register1_q_net : std_logic_vector( 32-1 downto 0 );
-  signal concat1_y_net : std_logic_vector( 80-1 downto 0 );
-  signal register2_q_net : std_logic_vector( 32-1 downto 0 );
-  signal register3_q_net : std_logic_vector( 32-1 downto 0 );
-  signal con2_op_net : std_logic_vector( 2-1 downto 0 );
-  signal con3_op_net : std_logic_vector( 2-1 downto 0 );
-  signal dram_op_net : std_logic_vector( 1-1 downto 0 );
-  signal delay_q_net : std_logic_vector( 1-1 downto 0 );
-  signal logical_y_net : std_logic_vector( 1-1 downto 0 );
   signal delay1_q_net : std_logic_vector( 1-1 downto 0 );
-  signal logical1_y_net : std_logic_vector( 1-1 downto 0 );
-  signal relational3_op_net : std_logic_vector( 1-1 downto 0 );
-  signal mux1_y_net : std_logic_vector( 80-1 downto 0 );
-  signal dout_count_op_net : std_logic_vector( 1-1 downto 0 );
-  signal relational_op_net : std_logic_vector( 1-1 downto 0 );
-  signal relational1_op_net : std_logic_vector( 1-1 downto 0 );
-  signal relational2_op_net : std_logic_vector( 1-1 downto 0 );
+  signal delay_q_net : std_logic_vector( 1-1 downto 0 );
+  signal concat_y_net : std_logic_vector( 80-1 downto 0 );
   signal input_count_op_net : std_logic_vector( 2-1 downto 0 );
-  signal con0_op_net : std_logic_vector( 2-1 downto 0 );
+  signal constant_op_net : std_logic_vector( 8-1 downto 0 );
+  signal relational_op_net : std_logic_vector( 1-1 downto 0 );
+  signal dram_op_net : std_logic_vector( 1-1 downto 0 );
+  signal cast_dout_net : std_logic_vector( 32-1 downto 0 );
   signal con1_op_net : std_logic_vector( 2-1 downto 0 );
+  signal concat1_y_net : std_logic_vector( 80-1 downto 0 );
+  signal relational2_op_net : std_logic_vector( 1-1 downto 0 );
+  signal mux1_y_net_x0 : std_logic_vector( 1-1 downto 0 );
+  signal edge_op_y_net : std_logic_vector( 1-1 downto 0 );
+  signal con3_op_net : std_logic_vector( 2-1 downto 0 );
+  signal data_choice_y_net : std_logic_vector( 32-1 downto 0 );
+  signal we_choice_y_net : std_logic_vector( 1-1 downto 0 );
+  signal dout_count_op_net : std_logic_vector( 1-1 downto 0 );
+  signal mux1_y_net : std_logic_vector( 80-1 downto 0 );
+  signal con2_op_net : std_logic_vector( 2-1 downto 0 );
+  signal ce_net : std_logic;
+  signal register2_q_net : std_logic_vector( 32-1 downto 0 );
+  signal clk_net : std_logic;
+  signal register3_q_net : std_logic_vector( 32-1 downto 0 );
+  signal relational3_op_net : std_logic_vector( 1-1 downto 0 );
+  signal relational1_op_net : std_logic_vector( 1-1 downto 0 );
 begin
   dout <= data_choice_y_net;
   we_o <= we_choice_y_net;
@@ -4594,12 +4594,12 @@ entity rfdc_one_adc_2048gsps_edge_detect is
   );
 end rfdc_one_adc_2048gsps_edge_detect;
 architecture structural of rfdc_one_adc_2048gsps_edge_detect is 
+  signal clk_net : std_logic;
   signal edge_op_y_net : std_logic_vector( 1-1 downto 0 );
   signal delay1_q_net : std_logic_vector( 1-1 downto 0 );
-  signal clk_net : std_logic;
+  signal inverter_op_net : std_logic_vector( 1-1 downto 0 );
   signal ce_net : std_logic;
   signal delay_q_net : std_logic_vector( 1-1 downto 0 );
-  signal inverter_op_net : std_logic_vector( 1-1 downto 0 );
 begin
   out_x0 <= edge_op_y_net;
   delay1_q_net <= in_x0;
@@ -4659,31 +4659,31 @@ entity rfdc_one_adc_2048gsps_basic_ctrl is
   );
 end rfdc_one_adc_2048gsps_basic_ctrl;
 architecture structural of rfdc_one_adc_2048gsps_basic_ctrl is 
-  signal data_choice_y_net : std_logic_vector( 32-1 downto 0 );
-  signal we_choice_y_net : std_logic_vector( 1-1 downto 0 );
-  signal register6_q_net : std_logic_vector( 1-1 downto 0 );
-  signal edge_op_y_net_x0 : std_logic_vector( 1-1 downto 0 );
-  signal cast_dout_net : std_logic_vector( 32-1 downto 0 );
   signal rfdc_v0_3_rfdc_v0_3_adc0_sync_net : std_logic_vector( 1-1 downto 0 );
-  signal edge_op_y_net : std_logic_vector( 1-1 downto 0 );
+  signal we_choice_y_net : std_logic_vector( 1-1 downto 0 );
   signal concatenate_y_net : std_logic_vector( 32-1 downto 0 );
   signal never_op_net : std_logic_vector( 1-1 downto 0 );
-  signal clk_net : std_logic;
   signal ce_net : std_logic;
-  signal mux1_y_net : std_logic_vector( 1-1 downto 0 );
-  signal delay1_q_net : std_logic_vector( 1-1 downto 0 );
-  signal constant_op_net : std_logic_vector( 1-1 downto 0 );
   signal constant1_op_net : std_logic_vector( 1-1 downto 0 );
-  signal constant2_op_net : std_logic_vector( 1-1 downto 0 );
-  signal enable_y_net : std_logic_vector( 1-1 downto 0 );
-  signal delay2_q_net : std_logic_vector( 1-1 downto 0 );
-  signal trig_src_y_net : std_logic_vector( 1-1 downto 0 );
+  signal mux1_y_net : std_logic_vector( 1-1 downto 0 );
   signal delay3_q_net : std_logic_vector( 1-1 downto 0 );
-  signal valid_src_y_net : std_logic_vector( 1-1 downto 0 );
-  signal inverter_op_net : std_logic_vector( 1-1 downto 0 );
+  signal delay1_q_net : std_logic_vector( 1-1 downto 0 );
+  signal clk_net : std_logic;
+  signal constant_op_net : std_logic_vector( 1-1 downto 0 );
   signal logical_y_net : std_logic_vector( 1-1 downto 0 );
-  signal mux2_y_net : std_logic_vector( 1-1 downto 0 );
+  signal register6_q_net : std_logic_vector( 1-1 downto 0 );
+  signal inverter_op_net : std_logic_vector( 1-1 downto 0 );
   signal register1_q_net : std_logic_vector( 1-1 downto 0 );
+  signal edge_op_y_net_x0 : std_logic_vector( 1-1 downto 0 );
+  signal data_choice_y_net : std_logic_vector( 32-1 downto 0 );
+  signal cast_dout_net : std_logic_vector( 32-1 downto 0 );
+  signal valid_src_y_net : std_logic_vector( 1-1 downto 0 );
+  signal constant2_op_net : std_logic_vector( 1-1 downto 0 );
+  signal edge_op_y_net : std_logic_vector( 1-1 downto 0 );
+  signal enable_y_net : std_logic_vector( 1-1 downto 0 );
+  signal trig_src_y_net : std_logic_vector( 1-1 downto 0 );
+  signal mux2_y_net : std_logic_vector( 1-1 downto 0 );
+  signal delay2_q_net : std_logic_vector( 1-1 downto 0 );
 begin
   dout <= data_choice_y_net;
   we_o <= we_choice_y_net;
@@ -4890,17 +4890,17 @@ entity rfdc_one_adc_2048gsps_calc_add is
   );
 end rfdc_one_adc_2048gsps_calc_add;
 architecture structural of rfdc_one_adc_2048gsps_calc_add is 
-  signal concat_y_net : std_logic_vector( 10-1 downto 0 );
-  signal msw_y_net : std_logic_vector( 9-1 downto 0 );
-  signal convert_addr_dout_net : std_logic_vector( 10-1 downto 0 );
-  signal manipulate_op_net : std_logic_vector( 1-1 downto 0 );
-  signal mux_y_net : std_logic_vector( 10-1 downto 0 );
-  signal add_del_q_net : std_logic_vector( 10-1 downto 0 );
-  signal clk_net : std_logic;
   signal ce_net : std_logic;
-  signal add_sub_s_net : std_logic_vector( 1-1 downto 0 );
   signal const_op_net : std_logic_vector( 1-1 downto 0 );
+  signal mux_y_net : std_logic_vector( 10-1 downto 0 );
+  signal concat_y_net : std_logic_vector( 10-1 downto 0 );
+  signal add_sub_s_net : std_logic_vector( 1-1 downto 0 );
+  signal manipulate_op_net : std_logic_vector( 1-1 downto 0 );
+  signal add_del_q_net : std_logic_vector( 10-1 downto 0 );
+  signal convert_addr_dout_net : std_logic_vector( 10-1 downto 0 );
+  signal clk_net : std_logic;
   signal lsw_y_net : std_logic_vector( 1-1 downto 0 );
+  signal msw_y_net : std_logic_vector( 9-1 downto 0 );
 begin
   out_x0 <= mux_y_net;
   add_del_q_net <= in_x0;
@@ -5036,16 +5036,16 @@ entity rfdc_one_adc_2048gsps_bram is
   );
 end rfdc_one_adc_2048gsps_bram;
 architecture structural of rfdc_one_adc_2048gsps_bram is 
-  signal add_del_q_net : std_logic_vector( 10-1 downto 0 );
-  signal dat_del_q_net : std_logic_vector( 32-1 downto 0 );
   signal we_del_q_net : std_logic_vector( 1-1 downto 0 );
-  signal convert_addr_dout_net : std_logic_vector( 10-1 downto 0 );
-  signal convert_din1_dout_net : std_logic_vector( 32-1 downto 0 );
-  signal convert_we_dout_net : std_logic_vector( 1-1 downto 0 );
   signal clk_net : std_logic;
   signal ce_net : std_logic;
   signal mux_y_net : std_logic_vector( 10-1 downto 0 );
+  signal convert_din1_dout_net : std_logic_vector( 32-1 downto 0 );
+  signal convert_addr_dout_net : std_logic_vector( 10-1 downto 0 );
+  signal add_del_q_net : std_logic_vector( 10-1 downto 0 );
   signal reinterpret_out_output_port_net : std_logic_vector( 32-1 downto 0 );
+  signal convert_we_dout_net : std_logic_vector( 1-1 downto 0 );
+  signal dat_del_q_net : std_logic_vector( 32-1 downto 0 );
 begin
   add_del_q_net <= addr;
   dat_del_q_net <= data_in;
@@ -5136,15 +5136,15 @@ library IEEE;
 use IEEE.std_logic_1164.all;
 library xil_defaultlib;
 use xil_defaultlib.conv_pkg.all;
-entity rfdc_one_adc_2048gsps_ctrl is
+entity rfdc_one_adc_2048gsps_ctrl_x0 is
   port (
     rfdc_one_adc_2048gsps_snapshot0_45_ss_ctrl_user_data_out : in std_logic_vector( 32-1 downto 0 );
     in_reg : out std_logic_vector( 32-1 downto 0 )
   );
-end rfdc_one_adc_2048gsps_ctrl;
-architecture structural of rfdc_one_adc_2048gsps_ctrl is 
-  signal rfdc_one_adc_2048gsps_snapshot0_45_ss_ctrl_user_data_out_net : std_logic_vector( 32-1 downto 0 );
+end rfdc_one_adc_2048gsps_ctrl_x0;
+architecture structural of rfdc_one_adc_2048gsps_ctrl_x0 is 
   signal io_delay_q_net : std_logic_vector( 32-1 downto 0 );
+  signal rfdc_one_adc_2048gsps_snapshot0_45_ss_ctrl_user_data_out_net : std_logic_vector( 32-1 downto 0 );
   signal slice_reg_y_net : std_logic_vector( 32-1 downto 0 );
   signal reint1_output_port_net : std_logic_vector( 32-1 downto 0 );
 begin
@@ -5183,7 +5183,7 @@ library IEEE;
 use IEEE.std_logic_1164.all;
 library xil_defaultlib;
 use xil_defaultlib.conv_pkg.all;
-entity rfdc_one_adc_2048gsps_ctrl_combine_x1 is
+entity rfdc_one_adc_2048gsps_ctrl_combine is
   port (
     in1 : in std_logic_vector( 28-1 downto 0 );
     in2 : in std_logic_vector( 1-1 downto 0 );
@@ -5191,17 +5191,17 @@ entity rfdc_one_adc_2048gsps_ctrl_combine_x1 is
     in4 : in std_logic_vector( 1-1 downto 0 );
     bus_out : out std_logic_vector( 32-1 downto 0 )
   );
-end rfdc_one_adc_2048gsps_ctrl_combine_x1;
-architecture structural of rfdc_one_adc_2048gsps_ctrl_combine_x1 is 
-  signal concatenate_y_net : std_logic_vector( 32-1 downto 0 );
+end rfdc_one_adc_2048gsps_ctrl_combine;
+architecture structural of rfdc_one_adc_2048gsps_ctrl_combine is 
   signal reinterpret4_output_port_net_x0 : std_logic_vector( 28-1 downto 0 );
-  signal circ_or_y_net : std_logic_vector( 1-1 downto 0 );
   signal reinterpret2_output_port_net : std_logic_vector( 2-1 downto 0 );
+  signal concatenate_y_net : std_logic_vector( 32-1 downto 0 );
+  signal reinterpret4_output_port_net : std_logic_vector( 1-1 downto 0 );
   signal arm_or_y_net : std_logic_vector( 1-1 downto 0 );
-  signal reinterpret1_output_port_net : std_logic_vector( 28-1 downto 0 );
   signal reinterpret2_output_port_net_x0 : std_logic_vector( 1-1 downto 0 );
   signal reinterpret3_output_port_net : std_logic_vector( 2-1 downto 0 );
-  signal reinterpret4_output_port_net : std_logic_vector( 1-1 downto 0 );
+  signal reinterpret1_output_port_net : std_logic_vector( 28-1 downto 0 );
+  signal circ_or_y_net : std_logic_vector( 1-1 downto 0 );
 begin
   bus_out <= concatenate_y_net;
   reinterpret4_output_port_net_x0 <= in1;
@@ -5267,13 +5267,13 @@ entity rfdc_one_adc_2048gsps_ctrl_split_x1 is
   );
 end rfdc_one_adc_2048gsps_ctrl_split_x1;
 architecture structural of rfdc_one_adc_2048gsps_ctrl_split_x1 is 
-  signal reinterpret4_output_port_net : std_logic_vector( 28-1 downto 0 );
-  signal slice3_y_net : std_logic_vector( 1-1 downto 0 );
-  signal reinterpret2_output_port_net : std_logic_vector( 2-1 downto 0 );
-  signal slice1_y_net : std_logic_vector( 1-1 downto 0 );
   signal reint1_output_port_net : std_logic_vector( 32-1 downto 0 );
   signal slice2_y_net : std_logic_vector( 2-1 downto 0 );
+  signal reinterpret2_output_port_net : std_logic_vector( 2-1 downto 0 );
+  signal slice3_y_net : std_logic_vector( 1-1 downto 0 );
+  signal slice1_y_net : std_logic_vector( 1-1 downto 0 );
   signal slice4_y_net : std_logic_vector( 28-1 downto 0 );
+  signal reinterpret4_output_port_net : std_logic_vector( 28-1 downto 0 );
 begin
   msb_out4 <= reinterpret4_output_port_net;
   out3 <= slice3_y_net;
@@ -5355,13 +5355,13 @@ entity rfdc_one_adc_2048gsps_status_x1 is
   );
 end rfdc_one_adc_2048gsps_status_x1;
 architecture structural of rfdc_one_adc_2048gsps_status_x1 is 
-  signal concat_y_net : std_logic_vector( 32-1 downto 0 );
-  signal cast_gw_dout_net : std_logic_vector( 32-1 downto 0 );
-  signal clk_net : std_logic;
   signal ce_net : std_logic;
-  signal io_delay_q_net : std_logic_vector( 32-1 downto 0 );
+  signal clk_net : std_logic;
+  signal cast_gw_dout_net : std_logic_vector( 32-1 downto 0 );
+  signal concat_y_net : std_logic_vector( 32-1 downto 0 );
   signal reint1_output_port_net : std_logic_vector( 32-1 downto 0 );
   signal assert_reg_dout_net : std_logic_vector( 32-1 downto 0 );
+  signal io_delay_q_net : std_logic_vector( 32-1 downto 0 );
 begin
   concat_y_net <= out_reg;
   rfdc_one_adc_2048gsps_snapshot0_45_ss_status_user_data_in <= cast_gw_dout_net;
@@ -5437,40 +5437,40 @@ entity rfdc_one_adc_2048gsps_ss is
   );
 end rfdc_one_adc_2048gsps_ss;
 architecture structural of rfdc_one_adc_2048gsps_ss is 
-  signal circ_op_net : std_logic_vector( 1-1 downto 0 );
+  signal edge_op_y_net_x1 : std_logic_vector( 1-1 downto 0 );
+  signal cast_dout_net : std_logic_vector( 32-1 downto 0 );
+  signal convert_din1_dout_net : std_logic_vector( 32-1 downto 0 );
+  signal rfdc_v0_3_rfdc_v0_3_adc0_sync_net : std_logic_vector( 1-1 downto 0 );
+  signal reinterpret4_output_port_net : std_logic_vector( 28-1 downto 0 );
+  signal slice3_y_net : std_logic_vector( 1-1 downto 0 );
+  signal we_choice_y_net : std_logic_vector( 1-1 downto 0 );
   signal rfdc_one_adc_2048gsps_snapshot0_45_ss_ctrl_user_data_out_net : std_logic_vector( 32-1 downto 0 );
+  signal edge_op_y_net_x0 : std_logic_vector( 1-1 downto 0 );
+  signal reint1_output_port_net : std_logic_vector( 32-1 downto 0 );
   signal cast_gw_dout_net : std_logic_vector( 32-1 downto 0 );
-  signal clk_net : std_logic;
-  signal ce_net : std_logic;
+  signal arm_or_y_net : std_logic_vector( 1-1 downto 0 );
+  signal logical6_y_net : std_logic_vector( 1-1 downto 0 );
+  signal convert_addr_dout_net : std_logic_vector( 10-1 downto 0 );
+  signal convert_we_dout_net : std_logic_vector( 1-1 downto 0 );
+  signal concatenate_y_net_x0 : std_logic_vector( 32-1 downto 0 );
+  signal add_del_q_net : std_logic_vector( 10-1 downto 0 );
+  signal dat_del_q_net : std_logic_vector( 32-1 downto 0 );
+  signal never_op_net : std_logic_vector( 1-1 downto 0 );
   signal slice2_y_net : std_logic_vector( 10-1 downto 0 );
   signal delay6_q_net : std_logic_vector( 32-1 downto 0 );
   signal concat_y_net : std_logic_vector( 32-1 downto 0 );
   signal data_choice_y_net : std_logic_vector( 32-1 downto 0 );
   signal register6_q_net : std_logic_vector( 1-1 downto 0 );
-  signal never_op_net : std_logic_vector( 1-1 downto 0 );
-  signal edge_op_y_net_x1 : std_logic_vector( 1-1 downto 0 );
-  signal cast_dout_net : std_logic_vector( 32-1 downto 0 );
-  signal concatenate_y_net_x0 : std_logic_vector( 32-1 downto 0 );
-  signal add_del_q_net : std_logic_vector( 10-1 downto 0 );
-  signal dat_del_q_net : std_logic_vector( 32-1 downto 0 );
+  signal ce_net : std_logic;
+  signal clk_net : std_logic;
+  signal arm_op_net : std_logic_vector( 1-1 downto 0 );
+  signal slice1_y_net : std_logic_vector( 1-1 downto 0 );
+  signal circ_op_net : std_logic_vector( 1-1 downto 0 );
+  signal ri_output_port_net : std_logic_vector( 32-1 downto 0 );
   signal we_del_q_net : std_logic_vector( 1-1 downto 0 );
-  signal reint1_output_port_net : std_logic_vector( 32-1 downto 0 );
-  signal reinterpret4_output_port_net : std_logic_vector( 28-1 downto 0 );
   signal circ_or_y_net : std_logic_vector( 1-1 downto 0 );
   signal reinterpret2_output_port_net : std_logic_vector( 2-1 downto 0 );
-  signal slice3_y_net : std_logic_vector( 1-1 downto 0 );
-  signal slice1_y_net : std_logic_vector( 1-1 downto 0 );
-  signal arm_op_net : std_logic_vector( 1-1 downto 0 );
-  signal ri_output_port_net : std_logic_vector( 32-1 downto 0 );
-  signal arm_or_y_net : std_logic_vector( 1-1 downto 0 );
   signal concatenate_y_net : std_logic_vector( 32-1 downto 0 );
-  signal rfdc_v0_3_rfdc_v0_3_adc0_sync_net : std_logic_vector( 1-1 downto 0 );
-  signal edge_op_y_net_x0 : std_logic_vector( 1-1 downto 0 );
-  signal we_choice_y_net : std_logic_vector( 1-1 downto 0 );
-  signal logical6_y_net : std_logic_vector( 1-1 downto 0 );
-  signal convert_addr_dout_net : std_logic_vector( 10-1 downto 0 );
-  signal convert_din1_dout_net : std_logic_vector( 32-1 downto 0 );
-  signal convert_we_dout_net : std_logic_vector( 1-1 downto 0 );
 begin
   arm_out <= arm_or_y_net;
   concatenate_y_net <= din;
@@ -5524,12 +5524,12 @@ begin
     rfdc_one_adc_2048gsps_snapshot0_45_ss_bram_data_in => convert_din1_dout_net,
     rfdc_one_adc_2048gsps_snapshot0_45_ss_bram_we => convert_we_dout_net
   );
-  ctrl : entity xil_defaultlib.rfdc_one_adc_2048gsps_ctrl 
+  ctrl : entity xil_defaultlib.rfdc_one_adc_2048gsps_ctrl_x0 
   port map (
     rfdc_one_adc_2048gsps_snapshot0_45_ss_ctrl_user_data_out => rfdc_one_adc_2048gsps_snapshot0_45_ss_ctrl_user_data_out_net,
     in_reg => reint1_output_port_net
   );
-  ctrl_combine : entity xil_defaultlib.rfdc_one_adc_2048gsps_ctrl_combine_x1 
+  ctrl_combine : entity xil_defaultlib.rfdc_one_adc_2048gsps_ctrl_combine 
   port map (
     in1 => reinterpret4_output_port_net,
     in2 => circ_or_y_net,
@@ -5669,23 +5669,23 @@ entity rfdc_one_adc_2048gsps_snapshot0_45 is
   );
 end rfdc_one_adc_2048gsps_snapshot0_45;
 architecture structural of rfdc_one_adc_2048gsps_snapshot0_45 is 
-  signal arm_or_y_net : std_logic_vector( 1-1 downto 0 );
-  signal slice2_y_net : std_logic_vector( 16-1 downto 0 );
-  signal slice5_y_net : std_logic_vector( 16-1 downto 0 );
-  signal rfdc_v0_3_rfdc_v0_3_adc0_sync_net : std_logic_vector( 1-1 downto 0 );
-  signal edge_op_y_net : std_logic_vector( 1-1 downto 0 );
-  signal convert_addr_dout_net : std_logic_vector( 10-1 downto 0 );
-  signal convert_din1_dout_net : std_logic_vector( 32-1 downto 0 );
-  signal convert_we_dout_net : std_logic_vector( 1-1 downto 0 );
   signal rfdc_one_adc_2048gsps_snapshot0_45_ss_ctrl_user_data_out_net : std_logic_vector( 32-1 downto 0 );
+  signal convert_we_dout_net : std_logic_vector( 1-1 downto 0 );
+  signal rfdc_v0_3_rfdc_v0_3_adc0_sync_net : std_logic_vector( 1-1 downto 0 );
+  signal arm_or_y_net : std_logic_vector( 1-1 downto 0 );
   signal cast_gw_dout_net : std_logic_vector( 32-1 downto 0 );
-  signal we_choice_y_net : std_logic_vector( 1-1 downto 0 );
   signal logical6_y_net : std_logic_vector( 1-1 downto 0 );
-  signal clk_net : std_logic;
-  signal ce_net : std_logic;
-  signal concatenate_y_net : std_logic_vector( 32-1 downto 0 );
-  signal assert_d0_dout_net : std_logic_vector( 16-1 downto 0 );
   signal assert_d1_dout_net : std_logic_vector( 16-1 downto 0 );
+  signal convert_addr_dout_net : std_logic_vector( 10-1 downto 0 );
+  signal clk_net : std_logic;
+  signal slice5_y_net : std_logic_vector( 16-1 downto 0 );
+  signal slice2_y_net : std_logic_vector( 16-1 downto 0 );
+  signal assert_d0_dout_net : std_logic_vector( 16-1 downto 0 );
+  signal edge_op_y_net : std_logic_vector( 1-1 downto 0 );
+  signal concatenate_y_net : std_logic_vector( 32-1 downto 0 );
+  signal convert_din1_dout_net : std_logic_vector( 32-1 downto 0 );
+  signal we_choice_y_net : std_logic_vector( 1-1 downto 0 );
+  signal ce_net : std_logic;
 begin
   arm_out <= arm_or_y_net;
   slice2_y_net <= in_d0;
@@ -5755,11 +5755,11 @@ entity rfdc_one_adc_2048gsps_buscreate_x0 is
   );
 end rfdc_one_adc_2048gsps_buscreate_x0;
 architecture structural of rfdc_one_adc_2048gsps_buscreate_x0 is 
-  signal concatenate_y_net : std_logic_vector( 32-1 downto 0 );
-  signal assert_d0_dout_net : std_logic_vector( 16-1 downto 0 );
   signal assert_d1_dout_net : std_logic_vector( 16-1 downto 0 );
   signal reinterpret1_output_port_net : std_logic_vector( 16-1 downto 0 );
   signal reinterpret2_output_port_net : std_logic_vector( 16-1 downto 0 );
+  signal assert_d0_dout_net : std_logic_vector( 16-1 downto 0 );
+  signal concatenate_y_net : std_logic_vector( 32-1 downto 0 );
 begin
   bus_out <= concatenate_y_net;
   assert_d0_dout_net <= in1;
@@ -5804,12 +5804,12 @@ entity rfdc_one_adc_2048gsps_edge_detect_x2 is
   );
 end rfdc_one_adc_2048gsps_edge_detect_x2;
 architecture structural of rfdc_one_adc_2048gsps_edge_detect_x2 is 
-  signal inverter_op_net : std_logic_vector( 1-1 downto 0 );
-  signal edge_op_y_net : std_logic_vector( 1-1 downto 0 );
-  signal slice3_y_net : std_logic_vector( 1-1 downto 0 );
-  signal clk_net : std_logic;
-  signal ce_net : std_logic;
   signal delay_q_net : std_logic_vector( 1-1 downto 0 );
+  signal inverter_op_net : std_logic_vector( 1-1 downto 0 );
+  signal clk_net : std_logic;
+  signal slice3_y_net : std_logic_vector( 1-1 downto 0 );
+  signal ce_net : std_logic;
+  signal edge_op_y_net : std_logic_vector( 1-1 downto 0 );
 begin
   out_x0 <= edge_op_y_net;
   slice3_y_net <= in_x0;
@@ -5869,32 +5869,32 @@ entity rfdc_one_adc_2048gsps_add_gen_x0 is
   );
 end rfdc_one_adc_2048gsps_add_gen_x0;
 architecture structural of rfdc_one_adc_2048gsps_add_gen_x0 is 
-  signal slice2_y_net : std_logic_vector( 10-1 downto 0 );
-  signal delay6_q_net : std_logic_vector( 32-1 downto 0 );
-  signal logical6_y_net : std_logic_vector( 1-1 downto 0 );
-  signal concat_y_net : std_logic_vector( 32-1 downto 0 );
-  signal data_choice_y_net : std_logic_vector( 32-1 downto 0 );
-  signal we_choice_y_net : std_logic_vector( 1-1 downto 0 );
-  signal register6_q_net : std_logic_vector( 1-1 downto 0 );
-  signal never_op_net : std_logic_vector( 1-1 downto 0 );
   signal edge_op_y_net : std_logic_vector( 1-1 downto 0 );
-  signal clk_net : std_logic;
-  signal ce_net : std_logic;
-  signal edge_op_y_net_x0 : std_logic_vector( 1-1 downto 0 );
-  signal slice3_y_net : std_logic_vector( 1-1 downto 0 );
-  signal shift_op_net : std_logic_vector( 19-1 downto 0 );
+  signal logical6_y_net : std_logic_vector( 1-1 downto 0 );
   signal inverter_op_net : std_logic_vector( 1-1 downto 0 );
-  signal delay1_q_net : std_logic_vector( 12-1 downto 0 );
-  signal convert_dout_net : std_logic_vector( 19-1 downto 0 );
-  signal register5_q_net : std_logic_vector( 1-1 downto 0 );
-  signal delay_q_net : std_logic_vector( 1-1 downto 0 );
-  signal delay4_q_net : std_logic_vector( 1-1 downto 0 );
-  signal add_gen_op_net : std_logic_vector( 13-1 downto 0 );
   signal slice1_y_net : std_logic_vector( 12-1 downto 0 );
-  signal delay3_q_net : std_logic_vector( 1-1 downto 0 );
-  signal inverter1_op_net : std_logic_vector( 1-1 downto 0 );
-  signal logical1_y_net : std_logic_vector( 1-1 downto 0 );
+  signal delay1_q_net : std_logic_vector( 12-1 downto 0 );
   signal logical4_y_net : std_logic_vector( 1-1 downto 0 );
+  signal register6_q_net : std_logic_vector( 1-1 downto 0 );
+  signal slice3_y_net : std_logic_vector( 1-1 downto 0 );
+  signal register5_q_net : std_logic_vector( 1-1 downto 0 );
+  signal delay3_q_net : std_logic_vector( 1-1 downto 0 );
+  signal data_choice_y_net : std_logic_vector( 32-1 downto 0 );
+  signal shift_op_net : std_logic_vector( 19-1 downto 0 );
+  signal slice2_y_net : std_logic_vector( 10-1 downto 0 );
+  signal ce_net : std_logic;
+  signal delay6_q_net : std_logic_vector( 32-1 downto 0 );
+  signal delay_q_net : std_logic_vector( 1-1 downto 0 );
+  signal add_gen_op_net : std_logic_vector( 13-1 downto 0 );
+  signal convert_dout_net : std_logic_vector( 19-1 downto 0 );
+  signal concat_y_net : std_logic_vector( 32-1 downto 0 );
+  signal delay4_q_net : std_logic_vector( 1-1 downto 0 );
+  signal edge_op_y_net_x0 : std_logic_vector( 1-1 downto 0 );
+  signal logical1_y_net : std_logic_vector( 1-1 downto 0 );
+  signal we_choice_y_net : std_logic_vector( 1-1 downto 0 );
+  signal never_op_net : std_logic_vector( 1-1 downto 0 );
+  signal clk_net : std_logic;
+  signal inverter1_op_net : std_logic_vector( 1-1 downto 0 );
 begin
   add <= slice2_y_net;
   dout <= delay6_q_net;
@@ -6122,36 +6122,36 @@ entity rfdc_one_adc_2048gsps_dram_munge_x0 is
   );
 end rfdc_one_adc_2048gsps_dram_munge_x0;
 architecture structural of rfdc_one_adc_2048gsps_dram_munge_x0 is 
-  signal relational1_op_net : std_logic_vector( 1-1 downto 0 );
-  signal relational2_op_net : std_logic_vector( 1-1 downto 0 );
-  signal input_count_op_net : std_logic_vector( 2-1 downto 0 );
-  signal con0_op_net : std_logic_vector( 2-1 downto 0 );
-  signal con1_op_net : std_logic_vector( 2-1 downto 0 );
-  signal con2_op_net : std_logic_vector( 2-1 downto 0 );
-  signal con3_op_net : std_logic_vector( 2-1 downto 0 );
-  signal dram_op_net : std_logic_vector( 1-1 downto 0 );
-  signal data_choice_y_net : std_logic_vector( 32-1 downto 0 );
-  signal we_choice_y_net : std_logic_vector( 1-1 downto 0 );
-  signal cast_dout_net : std_logic_vector( 32-1 downto 0 );
-  signal mux1_y_net_x0 : std_logic_vector( 1-1 downto 0 );
-  signal edge_op_y_net : std_logic_vector( 1-1 downto 0 );
+  signal dout_count_op_net : std_logic_vector( 1-1 downto 0 );
   signal clk_net : std_logic;
-  signal ce_net : std_logic;
+  signal edge_op_y_net : std_logic_vector( 1-1 downto 0 );
+  signal con0_op_net : std_logic_vector( 2-1 downto 0 );
+  signal mux1_y_net_x0 : std_logic_vector( 1-1 downto 0 );
+  signal delay1_q_net : std_logic_vector( 1-1 downto 0 );
+  signal data_choice_y_net : std_logic_vector( 32-1 downto 0 );
+  signal input_count_op_net : std_logic_vector( 2-1 downto 0 );
+  signal mux1_y_net : std_logic_vector( 80-1 downto 0 );
+  signal con2_op_net : std_logic_vector( 2-1 downto 0 );
   signal concat_y_net : std_logic_vector( 80-1 downto 0 );
-  signal constant_op_net : std_logic_vector( 8-1 downto 0 );
-  signal register_q_net : std_logic_vector( 32-1 downto 0 );
-  signal register1_q_net : std_logic_vector( 32-1 downto 0 );
-  signal concat1_y_net : std_logic_vector( 80-1 downto 0 );
-  signal register2_q_net : std_logic_vector( 32-1 downto 0 );
   signal register3_q_net : std_logic_vector( 32-1 downto 0 );
+  signal relational2_op_net : std_logic_vector( 1-1 downto 0 );
+  signal we_choice_y_net : std_logic_vector( 1-1 downto 0 );
+  signal con1_op_net : std_logic_vector( 2-1 downto 0 );
+  signal register2_q_net : std_logic_vector( 32-1 downto 0 );
+  signal register_q_net : std_logic_vector( 32-1 downto 0 );
+  signal cast_dout_net : std_logic_vector( 32-1 downto 0 );
   signal delay_q_net : std_logic_vector( 1-1 downto 0 );
   signal logical_y_net : std_logic_vector( 1-1 downto 0 );
-  signal delay1_q_net : std_logic_vector( 1-1 downto 0 );
-  signal logical1_y_net : std_logic_vector( 1-1 downto 0 );
-  signal relational3_op_net : std_logic_vector( 1-1 downto 0 );
-  signal mux1_y_net : std_logic_vector( 80-1 downto 0 );
-  signal dout_count_op_net : std_logic_vector( 1-1 downto 0 );
+  signal ce_net : std_logic;
+  signal con3_op_net : std_logic_vector( 2-1 downto 0 );
   signal relational_op_net : std_logic_vector( 1-1 downto 0 );
+  signal constant_op_net : std_logic_vector( 8-1 downto 0 );
+  signal logical1_y_net : std_logic_vector( 1-1 downto 0 );
+  signal dram_op_net : std_logic_vector( 1-1 downto 0 );
+  signal relational3_op_net : std_logic_vector( 1-1 downto 0 );
+  signal concat1_y_net : std_logic_vector( 80-1 downto 0 );
+  signal register1_q_net : std_logic_vector( 32-1 downto 0 );
+  signal relational1_op_net : std_logic_vector( 1-1 downto 0 );
 begin
   dout <= data_choice_y_net;
   we_o <= we_choice_y_net;
@@ -6428,12 +6428,12 @@ entity rfdc_one_adc_2048gsps_edge_detect_x1 is
   );
 end rfdc_one_adc_2048gsps_edge_detect_x1;
 architecture structural of rfdc_one_adc_2048gsps_edge_detect_x1 is 
-  signal edge_op_y_net : std_logic_vector( 1-1 downto 0 );
+  signal inverter_op_net : std_logic_vector( 1-1 downto 0 );
   signal delay1_q_net : std_logic_vector( 1-1 downto 0 );
-  signal clk_net : std_logic;
   signal ce_net : std_logic;
   signal delay_q_net : std_logic_vector( 1-1 downto 0 );
-  signal inverter_op_net : std_logic_vector( 1-1 downto 0 );
+  signal clk_net : std_logic;
+  signal edge_op_y_net : std_logic_vector( 1-1 downto 0 );
 begin
   out_x0 <= edge_op_y_net;
   delay1_q_net <= in_x0;
@@ -6493,31 +6493,31 @@ entity rfdc_one_adc_2048gsps_basic_ctrl_x0 is
   );
 end rfdc_one_adc_2048gsps_basic_ctrl_x0;
 architecture structural of rfdc_one_adc_2048gsps_basic_ctrl_x0 is 
-  signal enable_y_net : std_logic_vector( 1-1 downto 0 );
-  signal delay2_q_net : std_logic_vector( 1-1 downto 0 );
-  signal trig_src_y_net : std_logic_vector( 1-1 downto 0 );
+  signal constant2_op_net : std_logic_vector( 1-1 downto 0 );
+  signal constant1_op_net : std_logic_vector( 1-1 downto 0 );
+  signal constant_op_net : std_logic_vector( 1-1 downto 0 );
+  signal delay1_q_net : std_logic_vector( 1-1 downto 0 );
+  signal mux1_y_net : std_logic_vector( 1-1 downto 0 );
+  signal ce_net : std_logic;
+  signal clk_net : std_logic;
+  signal never_op_net : std_logic_vector( 1-1 downto 0 );
+  signal concatenate_y_net : std_logic_vector( 32-1 downto 0 );
+  signal edge_op_y_net : std_logic_vector( 1-1 downto 0 );
+  signal rfdc_v0_3_rfdc_v0_3_adc0_sync_net : std_logic_vector( 1-1 downto 0 );
+  signal cast_dout_net : std_logic_vector( 32-1 downto 0 );
+  signal edge_op_y_net_x0 : std_logic_vector( 1-1 downto 0 );
   signal delay3_q_net : std_logic_vector( 1-1 downto 0 );
-  signal valid_src_y_net : std_logic_vector( 1-1 downto 0 );
-  signal inverter_op_net : std_logic_vector( 1-1 downto 0 );
-  signal logical_y_net : std_logic_vector( 1-1 downto 0 );
-  signal mux2_y_net : std_logic_vector( 1-1 downto 0 );
-  signal register1_q_net : std_logic_vector( 1-1 downto 0 );
   signal data_choice_y_net : std_logic_vector( 32-1 downto 0 );
+  signal logical_y_net : std_logic_vector( 1-1 downto 0 );
+  signal trig_src_y_net : std_logic_vector( 1-1 downto 0 );
+  signal valid_src_y_net : std_logic_vector( 1-1 downto 0 );
   signal we_choice_y_net : std_logic_vector( 1-1 downto 0 );
   signal register6_q_net : std_logic_vector( 1-1 downto 0 );
-  signal edge_op_y_net_x0 : std_logic_vector( 1-1 downto 0 );
-  signal cast_dout_net : std_logic_vector( 32-1 downto 0 );
-  signal rfdc_v0_3_rfdc_v0_3_adc0_sync_net : std_logic_vector( 1-1 downto 0 );
-  signal edge_op_y_net : std_logic_vector( 1-1 downto 0 );
-  signal concatenate_y_net : std_logic_vector( 32-1 downto 0 );
-  signal never_op_net : std_logic_vector( 1-1 downto 0 );
-  signal clk_net : std_logic;
-  signal ce_net : std_logic;
-  signal mux1_y_net : std_logic_vector( 1-1 downto 0 );
-  signal delay1_q_net : std_logic_vector( 1-1 downto 0 );
-  signal constant_op_net : std_logic_vector( 1-1 downto 0 );
-  signal constant1_op_net : std_logic_vector( 1-1 downto 0 );
-  signal constant2_op_net : std_logic_vector( 1-1 downto 0 );
+  signal enable_y_net : std_logic_vector( 1-1 downto 0 );
+  signal delay2_q_net : std_logic_vector( 1-1 downto 0 );
+  signal mux2_y_net : std_logic_vector( 1-1 downto 0 );
+  signal register1_q_net : std_logic_vector( 1-1 downto 0 );
+  signal inverter_op_net : std_logic_vector( 1-1 downto 0 );
 begin
   dout <= data_choice_y_net;
   we_o <= we_choice_y_net;
@@ -6724,17 +6724,17 @@ entity rfdc_one_adc_2048gsps_calc_add_x0 is
   );
 end rfdc_one_adc_2048gsps_calc_add_x0;
 architecture structural of rfdc_one_adc_2048gsps_calc_add_x0 is 
-  signal mux_y_net : std_logic_vector( 10-1 downto 0 );
-  signal add_del_q_net : std_logic_vector( 10-1 downto 0 );
   signal clk_net : std_logic;
-  signal ce_net : std_logic;
-  signal add_sub_s_net : std_logic_vector( 1-1 downto 0 );
-  signal const_op_net : std_logic_vector( 1-1 downto 0 );
-  signal lsw_y_net : std_logic_vector( 1-1 downto 0 );
-  signal concat_y_net : std_logic_vector( 10-1 downto 0 );
-  signal msw_y_net : std_logic_vector( 9-1 downto 0 );
-  signal convert_addr_dout_net : std_logic_vector( 10-1 downto 0 );
+  signal add_del_q_net : std_logic_vector( 10-1 downto 0 );
   signal manipulate_op_net : std_logic_vector( 1-1 downto 0 );
+  signal concat_y_net : std_logic_vector( 10-1 downto 0 );
+  signal convert_addr_dout_net : std_logic_vector( 10-1 downto 0 );
+  signal lsw_y_net : std_logic_vector( 1-1 downto 0 );
+  signal mux_y_net : std_logic_vector( 10-1 downto 0 );
+  signal msw_y_net : std_logic_vector( 9-1 downto 0 );
+  signal ce_net : std_logic;
+  signal const_op_net : std_logic_vector( 1-1 downto 0 );
+  signal add_sub_s_net : std_logic_vector( 1-1 downto 0 );
 begin
   out_x0 <= mux_y_net;
   add_del_q_net <= in_x0;
@@ -6838,8 +6838,8 @@ entity rfdc_one_adc_2048gsps_munge_in_x0 is
   );
 end rfdc_one_adc_2048gsps_munge_in_x0;
 architecture structural of rfdc_one_adc_2048gsps_munge_in_x0 is 
-  signal reinterpret_out_output_port_net : std_logic_vector( 32-1 downto 0 );
   signal dat_del_q_net : std_logic_vector( 32-1 downto 0 );
+  signal reinterpret_out_output_port_net : std_logic_vector( 32-1 downto 0 );
 begin
   dout <= reinterpret_out_output_port_net;
   dat_del_q_net <= din;
@@ -6870,16 +6870,16 @@ entity rfdc_one_adc_2048gsps_bram_x0 is
   );
 end rfdc_one_adc_2048gsps_bram_x0;
 architecture structural of rfdc_one_adc_2048gsps_bram_x0 is 
-  signal add_del_q_net : std_logic_vector( 10-1 downto 0 );
-  signal dat_del_q_net : std_logic_vector( 32-1 downto 0 );
-  signal we_del_q_net : std_logic_vector( 1-1 downto 0 );
-  signal convert_addr_dout_net : std_logic_vector( 10-1 downto 0 );
-  signal convert_din1_dout_net : std_logic_vector( 32-1 downto 0 );
-  signal convert_we_dout_net : std_logic_vector( 1-1 downto 0 );
-  signal clk_net : std_logic;
-  signal ce_net : std_logic;
-  signal mux_y_net : std_logic_vector( 10-1 downto 0 );
   signal reinterpret_out_output_port_net : std_logic_vector( 32-1 downto 0 );
+  signal add_del_q_net : std_logic_vector( 10-1 downto 0 );
+  signal convert_addr_dout_net : std_logic_vector( 10-1 downto 0 );
+  signal mux_y_net : std_logic_vector( 10-1 downto 0 );
+  signal convert_din1_dout_net : std_logic_vector( 32-1 downto 0 );
+  signal dat_del_q_net : std_logic_vector( 32-1 downto 0 );
+  signal ce_net : std_logic;
+  signal clk_net : std_logic;
+  signal convert_we_dout_net : std_logic_vector( 1-1 downto 0 );
+  signal we_del_q_net : std_logic_vector( 1-1 downto 0 );
 begin
   add_del_q_net <= addr;
   dat_del_q_net <= data_in;
@@ -6977,10 +6977,10 @@ entity rfdc_one_adc_2048gsps_ctrl_x1 is
   );
 end rfdc_one_adc_2048gsps_ctrl_x1;
 architecture structural of rfdc_one_adc_2048gsps_ctrl_x1 is 
+  signal slice_reg_y_net : std_logic_vector( 32-1 downto 0 );
+  signal io_delay_q_net : std_logic_vector( 32-1 downto 0 );
   signal reint1_output_port_net : std_logic_vector( 32-1 downto 0 );
   signal rfdc_one_adc_2048gsps_snapshot0_67_ss_ctrl_user_data_out_net : std_logic_vector( 32-1 downto 0 );
-  signal io_delay_q_net : std_logic_vector( 32-1 downto 0 );
-  signal slice_reg_y_net : std_logic_vector( 32-1 downto 0 );
 begin
   in_reg <= reint1_output_port_net;
   rfdc_one_adc_2048gsps_snapshot0_67_ss_ctrl_user_data_out_net <= rfdc_one_adc_2048gsps_snapshot0_67_ss_ctrl_user_data_out;
@@ -7017,7 +7017,7 @@ library IEEE;
 use IEEE.std_logic_1164.all;
 library xil_defaultlib;
 use xil_defaultlib.conv_pkg.all;
-entity rfdc_one_adc_2048gsps_ctrl_combine_x0 is
+entity rfdc_one_adc_2048gsps_ctrl_combine_x1 is
   port (
     in1 : in std_logic_vector( 28-1 downto 0 );
     in2 : in std_logic_vector( 1-1 downto 0 );
@@ -7025,17 +7025,17 @@ entity rfdc_one_adc_2048gsps_ctrl_combine_x0 is
     in4 : in std_logic_vector( 1-1 downto 0 );
     bus_out : out std_logic_vector( 32-1 downto 0 )
   );
-end rfdc_one_adc_2048gsps_ctrl_combine_x0;
-architecture structural of rfdc_one_adc_2048gsps_ctrl_combine_x0 is 
+end rfdc_one_adc_2048gsps_ctrl_combine_x1;
+architecture structural of rfdc_one_adc_2048gsps_ctrl_combine_x1 is 
   signal reinterpret2_output_port_net_x0 : std_logic_vector( 1-1 downto 0 );
-  signal reinterpret3_output_port_net : std_logic_vector( 2-1 downto 0 );
-  signal reinterpret4_output_port_net : std_logic_vector( 1-1 downto 0 );
-  signal concatenate_y_net : std_logic_vector( 32-1 downto 0 );
   signal reinterpret4_output_port_net_x0 : std_logic_vector( 28-1 downto 0 );
+  signal reinterpret1_output_port_net : std_logic_vector( 28-1 downto 0 );
   signal circ_or_y_net : std_logic_vector( 1-1 downto 0 );
   signal reinterpret2_output_port_net : std_logic_vector( 2-1 downto 0 );
+  signal concatenate_y_net : std_logic_vector( 32-1 downto 0 );
   signal arm_or_y_net : std_logic_vector( 1-1 downto 0 );
-  signal reinterpret1_output_port_net : std_logic_vector( 28-1 downto 0 );
+  signal reinterpret4_output_port_net : std_logic_vector( 1-1 downto 0 );
+  signal reinterpret3_output_port_net : std_logic_vector( 2-1 downto 0 );
 begin
   bus_out <= concatenate_y_net;
   reinterpret4_output_port_net_x0 <= in1;
@@ -7101,13 +7101,13 @@ entity rfdc_one_adc_2048gsps_ctrl_split_x0 is
   );
 end rfdc_one_adc_2048gsps_ctrl_split_x0;
 architecture structural of rfdc_one_adc_2048gsps_ctrl_split_x0 is 
-  signal reinterpret4_output_port_net : std_logic_vector( 28-1 downto 0 );
-  signal slice3_y_net : std_logic_vector( 1-1 downto 0 );
-  signal reinterpret2_output_port_net : std_logic_vector( 2-1 downto 0 );
-  signal slice1_y_net : std_logic_vector( 1-1 downto 0 );
-  signal reint1_output_port_net : std_logic_vector( 32-1 downto 0 );
-  signal slice2_y_net : std_logic_vector( 2-1 downto 0 );
   signal slice4_y_net : std_logic_vector( 28-1 downto 0 );
+  signal reinterpret4_output_port_net : std_logic_vector( 28-1 downto 0 );
+  signal slice2_y_net : std_logic_vector( 2-1 downto 0 );
+  signal reint1_output_port_net : std_logic_vector( 32-1 downto 0 );
+  signal slice1_y_net : std_logic_vector( 1-1 downto 0 );
+  signal reinterpret2_output_port_net : std_logic_vector( 2-1 downto 0 );
+  signal slice3_y_net : std_logic_vector( 1-1 downto 0 );
 begin
   msb_out4 <= reinterpret4_output_port_net;
   out3 <= slice3_y_net;
@@ -7190,12 +7190,12 @@ entity rfdc_one_adc_2048gsps_status_x0 is
 end rfdc_one_adc_2048gsps_status_x0;
 architecture structural of rfdc_one_adc_2048gsps_status_x0 is 
   signal concat_y_net : std_logic_vector( 32-1 downto 0 );
+  signal ce_net : std_logic;
   signal cast_gw_dout_net : std_logic_vector( 32-1 downto 0 );
   signal clk_net : std_logic;
-  signal ce_net : std_logic;
-  signal io_delay_q_net : std_logic_vector( 32-1 downto 0 );
   signal reint1_output_port_net : std_logic_vector( 32-1 downto 0 );
   signal assert_reg_dout_net : std_logic_vector( 32-1 downto 0 );
+  signal io_delay_q_net : std_logic_vector( 32-1 downto 0 );
 begin
   concat_y_net <= out_reg;
   rfdc_one_adc_2048gsps_snapshot0_67_ss_status_user_data_in <= cast_gw_dout_net;
@@ -7271,40 +7271,40 @@ entity rfdc_one_adc_2048gsps_ss_x0 is
   );
 end rfdc_one_adc_2048gsps_ss_x0;
 architecture structural of rfdc_one_adc_2048gsps_ss_x0 is 
-  signal slice2_y_net : std_logic_vector( 10-1 downto 0 );
-  signal delay6_q_net : std_logic_vector( 32-1 downto 0 );
-  signal concat_y_net : std_logic_vector( 32-1 downto 0 );
-  signal data_choice_y_net : std_logic_vector( 32-1 downto 0 );
-  signal register6_q_net : std_logic_vector( 1-1 downto 0 );
-  signal never_op_net : std_logic_vector( 1-1 downto 0 );
-  signal edge_op_y_net_x1 : std_logic_vector( 1-1 downto 0 );
-  signal cast_dout_net : std_logic_vector( 32-1 downto 0 );
-  signal concatenate_y_net_x0 : std_logic_vector( 32-1 downto 0 );
-  signal add_del_q_net : std_logic_vector( 10-1 downto 0 );
-  signal dat_del_q_net : std_logic_vector( 32-1 downto 0 );
-  signal we_del_q_net : std_logic_vector( 1-1 downto 0 );
-  signal reint1_output_port_net : std_logic_vector( 32-1 downto 0 );
-  signal reinterpret4_output_port_net : std_logic_vector( 28-1 downto 0 );
-  signal circ_or_y_net : std_logic_vector( 1-1 downto 0 );
-  signal reinterpret2_output_port_net : std_logic_vector( 2-1 downto 0 );
-  signal slice3_y_net : std_logic_vector( 1-1 downto 0 );
-  signal slice1_y_net : std_logic_vector( 1-1 downto 0 );
-  signal arm_op_net : std_logic_vector( 1-1 downto 0 );
+  signal convert_din1_dout_net : std_logic_vector( 32-1 downto 0 );
+  signal edge_op_y_net_x0 : std_logic_vector( 1-1 downto 0 );
   signal ri_output_port_net : std_logic_vector( 32-1 downto 0 );
   signal circ_op_net : std_logic_vector( 1-1 downto 0 );
+  signal ce_net : std_logic;
+  signal add_del_q_net : std_logic_vector( 10-1 downto 0 );
+  signal dat_del_q_net : std_logic_vector( 32-1 downto 0 );
+  signal convert_we_dout_net : std_logic_vector( 1-1 downto 0 );
+  signal we_del_q_net : std_logic_vector( 1-1 downto 0 );
   signal arm_or_y_net : std_logic_vector( 1-1 downto 0 );
+  signal slice2_y_net : std_logic_vector( 10-1 downto 0 );
+  signal concatenate_y_net_x0 : std_logic_vector( 32-1 downto 0 );
+  signal slice3_y_net : std_logic_vector( 1-1 downto 0 );
+  signal convert_addr_dout_net : std_logic_vector( 10-1 downto 0 );
+  signal clk_net : std_logic;
+  signal we_choice_y_net : std_logic_vector( 1-1 downto 0 );
+  signal cast_dout_net : std_logic_vector( 32-1 downto 0 );
+  signal data_choice_y_net : std_logic_vector( 32-1 downto 0 );
+  signal arm_op_net : std_logic_vector( 1-1 downto 0 );
+  signal circ_or_y_net : std_logic_vector( 1-1 downto 0 );
+  signal rfdc_one_adc_2048gsps_snapshot0_67_ss_ctrl_user_data_out_net : std_logic_vector( 32-1 downto 0 );
+  signal never_op_net : std_logic_vector( 1-1 downto 0 );
+  signal edge_op_y_net_x1 : std_logic_vector( 1-1 downto 0 );
+  signal reint1_output_port_net : std_logic_vector( 32-1 downto 0 );
   signal concatenate_y_net : std_logic_vector( 32-1 downto 0 );
   signal rfdc_v0_3_rfdc_v0_3_adc0_sync_net : std_logic_vector( 1-1 downto 0 );
-  signal edge_op_y_net_x0 : std_logic_vector( 1-1 downto 0 );
-  signal we_choice_y_net : std_logic_vector( 1-1 downto 0 );
-  signal logical6_y_net : std_logic_vector( 1-1 downto 0 );
-  signal convert_addr_dout_net : std_logic_vector( 10-1 downto 0 );
-  signal convert_din1_dout_net : std_logic_vector( 32-1 downto 0 );
-  signal convert_we_dout_net : std_logic_vector( 1-1 downto 0 );
-  signal rfdc_one_adc_2048gsps_snapshot0_67_ss_ctrl_user_data_out_net : std_logic_vector( 32-1 downto 0 );
+  signal slice1_y_net : std_logic_vector( 1-1 downto 0 );
   signal cast_gw_dout_net : std_logic_vector( 32-1 downto 0 );
-  signal clk_net : std_logic;
-  signal ce_net : std_logic;
+  signal reinterpret4_output_port_net : std_logic_vector( 28-1 downto 0 );
+  signal register6_q_net : std_logic_vector( 1-1 downto 0 );
+  signal logical6_y_net : std_logic_vector( 1-1 downto 0 );
+  signal delay6_q_net : std_logic_vector( 32-1 downto 0 );
+  signal concat_y_net : std_logic_vector( 32-1 downto 0 );
+  signal reinterpret2_output_port_net : std_logic_vector( 2-1 downto 0 );
 begin
   arm_out <= arm_or_y_net;
   concatenate_y_net <= din;
@@ -7363,7 +7363,7 @@ begin
     rfdc_one_adc_2048gsps_snapshot0_67_ss_ctrl_user_data_out => rfdc_one_adc_2048gsps_snapshot0_67_ss_ctrl_user_data_out_net,
     in_reg => reint1_output_port_net
   );
-  ctrl_combine : entity xil_defaultlib.rfdc_one_adc_2048gsps_ctrl_combine_x0 
+  ctrl_combine : entity xil_defaultlib.rfdc_one_adc_2048gsps_ctrl_combine_x1 
   port map (
     in1 => reinterpret4_output_port_net,
     in2 => circ_or_y_net,
@@ -7503,23 +7503,23 @@ entity rfdc_one_adc_2048gsps_snapshot0_67 is
   );
 end rfdc_one_adc_2048gsps_snapshot0_67;
 architecture structural of rfdc_one_adc_2048gsps_snapshot0_67 is 
-  signal arm_or_y_net : std_logic_vector( 1-1 downto 0 );
-  signal slice3_y_net : std_logic_vector( 16-1 downto 0 );
-  signal slice4_y_net : std_logic_vector( 16-1 downto 0 );
-  signal rfdc_v0_3_rfdc_v0_3_adc0_sync_net : std_logic_vector( 1-1 downto 0 );
-  signal edge_op_y_net : std_logic_vector( 1-1 downto 0 );
-  signal convert_addr_dout_net : std_logic_vector( 10-1 downto 0 );
-  signal convert_din1_dout_net : std_logic_vector( 32-1 downto 0 );
-  signal convert_we_dout_net : std_logic_vector( 1-1 downto 0 );
-  signal rfdc_one_adc_2048gsps_snapshot0_67_ss_ctrl_user_data_out_net : std_logic_vector( 32-1 downto 0 );
-  signal cast_gw_dout_net : std_logic_vector( 32-1 downto 0 );
-  signal we_choice_y_net : std_logic_vector( 1-1 downto 0 );
-  signal logical6_y_net : std_logic_vector( 1-1 downto 0 );
   signal clk_net : std_logic;
-  signal ce_net : std_logic;
-  signal concatenate_y_net : std_logic_vector( 32-1 downto 0 );
   signal assert_d0_dout_net : std_logic_vector( 16-1 downto 0 );
   signal assert_d1_dout_net : std_logic_vector( 16-1 downto 0 );
+  signal cast_gw_dout_net : std_logic_vector( 32-1 downto 0 );
+  signal convert_din1_dout_net : std_logic_vector( 32-1 downto 0 );
+  signal we_choice_y_net : std_logic_vector( 1-1 downto 0 );
+  signal ce_net : std_logic;
+  signal rfdc_v0_3_rfdc_v0_3_adc0_sync_net : std_logic_vector( 1-1 downto 0 );
+  signal rfdc_one_adc_2048gsps_snapshot0_67_ss_ctrl_user_data_out_net : std_logic_vector( 32-1 downto 0 );
+  signal convert_we_dout_net : std_logic_vector( 1-1 downto 0 );
+  signal arm_or_y_net : std_logic_vector( 1-1 downto 0 );
+  signal convert_addr_dout_net : std_logic_vector( 10-1 downto 0 );
+  signal logical6_y_net : std_logic_vector( 1-1 downto 0 );
+  signal slice4_y_net : std_logic_vector( 16-1 downto 0 );
+  signal slice3_y_net : std_logic_vector( 16-1 downto 0 );
+  signal concatenate_y_net : std_logic_vector( 32-1 downto 0 );
+  signal edge_op_y_net : std_logic_vector( 1-1 downto 0 );
 begin
   arm_out <= arm_or_y_net;
   slice3_y_net <= in_d0;
@@ -7590,13 +7590,13 @@ entity rfdc_one_adc_2048gsps_sync_state is
   );
 end rfdc_one_adc_2048gsps_sync_state;
 architecture structural of rfdc_one_adc_2048gsps_sync_state is 
-  signal io_delay_q_net : std_logic_vector( 1-1 downto 0 );
   signal reint1_output_port_net : std_logic_vector( 1-1 downto 0 );
-  signal assert_sync_state_dout_net : std_logic_vector( 1-1 downto 0 );
-  signal rfdc_v0_3_rfdc_v0_3_adc0_sync_net : std_logic_vector( 1-1 downto 0 );
-  signal cast_gw_dout_net : std_logic_vector( 32-1 downto 0 );
-  signal clk_net : std_logic;
   signal ce_net : std_logic;
+  signal rfdc_v0_3_rfdc_v0_3_adc0_sync_net : std_logic_vector( 1-1 downto 0 );
+  signal clk_net : std_logic;
+  signal assert_sync_state_dout_net : std_logic_vector( 1-1 downto 0 );
+  signal io_delay_q_net : std_logic_vector( 1-1 downto 0 );
+  signal cast_gw_dout_net : std_logic_vector( 32-1 downto 0 );
 begin
   rfdc_v0_3_rfdc_v0_3_adc0_sync_net <= out_sync_state;
   rfdc_one_adc_2048gsps_sync_state_user_data_in <= cast_gw_dout_net;
@@ -7692,64 +7692,64 @@ entity rfdc_one_adc_2048gsps_struct is
   );
 end rfdc_one_adc_2048gsps_struct;
 architecture structural of rfdc_one_adc_2048gsps_struct is 
-  signal convert_dout_net_x0 : std_logic_vector( 1-1 downto 0 );
-  signal convert_dout_net : std_logic_vector( 1-1 downto 0 );
-  signal rfdc_one_adc_2048gsps_led_cntrl_user_data_out_net : std_logic_vector( 32-1 downto 0 );
-  signal rfdc_one_adc_2048gsps_reg_cntrl_user_data_out_net : std_logic_vector( 32-1 downto 0 );
-  signal rfdc_v0_3_rfdc_v0_3_adc0_dout_net : std_logic_vector( 128-1 downto 0 );
-  signal rfdc_v0_3_rfdc_v0_3_adc0_sync_net : std_logic_vector( 1-1 downto 0 );
-  signal convert_addr_dout_net_x2 : std_logic_vector( 10-1 downto 0 );
-  signal convert_din1_dout_net_x2 : std_logic_vector( 32-1 downto 0 );
-  signal rfdc_one_adc_2048gsps_snapshot0_01_ss_bram_data_out_net : std_logic_vector( 32-1 downto 0 );
-  signal convert_we_dout_net_x2 : std_logic_vector( 1-1 downto 0 );
-  signal rfdc_one_adc_2048gsps_snapshot0_01_ss_ctrl_user_data_out_net : std_logic_vector( 32-1 downto 0 );
-  signal cast_gw_dout_net_x2 : std_logic_vector( 32-1 downto 0 );
-  signal convert_addr_dout_net_x1 : std_logic_vector( 10-1 downto 0 );
-  signal convert_din1_dout_net_x1 : std_logic_vector( 32-1 downto 0 );
-  signal rfdc_one_adc_2048gsps_snapshot0_23_ss_bram_data_out_net : std_logic_vector( 32-1 downto 0 );
-  signal convert_we_dout_net_x1 : std_logic_vector( 1-1 downto 0 );
-  signal rfdc_one_adc_2048gsps_snapshot0_23_ss_ctrl_user_data_out_net : std_logic_vector( 32-1 downto 0 );
-  signal cast_gw_dout_net_x3 : std_logic_vector( 32-1 downto 0 );
-  signal convert_addr_dout_net : std_logic_vector( 10-1 downto 0 );
-  signal convert_din1_dout_net : std_logic_vector( 32-1 downto 0 );
-  signal rfdc_one_adc_2048gsps_snapshot0_45_ss_bram_data_out_net : std_logic_vector( 32-1 downto 0 );
-  signal convert_we_dout_net : std_logic_vector( 1-1 downto 0 );
-  signal rfdc_one_adc_2048gsps_snapshot0_45_ss_ctrl_user_data_out_net : std_logic_vector( 32-1 downto 0 );
-  signal cast_gw_dout_net : std_logic_vector( 32-1 downto 0 );
-  signal convert_addr_dout_net_x0 : std_logic_vector( 10-1 downto 0 );
-  signal convert_din1_dout_net_x0 : std_logic_vector( 32-1 downto 0 );
-  signal rfdc_one_adc_2048gsps_snapshot0_67_ss_bram_data_out_net : std_logic_vector( 32-1 downto 0 );
-  signal convert_we_dout_net_x0 : std_logic_vector( 1-1 downto 0 );
-  signal rfdc_one_adc_2048gsps_snapshot0_67_ss_ctrl_user_data_out_net : std_logic_vector( 32-1 downto 0 );
-  signal cast_gw_dout_net_x0 : std_logic_vector( 32-1 downto 0 );
-  signal cast_gw_dout_net_x1 : std_logic_vector( 32-1 downto 0 );
   signal clk_net : std_logic;
   signal ce_net : std_logic;
+  signal slice3_y_net : std_logic_vector( 16-1 downto 0 );
+  signal convert_we_dout_net_x0 : std_logic_vector( 1-1 downto 0 );
+  signal counter_led_op_net : std_logic_vector( 28-1 downto 0 );
+  signal rfdc_one_adc_2048gsps_snapshot0_45_ss_ctrl_user_data_out_net : std_logic_vector( 32-1 downto 0 );
+  signal slice_led_cntrl_y_net : std_logic_vector( 1-1 downto 0 );
+  signal rfdc_one_adc_2048gsps_snapshot0_23_ss_bram_data_out_net : std_logic_vector( 32-1 downto 0 );
+  signal convert_din1_dout_net : std_logic_vector( 32-1 downto 0 );
+  signal logical6_y_net : std_logic_vector( 1-1 downto 0 );
   signal edge_op_y_net : std_logic_vector( 1-1 downto 0 );
+  signal convert_addr_dout_net : std_logic_vector( 10-1 downto 0 );
+  signal logical6_y_net_x1 : std_logic_vector( 1-1 downto 0 );
+  signal arm_or_y_net_x2 : std_logic_vector( 1-1 downto 0 );
+  signal rfdc_one_adc_2048gsps_led_cntrl_user_data_out_net : std_logic_vector( 32-1 downto 0 );
+  signal slice6_y_net : std_logic_vector( 16-1 downto 0 );
+  signal we_choice_y_net : std_logic_vector( 1-1 downto 0 );
+  signal arm_or_y_net_x1 : std_logic_vector( 1-1 downto 0 );
+  signal slice5_y_net : std_logic_vector( 16-1 downto 0 );
+  signal slice2_y_net : std_logic_vector( 16-1 downto 0 );
+  signal arm_or_y_net : std_logic_vector( 1-1 downto 0 );
+  signal slice4_y_net : std_logic_vector( 16-1 downto 0 );
+  signal rfdc_one_adc_2048gsps_snapshot0_67_ss_bram_data_out_net : std_logic_vector( 32-1 downto 0 );
+  signal logical6_y_net_x2 : std_logic_vector( 1-1 downto 0 );
+  signal convert_addr_dout_net_x1 : std_logic_vector( 10-1 downto 0 );
+  signal rfdc_one_adc_2048gsps_snapshot0_45_ss_bram_data_out_net : std_logic_vector( 32-1 downto 0 );
+  signal we_choice_y_net_x2 : std_logic_vector( 1-1 downto 0 );
+  signal arm_or_y_net_x0 : std_logic_vector( 1-1 downto 0 );
+  signal rfdc_one_adc_2048gsps_reg_cntrl_user_data_out_net : std_logic_vector( 32-1 downto 0 );
+  signal convert_din1_dout_net_x0 : std_logic_vector( 32-1 downto 0 );
+  signal cast_gw_dout_net : std_logic_vector( 32-1 downto 0 );
+  signal rfdc_one_adc_2048gsps_snapshot0_67_ss_ctrl_user_data_out_net : std_logic_vector( 32-1 downto 0 );
+  signal rfdc_one_adc_2048gsps_snapshot0_23_ss_ctrl_user_data_out_net : std_logic_vector( 32-1 downto 0 );
+  signal convert_addr_dout_net_x2 : std_logic_vector( 10-1 downto 0 );
+  signal convert_we_dout_net : std_logic_vector( 1-1 downto 0 );
+  signal convert_we_dout_net_x1 : std_logic_vector( 1-1 downto 0 );
+  signal slice1_y_net : std_logic_vector( 16-1 downto 0 );
+  signal cast_gw_dout_net_x3 : std_logic_vector( 32-1 downto 0 );
+  signal convert_din1_dout_net_x1 : std_logic_vector( 32-1 downto 0 );
+  signal cast_gw_dout_net_x2 : std_logic_vector( 32-1 downto 0 );
+  signal we_choice_y_net_x1 : std_logic_vector( 1-1 downto 0 );
+  signal we_choice_y_net_x0 : std_logic_vector( 1-1 downto 0 );
+  signal rfdc_one_adc_2048gsps_snapshot0_01_ss_ctrl_user_data_out_net : std_logic_vector( 32-1 downto 0 );
+  signal cast_gw_dout_net_x0 : std_logic_vector( 32-1 downto 0 );
+  signal rfdc_one_adc_2048gsps_snapshot0_01_ss_bram_data_out_net : std_logic_vector( 32-1 downto 0 );
+  signal logical6_y_net_x0 : std_logic_vector( 1-1 downto 0 );
   signal slice_rst_cntrl_y_net : std_logic_vector( 1-1 downto 0 );
   signal slice_msb_y_net : std_logic_vector( 1-1 downto 0 );
-  signal slice_led_cntrl_y_net : std_logic_vector( 1-1 downto 0 );
-  signal arm_or_y_net_x2 : std_logic_vector( 1-1 downto 0 );
-  signal slice_y_net : std_logic_vector( 16-1 downto 0 );
+  signal convert_dout_net : std_logic_vector( 1-1 downto 0 );
+  signal convert_addr_dout_net_x0 : std_logic_vector( 10-1 downto 0 );
   signal slice7_y_net : std_logic_vector( 16-1 downto 0 );
-  signal we_choice_y_net_x2 : std_logic_vector( 1-1 downto 0 );
-  signal logical6_y_net_x2 : std_logic_vector( 1-1 downto 0 );
-  signal arm_or_y_net_x0 : std_logic_vector( 1-1 downto 0 );
-  signal slice1_y_net : std_logic_vector( 16-1 downto 0 );
-  signal slice6_y_net : std_logic_vector( 16-1 downto 0 );
-  signal we_choice_y_net_x1 : std_logic_vector( 1-1 downto 0 );
-  signal logical6_y_net_x0 : std_logic_vector( 1-1 downto 0 );
-  signal arm_or_y_net_x1 : std_logic_vector( 1-1 downto 0 );
-  signal slice2_y_net : std_logic_vector( 16-1 downto 0 );
-  signal slice5_y_net : std_logic_vector( 16-1 downto 0 );
-  signal we_choice_y_net : std_logic_vector( 1-1 downto 0 );
-  signal logical6_y_net_x1 : std_logic_vector( 1-1 downto 0 );
-  signal arm_or_y_net : std_logic_vector( 1-1 downto 0 );
-  signal slice3_y_net : std_logic_vector( 16-1 downto 0 );
-  signal slice4_y_net : std_logic_vector( 16-1 downto 0 );
-  signal we_choice_y_net_x0 : std_logic_vector( 1-1 downto 0 );
-  signal logical6_y_net : std_logic_vector( 1-1 downto 0 );
-  signal counter_led_op_net : std_logic_vector( 28-1 downto 0 );
+  signal convert_dout_net_x0 : std_logic_vector( 1-1 downto 0 );
+  signal slice_y_net : std_logic_vector( 16-1 downto 0 );
+  signal rfdc_v0_3_rfdc_v0_3_adc0_dout_net : std_logic_vector( 128-1 downto 0 );
+  signal convert_din1_dout_net_x2 : std_logic_vector( 32-1 downto 0 );
+  signal convert_we_dout_net_x2 : std_logic_vector( 1-1 downto 0 );
+  signal cast_gw_dout_net_x1 : std_logic_vector( 32-1 downto 0 );
+  signal rfdc_v0_3_rfdc_v0_3_adc0_sync_net : std_logic_vector( 1-1 downto 0 );
 begin
   rfdc_one_adc_2048gsps_gpio_led_gateway <= convert_dout_net_x0;
   rfdc_one_adc_2048gsps_gpio_led1_gateway <= convert_dout_net;
@@ -7895,31 +7895,6 @@ begin
     ce_1 => ce_net,
     rfdc_one_adc_2048gsps_sync_state_user_data_in => cast_gw_dout_net_x1
   );
-  counter_led : entity xil_defaultlib.rfdc_one_adc_2048gsps_xlcounter_free 
-  generic map (
-    core_name0 => "rfdc_one_adc_2048gsps_c_counter_binary_v12_0_i0",
-    op_arith => xlUnsigned,
-    op_width => 28
-  )
-  port map (
-    en => "1",
-    rst => "0",
-    clr => '0',
-    clk => clk_net,
-    ce => ce_net,
-    op => counter_led_op_net
-  );
-  slice_msb : entity xil_defaultlib.rfdc_one_adc_2048gsps_xlslice 
-  generic map (
-    new_lsb => 27,
-    new_msb => 27,
-    x_width => 28,
-    y_width => 1
-  )
-  port map (
-    x => counter_led_op_net,
-    y => slice_msb_y_net
-  );
   slice : entity xil_defaultlib.rfdc_one_adc_2048gsps_xlslice 
   generic map (
     new_lsb => 0,
@@ -8008,6 +7983,31 @@ begin
     x => rfdc_v0_3_rfdc_v0_3_adc0_dout_net,
     y => slice7_y_net
   );
+  counter_led : entity xil_defaultlib.rfdc_one_adc_2048gsps_xlcounter_free 
+  generic map (
+    core_name0 => "rfdc_one_adc_2048gsps_c_counter_binary_v12_0_i0",
+    op_arith => xlUnsigned,
+    op_width => 28
+  )
+  port map (
+    en => "1",
+    rst => "0",
+    clr => '0',
+    clk => clk_net,
+    ce => ce_net,
+    op => counter_led_op_net
+  );
+  slice_msb : entity xil_defaultlib.rfdc_one_adc_2048gsps_xlslice 
+  generic map (
+    new_lsb => 27,
+    new_msb => 27,
+    x_width => 28,
+    y_width => 1
+  )
+  port map (
+    x => counter_led_op_net,
+    y => slice_msb_y_net
+  );
 end structural;
 -- Generated from Simulink block 
 library IEEE;
@@ -8082,8 +8082,8 @@ end rfdc_one_adc_2048gsps;
 architecture structural of rfdc_one_adc_2048gsps is 
   attribute core_generation_info : string;
   attribute core_generation_info of structural : architecture is "rfdc_one_adc_2048gsps,sysgen_core_2018_3,{,compilation=HDL Netlist,block_icon_display=Default,family=zynquplusRFSOC,part=xczu28dr,speed=-2-e,package=ffvg1517,synthesis_language=vhdl,hdl_library=xil_defaultlib,synthesis_strategy=Vivado Synthesis Defaults,implementation_strategy=Vivado Implementation Defaults,testbench=0,interface_doc=0,ce_clr=0,clock_period=3.9062,system_simulink_period=1,waveform_viewer=0,axilite_interface=0,ip_catalog_plugin=0,hwcosim_burst_mode=0,simulation_time=10,addsub=4,assert=13,concat=24,constant=68,convert=31,counter=13,delay=89,inv=25,logical=53,mux=28,register=44,reinterpret=53,relational=16,shift=4,slice=63,}";
-  signal clk_1_net : std_logic;
   signal ce_1_net : std_logic;
+  signal clk_1_net : std_logic;
 begin
   rfdc_one_adc_2048gsps_default_clock_driver : entity xil_defaultlib.rfdc_one_adc_2048gsps_default_clock_driver 
   port map (

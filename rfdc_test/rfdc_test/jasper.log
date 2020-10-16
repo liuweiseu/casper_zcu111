@@ -1,5 +1,0 @@
-INFO - 2020-08-14 15:41:37,989 - jasper - Starting compile
-DEBUG - 2020-08-14 15:41:37,989 - jasper - Vivado compile will be executed.
-INFO - 2020-08-14 15:41:37,989 - jasper.toolflow - Starting Toolflow!
-INFO - 2020-08-14 15:41:37,989 - jasper.toolflow - Frontend is simulink
-INFO - 2020-08-14 15:41:37,989 - jasper.toolflow - Setting compile directory: /home/wei/casper/tutorials_devel/zcu111/rfdc_test/rfdc_test

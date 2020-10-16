@@ -19,5 +19,3 @@ sys_rev                1 a0004044         4                3
 sys_rev_rcs            1 a000404c         4                3 
 sys_scratchpad         3 a0004050         4                3 
 sys_clkcounter         1 a0004054         4                3 
-rfdc_V0_3              1 a0800000         4                0 
-IP_Ver_Info            1 a0800000         4                0 

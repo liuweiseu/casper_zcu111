@@ -1,0 +1,5 @@
+<?xml version="1.0" ?>
+<node byte_size="4" id="gbe0">
+	<node address="0x00000000" description="gbe0_gbe0" hw_rst="0" id="gbe0" mask="0xffffffff" permission="rw" size="1"/>
+</node>
+<!-- This file has been automatically generated using xml2vhdl.py version 1.16 /!-->

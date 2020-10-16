@@ -2495,49 +2495,49 @@
     'SimulinkInstance' => 'rfdc_one_adc_2048gsps/sync_state'
   },
   'Line_7898' => {
-    'CodeInstance' => 'rfdc_one_adc_2048gsps_struct/counter_led',
-    'Instance' => 'counter_led',
-    'SimulinkInstance' => 'rfdc_one_adc_2048gsps/counter_led'
-  },
-  'Line_7912' => {
-    'CodeInstance' => 'rfdc_one_adc_2048gsps_struct/slice_msb',
-    'Instance' => 'slice_msb',
-    'SimulinkInstance' => 'rfdc_one_adc_2048gsps/slice_msb'
-  },
-  'Line_7923' => {
     'CodeInstance' => 'rfdc_one_adc_2048gsps_struct/slice',
     'Instance' => 'slice',
     'SimulinkInstance' => 'rfdc_one_adc_2048gsps/Slice'
   },
-  'Line_7934' => {
+  'Line_7909' => {
     'CodeInstance' => 'rfdc_one_adc_2048gsps_struct/slice1',
     'Instance' => 'slice1',
     'SimulinkInstance' => 'rfdc_one_adc_2048gsps/Slice1'
   },
-  'Line_7945' => {
+  'Line_7920' => {
     'CodeInstance' => 'rfdc_one_adc_2048gsps_struct/slice2',
     'Instance' => 'slice2',
     'SimulinkInstance' => 'rfdc_one_adc_2048gsps/Slice2'
   },
-  'Line_7956' => {
+  'Line_7931' => {
     'CodeInstance' => 'rfdc_one_adc_2048gsps_struct/slice3',
     'Instance' => 'slice3',
     'SimulinkInstance' => 'rfdc_one_adc_2048gsps/Slice3'
   },
-  'Line_7967' => {
+  'Line_7942' => {
     'CodeInstance' => 'rfdc_one_adc_2048gsps_struct/slice4',
     'Instance' => 'slice4',
     'SimulinkInstance' => 'rfdc_one_adc_2048gsps/Slice4'
   },
-  'Line_7978' => {
+  'Line_7953' => {
     'CodeInstance' => 'rfdc_one_adc_2048gsps_struct/slice5',
     'Instance' => 'slice5',
     'SimulinkInstance' => 'rfdc_one_adc_2048gsps/Slice5'
   },
-  'Line_7989' => {
+  'Line_7964' => {
     'CodeInstance' => 'rfdc_one_adc_2048gsps_struct/slice6',
     'Instance' => 'slice6',
     'SimulinkInstance' => 'rfdc_one_adc_2048gsps/Slice6'
+  },
+  'Line_7975' => {
+    'CodeInstance' => 'rfdc_one_adc_2048gsps_struct/slice7',
+    'Instance' => 'slice7',
+    'SimulinkInstance' => 'rfdc_one_adc_2048gsps/Slice7'
+  },
+  'Line_7986' => {
+    'CodeInstance' => 'rfdc_one_adc_2048gsps_struct/counter_led',
+    'Instance' => 'counter_led',
+    'SimulinkInstance' => 'rfdc_one_adc_2048gsps/counter_led'
   },
   'Line_800' => {
     'CodeInstance' => 'rfdc_one_adc_2048gsps_struct/snapshot0_01/ss/basic_ctrl/dram_munge/relational',
@@ -2545,9 +2545,9 @@
     'SimulinkInstance' => 'rfdc_one_adc_2048gsps/snapshot0_01/ss/basic_ctrl/dram_munge/Relational'
   },
   'Line_8000' => {
-    'CodeInstance' => 'rfdc_one_adc_2048gsps_struct/slice7',
-    'Instance' => 'slice7',
-    'SimulinkInstance' => 'rfdc_one_adc_2048gsps/Slice7'
+    'CodeInstance' => 'rfdc_one_adc_2048gsps_struct/slice_msb',
+    'Instance' => 'slice_msb',
+    'SimulinkInstance' => 'rfdc_one_adc_2048gsps/slice_msb'
   },
   'Line_8028' => {
     'CodeInstance' => 'rfdc_one_adc_2048gsps_default_clock_driver/clockdriver',
