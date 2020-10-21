@@ -551,8 +551,8 @@ class tengbaser_xilinx_ultrascale(ten_gbe):
         infra.add_port('rx_core_clk_0','rx_clk_out_0')
         infra.add_port('gt_tx_reset_in_0','gt_reset_tx_done_out_0')
         infra.add_port('gt_rx_reset_in_0','gt_reset_rx_done_out_0')
-        infra.add_port('tx_core_reset_in_0','axil_rst')
-        infra.add_port('rx_core_reset_in_0','axil_rst')
+        infra.add_port('tx_core_reset_in_0',"1'b0")
+        infra.add_port('rx_core_reset_in_0',"1'b0")
         infra.add_port('tx_core_reset_out_0','tx_core_reset_out')
         infra.add_port('rx_core_reset_out_0','rx_core_reset_out')
         infra.add_port('rx_serdes_reset_out_0','rx_serdes_reset_0')
@@ -610,8 +610,8 @@ class tengbaser_xilinx_ultrascale(ten_gbe):
         phy.add_port('ctl_tx_test_pattern_enable_0',"1'b0")
         phy.add_port('ctl_tx_test_pattern_select_0',"1'b0")
         phy.add_port('ctl_tx_data_pattern_select_0',"1'b0")
-        phy.add_port('ctl_tx_test_pattern_seed_a_0',"1'b0")
-        phy.add_port('ctl_tx_test_pattern_seed_b_0',"1'b0")
+        phy.add_port('ctl_tx_test_pattern_seed_a_0',"58'b0")
+        phy.add_port('ctl_tx_test_pattern_seed_b_0',"58'b0")
         phy.add_port('ctl_tx_prbs31_test_pattern_enable_0',"1'b0")
         #TX_0 Stats Signals
         phy.add_port('stat_tx_local_fault_0','')
@@ -664,7 +664,7 @@ class tengbaser_xilinx_ultrascale(ten_gbe):
         if num is None:
             ktge.add_port('xaui_clk', 'xaui_clk')
         else:
-            ktge.add_port('xaui_clk', 'core_clk_156_%d'%num)
+            ktge.add_port('xaui_clk', 'tx_mii_clk_0')
         ktge.add_port('xaui_reset', 'axil_rst', parent_sig=False)
         ktge.add_port('xgmii_txd', 'xgmii_txd%d'%self.port, width=64)
         ktge.add_port('xgmii_txc', 'xgmii_txc%d'%self.port, width=8)

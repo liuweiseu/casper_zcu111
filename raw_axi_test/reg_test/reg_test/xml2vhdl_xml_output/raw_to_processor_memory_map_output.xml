@@ -1,0 +1,5 @@
+<?xml version="1.0" ?>
+<node byte_size="4" id="raw_to_processor">
+	<node address="0x00000000" description="raw_to_processor_raw_to_processor" hw_rst="1234" id="raw_to_processor" mask="0xffffffff" permission="r" size="1"/>
+</node>
+<!-- This file has been automatically generated using xml2vhdl.py version 1.16 /!-->

@@ -1,0 +1,17 @@
+<?xml version="1.0" ?>
+<node address="0xa0000000" byte_size="64" hw_type="ic" id="axi4lite_top">
+   <node absolute_id="axi4lite_top.raw_from_processor" absolute_offset="a0000020" address="0x00000020" byte_size="4" id="raw_from_processor" link_done="raw_from_processor_memory_map_output.xml">
+      <node absolute_id="axi4lite_top.raw_from_processor.raw_from_processor" absolute_offset="a0000020" address="0x00000000" description="raw_from_processor_raw_from_processor" hw_rst="1234" id="raw_from_processor" mask="0xffffffff" permission="rw" size="1"/>
+   </node>
+   <node absolute_id="axi4lite_top.sw_reg" absolute_offset="a0000024" address="0x00000024" byte_size="4" id="sw_reg" link_done="sw_reg_memory_map_output.xml">
+      <node absolute_id="axi4lite_top.sw_reg.software_register" absolute_offset="a0000024" address="0x00000000" description="sw_reg_software_register" hw_rst="0x0" id="software_register" mask="0xffffffff" permission="r" size="1"/>
+   </node>
+   <node absolute_id="axi4lite_top.sys_block" absolute_offset="a0000000" address="0x00000000" byte_size="32" id="sys_block" link_done="sys_block_memory_map_output.xml">
+      <node absolute_id="axi4lite_top.sys_block.sys_board_id" absolute_offset="a0000000" address="0x00000000" description="sys_block_sys_board_id" hw_rst="3" id="sys_board_id" mask="0xffffffff" permission="r" size="1"/>
+      <node absolute_id="axi4lite_top.sys_block.sys_rev" absolute_offset="a0000004" address="0x00000004" description="sys_block_sys_rev" hw_rst="131072" id="sys_rev" mask="0xffffffff" permission="r" size="1"/>
+      <node absolute_id="axi4lite_top.sys_block.sys_rev_rcs" absolute_offset="a000000c" address="0x0000000c" description="sys_block_sys_rev_rcs" hw_rst="1" id="sys_rev_rcs" mask="0xffffffff" permission="r" size="1"/>
+      <node absolute_id="axi4lite_top.sys_block.sys_scratchpad" absolute_offset="a0000010" address="0x00000010" description="sys_block_sys_scratchpad" hw_rst="0" id="sys_scratchpad" mask="0xffffffff" permission="rw" size="1"/>
+      <node absolute_id="axi4lite_top.sys_block.sys_clkcounter" absolute_offset="a0000014" address="0x00000014" description="sys_block_sys_clkcounter" hw_rst="0x0" id="sys_clkcounter" mask="0xffffffff" permission="r" size="1"/>
+   </node>
+</node>
+<!-- This file has been automatically generated using xml_map_gen.py version 1.8 /!-->

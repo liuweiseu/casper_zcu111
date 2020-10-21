@@ -1,0 +1,62 @@
+{
+  'Line_103' => {
+    'CodeInstance' => 'reg_test_struct/software_register/assert_reg',
+    'Instance' => 'assert_reg',
+    'SimulinkInstance' => 'reg_test/software_register/assert_reg'
+  },
+  'Line_112' => {
+    'CodeInstance' => 'reg_test_struct/software_register/reint1',
+    'Instance' => 'reint1',
+    'SimulinkInstance' => 'reg_test/software_register/reint1'
+  },
+  'Line_145' => {
+    'CodeInstance' => 'reg_test_struct/raw_from_processor',
+    'Instance' => 'raw_from_processor',
+    'SimulinkInstance' => 'reg_test/raw_from_processor'
+  },
+  'Line_150' => {
+    'CodeInstance' => 'reg_test_struct/software_register',
+    'Instance' => 'software_register',
+    'SimulinkInstance' => 'reg_test/software_register'
+  },
+  'Line_174' => {
+    'CodeInstance' => 'reg_test_default_clock_driver/clockdriver',
+    'Instance' => 'clockdriver',
+    'SimulinkInstance' => ''
+  },
+  'Line_20' => {
+    'CodeInstance' => 'reg_test_struct/raw_from_processor/io_delay',
+    'Instance' => 'io_delay',
+    'SimulinkInstance' => 'reg_test/raw_from_processor/io_delay'
+  },
+  'Line_205' => {
+    'CodeInstance' => 'reg_test_default_clock_driver',
+    'Instance' => 'reg_test_default_clock_driver',
+    'SimulinkInstance' => ''
+  },
+  'Line_213' => {
+    'CodeInstance' => 'reg_test_struct',
+    'Instance' => 'reg_test_struct',
+    'SimulinkInstance' => 'reg_test'
+  },
+  'Line_28' => {
+    'CodeInstance' => 'reg_test_struct/raw_from_processor/slice_reg',
+    'Instance' => 'slice_reg',
+    'SimulinkInstance' => 'reg_test/raw_from_processor/slice_reg'
+  },
+  'Line_39' => {
+    'CodeInstance' => 'reg_test_struct/raw_from_processor/reint1',
+    'Instance' => 'reint1',
+    'SimulinkInstance' => 'reg_test/raw_from_processor/reint1'
+  },
+  'Line_74' => {
+    'CodeInstance' => 'reg_test_struct/software_register/io_delay',
+    'Instance' => 'io_delay',
+    'SimulinkInstance' => 'reg_test/software_register/io_delay'
+  },
+  'Line_82' => {
+    'CodeInstance' => 'reg_test_struct/software_register/cast_gw',
+    'Instance' => 'cast_gw',
+    'SimulinkInstance' => 'reg_test/software_register/cast_gw'
+  }
+}

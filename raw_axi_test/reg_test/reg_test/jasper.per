@@ -1,0 +1,50 @@
+yellow_blocks:
+  reg_test/ZCU111:
+    name: ZCU111
+    fullpath: reg_test/ZCU111
+    tag: xps:xsg
+    hw_sys: 'zcu111:xczu28dr'
+    clk_src: sys_clk
+    clk_rate: 256
+    sample_period: 1
+    synthesis_tool: XST
+  reg_test/raw_from_processor:
+    name: raw_from_processor
+    fullpath: reg_test/raw_from_processor
+    tag: xps:raxi
+    io_dir: From Processor
+    io_delay: 0
+    init_val: 1234
+    sample_period: 1
+    names: reg
+    bitwidths: 32
+    bin_pts: 0
+    arith_types: 0
+    sim_port: on
+    show_format: on
+  reg_test/software_register:
+    name: software_register
+    fullpath: reg_test/software_register
+    tag: xps:sw_reg
+    io_dir: To Processor
+    io_delay: 0
+    init_val: 0
+    sample_period: 1
+    names: reg
+    bitwidths: 32
+    bin_pts: 0
+    arith_types: 0
+    sim_port: off
+    show_format: on
+
+user_modules:
+  reg_test:
+    clock: clk
+    ports:
+      - reg_test_raw_from_processor_user_data_out
+      - reg_test_software_register_user_data_in
+    sources:
+      - /home/wei/casper/casper_mlib/tutorials_devel/zcu111/raw_axi_test/reg_test/reg_test/sysgen/hdl_netlist/reg_test.srcs/sources_1/imports/sysgen
+      - /home/wei/casper/casper_mlib/tutorials_devel/zcu111/raw_axi_test/reg_test/reg_test/sysgen/hdl_netlist/reg_test.srcs/sources_1/ip/*.coe
+      - /home/wei/casper/casper_mlib/tutorials_devel/zcu111/raw_axi_test/reg_test/reg_test/sysgen/hdl_netlist/reg_test.srcs/sources_1/ip/*/*.xci
+      - /home/wei/casper/casper_mlib/tutorials_devel/zcu111/raw_axi_test/reg_test/reg_test/sysgen/hdl_netlist/reg_test.srcs/sources_1/imports/sysgen/*.mem

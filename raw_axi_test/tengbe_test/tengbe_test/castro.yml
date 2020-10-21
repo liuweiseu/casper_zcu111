@@ -70,6 +70,7 @@ src_files: [/home/wei/casper/casper_mlib/tutorials_devel/zcu111/raw_axi_test/ten
   /home/wei/casper/casper_mlib/tutorials_devel/zcu111/mlib_devel/jasper_library/hdl_sources/tengbaser_infrastructure_ultrascale/xxv_ethernet_1_clocking_wrapper.v,
   /home/wei/casper/casper_mlib/tutorials_devel/zcu111/mlib_devel/jasper_library/hdl_sources/tengbaser_infrastructure_ultrascale/gtwizard_ultrascale_v1_7_gtye4_common.v,
   /home/wei/casper/casper_mlib/tutorials_devel/zcu111/mlib_devel/jasper_library/hdl_sources/tengbaser_infrastructure_ultrascale/xxv_ethernet_1_common_wrapper.v,
+  /home/wei/casper/casper_mlib/tutorials_devel/zcu111/mlib_devel/jasper_library/hdl_sources/tengbaser_infrastructure_ultrascale/AXI4LITE2AXI4_axi_protocol_convert_0_0.xci,
   /home/wei/casper/casper_mlib/tutorials_devel/zcu111/mlib_devel/jasper_library/hdl_sources/tengbaser_infrastructure_ultrascale/axi_slave_wishbone_classic_master.vhd,
   /home/wei/casper/casper_mlib/tutorials_devel/zcu111/mlib_devel/jasper_library/hdl_sources/wb_register_simulink2ppc,
   /home/wei/casper/casper_mlib/tutorials_devel/zcu111/mlib_devel/jasper_library/hdl_sources/wb_register_simulink2ppc,

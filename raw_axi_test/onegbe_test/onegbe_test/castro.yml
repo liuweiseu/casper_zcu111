@@ -173,16 +173,33 @@ synthesis: !!python/object:castro.Synthesis
     - !!python/object:casper_platform.Pin {iostd: LVCMOS18, loc: AV15}
     mgt_rx_n:
     - !!python/object:casper_platform.Pin {iostd: null, loc: AA39}
+    - !!python/object:casper_platform.Pin {iostd: null, loc: W39}
+    - !!python/object:casper_platform.Pin {iostd: null, loc: U39}
+    - !!python/object:casper_platform.Pin {iostd: null, loc: R39}
     mgt_rx_p:
     - !!python/object:casper_platform.Pin {iostd: null, loc: AA38}
+    - !!python/object:casper_platform.Pin {iostd: null, loc: W38}
+    - !!python/object:casper_platform.Pin {iostd: null, loc: U38}
+    - !!python/object:casper_platform.Pin {iostd: null, loc: R38}
     mgt_tx_n:
     - !!python/object:casper_platform.Pin {iostd: null, loc: Y36}
+    - !!python/object:casper_platform.Pin {iostd: null, loc: V36}
+    - !!python/object:casper_platform.Pin {iostd: null, loc: T36}
+    - !!python/object:casper_platform.Pin {iostd: null, loc: R34}
     mgt_tx_p:
     - !!python/object:casper_platform.Pin {iostd: null, loc: Y35}
+    - !!python/object:casper_platform.Pin {iostd: null, loc: V35}
+    - !!python/object:casper_platform.Pin {iostd: null, loc: T35}
+    - !!python/object:casper_platform.Pin {iostd: null, loc: R33}
     pl_sysref_n:
     - !!python/object:casper_platform.Pin {iostd: LVDS, loc: AK16}
     pl_sysref_p:
     - !!python/object:casper_platform.Pin {iostd: LVDS, loc: AK17}
+    sfp_disable:
+    - !!python/object:casper_platform.Pin {iostd: LVCMOS12, loc: G12}
+    - !!python/object:casper_platform.Pin {iostd: LVCMOS12, loc: G10}
+    - !!python/object:casper_platform.Pin {iostd: LVCMOS12, loc: K12}
+    - !!python/object:casper_platform.Pin {iostd: LVCMOS12, loc: J7}
   platform_name: zcu111
   raw_constraints: []
   synth_tool: ''

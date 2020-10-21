@@ -2,8 +2,8 @@
 # Vivado v2018.3.1_AR71948 (64-bit)
 # SW Build 2489853 on Tue Mar 26 04:18:30 MDT 2019
 # IP Build 2486929 on Tue Mar 26 06:44:21 MDT 2019
-# Start of session at: Thu Oct 15 00:15:45 2020
-# Process ID: 25711
+# Start of session at: Wed Oct 21 14:37:26 2020
+# Process ID: 25466
 # Current directory: /home/wei/casper/casper_mlib/tutorials_devel/zcu111/raw_axi_test/tengbe_test/tengbe_test/sysgen
 # Command line: vivado -mode batch -source ProjectGeneration.tcl -notrace
 # Log file: /home/wei/casper/casper_mlib/tutorials_devel/zcu111/raw_axi_test/tengbe_test/tengbe_test/sysgen/vivado.log

@@ -1,16 +1,19 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<GenRun Id="tengbe_test_c_counter_binary_v12_0_i2_synth_1" LaunchPart="xczu28dr-ffvg1517-2-e" LaunchTime="1602746243">
-  <File Type="RDS-UTIL-PB" Name="tengbe_test_c_counter_binary_v12_0_i2_utilization_synth.pb"/>
-  <File Type="RDS-UTIL" Name="tengbe_test_c_counter_binary_v12_0_i2_utilization_synth.rpt"/>
-  <File Type="RDS-RDS" Name="tengbe_test_c_counter_binary_v12_0_i2.vds"/>
+<GenRun Id="tengbe_test_c_counter_binary_v12_0_i2_synth_1" LaunchPart="xczu28dr-ffvg1517-2-e" LaunchTime="1603316340">
+  <File Type="VDS-TIMING-PB" Name="tengbe_test_c_counter_binary_v12_0_i2_timing_summary_synth.pb"/>
+  <File Type="VDS-TIMINGSUMMARY" Name="tengbe_test_c_counter_binary_v12_0_i2_timing_summary_synth.rpt"/>
   <File Type="RDS-DCP" Name="tengbe_test_c_counter_binary_v12_0_i2.dcp"/>
-  <File Type="PA-TCL" Name="tengbe_test_c_counter_binary_v12_0_i2.tcl"/>
   <File Type="REPORTS-TCL" Name="tengbe_test_c_counter_binary_v12_0_i2_reports.tcl"/>
+  <File Type="PA-TCL" Name="tengbe_test_c_counter_binary_v12_0_i2.tcl"/>
+  <File Type="RDS-RDS" Name="tengbe_test_c_counter_binary_v12_0_i2.vds"/>
+  <File Type="RDS-PROPCONSTRS" Name="tengbe_test_c_counter_binary_v12_0_i2_drc_synth.rpt"/>
+  <File Type="RDS-UTIL" Name="tengbe_test_c_counter_binary_v12_0_i2_utilization_synth.rpt"/>
+  <File Type="RDS-UTIL-PB" Name="tengbe_test_c_counter_binary_v12_0_i2_utilization_synth.pb"/>
   <FileSet Name="sources" Type="BlockSrcs" RelSrcDir="$PSRCDIR/tengbe_test_c_counter_binary_v12_0_i2">
     <File Path="$PSRCDIR/sources_1/ip/tengbe_test_c_counter_binary_v12_0_i2/tengbe_test_c_counter_binary_v12_0_i2.xci">
       <FileInfo>
         <Attr Name="ImportPath" Val="$PPRDIR/../sysgen/hdl_netlist/tengbe_test.srcs/sources_1/ip/tengbe_test_c_counter_binary_v12_0_i2/tengbe_test_c_counter_binary_v12_0_i2.xci"/>
-        <Attr Name="ImportTime" Val="1602746155"/>
+        <Attr Name="ImportTime" Val="1603316256"/>
         <Attr Name="UsedIn" Val="synthesis"/>
         <Attr Name="UsedIn" Val="implementation"/>
         <Attr Name="UsedIn" Val="simulation"/>
@@ -25,7 +28,7 @@
     <File Path="$PSRCDIR/sources_1/ip/tengbe_test_c_counter_binary_v12_0_i2/tengbe_test_c_counter_binary_v12_0_i2.xci">
       <FileInfo>
         <Attr Name="ImportPath" Val="$PPRDIR/../sysgen/hdl_netlist/tengbe_test.srcs/sources_1/ip/tengbe_test_c_counter_binary_v12_0_i2/tengbe_test_c_counter_binary_v12_0_i2.xci"/>
-        <Attr Name="ImportTime" Val="1602746155"/>
+        <Attr Name="ImportTime" Val="1603316256"/>
         <Attr Name="UsedIn" Val="synthesis"/>
         <Attr Name="UsedIn" Val="implementation"/>
         <Attr Name="UsedIn" Val="simulation"/>
@@ -43,7 +46,9 @@
     </Config>
   </FileSet>
   <Strategy Version="1" Minor="2">
-    <StratHandle Name="Vivado Synthesis Defaults" Flow="Vivado Synthesis 2018"/>
+    <StratHandle Name="Vivado Synthesis Defaults" Flow="Vivado Synthesis 2018">
+      <Desc>Vivado Synthesis Defaults</Desc>
+    </StratHandle>
     <Step Id="synth_design"/>
   </Strategy>
 </GenRun>

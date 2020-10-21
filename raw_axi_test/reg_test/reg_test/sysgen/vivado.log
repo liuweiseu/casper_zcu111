@@ -1,0 +1,13 @@
+#-----------------------------------------------------------
+# Vivado v2018.3.1_AR71948 (64-bit)
+# SW Build 2489853 on Tue Mar 26 04:18:30 MDT 2019
+# IP Build 2486929 on Tue Mar 26 06:44:21 MDT 2019
+# Start of session at: Sat Oct 17 18:24:12 2020
+# Process ID: 26537
+# Current directory: /home/wei/casper/casper_mlib/tutorials_devel/zcu111/raw_axi_test/reg_test/reg_test/sysgen
+# Command line: vivado -mode batch -source ProjectGeneration.tcl -notrace
+# Log file: /home/wei/casper/casper_mlib/tutorials_devel/zcu111/raw_axi_test/reg_test/reg_test/sysgen/vivado.log
+# Journal file: /home/wei/casper/casper_mlib/tutorials_devel/zcu111/raw_axi_test/reg_test/reg_test/sysgen/vivado.jou
+#-----------------------------------------------------------
+source ProjectGeneration.tcl -notrace
+INFO: [Common 17-206] Exiting Vivado at Sat Oct 17 18:24:18 2020...

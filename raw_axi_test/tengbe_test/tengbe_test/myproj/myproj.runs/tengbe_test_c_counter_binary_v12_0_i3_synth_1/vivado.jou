@@ -2,8 +2,8 @@
 # Vivado v2018.3.1_AR71948 (64-bit)
 # SW Build 2489853 on Tue Mar 26 04:18:30 MDT 2019
 # IP Build 2486929 on Tue Mar 26 06:44:21 MDT 2019
-# Start of session at: Thu Oct 15 00:21:38 2020
-# Process ID: 29321
+# Start of session at: Wed Oct 21 14:42:53 2020
+# Process ID: 29649
 # Current directory: /home/wei/casper/casper_mlib/tutorials_devel/zcu111/raw_axi_test/tengbe_test/tengbe_test/myproj/myproj.runs/tengbe_test_c_counter_binary_v12_0_i3_synth_1
 # Command line: vivado -log tengbe_test_c_counter_binary_v12_0_i3.vds -product Vivado -mode batch -messageDb vivado.pb -notrace -source tengbe_test_c_counter_binary_v12_0_i3.tcl
 # Log file: /home/wei/casper/casper_mlib/tutorials_devel/zcu111/raw_axi_test/tengbe_test/tengbe_test/myproj/myproj.runs/tengbe_test_c_counter_binary_v12_0_i3_synth_1/tengbe_test_c_counter_binary_v12_0_i3.vds

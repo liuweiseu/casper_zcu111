@@ -1,7 +1,7 @@
 -- Copyright 1986-2019 Xilinx, Inc. All Rights Reserved.
 -- --------------------------------------------------------------------------------
 -- Tool Version: Vivado v.2018.3.1_AR71948 (lin64) Build 2489853 Tue Mar 26 04:18:30 MDT 2019
--- Date        : Thu Oct 15 00:19:06 2020
+-- Date        : Wed Oct 21 14:40:34 2020
 -- Host        : wei-Berkeley running 64-bit Ubuntu 18.04.5 LTS
 -- Command     : write_vhdl -force -mode funcsim
 --               /home/wei/casper/casper_mlib/tutorials_devel/zcu111/raw_axi_test/tengbe_test/tengbe_test/myproj/myproj.srcs/sources_1/ip/tx_packet_ctrl_fifo/tx_packet_ctrl_fifo_sim_netlist.vhdl

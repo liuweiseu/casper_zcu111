@@ -1,7 +1,7 @@
 Copyright 1986-2019 Xilinx, Inc. All Rights Reserved.
 -------------------------------------------------------------------------------------------------
 | Tool Version : Vivado v.2018.3.1_AR71948 (lin64) Build 2489853 Tue Mar 26 04:18:30 MDT 2019
-| Date         : Thu Sep 24 16:42:41 2020
+| Date         : Fri Oct 16 21:14:22 2020
 | Host         : wei-Berkeley running 64-bit Ubuntu 18.04.5 LTS
 | Command      : report_utilization -file top_utilization_synth.rpt -pb top_utilization_synth.pb
 | Design       : top
@@ -61,8 +61,8 @@ Table of Contents
 | 0     |          Yes |           - |            - |
 | 8     |          Yes |           - |          Set |
 | 450   |          Yes |           - |        Reset |
-| 46    |          Yes |         Set |            - |
-| 1052  |          Yes |       Reset |            - |
+| 44    |          Yes |         Set |            - |
+| 1054  |          Yes |       Reset |            - |
 +-------+--------------+-------------+--------------+
 
 
@@ -163,14 +163,14 @@ Table of Contents
 +------------+------+---------------------+
 |  Ref Name  | Used | Functional Category |
 +------------+------+---------------------+
-| FDRE       | 1052 |            Register |
+| FDRE       | 1054 |            Register |
 | LUT6       |  746 |                 CLB |
 | FDCE       |  450 |            Register |
 | LUT4       |  256 |                 CLB |
 | LUT5       |  254 |                 CLB |
 | LUT2       |  211 |                 CLB |
 | LUT3       |  127 |                 CLB |
-| FDSE       |   46 |            Register |
+| FDSE       |   44 |            Register |
 | LUT1       |   35 |                 CLB |
 | CARRY8     |   34 |                 CLB |
 | SRL16E     |   10 |                 CLB |

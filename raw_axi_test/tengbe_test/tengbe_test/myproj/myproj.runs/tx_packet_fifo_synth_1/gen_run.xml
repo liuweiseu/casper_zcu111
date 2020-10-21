@@ -1,11 +1,14 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<GenRun Id="tx_packet_fifo_synth_1" LaunchPart="xczu28dr-ffvg1517-2-e" LaunchTime="1602746243">
-  <File Type="RDS-UTIL-PB" Name="tx_packet_fifo_utilization_synth.pb"/>
-  <File Type="RDS-UTIL" Name="tx_packet_fifo_utilization_synth.rpt"/>
-  <File Type="RDS-RDS" Name="tx_packet_fifo.vds"/>
+<GenRun Id="tx_packet_fifo_synth_1" LaunchPart="xczu28dr-ffvg1517-2-e" LaunchTime="1603316340">
+  <File Type="VDS-TIMING-PB" Name="tx_packet_fifo_timing_summary_synth.pb"/>
+  <File Type="VDS-TIMINGSUMMARY" Name="tx_packet_fifo_timing_summary_synth.rpt"/>
   <File Type="RDS-DCP" Name="tx_packet_fifo.dcp"/>
-  <File Type="PA-TCL" Name="tx_packet_fifo.tcl"/>
   <File Type="REPORTS-TCL" Name="tx_packet_fifo_reports.tcl"/>
+  <File Type="PA-TCL" Name="tx_packet_fifo.tcl"/>
+  <File Type="RDS-RDS" Name="tx_packet_fifo.vds"/>
+  <File Type="RDS-PROPCONSTRS" Name="tx_packet_fifo_drc_synth.rpt"/>
+  <File Type="RDS-UTIL" Name="tx_packet_fifo_utilization_synth.rpt"/>
+  <File Type="RDS-UTIL-PB" Name="tx_packet_fifo_utilization_synth.pb"/>
   <FileSet Name="sources" Type="BlockSrcs" RelSrcDir="$PSRCDIR/tx_packet_fifo">
     <File Path="$PSRCDIR/sources_1/ip/tx_packet_fifo/tx_packet_fifo.xci">
       <FileInfo>
@@ -43,7 +46,9 @@
     </Config>
   </FileSet>
   <Strategy Version="1" Minor="2">
-    <StratHandle Name="Vivado Synthesis Defaults" Flow="Vivado Synthesis 2018"/>
+    <StratHandle Name="Vivado Synthesis Defaults" Flow="Vivado Synthesis 2018">
+      <Desc>Vivado Synthesis Defaults</Desc>
+    </StratHandle>
     <Step Id="synth_design"/>
   </Strategy>
 </GenRun>

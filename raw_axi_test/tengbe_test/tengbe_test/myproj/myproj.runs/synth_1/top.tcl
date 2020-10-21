@@ -17,10 +17,6 @@ proc create_report { reportName command } {
     send_msg_id runtcl-5 warning "$msg"
   }
 }
-set_param power.enableLutRouteBelPower 1
-set_param power.enableCarry8RouteBelPower 1
-set_param power.enableUnconnectedCarry8PinPower 1
-set_param power.BramSDPPropagationFix 1
 create_project -in_memory -part xczu28dr-ffvg1517-2-e
 
 set_param project.singleFileAddWarning.threshold 0
@@ -99,12 +95,12 @@ set_property used_in_implementation false [get_files -all /home/wei/casper/caspe
 set_property used_in_implementation false [get_files -all /home/wei/casper/casper_mlib/tutorials_devel/zcu111/raw_axi_test/tengbe_test/tengbe_test/myproj/myproj.srcs/sources_1/bd/zcu111/zcu111_ooc.xdc]
 
 read_ip -quiet /home/wei/casper/casper_mlib/tutorials_devel/zcu111/raw_axi_test/tengbe_test/tengbe_test/myproj/myproj.srcs/sources_1/ip/tengbaser_phy_ultrascale/tengbaser_phy_ultrascale.xci
+set_property used_in_implementation false [get_files -all /home/wei/casper/casper_mlib/tutorials_devel/zcu111/raw_axi_test/tengbe_test/tengbe_test/myproj/myproj.srcs/sources_1/ip/tengbaser_phy_ultrascale/ip_0/synth/tengbaser_phy_ultrascale_gt_ooc.xdc]
+set_property used_in_implementation false [get_files -all /home/wei/casper/casper_mlib/tutorials_devel/zcu111/raw_axi_test/tengbe_test/tengbe_test/myproj/myproj.srcs/sources_1/ip/tengbaser_phy_ultrascale/ip_0/synth/tengbaser_phy_ultrascale_gt.xdc]
 set_property used_in_implementation false [get_files -all /home/wei/casper/casper_mlib/tutorials_devel/zcu111/raw_axi_test/tengbe_test/tengbe_test/myproj/myproj.srcs/sources_1/ip/tengbaser_phy_ultrascale/synth/tengbaser_phy_ultrascale_board.xdc]
 set_property used_in_implementation false [get_files -all /home/wei/casper/casper_mlib/tutorials_devel/zcu111/raw_axi_test/tengbe_test/tengbe_test/myproj/myproj.srcs/sources_1/ip/tengbaser_phy_ultrascale/synth/tengbaser_phy_ultrascale.xdc]
 set_property used_in_implementation false [get_files -all /home/wei/casper/casper_mlib/tutorials_devel/zcu111/raw_axi_test/tengbe_test/tengbe_test/myproj/myproj.srcs/sources_1/ip/tengbaser_phy_ultrascale/synth/tengbaser_phy_ultrascale_exceptions.xdc]
 set_property used_in_implementation false [get_files -all /home/wei/casper/casper_mlib/tutorials_devel/zcu111/raw_axi_test/tengbe_test/tengbe_test/myproj/myproj.srcs/sources_1/ip/tengbaser_phy_ultrascale/synth/tengbaser_phy_ultrascale_ooc.xdc]
-set_property used_in_implementation false [get_files -all /home/wei/casper/casper_mlib/tutorials_devel/zcu111/raw_axi_test/tengbe_test/tengbe_test/myproj/myproj.srcs/sources_1/ip/tengbaser_phy_ultrascale/ip_0/synth/tengbaser_phy_ultrascale_gt_ooc.xdc]
-set_property used_in_implementation false [get_files -all /home/wei/casper/casper_mlib/tutorials_devel/zcu111/raw_axi_test/tengbe_test/tengbe_test/myproj/myproj.srcs/sources_1/ip/tengbaser_phy_ultrascale/ip_0/synth/tengbaser_phy_ultrascale_gt.xdc]
 
 read_ip -quiet /home/wei/casper/casper_mlib/tutorials_devel/zcu111/raw_axi_test/tengbe_test/tengbe_test/myproj/myproj.srcs/sources_1/ip/rx_packet_ctrl_fifo/rx_packet_ctrl_fifo.xci
 set_property used_in_implementation false [get_files -all /home/wei/casper/casper_mlib/tutorials_devel/zcu111/raw_axi_test/tengbe_test/tengbe_test/myproj/myproj.srcs/sources_1/ip/rx_packet_ctrl_fifo/rx_packet_ctrl_fifo.xdc]
@@ -141,9 +137,6 @@ set_property used_in_implementation false [get_files -all /home/wei/casper/caspe
 set_property used_in_implementation false [get_files -all /home/wei/casper/casper_mlib/tutorials_devel/zcu111/raw_axi_test/tengbe_test/tengbe_test/myproj/myproj.srcs/sources_1/ip/rx_packet_fifo_dist/rx_packet_fifo_dist_clocks.xdc]
 set_property used_in_implementation false [get_files -all /home/wei/casper/casper_mlib/tutorials_devel/zcu111/raw_axi_test/tengbe_test/tengbe_test/myproj/myproj.srcs/sources_1/ip/rx_packet_fifo_dist/rx_packet_fifo_dist_ooc.xdc]
 
-read_ip -quiet /home/wei/casper/casper_mlib/tutorials_devel/zcu111/raw_axi_test/tengbe_test/tengbe_test/myproj/myproj.srcs/sources_1/ip/tengbe_test_c_counter_binary_v12_0_i4/tengbe_test_c_counter_binary_v12_0_i4.xci
-set_property used_in_implementation false [get_files -all /home/wei/casper/casper_mlib/tutorials_devel/zcu111/raw_axi_test/tengbe_test/tengbe_test/myproj/myproj.srcs/sources_1/ip/tengbe_test_c_counter_binary_v12_0_i4/tengbe_test_c_counter_binary_v12_0_i4_ooc.xdc]
-
 read_ip -quiet /home/wei/casper/casper_mlib/tutorials_devel/zcu111/raw_axi_test/tengbe_test/tengbe_test/myproj/myproj.srcs/sources_1/ip/tengbe_test_c_counter_binary_v12_0_i1/tengbe_test_c_counter_binary_v12_0_i1.xci
 set_property used_in_implementation false [get_files -all /home/wei/casper/casper_mlib/tutorials_devel/zcu111/raw_axi_test/tengbe_test/tengbe_test/myproj/myproj.srcs/sources_1/ip/tengbe_test_c_counter_binary_v12_0_i1/tengbe_test_c_counter_binary_v12_0_i1_ooc.xdc]
 
@@ -155,6 +148,9 @@ set_property used_in_implementation false [get_files -all /home/wei/casper/caspe
 
 read_ip -quiet /home/wei/casper/casper_mlib/tutorials_devel/zcu111/raw_axi_test/tengbe_test/tengbe_test/myproj/myproj.srcs/sources_1/ip/tengbe_test_c_counter_binary_v12_0_i2/tengbe_test_c_counter_binary_v12_0_i2.xci
 set_property used_in_implementation false [get_files -all /home/wei/casper/casper_mlib/tutorials_devel/zcu111/raw_axi_test/tengbe_test/tengbe_test/myproj/myproj.srcs/sources_1/ip/tengbe_test_c_counter_binary_v12_0_i2/tengbe_test_c_counter_binary_v12_0_i2_ooc.xdc]
+
+read_ip -quiet /home/wei/casper/casper_mlib/tutorials_devel/zcu111/raw_axi_test/tengbe_test/tengbe_test/myproj/myproj.srcs/sources_1/ip/tengbe_test_c_counter_binary_v12_0_i4/tengbe_test_c_counter_binary_v12_0_i4.xci
+set_property used_in_implementation false [get_files -all /home/wei/casper/casper_mlib/tutorials_devel/zcu111/raw_axi_test/tengbe_test/tengbe_test/myproj/myproj.srcs/sources_1/ip/tengbe_test_c_counter_binary_v12_0_i4/tengbe_test_c_counter_binary_v12_0_i4_ooc.xdc]
 
 # Mark all dcp files as not used in implementation to prevent them from being
 # stitched into the results of this synthesis run. Any black boxes in the
@@ -172,7 +168,7 @@ set_property used_in_implementation false [get_files dont_touch.xdc]
 set_param ips.enableIPCacheLiteLoad 1
 close [open __synthesis_is_running__ w]
 
-synth_design -top top -part xczu28dr-ffvg1517-2-e -flatten_hierarchy none
+synth_design -top top -part xczu28dr-ffvg1517-2-e
 
 
 # disable binary constraint mode for synth run checkpoints

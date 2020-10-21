@@ -57,10 +57,10 @@ entity tengbe_test_dest_port is
   );
 end tengbe_test_dest_port;
 architecture structural of tengbe_test_dest_port is 
-  signal io_delay_q_net : std_logic_vector( 32-1 downto 0 );
-  signal slice_reg_y_net : std_logic_vector( 16-1 downto 0 );
   signal reint1_output_port_net : std_logic_vector( 16-1 downto 0 );
   signal tengbe_test_dest_port_user_data_out_net : std_logic_vector( 32-1 downto 0 );
+  signal io_delay_q_net : std_logic_vector( 32-1 downto 0 );
+  signal slice_reg_y_net : std_logic_vector( 16-1 downto 0 );
 begin
   in_reg <= reint1_output_port_net;
   tengbe_test_dest_port_user_data_out_net <= tengbe_test_dest_port_user_data_out;
@@ -106,13 +106,13 @@ entity tengbe_test_rxbadctr is
   );
 end tengbe_test_rxbadctr;
 architecture structural of tengbe_test_rxbadctr is 
-  signal ce_net : std_logic;
-  signal clk_net : std_logic;
-  signal cast_gw_dout_net : std_logic_vector( 32-1 downto 0 );
   signal rxbadctr_del2_q_net : std_logic_vector( 32-1 downto 0 );
+  signal cast_gw_dout_net : std_logic_vector( 32-1 downto 0 );
+  signal clk_net : std_logic;
+  signal ce_net : std_logic;
   signal io_delay_q_net : std_logic_vector( 32-1 downto 0 );
-  signal assert_reg_dout_net : std_logic_vector( 32-1 downto 0 );
   signal reint1_output_port_net : std_logic_vector( 32-1 downto 0 );
+  signal assert_reg_dout_net : std_logic_vector( 32-1 downto 0 );
 begin
   rxbadctr_del2_q_net <= out_reg;
   tengbe_test_gbe0_rxbadctr_user_data_in <= cast_gw_dout_net;
@@ -179,13 +179,13 @@ entity tengbe_test_rxctr is
   );
 end tengbe_test_rxctr;
 architecture structural of tengbe_test_rxctr is 
+  signal cast_gw_dout_net : std_logic_vector( 32-1 downto 0 );
   signal clk_net : std_logic;
-  signal assert_reg_dout_net : std_logic_vector( 32-1 downto 0 );
   signal rxctr_del2_q_net : std_logic_vector( 32-1 downto 0 );
   signal ce_net : std_logic;
-  signal cast_gw_dout_net : std_logic_vector( 32-1 downto 0 );
-  signal reint1_output_port_net : std_logic_vector( 32-1 downto 0 );
   signal io_delay_q_net : std_logic_vector( 32-1 downto 0 );
+  signal reint1_output_port_net : std_logic_vector( 32-1 downto 0 );
+  signal assert_reg_dout_net : std_logic_vector( 32-1 downto 0 );
 begin
   rxctr_del2_q_net <= out_reg;
   tengbe_test_gbe0_rxctr_user_data_in <= cast_gw_dout_net;
@@ -252,12 +252,12 @@ entity tengbe_test_rxctr_ed is
   );
 end tengbe_test_rxctr_ed;
 architecture structural of tengbe_test_rxctr_ed is 
-  signal clk_net : std_logic;
-  signal inverter_op_net : std_logic_vector( 1-1 downto 0 );
-  signal ce_net : std_logic;
-  signal rxctr_and_y_net : std_logic_vector( 1-1 downto 0 );
-  signal delay_q_net : std_logic_vector( 1-1 downto 0 );
   signal edge_op_y_net : std_logic_vector( 1-1 downto 0 );
+  signal rxctr_and_y_net : std_logic_vector( 1-1 downto 0 );
+  signal clk_net : std_logic;
+  signal ce_net : std_logic;
+  signal delay_q_net : std_logic_vector( 1-1 downto 0 );
+  signal inverter_op_net : std_logic_vector( 1-1 downto 0 );
 begin
   out_x0 <= edge_op_y_net;
   rxctr_and_y_net <= in_x0;
@@ -312,11 +312,11 @@ end tengbe_test_rxeofctr;
 architecture structural of tengbe_test_rxeofctr is 
   signal rxeofctr_del2_q_net : std_logic_vector( 32-1 downto 0 );
   signal cast_gw_dout_net : std_logic_vector( 32-1 downto 0 );
-  signal reint1_output_port_net : std_logic_vector( 32-1 downto 0 );
-  signal assert_reg_dout_net : std_logic_vector( 32-1 downto 0 );
-  signal io_delay_q_net : std_logic_vector( 32-1 downto 0 );
   signal clk_net : std_logic;
   signal ce_net : std_logic;
+  signal io_delay_q_net : std_logic_vector( 32-1 downto 0 );
+  signal reint1_output_port_net : std_logic_vector( 32-1 downto 0 );
+  signal assert_reg_dout_net : std_logic_vector( 32-1 downto 0 );
 begin
   rxeofctr_del2_q_net <= out_reg;
   tengbe_test_gbe0_rxeofctr_user_data_in <= cast_gw_dout_net;
@@ -383,13 +383,13 @@ entity tengbe_test_rxofctr is
   );
 end tengbe_test_rxofctr;
 architecture structural of tengbe_test_rxofctr is 
-  signal clk_net : std_logic;
-  signal assert_reg_dout_net : std_logic_vector( 32-1 downto 0 );
-  signal io_delay_q_net : std_logic_vector( 32-1 downto 0 );
-  signal cast_gw_dout_net : std_logic_vector( 32-1 downto 0 );
   signal rxofctr_del2_q_net : std_logic_vector( 32-1 downto 0 );
+  signal cast_gw_dout_net : std_logic_vector( 32-1 downto 0 );
+  signal clk_net : std_logic;
   signal ce_net : std_logic;
+  signal io_delay_q_net : std_logic_vector( 32-1 downto 0 );
   signal reint1_output_port_net : std_logic_vector( 32-1 downto 0 );
+  signal assert_reg_dout_net : std_logic_vector( 32-1 downto 0 );
 begin
   rxofctr_del2_q_net <= out_reg;
   tengbe_test_gbe0_rxofctr_user_data_in <= cast_gw_dout_net;
@@ -457,12 +457,12 @@ entity tengbe_test_rxvldctr is
 end tengbe_test_rxvldctr;
 architecture structural of tengbe_test_rxvldctr is 
   signal rxvldctr_del2_q_net : std_logic_vector( 32-1 downto 0 );
-  signal io_delay_q_net : std_logic_vector( 32-1 downto 0 );
-  signal ce_net : std_logic;
-  signal assert_reg_dout_net : std_logic_vector( 32-1 downto 0 );
-  signal clk_net : std_logic;
-  signal reint1_output_port_net : std_logic_vector( 32-1 downto 0 );
   signal cast_gw_dout_net : std_logic_vector( 32-1 downto 0 );
+  signal clk_net : std_logic;
+  signal ce_net : std_logic;
+  signal io_delay_q_net : std_logic_vector( 32-1 downto 0 );
+  signal reint1_output_port_net : std_logic_vector( 32-1 downto 0 );
+  signal assert_reg_dout_net : std_logic_vector( 32-1 downto 0 );
 begin
   rxvldctr_del2_q_net <= out_reg;
   tengbe_test_gbe0_rxvldctr_user_data_in <= cast_gw_dout_net;
@@ -529,13 +529,13 @@ entity tengbe_test_txctr is
   );
 end tengbe_test_txctr;
 architecture structural of tengbe_test_txctr is 
-  signal io_delay_q_net : std_logic_vector( 32-1 downto 0 );
-  signal clk_net : std_logic;
-  signal reint1_output_port_net : std_logic_vector( 32-1 downto 0 );
+  signal assert_reg_dout_net : std_logic_vector( 32-1 downto 0 );
   signal txctr_del2_q_net : std_logic_vector( 32-1 downto 0 );
   signal cast_gw_dout_net : std_logic_vector( 32-1 downto 0 );
+  signal clk_net : std_logic;
   signal ce_net : std_logic;
-  signal assert_reg_dout_net : std_logic_vector( 32-1 downto 0 );
+  signal io_delay_q_net : std_logic_vector( 32-1 downto 0 );
+  signal reint1_output_port_net : std_logic_vector( 32-1 downto 0 );
 begin
   txctr_del2_q_net <= out_reg;
   tengbe_test_gbe0_txctr_user_data_in <= cast_gw_dout_net;
@@ -602,12 +602,12 @@ entity tengbe_test_txctr_ed is
   );
 end tengbe_test_txctr_ed;
 architecture structural of tengbe_test_txctr_ed is 
-  signal delay_q_net : std_logic_vector( 1-1 downto 0 );
-  signal ce_net : std_logic;
-  signal inverter_op_net : std_logic_vector( 1-1 downto 0 );
-  signal clk_net : std_logic;
-  signal txctr_and_y_net : std_logic_vector( 1-1 downto 0 );
   signal edge_op_y_net : std_logic_vector( 1-1 downto 0 );
+  signal txctr_and_y_net : std_logic_vector( 1-1 downto 0 );
+  signal clk_net : std_logic;
+  signal ce_net : std_logic;
+  signal delay_q_net : std_logic_vector( 1-1 downto 0 );
+  signal inverter_op_net : std_logic_vector( 1-1 downto 0 );
 begin
   out_x0 <= edge_op_y_net;
   txctr_and_y_net <= in_x0;
@@ -660,12 +660,12 @@ entity tengbe_test_txfullctr is
   );
 end tengbe_test_txfullctr;
 architecture structural of tengbe_test_txfullctr is 
-  signal ce_net : std_logic;
   signal io_delay_q_net : std_logic_vector( 32-1 downto 0 );
   signal reint1_output_port_net : std_logic_vector( 32-1 downto 0 );
   signal txfullctr_del2_q_net : std_logic_vector( 32-1 downto 0 );
   signal cast_gw_dout_net : std_logic_vector( 32-1 downto 0 );
   signal clk_net : std_logic;
+  signal ce_net : std_logic;
   signal assert_reg_dout_net : std_logic_vector( 32-1 downto 0 );
 begin
   txfullctr_del2_q_net <= out_reg;
@@ -733,13 +733,13 @@ entity tengbe_test_txofctr is
   );
 end tengbe_test_txofctr;
 architecture structural of tengbe_test_txofctr is 
-  signal assert_reg_dout_net : std_logic_vector( 32-1 downto 0 );
   signal txofctr_del2_q_net : std_logic_vector( 32-1 downto 0 );
+  signal cast_gw_dout_net : std_logic_vector( 32-1 downto 0 );
+  signal clk_net : std_logic;
+  signal ce_net : std_logic;
   signal io_delay_q_net : std_logic_vector( 32-1 downto 0 );
   signal reint1_output_port_net : std_logic_vector( 32-1 downto 0 );
-  signal clk_net : std_logic;
-  signal cast_gw_dout_net : std_logic_vector( 32-1 downto 0 );
-  signal ce_net : std_logic;
+  signal assert_reg_dout_net : std_logic_vector( 32-1 downto 0 );
 begin
   txofctr_del2_q_net <= out_reg;
   tengbe_test_gbe0_txofctr_user_data_in <= cast_gw_dout_net;
@@ -806,13 +806,13 @@ entity tengbe_test_txvldctr is
   );
 end tengbe_test_txvldctr;
 architecture structural of tengbe_test_txvldctr is 
-  signal assert_reg_dout_net : std_logic_vector( 32-1 downto 0 );
+  signal txvldctr_del2_q_net : std_logic_vector( 32-1 downto 0 );
   signal cast_gw_dout_net : std_logic_vector( 32-1 downto 0 );
   signal clk_net : std_logic;
   signal ce_net : std_logic;
-  signal txvldctr_del2_q_net : std_logic_vector( 32-1 downto 0 );
   signal io_delay_q_net : std_logic_vector( 32-1 downto 0 );
   signal reint1_output_port_net : std_logic_vector( 32-1 downto 0 );
+  signal assert_reg_dout_net : std_logic_vector( 32-1 downto 0 );
 begin
   txvldctr_del2_q_net <= out_reg;
   tengbe_test_gbe0_txvldctr_user_data_in <= cast_gw_dout_net;
@@ -910,72 +910,72 @@ entity tengbe_test_gbe0 is
   );
 end tengbe_test_gbe0;
 architecture structural of tengbe_test_gbe0 is 
-  signal cast_gw_dout_net : std_logic_vector( 32-1 downto 0 );
+  signal rxofctr_ctr_op_net : std_logic_vector( 32-1 downto 0 );
+  signal rxofctr_del1_q_net : std_logic_vector( 1-1 downto 0 );
+  signal rxvldctr_ctr_op_net : std_logic_vector( 32-1 downto 0 );
+  signal rxvldctr_del1_q_net : std_logic_vector( 1-1 downto 0 );
+  signal slice_core_rst_y_net : std_logic_vector( 1-1 downto 0 );
+  signal delay3_q_net : std_logic_vector( 64-1 downto 0 );
+  signal mux1_y_net : std_logic_vector( 1-1 downto 0 );
+  signal reint1_output_port_net_x0 : std_logic_vector( 32-1 downto 0 );
+  signal reint1_output_port_net : std_logic_vector( 16-1 downto 0 );
+  signal mux2_y_net : std_logic_vector( 1-1 downto 0 );
   signal constant4_op_net : std_logic_vector( 1-1 downto 0 );
+  signal delay_q_net : std_logic_vector( 1-1 downto 0 );
+  signal slice_cnt_rst_y_net : std_logic_vector( 1-1 downto 0 );
+  signal tengbe_test_gbe0_led_up_net : std_logic_vector( 1-1 downto 0 );
+  signal convert_rst_dout_net : std_logic_vector( 1-1 downto 0 );
+  signal convert_rx_ack_dout_net : std_logic_vector( 1-1 downto 0 );
+  signal tengbe_test_gbe0_rx_bad_frame_net : std_logic_vector( 1-1 downto 0 );
+  signal tengbe_test_gbe0_rx_end_of_frame_net : std_logic_vector( 1-1 downto 0 );
+  signal tengbe_test_gbe0_rx_overrun_net : std_logic_vector( 1-1 downto 0 );
   signal convert_rx_overrun_ack_dout_net : std_logic_vector( 1-1 downto 0 );
   signal tengbe_test_gbe0_rx_valid_net : std_logic_vector( 1-1 downto 0 );
-  signal rxeofctr_ctr_op_net : std_logic_vector( 32-1 downto 0 );
-  signal rxeofctr_del1_q_net : std_logic_vector( 1-1 downto 0 );
-  signal txofctr_ctr_op_net : std_logic_vector( 32-1 downto 0 );
-  signal txofctr_del1_q_net : std_logic_vector( 1-1 downto 0 );
+  signal tengbe_test_gbe0_tx_afull_net : std_logic_vector( 1-1 downto 0 );
+  signal convert_tx_data_dout_net : std_logic_vector( 64-1 downto 0 );
+  signal convert_tx_dest_ip_dout_net : std_logic_vector( 32-1 downto 0 );
+  signal convert_tx_port_dout_net : std_logic_vector( 16-1 downto 0 );
+  signal convert_tx_end_of_frame_dout_net : std_logic_vector( 1-1 downto 0 );
+  signal tengbe_test_gbe0_tx_overflow_net : std_logic_vector( 1-1 downto 0 );
   signal convert_tx_valid_dout_net : std_logic_vector( 1-1 downto 0 );
+  signal cast_gw_dout_net : std_logic_vector( 32-1 downto 0 );
   signal cast_gw_dout_net_x5 : std_logic_vector( 32-1 downto 0 );
-  signal tengbe_test_gbe0_rx_overrun_net : std_logic_vector( 1-1 downto 0 );
-  signal rxctr_and_y_net : std_logic_vector( 1-1 downto 0 );
-  signal cast_gw_dout_net_x0 : std_logic_vector( 32-1 downto 0 );
+  signal cast_gw_dout_net_x6 : std_logic_vector( 32-1 downto 0 );
+  signal cast_gw_dout_net_x7 : std_logic_vector( 32-1 downto 0 );
   signal cast_gw_dout_net_x4 : std_logic_vector( 32-1 downto 0 );
-  signal txctr_del2_q_net : std_logic_vector( 32-1 downto 0 );
-  signal rxvldctr_del2_q_net : std_logic_vector( 32-1 downto 0 );
-  signal rxbadctr_del2_q_net : std_logic_vector( 32-1 downto 0 );
+  signal cast_gw_dout_net_x0 : std_logic_vector( 32-1 downto 0 );
+  signal cast_gw_dout_net_x1 : std_logic_vector( 32-1 downto 0 );
   signal cast_gw_dout_net_x2 : std_logic_vector( 32-1 downto 0 );
-  signal txfullctr_ctr_op_net : std_logic_vector( 32-1 downto 0 );
-  signal txfullctr_del1_q_net : std_logic_vector( 1-1 downto 0 );
-  signal convert_rx_ack_dout_net : std_logic_vector( 1-1 downto 0 );
-  signal txvldctr_ctr_op_net : std_logic_vector( 32-1 downto 0 );
+  signal cast_gw_dout_net_x3 : std_logic_vector( 32-1 downto 0 );
+  signal clk_net : std_logic;
+  signal ce_net : std_logic;
+  signal rxbadctr_del2_q_net : std_logic_vector( 32-1 downto 0 );
+  signal rxctr_del2_q_net : std_logic_vector( 32-1 downto 0 );
+  signal edge_op_y_net_x0 : std_logic_vector( 1-1 downto 0 );
+  signal rxctr_and_y_net : std_logic_vector( 1-1 downto 0 );
+  signal rxeofctr_del2_q_net : std_logic_vector( 32-1 downto 0 );
+  signal rxofctr_del2_q_net : std_logic_vector( 32-1 downto 0 );
+  signal rxvldctr_del2_q_net : std_logic_vector( 32-1 downto 0 );
+  signal txctr_del2_q_net : std_logic_vector( 32-1 downto 0 );
+  signal edge_op_y_net : std_logic_vector( 1-1 downto 0 );
+  signal txctr_and_y_net : std_logic_vector( 1-1 downto 0 );
+  signal txfullctr_del2_q_net : std_logic_vector( 32-1 downto 0 );
+  signal txofctr_del2_q_net : std_logic_vector( 32-1 downto 0 );
+  signal txvldctr_del2_q_net : std_logic_vector( 32-1 downto 0 );
   signal rxbadctr_ctr_op_net : std_logic_vector( 32-1 downto 0 );
   signal rxbadctr_del1_q_net : std_logic_vector( 1-1 downto 0 );
   signal rxctr_ctr_op_net : std_logic_vector( 32-1 downto 0 );
   signal rxctr_del1_q_net : std_logic_vector( 1-1 downto 0 );
-  signal rxofctr_del2_q_net : std_logic_vector( 32-1 downto 0 );
-  signal tengbe_test_gbe0_tx_overflow_net : std_logic_vector( 1-1 downto 0 );
-  signal rxvldctr_ctr_op_net : std_logic_vector( 32-1 downto 0 );
-  signal rxvldctr_del1_q_net : std_logic_vector( 1-1 downto 0 );
-  signal tengbe_test_gbe0_tx_afull_net : std_logic_vector( 1-1 downto 0 );
-  signal clk_net : std_logic;
-  signal rxeofctr_del2_q_net : std_logic_vector( 32-1 downto 0 );
-  signal delay3_q_net : std_logic_vector( 64-1 downto 0 );
-  signal tengbe_test_gbe0_rx_bad_frame_net : std_logic_vector( 1-1 downto 0 );
-  signal edge_op_y_net : std_logic_vector( 1-1 downto 0 );
-  signal txvldctr_del1_q_net : std_logic_vector( 1-1 downto 0 );
-  signal cast_gw_dout_net_x6 : std_logic_vector( 32-1 downto 0 );
-  signal txofctr_del2_q_net : std_logic_vector( 32-1 downto 0 );
-  signal reint1_output_port_net_x0 : std_logic_vector( 32-1 downto 0 );
-  signal mux2_y_net : std_logic_vector( 1-1 downto 0 );
-  signal convert_tx_port_dout_net : std_logic_vector( 16-1 downto 0 );
-  signal tengbe_test_gbe0_rx_end_of_frame_net : std_logic_vector( 1-1 downto 0 );
-  signal delay_q_net : std_logic_vector( 1-1 downto 0 );
-  signal convert_rst_dout_net : std_logic_vector( 1-1 downto 0 );
-  signal edge_op_y_net_x0 : std_logic_vector( 1-1 downto 0 );
-  signal convert_tx_data_dout_net : std_logic_vector( 64-1 downto 0 );
-  signal reint1_output_port_net : std_logic_vector( 16-1 downto 0 );
-  signal ce_net : std_logic;
-  signal txctr_and_y_net : std_logic_vector( 1-1 downto 0 );
-  signal tengbe_test_gbe0_led_up_net : std_logic_vector( 1-1 downto 0 );
-  signal convert_tx_end_of_frame_dout_net : std_logic_vector( 1-1 downto 0 );
-  signal slice_core_rst_y_net : std_logic_vector( 1-1 downto 0 );
-  signal txfullctr_del2_q_net : std_logic_vector( 32-1 downto 0 );
-  signal txvldctr_del2_q_net : std_logic_vector( 32-1 downto 0 );
-  signal slice_cnt_rst_y_net : std_logic_vector( 1-1 downto 0 );
-  signal cast_gw_dout_net_x3 : std_logic_vector( 32-1 downto 0 );
-  signal cast_gw_dout_net_x7 : std_logic_vector( 32-1 downto 0 );
-  signal convert_tx_dest_ip_dout_net : std_logic_vector( 32-1 downto 0 );
-  signal rxofctr_ctr_op_net : std_logic_vector( 32-1 downto 0 );
-  signal rxofctr_del1_q_net : std_logic_vector( 1-1 downto 0 );
-  signal rxctr_del2_q_net : std_logic_vector( 32-1 downto 0 );
+  signal rxeofctr_ctr_op_net : std_logic_vector( 32-1 downto 0 );
+  signal rxeofctr_del1_q_net : std_logic_vector( 1-1 downto 0 );
   signal txctr_ctr_op_net : std_logic_vector( 32-1 downto 0 );
   signal txctr_del1_q_net : std_logic_vector( 1-1 downto 0 );
-  signal mux1_y_net : std_logic_vector( 1-1 downto 0 );
-  signal cast_gw_dout_net_x1 : std_logic_vector( 32-1 downto 0 );
+  signal txfullctr_ctr_op_net : std_logic_vector( 32-1 downto 0 );
+  signal txfullctr_del1_q_net : std_logic_vector( 1-1 downto 0 );
+  signal txofctr_ctr_op_net : std_logic_vector( 32-1 downto 0 );
+  signal txofctr_del1_q_net : std_logic_vector( 1-1 downto 0 );
+  signal txvldctr_ctr_op_net : std_logic_vector( 32-1 downto 0 );
+  signal txvldctr_del1_q_net : std_logic_vector( 1-1 downto 0 );
 begin
   slice_core_rst_y_net <= rst;
   delay3_q_net <= tx_data;
@@ -1515,12 +1515,12 @@ entity tengbe_test_gbe0_linkup is
   );
 end tengbe_test_gbe0_linkup;
 architecture structural of tengbe_test_gbe0_linkup is 
+  signal tengbe_test_gbe0_led_up_net : std_logic_vector( 1-1 downto 0 );
   signal cast_gw_dout_net : std_logic_vector( 32-1 downto 0 );
+  signal clk_net : std_logic;
   signal ce_net : std_logic;
   signal io_delay_q_net : std_logic_vector( 1-1 downto 0 );
   signal reint1_output_port_net : std_logic_vector( 1-1 downto 0 );
-  signal tengbe_test_gbe0_led_up_net : std_logic_vector( 1-1 downto 0 );
-  signal clk_net : std_logic;
   signal assert_reg_dout_net : std_logic_vector( 1-1 downto 0 );
 begin
   tengbe_test_gbe0_led_up_net <= out_reg;
@@ -1588,13 +1588,13 @@ entity tengbe_test_gbe0_tx_cnt is
   );
 end tengbe_test_gbe0_tx_cnt;
 architecture structural of tengbe_test_gbe0_tx_cnt is 
-  signal ce_net : std_logic;
-  signal assert_reg_dout_net : std_logic_vector( 32-1 downto 0 );
-  signal cast_gw_dout_net : std_logic_vector( 32-1 downto 0 );
   signal counter2_op_net : std_logic_vector( 32-1 downto 0 );
+  signal cast_gw_dout_net : std_logic_vector( 32-1 downto 0 );
   signal clk_net : std_logic;
+  signal ce_net : std_logic;
   signal io_delay_q_net : std_logic_vector( 32-1 downto 0 );
   signal reint1_output_port_net : std_logic_vector( 32-1 downto 0 );
+  signal assert_reg_dout_net : std_logic_vector( 32-1 downto 0 );
 begin
   counter2_op_net <= out_reg;
   tengbe_test_gbe0_tx_cnt_user_data_in <= cast_gw_dout_net;
@@ -1661,8 +1661,8 @@ entity tengbe_test_led0_gbe0_pulse_tx is
   );
 end tengbe_test_led0_gbe0_pulse_tx;
 architecture structural of tengbe_test_led0_gbe0_pulse_tx is 
-  signal convert_dout_net : std_logic_vector( 1-1 downto 0 );
   signal spulse_y_net : std_logic_vector( 1-1 downto 0 );
+  signal convert_dout_net : std_logic_vector( 1-1 downto 0 );
   signal clk_net : std_logic;
   signal ce_net : std_logic;
 begin
@@ -1707,8 +1707,8 @@ entity tengbe_test_led1_gbe0_up is
 end tengbe_test_led1_gbe0_up;
 architecture structural of tengbe_test_led1_gbe0_up is 
   signal tengbe_test_gbe0_led_up_net : std_logic_vector( 1-1 downto 0 );
-  signal clk_net : std_logic;
   signal convert_dout_net : std_logic_vector( 1-1 downto 0 );
+  signal clk_net : std_logic;
   signal ce_net : std_logic;
 begin
   tengbe_test_gbe0_led_up_net <= gpio_out;
@@ -1749,10 +1749,10 @@ entity tengbe_test_enable is
   );
 end tengbe_test_enable;
 architecture structural of tengbe_test_enable is 
-  signal io_delay_q_net : std_logic_vector( 32-1 downto 0 );
-  signal slice_reg_y_net : std_logic_vector( 32-1 downto 0 );
   signal reint1_output_port_net : std_logic_vector( 32-1 downto 0 );
   signal tengbe_test_pkt_sim_enable_user_data_out_net : std_logic_vector( 32-1 downto 0 );
+  signal io_delay_q_net : std_logic_vector( 32-1 downto 0 );
+  signal slice_reg_y_net : std_logic_vector( 32-1 downto 0 );
 begin
   in_reg <= reint1_output_port_net;
   tengbe_test_pkt_sim_enable_user_data_out_net <= tengbe_test_pkt_sim_enable_user_data_out;
@@ -1798,12 +1798,12 @@ entity tengbe_test_negedge is
   );
 end tengbe_test_negedge;
 architecture structural of tengbe_test_negedge is 
-  signal inverter_op_net : std_logic_vector( 1-1 downto 0 );
+  signal edge_op_y_net : std_logic_vector( 1-1 downto 0 );
+  signal relational_op_net : std_logic_vector( 1-1 downto 0 );
+  signal clk_net : std_logic;
   signal ce_net : std_logic;
   signal delay_q_net : std_logic_vector( 1-1 downto 0 );
-  signal relational_op_net : std_logic_vector( 1-1 downto 0 );
-  signal edge_op_y_net : std_logic_vector( 1-1 downto 0 );
-  signal clk_net : std_logic;
+  signal inverter_op_net : std_logic_vector( 1-1 downto 0 );
 begin
   out_x0 <= edge_op_y_net;
   relational_op_net <= in_x0;
@@ -1854,9 +1854,9 @@ entity tengbe_test_payload_len is
   );
 end tengbe_test_payload_len;
 architecture structural of tengbe_test_payload_len is 
+  signal reint1_output_port_net : std_logic_vector( 32-1 downto 0 );
   signal tengbe_test_pkt_sim_payload_len_user_data_out_net : std_logic_vector( 32-1 downto 0 );
   signal io_delay_q_net : std_logic_vector( 32-1 downto 0 );
-  signal reint1_output_port_net : std_logic_vector( 32-1 downto 0 );
   signal slice_reg_y_net : std_logic_vector( 32-1 downto 0 );
 begin
   in_reg <= reint1_output_port_net;
@@ -1901,10 +1901,10 @@ entity tengbe_test_period is
   );
 end tengbe_test_period;
 architecture structural of tengbe_test_period is 
-  signal tengbe_test_pkt_sim_period_user_data_out_net : std_logic_vector( 32-1 downto 0 );
   signal reint1_output_port_net : std_logic_vector( 32-1 downto 0 );
-  signal slice_reg_y_net : std_logic_vector( 32-1 downto 0 );
+  signal tengbe_test_pkt_sim_period_user_data_out_net : std_logic_vector( 32-1 downto 0 );
   signal io_delay_q_net : std_logic_vector( 32-1 downto 0 );
+  signal slice_reg_y_net : std_logic_vector( 32-1 downto 0 );
 begin
   in_reg <= reint1_output_port_net;
   tengbe_test_pkt_sim_period_user_data_out_net <= tengbe_test_pkt_sim_period_user_data_out;
@@ -1950,12 +1950,12 @@ entity tengbe_test_posedge is
   );
 end tengbe_test_posedge;
 architecture structural of tengbe_test_posedge is 
+  signal edge_op_y_net : std_logic_vector( 1-1 downto 0 );
+  signal relational1_op_net : std_logic_vector( 1-1 downto 0 );
   signal clk_net : std_logic;
   signal ce_net : std_logic;
   signal delay_q_net : std_logic_vector( 1-1 downto 0 );
-  signal relational1_op_net : std_logic_vector( 1-1 downto 0 );
   signal inverter_op_net : std_logic_vector( 1-1 downto 0 );
-  signal edge_op_y_net : std_logic_vector( 1-1 downto 0 );
 begin
   out_x0 <= edge_op_y_net;
   relational1_op_net <= in_x0;
@@ -2012,35 +2012,35 @@ entity tengbe_test_pkt_sim is
   );
 end tengbe_test_pkt_sim;
 architecture structural of tengbe_test_pkt_sim is 
-  signal constant1_op_net : std_logic_vector( 1-1 downto 0 );
-  signal convert_dout_net : std_logic_vector( 1-1 downto 0 );
-  signal delay_q_net : std_logic_vector( 1-1 downto 0 );
-  signal reint1_output_port_net_x1 : std_logic_vector( 32-1 downto 0 );
+  signal mux_y_net : std_logic_vector( 1-1 downto 0 );
+  signal delay3_q_net : std_logic_vector( 64-1 downto 0 );
+  signal mux1_y_net : std_logic_vector( 1-1 downto 0 );
   signal mux2_y_net : std_logic_vector( 1-1 downto 0 );
   signal tengbe_test_pkt_sim_enable_user_data_out_net : std_logic_vector( 32-1 downto 0 );
-  signal constant2_op_net : std_logic_vector( 1-1 downto 0 );
-  signal delay3_q_net : std_logic_vector( 64-1 downto 0 );
+  signal tengbe_test_pkt_sim_payload_len_user_data_out_net : std_logic_vector( 32-1 downto 0 );
+  signal tengbe_test_pkt_sim_period_user_data_out_net : std_logic_vector( 32-1 downto 0 );
   signal clk_net : std_logic;
-  signal constant_op_net : std_logic_vector( 1-1 downto 0 );
+  signal ce_net : std_logic;
   signal reint1_output_port_net : std_logic_vector( 32-1 downto 0 );
+  signal edge_op_y_net_x0 : std_logic_vector( 1-1 downto 0 );
+  signal relational_op_net : std_logic_vector( 1-1 downto 0 );
   signal reint1_output_port_net_x0 : std_logic_vector( 32-1 downto 0 );
-  signal counter2_op_net : std_logic_vector( 64-1 downto 0 );
+  signal reint1_output_port_net_x1 : std_logic_vector( 32-1 downto 0 );
+  signal edge_op_y_net : std_logic_vector( 1-1 downto 0 );
+  signal relational1_op_net : std_logic_vector( 1-1 downto 0 );
+  signal constant_op_net : std_logic_vector( 1-1 downto 0 );
+  signal constant1_op_net : std_logic_vector( 1-1 downto 0 );
+  signal constant2_op_net : std_logic_vector( 1-1 downto 0 );
+  signal convert_dout_net : std_logic_vector( 1-1 downto 0 );
+  signal delay_q_net : std_logic_vector( 1-1 downto 0 );
   signal convert1_dout_net : std_logic_vector( 1-1 downto 0 );
   signal enabler_y_net : std_logic_vector( 1-1 downto 0 );
   signal counter_op_net : std_logic_vector( 32-1 downto 0 );
-  signal edge_op_y_net_x0 : std_logic_vector( 1-1 downto 0 );
-  signal relational_op_net : std_logic_vector( 1-1 downto 0 );
   signal counter1_op_net : std_logic_vector( 32-1 downto 0 );
+  signal counter2_op_net : std_logic_vector( 64-1 downto 0 );
   signal inverter_op_net : std_logic_vector( 1-1 downto 0 );
   signal delay2_q_net : std_logic_vector( 1-1 downto 0 );
-  signal tengbe_test_pkt_sim_payload_len_user_data_out_net : std_logic_vector( 32-1 downto 0 );
-  signal mux1_y_net : std_logic_vector( 1-1 downto 0 );
-  signal mux_y_net : std_logic_vector( 1-1 downto 0 );
   signal delay1_q_net : std_logic_vector( 1-1 downto 0 );
-  signal edge_op_y_net : std_logic_vector( 1-1 downto 0 );
-  signal relational1_op_net : std_logic_vector( 1-1 downto 0 );
-  signal ce_net : std_logic;
-  signal tengbe_test_pkt_sim_period_user_data_out_net : std_logic_vector( 32-1 downto 0 );
 begin
   d_out <= delay3_q_net;
   valid <= mux1_y_net;
@@ -2297,9 +2297,9 @@ entity tengbe_test_rst is
   );
 end tengbe_test_rst;
 architecture structural of tengbe_test_rst is 
-  signal tengbe_test_rst_user_data_out_net : std_logic_vector( 32-1 downto 0 );
-  signal slice_cnt_rst_y_net : std_logic_vector( 1-1 downto 0 );
   signal slice_core_rst_y_net : std_logic_vector( 1-1 downto 0 );
+  signal slice_cnt_rst_y_net : std_logic_vector( 1-1 downto 0 );
+  signal tengbe_test_rst_user_data_out_net : std_logic_vector( 32-1 downto 0 );
   signal io_delay_q_net : std_logic_vector( 32-1 downto 0 );
 begin
   in_core_rst <= slice_core_rst_y_net;
@@ -2350,13 +2350,13 @@ entity tengbe_test_buscreate is
   );
 end tengbe_test_buscreate;
 architecture structural of tengbe_test_buscreate is 
+  signal concatenate_y_net : std_logic_vector( 32-1 downto 0 );
+  signal assert_data_dout_net : std_logic_vector( 30-1 downto 0 );
+  signal assert_valid_dout_net : std_logic_vector( 1-1 downto 0 );
   signal assert_eof_dout_net : std_logic_vector( 1-1 downto 0 );
   signal reinterpret1_output_port_net : std_logic_vector( 30-1 downto 0 );
-  signal concatenate_y_net : std_logic_vector( 32-1 downto 0 );
   signal reinterpret2_output_port_net : std_logic_vector( 1-1 downto 0 );
   signal reinterpret3_output_port_net : std_logic_vector( 1-1 downto 0 );
-  signal assert_valid_dout_net : std_logic_vector( 1-1 downto 0 );
-  signal assert_data_dout_net : std_logic_vector( 30-1 downto 0 );
 begin
   bus_out <= concatenate_y_net;
   assert_data_dout_net <= in1;
@@ -2413,10 +2413,10 @@ end tengbe_test_edge_detect;
 architecture structural of tengbe_test_edge_detect is 
   signal edge_op_y_net : std_logic_vector( 1-1 downto 0 );
   signal slice3_y_net : std_logic_vector( 1-1 downto 0 );
-  signal ce_net : std_logic;
-  signal inverter_op_net : std_logic_vector( 1-1 downto 0 );
   signal clk_net : std_logic;
+  signal ce_net : std_logic;
   signal delay_q_net : std_logic_vector( 1-1 downto 0 );
+  signal inverter_op_net : std_logic_vector( 1-1 downto 0 );
 begin
   out_x0 <= edge_op_y_net;
   slice3_y_net <= in_x0;
@@ -2476,32 +2476,32 @@ entity tengbe_test_add_gen is
   );
 end tengbe_test_add_gen;
 architecture structural of tengbe_test_add_gen is 
-  signal edge_op_y_net_x0 : std_logic_vector( 1-1 downto 0 );
-  signal slice3_y_net : std_logic_vector( 1-1 downto 0 );
-  signal logical4_y_net : std_logic_vector( 1-1 downto 0 );
-  signal concat_y_net : std_logic_vector( 32-1 downto 0 );
-  signal clk_net : std_logic;
-  signal logical1_y_net : std_logic_vector( 1-1 downto 0 );
-  signal data_choice_y_net : std_logic_vector( 32-1 downto 0 );
-  signal delay_q_net : std_logic_vector( 1-1 downto 0 );
-  signal delay4_q_net : std_logic_vector( 1-1 downto 0 );
-  signal slice2_y_net : std_logic_vector( 12-1 downto 0 );
-  signal delay3_q_net : std_logic_vector( 1-1 downto 0 );
-  signal we_choice_y_net : std_logic_vector( 1-1 downto 0 );
-  signal ce_net : std_logic;
   signal inverter1_op_net : std_logic_vector( 1-1 downto 0 );
-  signal logical6_y_net : std_logic_vector( 1-1 downto 0 );
-  signal inverter_op_net : std_logic_vector( 1-1 downto 0 );
-  signal delay1_q_net : std_logic_vector( 14-1 downto 0 );
-  signal edge_op_y_net : std_logic_vector( 1-1 downto 0 );
-  signal shift_op_net : std_logic_vector( 17-1 downto 0 );
+  signal logical1_y_net : std_logic_vector( 1-1 downto 0 );
+  signal logical4_y_net : std_logic_vector( 1-1 downto 0 );
   signal add_gen_op_net : std_logic_vector( 15-1 downto 0 );
+  signal slice2_y_net : std_logic_vector( 12-1 downto 0 );
+  signal delay6_q_net : std_logic_vector( 32-1 downto 0 );
+  signal logical6_y_net : std_logic_vector( 1-1 downto 0 );
+  signal concat_y_net : std_logic_vector( 32-1 downto 0 );
+  signal data_choice_y_net : std_logic_vector( 32-1 downto 0 );
+  signal we_choice_y_net : std_logic_vector( 1-1 downto 0 );
   signal register6_q_net : std_logic_vector( 1-1 downto 0 );
   signal never_op_net : std_logic_vector( 1-1 downto 0 );
-  signal slice1_y_net : std_logic_vector( 14-1 downto 0 );
-  signal delay6_q_net : std_logic_vector( 32-1 downto 0 );
+  signal edge_op_y_net : std_logic_vector( 1-1 downto 0 );
+  signal clk_net : std_logic;
+  signal ce_net : std_logic;
+  signal edge_op_y_net_x0 : std_logic_vector( 1-1 downto 0 );
+  signal slice3_y_net : std_logic_vector( 1-1 downto 0 );
+  signal shift_op_net : std_logic_vector( 17-1 downto 0 );
+  signal inverter_op_net : std_logic_vector( 1-1 downto 0 );
+  signal delay1_q_net : std_logic_vector( 14-1 downto 0 );
   signal convert_dout_net : std_logic_vector( 17-1 downto 0 );
   signal register5_q_net : std_logic_vector( 1-1 downto 0 );
+  signal delay_q_net : std_logic_vector( 1-1 downto 0 );
+  signal delay4_q_net : std_logic_vector( 1-1 downto 0 );
+  signal slice1_y_net : std_logic_vector( 14-1 downto 0 );
+  signal delay3_q_net : std_logic_vector( 1-1 downto 0 );
 begin
   add <= slice2_y_net;
   dout <= delay6_q_net;
@@ -2729,36 +2729,36 @@ entity tengbe_test_dram_munge is
   );
 end tengbe_test_dram_munge;
 architecture structural of tengbe_test_dram_munge is 
-  signal dram_op_net : std_logic_vector( 1-1 downto 0 );
-  signal relational1_op_net : std_logic_vector( 1-1 downto 0 );
+  signal data_choice_y_net : std_logic_vector( 32-1 downto 0 );
+  signal we_choice_y_net : std_logic_vector( 1-1 downto 0 );
+  signal cast_dout_net : std_logic_vector( 32-1 downto 0 );
+  signal mux1_y_net_x0 : std_logic_vector( 1-1 downto 0 );
+  signal edge_op_y_net : std_logic_vector( 1-1 downto 0 );
+  signal clk_net : std_logic;
+  signal ce_net : std_logic;
   signal concat_y_net : std_logic_vector( 80-1 downto 0 );
   signal constant_op_net : std_logic_vector( 8-1 downto 0 );
-  signal relational2_op_net : std_logic_vector( 1-1 downto 0 );
-  signal clk_net : std_logic;
-  signal con3_op_net : std_logic_vector( 2-1 downto 0 );
-  signal relational_op_net : std_logic_vector( 1-1 downto 0 );
-  signal we_choice_y_net : std_logic_vector( 1-1 downto 0 );
-  signal delay1_q_net : std_logic_vector( 1-1 downto 0 );
-  signal logical1_y_net : std_logic_vector( 1-1 downto 0 );
-  signal mux1_y_net : std_logic_vector( 80-1 downto 0 );
-  signal dout_count_op_net : std_logic_vector( 1-1 downto 0 );
-  signal con2_op_net : std_logic_vector( 2-1 downto 0 );
-  signal data_choice_y_net : std_logic_vector( 32-1 downto 0 );
-  signal ce_net : std_logic;
-  signal cast_dout_net : std_logic_vector( 32-1 downto 0 );
-  signal edge_op_y_net : std_logic_vector( 1-1 downto 0 );
-  signal mux1_y_net_x0 : std_logic_vector( 1-1 downto 0 );
-  signal delay_q_net : std_logic_vector( 1-1 downto 0 );
-  signal logical_y_net : std_logic_vector( 1-1 downto 0 );
-  signal concat1_y_net : std_logic_vector( 80-1 downto 0 );
-  signal register2_q_net : std_logic_vector( 32-1 downto 0 );
-  signal con1_op_net : std_logic_vector( 2-1 downto 0 );
-  signal relational3_op_net : std_logic_vector( 1-1 downto 0 );
   signal register_q_net : std_logic_vector( 32-1 downto 0 );
   signal register1_q_net : std_logic_vector( 32-1 downto 0 );
+  signal concat1_y_net : std_logic_vector( 80-1 downto 0 );
+  signal register2_q_net : std_logic_vector( 32-1 downto 0 );
+  signal register3_q_net : std_logic_vector( 32-1 downto 0 );
+  signal delay_q_net : std_logic_vector( 1-1 downto 0 );
+  signal logical_y_net : std_logic_vector( 1-1 downto 0 );
+  signal delay1_q_net : std_logic_vector( 1-1 downto 0 );
+  signal logical1_y_net : std_logic_vector( 1-1 downto 0 );
+  signal relational3_op_net : std_logic_vector( 1-1 downto 0 );
+  signal mux1_y_net : std_logic_vector( 80-1 downto 0 );
+  signal dout_count_op_net : std_logic_vector( 1-1 downto 0 );
+  signal relational_op_net : std_logic_vector( 1-1 downto 0 );
+  signal relational1_op_net : std_logic_vector( 1-1 downto 0 );
+  signal relational2_op_net : std_logic_vector( 1-1 downto 0 );
   signal input_count_op_net : std_logic_vector( 2-1 downto 0 );
   signal con0_op_net : std_logic_vector( 2-1 downto 0 );
-  signal register3_q_net : std_logic_vector( 32-1 downto 0 );
+  signal con1_op_net : std_logic_vector( 2-1 downto 0 );
+  signal con2_op_net : std_logic_vector( 2-1 downto 0 );
+  signal con3_op_net : std_logic_vector( 2-1 downto 0 );
+  signal dram_op_net : std_logic_vector( 1-1 downto 0 );
 begin
   dout <= data_choice_y_net;
   we_o <= we_choice_y_net;
@@ -3035,12 +3035,12 @@ entity tengbe_test_edge_detect_x0 is
   );
 end tengbe_test_edge_detect_x0;
 architecture structural of tengbe_test_edge_detect_x0 is 
-  signal clk_net : std_logic;
-  signal delay_q_net : std_logic_vector( 1-1 downto 0 );
-  signal delay1_q_net : std_logic_vector( 1-1 downto 0 );
-  signal ce_net : std_logic;
-  signal inverter_op_net : std_logic_vector( 1-1 downto 0 );
   signal edge_op_y_net : std_logic_vector( 1-1 downto 0 );
+  signal delay1_q_net : std_logic_vector( 1-1 downto 0 );
+  signal clk_net : std_logic;
+  signal ce_net : std_logic;
+  signal delay_q_net : std_logic_vector( 1-1 downto 0 );
+  signal inverter_op_net : std_logic_vector( 1-1 downto 0 );
 begin
   out_x0 <= edge_op_y_net;
   delay1_q_net <= in_x0;
@@ -3100,31 +3100,31 @@ entity tengbe_test_basic_ctrl is
   );
 end tengbe_test_basic_ctrl;
 architecture structural of tengbe_test_basic_ctrl is 
-  signal enable_y_net : std_logic_vector( 1-1 downto 0 );
+  signal data_choice_y_net : std_logic_vector( 32-1 downto 0 );
   signal we_choice_y_net : std_logic_vector( 1-1 downto 0 );
   signal register6_q_net : std_logic_vector( 1-1 downto 0 );
-  signal clk_net : std_logic;
-  signal register1_q_net : std_logic_vector( 1-1 downto 0 );
+  signal edge_op_y_net : std_logic_vector( 1-1 downto 0 );
   signal cast_dout_net : std_logic_vector( 32-1 downto 0 );
-  signal constant2_op_net : std_logic_vector( 1-1 downto 0 );
+  signal mux1_y_net : std_logic_vector( 1-1 downto 0 );
   signal mux2_y_net : std_logic_vector( 1-1 downto 0 );
-  signal constant1_op_net : std_logic_vector( 1-1 downto 0 );
-  signal never_op_net : std_logic_vector( 1-1 downto 0 );
   signal concatenate_y_net : std_logic_vector( 32-1 downto 0 );
+  signal never_op_net : std_logic_vector( 1-1 downto 0 );
+  signal clk_net : std_logic;
+  signal ce_net : std_logic;
+  signal mux1_y_net_x0 : std_logic_vector( 1-1 downto 0 );
+  signal delay1_q_net : std_logic_vector( 1-1 downto 0 );
+  signal constant_op_net : std_logic_vector( 1-1 downto 0 );
+  signal constant1_op_net : std_logic_vector( 1-1 downto 0 );
+  signal constant2_op_net : std_logic_vector( 1-1 downto 0 );
+  signal enable_y_net : std_logic_vector( 1-1 downto 0 );
   signal delay2_q_net : std_logic_vector( 1-1 downto 0 );
+  signal trig_src_y_net : std_logic_vector( 1-1 downto 0 );
+  signal delay3_q_net : std_logic_vector( 1-1 downto 0 );
+  signal valid_src_y_net : std_logic_vector( 1-1 downto 0 );
+  signal inverter_op_net : std_logic_vector( 1-1 downto 0 );
   signal logical_y_net : std_logic_vector( 1-1 downto 0 );
   signal mux2_y_net_x0 : std_logic_vector( 1-1 downto 0 );
-  signal delay1_q_net : std_logic_vector( 1-1 downto 0 );
-  signal ce_net : std_logic;
-  signal valid_src_y_net : std_logic_vector( 1-1 downto 0 );
-  signal data_choice_y_net : std_logic_vector( 32-1 downto 0 );
-  signal edge_op_y_net : std_logic_vector( 1-1 downto 0 );
-  signal trig_src_y_net : std_logic_vector( 1-1 downto 0 );
-  signal mux1_y_net : std_logic_vector( 1-1 downto 0 );
-  signal constant_op_net : std_logic_vector( 1-1 downto 0 );
-  signal delay3_q_net : std_logic_vector( 1-1 downto 0 );
-  signal inverter_op_net : std_logic_vector( 1-1 downto 0 );
-  signal mux1_y_net_x0 : std_logic_vector( 1-1 downto 0 );
+  signal register1_q_net : std_logic_vector( 1-1 downto 0 );
 begin
   dout <= data_choice_y_net;
   we_o <= we_choice_y_net;
@@ -3331,17 +3331,17 @@ entity tengbe_test_calc_add is
   );
 end tengbe_test_calc_add;
 architecture structural of tengbe_test_calc_add is 
-  signal convert_addr_dout_net : std_logic_vector( 12-1 downto 0 );
-  signal manipulate_op_net : std_logic_vector( 1-1 downto 0 );
+  signal mux_y_net : std_logic_vector( 12-1 downto 0 );
+  signal add_del_q_net : std_logic_vector( 12-1 downto 0 );
   signal clk_net : std_logic;
+  signal ce_net : std_logic;
   signal add_sub_s_net : std_logic_vector( 1-1 downto 0 );
   signal const_op_net : std_logic_vector( 1-1 downto 0 );
   signal lsw_y_net : std_logic_vector( 1-1 downto 0 );
-  signal ce_net : std_logic;
-  signal mux_y_net : std_logic_vector( 12-1 downto 0 );
-  signal add_del_q_net : std_logic_vector( 12-1 downto 0 );
   signal concat_y_net : std_logic_vector( 12-1 downto 0 );
   signal msw_y_net : std_logic_vector( 11-1 downto 0 );
+  signal convert_addr_dout_net : std_logic_vector( 12-1 downto 0 );
+  signal manipulate_op_net : std_logic_vector( 1-1 downto 0 );
 begin
   out_x0 <= mux_y_net;
   add_del_q_net <= in_x0;
@@ -3477,16 +3477,16 @@ entity tengbe_test_bram is
   );
 end tengbe_test_bram;
 architecture structural of tengbe_test_bram is 
-  signal convert_we_dout_net : std_logic_vector( 1-1 downto 0 );
-  signal we_del_q_net : std_logic_vector( 1-1 downto 0 );
-  signal mux_y_net : std_logic_vector( 12-1 downto 0 );
   signal add_del_q_net : std_logic_vector( 12-1 downto 0 );
   signal dat_del_q_net : std_logic_vector( 32-1 downto 0 );
+  signal we_del_q_net : std_logic_vector( 1-1 downto 0 );
   signal convert_addr_dout_net : std_logic_vector( 12-1 downto 0 );
-  signal reinterpret_out_output_port_net : std_logic_vector( 32-1 downto 0 );
-  signal clk_net : std_logic;
   signal convert_din1_dout_net : std_logic_vector( 32-1 downto 0 );
+  signal convert_we_dout_net : std_logic_vector( 1-1 downto 0 );
+  signal clk_net : std_logic;
   signal ce_net : std_logic;
+  signal mux_y_net : std_logic_vector( 12-1 downto 0 );
+  signal reinterpret_out_output_port_net : std_logic_vector( 32-1 downto 0 );
 begin
   add_del_q_net <= addr;
   dat_del_q_net <= data_in;
@@ -3584,10 +3584,10 @@ entity tengbe_test_ctrl is
   );
 end tengbe_test_ctrl;
 architecture structural of tengbe_test_ctrl is 
-  signal io_delay_q_net : std_logic_vector( 32-1 downto 0 );
-  signal tengbe_test_tx_snapshot_ss_ctrl_user_data_out_net : std_logic_vector( 32-1 downto 0 );
-  signal slice_reg_y_net : std_logic_vector( 32-1 downto 0 );
   signal reint1_output_port_net : std_logic_vector( 32-1 downto 0 );
+  signal tengbe_test_tx_snapshot_ss_ctrl_user_data_out_net : std_logic_vector( 32-1 downto 0 );
+  signal io_delay_q_net : std_logic_vector( 32-1 downto 0 );
+  signal slice_reg_y_net : std_logic_vector( 32-1 downto 0 );
 begin
   in_reg <= reint1_output_port_net;
   tengbe_test_tx_snapshot_ss_ctrl_user_data_out_net <= tengbe_test_tx_snapshot_ss_ctrl_user_data_out;
@@ -3634,15 +3634,15 @@ entity tengbe_test_ctrl_combine is
   );
 end tengbe_test_ctrl_combine;
 architecture structural of tengbe_test_ctrl_combine is 
+  signal concatenate_y_net : std_logic_vector( 32-1 downto 0 );
   signal reinterpret4_output_port_net_x0 : std_logic_vector( 28-1 downto 0 );
+  signal circ_or_y_net : std_logic_vector( 1-1 downto 0 );
+  signal reinterpret2_output_port_net : std_logic_vector( 2-1 downto 0 );
+  signal arm_or_y_net : std_logic_vector( 1-1 downto 0 );
   signal reinterpret1_output_port_net : std_logic_vector( 28-1 downto 0 );
   signal reinterpret2_output_port_net_x0 : std_logic_vector( 1-1 downto 0 );
   signal reinterpret3_output_port_net : std_logic_vector( 2-1 downto 0 );
   signal reinterpret4_output_port_net : std_logic_vector( 1-1 downto 0 );
-  signal concatenate_y_net : std_logic_vector( 32-1 downto 0 );
-  signal circ_or_y_net : std_logic_vector( 1-1 downto 0 );
-  signal arm_or_y_net : std_logic_vector( 1-1 downto 0 );
-  signal reinterpret2_output_port_net : std_logic_vector( 2-1 downto 0 );
 begin
   bus_out <= concatenate_y_net;
   reinterpret4_output_port_net_x0 <= in1;
@@ -3708,13 +3708,13 @@ entity tengbe_test_ctrl_split is
   );
 end tengbe_test_ctrl_split;
 architecture structural of tengbe_test_ctrl_split is 
-  signal slice4_y_net : std_logic_vector( 28-1 downto 0 );
-  signal slice3_y_net : std_logic_vector( 1-1 downto 0 );
-  signal slice2_y_net : std_logic_vector( 2-1 downto 0 );
   signal reinterpret4_output_port_net : std_logic_vector( 28-1 downto 0 );
+  signal slice3_y_net : std_logic_vector( 1-1 downto 0 );
   signal reinterpret2_output_port_net : std_logic_vector( 2-1 downto 0 );
   signal slice1_y_net : std_logic_vector( 1-1 downto 0 );
   signal reint1_output_port_net : std_logic_vector( 32-1 downto 0 );
+  signal slice2_y_net : std_logic_vector( 2-1 downto 0 );
+  signal slice4_y_net : std_logic_vector( 28-1 downto 0 );
 begin
   msb_out4 <= reinterpret4_output_port_net;
   out3 <= slice3_y_net;
@@ -3796,13 +3796,13 @@ entity tengbe_test_status is
   );
 end tengbe_test_status;
 architecture structural of tengbe_test_status is 
-  signal cast_gw_dout_net : std_logic_vector( 32-1 downto 0 );
-  signal ce_net : std_logic;
-  signal clk_net : std_logic;
-  signal assert_reg_dout_net : std_logic_vector( 32-1 downto 0 );
   signal concat_y_net : std_logic_vector( 32-1 downto 0 );
+  signal cast_gw_dout_net : std_logic_vector( 32-1 downto 0 );
+  signal clk_net : std_logic;
+  signal ce_net : std_logic;
   signal io_delay_q_net : std_logic_vector( 32-1 downto 0 );
   signal reint1_output_port_net : std_logic_vector( 32-1 downto 0 );
+  signal assert_reg_dout_net : std_logic_vector( 32-1 downto 0 );
 begin
   concat_y_net <= out_reg;
   tengbe_test_tx_snapshot_ss_status_user_data_in <= cast_gw_dout_net;
@@ -3878,40 +3878,40 @@ entity tengbe_test_ss is
   );
 end tengbe_test_ss;
 architecture structural of tengbe_test_ss is 
-  signal cast_dout_net : std_logic_vector( 32-1 downto 0 );
-  signal concatenate_y_net_x0 : std_logic_vector( 32-1 downto 0 );
-  signal ce_net : std_logic;
-  signal add_del_q_net : std_logic_vector( 12-1 downto 0 );
-  signal dat_del_q_net : std_logic_vector( 32-1 downto 0 );
-  signal reint1_output_port_net : std_logic_vector( 32-1 downto 0 );
   signal arm_or_y_net : std_logic_vector( 1-1 downto 0 );
   signal concatenate_y_net : std_logic_vector( 32-1 downto 0 );
-  signal clk_net : std_logic;
-  signal never_op_net : std_logic_vector( 1-1 downto 0 );
-  signal edge_op_y_net_x0 : std_logic_vector( 1-1 downto 0 );
-  signal convert_we_dout_net : std_logic_vector( 1-1 downto 0 );
-  signal convert_din1_dout_net : std_logic_vector( 32-1 downto 0 );
-  signal logical6_y_net : std_logic_vector( 1-1 downto 0 );
-  signal slice3_y_net : std_logic_vector( 1-1 downto 0 );
-  signal slice1_y_net : std_logic_vector( 1-1 downto 0 );
-  signal slice2_y_net : std_logic_vector( 12-1 downto 0 );
-  signal cast_gw_dout_net : std_logic_vector( 32-1 downto 0 );
-  signal we_del_q_net : std_logic_vector( 1-1 downto 0 );
-  signal we_choice_y_net : std_logic_vector( 1-1 downto 0 );
-  signal arm_op_net : std_logic_vector( 1-1 downto 0 );
-  signal reinterpret4_output_port_net : std_logic_vector( 28-1 downto 0 );
-  signal circ_or_y_net : std_logic_vector( 1-1 downto 0 );
-  signal convert_addr_dout_net : std_logic_vector( 12-1 downto 0 );
-  signal reinterpret2_output_port_net : std_logic_vector( 2-1 downto 0 );
   signal mux1_y_net : std_logic_vector( 1-1 downto 0 );
-  signal ri_output_port_net : std_logic_vector( 32-1 downto 0 );
-  signal circ_op_net : std_logic_vector( 1-1 downto 0 );
-  signal data_choice_y_net : std_logic_vector( 32-1 downto 0 );
-  signal register6_q_net : std_logic_vector( 1-1 downto 0 );
+  signal mux2_y_net : std_logic_vector( 1-1 downto 0 );
+  signal we_choice_y_net : std_logic_vector( 1-1 downto 0 );
+  signal logical6_y_net : std_logic_vector( 1-1 downto 0 );
+  signal convert_addr_dout_net : std_logic_vector( 12-1 downto 0 );
+  signal convert_din1_dout_net : std_logic_vector( 32-1 downto 0 );
+  signal convert_we_dout_net : std_logic_vector( 1-1 downto 0 );
+  signal tengbe_test_tx_snapshot_ss_ctrl_user_data_out_net : std_logic_vector( 32-1 downto 0 );
+  signal cast_gw_dout_net : std_logic_vector( 32-1 downto 0 );
+  signal clk_net : std_logic;
+  signal ce_net : std_logic;
+  signal slice2_y_net : std_logic_vector( 12-1 downto 0 );
   signal delay6_q_net : std_logic_vector( 32-1 downto 0 );
   signal concat_y_net : std_logic_vector( 32-1 downto 0 );
-  signal tengbe_test_tx_snapshot_ss_ctrl_user_data_out_net : std_logic_vector( 32-1 downto 0 );
-  signal mux2_y_net : std_logic_vector( 1-1 downto 0 );
+  signal data_choice_y_net : std_logic_vector( 32-1 downto 0 );
+  signal register6_q_net : std_logic_vector( 1-1 downto 0 );
+  signal never_op_net : std_logic_vector( 1-1 downto 0 );
+  signal edge_op_y_net_x0 : std_logic_vector( 1-1 downto 0 );
+  signal cast_dout_net : std_logic_vector( 32-1 downto 0 );
+  signal concatenate_y_net_x0 : std_logic_vector( 32-1 downto 0 );
+  signal add_del_q_net : std_logic_vector( 12-1 downto 0 );
+  signal dat_del_q_net : std_logic_vector( 32-1 downto 0 );
+  signal we_del_q_net : std_logic_vector( 1-1 downto 0 );
+  signal reint1_output_port_net : std_logic_vector( 32-1 downto 0 );
+  signal reinterpret4_output_port_net : std_logic_vector( 28-1 downto 0 );
+  signal circ_or_y_net : std_logic_vector( 1-1 downto 0 );
+  signal reinterpret2_output_port_net : std_logic_vector( 2-1 downto 0 );
+  signal slice3_y_net : std_logic_vector( 1-1 downto 0 );
+  signal slice1_y_net : std_logic_vector( 1-1 downto 0 );
+  signal arm_op_net : std_logic_vector( 1-1 downto 0 );
+  signal ri_output_port_net : std_logic_vector( 32-1 downto 0 );
+  signal circ_op_net : std_logic_vector( 1-1 downto 0 );
 begin
   arm_out <= arm_or_y_net;
   concatenate_y_net <= din;
@@ -4109,23 +4109,23 @@ entity tengbe_test_tx_snapshot is
   );
 end tengbe_test_tx_snapshot;
 architecture structural of tengbe_test_tx_snapshot is 
-  signal we_choice_y_net : std_logic_vector( 1-1 downto 0 );
-  signal mux2_y_net : std_logic_vector( 1-1 downto 0 );
-  signal slice7_y_net : std_logic_vector( 30-1 downto 0 );
-  signal cast_gw_dout_net : std_logic_vector( 32-1 downto 0 );
-  signal concatenate_y_net : std_logic_vector( 32-1 downto 0 );
-  signal assert_data_dout_net : std_logic_vector( 30-1 downto 0 );
-  signal mux1_y_net : std_logic_vector( 1-1 downto 0 );
-  signal logical6_y_net : std_logic_vector( 1-1 downto 0 );
-  signal clk_net : std_logic;
   signal arm_or_y_net : std_logic_vector( 1-1 downto 0 );
-  signal assert_valid_dout_net : std_logic_vector( 1-1 downto 0 );
-  signal assert_eof_dout_net : std_logic_vector( 1-1 downto 0 );
+  signal slice7_y_net : std_logic_vector( 30-1 downto 0 );
+  signal mux1_y_net : std_logic_vector( 1-1 downto 0 );
+  signal mux2_y_net : std_logic_vector( 1-1 downto 0 );
+  signal convert_addr_dout_net : std_logic_vector( 12-1 downto 0 );
   signal convert_din1_dout_net : std_logic_vector( 32-1 downto 0 );
   signal convert_we_dout_net : std_logic_vector( 1-1 downto 0 );
-  signal ce_net : std_logic;
   signal tengbe_test_tx_snapshot_ss_ctrl_user_data_out_net : std_logic_vector( 32-1 downto 0 );
-  signal convert_addr_dout_net : std_logic_vector( 12-1 downto 0 );
+  signal cast_gw_dout_net : std_logic_vector( 32-1 downto 0 );
+  signal we_choice_y_net : std_logic_vector( 1-1 downto 0 );
+  signal logical6_y_net : std_logic_vector( 1-1 downto 0 );
+  signal clk_net : std_logic;
+  signal ce_net : std_logic;
+  signal concatenate_y_net : std_logic_vector( 32-1 downto 0 );
+  signal assert_data_dout_net : std_logic_vector( 30-1 downto 0 );
+  signal assert_valid_dout_net : std_logic_vector( 1-1 downto 0 );
+  signal assert_eof_dout_net : std_logic_vector( 1-1 downto 0 );
 begin
   arm_out <= arm_or_y_net;
   slice7_y_net <= in_data;
@@ -4248,68 +4248,68 @@ entity tengbe_test_struct is
   );
 end tengbe_test_struct;
 architecture structural of tengbe_test_struct is 
-  signal tengbe_test_tx_snapshot_ss_ctrl_user_data_out_net : std_logic_vector( 32-1 downto 0 );
-  signal arm_or_y_net : std_logic_vector( 1-1 downto 0 );
-  signal delay3_q_net : std_logic_vector( 64-1 downto 0 );
-  signal counter2_op_net : std_logic_vector( 32-1 downto 0 );
-  signal tengbe_test_gbe0_rx_end_of_frame_net : std_logic_vector( 1-1 downto 0 );
-  signal reint1_output_port_net_x0 : std_logic_vector( 32-1 downto 0 );
-  signal cast_gw_dout_net_x6 : std_logic_vector( 32-1 downto 0 );
-  signal tengbe_test_gbe0_rx_bad_frame_net : std_logic_vector( 1-1 downto 0 );
-  signal convert_addr_dout_net : std_logic_vector( 12-1 downto 0 );
-  signal convert_tx_data_dout_net : std_logic_vector( 64-1 downto 0 );
-  signal cast_gw_dout_net_x2 : std_logic_vector( 32-1 downto 0 );
-  signal tengbe_test_pkt_sim_period_user_data_out_net : std_logic_vector( 32-1 downto 0 );
-  signal tengbe_test_gbe0_led_up_net : std_logic_vector( 1-1 downto 0 );
-  signal tengbe_test_gbe0_tx_overflow_net : std_logic_vector( 1-1 downto 0 );
-  signal cast_gw_dout_net_x4 : std_logic_vector( 32-1 downto 0 );
-  signal tengbe_test_gbe0_rx_source_ip_net : std_logic_vector( 32-1 downto 0 );
-  signal delay_q_net : std_logic_vector( 1-1 downto 0 );
-  signal slice_cnt_rst_y_net : std_logic_vector( 1-1 downto 0 );
-  signal reint1_output_port_net : std_logic_vector( 16-1 downto 0 );
-  signal we_choice_y_net : std_logic_vector( 1-1 downto 0 );
-  signal logical6_y_net : std_logic_vector( 1-1 downto 0 );
-  signal slice7_y_net : std_logic_vector( 30-1 downto 0 );
-  signal convert_tx_dest_ip_dout_net : std_logic_vector( 32-1 downto 0 );
-  signal convert_rx_ack_dout_net : std_logic_vector( 1-1 downto 0 );
-  signal convert_rx_overrun_ack_dout_net : std_logic_vector( 1-1 downto 0 );
   signal tengbe_test_dest_ip_user_data_out_net : std_logic_vector( 32-1 downto 0 );
   signal tengbe_test_dest_port_user_data_out_net : std_logic_vector( 32-1 downto 0 );
-  signal cast_gw_dout_net_x7 : std_logic_vector( 32-1 downto 0 );
-  signal tengbe_test_gbe0_rx_data_net : std_logic_vector( 64-1 downto 0 );
-  signal convert_tx_valid_dout_net : std_logic_vector( 1-1 downto 0 );
-  signal tengbe_test_gbe0_rx_overrun_net : std_logic_vector( 1-1 downto 0 );
-  signal cast_gw_dout_net : std_logic_vector( 32-1 downto 0 );
-  signal convert_dout_net_x0 : std_logic_vector( 1-1 downto 0 );
   signal tengbe_test_gbe0_led_rx_net : std_logic_vector( 1-1 downto 0 );
-  signal convert_tx_end_of_frame_dout_net : std_logic_vector( 1-1 downto 0 );
-  signal tengbe_test_gbe0_tx_afull_net : std_logic_vector( 1-1 downto 0 );
-  signal tengbe_test_gbe0_rx_source_port_net : std_logic_vector( 16-1 downto 0 );
-  signal mux1_y_net : std_logic_vector( 1-1 downto 0 );
-  signal cast_gw_dout_net_x8 : std_logic_vector( 32-1 downto 0 );
-  signal cast_gw_dout_net_x5 : std_logic_vector( 32-1 downto 0 );
-  signal convert_dout_net : std_logic_vector( 1-1 downto 0 );
-  signal cast_gw_dout_net_x9 : std_logic_vector( 32-1 downto 0 );
-  signal convert_rst_dout_net : std_logic_vector( 1-1 downto 0 );
-  signal spulse_y_net : std_logic_vector( 1-1 downto 0 );
-  signal tengbe_test_gbe0_rx_valid_net : std_logic_vector( 1-1 downto 0 );
-  signal ce_net : std_logic;
-  signal clk_net : std_logic;
-  signal cast_gw_dout_net_x3 : std_logic_vector( 32-1 downto 0 );
-  signal cast_gw_dout_net_x1 : std_logic_vector( 32-1 downto 0 );
-  signal convert_tx_port_dout_net : std_logic_vector( 16-1 downto 0 );
-  signal cast_gw_dout_net_x0 : std_logic_vector( 32-1 downto 0 );
-  signal tengbe_test_pkt_sim_enable_user_data_out_net : std_logic_vector( 32-1 downto 0 );
-  signal slice_core_rst_y_net : std_logic_vector( 1-1 downto 0 );
-  signal tengbe_test_rst_user_data_out_net : std_logic_vector( 32-1 downto 0 );
-  signal convert_we_dout_net : std_logic_vector( 1-1 downto 0 );
   signal tengbe_test_gbe0_led_tx_net : std_logic_vector( 1-1 downto 0 );
+  signal tengbe_test_gbe0_led_up_net : std_logic_vector( 1-1 downto 0 );
+  signal convert_rst_dout_net : std_logic_vector( 1-1 downto 0 );
+  signal convert_rx_ack_dout_net : std_logic_vector( 1-1 downto 0 );
+  signal tengbe_test_gbe0_rx_bad_frame_net : std_logic_vector( 1-1 downto 0 );
+  signal tengbe_test_gbe0_rx_data_net : std_logic_vector( 64-1 downto 0 );
+  signal tengbe_test_gbe0_rx_end_of_frame_net : std_logic_vector( 1-1 downto 0 );
+  signal tengbe_test_gbe0_rx_overrun_net : std_logic_vector( 1-1 downto 0 );
+  signal convert_rx_overrun_ack_dout_net : std_logic_vector( 1-1 downto 0 );
+  signal tengbe_test_gbe0_rx_source_ip_net : std_logic_vector( 32-1 downto 0 );
+  signal tengbe_test_gbe0_rx_source_port_net : std_logic_vector( 16-1 downto 0 );
+  signal tengbe_test_gbe0_rx_valid_net : std_logic_vector( 1-1 downto 0 );
+  signal tengbe_test_gbe0_tx_afull_net : std_logic_vector( 1-1 downto 0 );
+  signal convert_tx_data_dout_net : std_logic_vector( 64-1 downto 0 );
+  signal convert_tx_dest_ip_dout_net : std_logic_vector( 32-1 downto 0 );
+  signal convert_tx_port_dout_net : std_logic_vector( 16-1 downto 0 );
+  signal convert_tx_end_of_frame_dout_net : std_logic_vector( 1-1 downto 0 );
+  signal tengbe_test_gbe0_tx_overflow_net : std_logic_vector( 1-1 downto 0 );
+  signal convert_tx_valid_dout_net : std_logic_vector( 1-1 downto 0 );
+  signal cast_gw_dout_net_x10 : std_logic_vector( 32-1 downto 0 );
+  signal cast_gw_dout_net_x9 : std_logic_vector( 32-1 downto 0 );
+  signal cast_gw_dout_net_x8 : std_logic_vector( 32-1 downto 0 );
+  signal cast_gw_dout_net_x7 : std_logic_vector( 32-1 downto 0 );
+  signal cast_gw_dout_net_x6 : std_logic_vector( 32-1 downto 0 );
+  signal cast_gw_dout_net_x5 : std_logic_vector( 32-1 downto 0 );
+  signal cast_gw_dout_net_x4 : std_logic_vector( 32-1 downto 0 );
+  signal cast_gw_dout_net_x3 : std_logic_vector( 32-1 downto 0 );
+  signal cast_gw_dout_net_x2 : std_logic_vector( 32-1 downto 0 );
+  signal cast_gw_dout_net_x1 : std_logic_vector( 32-1 downto 0 );
+  signal cast_gw_dout_net_x0 : std_logic_vector( 32-1 downto 0 );
+  signal convert_dout_net_x0 : std_logic_vector( 1-1 downto 0 );
+  signal convert_dout_net : std_logic_vector( 1-1 downto 0 );
+  signal tengbe_test_pkt_sim_enable_user_data_out_net : std_logic_vector( 32-1 downto 0 );
+  signal tengbe_test_pkt_sim_payload_len_user_data_out_net : std_logic_vector( 32-1 downto 0 );
+  signal tengbe_test_pkt_sim_period_user_data_out_net : std_logic_vector( 32-1 downto 0 );
+  signal tengbe_test_rst_user_data_out_net : std_logic_vector( 32-1 downto 0 );
+  signal convert_addr_dout_net : std_logic_vector( 12-1 downto 0 );
+  signal convert_din1_dout_net : std_logic_vector( 32-1 downto 0 );
+  signal tengbe_test_tx_snapshot_ss_bram_data_out_net : std_logic_vector( 32-1 downto 0 );
+  signal convert_we_dout_net : std_logic_vector( 1-1 downto 0 );
+  signal tengbe_test_tx_snapshot_ss_ctrl_user_data_out_net : std_logic_vector( 32-1 downto 0 );
+  signal cast_gw_dout_net : std_logic_vector( 32-1 downto 0 );
+  signal clk_net : std_logic;
+  signal ce_net : std_logic;
+  signal reint1_output_port_net_x0 : std_logic_vector( 32-1 downto 0 );
+  signal reint1_output_port_net : std_logic_vector( 16-1 downto 0 );
+  signal slice_core_rst_y_net : std_logic_vector( 1-1 downto 0 );
+  signal delay3_q_net : std_logic_vector( 64-1 downto 0 );
+  signal mux1_y_net : std_logic_vector( 1-1 downto 0 );
   signal mux2_y_net : std_logic_vector( 1-1 downto 0 );
   signal constant4_op_net : std_logic_vector( 1-1 downto 0 );
-  signal cast_gw_dout_net_x10 : std_logic_vector( 32-1 downto 0 );
-  signal convert_din1_dout_net : std_logic_vector( 32-1 downto 0 );
-  signal tengbe_test_pkt_sim_payload_len_user_data_out_net : std_logic_vector( 32-1 downto 0 );
-  signal tengbe_test_tx_snapshot_ss_bram_data_out_net : std_logic_vector( 32-1 downto 0 );
+  signal delay_q_net : std_logic_vector( 1-1 downto 0 );
+  signal slice_cnt_rst_y_net : std_logic_vector( 1-1 downto 0 );
+  signal counter2_op_net : std_logic_vector( 32-1 downto 0 );
+  signal spulse_y_net : std_logic_vector( 1-1 downto 0 );
+  signal arm_or_y_net : std_logic_vector( 1-1 downto 0 );
+  signal slice7_y_net : std_logic_vector( 30-1 downto 0 );
+  signal we_choice_y_net : std_logic_vector( 1-1 downto 0 );
+  signal logical6_y_net : std_logic_vector( 1-1 downto 0 );
 begin
   tengbe_test_dest_ip_user_data_out_net <= tengbe_test_dest_ip_user_data_out;
   tengbe_test_dest_port_user_data_out_net <= tengbe_test_dest_port_user_data_out;
@@ -4606,8 +4606,8 @@ end tengbe_test;
 architecture structural of tengbe_test is 
   attribute core_generation_info : string;
   attribute core_generation_info of structural : architecture is "tengbe_test,sysgen_core_2018_3,{,compilation=HDL Netlist,block_icon_display=Default,family=zynquplusRFSOC,part=xczu28dr,speed=-2-e,package=ffvg1517,synthesis_language=vhdl,hdl_library=xil_defaultlib,synthesis_strategy=Vivado Synthesis Defaults,implementation_strategy=Vivado Implementation Defaults,testbench=0,interface_doc=0,ce_clr=0,clock_period=3.9062,system_simulink_period=1,waveform_viewer=0,axilite_interface=0,ip_catalog_plugin=0,hwcosim_burst_mode=0,simulation_time=10,addsub=1,assert=15,concat=6,constant=21,convert=30,counter=16,delay=67,inv=11,logical=19,mux=10,register=11,reinterpret=30,relational=6,shift=1,slice=23,}";
-  signal clk_1_net : std_logic;
   signal ce_1_net : std_logic;
+  signal clk_1_net : std_logic;
 begin
   tengbe_test_default_clock_driver : entity xil_defaultlib.tengbe_test_default_clock_driver 
   port map (

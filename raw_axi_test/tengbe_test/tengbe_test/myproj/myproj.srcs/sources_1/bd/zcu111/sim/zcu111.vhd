@@ -1,7 +1,7 @@
 --Copyright 1986-2019 Xilinx, Inc. All Rights Reserved.
 ----------------------------------------------------------------------------------
 --Tool Version: Vivado v.2018.3.1_AR71948 (lin64) Build 2489853 Tue Mar 26 04:18:30 MDT 2019
---Date        : Thu Oct 15 12:53:50 2020
+--Date        : Wed Oct 21 14:38:14 2020
 --Host        : wei-Berkeley running 64-bit Ubuntu 18.04.5 LTS
 --Command     : generate_target zcu111.bd
 --Design      : zcu111
@@ -1995,10 +1995,10 @@ entity zcu111 is
     axil_rst : out STD_LOGIC_VECTOR ( 0 to 0 );
     axil_rst_n : out STD_LOGIC_VECTOR ( 0 to 0 )
   );
-  attribute core_generation_info : string;
-  attribute core_generation_info of zcu111 : entity is "zcu111,IP_Integrator,{x_ipVendor=xilinx.com,x_ipLibrary=BlockDiagram,x_ipName=zcu111,x_ipVersion=1.00.a,x_ipLanguage=VHDL,numBlks=11,numReposBlks=7,numNonXlnxBlks=0,numHierBlks=4,maxHierDepth=0,numSysgenBlks=0,numHlsBlks=0,numHdlrefBlks=0,numPkgbdBlks=0,bdsource=USER,synth_mode=OOC_per_IP}";
-  attribute hw_handoff : string;
-  attribute hw_handoff of zcu111 : entity is "zcu111.hwdef";
+  attribute CORE_GENERATION_INFO : string;
+  attribute CORE_GENERATION_INFO of zcu111 : entity is "zcu111,IP_Integrator,{x_ipVendor=xilinx.com,x_ipLibrary=BlockDiagram,x_ipName=zcu111,x_ipVersion=1.00.a,x_ipLanguage=VHDL,numBlks=11,numReposBlks=7,numNonXlnxBlks=0,numHierBlks=4,maxHierDepth=0,numSysgenBlks=0,numHlsBlks=0,numHdlrefBlks=0,numPkgbdBlks=0,bdsource=USER,synth_mode=OOC_per_IP}";
+  attribute HW_HANDOFF : string;
+  attribute HW_HANDOFF of zcu111 : entity is "zcu111.hwdef";
 end zcu111;
 
 architecture STRUCTURE of zcu111 is
@@ -2340,54 +2340,54 @@ architecture STRUCTURE of zcu111 is
   signal NLW_proc_sys_reset_0_mb_reset_UNCONNECTED : STD_LOGIC;
   signal NLW_proc_sys_reset_0_bus_struct_reset_UNCONNECTED : STD_LOGIC_VECTOR ( 0 to 0 );
   signal NLW_zynq_ultra_ps_e_0_emio_uart1_txd_UNCONNECTED : STD_LOGIC;
-  attribute x_interface_info : string;
-  attribute x_interface_info of M_AXI_RFDC_arready : signal is "xilinx.com:interface:aximm:1.0 M_AXI_RFDC ARREADY";
-  attribute x_interface_info of M_AXI_RFDC_arvalid : signal is "xilinx.com:interface:aximm:1.0 M_AXI_RFDC ARVALID";
-  attribute x_interface_info of M_AXI_RFDC_awready : signal is "xilinx.com:interface:aximm:1.0 M_AXI_RFDC AWREADY";
-  attribute x_interface_info of M_AXI_RFDC_awvalid : signal is "xilinx.com:interface:aximm:1.0 M_AXI_RFDC AWVALID";
-  attribute x_interface_info of M_AXI_RFDC_bready : signal is "xilinx.com:interface:aximm:1.0 M_AXI_RFDC BREADY";
-  attribute x_interface_info of M_AXI_RFDC_bvalid : signal is "xilinx.com:interface:aximm:1.0 M_AXI_RFDC BVALID";
-  attribute x_interface_info of M_AXI_RFDC_rready : signal is "xilinx.com:interface:aximm:1.0 M_AXI_RFDC RREADY";
-  attribute x_interface_info of M_AXI_RFDC_rvalid : signal is "xilinx.com:interface:aximm:1.0 M_AXI_RFDC RVALID";
-  attribute x_interface_info of M_AXI_RFDC_wready : signal is "xilinx.com:interface:aximm:1.0 M_AXI_RFDC WREADY";
-  attribute x_interface_info of M_AXI_RFDC_wvalid : signal is "xilinx.com:interface:aximm:1.0 M_AXI_RFDC WVALID";
-  attribute x_interface_info of M_AXI_arready : signal is "xilinx.com:interface:aximm:1.0 M_AXI ARREADY";
-  attribute x_interface_info of M_AXI_arvalid : signal is "xilinx.com:interface:aximm:1.0 M_AXI ARVALID";
-  attribute x_interface_info of M_AXI_awready : signal is "xilinx.com:interface:aximm:1.0 M_AXI AWREADY";
-  attribute x_interface_info of M_AXI_awvalid : signal is "xilinx.com:interface:aximm:1.0 M_AXI AWVALID";
-  attribute x_interface_info of M_AXI_bready : signal is "xilinx.com:interface:aximm:1.0 M_AXI BREADY";
-  attribute x_interface_info of M_AXI_bvalid : signal is "xilinx.com:interface:aximm:1.0 M_AXI BVALID";
-  attribute x_interface_info of M_AXI_rready : signal is "xilinx.com:interface:aximm:1.0 M_AXI RREADY";
-  attribute x_interface_info of M_AXI_rvalid : signal is "xilinx.com:interface:aximm:1.0 M_AXI RVALID";
-  attribute x_interface_info of M_AXI_wready : signal is "xilinx.com:interface:aximm:1.0 M_AXI WREADY";
-  attribute x_interface_info of M_AXI_wvalid : signal is "xilinx.com:interface:aximm:1.0 M_AXI WVALID";
-  attribute x_interface_info of axil_clk : signal is "xilinx.com:signal:clock:1.0 CLK.AXIL_CLK CLK";
-  attribute x_interface_parameter : string;
-  attribute x_interface_parameter of axil_clk : signal is "XIL_INTERFACENAME CLK.AXIL_CLK, ASSOCIATED_BUSIF M_AXI, CLK_DOMAIN zcu111_zynq_ultra_ps_e_0_0_pl_clk0, FREQ_HZ 99999001, INSERT_VIP 0, PHASE 0.000";
-  attribute x_interface_info of M_AXI_RFDC_araddr : signal is "xilinx.com:interface:aximm:1.0 M_AXI_RFDC ARADDR";
-  attribute x_interface_parameter of M_AXI_RFDC_araddr : signal is "XIL_INTERFACENAME M_AXI_RFDC, ADDR_WIDTH 32, ARUSER_WIDTH 0, AWUSER_WIDTH 0, BUSER_WIDTH 0, DATA_WIDTH 32, FREQ_HZ 99999001, HAS_BRESP 1, HAS_BURST 0, HAS_CACHE 0, HAS_LOCK 0, HAS_PROT 1, HAS_QOS 0, HAS_REGION 0, HAS_RRESP 1, HAS_WSTRB 1, ID_WIDTH 0, INSERT_VIP 0, MAX_BURST_LENGTH 1, NUM_READ_OUTSTANDING 8, NUM_READ_THREADS 1, NUM_WRITE_OUTSTANDING 8, NUM_WRITE_THREADS 1, PHASE 0.000, PROTOCOL AXI4LITE, READ_WRITE_MODE READ_WRITE, RUSER_BITS_PER_BYTE 0, RUSER_WIDTH 0, SUPPORTS_NARROW_BURST 0, WUSER_BITS_PER_BYTE 0, WUSER_WIDTH 0";
-  attribute x_interface_info of M_AXI_RFDC_arprot : signal is "xilinx.com:interface:aximm:1.0 M_AXI_RFDC ARPROT";
-  attribute x_interface_info of M_AXI_RFDC_awaddr : signal is "xilinx.com:interface:aximm:1.0 M_AXI_RFDC AWADDR";
-  attribute x_interface_info of M_AXI_RFDC_awprot : signal is "xilinx.com:interface:aximm:1.0 M_AXI_RFDC AWPROT";
-  attribute x_interface_info of M_AXI_RFDC_bresp : signal is "xilinx.com:interface:aximm:1.0 M_AXI_RFDC BRESP";
-  attribute x_interface_info of M_AXI_RFDC_rdata : signal is "xilinx.com:interface:aximm:1.0 M_AXI_RFDC RDATA";
-  attribute x_interface_info of M_AXI_RFDC_rresp : signal is "xilinx.com:interface:aximm:1.0 M_AXI_RFDC RRESP";
-  attribute x_interface_info of M_AXI_RFDC_wdata : signal is "xilinx.com:interface:aximm:1.0 M_AXI_RFDC WDATA";
-  attribute x_interface_info of M_AXI_RFDC_wstrb : signal is "xilinx.com:interface:aximm:1.0 M_AXI_RFDC WSTRB";
-  attribute x_interface_info of M_AXI_araddr : signal is "xilinx.com:interface:aximm:1.0 M_AXI ARADDR";
-  attribute x_interface_parameter of M_AXI_araddr : signal is "XIL_INTERFACENAME M_AXI, ADDR_WIDTH 32, ARUSER_WIDTH 0, AWUSER_WIDTH 0, BUSER_WIDTH 0, CLK_DOMAIN zcu111_zynq_ultra_ps_e_0_0_pl_clk0, DATA_WIDTH 32, FREQ_HZ 99999001, HAS_BRESP 1, HAS_BURST 0, HAS_CACHE 0, HAS_LOCK 0, HAS_PROT 1, HAS_QOS 0, HAS_REGION 0, HAS_RRESP 1, HAS_WSTRB 1, ID_WIDTH 0, INSERT_VIP 0, MAX_BURST_LENGTH 1, NUM_READ_OUTSTANDING 8, NUM_READ_THREADS 1, NUM_WRITE_OUTSTANDING 8, NUM_WRITE_THREADS 1, PHASE 0.000, PROTOCOL AXI4LITE, READ_WRITE_MODE READ_WRITE, RUSER_BITS_PER_BYTE 0, RUSER_WIDTH 0, SUPPORTS_NARROW_BURST 0, WUSER_BITS_PER_BYTE 0, WUSER_WIDTH 0";
-  attribute x_interface_info of M_AXI_arprot : signal is "xilinx.com:interface:aximm:1.0 M_AXI ARPROT";
-  attribute x_interface_info of M_AXI_awaddr : signal is "xilinx.com:interface:aximm:1.0 M_AXI AWADDR";
-  attribute x_interface_info of M_AXI_awprot : signal is "xilinx.com:interface:aximm:1.0 M_AXI AWPROT";
-  attribute x_interface_info of M_AXI_bresp : signal is "xilinx.com:interface:aximm:1.0 M_AXI BRESP";
-  attribute x_interface_info of M_AXI_rdata : signal is "xilinx.com:interface:aximm:1.0 M_AXI RDATA";
-  attribute x_interface_info of M_AXI_rresp : signal is "xilinx.com:interface:aximm:1.0 M_AXI RRESP";
-  attribute x_interface_info of M_AXI_wdata : signal is "xilinx.com:interface:aximm:1.0 M_AXI WDATA";
-  attribute x_interface_info of M_AXI_wstrb : signal is "xilinx.com:interface:aximm:1.0 M_AXI WSTRB";
-  attribute x_interface_info of axil_rst : signal is "xilinx.com:signal:reset:1.0 RST.AXIL_RST RST";
-  attribute x_interface_parameter of axil_rst : signal is "XIL_INTERFACENAME RST.AXIL_RST, INSERT_VIP 0, POLARITY ACTIVE_HIGH";
-  attribute x_interface_info of axil_rst_n : signal is "xilinx.com:signal:reset:1.0 RST.AXIL_RST_N RST";
-  attribute x_interface_parameter of axil_rst_n : signal is "XIL_INTERFACENAME RST.AXIL_RST_N, INSERT_VIP 0, POLARITY ACTIVE_LOW";
+  attribute X_INTERFACE_INFO : string;
+  attribute X_INTERFACE_INFO of M_AXI_RFDC_arready : signal is "xilinx.com:interface:aximm:1.0 M_AXI_RFDC ARREADY";
+  attribute X_INTERFACE_INFO of M_AXI_RFDC_arvalid : signal is "xilinx.com:interface:aximm:1.0 M_AXI_RFDC ARVALID";
+  attribute X_INTERFACE_INFO of M_AXI_RFDC_awready : signal is "xilinx.com:interface:aximm:1.0 M_AXI_RFDC AWREADY";
+  attribute X_INTERFACE_INFO of M_AXI_RFDC_awvalid : signal is "xilinx.com:interface:aximm:1.0 M_AXI_RFDC AWVALID";
+  attribute X_INTERFACE_INFO of M_AXI_RFDC_bready : signal is "xilinx.com:interface:aximm:1.0 M_AXI_RFDC BREADY";
+  attribute X_INTERFACE_INFO of M_AXI_RFDC_bvalid : signal is "xilinx.com:interface:aximm:1.0 M_AXI_RFDC BVALID";
+  attribute X_INTERFACE_INFO of M_AXI_RFDC_rready : signal is "xilinx.com:interface:aximm:1.0 M_AXI_RFDC RREADY";
+  attribute X_INTERFACE_INFO of M_AXI_RFDC_rvalid : signal is "xilinx.com:interface:aximm:1.0 M_AXI_RFDC RVALID";
+  attribute X_INTERFACE_INFO of M_AXI_RFDC_wready : signal is "xilinx.com:interface:aximm:1.0 M_AXI_RFDC WREADY";
+  attribute X_INTERFACE_INFO of M_AXI_RFDC_wvalid : signal is "xilinx.com:interface:aximm:1.0 M_AXI_RFDC WVALID";
+  attribute X_INTERFACE_INFO of M_AXI_arready : signal is "xilinx.com:interface:aximm:1.0 M_AXI ARREADY";
+  attribute X_INTERFACE_INFO of M_AXI_arvalid : signal is "xilinx.com:interface:aximm:1.0 M_AXI ARVALID";
+  attribute X_INTERFACE_INFO of M_AXI_awready : signal is "xilinx.com:interface:aximm:1.0 M_AXI AWREADY";
+  attribute X_INTERFACE_INFO of M_AXI_awvalid : signal is "xilinx.com:interface:aximm:1.0 M_AXI AWVALID";
+  attribute X_INTERFACE_INFO of M_AXI_bready : signal is "xilinx.com:interface:aximm:1.0 M_AXI BREADY";
+  attribute X_INTERFACE_INFO of M_AXI_bvalid : signal is "xilinx.com:interface:aximm:1.0 M_AXI BVALID";
+  attribute X_INTERFACE_INFO of M_AXI_rready : signal is "xilinx.com:interface:aximm:1.0 M_AXI RREADY";
+  attribute X_INTERFACE_INFO of M_AXI_rvalid : signal is "xilinx.com:interface:aximm:1.0 M_AXI RVALID";
+  attribute X_INTERFACE_INFO of M_AXI_wready : signal is "xilinx.com:interface:aximm:1.0 M_AXI WREADY";
+  attribute X_INTERFACE_INFO of M_AXI_wvalid : signal is "xilinx.com:interface:aximm:1.0 M_AXI WVALID";
+  attribute X_INTERFACE_INFO of axil_clk : signal is "xilinx.com:signal:clock:1.0 CLK.AXIL_CLK CLK";
+  attribute X_INTERFACE_PARAMETER : string;
+  attribute X_INTERFACE_PARAMETER of axil_clk : signal is "XIL_INTERFACENAME CLK.AXIL_CLK, ASSOCIATED_BUSIF M_AXI, CLK_DOMAIN zcu111_zynq_ultra_ps_e_0_0_pl_clk0, FREQ_HZ 99999001, INSERT_VIP 0, PHASE 0.000";
+  attribute X_INTERFACE_INFO of M_AXI_RFDC_araddr : signal is "xilinx.com:interface:aximm:1.0 M_AXI_RFDC ARADDR";
+  attribute X_INTERFACE_PARAMETER of M_AXI_RFDC_araddr : signal is "XIL_INTERFACENAME M_AXI_RFDC, ADDR_WIDTH 32, ARUSER_WIDTH 0, AWUSER_WIDTH 0, BUSER_WIDTH 0, DATA_WIDTH 32, FREQ_HZ 99999001, HAS_BRESP 1, HAS_BURST 0, HAS_CACHE 0, HAS_LOCK 0, HAS_PROT 1, HAS_QOS 0, HAS_REGION 0, HAS_RRESP 1, HAS_WSTRB 1, ID_WIDTH 0, INSERT_VIP 0, MAX_BURST_LENGTH 1, NUM_READ_OUTSTANDING 8, NUM_READ_THREADS 1, NUM_WRITE_OUTSTANDING 8, NUM_WRITE_THREADS 1, PHASE 0.000, PROTOCOL AXI4LITE, READ_WRITE_MODE READ_WRITE, RUSER_BITS_PER_BYTE 0, RUSER_WIDTH 0, SUPPORTS_NARROW_BURST 0, WUSER_BITS_PER_BYTE 0, WUSER_WIDTH 0";
+  attribute X_INTERFACE_INFO of M_AXI_RFDC_arprot : signal is "xilinx.com:interface:aximm:1.0 M_AXI_RFDC ARPROT";
+  attribute X_INTERFACE_INFO of M_AXI_RFDC_awaddr : signal is "xilinx.com:interface:aximm:1.0 M_AXI_RFDC AWADDR";
+  attribute X_INTERFACE_INFO of M_AXI_RFDC_awprot : signal is "xilinx.com:interface:aximm:1.0 M_AXI_RFDC AWPROT";
+  attribute X_INTERFACE_INFO of M_AXI_RFDC_bresp : signal is "xilinx.com:interface:aximm:1.0 M_AXI_RFDC BRESP";
+  attribute X_INTERFACE_INFO of M_AXI_RFDC_rdata : signal is "xilinx.com:interface:aximm:1.0 M_AXI_RFDC RDATA";
+  attribute X_INTERFACE_INFO of M_AXI_RFDC_rresp : signal is "xilinx.com:interface:aximm:1.0 M_AXI_RFDC RRESP";
+  attribute X_INTERFACE_INFO of M_AXI_RFDC_wdata : signal is "xilinx.com:interface:aximm:1.0 M_AXI_RFDC WDATA";
+  attribute X_INTERFACE_INFO of M_AXI_RFDC_wstrb : signal is "xilinx.com:interface:aximm:1.0 M_AXI_RFDC WSTRB";
+  attribute X_INTERFACE_INFO of M_AXI_araddr : signal is "xilinx.com:interface:aximm:1.0 M_AXI ARADDR";
+  attribute X_INTERFACE_PARAMETER of M_AXI_araddr : signal is "XIL_INTERFACENAME M_AXI, ADDR_WIDTH 32, ARUSER_WIDTH 0, AWUSER_WIDTH 0, BUSER_WIDTH 0, CLK_DOMAIN zcu111_zynq_ultra_ps_e_0_0_pl_clk0, DATA_WIDTH 32, FREQ_HZ 99999001, HAS_BRESP 1, HAS_BURST 0, HAS_CACHE 0, HAS_LOCK 0, HAS_PROT 1, HAS_QOS 0, HAS_REGION 0, HAS_RRESP 1, HAS_WSTRB 1, ID_WIDTH 0, INSERT_VIP 0, MAX_BURST_LENGTH 1, NUM_READ_OUTSTANDING 8, NUM_READ_THREADS 1, NUM_WRITE_OUTSTANDING 8, NUM_WRITE_THREADS 1, PHASE 0.000, PROTOCOL AXI4LITE, READ_WRITE_MODE READ_WRITE, RUSER_BITS_PER_BYTE 0, RUSER_WIDTH 0, SUPPORTS_NARROW_BURST 0, WUSER_BITS_PER_BYTE 0, WUSER_WIDTH 0";
+  attribute X_INTERFACE_INFO of M_AXI_arprot : signal is "xilinx.com:interface:aximm:1.0 M_AXI ARPROT";
+  attribute X_INTERFACE_INFO of M_AXI_awaddr : signal is "xilinx.com:interface:aximm:1.0 M_AXI AWADDR";
+  attribute X_INTERFACE_INFO of M_AXI_awprot : signal is "xilinx.com:interface:aximm:1.0 M_AXI AWPROT";
+  attribute X_INTERFACE_INFO of M_AXI_bresp : signal is "xilinx.com:interface:aximm:1.0 M_AXI BRESP";
+  attribute X_INTERFACE_INFO of M_AXI_rdata : signal is "xilinx.com:interface:aximm:1.0 M_AXI RDATA";
+  attribute X_INTERFACE_INFO of M_AXI_rresp : signal is "xilinx.com:interface:aximm:1.0 M_AXI RRESP";
+  attribute X_INTERFACE_INFO of M_AXI_wdata : signal is "xilinx.com:interface:aximm:1.0 M_AXI WDATA";
+  attribute X_INTERFACE_INFO of M_AXI_wstrb : signal is "xilinx.com:interface:aximm:1.0 M_AXI WSTRB";
+  attribute X_INTERFACE_INFO of axil_rst : signal is "xilinx.com:signal:reset:1.0 RST.AXIL_RST RST";
+  attribute X_INTERFACE_PARAMETER of axil_rst : signal is "XIL_INTERFACENAME RST.AXIL_RST, INSERT_VIP 0, POLARITY ACTIVE_HIGH";
+  attribute X_INTERFACE_INFO of axil_rst_n : signal is "xilinx.com:signal:reset:1.0 RST.AXIL_RST_N RST";
+  attribute X_INTERFACE_PARAMETER of axil_rst_n : signal is "XIL_INTERFACENAME RST.AXIL_RST_N, INSERT_VIP 0, POLARITY ACTIVE_LOW";
 begin
   M_AXI_RFDC_araddr(31 downto 0) <= axi_protocol_convert_1_M_AXI_ARADDR(31 downto 0);
   M_AXI_RFDC_arprot(2 downto 0) <= axi_protocol_convert_1_M_AXI_ARPROT(2 downto 0);

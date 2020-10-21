@@ -1,7 +1,7 @@
 Copyright 1986-2019 Xilinx, Inc. All Rights Reserved.
 -------------------------------------------------------------------------------------------------
 | Tool Version : Vivado v.2018.3.1_AR71948 (lin64) Build 2489853 Tue Mar 26 04:18:30 MDT 2019
-| Date         : Thu Oct 15 16:46:37 2020
+| Date         : Wed Oct 21 14:50:33 2020
 | Host         : wei-Berkeley running 64-bit Ubuntu 18.04.5 LTS
 | Command      : report_utilization -file top_utilization_synth.rpt -pb top_utilization_synth.pb
 | Design       : top
@@ -31,15 +31,15 @@ Table of Contents
 +----------------------------+------+-------+-----------+-------+
 |          Site Type         | Used | Fixed | Available | Util% |
 +----------------------------+------+-------+-----------+-------+
-| CLB LUTs*                  | 4216 |     0 |    425280 |  0.99 |
-|   LUT as Logic             | 4168 |     0 |    425280 |  0.98 |
-|   LUT as Memory            |   48 |     0 |    213600 |  0.02 |
+| CLB LUTs*                  | 4256 |     0 |    425280 |  1.00 |
+|   LUT as Logic             | 3920 |     0 |    425280 |  0.92 |
+|   LUT as Memory            |  336 |     0 |    213600 |  0.16 |
 |     LUT as Distributed RAM |   48 |     0 |           |       |
-|     LUT as Shift Register  |    0 |     0 |           |       |
-| CLB Registers              | 6788 |     2 |    850560 |  0.80 |
-|   Register as Flip Flop    | 6788 |     2 |    850560 |  0.80 |
+|     LUT as Shift Register  |  288 |     0 |           |       |
+| CLB Registers              | 6222 |     2 |    850560 |  0.73 |
+|   Register as Flip Flop    | 6222 |     2 |    850560 |  0.73 |
 |   Register as Latch        |    0 |     0 |    850560 |  0.00 |
-| CARRY8                     |   94 |     0 |     53160 |  0.18 |
+| CARRY8                     |   93 |     0 |     53160 |  0.17 |
 | F7 Muxes                   |   72 |     0 |    212640 |  0.03 |
 | F8 Muxes                   |    0 |     0 |    106320 |  0.00 |
 | F9 Muxes                   |    0 |     0 |     53160 |  0.00 |
@@ -60,9 +60,9 @@ Table of Contents
 | 0     |            _ |       Reset |            - |
 | 0     |          Yes |           - |            - |
 | 72    |          Yes |           - |          Set |
-| 810   |          Yes |           - |        Reset |
-| 378   |          Yes |         Set |            - |
-| 5528  |          Yes |       Reset |            - |
+| 780   |          Yes |           - |        Reset |
+| 383   |          Yes |         Set |            - |
+| 4987  |          Yes |       Reset |            - |
 +-------+--------------+-------------+--------------+
 
 
@@ -162,16 +162,17 @@ Table of Contents
 +---------------+------+---------------------+
 |    Ref Name   | Used | Functional Category |
 +---------------+------+---------------------+
-| FDRE          | 5528 |            Register |
-| LUT6          | 1788 |                 CLB |
-| FDCE          |  810 |            Register |
-| LUT5          |  785 |                 CLB |
-| LUT4          |  742 |                 CLB |
-| LUT2          |  705 |                 CLB |
-| LUT3          |  578 |                 CLB |
-| FDSE          |  378 |            Register |
-| LUT1          |  244 |                 CLB |
-| CARRY8        |   94 |                 CLB |
+| FDRE          | 4987 |            Register |
+| LUT6          | 1786 |                 CLB |
+| LUT5          |  867 |                 CLB |
+| FDCE          |  780 |            Register |
+| LUT2          |  607 |                 CLB |
+| LUT4          |  553 |                 CLB |
+| LUT3          |  552 |                 CLB |
+| FDSE          |  383 |            Register |
+| SRL16E        |  288 |                 CLB |
+| LUT1          |  237 |                 CLB |
+| CARRY8        |   93 |                 CLB |
 | RAMD32        |   72 |                 CLB |
 | MUXF7         |   72 |                 CLB |
 | FDPE          |   72 |            Register |

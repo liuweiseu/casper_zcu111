@@ -38,6 +38,11 @@ set_property DONT_TOUCH TRUE [get_cells -hier -filter {REF_NAME==tengbaser_phy_u
 
 # XDC: bd/zcu111/zcu111_ooc.xdc
 
+# XDC: ip/tengbaser_phy_ultrascale/ip_0/synth/tengbaser_phy_ultrascale_gt_ooc.xdc
+
+# XDC: ip/tengbaser_phy_ultrascale/ip_0/synth/tengbaser_phy_ultrascale_gt.xdc
+set_property DONT_TOUCH TRUE [get_cells [split [join [get_cells -hier -filter {REF_NAME==tengbaser_phy_ultrascale_gt || ORIG_REF_NAME==tengbaser_phy_ultrascale_gt} -quiet] {/inst } ]/inst ] -quiet] -quiet
+
 # XDC: ip/tengbaser_phy_ultrascale/synth/tengbaser_phy_ultrascale_board.xdc
 set_property DONT_TOUCH TRUE [get_cells [split [join [get_cells -hier -filter {REF_NAME==tengbaser_phy_ultrascale || ORIG_REF_NAME==tengbaser_phy_ultrascale} -quiet] {/inst } ]/inst ] -quiet] -quiet
 
@@ -48,8 +53,3 @@ set_property DONT_TOUCH TRUE [get_cells [split [join [get_cells -hier -filter {R
 #dup# set_property DONT_TOUCH TRUE [get_cells [split [join [get_cells -hier -filter {REF_NAME==tengbaser_phy_ultrascale || ORIG_REF_NAME==tengbaser_phy_ultrascale} -quiet] {/inst } ]/inst ] -quiet] -quiet
 
 # XDC: ip/tengbaser_phy_ultrascale/synth/tengbaser_phy_ultrascale_ooc.xdc
-
-# XDC: ip/tengbaser_phy_ultrascale/ip_0/synth/tengbaser_phy_ultrascale_gt_ooc.xdc
-
-# XDC: ip/tengbaser_phy_ultrascale/ip_0/synth/tengbaser_phy_ultrascale_gt.xdc
-set_property DONT_TOUCH TRUE [get_cells [split [join [get_cells -hier -filter {REF_NAME==tengbaser_phy_ultrascale_gt || ORIG_REF_NAME==tengbaser_phy_ultrascale_gt} -quiet] {/inst } ]/inst ] -quiet] -quiet

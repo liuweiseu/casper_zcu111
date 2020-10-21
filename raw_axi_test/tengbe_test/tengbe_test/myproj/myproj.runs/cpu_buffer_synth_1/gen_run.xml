@@ -1,11 +1,14 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<GenRun Id="cpu_buffer_synth_1" LaunchPart="xczu28dr-ffvg1517-2-e" LaunchTime="1602746243">
-  <File Type="RDS-UTIL-PB" Name="cpu_buffer_utilization_synth.pb"/>
-  <File Type="RDS-UTIL" Name="cpu_buffer_utilization_synth.rpt"/>
-  <File Type="RDS-RDS" Name="cpu_buffer.vds"/>
+<GenRun Id="cpu_buffer_synth_1" LaunchPart="xczu28dr-ffvg1517-2-e" LaunchTime="1603316340">
+  <File Type="VDS-TIMING-PB" Name="cpu_buffer_timing_summary_synth.pb"/>
+  <File Type="VDS-TIMINGSUMMARY" Name="cpu_buffer_timing_summary_synth.rpt"/>
   <File Type="RDS-DCP" Name="cpu_buffer.dcp"/>
-  <File Type="PA-TCL" Name="cpu_buffer.tcl"/>
   <File Type="REPORTS-TCL" Name="cpu_buffer_reports.tcl"/>
+  <File Type="PA-TCL" Name="cpu_buffer.tcl"/>
+  <File Type="RDS-RDS" Name="cpu_buffer.vds"/>
+  <File Type="RDS-PROPCONSTRS" Name="cpu_buffer_drc_synth.rpt"/>
+  <File Type="RDS-UTIL" Name="cpu_buffer_utilization_synth.rpt"/>
+  <File Type="RDS-UTIL-PB" Name="cpu_buffer_utilization_synth.pb"/>
   <FileSet Name="sources" Type="BlockSrcs" RelSrcDir="$PSRCDIR/cpu_buffer">
     <File Path="$PSRCDIR/sources_1/ip/cpu_buffer/cpu_buffer.xci">
       <FileInfo>
@@ -43,7 +46,9 @@
     </Config>
   </FileSet>
   <Strategy Version="1" Minor="2">
-    <StratHandle Name="Vivado Synthesis Defaults" Flow="Vivado Synthesis 2018"/>
+    <StratHandle Name="Vivado Synthesis Defaults" Flow="Vivado Synthesis 2018">
+      <Desc>Vivado Synthesis Defaults</Desc>
+    </StratHandle>
     <Step Id="synth_design"/>
   </Strategy>
 </GenRun>

@@ -92,14 +92,6 @@ rst	xps:sw_reg	bin_pts	0
 rst	xps:sw_reg	arith_types	[2\_2]
 rst	xps:sw_reg	sim_port	on
 rst	xps:sw_reg	show_format	off
-one_gbe	xps:onegbe	local_en	on
-one_gbe	xps:onegbe	dis_cpu_rx	off
-one_gbe	xps:onegbe	dis_cpu_tx	off
-one_gbe	xps:onegbe	cpu_promiscuous	on
-one_gbe	xps:onegbe	local_mac	20015998343868
-one_gbe	xps:onegbe	local_ip	3232246026
-one_gbe	xps:onegbe	local_port	4321
-one_gbe	xps:onegbe	local_gateway	1
 bitfield_snapshot	casper:bitsnap	io_names	[data\_valid\_eof]
 bitfield_snapshot	casper:bitsnap	io_widths	[8\_1\_1]
 bitfield_snapshot	casper:bitsnap	io_bps	[0\_0\_0]
@@ -134,10 +126,8 @@ bitfield_snapshot/ss	casper:snapshot	ext_arm	off
 bitfield_snapshot/ss	casper:snapshot	ext_circ	off
 bitfield_snapshot/ss	casper:snapshot	provide_outputs	off
 bitfield_snapshot/ss	casper:snapshot	use_dsp48	on
-77777	77777	tags	casper:bitsnap,casper:snapshot,xps:bram,xps:onegbe,xps:sw_reg,xps:xsg
+77777	77777	tags	casper:bitsnap,casper:snapshot,xps:bram,xps:sw_reg,xps:xsg
 77777	77777	system	onegbe_test
-77777	77777	builddate	24-Sep-2020\_16:29:34
-77777	77777	blk	snap_tut_tge/gbe0
-77777	77777	latency	NaN
+77777	77777	builddate	16-Oct-2020\_21:02:28
 77777	77777	latency	NaN
 77777	77777	xlSgRoot	/home/wei/Software/Vivado/install/Vivado/2018.3/lib/lnx64.o/matlab/sysgen.mexa64

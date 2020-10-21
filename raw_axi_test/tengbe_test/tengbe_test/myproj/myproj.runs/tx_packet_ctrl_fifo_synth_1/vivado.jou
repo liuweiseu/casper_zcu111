@@ -2,8 +2,8 @@
 # Vivado v2018.3.1_AR71948 (64-bit)
 # SW Build 2489853 on Tue Mar 26 04:18:30 MDT 2019
 # IP Build 2486929 on Tue Mar 26 06:44:21 MDT 2019
-# Start of session at: Thu Oct 15 00:17:26 2020
-# Process ID: 26883
+# Start of session at: Wed Oct 21 14:39:03 2020
+# Process ID: 27560
 # Current directory: /home/wei/casper/casper_mlib/tutorials_devel/zcu111/raw_axi_test/tengbe_test/tengbe_test/myproj/myproj.runs/tx_packet_ctrl_fifo_synth_1
 # Command line: vivado -log tx_packet_ctrl_fifo.vds -product Vivado -mode batch -messageDb vivado.pb -notrace -source tx_packet_ctrl_fifo.tcl
 # Log file: /home/wei/casper/casper_mlib/tutorials_devel/zcu111/raw_axi_test/tengbe_test/tengbe_test/myproj/myproj.runs/tx_packet_ctrl_fifo_synth_1/tx_packet_ctrl_fifo.vds

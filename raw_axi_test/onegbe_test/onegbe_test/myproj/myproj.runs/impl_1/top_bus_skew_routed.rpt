@@ -1,7 +1,7 @@
 Copyright 1986-2019 Xilinx, Inc. All Rights Reserved.
 -----------------------------------------------------------------------------------------------------------------------------------------------
 | Tool Version      : Vivado v.2018.3.1_AR71948 (lin64) Build 2489853 Tue Mar 26 04:18:30 MDT 2019
-| Date              : Thu Sep 24 16:46:58 2020
+| Date              : Fri Oct 16 21:18:47 2020
 | Host              : wei-Berkeley running 64-bit Ubuntu 18.04.5 LTS
 | Command           : report_bus_skew -warn_on_violation -file top_bus_skew_routed.rpt -pb top_bus_skew_routed.pb -rpx top_bus_skew_routed.rpx
 | Design            : top

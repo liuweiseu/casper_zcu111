@@ -1,7 +1,7 @@
 Copyright 1986-2019 Xilinx, Inc. All Rights Reserved.
 -------------------------------------------------------------------------------------------------------------------------------
 | Tool Version     : Vivado v.2018.3.1_AR71948 (lin64) Build 2489853 Tue Mar 26 04:18:30 MDT 2019
-| Date             : Thu Sep 24 16:46:53 2020
+| Date             : Fri Oct 16 21:18:41 2020
 | Host             : wei-Berkeley running 64-bit Ubuntu 18.04.5 LTS
 | Command          : report_power -file top_power_routed.rpt -pb top_power_summary_routed.pb -rpx top_power_routed.rpx
 | Design           : top
@@ -33,7 +33,7 @@ Table of Contents
 | Total On-Chip Power (W)  | 4.415        |
 | Design Power Budget (W)  | Unspecified* |
 | Power Budget Margin (W)  | NA           |
-| Dynamic (W)              | 3.138        |
+| Dynamic (W)              | 3.137        |
 | Device Static (W)        | 1.277        |
 | Effective TJA (C/W)      | 0.8          |
 | Max Ambient (C)          | 96.3         |
@@ -82,7 +82,7 @@ Table of Contents
 +-----------------+-------------+-----------+-------------+------------+
 | Source          | Voltage (V) | Total (A) | Dynamic (A) | Static (A) |
 +-----------------+-------------+-----------+-------------+------------+
-| Vccint          |       0.850 |     0.399 |       0.091 |      0.307 |
+| Vccint          |       0.850 |     0.398 |       0.091 |      0.307 |
 | Vccint_io       |       0.850 |     0.072 |       0.001 |      0.071 |
 | Vccbram         |       0.850 |     0.005 |       0.001 |      0.004 |
 | Vccaux          |       1.800 |     0.378 |       0.099 |      0.279 |
@@ -180,7 +180,7 @@ Table of Contents
 +-------------------------------------------------+-----------+
 | Name                                            | Power (W) |
 +-------------------------------------------------+-----------+
-| top                                             |     3.138 |
+| top                                             |     3.137 |
 |   axi4lite_interconnect                         |     0.009 |
 |     axi4lite_bitfield_snapshot_ss_bram_inst     |     0.007 |
 |       ipb_bitfield_snapshot_ss_bram_dp_ram_inst |     0.007 |
@@ -211,7 +211,7 @@ Table of Contents
 |   onegbe_test_one_gbe_wb2axi4lite               |     0.001 |
 |   zcu111_infr_inst                              |     0.181 |
 |     i_clk                                       |     0.002 |
-|   zcu111_inst                                   |     2.713 |
+|   zcu111_inst                                   |     2.712 |
 |     axi_interconnect_0                          |     0.015 |
 |       m00_couplers                              |     0.003 |
 |       m01_couplers                              |     0.006 |

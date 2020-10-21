@@ -2,8 +2,8 @@
 # Vivado v2018.3.1_AR71948 (64-bit)
 # SW Build 2489853 on Tue Mar 26 04:18:30 MDT 2019
 # IP Build 2486929 on Tue Mar 26 06:44:21 MDT 2019
-# Start of session at: Thu Oct 15 00:15:45 2020
-# Process ID: 25711
+# Start of session at: Wed Oct 21 14:37:26 2020
+# Process ID: 25466
 # Current directory: /home/wei/casper/casper_mlib/tutorials_devel/zcu111/raw_axi_test/tengbe_test/tengbe_test/sysgen
 # Command line: vivado -mode batch -source ProjectGeneration.tcl -notrace
 # Log file: /home/wei/casper/casper_mlib/tutorials_devel/zcu111/raw_axi_test/tengbe_test/tengbe_test/sysgen/vivado.log
@@ -25,4 +25,4 @@ WARNING: [IP_Flow 19-4832] The IP name 'tengbe_test_c_counter_binary_v12_0_i3' y
 WARNING: [Vivado 12-3523] Attempt to change 'Component_Name' from 'tengbe_test_c_counter_binary_v12_0_i3' to 'tengbe_test_c_counter_binary_v12_0_i3' is not allowed and is ignored.
 WARNING: [IP_Flow 19-4832] The IP name 'tengbe_test_c_counter_binary_v12_0_i4' you have specified is long. The Windows operating system has path length limitations. It is recommended you use shorter names to reduce the likelihood of issues.
 WARNING: [Vivado 12-3523] Attempt to change 'Component_Name' from 'tengbe_test_c_counter_binary_v12_0_i4' to 'tengbe_test_c_counter_binary_v12_0_i4' is not allowed and is ignored.
-INFO: [Common 17-206] Exiting Vivado at Thu Oct 15 00:15:55 2020...
+INFO: [Common 17-206] Exiting Vivado at Wed Oct 21 14:37:36 2020...

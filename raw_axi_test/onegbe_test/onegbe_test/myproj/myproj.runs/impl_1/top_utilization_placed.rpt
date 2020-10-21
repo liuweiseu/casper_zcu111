@@ -1,7 +1,7 @@
 Copyright 1986-2019 Xilinx, Inc. All Rights Reserved.
 ---------------------------------------------------------------------------------------------------
 | Tool Version : Vivado v.2018.3.1_AR71948 (lin64) Build 2489853 Tue Mar 26 04:18:30 MDT 2019
-| Date         : Thu Sep 24 16:45:14 2020
+| Date         : Fri Oct 16 21:16:59 2020
 | Host         : wei-Berkeley running 64-bit Ubuntu 18.04.5 LTS
 | Command      : report_utilization -file top_utilization_placed.rpt -pb top_utilization_placed.pb
 | Design       : top
@@ -61,8 +61,8 @@ Table of Contents
 | 0     |          Yes |           - |            - |
 | 217   |          Yes |           - |          Set |
 | 982   |          Yes |           - |        Reset |
-| 140   |          Yes |         Set |            - |
-| 4930  |          Yes |       Reset |            - |
+| 138   |          Yes |         Set |            - |
+| 4932  |          Yes |       Reset |            - |
 +-------+--------------+-------------+--------------+
 
 
@@ -215,7 +215,7 @@ Table of Contents
 +---------------+------+---------------------+
 |    Ref Name   | Used | Functional Category |
 +---------------+------+---------------------+
-| FDRE          | 4930 |            Register |
+| FDRE          | 4932 |            Register |
 | LUT6          | 2179 |                 CLB |
 | LUT5          |  991 |                 CLB |
 | FDCE          |  982 |            Register |
@@ -225,7 +225,7 @@ Table of Contents
 | RAMD32        |  224 |                 CLB |
 | FDPE          |  217 |            Register |
 | LUT1          |  150 |                 CLB |
-| FDSE          |  140 |            Register |
+| FDSE          |  138 |            Register |
 | RAMD64E       |  128 |                 CLB |
 | CARRY8        |   81 |                 CLB |
 | SRLC32E       |   34 |                 CLB |

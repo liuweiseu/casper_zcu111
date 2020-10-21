@@ -1,0 +1,12 @@
+#-----------------------------------------------------------
+# Vivado v2018.3.1_AR71948 (64-bit)
+# SW Build 2489853 on Tue Mar 26 04:18:30 MDT 2019
+# IP Build 2486929 on Tue Mar 26 06:44:21 MDT 2019
+# Start of session at: Fri Oct 16 13:01:24 2020
+# Process ID: 32475
+# Current directory: /home/wei/casper/casper_mlib/tutorials_devel/zcu111
+# Command line: vivado -jou /home/wei/casper/casper_mlib/tutorials_devel/zcu111/raw_axi_test/onegbe_test/onegbe_test/vivado.jou -log /home/wei/casper/casper_mlib/tutorials_devel/zcu111/raw_axi_test/onegbe_test/onegbe_test/vivado.log -mode batch -source /home/wei/casper/casper_mlib/tutorials_devel/zcu111/raw_axi_test/onegbe_test/onegbe_test/gogogo.tcl
+# Log file: /home/wei/casper/casper_mlib/tutorials_devel/zcu111/raw_axi_test/onegbe_test/onegbe_test/vivado.log
+# Journal file: /home/wei/casper/casper_mlib/tutorials_devel/zcu111/raw_axi_test/onegbe_test/onegbe_test/vivado.jou
+#-----------------------------------------------------------
+source /home/wei/casper/casper_mlib/tutorials_devel/zcu111/raw_axi_test/onegbe_test/onegbe_test/gogogo.tcl

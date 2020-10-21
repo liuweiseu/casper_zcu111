@@ -277,7 +277,7 @@ tx_snapshot/ss	casper:snapshot	provide_outputs	off
 tx_snapshot/ss	casper:snapshot	use_dsp48	on
 77777	77777	tags	casper:bitsnap,casper:snapshot,xps:bram,xps:sw_reg,xps:ten_gbe,xps:xsg
 77777	77777	system	tengbe_test
-77777	77777	builddate	15-Oct-2020\_00:15:34
+77777	77777	builddate	21-Oct-2020\_14:37:16
 77777	77777	blk	tengbe_test/gbe0
 77777	77777	latency	NaN
 77777	77777	xlSgRoot	/home/wei/Software/Vivado/install/Vivado/2018.3/lib/lnx64.o/matlab/sysgen.mexa64

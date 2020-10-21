@@ -151,7 +151,6 @@ architecture structural of onegbe_test_add_gen is
   signal edge_op_y_net : std_logic_vector( 1-1 downto 0 );
   signal edge_op_y_net_x0 : std_logic_vector( 1-1 downto 0 );
   signal slice3_y_net : std_logic_vector( 1-1 downto 0 );
-  signal logical1_y_net : std_logic_vector( 1-1 downto 0 );
   signal shift_op_net : std_logic_vector( 16-1 downto 0 );
   signal inverter_op_net : std_logic_vector( 1-1 downto 0 );
   signal delay1_q_net : std_logic_vector( 15-1 downto 0 );
@@ -162,6 +161,7 @@ architecture structural of onegbe_test_add_gen is
   signal slice1_y_net : std_logic_vector( 15-1 downto 0 );
   signal delay3_q_net : std_logic_vector( 1-1 downto 0 );
   signal inverter1_op_net : std_logic_vector( 1-1 downto 0 );
+  signal logical1_y_net : std_logic_vector( 1-1 downto 0 );
   signal logical4_y_net : std_logic_vector( 1-1 downto 0 );
   signal add_gen_op_net : std_logic_vector( 16-1 downto 0 );
 begin

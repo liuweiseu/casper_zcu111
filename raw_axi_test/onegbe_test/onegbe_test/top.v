@@ -218,7 +218,7 @@ module top (
     .DIS_CPU_TX(0),
     .LOCAL_ENABLE(1),
     .LOCAL_GATEWAY(32'd1),
-    .LOCAL_IP(32'd3232246026),
+    .LOCAL_IP(32'd3232235800),
     .LOCAL_MAC(48'd20015998343868),
     .LOCAL_PORT(16'd4321)
   ) onegbe_test_one_gbe (

@@ -2,8 +2,8 @@
 # Vivado v2018.3.1_AR71948 (64-bit)
 # SW Build 2489853 on Tue Mar 26 04:18:30 MDT 2019
 # IP Build 2486929 on Tue Mar 26 06:44:21 MDT 2019
-# Start of session at: Thu Sep 24 16:29:40 2020
-# Process ID: 17125
+# Start of session at: Fri Oct 16 21:02:34 2020
+# Process ID: 17747
 # Current directory: /home/wei/casper/casper_mlib/tutorials_devel/zcu111/raw_axi_test/onegbe_test/onegbe_test/sysgen
 # Command line: vivado -mode batch -source ProjectGeneration.tcl -notrace
 # Log file: /home/wei/casper/casper_mlib/tutorials_devel/zcu111/raw_axi_test/onegbe_test/onegbe_test/sysgen/vivado.log
@@ -25,4 +25,4 @@ WARNING: [Vivado 12-3523] Attempt to change 'Component_Name' from 'onegbe_test_c
 WARNING: [IP_Flow 19-3374] An attempt to modify the value of disabled parameter 'AINIT_Value' from '0' to '1' has been ignored for IP 'onegbe_test_c_counter_binary_v12_0_i3'
 WARNING: [IP_Flow 19-4832] The IP name 'onegbe_test_c_counter_binary_v12_0_i4' you have specified is long. The Windows operating system has path length limitations. It is recommended you use shorter names to reduce the likelihood of issues.
 WARNING: [Vivado 12-3523] Attempt to change 'Component_Name' from 'onegbe_test_c_counter_binary_v12_0_i4' to 'onegbe_test_c_counter_binary_v12_0_i4' is not allowed and is ignored.
-INFO: [Common 17-206] Exiting Vivado at Thu Sep 24 16:29:50 2020...
+INFO: [Common 17-206] Exiting Vivado at Fri Oct 16 21:02:45 2020...

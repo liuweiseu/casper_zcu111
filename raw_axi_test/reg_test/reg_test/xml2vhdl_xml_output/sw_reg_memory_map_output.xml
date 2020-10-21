@@ -1,0 +1,5 @@
+<?xml version="1.0" ?>
+<node byte_size="4" id="sw_reg">
+	<node address="0x00000000" description="sw_reg_software_register" hw_rst="0x0" id="software_register" mask="0xffffffff" permission="r" size="1"/>
+</node>
+<!-- This file has been automatically generated using xml2vhdl.py version 1.16 /!-->

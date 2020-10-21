@@ -101,7 +101,7 @@ module xxv_ethernet_1_clocking_wrapper (
     .CLKFBIN(mmcm_clk_fb),
     .CLKIN1(gt_refclk_out),
     .PWRDWN(1'b0),
-    .RST(!qplllock),
+    .RST(1'b0),
     .CLKFBOUT(mmcm_clk_fb),
     .CLKOUT0(dclk_buf),
     .LOCKED()

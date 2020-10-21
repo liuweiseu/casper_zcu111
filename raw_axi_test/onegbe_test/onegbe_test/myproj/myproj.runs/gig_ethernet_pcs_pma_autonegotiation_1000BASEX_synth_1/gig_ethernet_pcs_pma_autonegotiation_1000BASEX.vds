@@ -2,8 +2,8 @@
 # Vivado v2018.3.1_AR71948 (64-bit)
 # SW Build 2489853 on Tue Mar 26 04:18:30 MDT 2019
 # IP Build 2486929 on Tue Mar 26 06:44:21 MDT 2019
-# Start of session at: Thu Sep 24 16:33:58 2020
-# Process ID: 18741
+# Start of session at: Fri Oct 16 21:05:34 2020
+# Process ID: 20462
 # Current directory: /home/wei/casper/casper_mlib/tutorials_devel/zcu111/raw_axi_test/onegbe_test/onegbe_test/myproj/myproj.runs/gig_ethernet_pcs_pma_autonegotiation_1000BASEX_synth_1
 # Command line: vivado -log gig_ethernet_pcs_pma_autonegotiation_1000BASEX.vds -product Vivado -mode batch -messageDb vivado.pb -notrace -source gig_ethernet_pcs_pma_autonegotiation_1000BASEX.tcl
 # Log file: /home/wei/casper/casper_mlib/tutorials_devel/zcu111/raw_axi_test/onegbe_test/onegbe_test/myproj/myproj.runs/gig_ethernet_pcs_pma_autonegotiation_1000BASEX_synth_1/gig_ethernet_pcs_pma_autonegotiation_1000BASEX.vds
@@ -14,11 +14,12 @@ Command: synth_design -top gig_ethernet_pcs_pma_autonegotiation_1000BASEX -part 
 Starting synth_design
 Attempting to get a license for feature 'Synthesis' and/or device 'xczu28dr'
 INFO: [Common 17-349] Got license for feature 'Synthesis' and/or device 'xczu28dr'
-INFO: [Common 17-86] Your Synthesis license expires in 25 day(s)
+INFO: [Common 17-86] Your Synthesis license expires in 3 day(s)
+INFO: [Common 17-1223] The version limit for your license is '2020.10' and will expire in 15 days. A version limit expiration means that, although you may be able to continue to use the current version of tools or IP with this license, you will not be eligible for any updates or new releases.
 INFO: Launching helper process for spawning children vivado processes
-INFO: Helper process launched with PID 18869 
+INFO: Helper process launched with PID 20581 
 ---------------------------------------------------------------------------------
-Starting RTL Elaboration : Time (s): cpu = 00:00:02 ; elapsed = 00:00:03 . Memory (MB): peak = 1511.488 ; gain = 90.000 ; free physical = 2486 ; free virtual = 26206
+Starting RTL Elaboration : Time (s): cpu = 00:00:02 ; elapsed = 00:00:03 . Memory (MB): peak = 1512.488 ; gain = 90.000 ; free physical = 2440 ; free virtual = 24517
 ---------------------------------------------------------------------------------
 INFO: [Synth 8-638] synthesizing module 'gig_ethernet_pcs_pma_autonegotiation_1000BASEX' [/home/wei/casper/casper_mlib/tutorials_devel/zcu111/raw_axi_test/onegbe_test/onegbe_test/myproj/myproj.srcs/sources_1/ip/gig_ethernet_pcs_pma_autonegotiation_1000BASEX/synth/gig_ethernet_pcs_pma_autonegotiation_1000BASEX.vhd:159]
 	Parameter EXAMPLE_SIMULATION bound to: 0 - type: integer 
@@ -2043,7 +2044,7 @@ WARNING: [Synth 8-3331] design gtwizard_ultrascale_v1_7_5_gtye4_cpll_cal_tx has 
 WARNING: [Synth 8-3331] design gtwizard_ultrascale_v1_7_5_gtye4_cpll_cal_tx has unconnected port WAIT_DEASSERT_CPLLPD_IN[11]
 INFO: [Common 17-14] Message 'Synth 8-3331' appears 100 times and further instances of the messages will be disabled. Use the Tcl command set_msg_config to change the current settings.
 ---------------------------------------------------------------------------------
-Finished RTL Elaboration : Time (s): cpu = 00:00:06 ; elapsed = 00:00:07 . Memory (MB): peak = 1596.238 ; gain = 174.750 ; free physical = 2432 ; free virtual = 26153
+Finished RTL Elaboration : Time (s): cpu = 00:00:06 ; elapsed = 00:00:07 . Memory (MB): peak = 1598.238 ; gain = 175.750 ; free physical = 2373 ; free virtual = 24452
 ---------------------------------------------------------------------------------
 
 Report Check Netlist: 
@@ -2056,10 +2057,10 @@ Report Check Netlist:
 Start Handling Custom Attributes
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished Handling Custom Attributes : Time (s): cpu = 00:00:06 ; elapsed = 00:00:08 . Memory (MB): peak = 1596.238 ; gain = 174.750 ; free physical = 2443 ; free virtual = 26165
+Finished Handling Custom Attributes : Time (s): cpu = 00:00:06 ; elapsed = 00:00:08 . Memory (MB): peak = 1598.238 ; gain = 175.750 ; free physical = 2384 ; free virtual = 24463
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished RTL Optimization Phase 1 : Time (s): cpu = 00:00:06 ; elapsed = 00:00:08 . Memory (MB): peak = 1596.238 ; gain = 174.750 ; free physical = 2443 ; free virtual = 26165
+Finished RTL Optimization Phase 1 : Time (s): cpu = 00:00:06 ; elapsed = 00:00:08 . Memory (MB): peak = 1598.238 ; gain = 175.750 ; free physical = 2384 ; free virtual = 24463
 ---------------------------------------------------------------------------------
 INFO: [Netlist 29-17] Analyzing 38 Unisim elements for replacement
 INFO: [Netlist 29-28] Unisim Transformation completed in 0 CPU seconds
@@ -2079,27 +2080,27 @@ Finished Parsing XDC File [/home/wei/casper/casper_mlib/tutorials_devel/zcu111/r
 INFO: [Project 1-236] Implementation specific constraints were found while reading constraint file [/home/wei/casper/casper_mlib/tutorials_devel/zcu111/raw_axi_test/onegbe_test/onegbe_test/myproj/myproj.srcs/sources_1/ip/gig_ethernet_pcs_pma_autonegotiation_1000BASEX/ip_0/synth/PCS_PMA_gig_ethernet_pcs_pma_1_0_gt.xdc]. These constraints will be ignored for synthesis but will be used in implementation. Impacted constraints are listed in the file [.Xil/gig_ethernet_pcs_pma_autonegotiation_1000BASEX_propImpl.xdc].
 Resolution: To avoid this warning, move constraints listed in [.Xil/gig_ethernet_pcs_pma_autonegotiation_1000BASEX_propImpl.xdc] to another XDC file and exclude this new file from synthesis with the used_in_synthesis property (File Properties dialog in GUI) and re-run elaboration/synthesis.
 INFO: [Timing 38-2] Deriving generated clocks
-Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00 . Memory (MB): peak = 2536.027 ; gain = 0.000 ; free physical = 4067 ; free virtual = 27777
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00 . Memory (MB): peak = 2537.012 ; gain = 0.000 ; free physical = 4023 ; free virtual = 26090
 Parsing XDC File [/home/wei/casper/casper_mlib/tutorials_devel/zcu111/raw_axi_test/onegbe_test/onegbe_test/myproj/myproj.runs/gig_ethernet_pcs_pma_autonegotiation_1000BASEX_synth_1/dont_touch.xdc]
 Finished Parsing XDC File [/home/wei/casper/casper_mlib/tutorials_devel/zcu111/raw_axi_test/onegbe_test/onegbe_test/myproj/myproj.runs/gig_ethernet_pcs_pma_autonegotiation_1000BASEX_synth_1/dont_touch.xdc]
 INFO: [Project 1-236] Implementation specific constraints were found while reading constraint file [/home/wei/casper/casper_mlib/tutorials_devel/zcu111/raw_axi_test/onegbe_test/onegbe_test/myproj/myproj.runs/gig_ethernet_pcs_pma_autonegotiation_1000BASEX_synth_1/dont_touch.xdc]. These constraints will be ignored for synthesis but will be used in implementation. Impacted constraints are listed in the file [.Xil/gig_ethernet_pcs_pma_autonegotiation_1000BASEX_propImpl.xdc].
 Resolution: To avoid this warning, move constraints listed in [.Xil/gig_ethernet_pcs_pma_autonegotiation_1000BASEX_propImpl.xdc] to another XDC file and exclude this new file from synthesis with the used_in_synthesis property (File Properties dialog in GUI) and re-run elaboration/synthesis.
-Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00 . Memory (MB): peak = 2536.027 ; gain = 0.000 ; free physical = 4067 ; free virtual = 27777
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.01 . Memory (MB): peak = 2537.012 ; gain = 0.000 ; free physical = 4023 ; free virtual = 26090
 Parsing XDC File [/home/wei/casper/casper_mlib/tutorials_devel/zcu111/raw_axi_test/onegbe_test/onegbe_test/myproj/myproj.srcs/sources_1/ip/gig_ethernet_pcs_pma_autonegotiation_1000BASEX/synth/gig_ethernet_pcs_pma_autonegotiation_1000BASEX.xdc] for cell 'U0'
 Finished Parsing XDC File [/home/wei/casper/casper_mlib/tutorials_devel/zcu111/raw_axi_test/onegbe_test/onegbe_test/myproj/myproj.srcs/sources_1/ip/gig_ethernet_pcs_pma_autonegotiation_1000BASEX/synth/gig_ethernet_pcs_pma_autonegotiation_1000BASEX.xdc] for cell 'U0'
 Completed Processing XDC Constraints
 
-Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00 . Memory (MB): peak = 2536.027 ; gain = 0.000 ; free physical = 4067 ; free virtual = 27777
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00 . Memory (MB): peak = 2537.012 ; gain = 0.000 ; free physical = 4022 ; free virtual = 26089
 INFO: [Project 1-111] Unisim Transformation Summary:
   A total of 38 instances were transformed.
   FD => FDRE: 12 instances
   FDP => FDPE: 24 instances
   SRL16 => SRL16E: 2 instances
 
-Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00 . Memory (MB): peak = 2536.027 ; gain = 0.000 ; free physical = 4067 ; free virtual = 27777
-Constraint Validation Runtime : Time (s): cpu = 00:00:00.04 ; elapsed = 00:00:00.03 . Memory (MB): peak = 2536.027 ; gain = 0.000 ; free physical = 4065 ; free virtual = 27775
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00 . Memory (MB): peak = 2537.012 ; gain = 0.000 ; free physical = 4020 ; free virtual = 26088
+Constraint Validation Runtime : Time (s): cpu = 00:00:00.05 ; elapsed = 00:00:00.03 . Memory (MB): peak = 2537.012 ; gain = 0.000 ; free physical = 4018 ; free virtual = 26085
 ---------------------------------------------------------------------------------
-Finished Constraint Validation : Time (s): cpu = 00:00:22 ; elapsed = 00:00:30 . Memory (MB): peak = 2536.027 ; gain = 1114.539 ; free physical = 4085 ; free virtual = 27795
+Finished Constraint Validation : Time (s): cpu = 00:00:22 ; elapsed = 00:00:31 . Memory (MB): peak = 2537.012 ; gain = 1114.523 ; free physical = 4032 ; free virtual = 26100
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start Loading Part and Timing Information
@@ -2107,7 +2108,7 @@ Start Loading Part and Timing Information
 Loading part: xczu28dr-ffvg1517-2-e
 INFO: [Synth 8-6742] Reading net delay rules and data
 ---------------------------------------------------------------------------------
-Finished Loading Part and Timing Information : Time (s): cpu = 00:00:22 ; elapsed = 00:00:30 . Memory (MB): peak = 2536.027 ; gain = 1114.539 ; free physical = 4085 ; free virtual = 27795
+Finished Loading Part and Timing Information : Time (s): cpu = 00:00:22 ; elapsed = 00:00:31 . Memory (MB): peak = 2537.012 ; gain = 1114.523 ; free physical = 4032 ; free virtual = 26100
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start Applying 'set_property' XDC Constraints
@@ -2116,7 +2117,7 @@ Applied set_property DONT_TOUCH = true for U0/pcs_pma_block_i/transceiver_inst/P
 Applied set_property DONT_TOUCH = true for U0. (constraint file  /home/wei/casper/casper_mlib/tutorials_devel/zcu111/raw_axi_test/onegbe_test/onegbe_test/myproj/myproj.runs/gig_ethernet_pcs_pma_autonegotiation_1000BASEX_synth_1/dont_touch.xdc, line 17).
 Applied set_property DONT_TOUCH = true for U0/pcs_pma_block_i/transceiver_inst/PCS_PMA_gig_ethernet_pcs_pma_1_0_gt_i. (constraint file  auto generated constraint, line ).
 ---------------------------------------------------------------------------------
-Finished applying 'set_property' XDC Constraints : Time (s): cpu = 00:00:22 ; elapsed = 00:00:31 . Memory (MB): peak = 2536.027 ; gain = 1114.539 ; free physical = 4083 ; free virtual = 27794
+Finished applying 'set_property' XDC Constraints : Time (s): cpu = 00:00:22 ; elapsed = 00:00:31 . Memory (MB): peak = 2537.012 ; gain = 1114.523 ; free physical = 4034 ; free virtual = 26101
 ---------------------------------------------------------------------------------
 INFO: [Synth 8-5544] ROM "XMIT_CONFIG_INT" won't be mapped to Block RAM because address size (2) smaller than threshold (5)
 INFO: [Synth 8-5546] ROM "EXT_CODE" won't be mapped to RAM because it is too sparse
@@ -2311,7 +2312,7 @@ ST_RESET_ALL_TX_PLL_WAIT |                              010 |                   
 ---------------------------------------------------------------------------------------------------
 INFO: [Synth 8-3354] encoded FSM with state register 'sm_reset_all_reg' using encoding 'sequential' in module 'gtwizard_ultrascale_v1_7_5_gtwiz_reset'
 ---------------------------------------------------------------------------------
-Finished RTL Optimization Phase 2 : Time (s): cpu = 00:00:24 ; elapsed = 00:00:33 . Memory (MB): peak = 2536.027 ; gain = 1114.539 ; free physical = 3752 ; free virtual = 27463
+Finished RTL Optimization Phase 2 : Time (s): cpu = 00:00:24 ; elapsed = 00:00:33 . Memory (MB): peak = 2537.012 ; gain = 1114.523 ; free physical = 3698 ; free virtual = 25766
 ---------------------------------------------------------------------------------
 
 Report RTL Partitions: 
@@ -2777,7 +2778,7 @@ INFO: [Synth 8-3333] propagating constant 0 across sequential element (U0/\pcs_p
 INFO: [Synth 8-3886] merging instance 'U0/pcs_pma_block_i/transceiver_inst/PCS_PMA_gig_ethernet_pcs_pma_1_0_gt_i/inst/gen_gtwizard_gtye4_top.PCS_PMA_gig_ethernet_pcs_pma_1_0_gt_gtwizard_gtye4_inst/gen_gtwizard_gtye4.gen_cpll_cal_gtye4.gen_cpll_cal_inst[0].gen_inst_cpll_cal.gtwizard_ultrascale_v1_7_5_gtye4_cpll_cal_inst/gtwizard_ultrascale_v1_7_5_gte4_drp_arb_i/addr_i_reg[20]' (FDE) to 'U0/pcs_pma_block_i/transceiver_inst/PCS_PMA_gig_ethernet_pcs_pma_1_0_gt_i/inst/gen_gtwizard_gtye4_top.PCS_PMA_gig_ethernet_pcs_pma_1_0_gt_gtwizard_gtye4_inst/gen_gtwizard_gtye4.gen_cpll_cal_gtye4.gen_cpll_cal_inst[0].gen_inst_cpll_cal.gtwizard_ultrascale_v1_7_5_gtye4_cpll_cal_inst/gtwizard_ultrascale_v1_7_5_gte4_drp_arb_i/addr_i_reg[26]'
 INFO: [Synth 8-3886] merging instance 'U0/pcs_pma_block_i/transceiver_inst/PCS_PMA_gig_ethernet_pcs_pma_1_0_gt_i/inst/gen_gtwizard_gtye4_top.PCS_PMA_gig_ethernet_pcs_pma_1_0_gt_gtwizard_gtye4_inst/gen_gtwizard_gtye4.gen_cpll_cal_gtye4.gen_cpll_cal_inst[0].gen_inst_cpll_cal.gtwizard_ultrascale_v1_7_5_gtye4_cpll_cal_inst/gtwizard_ultrascale_v1_7_5_gte4_drp_arb_i/idx_reg[1]' (FDRE) to 'U0/pcs_pma_block_i/transceiver_inst/PCS_PMA_gig_ethernet_pcs_pma_1_0_gt_i/inst/gen_gtwizard_gtye4_top.PCS_PMA_gig_ethernet_pcs_pma_1_0_gt_gtwizard_gtye4_inst/gen_gtwizard_gtye4.gen_cpll_cal_gtye4.gen_cpll_cal_inst[0].gen_inst_cpll_cal.gtwizard_ultrascale_v1_7_5_gtye4_cpll_cal_inst/gtwizard_ultrascale_v1_7_5_gte4_drp_arb_i/idx_reg[1]__0'
 ---------------------------------------------------------------------------------
-Finished Cross Boundary and Area Optimization : Time (s): cpu = 00:00:28 ; elapsed = 00:00:37 . Memory (MB): peak = 2536.027 ; gain = 1114.539 ; free physical = 3099 ; free virtual = 26816
+Finished Cross Boundary and Area Optimization : Time (s): cpu = 00:00:28 ; elapsed = 00:00:37 . Memory (MB): peak = 2537.012 ; gain = 1114.523 ; free physical = 3034 ; free virtual = 25109
 ---------------------------------------------------------------------------------
 
 Report RTL Partitions: 
@@ -2789,13 +2790,13 @@ Report RTL Partitions:
 Start Applying XDC Timing Constraints
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished Applying XDC Timing Constraints : Time (s): cpu = 00:00:46 ; elapsed = 00:01:09 . Memory (MB): peak = 2800.348 ; gain = 1378.859 ; free physical = 1211 ; free virtual = 24932
+Finished Applying XDC Timing Constraints : Time (s): cpu = 00:00:46 ; elapsed = 00:01:09 . Memory (MB): peak = 2801.332 ; gain = 1378.844 ; free physical = 1128 ; free virtual = 23207
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start Timing Optimization
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished Timing Optimization : Time (s): cpu = 00:00:46 ; elapsed = 00:01:10 . Memory (MB): peak = 2812.363 ; gain = 1390.875 ; free physical = 1204 ; free virtual = 24925
+Finished Timing Optimization : Time (s): cpu = 00:00:46 ; elapsed = 00:01:09 . Memory (MB): peak = 2813.348 ; gain = 1390.859 ; free physical = 1117 ; free virtual = 23197
 ---------------------------------------------------------------------------------
 
 Report RTL Partitions: 
@@ -2808,7 +2809,7 @@ Start Technology Mapping
 ---------------------------------------------------------------------------------
 INFO: [Synth 8-3886] merging instance 'U0/pcs_pma_block_i/transceiver_inst/PCS_PMA_gig_ethernet_pcs_pma_1_0_gt_i/inst/gen_gtwizard_gtye4_top.PCS_PMA_gig_ethernet_pcs_pma_1_0_gt_gtwizard_gtye4_inst/gen_gtwizard_gtye4.gen_cpll_cal_gtye4.gen_cpll_cal_inst[0].gen_inst_cpll_cal.gtwizard_ultrascale_v1_7_5_gtye4_cpll_cal_inst/gtwizard_ultrascale_v1_7_5_gte4_drp_arb_i/idx_reg[0]' (FDRE) to 'U0/pcs_pma_block_i/transceiver_inst/PCS_PMA_gig_ethernet_pcs_pma_1_0_gt_i/inst/gen_gtwizard_gtye4_top.PCS_PMA_gig_ethernet_pcs_pma_1_0_gt_gtwizard_gtye4_inst/gen_gtwizard_gtye4.gen_cpll_cal_gtye4.gen_cpll_cal_inst[0].gen_inst_cpll_cal.gtwizard_ultrascale_v1_7_5_gtye4_cpll_cal_inst/gtwizard_ultrascale_v1_7_5_gte4_drp_arb_i/idx_reg[0]__0'
 ---------------------------------------------------------------------------------
-Finished Technology Mapping : Time (s): cpu = 00:00:47 ; elapsed = 00:01:11 . Memory (MB): peak = 2825.387 ; gain = 1403.898 ; free physical = 1164 ; free virtual = 24886
+Finished Technology Mapping : Time (s): cpu = 00:00:47 ; elapsed = 00:01:10 . Memory (MB): peak = 2826.371 ; gain = 1403.883 ; free physical = 1086 ; free virtual = 23166
 ---------------------------------------------------------------------------------
 
 Report RTL Partitions: 
@@ -2832,7 +2833,7 @@ Start Final Netlist Cleanup
 Finished Final Netlist Cleanup
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished IO Insertion : Time (s): cpu = 00:00:48 ; elapsed = 00:01:11 . Memory (MB): peak = 2825.387 ; gain = 1403.898 ; free physical = 1134 ; free virtual = 24856
+Finished IO Insertion : Time (s): cpu = 00:00:48 ; elapsed = 00:01:11 . Memory (MB): peak = 2826.371 ; gain = 1403.883 ; free physical = 1061 ; free virtual = 23140
 ---------------------------------------------------------------------------------
 
 Report Check Netlist: 
@@ -2845,7 +2846,7 @@ Report Check Netlist:
 Start Renaming Generated Instances
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished Renaming Generated Instances : Time (s): cpu = 00:00:48 ; elapsed = 00:01:11 . Memory (MB): peak = 2825.387 ; gain = 1403.898 ; free physical = 1134 ; free virtual = 24855
+Finished Renaming Generated Instances : Time (s): cpu = 00:00:48 ; elapsed = 00:01:11 . Memory (MB): peak = 2826.371 ; gain = 1403.883 ; free physical = 1060 ; free virtual = 23140
 ---------------------------------------------------------------------------------
 
 Report RTL Partitions: 
@@ -2857,25 +2858,25 @@ Report RTL Partitions:
 Start Rebuilding User Hierarchy
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished Rebuilding User Hierarchy : Time (s): cpu = 00:00:48 ; elapsed = 00:01:11 . Memory (MB): peak = 2825.387 ; gain = 1403.898 ; free physical = 1126 ; free virtual = 24848
+Finished Rebuilding User Hierarchy : Time (s): cpu = 00:00:48 ; elapsed = 00:01:11 . Memory (MB): peak = 2826.371 ; gain = 1403.883 ; free physical = 1049 ; free virtual = 23128
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start Renaming Generated Ports
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished Renaming Generated Ports : Time (s): cpu = 00:00:48 ; elapsed = 00:01:11 . Memory (MB): peak = 2825.387 ; gain = 1403.898 ; free physical = 1126 ; free virtual = 24848
+Finished Renaming Generated Ports : Time (s): cpu = 00:00:48 ; elapsed = 00:01:11 . Memory (MB): peak = 2826.371 ; gain = 1403.883 ; free physical = 1048 ; free virtual = 23128
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start Handling Custom Attributes
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished Handling Custom Attributes : Time (s): cpu = 00:00:48 ; elapsed = 00:01:11 . Memory (MB): peak = 2825.387 ; gain = 1403.898 ; free physical = 1125 ; free virtual = 24846
+Finished Handling Custom Attributes : Time (s): cpu = 00:00:48 ; elapsed = 00:01:11 . Memory (MB): peak = 2826.371 ; gain = 1403.883 ; free physical = 1047 ; free virtual = 23126
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start Renaming Generated Nets
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished Renaming Generated Nets : Time (s): cpu = 00:00:48 ; elapsed = 00:01:11 . Memory (MB): peak = 2825.387 ; gain = 1403.898 ; free physical = 1125 ; free virtual = 24846
+Finished Renaming Generated Nets : Time (s): cpu = 00:00:48 ; elapsed = 00:01:11 . Memory (MB): peak = 2826.371 ; gain = 1403.883 ; free physical = 1046 ; free virtual = 23126
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start ROM, RAM, DSP and Shift Register Reporting
@@ -2992,11 +2993,11 @@ Report Instance Areas:
 |61    |        reclock_encommaalign                                                                                                                |gig_ethernet_pcs_pma_autonegotiation_1000BASEX_reset_sync  |     6|
 +------+--------------------------------------------------------------------------------------------------------------------------------------------+-----------------------------------------------------------+------+
 ---------------------------------------------------------------------------------
-Finished Writing Synthesis Report : Time (s): cpu = 00:00:48 ; elapsed = 00:01:11 . Memory (MB): peak = 2825.387 ; gain = 1403.898 ; free physical = 1124 ; free virtual = 24846
+Finished Writing Synthesis Report : Time (s): cpu = 00:00:48 ; elapsed = 00:01:11 . Memory (MB): peak = 2826.371 ; gain = 1403.883 ; free physical = 1046 ; free virtual = 23126
 ---------------------------------------------------------------------------------
 Synthesis finished with 0 errors, 0 critical warnings and 892 warnings.
-Synthesis Optimization Runtime : Time (s): cpu = 00:00:34 ; elapsed = 00:00:51 . Memory (MB): peak = 2825.387 ; gain = 464.109 ; free physical = 1162 ; free virtual = 24884
-Synthesis Optimization Complete : Time (s): cpu = 00:00:48 ; elapsed = 00:01:12 . Memory (MB): peak = 2825.395 ; gain = 1403.898 ; free physical = 1172 ; free virtual = 24894
+Synthesis Optimization Runtime : Time (s): cpu = 00:00:34 ; elapsed = 00:00:50 . Memory (MB): peak = 2826.371 ; gain = 465.109 ; free physical = 1084 ; free virtual = 23163
+Synthesis Optimization Complete : Time (s): cpu = 00:00:48 ; elapsed = 00:01:11 . Memory (MB): peak = 2826.379 ; gain = 1403.883 ; free physical = 1091 ; free virtual = 23171
 INFO: [Project 1-571] Translating synthesized netlist
 INFO: [Netlist 29-17] Analyzing 58 Unisim elements for replacement
 INFO: [Netlist 29-28] Unisim Transformation completed in 0 CPU seconds
@@ -3004,7 +3005,7 @@ INFO: [Project 1-570] Preparing netlist for logic optimization
 INFO: [Opt 31-138] Pushed 0 inverter(s) to 0 load pin(s).
 INFO: [Opt 31-441] Inserted BUFG_GT_SYNC U0/pcs_pma_block_i/transceiver_inst/PCS_PMA_gig_ethernet_pcs_pma_1_0_gt_i/inst/gen_gtwizard_gtye4_top.PCS_PMA_gig_ethernet_pcs_pma_1_0_gt_gtwizard_gtye4_inst/gen_gtwizard_gtye4.gen_channel_container[1].gen_enabled_channel.gtye4_channel_wrapper_inst/channel_inst/BUFG_GT_SYNC for BUFG_GT U0/core_clocking_i/rxrecclk_bufg_inst
 INFO: [Opt 31-441] Inserted BUFG_GT_SYNC U0/pcs_pma_block_i/transceiver_inst/PCS_PMA_gig_ethernet_pcs_pma_1_0_gt_i/inst/gen_gtwizard_gtye4_top.PCS_PMA_gig_ethernet_pcs_pma_1_0_gt_gtwizard_gtye4_inst/gen_gtwizard_gtye4.gen_channel_container[1].gen_enabled_channel.gtye4_channel_wrapper_inst/channel_inst/BUFG_GT_SYNC_1 for BUFG_GT U0/core_clocking_i/usrclk2_bufg_inst
-Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00 . Memory (MB): peak = 2882.035 ; gain = 0.000 ; free physical = 1043 ; free virtual = 24765
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00 . Memory (MB): peak = 2883.020 ; gain = 0.000 ; free physical = 978 ; free virtual = 23057
 INFO: [Project 1-111] Unisim Transformation Summary:
   A total of 38 instances were transformed.
   FD => FDRE: 12 instances
@@ -3012,18 +3013,18 @@ INFO: [Project 1-111] Unisim Transformation Summary:
   SRL16 => SRL16E: 2 instances
 
 INFO: [Common 17-83] Releasing license: Synthesis
-305 Infos, 124 Warnings, 0 Critical Warnings and 0 Errors encountered.
+306 Infos, 124 Warnings, 0 Critical Warnings and 0 Errors encountered.
 synth_design completed successfully
-synth_design: Time (s): cpu = 00:00:50 ; elapsed = 00:01:13 . Memory (MB): peak = 2882.035 ; gain = 1480.004 ; free physical = 1103 ; free virtual = 24825
-Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00 . Memory (MB): peak = 2882.035 ; gain = 0.000 ; free physical = 1102 ; free virtual = 24824
+synth_design: Time (s): cpu = 00:00:50 ; elapsed = 00:01:12 . Memory (MB): peak = 2883.020 ; gain = 1479.988 ; free physical = 1037 ; free virtual = 23117
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00 . Memory (MB): peak = 2883.020 ; gain = 0.000 ; free physical = 1037 ; free virtual = 23116
 WARNING: [Constraints 18-5210] No constraints selected for write.
 Resolution: This message can indicate that there are no constraints for the design, or it can indicate that the used_in flags are set such that the constraints are ignored. This later case is used when running synth_design to not write synthesis constraints to the resulting checkpoint. Instead, project constraints are read when the synthesized design is opened.
 INFO: [Common 17-1381] The checkpoint '/home/wei/casper/casper_mlib/tutorials_devel/zcu111/raw_axi_test/onegbe_test/onegbe_test/myproj/myproj.runs/gig_ethernet_pcs_pma_autonegotiation_1000BASEX_synth_1/gig_ethernet_pcs_pma_autonegotiation_1000BASEX.dcp' has been generated.
 INFO: [Coretcl 2-1648] Added synthesis output to IP cache for IP gig_ethernet_pcs_pma_autonegotiation_1000BASEX, cache-ID = 1a302b6518b7cdff
 INFO: [Coretcl 2-1174] Renamed 60 cell refs.
-Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00 . Memory (MB): peak = 2906.047 ; gain = 0.000 ; free physical = 982 ; free virtual = 24707
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00 . Memory (MB): peak = 2907.031 ; gain = 0.000 ; free physical = 936 ; free virtual = 23019
 WARNING: [Constraints 18-5210] No constraints selected for write.
 Resolution: This message can indicate that there are no constraints for the design, or it can indicate that the used_in flags are set such that the constraints are ignored. This later case is used when running synth_design to not write synthesis constraints to the resulting checkpoint. Instead, project constraints are read when the synthesized design is opened.
 INFO: [Common 17-1381] The checkpoint '/home/wei/casper/casper_mlib/tutorials_devel/zcu111/raw_axi_test/onegbe_test/onegbe_test/myproj/myproj.runs/gig_ethernet_pcs_pma_autonegotiation_1000BASEX_synth_1/gig_ethernet_pcs_pma_autonegotiation_1000BASEX.dcp' has been generated.
 INFO: [runtcl-4] Executing : report_utilization -file gig_ethernet_pcs_pma_autonegotiation_1000BASEX_utilization_synth.rpt -pb gig_ethernet_pcs_pma_autonegotiation_1000BASEX_utilization_synth.pb
-INFO: [Common 17-206] Exiting Vivado at Thu Sep 24 16:35:25 2020...
+INFO: [Common 17-206] Exiting Vivado at Fri Oct 16 21:07:01 2020...

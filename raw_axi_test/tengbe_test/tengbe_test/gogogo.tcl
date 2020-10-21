@@ -24,6 +24,7 @@ import_files -force /home/wei/casper/casper_mlib/tutorials_devel/zcu111/mlib_dev
 import_files -force /home/wei/casper/casper_mlib/tutorials_devel/zcu111/mlib_devel/jasper_library/hdl_sources/tengbaser_infrastructure_ultrascale/xxv_ethernet_1_clocking_wrapper.v
 import_files -force /home/wei/casper/casper_mlib/tutorials_devel/zcu111/mlib_devel/jasper_library/hdl_sources/tengbaser_infrastructure_ultrascale/gtwizard_ultrascale_v1_7_gtye4_common.v
 import_files -force /home/wei/casper/casper_mlib/tutorials_devel/zcu111/mlib_devel/jasper_library/hdl_sources/tengbaser_infrastructure_ultrascale/xxv_ethernet_1_common_wrapper.v
+import_files -force /home/wei/casper/casper_mlib/tutorials_devel/zcu111/mlib_devel/jasper_library/hdl_sources/tengbaser_infrastructure_ultrascale/AXI4LITE2AXI4_axi_protocol_convert_0_0.xci
 import_files -force /home/wei/casper/casper_mlib/tutorials_devel/zcu111/mlib_devel/jasper_library/hdl_sources/tengbaser_infrastructure_ultrascale/axi_slave_wishbone_classic_master.vhd
 import_files -force /home/wei/casper/casper_mlib/tutorials_devel/zcu111/mlib_devel/jasper_library/hdl_sources/wb_register_simulink2ppc
 import_files -force /home/wei/casper/casper_mlib/tutorials_devel/zcu111/mlib_devel/jasper_library/hdl_sources/gpio_simulink2ext

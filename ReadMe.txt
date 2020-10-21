@@ -1,3 +1,14 @@
+V0.7:
+Currently, the 10GbE core works.
+However, I still need to figure some issues out:
+(1) The current design only support one 10GbE core, I will add some code for multi 10GbE cores;
+(2) When I configure the 10GbE via casperfpga, I got some weird issues.
+ValueError: Verification of write to gbe0 at offset 12 failed. Wrote 0x00002482... but got back 0x00002482.
+It looks like the value is written to zcu111 correctly, but casperfpga reported an error.
+(3) I need to check the data width of snapshot. In the current design, the data width can only be set to 32bits.
+(4) tengbaser_infrastructure_ultrascale is a little complicated, so I will simplify it.
+----------------------------------------------------------------------------------------
+
 V0.6:
 testing onegbe and tengbe on zcu111.
 

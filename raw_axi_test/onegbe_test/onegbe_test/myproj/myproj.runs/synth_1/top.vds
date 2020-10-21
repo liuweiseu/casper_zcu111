@@ -2,8 +2,8 @@
 # Vivado v2018.3.1_AR71948 (64-bit)
 # SW Build 2489853 on Tue Mar 26 04:18:30 MDT 2019
 # IP Build 2486929 on Tue Mar 26 06:44:21 MDT 2019
-# Start of session at: Thu Sep 24 16:41:24 2020
-# Process ID: 21825
+# Start of session at: Fri Oct 16 21:13:04 2020
+# Process ID: 24427
 # Current directory: /home/wei/casper/casper_mlib/tutorials_devel/zcu111/raw_axi_test/onegbe_test/onegbe_test/myproj/myproj.runs/synth_1
 # Command line: vivado -log top.vds -product Vivado -mode batch -messageDb vivado.pb -notrace -source top.tcl
 # Log file: /home/wei/casper/casper_mlib/tutorials_devel/zcu111/raw_axi_test/onegbe_test/onegbe_test/myproj/myproj.runs/synth_1/top.vds
@@ -17,17 +17,18 @@ Command: synth_design -top top -part xczu28dr-ffvg1517-2-e
 Starting synth_design
 Attempting to get a license for feature 'Synthesis' and/or device 'xczu28dr'
 INFO: [Common 17-349] Got license for feature 'Synthesis' and/or device 'xczu28dr'
-INFO: [Common 17-86] Your Synthesis license expires in 25 day(s)
+INFO: [Common 17-86] Your Synthesis license expires in 3 day(s)
+INFO: [Common 17-1223] The version limit for your license is '2020.10' and will expire in 15 days. A version limit expiration means that, although you may be able to continue to use the current version of tools or IP with this license, you will not be eligible for any updates or new releases.
 INFO: Launching helper process for spawning children vivado processes
-INFO: Helper process launched with PID 21859 
+INFO: Helper process launched with PID 24475 
 ---------------------------------------------------------------------------------
-Starting RTL Elaboration : Time (s): cpu = 00:00:01 ; elapsed = 00:00:02 . Memory (MB): peak = 1529.469 ; gain = 95.000 ; free physical = 5549 ; free virtual = 29296
+Starting RTL Elaboration : Time (s): cpu = 00:00:01 ; elapsed = 00:00:02 . Memory (MB): peak = 1530.684 ; gain = 95.000 ; free physical = 5586 ; free virtual = 27593
 ---------------------------------------------------------------------------------
 INFO: [Synth 8-6157] synthesizing module 'top' [/home/wei/casper/casper_mlib/tutorials_devel/zcu111/raw_axi_test/onegbe_test/onegbe_test/myproj/myproj.srcs/sources_1/imports/onegbe_test/top.v:7]
 INFO: [Synth 8-6157] synthesizing module 'gbe_udp' [/home/wei/casper/casper_mlib/tutorials_devel/zcu111/raw_axi_test/onegbe_test/onegbe_test/myproj/myproj.srcs/sources_1/imports/onegbe/gbe_udp.v:2]
 	Parameter LOCAL_ENABLE bound to: 1 - type: integer 
 	Parameter LOCAL_MAC bound to: 48'b000100100011010001010110011110001001101010111100 
-	Parameter LOCAL_IP bound to: -1062721270 - type: integer 
+	Parameter LOCAL_IP bound to: -1062731496 - type: integer 
 	Parameter LOCAL_PORT bound to: 16'b0001000011100001 
 	Parameter LOCAL_GATEWAY bound to: 1 - type: integer 
 	Parameter CPU_PROMISCUOUS bound to: 1 - type: integer 
@@ -39,7 +40,7 @@ INFO: [Synth 8-6157] synthesizing module 'gbe_udp' [/home/wei/casper/casper_mlib
 	Parameter C_OPB_DWIDTH bound to: 65535 - type: integer 
 INFO: [Synth 8-6157] synthesizing module 'gbe_cpu_attach_wb' [/home/wei/casper/casper_mlib/tutorials_devel/zcu111/raw_axi_test/onegbe_test/onegbe_test/myproj/myproj.srcs/sources_1/imports/onegbe/gbe_cpu_attach_wb.v:2]
 	Parameter LOCAL_MAC bound to: 48'b000100100011010001010110011110001001101010111100 
-	Parameter LOCAL_IP bound to: -1062721270 - type: integer 
+	Parameter LOCAL_IP bound to: -1062731496 - type: integer 
 	Parameter LOCAL_PORT bound to: 16'b0001000011100001 
 	Parameter LOCAL_GATEWAY bound to: 1 - type: integer 
 	Parameter LOCAL_ENABLE bound to: 1 - type: integer 
@@ -84,8 +85,8 @@ WARNING: [Synth 8-6104] Input port 'phy_status' has an internal driver [/home/we
 INFO: [Synth 8-6155] done synthesizing module 'gbe_cpu_attach_wb' (1#1) [/home/wei/casper/casper_mlib/tutorials_devel/zcu111/raw_axi_test/onegbe_test/onegbe_test/myproj/myproj.srcs/sources_1/imports/onegbe/gbe_cpu_attach_wb.v:2]
 WARNING: [Synth 8-689] width (11) of port connection 'cpu_tx_size' does not match port width (12) of module 'gbe_cpu_attach_wb' [/home/wei/casper/casper_mlib/tutorials_devel/zcu111/raw_axi_test/onegbe_test/onegbe_test/myproj/myproj.srcs/sources_1/imports/onegbe/gbe_udp.v:211]
 WARNING: [Synth 8-689] width (1) of port connection 'phy_control' does not match port width (32) of module 'gbe_cpu_attach_wb' [/home/wei/casper/casper_mlib/tutorials_devel/zcu111/raw_axi_test/onegbe_test/onegbe_test/myproj/myproj.srcs/sources_1/imports/onegbe/gbe_udp.v:216]
-INFO: [Synth 8-638] synthesizing module 'gbe_cpu_buffer' [/home/wei/casper/casper_mlib/tutorials_devel/zcu111/raw_axi_test/onegbe_test/onegbe_test/myproj/myproj.runs/synth_1/.Xil/Vivado-21825-wei-Berkeley/realtime/gbe_cpu_buffer_stub.vhdl:21]
-INFO: [Synth 8-638] synthesizing module 'gbe_arp_cache' [/home/wei/casper/casper_mlib/tutorials_devel/zcu111/raw_axi_test/onegbe_test/onegbe_test/myproj/myproj.runs/synth_1/.Xil/Vivado-21825-wei-Berkeley/realtime/gbe_arp_cache_stub.vhdl:21]
+INFO: [Synth 8-638] synthesizing module 'gbe_cpu_buffer' [/home/wei/casper/casper_mlib/tutorials_devel/zcu111/raw_axi_test/onegbe_test/onegbe_test/myproj/myproj.runs/synth_1/.Xil/Vivado-24427-wei-Berkeley/realtime/gbe_cpu_buffer_stub.vhdl:21]
+INFO: [Synth 8-638] synthesizing module 'gbe_arp_cache' [/home/wei/casper/casper_mlib/tutorials_devel/zcu111/raw_axi_test/onegbe_test/onegbe_test/myproj/myproj.runs/synth_1/.Xil/Vivado-24427-wei-Berkeley/realtime/gbe_arp_cache_stub.vhdl:21]
 INFO: [Synth 8-6157] synthesizing module 'gbe_tx' [/home/wei/casper/casper_mlib/tutorials_devel/zcu111/raw_axi_test/onegbe_test/onegbe_test/myproj/myproj.srcs/sources_1/imports/onegbe/gbe_tx.v:2]
 	Parameter REG_APP_IF bound to: 1 - type: integer 
 	Parameter MAC_HDR_SIZE bound to: 14 - type: integer 
@@ -99,9 +100,9 @@ INFO: [Synth 8-6157] synthesizing module 'gbe_tx' [/home/wei/casper/casper_mlib/
 	Parameter TX_APP_DATA bound to: 3'b100 
 	Parameter TX_CPU_WAIT bound to: 3'b101 
 	Parameter TX_CPU_DATA bound to: 3'b110 
-INFO: [Synth 8-638] synthesizing module 'gbe_tx_packet_fifo' [/home/wei/casper/casper_mlib/tutorials_devel/zcu111/raw_axi_test/onegbe_test/onegbe_test/myproj/myproj.runs/synth_1/.Xil/Vivado-21825-wei-Berkeley/realtime/gbe_tx_packet_fifo_stub.vhdl:23]
+INFO: [Synth 8-638] synthesizing module 'gbe_tx_packet_fifo' [/home/wei/casper/casper_mlib/tutorials_devel/zcu111/raw_axi_test/onegbe_test/onegbe_test/myproj/myproj.runs/synth_1/.Xil/Vivado-24427-wei-Berkeley/realtime/gbe_tx_packet_fifo_stub.vhdl:23]
 WARNING: [Synth 8-350] instance 'tx_packet_fifo_inst' of module 'gbe_tx_packet_fifo' requires 12 connections, but only 10 given [/home/wei/casper/casper_mlib/tutorials_devel/zcu111/raw_axi_test/onegbe_test/onegbe_test/myproj/myproj.srcs/sources_1/imports/onegbe/gbe_tx.v:59]
-INFO: [Synth 8-638] synthesizing module 'gbe_ctrl_fifo' [/home/wei/casper/casper_mlib/tutorials_devel/zcu111/raw_axi_test/onegbe_test/onegbe_test/myproj/myproj.runs/synth_1/.Xil/Vivado-21825-wei-Berkeley/realtime/gbe_ctrl_fifo_stub.vhdl:23]
+INFO: [Synth 8-638] synthesizing module 'gbe_ctrl_fifo' [/home/wei/casper/casper_mlib/tutorials_devel/zcu111/raw_axi_test/onegbe_test/onegbe_test/myproj/myproj.runs/synth_1/.Xil/Vivado-24427-wei-Berkeley/realtime/gbe_ctrl_fifo_stub.vhdl:23]
 WARNING: [Synth 8-350] instance 'tx_packet_ctrl_fifo_inst' of module 'gbe_ctrl_fifo' requires 12 connections, but only 10 given [/home/wei/casper/casper_mlib/tutorials_devel/zcu111/raw_axi_test/onegbe_test/onegbe_test/myproj/myproj.srcs/sources_1/imports/onegbe/gbe_tx.v:92]
 INFO: [Synth 8-155] case statement is not full and has no default [/home/wei/casper/casper_mlib/tutorials_devel/zcu111/raw_axi_test/onegbe_test/onegbe_test/myproj/myproj.srcs/sources_1/imports/onegbe/gbe_tx.v:301]
 INFO: [Synth 8-155] case statement is not full and has no default [/home/wei/casper/casper_mlib/tutorials_devel/zcu111/raw_axi_test/onegbe_test/onegbe_test/myproj/myproj.srcs/sources_1/imports/onegbe/gbe_tx.v:425]
@@ -125,9 +126,9 @@ INFO: [Synth 8-6157] synthesizing module 'gbe_rx' [/home/wei/casper/casper_mlib/
 	Parameter CPU_DATA bound to: 2'b01 
 	Parameter CPU_VALIDATE bound to: 2'b10 
 	Parameter CPU_HANDSHAKE bound to: 2'b11 
-INFO: [Synth 8-638] synthesizing module 'gbe_rx_packet_fifo' [/home/wei/casper/casper_mlib/tutorials_devel/zcu111/raw_axi_test/onegbe_test/onegbe_test/myproj/myproj.runs/synth_1/.Xil/Vivado-21825-wei-Berkeley/realtime/gbe_rx_packet_fifo_stub.vhdl:21]
+INFO: [Synth 8-638] synthesizing module 'gbe_rx_packet_fifo' [/home/wei/casper/casper_mlib/tutorials_devel/zcu111/raw_axi_test/onegbe_test/onegbe_test/myproj/myproj.runs/synth_1/.Xil/Vivado-24427-wei-Berkeley/realtime/gbe_rx_packet_fifo_stub.vhdl:21]
 WARNING: [Synth 8-350] instance 'rx_packet_fifo_inst' of module 'gbe_rx_packet_fifo' requires 10 connections, but only 9 given [/home/wei/casper/casper_mlib/tutorials_devel/zcu111/raw_axi_test/onegbe_test/onegbe_test/myproj/myproj.srcs/sources_1/imports/onegbe/gbe_rx.v:50]
-INFO: [Synth 8-638] synthesizing module 'gbe_rx_ctrl_fifo' [/home/wei/casper/casper_mlib/tutorials_devel/zcu111/raw_axi_test/onegbe_test/onegbe_test/myproj/myproj.runs/synth_1/.Xil/Vivado-21825-wei-Berkeley/realtime/gbe_rx_ctrl_fifo_stub.vhdl:21]
+INFO: [Synth 8-638] synthesizing module 'gbe_rx_ctrl_fifo' [/home/wei/casper/casper_mlib/tutorials_devel/zcu111/raw_axi_test/onegbe_test/onegbe_test/myproj/myproj.runs/synth_1/.Xil/Vivado-24427-wei-Berkeley/realtime/gbe_rx_ctrl_fifo_stub.vhdl:21]
 WARNING: [Synth 8-350] instance 'rx_ctrl_fifo_inst' of module 'gbe_rx_ctrl_fifo' requires 10 connections, but only 9 given [/home/wei/casper/casper_mlib/tutorials_devel/zcu111/raw_axi_test/onegbe_test/onegbe_test/myproj/myproj.srcs/sources_1/imports/onegbe/gbe_rx.v:73]
 INFO: [Synth 8-155] case statement is not full and has no default [/home/wei/casper/casper_mlib/tutorials_devel/zcu111/raw_axi_test/onegbe_test/onegbe_test/myproj/myproj.srcs/sources_1/imports/onegbe/gbe_rx.v:130]
 INFO: [Synth 8-155] case statement is not full and has no default [/home/wei/casper/casper_mlib/tutorials_devel/zcu111/raw_axi_test/onegbe_test/onegbe_test/myproj/myproj.srcs/sources_1/imports/onegbe/gbe_rx.v:202]
@@ -177,7 +178,7 @@ INFO: [Synth 8-6155] done synthesizing module 'CRC_chk' (7#1) [/home/wei/casper/
 INFO: [Synth 8-155] case statement is not full and has no default [/home/wei/casper/casper_mlib/tutorials_devel/zcu111/raw_axi_test/onegbe_test/onegbe_test/myproj/myproj.srcs/sources_1/imports/onegbe/gig_eth_mac_rx.v:154]
 INFO: [Synth 8-6155] done synthesizing module 'gig_eth_mac_rx' (8#1) [/home/wei/casper/casper_mlib/tutorials_devel/zcu111/raw_axi_test/onegbe_test/onegbe_test/myproj/myproj.srcs/sources_1/imports/onegbe/gig_eth_mac_rx.v:9]
 INFO: [Synth 8-6155] done synthesizing module 'gig_eth_mac' (9#1) [/home/wei/casper/casper_mlib/tutorials_devel/zcu111/raw_axi_test/onegbe_test/onegbe_test/myproj/myproj.srcs/sources_1/imports/onegbe/gig_eth_mac.v:16]
-INFO: [Synth 8-638] synthesizing module 'gig_ethernet_pcs_pma_autonegotiation_1000BASEX' [/home/wei/casper/casper_mlib/tutorials_devel/zcu111/raw_axi_test/onegbe_test/onegbe_test/myproj/myproj.runs/synth_1/.Xil/Vivado-21825-wei-Berkeley/realtime/gig_ethernet_pcs_pma_autonegotiation_1000BASEX_stub.vhdl:41]
+INFO: [Synth 8-638] synthesizing module 'gig_ethernet_pcs_pma_autonegotiation_1000BASEX' [/home/wei/casper/casper_mlib/tutorials_devel/zcu111/raw_axi_test/onegbe_test/onegbe_test/myproj/myproj.runs/synth_1/.Xil/Vivado-24427-wei-Berkeley/realtime/gig_ethernet_pcs_pma_autonegotiation_1000BASEX_stub.vhdl:41]
 INFO: [Synth 8-638] synthesizing module 'axi_slave_wishbone_classic_master' [/home/wei/casper/casper_mlib/tutorials_devel/zcu111/raw_axi_test/onegbe_test/onegbe_test/myproj/myproj.srcs/sources_1/imports/rfsoc/axi_slave_wishbone_classic_master.vhd:108]
 	Parameter C_S_AXI_ID_WIDTH bound to: 1 - type: integer 
 	Parameter C_S_AXI_DATA_WIDTH bound to: 32 - type: integer 
@@ -449,8 +450,8 @@ INFO: [Synth 8-638] synthesizing module 'onegbe_test_xlcounter_free' [/home/wei/
 	Parameter core_name0 bound to: onegbe_test_c_counter_binary_v12_0_i0 - type: string 
 	Parameter op_width bound to: 16 - type: integer 
 	Parameter op_arith bound to: 1 - type: integer 
-INFO: [Synth 8-3491] module 'onegbe_test_c_counter_binary_v12_0_i0' declared at '/home/wei/casper/casper_mlib/tutorials_devel/zcu111/raw_axi_test/onegbe_test/onegbe_test/myproj/myproj.runs/synth_1/.Xil/Vivado-21825-wei-Berkeley/realtime/onegbe_test_c_counter_binary_v12_0_i0_stub.vhdl:5' bound to instance 'core_instance0' of component 'onegbe_test_c_counter_binary_v12_0_i0' [/home/wei/casper/casper_mlib/tutorials_devel/zcu111/raw_axi_test/onegbe_test/onegbe_test/myproj/myproj.srcs/sources_1/imports/sysgen/onegbe_test_entity_declarations.vhd:2047]
-INFO: [Synth 8-638] synthesizing module 'onegbe_test_c_counter_binary_v12_0_i0' [/home/wei/casper/casper_mlib/tutorials_devel/zcu111/raw_axi_test/onegbe_test/onegbe_test/myproj/myproj.runs/synth_1/.Xil/Vivado-21825-wei-Berkeley/realtime/onegbe_test_c_counter_binary_v12_0_i0_stub.vhdl:15]
+INFO: [Synth 8-3491] module 'onegbe_test_c_counter_binary_v12_0_i0' declared at '/home/wei/casper/casper_mlib/tutorials_devel/zcu111/raw_axi_test/onegbe_test/onegbe_test/myproj/myproj.runs/synth_1/.Xil/Vivado-24427-wei-Berkeley/realtime/onegbe_test_c_counter_binary_v12_0_i0_stub.vhdl:5' bound to instance 'core_instance0' of component 'onegbe_test_c_counter_binary_v12_0_i0' [/home/wei/casper/casper_mlib/tutorials_devel/zcu111/raw_axi_test/onegbe_test/onegbe_test/myproj/myproj.srcs/sources_1/imports/sysgen/onegbe_test_entity_declarations.vhd:2047]
+INFO: [Synth 8-638] synthesizing module 'onegbe_test_c_counter_binary_v12_0_i0' [/home/wei/casper/casper_mlib/tutorials_devel/zcu111/raw_axi_test/onegbe_test/onegbe_test/myproj/myproj.runs/synth_1/.Xil/Vivado-24427-wei-Berkeley/realtime/onegbe_test_c_counter_binary_v12_0_i0_stub.vhdl:15]
 INFO: [Synth 8-256] done synthesizing module 'onegbe_test_xlcounter_free' (48#1) [/home/wei/casper/casper_mlib/tutorials_devel/zcu111/raw_axi_test/onegbe_test/onegbe_test/myproj/myproj.srcs/sources_1/imports/sysgen/onegbe_test_entity_declarations.vhd:1980]
 INFO: [Synth 8-638] synthesizing module 'onegbe_test_xlslice' [/home/wei/casper/casper_mlib/tutorials_devel/zcu111/raw_axi_test/onegbe_test/onegbe_test/myproj/myproj.srcs/sources_1/imports/sysgen/onegbe_test_entity_declarations.vhd:965]
 	Parameter new_msb bound to: 14 - type: integer 
@@ -556,8 +557,8 @@ INFO: [Synth 8-638] synthesizing module 'onegbe_test_xlcounter_free__parameteriz
 	Parameter core_name0 bound to: onegbe_test_c_counter_binary_v12_0_i1 - type: string 
 	Parameter op_width bound to: 2 - type: integer 
 	Parameter op_arith bound to: 1 - type: integer 
-INFO: [Synth 8-3491] module 'onegbe_test_c_counter_binary_v12_0_i1' declared at '/home/wei/casper/casper_mlib/tutorials_devel/zcu111/raw_axi_test/onegbe_test/onegbe_test/myproj/myproj.runs/synth_1/.Xil/Vivado-21825-wei-Berkeley/realtime/onegbe_test_c_counter_binary_v12_0_i1_stub.vhdl:5' bound to instance 'core_instance1' of component 'onegbe_test_c_counter_binary_v12_0_i1' [/home/wei/casper/casper_mlib/tutorials_devel/zcu111/raw_axi_test/onegbe_test/onegbe_test/myproj/myproj.srcs/sources_1/imports/sysgen/onegbe_test_entity_declarations.vhd:2057]
-INFO: [Synth 8-638] synthesizing module 'onegbe_test_c_counter_binary_v12_0_i1' [/home/wei/casper/casper_mlib/tutorials_devel/zcu111/raw_axi_test/onegbe_test/onegbe_test/myproj/myproj.runs/synth_1/.Xil/Vivado-21825-wei-Berkeley/realtime/onegbe_test_c_counter_binary_v12_0_i1_stub.vhdl:15]
+INFO: [Synth 8-3491] module 'onegbe_test_c_counter_binary_v12_0_i1' declared at '/home/wei/casper/casper_mlib/tutorials_devel/zcu111/raw_axi_test/onegbe_test/onegbe_test/myproj/myproj.runs/synth_1/.Xil/Vivado-24427-wei-Berkeley/realtime/onegbe_test_c_counter_binary_v12_0_i1_stub.vhdl:5' bound to instance 'core_instance1' of component 'onegbe_test_c_counter_binary_v12_0_i1' [/home/wei/casper/casper_mlib/tutorials_devel/zcu111/raw_axi_test/onegbe_test/onegbe_test/myproj/myproj.srcs/sources_1/imports/sysgen/onegbe_test_entity_declarations.vhd:2057]
+INFO: [Synth 8-638] synthesizing module 'onegbe_test_c_counter_binary_v12_0_i1' [/home/wei/casper/casper_mlib/tutorials_devel/zcu111/raw_axi_test/onegbe_test/onegbe_test/myproj/myproj.runs/synth_1/.Xil/Vivado-24427-wei-Berkeley/realtime/onegbe_test_c_counter_binary_v12_0_i1_stub.vhdl:15]
 INFO: [Synth 8-256] done synthesizing module 'onegbe_test_xlcounter_free__parameterized0' (61#1) [/home/wei/casper/casper_mlib/tutorials_devel/zcu111/raw_axi_test/onegbe_test/onegbe_test/myproj/myproj.srcs/sources_1/imports/sysgen/onegbe_test_entity_declarations.vhd:1980]
 INFO: [Synth 8-638] synthesizing module 'sysgen_mux_3c0f40d0c6' [/home/wei/casper/casper_mlib/tutorials_devel/zcu111/raw_axi_test/onegbe_test/onegbe_test/myproj/myproj.srcs/sources_1/imports/sysgen/onegbe_test_entity_declarations.vhd:1042]
 INFO: [Synth 8-256] done synthesizing module 'sysgen_mux_3c0f40d0c6' (62#1) [/home/wei/casper/casper_mlib/tutorials_devel/zcu111/raw_axi_test/onegbe_test/onegbe_test/myproj/myproj.srcs/sources_1/imports/sysgen/onegbe_test_entity_declarations.vhd:1042]
@@ -1036,22 +1037,22 @@ INFO: [Synth 8-638] synthesizing module 'onegbe_test_xlcounter_free__parameteriz
 	Parameter core_name0 bound to: onegbe_test_c_counter_binary_v12_0_i2 - type: string 
 	Parameter op_width bound to: 32 - type: integer 
 	Parameter op_arith bound to: 1 - type: integer 
-INFO: [Synth 8-3491] module 'onegbe_test_c_counter_binary_v12_0_i2' declared at '/home/wei/casper/casper_mlib/tutorials_devel/zcu111/raw_axi_test/onegbe_test/onegbe_test/myproj/myproj.runs/synth_1/.Xil/Vivado-21825-wei-Berkeley/realtime/onegbe_test_c_counter_binary_v12_0_i2_stub.vhdl:5' bound to instance 'core_instance2' of component 'onegbe_test_c_counter_binary_v12_0_i2' [/home/wei/casper/casper_mlib/tutorials_devel/zcu111/raw_axi_test/onegbe_test/onegbe_test/myproj/myproj.srcs/sources_1/imports/sysgen/onegbe_test_entity_declarations.vhd:2067]
-INFO: [Synth 8-638] synthesizing module 'onegbe_test_c_counter_binary_v12_0_i2' [/home/wei/casper/casper_mlib/tutorials_devel/zcu111/raw_axi_test/onegbe_test/onegbe_test/myproj/myproj.runs/synth_1/.Xil/Vivado-21825-wei-Berkeley/realtime/onegbe_test_c_counter_binary_v12_0_i2_stub.vhdl:15]
+INFO: [Synth 8-3491] module 'onegbe_test_c_counter_binary_v12_0_i2' declared at '/home/wei/casper/casper_mlib/tutorials_devel/zcu111/raw_axi_test/onegbe_test/onegbe_test/myproj/myproj.runs/synth_1/.Xil/Vivado-24427-wei-Berkeley/realtime/onegbe_test_c_counter_binary_v12_0_i2_stub.vhdl:5' bound to instance 'core_instance2' of component 'onegbe_test_c_counter_binary_v12_0_i2' [/home/wei/casper/casper_mlib/tutorials_devel/zcu111/raw_axi_test/onegbe_test/onegbe_test/myproj/myproj.srcs/sources_1/imports/sysgen/onegbe_test_entity_declarations.vhd:2067]
+INFO: [Synth 8-638] synthesizing module 'onegbe_test_c_counter_binary_v12_0_i2' [/home/wei/casper/casper_mlib/tutorials_devel/zcu111/raw_axi_test/onegbe_test/onegbe_test/myproj/myproj.runs/synth_1/.Xil/Vivado-24427-wei-Berkeley/realtime/onegbe_test_c_counter_binary_v12_0_i2_stub.vhdl:15]
 INFO: [Synth 8-256] done synthesizing module 'onegbe_test_xlcounter_free__parameterized1' (97#1) [/home/wei/casper/casper_mlib/tutorials_devel/zcu111/raw_axi_test/onegbe_test/onegbe_test/myproj/myproj.srcs/sources_1/imports/sysgen/onegbe_test_entity_declarations.vhd:1980]
 INFO: [Synth 8-638] synthesizing module 'onegbe_test_xlcounter_free__parameterized2' [/home/wei/casper/casper_mlib/tutorials_devel/zcu111/raw_axi_test/onegbe_test/onegbe_test/myproj/myproj.srcs/sources_1/imports/sysgen/onegbe_test_entity_declarations.vhd:1980]
 	Parameter core_name0 bound to: onegbe_test_c_counter_binary_v12_0_i3 - type: string 
 	Parameter op_width bound to: 32 - type: integer 
 	Parameter op_arith bound to: 1 - type: integer 
-INFO: [Synth 8-3491] module 'onegbe_test_c_counter_binary_v12_0_i3' declared at '/home/wei/casper/casper_mlib/tutorials_devel/zcu111/raw_axi_test/onegbe_test/onegbe_test/myproj/myproj.runs/synth_1/.Xil/Vivado-21825-wei-Berkeley/realtime/onegbe_test_c_counter_binary_v12_0_i3_stub.vhdl:5' bound to instance 'core_instance3' of component 'onegbe_test_c_counter_binary_v12_0_i3' [/home/wei/casper/casper_mlib/tutorials_devel/zcu111/raw_axi_test/onegbe_test/onegbe_test/myproj/myproj.srcs/sources_1/imports/sysgen/onegbe_test_entity_declarations.vhd:2077]
-INFO: [Synth 8-638] synthesizing module 'onegbe_test_c_counter_binary_v12_0_i3' [/home/wei/casper/casper_mlib/tutorials_devel/zcu111/raw_axi_test/onegbe_test/onegbe_test/myproj/myproj.runs/synth_1/.Xil/Vivado-21825-wei-Berkeley/realtime/onegbe_test_c_counter_binary_v12_0_i3_stub.vhdl:15]
+INFO: [Synth 8-3491] module 'onegbe_test_c_counter_binary_v12_0_i3' declared at '/home/wei/casper/casper_mlib/tutorials_devel/zcu111/raw_axi_test/onegbe_test/onegbe_test/myproj/myproj.runs/synth_1/.Xil/Vivado-24427-wei-Berkeley/realtime/onegbe_test_c_counter_binary_v12_0_i3_stub.vhdl:5' bound to instance 'core_instance3' of component 'onegbe_test_c_counter_binary_v12_0_i3' [/home/wei/casper/casper_mlib/tutorials_devel/zcu111/raw_axi_test/onegbe_test/onegbe_test/myproj/myproj.srcs/sources_1/imports/sysgen/onegbe_test_entity_declarations.vhd:2077]
+INFO: [Synth 8-638] synthesizing module 'onegbe_test_c_counter_binary_v12_0_i3' [/home/wei/casper/casper_mlib/tutorials_devel/zcu111/raw_axi_test/onegbe_test/onegbe_test/myproj/myproj.runs/synth_1/.Xil/Vivado-24427-wei-Berkeley/realtime/onegbe_test_c_counter_binary_v12_0_i3_stub.vhdl:15]
 INFO: [Synth 8-256] done synthesizing module 'onegbe_test_xlcounter_free__parameterized2' (97#1) [/home/wei/casper/casper_mlib/tutorials_devel/zcu111/raw_axi_test/onegbe_test/onegbe_test/myproj/myproj.srcs/sources_1/imports/sysgen/onegbe_test_entity_declarations.vhd:1980]
 INFO: [Synth 8-638] synthesizing module 'onegbe_test_xlcounter_free__parameterized3' [/home/wei/casper/casper_mlib/tutorials_devel/zcu111/raw_axi_test/onegbe_test/onegbe_test/myproj/myproj.srcs/sources_1/imports/sysgen/onegbe_test_entity_declarations.vhd:1980]
 	Parameter core_name0 bound to: onegbe_test_c_counter_binary_v12_0_i4 - type: string 
 	Parameter op_width bound to: 8 - type: integer 
 	Parameter op_arith bound to: 1 - type: integer 
-INFO: [Synth 8-3491] module 'onegbe_test_c_counter_binary_v12_0_i4' declared at '/home/wei/casper/casper_mlib/tutorials_devel/zcu111/raw_axi_test/onegbe_test/onegbe_test/myproj/myproj.runs/synth_1/.Xil/Vivado-21825-wei-Berkeley/realtime/onegbe_test_c_counter_binary_v12_0_i4_stub.vhdl:5' bound to instance 'core_instance4' of component 'onegbe_test_c_counter_binary_v12_0_i4' [/home/wei/casper/casper_mlib/tutorials_devel/zcu111/raw_axi_test/onegbe_test/onegbe_test/myproj/myproj.srcs/sources_1/imports/sysgen/onegbe_test_entity_declarations.vhd:2087]
-INFO: [Synth 8-638] synthesizing module 'onegbe_test_c_counter_binary_v12_0_i4' [/home/wei/casper/casper_mlib/tutorials_devel/zcu111/raw_axi_test/onegbe_test/onegbe_test/myproj/myproj.runs/synth_1/.Xil/Vivado-21825-wei-Berkeley/realtime/onegbe_test_c_counter_binary_v12_0_i4_stub.vhdl:15]
+INFO: [Synth 8-3491] module 'onegbe_test_c_counter_binary_v12_0_i4' declared at '/home/wei/casper/casper_mlib/tutorials_devel/zcu111/raw_axi_test/onegbe_test/onegbe_test/myproj/myproj.runs/synth_1/.Xil/Vivado-24427-wei-Berkeley/realtime/onegbe_test_c_counter_binary_v12_0_i4_stub.vhdl:5' bound to instance 'core_instance4' of component 'onegbe_test_c_counter_binary_v12_0_i4' [/home/wei/casper/casper_mlib/tutorials_devel/zcu111/raw_axi_test/onegbe_test/onegbe_test/myproj/myproj.srcs/sources_1/imports/sysgen/onegbe_test_entity_declarations.vhd:2087]
+INFO: [Synth 8-638] synthesizing module 'onegbe_test_c_counter_binary_v12_0_i4' [/home/wei/casper/casper_mlib/tutorials_devel/zcu111/raw_axi_test/onegbe_test/onegbe_test/myproj/myproj.runs/synth_1/.Xil/Vivado-24427-wei-Berkeley/realtime/onegbe_test_c_counter_binary_v12_0_i4_stub.vhdl:15]
 INFO: [Synth 8-256] done synthesizing module 'onegbe_test_xlcounter_free__parameterized3' (97#1) [/home/wei/casper/casper_mlib/tutorials_devel/zcu111/raw_axi_test/onegbe_test/onegbe_test/myproj/myproj.srcs/sources_1/imports/sysgen/onegbe_test_entity_declarations.vhd:1980]
 INFO: [Synth 8-638] synthesizing module 'sysgen_delay_71f29a8c9e' [/home/wei/casper/casper_mlib/tutorials_devel/zcu111/raw_axi_test/onegbe_test/onegbe_test/myproj/myproj.srcs/sources_1/imports/sysgen/onegbe_test_entity_declarations.vhd:1733]
 INFO: [Synth 8-256] done synthesizing module 'sysgen_delay_71f29a8c9e' (98#1) [/home/wei/casper/casper_mlib/tutorials_devel/zcu111/raw_axi_test/onegbe_test/onegbe_test/myproj/myproj.srcs/sources_1/imports/sysgen/onegbe_test_entity_declarations.vhd:1733]
@@ -1151,26 +1152,26 @@ INFO: [Synth 8-6155] done synthesizing module 'zcu111_infrastructure' (110#1) [/
 INFO: [Synth 8-638] synthesizing module 'zcu111' [/home/wei/casper/casper_mlib/tutorials_devel/zcu111/raw_axi_test/onegbe_test/onegbe_test/myproj/myproj.srcs/sources_1/bd/zcu111/synth/zcu111.vhd:2004]
 INFO: [Synth 8-638] synthesizing module 'zcu111_axi_interconnect_0_0' [/home/wei/casper/casper_mlib/tutorials_devel/zcu111/raw_axi_test/onegbe_test/onegbe_test/myproj/myproj.srcs/sources_1/bd/zcu111/synth/zcu111.vhd:1149]
 INFO: [Synth 8-638] synthesizing module 'm00_couplers_imp_1CG92RI' [/home/wei/casper/casper_mlib/tutorials_devel/zcu111/raw_axi_test/onegbe_test/onegbe_test/myproj/myproj.srcs/sources_1/bd/zcu111/synth/zcu111.vhd:97]
-INFO: [Synth 8-3491] module 'zcu111_auto_ds_0' declared at '/home/wei/casper/casper_mlib/tutorials_devel/zcu111/raw_axi_test/onegbe_test/onegbe_test/myproj/myproj.runs/synth_1/.Xil/Vivado-21825-wei-Berkeley/realtime/zcu111_auto_ds_0_stub.vhdl:5' bound to instance 'auto_ds' of component 'zcu111_auto_ds_0' [/home/wei/casper/casper_mlib/tutorials_devel/zcu111/raw_axi_test/onegbe_test/onegbe_test/myproj/myproj.srcs/sources_1/bd/zcu111/synth/zcu111.vhd:331]
-INFO: [Synth 8-638] synthesizing module 'zcu111_auto_ds_0' [/home/wei/casper/casper_mlib/tutorials_devel/zcu111/raw_axi_test/onegbe_test/onegbe_test/myproj/myproj.runs/synth_1/.Xil/Vivado-21825-wei-Berkeley/realtime/zcu111_auto_ds_0_stub.vhdl:87]
+INFO: [Synth 8-3491] module 'zcu111_auto_ds_0' declared at '/home/wei/casper/casper_mlib/tutorials_devel/zcu111/raw_axi_test/onegbe_test/onegbe_test/myproj/myproj.runs/synth_1/.Xil/Vivado-24427-wei-Berkeley/realtime/zcu111_auto_ds_0_stub.vhdl:5' bound to instance 'auto_ds' of component 'zcu111_auto_ds_0' [/home/wei/casper/casper_mlib/tutorials_devel/zcu111/raw_axi_test/onegbe_test/onegbe_test/myproj/myproj.srcs/sources_1/bd/zcu111/synth/zcu111.vhd:331]
+INFO: [Synth 8-638] synthesizing module 'zcu111_auto_ds_0' [/home/wei/casper/casper_mlib/tutorials_devel/zcu111/raw_axi_test/onegbe_test/onegbe_test/myproj/myproj.runs/synth_1/.Xil/Vivado-24427-wei-Berkeley/realtime/zcu111_auto_ds_0_stub.vhdl:87]
 INFO: [Synth 8-256] done synthesizing module 'm00_couplers_imp_1CG92RI' (111#1) [/home/wei/casper/casper_mlib/tutorials_devel/zcu111/raw_axi_test/onegbe_test/onegbe_test/myproj/myproj.srcs/sources_1/bd/zcu111/synth/zcu111.vhd:97]
 INFO: [Synth 8-638] synthesizing module 'm01_couplers_imp_9O4VJ' [/home/wei/casper/casper_mlib/tutorials_devel/zcu111/raw_axi_test/onegbe_test/onegbe_test/myproj/myproj.srcs/sources_1/bd/zcu111/synth/zcu111.vhd:498]
-INFO: [Synth 8-3491] module 'zcu111_auto_ds_1' declared at '/home/wei/casper/casper_mlib/tutorials_devel/zcu111/raw_axi_test/onegbe_test/onegbe_test/myproj/myproj.runs/synth_1/.Xil/Vivado-21825-wei-Berkeley/realtime/zcu111_auto_ds_1_stub.vhdl:5' bound to instance 'auto_ds' of component 'zcu111_auto_ds_1' [/home/wei/casper/casper_mlib/tutorials_devel/zcu111/raw_axi_test/onegbe_test/onegbe_test/myproj/myproj.srcs/sources_1/bd/zcu111/synth/zcu111.vhd:732]
-INFO: [Synth 8-638] synthesizing module 'zcu111_auto_ds_1' [/home/wei/casper/casper_mlib/tutorials_devel/zcu111/raw_axi_test/onegbe_test/onegbe_test/myproj/myproj.runs/synth_1/.Xil/Vivado-21825-wei-Berkeley/realtime/zcu111_auto_ds_1_stub.vhdl:87]
+INFO: [Synth 8-3491] module 'zcu111_auto_ds_1' declared at '/home/wei/casper/casper_mlib/tutorials_devel/zcu111/raw_axi_test/onegbe_test/onegbe_test/myproj/myproj.runs/synth_1/.Xil/Vivado-24427-wei-Berkeley/realtime/zcu111_auto_ds_1_stub.vhdl:5' bound to instance 'auto_ds' of component 'zcu111_auto_ds_1' [/home/wei/casper/casper_mlib/tutorials_devel/zcu111/raw_axi_test/onegbe_test/onegbe_test/myproj/myproj.srcs/sources_1/bd/zcu111/synth/zcu111.vhd:732]
+INFO: [Synth 8-638] synthesizing module 'zcu111_auto_ds_1' [/home/wei/casper/casper_mlib/tutorials_devel/zcu111/raw_axi_test/onegbe_test/onegbe_test/myproj/myproj.runs/synth_1/.Xil/Vivado-24427-wei-Berkeley/realtime/zcu111_auto_ds_1_stub.vhdl:87]
 INFO: [Synth 8-256] done synthesizing module 'm01_couplers_imp_9O4VJ' (112#1) [/home/wei/casper/casper_mlib/tutorials_devel/zcu111/raw_axi_test/onegbe_test/onegbe_test/myproj/myproj.srcs/sources_1/bd/zcu111/synth/zcu111.vhd:498]
 INFO: [Synth 8-638] synthesizing module 's00_couplers_imp_16GXSXB' [/home/wei/casper/casper_mlib/tutorials_devel/zcu111/raw_axi_test/onegbe_test/onegbe_test/myproj/myproj.srcs/sources_1/bd/zcu111/synth/zcu111.vhd:903]
 INFO: [Synth 8-256] done synthesizing module 's00_couplers_imp_16GXSXB' (113#1) [/home/wei/casper/casper_mlib/tutorials_devel/zcu111/raw_axi_test/onegbe_test/onegbe_test/myproj/myproj.srcs/sources_1/bd/zcu111/synth/zcu111.vhd:903]
-INFO: [Synth 8-3491] module 'zcu111_xbar_0' declared at '/home/wei/casper/casper_mlib/tutorials_devel/zcu111/raw_axi_test/onegbe_test/onegbe_test/myproj/myproj.runs/synth_1/.Xil/Vivado-21825-wei-Berkeley/realtime/zcu111_xbar_0_stub.vhdl:5' bound to instance 'xbar' of component 'zcu111_xbar_0' [/home/wei/casper/casper_mlib/tutorials_devel/zcu111/raw_axi_test/onegbe_test/onegbe_test/myproj/myproj.srcs/sources_1/bd/zcu111/synth/zcu111.vhd:1825]
-INFO: [Synth 8-638] synthesizing module 'zcu111_xbar_0' [/home/wei/casper/casper_mlib/tutorials_devel/zcu111/raw_axi_test/onegbe_test/onegbe_test/myproj/myproj.runs/synth_1/.Xil/Vivado-21825-wei-Berkeley/realtime/zcu111_xbar_0_stub.vhdl:93]
+INFO: [Synth 8-3491] module 'zcu111_xbar_0' declared at '/home/wei/casper/casper_mlib/tutorials_devel/zcu111/raw_axi_test/onegbe_test/onegbe_test/myproj/myproj.runs/synth_1/.Xil/Vivado-24427-wei-Berkeley/realtime/zcu111_xbar_0_stub.vhdl:5' bound to instance 'xbar' of component 'zcu111_xbar_0' [/home/wei/casper/casper_mlib/tutorials_devel/zcu111/raw_axi_test/onegbe_test/onegbe_test/myproj/myproj.srcs/sources_1/bd/zcu111/synth/zcu111.vhd:1825]
+INFO: [Synth 8-638] synthesizing module 'zcu111_xbar_0' [/home/wei/casper/casper_mlib/tutorials_devel/zcu111/raw_axi_test/onegbe_test/onegbe_test/myproj/myproj.runs/synth_1/.Xil/Vivado-24427-wei-Berkeley/realtime/zcu111_xbar_0_stub.vhdl:93]
 INFO: [Synth 8-256] done synthesizing module 'zcu111_axi_interconnect_0_0' (114#1) [/home/wei/casper/casper_mlib/tutorials_devel/zcu111/raw_axi_test/onegbe_test/onegbe_test/myproj/myproj.srcs/sources_1/bd/zcu111/synth/zcu111.vhd:1149]
-INFO: [Synth 8-3491] module 'zcu111_axi_protocol_convert_1_0' declared at '/home/wei/casper/casper_mlib/tutorials_devel/zcu111/raw_axi_test/onegbe_test/onegbe_test/myproj/myproj.runs/synth_1/.Xil/Vivado-21825-wei-Berkeley/realtime/zcu111_axi_protocol_convert_1_0_stub.vhdl:5' bound to instance 'axi_protocol_convert_1' of component 'zcu111_axi_protocol_convert_1_0' [/home/wei/casper/casper_mlib/tutorials_devel/zcu111/raw_axi_test/onegbe_test/onegbe_test/myproj/myproj.srcs/sources_1/bd/zcu111/synth/zcu111.vhd:2553]
-INFO: [Synth 8-638] synthesizing module 'zcu111_axi_protocol_convert_1_0' [/home/wei/casper/casper_mlib/tutorials_devel/zcu111/raw_axi_test/onegbe_test/onegbe_test/myproj/myproj.runs/synth_1/.Xil/Vivado-21825-wei-Berkeley/realtime/zcu111_axi_protocol_convert_1_0_stub.vhdl:67]
-INFO: [Synth 8-3491] module 'zcu111_axi_protocol_convert_2_0' declared at '/home/wei/casper/casper_mlib/tutorials_devel/zcu111/raw_axi_test/onegbe_test/onegbe_test/myproj/myproj.runs/synth_1/.Xil/Vivado-21825-wei-Berkeley/realtime/zcu111_axi_protocol_convert_2_0_stub.vhdl:5' bound to instance 'axi_protocol_convert_2' of component 'zcu111_axi_protocol_convert_2_0' [/home/wei/casper/casper_mlib/tutorials_devel/zcu111/raw_axi_test/onegbe_test/onegbe_test/myproj/myproj.srcs/sources_1/bd/zcu111/synth/zcu111.vhd:2612]
-INFO: [Synth 8-638] synthesizing module 'zcu111_axi_protocol_convert_2_0' [/home/wei/casper/casper_mlib/tutorials_devel/zcu111/raw_axi_test/onegbe_test/onegbe_test/myproj/myproj.runs/synth_1/.Xil/Vivado-21825-wei-Berkeley/realtime/zcu111_axi_protocol_convert_2_0_stub.vhdl:67]
-INFO: [Synth 8-3491] module 'zcu111_proc_sys_reset_0_0' declared at '/home/wei/casper/casper_mlib/tutorials_devel/zcu111/raw_axi_test/onegbe_test/onegbe_test/myproj/myproj.runs/synth_1/.Xil/Vivado-21825-wei-Berkeley/realtime/zcu111_proc_sys_reset_0_0_stub.vhdl:5' bound to instance 'proc_sys_reset_0' of component 'zcu111_proc_sys_reset_0_0' [/home/wei/casper/casper_mlib/tutorials_devel/zcu111/raw_axi_test/onegbe_test/onegbe_test/myproj/myproj.srcs/sources_1/bd/zcu111/synth/zcu111.vhd:2671]
-INFO: [Synth 8-638] synthesizing module 'zcu111_proc_sys_reset_0_0' [/home/wei/casper/casper_mlib/tutorials_devel/zcu111/raw_axi_test/onegbe_test/onegbe_test/myproj/myproj.runs/synth_1/.Xil/Vivado-21825-wei-Berkeley/realtime/zcu111_proc_sys_reset_0_0_stub.vhdl:21]
-INFO: [Synth 8-3491] module 'zcu111_zynq_ultra_ps_e_0_0' declared at '/home/wei/casper/casper_mlib/tutorials_devel/zcu111/raw_axi_test/onegbe_test/onegbe_test/myproj/myproj.runs/synth_1/.Xil/Vivado-21825-wei-Berkeley/realtime/zcu111_zynq_ultra_ps_e_0_0_stub.vhdl:5' bound to instance 'zynq_ultra_ps_e_0' of component 'zcu111_zynq_ultra_ps_e_0_0' [/home/wei/casper/casper_mlib/tutorials_devel/zcu111/raw_axi_test/onegbe_test/onegbe_test/myproj/myproj.srcs/sources_1/bd/zcu111/synth/zcu111.vhd:2684]
-INFO: [Synth 8-638] synthesizing module 'zcu111_zynq_ultra_ps_e_0_0' [/home/wei/casper/casper_mlib/tutorials_devel/zcu111/raw_axi_test/onegbe_test/onegbe_test/myproj/myproj.runs/synth_1/.Xil/Vivado-21825-wei-Berkeley/realtime/zcu111_zynq_ultra_ps_e_0_0_stub.vhdl:56]
+INFO: [Synth 8-3491] module 'zcu111_axi_protocol_convert_1_0' declared at '/home/wei/casper/casper_mlib/tutorials_devel/zcu111/raw_axi_test/onegbe_test/onegbe_test/myproj/myproj.runs/synth_1/.Xil/Vivado-24427-wei-Berkeley/realtime/zcu111_axi_protocol_convert_1_0_stub.vhdl:5' bound to instance 'axi_protocol_convert_1' of component 'zcu111_axi_protocol_convert_1_0' [/home/wei/casper/casper_mlib/tutorials_devel/zcu111/raw_axi_test/onegbe_test/onegbe_test/myproj/myproj.srcs/sources_1/bd/zcu111/synth/zcu111.vhd:2553]
+INFO: [Synth 8-638] synthesizing module 'zcu111_axi_protocol_convert_1_0' [/home/wei/casper/casper_mlib/tutorials_devel/zcu111/raw_axi_test/onegbe_test/onegbe_test/myproj/myproj.runs/synth_1/.Xil/Vivado-24427-wei-Berkeley/realtime/zcu111_axi_protocol_convert_1_0_stub.vhdl:67]
+INFO: [Synth 8-3491] module 'zcu111_axi_protocol_convert_2_0' declared at '/home/wei/casper/casper_mlib/tutorials_devel/zcu111/raw_axi_test/onegbe_test/onegbe_test/myproj/myproj.runs/synth_1/.Xil/Vivado-24427-wei-Berkeley/realtime/zcu111_axi_protocol_convert_2_0_stub.vhdl:5' bound to instance 'axi_protocol_convert_2' of component 'zcu111_axi_protocol_convert_2_0' [/home/wei/casper/casper_mlib/tutorials_devel/zcu111/raw_axi_test/onegbe_test/onegbe_test/myproj/myproj.srcs/sources_1/bd/zcu111/synth/zcu111.vhd:2612]
+INFO: [Synth 8-638] synthesizing module 'zcu111_axi_protocol_convert_2_0' [/home/wei/casper/casper_mlib/tutorials_devel/zcu111/raw_axi_test/onegbe_test/onegbe_test/myproj/myproj.runs/synth_1/.Xil/Vivado-24427-wei-Berkeley/realtime/zcu111_axi_protocol_convert_2_0_stub.vhdl:67]
+INFO: [Synth 8-3491] module 'zcu111_proc_sys_reset_0_0' declared at '/home/wei/casper/casper_mlib/tutorials_devel/zcu111/raw_axi_test/onegbe_test/onegbe_test/myproj/myproj.runs/synth_1/.Xil/Vivado-24427-wei-Berkeley/realtime/zcu111_proc_sys_reset_0_0_stub.vhdl:5' bound to instance 'proc_sys_reset_0' of component 'zcu111_proc_sys_reset_0_0' [/home/wei/casper/casper_mlib/tutorials_devel/zcu111/raw_axi_test/onegbe_test/onegbe_test/myproj/myproj.srcs/sources_1/bd/zcu111/synth/zcu111.vhd:2671]
+INFO: [Synth 8-638] synthesizing module 'zcu111_proc_sys_reset_0_0' [/home/wei/casper/casper_mlib/tutorials_devel/zcu111/raw_axi_test/onegbe_test/onegbe_test/myproj/myproj.runs/synth_1/.Xil/Vivado-24427-wei-Berkeley/realtime/zcu111_proc_sys_reset_0_0_stub.vhdl:21]
+INFO: [Synth 8-3491] module 'zcu111_zynq_ultra_ps_e_0_0' declared at '/home/wei/casper/casper_mlib/tutorials_devel/zcu111/raw_axi_test/onegbe_test/onegbe_test/myproj/myproj.runs/synth_1/.Xil/Vivado-24427-wei-Berkeley/realtime/zcu111_zynq_ultra_ps_e_0_0_stub.vhdl:5' bound to instance 'zynq_ultra_ps_e_0' of component 'zcu111_zynq_ultra_ps_e_0_0' [/home/wei/casper/casper_mlib/tutorials_devel/zcu111/raw_axi_test/onegbe_test/onegbe_test/myproj/myproj.srcs/sources_1/bd/zcu111/synth/zcu111.vhd:2684]
+INFO: [Synth 8-638] synthesizing module 'zcu111_zynq_ultra_ps_e_0_0' [/home/wei/casper/casper_mlib/tutorials_devel/zcu111/raw_axi_test/onegbe_test/onegbe_test/myproj/myproj.runs/synth_1/.Xil/Vivado-24427-wei-Berkeley/realtime/zcu111_zynq_ultra_ps_e_0_0_stub.vhdl:56]
 INFO: [Synth 8-256] done synthesizing module 'zcu111' (115#1) [/home/wei/casper/casper_mlib/tutorials_devel/zcu111/raw_axi_test/onegbe_test/onegbe_test/myproj/myproj.srcs/sources_1/bd/zcu111/synth/zcu111.vhd:2004]
 WARNING: [Synth 8-689] width (40) of port connection 'M_AXI_RFDC_araddr' does not match port width (32) of module 'zcu111' [/home/wei/casper/casper_mlib/tutorials_devel/zcu111/raw_axi_test/onegbe_test/onegbe_test/myproj/myproj.srcs/sources_1/imports/onegbe_test/top.v:618]
 WARNING: [Synth 8-689] width (40) of port connection 'M_AXI_RFDC_awaddr' does not match port width (32) of module 'zcu111' [/home/wei/casper/casper_mlib/tutorials_devel/zcu111/raw_axi_test/onegbe_test/onegbe_test/myproj/myproj.srcs/sources_1/imports/onegbe_test/top.v:622]
@@ -1298,7 +1299,7 @@ WARNING: [Synth 8-3331] design sysgen_relational_a789c88b84 has unconnected port
 WARNING: [Synth 8-3331] design sysgen_relational_a789c88b84 has unconnected port ce
 INFO: [Common 17-14] Message 'Synth 8-3331' appears 100 times and further instances of the messages will be disabled. Use the Tcl command set_msg_config to change the current settings.
 ---------------------------------------------------------------------------------
-Finished RTL Elaboration : Time (s): cpu = 00:00:03 ; elapsed = 00:00:04 . Memory (MB): peak = 1616.219 ; gain = 181.750 ; free physical = 5499 ; free virtual = 29275
+Finished RTL Elaboration : Time (s): cpu = 00:00:03 ; elapsed = 00:00:04 . Memory (MB): peak = 1617.434 ; gain = 181.750 ; free physical = 5561 ; free virtual = 27570
 ---------------------------------------------------------------------------------
 
 Report Check Netlist: 
@@ -1412,10 +1413,10 @@ INFO: [Common 17-14] Message 'Synth 8-3295' appears 100 times and further instan
 Start Handling Custom Attributes
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished Handling Custom Attributes : Time (s): cpu = 00:00:04 ; elapsed = 00:00:04 . Memory (MB): peak = 1616.219 ; gain = 181.750 ; free physical = 5509 ; free virtual = 29284
+Finished Handling Custom Attributes : Time (s): cpu = 00:00:04 ; elapsed = 00:00:04 . Memory (MB): peak = 1617.434 ; gain = 181.750 ; free physical = 5573 ; free virtual = 27582
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished RTL Optimization Phase 1 : Time (s): cpu = 00:00:04 ; elapsed = 00:00:04 . Memory (MB): peak = 1616.219 ; gain = 181.750 ; free physical = 5509 ; free virtual = 29284
+Finished RTL Optimization Phase 1 : Time (s): cpu = 00:00:04 ; elapsed = 00:00:04 . Memory (MB): peak = 1617.434 ; gain = 181.750 ; free physical = 5573 ; free virtual = 27582
 ---------------------------------------------------------------------------------
 INFO: [Netlist 29-17] Analyzing 64 Unisim elements for replacement
 INFO: [Netlist 29-28] Unisim Transformation completed in 0 CPU seconds
@@ -1474,10 +1475,10 @@ INFO: [Project 1-236] Implementation specific constraints were found while readi
 Resolution: To avoid this warning, move constraints listed in [.Xil/top_propImpl.xdc] to another XDC file and exclude this new file from synthesis with the used_in_synthesis property (File Properties dialog in GUI) and re-run elaboration/synthesis.
 Parsing XDC File [/home/wei/casper/casper_mlib/tutorials_devel/zcu111/raw_axi_test/onegbe_test/onegbe_test/myproj/myproj.runs/synth_1/dont_touch.xdc]
 Finished Parsing XDC File [/home/wei/casper/casper_mlib/tutorials_devel/zcu111/raw_axi_test/onegbe_test/onegbe_test/myproj/myproj.runs/synth_1/dont_touch.xdc]
-Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00 . Memory (MB): peak = 2579.445 ; gain = 0.000 ; free physical = 4790 ; free virtual = 28559
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00 . Memory (MB): peak = 2580.613 ; gain = 0.000 ; free physical = 4694 ; free virtual = 26703
 Completed Processing XDC Constraints
 
-Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00 . Memory (MB): peak = 2579.445 ; gain = 0.000 ; free physical = 4791 ; free virtual = 28560
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00 . Memory (MB): peak = 2580.613 ; gain = 0.000 ; free physical = 4694 ; free virtual = 26703
 INFO: [Project 1-111] Unisim Transformation Summary:
   A total of 64 instances were transformed.
   BUFG => BUFGCE: 5 instances
@@ -1485,8 +1486,8 @@ INFO: [Project 1-111] Unisim Transformation Summary:
   IBUFDS => IBUFDS (DIFFINBUF, IBUFCTRL): 1 instances
   MMCM_BASE => MMCME4_ADV: 2 instances
 
-Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00 . Memory (MB): peak = 2579.445 ; gain = 0.000 ; free physical = 4791 ; free virtual = 28560
-Constraint Validation Runtime : Time (s): cpu = 00:00:00.01 ; elapsed = 00:00:00.01 . Memory (MB): peak = 2579.445 ; gain = 0.000 ; free physical = 4791 ; free virtual = 28560
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00 . Memory (MB): peak = 2580.613 ; gain = 0.000 ; free physical = 4694 ; free virtual = 26703
+Constraint Validation Runtime : Time (s): cpu = 00:00:00.01 ; elapsed = 00:00:00 . Memory (MB): peak = 2580.613 ; gain = 0.000 ; free physical = 4694 ; free virtual = 26703
 WARNING: [Timing 38-316] Clock period '20.000' specified during out-of-context synthesis of instance 'onegbe_test_one_gbe_pcs_pma' at clock pin 'independent_clock_bufg' is different from the actual clock period '5.000', this can lead to different synthesis results.
 WARNING: [Timing 38-316] Clock period '100.000' specified during out-of-context synthesis of instance 'onegbe_test_inst/onegbe_test_struct/bitfield_snapshot/ss/add_gen/add_gen/comp0.core_instance0' at clock pin 'CLK' is different from the actual clock period '3.906', this can lead to different synthesis results.
 WARNING: [Timing 38-316] Clock period '100.000' specified during out-of-context synthesis of instance 'onegbe_test_inst/onegbe_test_struct/bitfield_snapshot/ss/basic_ctrl/dram_munge/input_count/comp1.core_instance1' at clock pin 'CLK' is different from the actual clock period '3.906', this can lead to different synthesis results.
@@ -1501,7 +1502,7 @@ WARNING: [Timing 38-316] Clock period '10.000' specified during out-of-context s
 WARNING: [Timing 38-316] Clock period '10.000' specified during out-of-context synthesis of instance 'onegbe_test_one_gbe/gbe_tx_inst/tx_packet_ctrl_fifo_inst' at clock pin 'wr_clk' is different from the actual clock period '3.906', this can lead to different synthesis results.
 WARNING: [Timing 38-316] Clock period '10.000' specified during out-of-context synthesis of instance 'onegbe_test_one_gbe/gbe_tx_inst/tx_packet_fifo_inst' at clock pin 'wr_clk' is different from the actual clock period '3.906', this can lead to different synthesis results.
 ---------------------------------------------------------------------------------
-Finished Constraint Validation : Time (s): cpu = 00:00:18 ; elapsed = 00:00:24 . Memory (MB): peak = 2579.445 ; gain = 1144.977 ; free physical = 4897 ; free virtual = 28667
+Finished Constraint Validation : Time (s): cpu = 00:00:17 ; elapsed = 00:00:24 . Memory (MB): peak = 2580.613 ; gain = 1144.930 ; free physical = 4794 ; free virtual = 26803
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start Loading Part and Timing Information
@@ -1509,7 +1510,7 @@ Start Loading Part and Timing Information
 Loading part: xczu28dr-ffvg1517-2-e
 INFO: [Synth 8-6742] Reading net delay rules and data
 ---------------------------------------------------------------------------------
-Finished Loading Part and Timing Information : Time (s): cpu = 00:00:18 ; elapsed = 00:00:24 . Memory (MB): peak = 2579.445 ; gain = 1144.977 ; free physical = 4897 ; free virtual = 28667
+Finished Loading Part and Timing Information : Time (s): cpu = 00:00:17 ; elapsed = 00:00:24 . Memory (MB): peak = 2580.613 ; gain = 1144.930 ; free physical = 4794 ; free virtual = 26803
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start Applying 'set_property' XDC Constraints
@@ -1549,7 +1550,7 @@ Applied set_property DONT_TOUCH = true for onegbe_test_inst/onegbe_test_struct/b
 Applied set_property DONT_TOUCH = true for onegbe_test_inst/onegbe_test_struct/pkt_sim/counter2/\comp4.core_instance4 . (constraint file  auto generated constraint, line ).
 Applied set_property DONT_TOUCH = true for onegbe_test_inst/onegbe_test_struct/bitfield_snapshot/ss/add_gen/add_gen/\comp0.core_instance0 . (constraint file  auto generated constraint, line ).
 ---------------------------------------------------------------------------------
-Finished applying 'set_property' XDC Constraints : Time (s): cpu = 00:00:18 ; elapsed = 00:00:24 . Memory (MB): peak = 2579.445 ; gain = 1144.977 ; free physical = 4897 ; free virtual = 28667
+Finished applying 'set_property' XDC Constraints : Time (s): cpu = 00:00:17 ; elapsed = 00:00:24 . Memory (MB): peak = 2580.613 ; gain = 1144.930 ; free physical = 4794 ; free virtual = 26803
 ---------------------------------------------------------------------------------
 INFO: [Synth 8-5546] ROM "cpu_data_int15" won't be mapped to RAM because it is too sparse
 INFO: [Synth 8-802] inferred FSM for state register 'tx_state_reg' in module 'gbe_tx'
@@ -1677,7 +1678,7 @@ INFO: [Synth 8-3354] encoded FSM with state register 'fsm_reg' using encoding 's
 ---------------------------------------------------------------------------------------------------
 INFO: [Synth 8-3354] encoded FSM with state register 'fsm_reg' using encoding 'sequential' in module 'axi4lite_slave_logic'
 ---------------------------------------------------------------------------------
-Finished RTL Optimization Phase 2 : Time (s): cpu = 00:00:20 ; elapsed = 00:00:27 . Memory (MB): peak = 2579.445 ; gain = 1144.977 ; free physical = 4885 ; free virtual = 28656
+Finished RTL Optimization Phase 2 : Time (s): cpu = 00:00:19 ; elapsed = 00:00:27 . Memory (MB): peak = 2580.613 ; gain = 1144.930 ; free physical = 4780 ; free virtual = 26791
 ---------------------------------------------------------------------------------
 INFO: [Synth 8-223] decloning instance 'onegbe_test_inst/onegbe_test_struct/bitfield_snapshot/ss/basic_ctrl/constant_x0' (sysgen_constant_9a4712a1c2) to 'onegbe_test_inst/onegbe_test_struct/bitfield_snapshot/ss/basic_ctrl/constant1'
 INFO: [Synth 8-223] decloning instance 'onegbe_test_inst/onegbe_test_struct/bitfield_snapshot/ss/basic_ctrl/constant_x0' (sysgen_constant_9a4712a1c2) to 'onegbe_test_inst/onegbe_test_struct/bitfield_snapshot/ss/basic_ctrl/constant2'
@@ -2430,7 +2431,7 @@ WARNING: [Synth 8-3332] Sequential element (onegbe_test_struct/bitfield_snapshot
 WARNING: [Synth 8-3332] Sequential element (onegbe_test_struct/bitfield_snapshot/ss/basic_ctrl/dram_munge/register3/synth_reg_inst/latency_gt_0.fd_array[1].reg_comp/fd_prim_array[0].bit_is_0.fdre_comp) is unused and will be removed from module onegbe_test.
 INFO: [Common 17-14] Message 'Synth 8-3332' appears 100 times and further instances of the messages will be disabled. Use the Tcl command set_msg_config to change the current settings.
 ---------------------------------------------------------------------------------
-Finished Cross Boundary and Area Optimization : Time (s): cpu = 00:00:27 ; elapsed = 00:00:34 . Memory (MB): peak = 2579.445 ; gain = 1144.977 ; free physical = 4845 ; free virtual = 28624
+Finished Cross Boundary and Area Optimization : Time (s): cpu = 00:00:26 ; elapsed = 00:00:34 . Memory (MB): peak = 2580.613 ; gain = 1144.930 ; free physical = 4752 ; free virtual = 26771
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start ROM, RAM, DSP and Shift Register Reporting
@@ -2468,7 +2469,7 @@ INFO: [Synth 8-5578] Moved timing constraint from pin 'onegbe_test_one_gbe_pcs_p
 INFO: [Synth 8-5578] Moved timing constraint from pin 'onegbe_test_one_gbe_pcs_pma/userclk2_out' to pin 'onegbe_test_one_gbe_pcs_pma/bbstub_userclk2_out/O'
 INFO: [Synth 8-5819] Moved 6 constraints on hierarchical pins to their respective driving/loading pins
 ---------------------------------------------------------------------------------
-Finished Applying XDC Timing Constraints : Time (s): cpu = 00:00:41 ; elapsed = 00:01:01 . Memory (MB): peak = 2830.766 ; gain = 1396.297 ; free physical = 4404 ; free virtual = 28184
+Finished Applying XDC Timing Constraints : Time (s): cpu = 00:00:42 ; elapsed = 00:01:02 . Memory (MB): peak = 2831.934 ; gain = 1396.250 ; free physical = 4308 ; free virtual = 26327
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start Timing Optimization
@@ -2478,7 +2479,7 @@ INFO: [Synth 8-5555] Implemented Block Ram Cascade chain of height 4 and width 1
 INFO: [Synth 8-5555] Implemented Block Ram Cascade chain of height 2 and width 9 for RAM axi4lite_bitfield_snapshot_ss_bram_inst/ipb_bitfield_snapshot_ss_bram_dp_ram_inst/asym_bram_tdp_inst/g_a_wider.my_ram_reg
 INFO: [Synth 8-3971] The signal axi4lite_bitfield_snapshot_ss_bram_inst/ipb_bitfield_snapshot_ss_bram_dp_ram_inst/asym_bram_tdp_inst/g_a_wider.my_ram_reg was recognized as a true dual port RAM template.
 ---------------------------------------------------------------------------------
-Finished Timing Optimization : Time (s): cpu = 00:00:42 ; elapsed = 00:01:01 . Memory (MB): peak = 2849.766 ; gain = 1415.297 ; free physical = 4385 ; free virtual = 28165
+Finished Timing Optimization : Time (s): cpu = 00:00:43 ; elapsed = 00:01:02 . Memory (MB): peak = 2850.934 ; gain = 1415.250 ; free physical = 4288 ; free virtual = 26308
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start ROM, RAM, DSP and Shift Register Reporting
@@ -2508,7 +2509,7 @@ INFO: [Synth 8-6837] The timing for the instance axi4lite_interconnect/axi4lite_
 INFO: [Synth 8-6837] The timing for the instance axi4lite_interconnect/axi4lite_bitfield_snapshot_ss_bram_inst/ipb_bitfield_snapshot_ss_bram_dp_ram_inst/asym_bram_tdp_inst/g_a_wider.my_ram_reg_bram_6 (implemented as a Block RAM) might be sub-optimal as no optional output register could be merged into the block ram. Providing additional output register may help in improving timing.
 INFO: [Synth 8-6837] The timing for the instance axi4lite_interconnect/axi4lite_bitfield_snapshot_ss_bram_inst/ipb_bitfield_snapshot_ss_bram_dp_ram_inst/asym_bram_tdp_inst/g_a_wider.my_ram_reg_bram_7 (implemented as a Block RAM) might be sub-optimal as no optional output register could be merged into the block ram. Providing additional output register may help in improving timing.
 ---------------------------------------------------------------------------------
-Finished Technology Mapping : Time (s): cpu = 00:00:43 ; elapsed = 00:01:02 . Memory (MB): peak = 2890.023 ; gain = 1455.555 ; free physical = 4381 ; free virtual = 28160
+Finished Technology Mapping : Time (s): cpu = 00:00:44 ; elapsed = 00:01:03 . Memory (MB): peak = 2891.191 ; gain = 1455.508 ; free physical = 4284 ; free virtual = 26303
 ---------------------------------------------------------------------------------
 
 Report RTL Partitions: 
@@ -2533,7 +2534,7 @@ Finished Final Netlist Cleanup
 ---------------------------------------------------------------------------------
 CRITICAL WARNING: [Synth 8-4442] BlackBox module onegbe_test_one_gbe_pcs_pma has unconnected pin reset
 ---------------------------------------------------------------------------------
-Finished IO Insertion : Time (s): cpu = 00:00:43 ; elapsed = 00:01:03 . Memory (MB): peak = 2890.023 ; gain = 1455.555 ; free physical = 4381 ; free virtual = 28160
+Finished IO Insertion : Time (s): cpu = 00:00:44 ; elapsed = 00:01:04 . Memory (MB): peak = 2891.191 ; gain = 1455.508 ; free physical = 4284 ; free virtual = 26304
 ---------------------------------------------------------------------------------
 
 Report Check Netlist: 
@@ -2546,7 +2547,7 @@ Report Check Netlist:
 Start Renaming Generated Instances
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished Renaming Generated Instances : Time (s): cpu = 00:00:43 ; elapsed = 00:01:03 . Memory (MB): peak = 2890.023 ; gain = 1455.555 ; free physical = 4381 ; free virtual = 28160
+Finished Renaming Generated Instances : Time (s): cpu = 00:00:44 ; elapsed = 00:01:04 . Memory (MB): peak = 2891.191 ; gain = 1455.508 ; free physical = 4284 ; free virtual = 26304
 ---------------------------------------------------------------------------------
 
 Report RTL Partitions: 
@@ -2558,25 +2559,25 @@ Report RTL Partitions:
 Start Rebuilding User Hierarchy
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished Rebuilding User Hierarchy : Time (s): cpu = 00:00:44 ; elapsed = 00:01:03 . Memory (MB): peak = 2890.023 ; gain = 1455.555 ; free physical = 4381 ; free virtual = 28160
+Finished Rebuilding User Hierarchy : Time (s): cpu = 00:00:44 ; elapsed = 00:01:04 . Memory (MB): peak = 2891.191 ; gain = 1455.508 ; free physical = 4284 ; free virtual = 26304
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start Renaming Generated Ports
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished Renaming Generated Ports : Time (s): cpu = 00:00:44 ; elapsed = 00:01:03 . Memory (MB): peak = 2890.023 ; gain = 1455.555 ; free physical = 4381 ; free virtual = 28160
+Finished Renaming Generated Ports : Time (s): cpu = 00:00:44 ; elapsed = 00:01:04 . Memory (MB): peak = 2891.191 ; gain = 1455.508 ; free physical = 4284 ; free virtual = 26304
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start Handling Custom Attributes
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished Handling Custom Attributes : Time (s): cpu = 00:00:44 ; elapsed = 00:01:03 . Memory (MB): peak = 2890.023 ; gain = 1455.555 ; free physical = 4381 ; free virtual = 28160
+Finished Handling Custom Attributes : Time (s): cpu = 00:00:45 ; elapsed = 00:01:04 . Memory (MB): peak = 2891.191 ; gain = 1455.508 ; free physical = 4284 ; free virtual = 26304
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start Renaming Generated Nets
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished Renaming Generated Nets : Time (s): cpu = 00:00:44 ; elapsed = 00:01:03 . Memory (MB): peak = 2890.023 ; gain = 1455.555 ; free physical = 4381 ; free virtual = 28160
+Finished Renaming Generated Nets : Time (s): cpu = 00:00:45 ; elapsed = 00:01:04 . Memory (MB): peak = 2891.191 ; gain = 1455.508 ; free physical = 4284 ; free virtual = 26304
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start ROM, RAM, DSP and Shift Register Reporting
@@ -2667,8 +2668,8 @@ Report Cell Usage:
 |38    |FDCE                                                  |   450|
 |39    |FDE                                                   |    39|
 |40    |FDPE                                                  |     8|
-|41    |FDRE                                                  |  1013|
-|42    |FDSE                                                  |    46|
+|41    |FDRE                                                  |  1015|
+|42    |FDSE                                                  |    44|
 |43    |IBUFDS                                                |     1|
 +------+------------------------------------------------------+------+
 
@@ -2783,11 +2784,11 @@ Report Instance Areas:
 |105   |  zcu111_infr_inst                                  |zcu111_infrastructure                      |     8|
 +------+----------------------------------------------------+-------------------------------------------+------+
 ---------------------------------------------------------------------------------
-Finished Writing Synthesis Report : Time (s): cpu = 00:00:44 ; elapsed = 00:01:03 . Memory (MB): peak = 2890.023 ; gain = 1455.555 ; free physical = 4381 ; free virtual = 28160
+Finished Writing Synthesis Report : Time (s): cpu = 00:00:45 ; elapsed = 00:01:04 . Memory (MB): peak = 2891.191 ; gain = 1455.508 ; free physical = 4284 ; free virtual = 26304
 ---------------------------------------------------------------------------------
 Synthesis finished with 0 errors, 1 critical warnings and 1035 warnings.
-Synthesis Optimization Runtime : Time (s): cpu = 00:00:31 ; elapsed = 00:00:45 . Memory (MB): peak = 2890.023 ; gain = 492.328 ; free physical = 4417 ; free virtual = 28196
-Synthesis Optimization Complete : Time (s): cpu = 00:00:44 ; elapsed = 00:01:03 . Memory (MB): peak = 2890.031 ; gain = 1455.555 ; free physical = 4424 ; free virtual = 28203
+Synthesis Optimization Runtime : Time (s): cpu = 00:00:32 ; elapsed = 00:00:46 . Memory (MB): peak = 2891.191 ; gain = 492.328 ; free physical = 4320 ; free virtual = 26339
+Synthesis Optimization Complete : Time (s): cpu = 00:00:45 ; elapsed = 00:01:04 . Memory (MB): peak = 2891.199 ; gain = 1455.508 ; free physical = 4328 ; free virtual = 26347
 INFO: [Project 1-571] Translating synthesized netlist
 INFO: [Netlist 29-17] Analyzing 81 Unisim elements for replacement
 INFO: [Netlist 29-28] Unisim Transformation completed in 0 CPU seconds
@@ -2795,7 +2796,7 @@ INFO: [Project 1-570] Preparing netlist for logic optimization
 INFO: [Opt 31-138] Pushed 0 inverter(s) to 0 load pin(s).
 INFO: [Opt 31-326] The CLKFBOUT to CLKFBIN net for instance zcu111_infr_inst/user_200m_mmcm_inst with COMPENSATION=INTERNAL is optimized away to aid design routability
 INFO: [Opt 31-326] The CLKFBOUT to CLKFBIN net for instance zcu111_infr_inst/user_clk_mmcm_inst with COMPENSATION=INTERNAL is optimized away to aid design routability
-Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00 . Memory (MB): peak = 2931.672 ; gain = 0.000 ; free physical = 4345 ; free virtual = 28125
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00 . Memory (MB): peak = 2931.840 ; gain = 0.000 ; free physical = 4250 ; free virtual = 26269
 INFO: [Project 1-111] Unisim Transformation Summary:
   A total of 47 instances were transformed.
   BUFG => BUFGCE: 5 instances
@@ -2804,12 +2805,12 @@ INFO: [Project 1-111] Unisim Transformation Summary:
   MMCM_BASE => MMCME4_ADV: 2 instances
 
 INFO: [Common 17-83] Releasing license: Synthesis
-808 Infos, 393 Warnings, 1 Critical Warnings and 0 Errors encountered.
+809 Infos, 393 Warnings, 1 Critical Warnings and 0 Errors encountered.
 synth_design completed successfully
-synth_design: Time (s): cpu = 00:00:46 ; elapsed = 00:01:05 . Memory (MB): peak = 2931.672 ; gain = 1516.660 ; free physical = 4422 ; free virtual = 28202
-Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00 . Memory (MB): peak = 2931.672 ; gain = 0.000 ; free physical = 4422 ; free virtual = 28202
+synth_design: Time (s): cpu = 00:00:47 ; elapsed = 00:01:06 . Memory (MB): peak = 2931.840 ; gain = 1515.613 ; free physical = 4327 ; free virtual = 26347
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00 . Memory (MB): peak = 2931.840 ; gain = 0.000 ; free physical = 4327 ; free virtual = 26347
 WARNING: [Constraints 18-5210] No constraints selected for write.
 Resolution: This message can indicate that there are no constraints for the design, or it can indicate that the used_in flags are set such that the constraints are ignored. This later case is used when running synth_design to not write synthesis constraints to the resulting checkpoint. Instead, project constraints are read when the synthesized design is opened.
 INFO: [Common 17-1381] The checkpoint '/home/wei/casper/casper_mlib/tutorials_devel/zcu111/raw_axi_test/onegbe_test/onegbe_test/myproj/myproj.runs/synth_1/top.dcp' has been generated.
 INFO: [runtcl-4] Executing : report_utilization -file top_utilization_synth.rpt -pb top_utilization_synth.pb
-INFO: [Common 17-206] Exiting Vivado at Thu Sep 24 16:42:41 2020...
+INFO: [Common 17-206] Exiting Vivado at Fri Oct 16 21:14:22 2020...
